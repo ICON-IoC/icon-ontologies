@@ -1,0 +1,12 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0002002 a owl:Class ;
+    rdfs:label "chief executive role"@en ;
+    IAO:0000115 "Heads the record's staff or operations: executive director, CEO, staff president, general manager, agency director or secretary, city manager, and the manager of a field office, region, refuge or preserve that is itself the record."@en ;
+    rdfs:isDefinedBy iconbase:people.owl ;
+    rdfs:subClassOf icon:0002001 .
+

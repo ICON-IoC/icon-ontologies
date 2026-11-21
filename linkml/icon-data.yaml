@@ -1,0 +1,700 @@
+# ICON Data ontology, as a LinkML schema.
+# Built by `ioc-ontologies` from ontology/src/data.terms; edit that, not this file.
+id: https://w3id.org/icon/linkml/icon-data
+name: icon-data
+prefixes:
+  linkml: https://w3id.org/linkml/
+  ICON: https://w3id.org/icon/ICON_
+  access: http://publications.europa.eu/resource/authority/access-right/
+  dcat: http://www.w3.org/ns/dcat#
+  dcterms: http://purl.org/dc/terms/
+  prov: http://www.w3.org/ns/prov#
+  schema: https://schema.org/
+title: ICON Data ontology
+description: 'Data resources at three levels (dataset, database, data repository): who creates, publishes,
+  hosts, funds and uses them, what they cover in time, space and subject, and how they derive from and
+  hold one another.'
+version: '2026-11-21'
+license: https://creativecommons.org/licenses/by/4.0/
+default_prefix: ICON
+default_range: string
+see_also:
+- https://w3id.org/icon/data.owl
+imports:
+- linkml:types
+- icon-external
+- icon-core
+- icon-infrastructure
+- icon-mandates
+classes:
+  DataResource:
+    class_uri: ICON:0008000
+    title: data resource
+    description: 'Data at any of three levels: a dataset, a database or a data repository. Replaced the
+      PPOD Dataset class.'
+    close_mappings:
+    - dcat:Resource
+    - schema:CreativeWork
+    annotations:
+      runtime: class Data; vocab DataLevel
+    is_a: InformationResource
+    slots:
+    - description
+    - purpose
+    - identifier
+    - date_issued
+    - version
+    - access_rights
+    - license
+    - coverage_start
+    - coverage_end
+    - temporal_resolution
+    - accrual_periodicity
+    - spatial_resolution
+    - social_resolution
+    - keyword
+  Dataset:
+    class_uri: ICON:0008001
+    title: dataset
+    description: 'One collection of data published as a unit by its creator, such as a map layer, a table
+      or a time series. Example: Cropland Data Layer.'
+    close_mappings:
+    - dcat:Dataset
+    - schema:Dataset
+    annotations:
+      crosswalk: 'DataCite 4.5: resourceTypeGeneral Dataset; EML 2.2: dataset; ISO 19115-1: MD_ScopeCode
+        dataset'
+      runtime: term DataLevel "Dataset"
+    is_a: DataResource
+    mixins:
+    - DataCollection
+    disjoint_with:
+    - Database
+    - DataRepository
+  Database:
+    class_uri: ICON:0008002
+    title: database
+    description: 'A maintained collection of related datasets kept together under one design, usually
+      by one organization and usually queryable. Its datasets are part of it. Example: California Natural
+      Diversity Database.'
+    close_mappings:
+    - dcat:Dataset
+    - schema:Dataset
+    annotations:
+      crosswalk: 'DataCite 4.5: resourceTypeGeneral Dataset'
+      runtime: term DataLevel "Database"
+    is_a: DataResource
+    mixins:
+    - DataCollection
+    disjoint_with:
+    - Dataset
+    - DataRepository
+  DataRepository:
+    class_uri: ICON:0008003
+    title: data repository
+    description: 'A platform that holds and publishes datasets and databases, often from many creators.
+      Example: CDFW BIOS.'
+    close_mappings:
+    - dcat:Catalog
+    - schema:DataCatalog
+    annotations:
+      crosswalk: 're3data 4.0: repository'
+      runtime: term DataLevel "Data repository"
+    is_a: DataResource
+    disjoint_with:
+    - Dataset
+    - Database
+  DataType:
+    class_uri: ICON:0008080
+    title: data type
+    description: 'The kind of data, or the form it comes in. One list holds both, so a Data record and
+      a tool''s input or output are described in the same terms and a dataset can be matched to the tools
+      that take it: Land cover or vegetation map and Raster describe both the Cropland Data Layer and
+      an input InVEST takes.'
+    close_mappings:
+    - dcterms:type
+    annotations:
+      crosswalk: 'DataCite 4.5: resourceType'
+      runtime: vocab DataType
+    is_a: InformationContentEntity
+  DataFormat:
+    class_uri: ICON:0008010
+    title: data format
+    description: The form data comes in, from the Terms sheet's dataset types; formats are data types,
+      listed with the kinds of data (#304). DCAT records format on each downloadable distribution; the
+      graph keeps it on the data until a resource has more than one form worth recording.
+    annotations:
+      crosswalk: 'DataCite 4.5: format; EML 2.2: physical/dataFormat; ISO 19115-1: MD_Format'
+    is_a: DataType
+  DataAccessLevel:
+    class_uri: ICON:0008020
+    title: data access level
+    description: Who can get the data. The Dataset Dictionary's Availability. Each value maps to the EU
+      access-right list and to the DCAT-US access levels data.gov uses.
+    is_a: InformationContentEntity
+  TemporalResolutionValue:
+    class_uri: ICON:0008030
+    title: temporal resolution value
+    description: How far apart in time the data's values are. Each value carries, as a cross-reference,
+      the ISO 8601 duration that dcat:temporalResolution takes on export.
+    is_a: InformationContentEntity
+  SocialUnit:
+    class_uri: ICON:0008040
+    title: social unit
+    description: A unit of people or property that social data is recorded for. The analysis unit of DDI
+      Discovery.
+    is_a: InformationContentEntity
+slots:
+  has_data_level:
+    slot_uri: ICON:0008100
+    title: has data level
+    description: 'Links a data resource to the level class it belongs to: dataset, database or data repository.
+      The explorer''s way of stating its class, so it can filter and colour by level.'
+    annotations:
+      runtime: phrase "has data level"
+    domain: DataResource
+    domain_of:
+    - DataResource
+    range: uriorcurie
+    inverse: is_data_level_of
+    multivalued: true
+  is_data_level_of:
+    slot_uri: ICON:0008101
+    title: is data level of
+    description: The reverse of has data level.
+    annotations:
+      runtime: phrase "is data level of"
+    range: DataResource
+    inverse: has_data_level
+    multivalued: true
+  has_data_type:
+    slot_uri: ICON:0008102
+    title: has data type
+    description: A kind of data the record is, or the form it comes in, from the Data type list.
+    close_mappings:
+    - dcterms:type
+    - dcterms:format
+    annotations:
+      runtime: phrase "has data type"
+    domain: DataResource
+    domain_of:
+    - DataResource
+    range: DataTypeEnum
+    inverse: is_data_type_of
+    multivalued: true
+  is_data_type_of:
+    slot_uri: ICON:0008103
+    title: is data type of
+    description: The reverse of has data type.
+    annotations:
+      runtime: phrase "is data type of"
+    domain: DataType
+    domain_of:
+    - DataType
+    range: DataResource
+    inverse: has_data_type
+    multivalued: true
+  is_held_in:
+    slot_uri: ICON:0008104
+    title: is held in
+    description: A dataset, database or smaller repository is held and published by a repository. One
+      resource can be held in several.
+    close_mappings:
+    - schema:includedInDataCatalog
+    annotations:
+      runtime: phrase "is held in"
+    domain: DataResource
+    domain_of:
+    - DataResource
+    range: DataRepository
+    inverse: holds
+    multivalued: true
+  holds:
+    slot_uri: ICON:0008105
+    title: holds
+    description: The reverse of is held in.
+    close_mappings:
+    - dcat:dataset
+    annotations:
+      runtime: phrase "holds"
+    domain: DataRepository
+    domain_of:
+    - DataRepository
+    range: DataResource
+    inverse: is_held_in
+    multivalued: true
+  is_hosted_by:
+    slot_uri: ICON:0008106
+    title: is hosted by
+    description: The organization that runs the systems the data is served from. The Dataset Dictionary's
+      Host role.
+    close_mappings:
+    - schema:provider
+    annotations:
+      crosswalk: 'DataCite 4.5: contributorType HostingInstitution; ISO 19115-1: CI_RoleCode custodian'
+      runtime: phrase "is hosted by"
+    domain: DataResource
+    domain_of:
+    - DataResource
+    range: Organization
+    inverse: hosts
+    multivalued: true
+  hosts:
+    slot_uri: ICON:0008107
+    title: hosts
+    description: The reverse of is hosted by.
+    annotations:
+      runtime: phrase "hosts"
+    domain: Organization
+    domain_of:
+    - Organization
+    range: DataResource
+    inverse: is_hosted_by
+    multivalued: true
+  is_derived_from:
+    slot_uri: ICON:0008108
+    title: is derived from
+    description: Data built from other data, such as a connectivity map made from land cover and roads.
+    close_mappings:
+    - prov:wasDerivedFrom
+    - schema:isBasedOn
+    annotations:
+      crosswalk: 'DataCite 4.5: relatedIdentifier relationType IsDerivedFrom; EML 2.2: methods/methodStep/dataSource;
+        ISO 19115-1: LI_Lineage/source'
+      runtime: phrase "is derived from"
+    domain: DataResource
+    domain_of:
+    - DataResource
+    range: DataResource
+    inverse: is_source_of
+    multivalued: true
+  is_source_of:
+    slot_uri: ICON:0008109
+    title: is source of
+    description: The reverse of is derived from.
+    annotations:
+      runtime: phrase "is source of"
+    domain: DataResource
+    domain_of:
+    - DataResource
+    range: DataResource
+    inverse: is_derived_from
+    multivalued: true
+  conforms_to:
+    slot_uri: ICON:0008110
+    title: conforms to
+    description: 'A standard or guideline a data resource, tool, plan or plan action follows, recorded
+      as a guideline: a data standard such as Darwin Core or the FGDC metadata standard, the policy whose
+      required analyses a tool carries out, the agency guide a plan was written to, or the guidelines
+      an action says to follow.'
+    close_mappings:
+    - dcterms:conformsTo
+    annotations:
+      crosswalk: 'ISO 19115-1: DQ_DomainConsistency/result/specification'
+      runtime: phrase "conforms to"
+    range: GuidelineOrMandate
+    inverse: is_followed_by
+    multivalued: true
+  is_followed_by:
+    slot_uri: ICON:0008111
+    title: is followed by
+    description: The reverse of conforms to.
+    annotations:
+      runtime: phrase "is followed by"
+    domain: GuidelineOrMandate
+    domain_of:
+    - GuidelineOrMandate
+    range: uriorcurie
+    inverse: conforms_to
+    multivalued: true
+  has_extent:
+    slot_uri: ICON:0008112
+    title: has extent
+    description: A place whose boundary is the data's extent, such as a watershed or a preserve.
+    close_mappings:
+    - dcterms:spatial
+    annotations:
+      runtime: phrase "has extent"
+    domain: DataResource
+    domain_of:
+    - DataResource
+    range: Infrastructure
+    inverse: is_extent_of
+    multivalued: true
+  is_extent_of:
+    slot_uri: ICON:0008113
+    title: is extent of
+    description: The reverse of has extent.
+    annotations:
+      runtime: phrase "is extent of"
+    domain: Infrastructure
+    domain_of:
+    - Infrastructure
+    range: DataResource
+    inverse: has_extent
+    multivalued: true
+  collected_at:
+    slot_uri: ICON:0008114
+    title: collected at
+    description: A place where the data was gathered, such as a monitoring station.
+    annotations:
+      crosswalk: 'EML 2.2: methods/sampling/studyExtent'
+      runtime: phrase "collected at"
+    domain: DataResource
+    domain_of:
+    - DataResource
+    range: Infrastructure
+    inverse: is_collection_site_of
+    multivalued: true
+  is_collection_site_of:
+    slot_uri: ICON:0008115
+    title: is collection site of
+    description: The reverse of collected at.
+    annotations:
+      runtime: phrase "is collection site of"
+    domain: Infrastructure
+    domain_of:
+    - Infrastructure
+    range: DataResource
+    inverse: collected_at
+    multivalued: true
+  purpose:
+    slot_uri: ICON:0008200
+    title: purpose
+    description: Why the data was made.
+    annotations:
+      crosswalk: 'EML 2.2: dataset/purpose; ISO 19115-1: MD_DataIdentification/purpose'
+      runtime: field data.purpose
+    domain: DataResource
+    domain_of:
+    - DataResource
+    range: string
+    multivalued: true
+  coverage_start:
+    slot_uri: ICON:0008201
+    title: coverage start
+    description: The first year the data describes. With coverage end, the Dataset Dictionary's Time Period;
+      exported as dcterms:temporal with a dcat:startDate.
+    close_mappings:
+    - dcat:startDate
+    annotations:
+      crosswalk: 'DataCite 4.5: date dateType Coverage; EML 2.2: coverage/temporalCoverage/rangeOfDates/beginDate'
+      runtime: field data.coverage_start
+    domain: DataResource
+    domain_of:
+    - DataResource
+    range: integer
+    multivalued: true
+  coverage_end:
+    slot_uri: ICON:0008202
+    title: coverage end
+    description: The last year the data describes; blank while it is still being added to.
+    close_mappings:
+    - dcat:endDate
+    annotations:
+      crosswalk: 'EML 2.2: coverage/temporalCoverage/rangeOfDates/endDate'
+      runtime: field data.coverage_end
+    domain: DataResource
+    domain_of:
+    - DataResource
+    range: integer
+    multivalued: true
+  spatial_resolution:
+    slot_uri: ICON:0008203
+    title: spatial resolution
+    description: 'Grid cell size, mapping unit or positional accuracy, written with its unit: 30 m for
+      C-CAP, 4 km for gridMET. Converted to dcat:spatialResolutionInMeters on export when the unit is
+      a length.'
+    close_mappings:
+    - dcat:spatialResolutionInMeters
+    annotations:
+      crosswalk: 'EML 2.2: spatialRaster/cellSizeXDirection; ISO 19115-1: MD_Resolution/distance'
+      runtime: field data.spatial_resolution
+    domain: DataResource
+    domain_of:
+    - DataResource
+    range: string
+    multivalued: true
+  social_resolution:
+    slot_uri: ICON:0008204
+    title: social resolution
+    description: The smallest social unit the data describes or can be broken down to, such as household
+      or census tract.
+    annotations:
+      runtime: field data.social_resolution
+    domain: DataResource
+    domain_of:
+    - DataResource
+    range: SocialUnitEnum
+    multivalued: true
+enums:
+  DataTypeEnum:
+    enum_uri: ICON:0008080
+    description: The values of data type.
+    permissible_values:
+      observation records:
+        meaning: ICON:0008081
+        description: Individual sightings or detections of a species or feature, each with a place and
+          a date, such as CNDDB occurrences or camera trap detections.
+        annotations:
+          runtime: term DataType "Observation records"
+      survey and monitoring data:
+        meaning: ICON:0008082
+        description: 'Measurements taken by a protocol across sites or over time: counts, plots, catch,
+          water samples.'
+        annotations:
+          runtime: term DataType "Survey and monitoring data"
+      species range or distribution:
+        meaning: ICON:0008083
+        description: Where a species lives or is known to occur, mapped as a range or distribution.
+        annotations:
+          runtime: term DataType "Species range or distribution"
+      habitat suitability model:
+        meaning: ICON:0008084
+        description: Modelled predictions of where habitat is suitable for a species or community.
+        annotations:
+          runtime: term DataType "Habitat suitability model"
+      land cover or vegetation map:
+        meaning: ICON:0008085
+        description: 'A map of what covers the land: vegetation types, crops, forest structure, developed
+          and bare ground.'
+        annotations:
+          runtime: term DataType "Land cover or vegetation map"
+      satellite and aerial imagery:
+        meaning: ICON:0008086
+        description: Images of the ground taken from satellites, aircraft or drones, and products derived
+          directly from them.
+        annotations:
+          runtime: term DataType "Satellite and aerial imagery"
+      elevation model:
+        meaning: ICON:0008087
+        description: A surface of ground elevation, slope or water depth (bathymetry).
+        annotations:
+          runtime: term DataType "Elevation model"
+      climate grids and projections:
+        meaning: ICON:0008088
+        description: Gridded climate variables, observed or projected, such as temperature, precipitation
+          or evapotranspiration.
+        annotations:
+          runtime: term DataType "Climate grids and projections"
+      stream and water network:
+        meaning: ICON:0008089
+        description: Mapped streams, rivers, lakes, wetlands and the barriers, diversions and conveyances
+          on them.
+        annotations:
+          runtime: term DataType "Stream and water network"
+      sensor time series:
+        meaning: ICON:0008090
+        description: Readings over time from gauges, weather stations or other sensors.
+        annotations:
+          runtime: term DataType "Sensor time series"
+      boundaries and areas:
+        meaning: ICON:0008091
+        description: Administrative, planning, regulatory and survey boundaries, and the areas a user
+          draws or picks.
+        annotations:
+          runtime: term DataType "Boundaries and areas"
+      parcels and ownership:
+        meaning: ICON:0008092
+        description: Land parcels and records of who owns or holds rights in them, such as easements.
+        annotations:
+          runtime: term DataType "Parcels and ownership"
+      infrastructure locations:
+        meaning: ICON:0008093
+        description: 'Mapped locations of built structures and facilities: roads, ports, crossings, stations,
+          platforms.'
+        annotations:
+          runtime: term DataType "Infrastructure locations"
+      scenarios and settings:
+        meaning: ICON:0008094
+        description: 'Choices a user enters: practices, targets, parameters, costs, management or development
+          scenarios.'
+        annotations:
+          runtime: term DataType "Scenarios and settings"
+      estimates and indices:
+        meaning: ICON:0008095
+        description: 'Computed values: estimates of carbon, cost or yield, and scores, ranks or indices
+          that compare places or options.'
+        annotations:
+          runtime: term DataType "Estimates and indices"
+      project records:
+        meaning: ICON:0008096
+        description: 'Records of conservation projects: where they are, what they do, their funding and
+          status.'
+        annotations:
+          runtime: term DataType "Project records"
+      funding opportunities:
+        meaning: ICON:0008097
+        description: 'Listings of grants, loans and other funding that people can apply for: the funder,
+          what it pays for, award size and deadline.'
+        annotations:
+          runtime: term DataType "Funding opportunities"
+  DataFormatEnum:
+    enum_uri: ICON:0008010
+    description: The values of data format.
+    permissible_values:
+      image data format:
+        meaning: ICON:0008011
+        description: Photographs or scanned images.
+        annotations:
+          runtime: term DataType "Images"
+      raster data format:
+        meaning: ICON:0008012
+        description: A grid of cells, each with a value, such as a land cover map or a climate surface.
+        annotations:
+          runtime: term DataType "Raster"
+      shapefile data format:
+        meaning: ICON:0008013
+        description: Points, lines or polygons with attributes, in the Esri shapefile or a similar vector
+          format.
+        annotations:
+          runtime: term DataType "Shapefile"
+      tabular data format:
+        meaning: ICON:0008014
+        description: Rows and columns, as a spreadsheet or a database table.
+        annotations:
+          runtime: term DataType "Tabular"
+      map data format:
+        meaning: ICON:0008015
+        description: A finished map, interactive on the web or printed, made for people to read rather
+          than as data to analyse. Mostly a tool's output.
+        annotations:
+          runtime: term DataType "Map"
+      report data format:
+        meaning: ICON:0008016
+        description: A written document, such as a PDF report or a site summary. Mostly a tool's output.
+        annotations:
+          runtime: term DataType "Report"
+  DataAccessLevelEnum:
+    enum_uri: ICON:0008020
+    description: The values of data access level.
+    permissible_values:
+      open data access:
+        meaning: ICON:0008021
+        description: Anyone can download the data without signing in.
+        close_mappings:
+        - access:PUBLIC
+        annotations:
+          crosswalk: 'DCAT-US 1.1: accessLevel public'
+          runtime: choice data.availability "Open"
+      open access with registration:
+        meaning: ICON:0008022
+        description: The data is free after creating an account or accepting terms.
+        broad_mappings:
+        - access:PUBLIC
+        annotations:
+          crosswalk: 'DCAT-US 1.1: accessLevel public'
+          runtime: choice data.availability "Open with registration"
+      sensitive locations withheld:
+        meaning: ICON:0008023
+        description: The data is published with sensitive detail, such as rare species locations, generalized
+          or held back unless a request is approved.
+        broad_mappings:
+        - access:RESTRICTED
+        annotations:
+          crosswalk: 'DCAT-US 1.1: accessLevel restricted public'
+          runtime: choice data.availability "Sensitive locations withheld"
+      access by request or license:
+        meaning: ICON:0008024
+        description: The data is available only through an agreement, a subscription or a fee.
+        close_mappings:
+        - access:RESTRICTED
+        annotations:
+          crosswalk: 'DCAT-US 1.1: accessLevel restricted public'
+          runtime: choice data.availability "By request or license"
+      data not public:
+        meaning: ICON:0008025
+        description: The data is held for its creator's own use.
+        close_mappings:
+        - access:NON_PUBLIC
+        annotations:
+          crosswalk: 'DCAT-US 1.1: accessLevel non-public'
+          runtime: choice data.availability "Not public"
+  TemporalResolutionValueEnum:
+    enum_uri: ICON:0008030
+    description: The values of temporal resolution value.
+    permissible_values:
+      hourly resolution:
+        meaning: ICON:0008031
+        description: A value every hour.
+        annotations:
+          xref: ISO8601:PT1H
+          runtime: choice data.temporal_resolution "Hourly"
+      daily resolution:
+        meaning: ICON:0008032
+        description: A value every day.
+        annotations:
+          xref: ISO8601:P1D
+          runtime: choice data.temporal_resolution "Daily"
+      weekly resolution:
+        meaning: ICON:0008033
+        description: A value every week.
+        annotations:
+          xref: ISO8601:P1W
+          runtime: choice data.temporal_resolution "Weekly"
+      monthly resolution:
+        meaning: ICON:0008034
+        description: A value every month.
+        annotations:
+          xref: ISO8601:P1M
+          runtime: choice data.temporal_resolution "Monthly"
+      annual resolution:
+        meaning: ICON:0008035
+        description: A value every year.
+        annotations:
+          xref: ISO8601:P1Y
+          runtime: choice data.temporal_resolution "Annual"
+      multi-year resolution:
+        meaning: ICON:0008036
+        description: Values for periods longer than a year, such as decades.
+        annotations:
+          runtime: choice data.temporal_resolution "Multi-year"
+      single snapshot:
+        meaning: ICON:0008037
+        description: One point or period in time.
+        annotations:
+          runtime: choice data.temporal_resolution "Single snapshot"
+  SocialUnitEnum:
+    enum_uri: ICON:0008040
+    description: The values of social unit.
+    permissible_values:
+      individual person unit:
+        meaning: ICON:0008041
+        description: Data recorded person by person.
+        annotations:
+          runtime: choice data.social_resolution "Individual"
+      household unit:
+        meaning: ICON:0008042
+        description: Data recorded household by household.
+        annotations:
+          runtime: choice data.social_resolution "Household"
+      parcel or landowner unit:
+        meaning: ICON:0008043
+        description: Data recorded by land parcel or landowner.
+        annotations:
+          runtime: choice data.social_resolution "Parcel or landowner"
+      organization unit:
+        meaning: ICON:0008044
+        description: Data recorded organization by organization.
+        annotations:
+          runtime: choice data.social_resolution "Organization"
+      census block group unit:
+        meaning: ICON:0008045
+        description: Data recorded by Census block group.
+        annotations:
+          runtime: choice data.social_resolution "Census block group"
+      census tract unit:
+        meaning: ICON:0008046
+        description: Data recorded by Census tract.
+        annotations:
+          runtime: choice data.social_resolution "Census tract"
+      city or town unit:
+        meaning: ICON:0008047
+        description: Data recorded by city or town.
+        annotations:
+          runtime: choice data.social_resolution "City or town"
+      county unit:
+        meaning: ICON:0008048
+        description: Data recorded by county.
+        annotations:
+          runtime: choice data.social_resolution "County"

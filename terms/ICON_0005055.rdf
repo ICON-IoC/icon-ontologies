@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005055">
+    <obo:IAO_0000115 xml:lang="en">A facility that treats raw water from reservoirs, rivers or wells to drinking water standards before it enters a distribution system. Example: the San Francisco Public Utilities Commission's Sunol Valley Water Treatment Plant, which treats water from San Antonio and Calaveras reservoirs.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Added for the Sunol Valley Water Treatment Plant, named by the Alameda Watershed Management Plan (#1115).</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:label xml:lang="en">water treatment plant</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000070"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005003"/>
+  </rdf:Description>
+</rdf:RDF>

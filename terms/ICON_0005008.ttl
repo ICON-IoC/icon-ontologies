@@ -1,0 +1,12 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0005008 a owl:Class ;
+    rdfs:label "GAP status"@en ;
+    IAO:0000115 "How a protected place is managed for biodiversity on the USGS Gap Analysis Project scale, as California's 30x30 Conserved Areas rate it; only GAP 1 and 2 count toward 30x30 (#427)."@en ;
+    rdfs:isDefinedBy iconbase:infrastructure.owl ;
+    rdfs:subClassOf IAO:0000030 .
+

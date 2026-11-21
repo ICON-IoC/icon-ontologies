@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:iconbase="https://w3id.org/icon/"
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="cb10dd88153388673b6c66adc464236046d37a7c2c9d835fea03856aeef525a6b7a">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0000106"/>
+    <rdf:rest rdf:nodeID="cb189c4c09c5185037cc7e208e876928f8f255360740d41ccbb338c0e3780de91f8"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb11ca2f2c364804d5a498077a48db009721cd093cb8b952cda5510bcc0933e6d13">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0000102"/>
+    <rdf:rest rdf:nodeID="cb198f52c2ebafbf7a29e66a8273019ec77cc971cd3e354a2e4041070a40401e62a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb135c8a86a0a08e272be86712654b0df36c60fa6eeee85d794e1f0541047855d03">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005105"/>
+    <rdf:rest rdf:nodeID="cb15d8a310676df7d17a8576984253be2d6fd71258d473ec2df43439c2ae7085994"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb15d8a310676df7d17a8576984253be2d6fd71258d473ec2df43439c2ae7085994">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0012100"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb189c4c09c5185037cc7e208e876928f8f255360740d41ccbb338c0e3780de91f8">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0012100"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb18f3186623b08d1946b5fca8293ba81eca9d35d30ad30974272583461300c1b14">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0012102"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb198f52c2ebafbf7a29e66a8273019ec77cc971cd3e354a2e4041070a40401e62a">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0012100"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb21302e3ca6eb99e9fe165e17c1af094d7b571329a905fa732fe5bb16c33575fa4">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0012100"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb7da014563ea55cb8e42b6a15713c8f850c7155e065f68d22f1dc30896b62a12a">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0004103"/>
+    <rdf:rest rdf:nodeID="cb21302e3ca6eb99e9fe165e17c1af094d7b571329a905fa732fe5bb16c33575fa4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cbe4948e28e67d52dc29515b9a3d709d6dbf4e7f5206ec3653b9d46d23684b31aa">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0012100"/>
+    <rdf:rest rdf:nodeID="cb18f3186623b08d1946b5fca8293ba81eca9d35d30ad30974272583461300c1b14"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000001">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">entity</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:label>definition</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/description">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/license">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/references">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/title">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:label>database_cross_reference</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:label>has_exact_synonym</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#broadMatch">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#narrowMatch">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000001">
+    <obo:IAO_0000115 xml:lang="en">The matching field in a metadata standard that is not published as RDF, written as the standard's name, a colon and the field's path, such as "EML 2.2: dataset/title".</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:label xml:lang="en">crosswalk</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000100">
+    <obo:IAO_0000115 xml:lang="en">A link between two records that work together or affect one another. Every more specific involvement link (leads, funds, manages, uses, is partner of and others) implies it.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:label xml:lang="en">is involved with</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000102">
+    <obo:IAO_0000115 xml:lang="en">An organization or person directs this work: the reverse of led by.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:label xml:lang="en">leads</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ICON_0000100"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000106">
+    <obo:IAO_0000115 xml:lang="en">The organization or funding source pays for this work, data or publication: the reverse of funded by and of funded through.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:label xml:lang="en">funds</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ICON_0000100"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0004103">
+    <obo:IAO_0000115 xml:lang="en">The reverse of administered by.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/programs.owl"/>
+    <rdfs:label xml:lang="en">administers</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ICON_0000100"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005105">
+    <obo:IAO_0000115 xml:lang="en">The reverse of managed by.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:label xml:lang="en">manages</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ICON_0000100"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0012000">
+    <obo:IAO_0000115 xml:lang="en">A problem, pressure or concern conservation work responds to, such as water quality, wildfire, habitat loss or a declining species. Issues are of many kinds (processes, qualities, entities), so the class sits directly under entity.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/issues.owl"/>
+    <rdfs:label xml:lang="en">conservation issue</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0012100">
+    <obo:IAO_0000115 xml:lang="en">The record responds to, studies or bears on the issue. An organization that funds, leads, administers or manages work addressing an issue addresses it too.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">The chains are the explorer's issue roll-up rules: from work to who backs it, and from a component issue to its integrated issues.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/issues.owl"/>
+    <rdfs:label xml:lang="en">addresses issue</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0012000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0012101"/>
+    <owl:propertyChainAxiom rdf:nodeID="cb10dd88153388673b6c66adc464236046d37a7c2c9d835fea03856aeef525a6b7a"/>
+    <owl:propertyChainAxiom rdf:nodeID="cb11ca2f2c364804d5a498077a48db009721cd093cb8b952cda5510bcc0933e6d13"/>
+    <owl:propertyChainAxiom rdf:nodeID="cb135c8a86a0a08e272be86712654b0df36c60fa6eeee85d794e1f0541047855d03"/>
+    <owl:propertyChainAxiom rdf:nodeID="cb7da014563ea55cb8e42b6a15713c8f850c7155e065f68d22f1dc30896b62a12a"/>
+    <owl:propertyChainAxiom rdf:nodeID="cbe4948e28e67d52dc29515b9a3d709d6dbf4e7f5206ec3653b9d46d23684b31aa"/>
+    <skos:closeMatch rdf:resource="http://www.w3.org/ns/dcat#theme"/>
+    <iconbase:ICON_0000001>DataCite 4.5: subject</iconbase:ICON_0000001>
+    <iconbase:ICON_0000001>EML 2.2: dataset/keywordSet</iconbase:ICON_0000001>
+    <iconbase:ICON_0000001>ISO 19115-1: descriptiveKeywords</iconbase:ICON_0000001>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0012101">
+    <obo:IAO_0000115 xml:lang="en">The reverse of addresses issue.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0012000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/issues.owl"/>
+    <rdfs:label xml:lang="en">is addressed by</rdfs:label>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0012100"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0012102">
+    <obo:IAO_0000115 xml:lang="en">Links a component issue to an integrated issue it is primarily part of, as the issue list of Springer et al. (2022) records: Floods has broader issues Water and Disasters. A record that addresses the component issue addresses the integrated one too.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0012000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/issues.owl"/>
+    <rdfs:label xml:lang="en">has broader issue</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0012000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0012103"/>
+    <skos:exactMatch rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0012103">
+    <obo:IAO_0000115 xml:lang="en">The reverse of has broader issue: an integrated issue's component issues.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0012000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/issues.owl"/>
+    <rdfs:label xml:lang="en">has narrower issue</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0012000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0012102"/>
+    <skos:exactMatch rdf:resource="http://www.w3.org/2004/02/skos/core#narrower"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0012104">
+    <obo:IAO_0000115 xml:lang="en">Links a component issue to an integrated issue it bears on secondarily, as the issue list of Springer et al. (2022) records. Nothing rolls up along it.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0012000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/issues.owl"/>
+    <rdfs:label xml:lang="en">is related to issue</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0012000"/>
+    <skos:exactMatch rdf:resource="http://www.w3.org/2004/02/skos/core#related"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/issues.owl">
+    <dcterms:creator>Internet of Conservation (ICON)</dcterms:creator>
+    <dcterms:description xml:lang="en">The conservation issues records address, from water quality to wildfire: one class for the issue vocabulary and the link that says a record addresses an issue.</dcterms:description>
+    <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dcterms:references rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+    <dcterms:references rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+    <dcterms:references rdf:resource="http://www.w3.org/ns/dcat"/>
+    <dcterms:title xml:lang="en">ICON Issues ontology</dcterms:title>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:comment xml:lang="en">Existing ontologies used. Built on: Basic Formal Ontology. Mapped to: DCAT 3 (W3C Data Catalog Vocabulary), SKOS.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:seeAlso rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:seeAlso rdf:resource="https://w3id.org/icon/programs.owl"/>
+    <owl:versionIRI rdf:resource="https://w3id.org/icon/releases/2026-11-21/issues.owl"/>
+    <owl:versionInfo>2026-11-21</owl:versionInfo>
+  </rdf:Description>
+</rdf:RDF>

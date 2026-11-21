@@ -1,0 +1,12 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0007017 a owl:Class ;
+    rdfs:label "regional conservation investment strategy"@en ;
+    IAO:0000115 "A voluntary, non-regulatory conservation assessment for a region, prepared by a public agency under California's Regional Conservation Investment Strategies Program (Fish and Game Code 1850 to 1861) and approved by the California Department of Fish and Wildlife for up to 10 years, that names focal species and other conservation elements, sets goals and measurable objectives for them, and lists conservation actions and habitat enhancement actions with priority locations. Its actions can earn advance mitigation credits through mitigation credit agreements, unlike a plan that binds no one to mitigation."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+

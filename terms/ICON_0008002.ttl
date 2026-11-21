@@ -1,0 +1,19 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+icon:0008002 a owl:Class ;
+    rdfs:label "database"@en ;
+    IAO:0000115 "A maintained collection of related datasets kept together under one design, usually by one organization and usually queryable. Its datasets are part of it. Example: California Natural Diversity Database."@en ;
+    rdfs:isDefinedBy iconbase:data.owl ;
+    rdfs:subClassOf IAO:0001000,
+        icon:0008000 ;
+    skos:closeMatch dcat:Dataset,
+        schema:Dataset ;
+    icon:0000001 "DataCite 4.5: resourceTypeGeneral Dataset" .
+

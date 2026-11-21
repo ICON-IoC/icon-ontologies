@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0007042">
+    <obo:IAO_0000115 xml:lang="en">A plan that inventories the invasive non-native plants or animals on a body of land, ranks the species and infestations for treatment, and sets out the control methods, monitoring and best management practices the land manager will use to contain or eradicate them. Example: the Conejo Open Space Conservation Agency's Invasive Plant Management Plan (2026), which ranks about 50 invasive plants in three priority tiers across about 13,000 acres of open space.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Added for the Conejo Open Space Conservation Agency's Invasive Plant Management Plan (#1157).</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/plans.owl"/>
+    <rdfs:label xml:lang="en">invasive species management plan</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0007001"/>
+  </rdf:Description>
+</rdf:RDF>

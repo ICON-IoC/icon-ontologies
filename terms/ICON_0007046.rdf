@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0007046">
+    <obo:IAO_0000115 xml:lang="en">A statewide plan issued by an interagency task force that a governor convenes, which folds existing state and federal plans, mandates, and reports into one strategy, sets goals with acreage and other numerical targets for a fixed period, and assigns numbered actions with deadlines to named state and federal agencies, carried out as resources allow while the task force tracks progress. Example: California's Wildfire and Forest Resilience Action Plan (2021) of the Governor's Forest Management Task Force, the first five-year plan under the state's Shared Stewardship Agreement with the USDA Forest Service.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Added for California's Wildfire and Forest Resilience Action Plan (#1185).</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/plans.owl"/>
+    <rdfs:label xml:lang="en">interagency action plan</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0007001"/>
+  </rdf:Description>
+</rdf:RDF>

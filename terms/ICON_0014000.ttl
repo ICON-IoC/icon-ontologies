@@ -1,0 +1,13 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0014000 a owl:Class ;
+    rdfs:label "indicator"@en ;
+    IAO:0000115 "Something measurable that shows progress toward a conservation goal, with the unit it is counted in, such as acres of habitat restored or miles of stream opened to fish passage. Targets and outcomes on the same indicator can be added up and compared."@en ;
+    rdfs:isDefinedBy iconbase:outcomes.owl ;
+    rdfs:subClassOf IAO:0000030 ;
+    icon:0000001 "Conservation Standards 4.0: indicator" .
+

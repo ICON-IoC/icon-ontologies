@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0007026">
+    <obo:IAO_0000115 xml:lang="en">A conservation plan for the birds of one habitat across a state or region, written by a bird conservation partnership such as Partners in Flight or a habitat joint venture, that chooses focal bird species to stand for the habitat, sets population and habitat objectives for them, names portfolio sites, and recommends habitat protection, restoration, management, monitoring, research and policy actions. It binds no one. Example: California Partners in Flight's Riparian Bird Conservation Plan (2004).</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/plans.owl"/>
+    <rdfs:label xml:lang="en">bird conservation plan</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0007001"/>
+  </rdf:Description>
+</rdf:RDF>

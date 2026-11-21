@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0010004">
+    <obo:IAO_0000115 xml:lang="en">The whole of California. A record that operates, applies or lies statewide is linked to this value rather than to every county, ecoregion, subbasin and watershed (#281).</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0010003"/>
+    <rdfs:comment xml:lang="en">The explorer's statewide rule derives the record's links to every county and ecoregion when a question needs them. OWL cannot state it, since it turns one link into many by the category of the target.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/places.owl"/>
+    <rdfs:label xml:lang="en">statewide</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

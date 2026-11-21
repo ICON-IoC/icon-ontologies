@@ -1,0 +1,19 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+icon:0011110 a owl:ObjectProperty,
+        owl:SymmetricProperty ;
+    rdfs:label "is related to habitat type"@en ;
+    IAO:0000115 "Links an MCV alliance or CMECS unit to each CWHR habitat type it may fall in, when there is more than one: a stand of it falls within one of them, but not always the same one. Nothing passes along it (#1409, #1410)."@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( icon:0011001 icon:0011004 icon:0011005 ) ] ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( icon:0011001 icon:0011004 icon:0011005 ) ] ;
+    skos:exactMatch skos:related .
+

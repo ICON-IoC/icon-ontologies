@@ -1,0 +1,17 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+icon:0006000 a owl:Class ;
+    rdfs:label "guideline or mandate"@en ;
+    IAO:0000115 "A directive that requires, allows, funds or shapes conservation work: a law, regulation, executive order, agreement, certification standard or guideline. Some bind; others only advise."@en ;
+    rdfs:isDefinedBy iconbase:mandates.owl ;
+    rdfs:subClassOf IAO:0000033 ;
+    skos:closeMatch eli:LegalResource,
+        schema:Legislation .
+

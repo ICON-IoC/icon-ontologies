@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:iconbase="https://w3id.org/icon/"
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0013000">
+    <obo:IAO_0000115 xml:lang="en">Software people use to plan, assess or track conservation work: a decision-support tool, a map viewer, a dashboard, a calculator or model, a software package or an identification key. A site whose main job is holding and serving data is a data repository, not a tool; a tool that works with such data links to it. Read from the master PPOD workbook's Tools sheet.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/tools.owl"/>
+    <rdfs:label xml:lang="en">tool</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0000013"/>
+    <skos:closeMatch rdf:resource="https://schema.org/SoftwareApplication"/>
+    <iconbase:ICON_0000002 rdf:resource="http://purl.org/dc/terms/description"/>
+  </rdf:Description>
+</rdf:RDF>

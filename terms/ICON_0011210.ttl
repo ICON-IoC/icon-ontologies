@@ -1,0 +1,14 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+icon:0011210 a owl:DatatypeProperty ;
+    rdfs:label "vegetation classification level"@en ;
+    IAO:0000115 "Where the vegetation type sits: an MCV Alliance, Semi-Natural Alliance (dominated by non-native plants) or Special Stands, or a USNVC Group, Macrogroup or Division."@en ;
+    rdfs:domain icon:0011004 ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:range xsd:string .
+

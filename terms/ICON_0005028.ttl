@@ -1,0 +1,16 @@
+@prefix ENVO: <http://purl.obolibrary.org/obo/ENVO_> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+icon:0005028 a owl:Class ;
+    rdfs:label "solar power plant"@en ;
+    IAO:0000115 "A power plant that makes electricity from sunlight."@en ;
+    rdfs:isDefinedBy iconbase:infrastructure.owl ;
+    rdfs:subClassOf ENVO:00002214,
+        icon:0005004 ;
+    skos:closeMatch ENVO:01000867 .
+

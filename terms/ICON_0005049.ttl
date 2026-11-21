@@ -1,0 +1,13 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0005049 a owl:Class ;
+    rdfs:label "fish hatchery"@en ;
+    IAO:0000115 "A facility that spawns and rears fish, mostly salmon and trout, for release into rivers and lakes to supply fisheries or to make up for spawning habitat a dam has blocked."@en ;
+    rdfs:comment "Added for the CDFW hatcheries CalFish reports on: Feather River, Nimbus and Mokelumne River (#781)."@en ;
+    rdfs:isDefinedBy iconbase:infrastructure.owl ;
+    rdfs:subClassOf icon:0005032 .
+

@@ -1,0 +1,17 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+icon:0011232 a owl:DatatypeProperty ;
+    rdfs:label "GET IRI"@en ;
+    IAO:0000115 "The unit's permanent identifier in the IUCN GET SKOS vocabulary, such as https://w3id.org/iucn-get/EFG_T4_4."@en ;
+    rdfs:domain icon:0011006 ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:range xsd:anyURI ;
+    skos:closeMatch dcterms:identifier .
+

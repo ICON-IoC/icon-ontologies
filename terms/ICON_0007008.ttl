@@ -1,0 +1,12 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0007008 a owl:Class ;
+    rdfs:label "national marine sanctuary management plan"@en ;
+    IAO:0000115 "A conservation plan for a national marine sanctuary, issued by NOAA's Office of National Marine Sanctuaries and reviewed periodically under the National Marine Sanctuaries Act, that sets out action plans of strategies and activities for the sanctuary's resource issues and programs, often with revised regulations."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+

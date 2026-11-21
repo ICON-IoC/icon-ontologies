@@ -1,0 +1,17 @@
+@prefix ENVO: <http://purl.obolibrary.org/obo/ENVO_> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+icon:0010005 a owl:Class ;
+    rdfs:label "electoral district"@en ;
+    IAO:0000115 "An area whose voters elect an official to a legislature or a county board: a California State Assembly, State Senate, congressional or county supervisorial district (#1432)."@en ;
+    rdfs:comment "A district is linked to the counties, ecoregion sections, subbasins, watersheds and other districts it overlaps, and to the places it holds part of, by intersects."@en ;
+    rdfs:isDefinedBy iconbase:places.owl ;
+    rdfs:subClassOf ENVO:00000004 ;
+    skos:closeMatch schema:AdministrativeArea .
+

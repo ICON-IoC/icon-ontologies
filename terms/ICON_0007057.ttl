@@ -1,0 +1,13 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0007057 a owl:Class ;
+    rdfs:label "statewide pollution strategy"@en ;
+    IAO:0000115 "A plan a state agency adopts because a statute requires it, to reduce one kind of pollution across the state: it reviews the sources and pathways of the pollutant, lays out a phased roadmap of solutions such as prevention at the source and interventions on pathways like stormwater, sets research priorities, and calls for further work with the sectors involved. It guides the agency's funding and recommendations but binds no one. Example: California's Statewide Microplastics Strategy (2022), which the Ocean Protection Council adopted under SB 1263 (2018)."@en ;
+    rdfs:comment "Added for California's Statewide Microplastics Strategy (#1351)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+

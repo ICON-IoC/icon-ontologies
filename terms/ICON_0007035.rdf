@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0007035">
+    <obo:IAO_0000115 xml:lang="en">A conservation plan for one group of birds across North America, accepted by the national governments of Canada, the United States and Mexico or adopted by a continental partnership, that sets continental population, habitat and supporter goals and objectives and recommends how its governance bodies, science teams and partners should pursue them. Regional Migratory Bird Joint Ventures step its continental objectives down to their regions in joint venture implementation plans. It binds no one. Example: the North American Waterfowl Management Plan (1986; 2024 Update).</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/plans.owl"/>
+    <rdfs:label xml:lang="en">continental bird conservation plan</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0007001"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,14 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+icon:0011202 a owl:DatatypeProperty ;
+    rdfs:label "informal group"@en ;
+    IAO:0000115 "NatureServe's informal taxonomy path for the taxon, such as Animals | Vertebrates | Birds."@en ;
+    rdfs:domain icon:0011000 ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:range xsd:string .
+

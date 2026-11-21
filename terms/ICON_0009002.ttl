@@ -1,0 +1,22 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+icon:0009002 a owl:Class ;
+    rdfs:label "technical report"@en ;
+    IAO:0000115 "A report an agency, organization or research group issues itself on a study, a monitoring program, an assessment or a project's results, usually in a numbered series. It may or may not have been reviewed."@en ;
+    rdfs:isDefinedBy iconbase:publications.owl ;
+    rdfs:subClassOf IAO:0000088,
+        icon:0009000 ;
+    skos:closeMatch bibo:Report,
+        fabio:TechnicalReport,
+        schema:Report ;
+    icon:0000001 "Crossref: report",
+        "DataCite 4.5: resourceTypeGeneral Report" .
+

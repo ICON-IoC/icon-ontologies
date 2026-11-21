@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:iconbase="https://w3id.org/icon/"
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0011006">
+    <obo:IAO_0000115 xml:lang="en">A unit of the IUCN Global Ecosystem Typology 2.0 (Keith et al. 2022), the global classification of ecosystems by how they function: one of its 11 realms (such as Terrestrial), 25 biomes (such as Savannas and grasslands biome) or 110 ecosystem functional groups (such as T4.4 Temperate woodlands), identified by its GET code and IRI (#1411).</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Records are not tagged with GET. Every CWHR, MCV and CMECS term has the GET units it falls in as IUCN ecosystem groups, so a record's habitat types lead to them. Within GET, a functional group has its biome, and a biome its realm, as broader habitat types.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/biodiversity.owl"/>
+    <rdfs:label xml:lang="en">IUCN ecosystem type</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000739"/>
+    <iconbase:ICON_0000002 rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+    <iconbase:ICON_0000002 rdf:resource="http://www.w3.org/2004/02/skos/core#note"/>
+    <iconbase:ICON_0000002 rdf:resource="https://w3id.org/icon/ICON_0011230"/>
+    <iconbase:ICON_0000002 rdf:resource="https://w3id.org/icon/ICON_0011231"/>
+    <iconbase:ICON_0000002 rdf:resource="https://w3id.org/icon/ICON_0011232"/>
+  </rdf:Description>
+</rdf:RDF>

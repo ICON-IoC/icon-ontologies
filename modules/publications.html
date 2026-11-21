@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ICON Papers and reports ontology</title>
+<link rel="icon" href="../brand/icon-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+:root {
+  --ground: #f1f4ef; --surface: #ffffff; --ink: #17221d; --muted: #5a6a62; --rule: #d3dbd3;
+  --accent: #2e6a4e; --accent-soft: #e3eee7;
+  --display: "Newsreader", Georgia, serif;
+  --body: "Instrument Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground: #0f1512; --surface: #17201b; --ink: #e3ebe6; --muted: #93a39a; --rule: #2b3730;
+    --accent: #74c39b; --accent-soft: #1d3127; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --ground: #0f1512; --surface: #17201b; --ink: #e3ebe6; --muted: #93a39a; --rule: #2b3730;
+  --accent: #74c39b; --accent-soft: #1d3127; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--ground); color: var(--ink); font: 15px/1.6 var(--body); }
+.page { max-width: 1040px; margin: 0 auto; padding: 24px 16px 56px; display: grid; gap: 24px; }
+header.top { display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 13px; }
+header.top nav { display: flex; gap: 16px; flex-wrap: wrap; }
+.logo { height: 34px; width: auto; }
+.logo.dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .logo.light { display: none; }
+  :root:not([data-theme="light"]) .logo.dark { display: block; }
+}
+:root[data-theme="dark"] .logo.light { display: none; }
+:root[data-theme="dark"] .logo.dark { display: block; }
+h1 { font: 600 clamp(28px, 4vw, 40px)/1.15 var(--display); margin: 0; text-wrap: balance; }
+h2 { font: 600 22px/1.25 var(--display); margin: 0 0 8px; }
+p { margin: 0 0 10px; max-width: 75ch; }
+a { color: var(--accent); }
+code { font: 0.88em var(--mono); overflow-wrap: anywhere; }
+.muted { color: var(--muted); }
+.kicker { font: 600 11px var(--body); letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+section.card { background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; padding: 18px 20px; min-width: 0; }
+.facts { display: flex; flex-wrap: wrap; gap: 8px 28px; font-variant-numeric: tabular-nums; }
+.facts div { display: grid; }
+.facts b { font: 600 22px/1.1 var(--display); }
+.facts span { font-size: 12px; color: var(--muted); }
+.scroll { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { text-align: left; vertical-align: top; padding: 8px 10px 8px 0; border-bottom: 1px solid var(--rule); }
+th { font-weight: 600; font-size: 12px; color: var(--muted); }
+td.files { white-space: nowrap; }
+td.files a + a { margin-left: 8px; }
+dl.facts-list { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 6px 16px; margin: 0; }
+dl.facts-list dt { color: var(--muted); font-size: 13px; padding-top: 1px; }
+dl.facts-list dd { margin: 0; }
+.button { display: inline-block; padding: 8px 14px; border-radius: 8px; background: var(--accent); color: var(--surface); text-decoration: none; font-weight: 600; }
+pre { background: var(--accent-soft); padding: 12px 14px; border-radius: 8px; overflow-x: auto; font: 13px/1.5 var(--mono); margin: 0 0 10px; white-space: pre-wrap; }
+footer { font-size: 13px; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="top">
+    <nav><a href=".././">ICON ontologies</a><a href="../map.html">Map</a><a href="https://github.com/ICON-IoC/icon-ontologies">Source files</a></nav>
+    <a href="https://icon-ioc.com" aria-label="ICON">
+      <img class="logo light" alt="ICON" src="../brand/icon-lockup.png">
+      <img class="logo dark" alt="ICON" src="../brand/icon-wordmark-reversed-cropped.png">
+    </a>
+  </header>
+
+  <section>
+    <div class="kicker">record module</div>
+    <h1>ICON Papers and reports ontology</h1>
+    <p>Peer-reviewed papers and technical reports: authors, publishers and sponsors, what a work describes, which data it uses, which works it cites, and where its study was done.</p>
+    <dl class="facts-list">
+      <dt>Ontology IRI</dt><dd><code>https://w3id.org/icon/publications.owl</code></dd>
+      <dt>This release</dt><dd><code>https://w3id.org/icon/releases/2026-11-21/publications.owl</code></dd>
+      <dt>Own term IDs</dt><dd>ICON:0009000 to ICON:0009999</dd>
+      <dt>Files</dt><dd><a href="../icon-publications.ttl">Turtle</a>, <a href="../icon-publications.owl">RDF/XML</a>, <a href="../linkml/icon-publications.yaml">LinkML</a>, <a href="../guides/publications.md">guide (Markdown)</a></dd>
+      
+      <dt>Reused</dt><dd>bibo, dcterms, schema</dd>
+      
+      <dt>Built on</dt><dd>IAO, OBI, dcterms</dd>
+      
+      <dt>Mapped to</dt><dd>bibo, cito, dcterms, fabio, schema</dd>
+      
+    </dl>
+  </section>
+
+  <section class="card">
+    <h2>Terms</h2>
+    <p class="muted">Reused terms keep their own IDs and link to their source ontology.</p>
+    <div class="scroll">
+    <table>
+      <thead><tr><th>Term</th><th>Kind</th><th>ID</th><th>Definition</th></tr></thead>
+      <tbody>
+      
+        <tr id="ICON_0009000">
+          <td><a href="../terms/ICON_0009000.html">paper or report</a></td>
+          <td>class</td>
+          <td><code>ICON:0009000</code></td>
+          <td>A written work that reports research, monitoring or assessment: a peer-reviewed paper or a technical report. Shown in the explorer as Papers &amp; reports.</td>
+        </tr>
+      
+        <tr id="ICON_0009001">
+          <td><a href="../terms/ICON_0009001.html">peer-reviewed paper</a></td>
+          <td>class</td>
+          <td><code>ICON:0009001</code></td>
+          <td>An article that independent experts reviewed before a journal or conference published it. A work counts as one only if its journal certainly peer-reviewed it.</td>
+        </tr>
+      
+        <tr id="ICON_0009002">
+          <td><a href="../terms/ICON_0009002.html">technical report</a></td>
+          <td>class</td>
+          <td><code>ICON:0009002</code></td>
+          <td>A report an agency, organization or research group issues itself on a study, a monitoring program, an assessment or a project&#39;s results, usually in a numbered series. It may or may not have been reviewed.</td>
+        </tr>
+      
+        <tr id="ICON_0009010">
+          <td><a href="../terms/ICON_0009010.html">publication availability</a></td>
+          <td>class</td>
+          <td><code>ICON:0009010</code></td>
+          <td>Who can read a paper or report. Values follow the open-access status Unpaywall and Crossref report.</td>
+        </tr>
+      
+        <tr id="ICON_0009100">
+          <td><a href="../terms/ICON_0009100.html">has publication type</a></td>
+          <td>relation</td>
+          <td><code>ICON:0009100</code></td>
+          <td>Links a paper or report to the class it belongs to: peer-reviewed paper or technical report. The explorer&#39;s way of stating its class.</td>
+        </tr>
+      
+        <tr id="ICON_0009101">
+          <td><a href="../terms/ICON_0009101.html">is publication type of</a></td>
+          <td>relation</td>
+          <td><code>ICON:0009101</code></td>
+          <td>The reverse of has publication type.</td>
+        </tr>
+      
+        <tr id="ICON_0009102">
+          <td><a href="../terms/ICON_0009102.html">authored by</a></td>
+          <td>relation</td>
+          <td><code>ICON:0009102</code></td>
+          <td>A person or organization that wrote the work. The full author list as printed is the authors attribute, since most authors have no record of their own.</td>
+        </tr>
+      
+        <tr id="ICON_0009103">
+          <td><a href="../terms/ICON_0009103.html">authored</a></td>
+          <td>relation</td>
+          <td><code>ICON:0009103</code></td>
+          <td>The reverse of authored by.</td>
+        </tr>
+      
+        <tr id="ICON_0009104">
+          <td><a href="../terms/ICON_0009104.html">commissioned by</a></td>
+          <td>relation</td>
+          <td><code>ICON:0009104</code></td>
+          <td>The organization a technical report was prepared for, when someone else wrote it, as a consultant&#39;s report for an agency.</td>
+        </tr>
+      
+        <tr id="ICON_0009105">
+          <td><a href="../terms/ICON_0009105.html">commissioned</a></td>
+          <td>relation</td>
+          <td><code>ICON:0009105</code></td>
+          <td>The reverse of commissioned by.</td>
+        </tr>
+      
+        <tr id="ICON_0009106">
+          <td><a href="../terms/ICON_0009106.html">describes</a></td>
+          <td>relation</td>
+          <td><code>ICON:0009106</code></td>
+          <td>The work is about this project, program, organization or data resource: it reports, evaluates or documents it. A data paper describes its dataset.</td>
+        </tr>
+      
+        <tr id="ICON_0009107">
+          <td><a href="../terms/ICON_0009107.html">is described by</a></td>
+          <td>relation</td>
+          <td><code>ICON:0009107</code></td>
+          <td>The reverse of describes.</td>
+        </tr>
+      
+        <tr id="ICON_0009108">
+          <td><a href="../terms/ICON_0009108.html">uses data from</a></td>
+          <td>relation</td>
+          <td><code>ICON:0009108</code></td>
+          <td>The work&#39;s analysis, or the tool, draws on this dataset, database or repository. For a tool, the workbook&#39;s inDataset column.</td>
+        </tr>
+      
+        <tr id="ICON_0009109">
+          <td><a href="../terms/ICON_0009109.html">provides data for</a></td>
+          <td>relation</td>
+          <td><code>ICON:0009109</code></td>
+          <td>The reverse of uses data from.</td>
+        </tr>
+      
+        <tr id="ICON_0009110">
+          <td><a href="../terms/ICON_0009110.html">cites</a></td>
+          <td>relation</td>
+          <td><code>ICON:0009110</code></td>
+          <td>The work cites another paper or report in the graph.</td>
+        </tr>
+      
+        <tr id="ICON_0009111">
+          <td><a href="../terms/ICON_0009111.html">is cited by</a></td>
+          <td>relation</td>
+          <td><code>ICON:0009111</code></td>
+          <td>The reverse of cites.</td>
+        </tr>
+      
+        <tr id="ICON_0009112">
+          <td><a href="../terms/ICON_0009112.html">studied at</a></td>
+          <td>relation</td>
+          <td><code>ICON:0009112</code></td>
+          <td>A place where the work&#39;s field study or monitoring was done, such as a reserve, a creek or a dam.</td>
+        </tr>
+      
+        <tr id="ICON_0009113">
+          <td><a href="../terms/ICON_0009113.html">is study site of</a></td>
+          <td>relation</td>
+          <td><code>ICON:0009113</code></td>
+          <td>The reverse of studied at.</td>
+        </tr>
+      
+        <tr id="ICON_0009200">
+          <td><a href="../terms/ICON_0009200.html">authors</a></td>
+          <td>attribute</td>
+          <td><code>ICON:0009200</code></td>
+          <td>The author list as printed on the work: Smith, J., Lee, K. and Ortiz, M. Public bibliographic information, not contact details.</td>
+        </tr>
+      
+        <tr id="ICON_0009201">
+          <td><a href="../terms/ICON_0009201.html">published in</a></td>
+          <td>attribute</td>
+          <td><code>ICON:0009201</code></td>
+          <td>The journal a paper appeared in, or the series a report belongs to, by name: Conservation Biology, USGS Open-File Report. Kept as text: journals are not records in the graph.</td>
+        </tr>
+      
+        <tr id="ICON_0009202">
+          <td><a href="../terms/ICON_0009202.html">report number</a></td>
+          <td>attribute</td>
+          <td><code>ICON:0009202</code></td>
+          <td>A report&#39;s number in its series, such as 2019-1123.</td>
+        </tr>
+      
+        <tr id="bibo_volume">
+          <td><a href="http://purl.org/ontology/bibo/volume">volume</a></td>
+          <td>attribute</td>
+          <td><code>bibo:volume</code></td>
+          <td></td>
+        </tr>
+      
+        <tr id="bibo_issue">
+          <td><a href="http://purl.org/ontology/bibo/issue">issue</a></td>
+          <td>attribute</td>
+          <td><code>bibo:issue</code></td>
+          <td></td>
+        </tr>
+      
+        <tr id="bibo_pages">
+          <td><a href="http://purl.org/ontology/bibo/pages">pages</a></td>
+          <td>attribute</td>
+          <td><code>bibo:pages</code></td>
+          <td></td>
+        </tr>
+      
+        <tr id="bibo_doi">
+          <td><a href="http://purl.org/ontology/bibo/doi">doi</a></td>
+          <td>attribute</td>
+          <td><code>bibo:doi</code></td>
+          <td>Written without the https://doi.org/ prefix.</td>
+        </tr>
+      
+        <tr id="dcterms_abstract">
+          <td><a href="http://purl.org/dc/terms/abstract">Abstract</a></td>
+          <td>attribute</td>
+          <td><code>dcterms:abstract</code></td>
+          <td></td>
+        </tr>
+      
+        <tr id="schema_keywords">
+          <td><a href="https://schema.org/keywords">keywords</a></td>
+          <td>attribute</td>
+          <td><code>schema:keywords</code></td>
+          <td></td>
+        </tr>
+      
+        <tr id="ICON_0009011">
+          <td><a href="../terms/ICON_0009011.html">open access publication</a></td>
+          <td>value</td>
+          <td><code>ICON:0009011</code></td>
+          <td>Anyone can read it free from the publisher or a repository.</td>
+        </tr>
+      
+        <tr id="ICON_0009012">
+          <td><a href="../terms/ICON_0009012.html">free to read publication</a></td>
+          <td>value</td>
+          <td><code>ICON:0009012</code></td>
+          <td>Free to read on the publisher&#39;s site but without an open license.</td>
+        </tr>
+      
+        <tr id="ICON_0009013">
+          <td><a href="../terms/ICON_0009013.html">subscription or purchase publication</a></td>
+          <td>value</td>
+          <td><code>ICON:0009013</code></td>
+          <td>Behind a journal paywall.</td>
+        </tr>
+      
+        <tr id="ICON_0009014">
+          <td><a href="../terms/ICON_0009014.html">publication on request</a></td>
+          <td>value</td>
+          <td><code>ICON:0009014</code></td>
+          <td>The authors or issuing agency send it when asked.</td>
+        </tr>
+      
+        <tr id="ICON_0009015">
+          <td><a href="../terms/ICON_0009015.html">publication not public</a></td>
+          <td>value</td>
+          <td><code>ICON:0009015</code></td>
+          <td>Internal or restricted.</td>
+        </tr>
+      
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <footer>
+    <p>ICON ontologies, version 2026-11-21. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: attribute as "Internet of Conservation, Information for the Conservation of Nature (ICON), CC BY 4.0". The ICON names and logos are not covered by that license.</p>
+  </footer>
+</div>
+</body>
+</html>

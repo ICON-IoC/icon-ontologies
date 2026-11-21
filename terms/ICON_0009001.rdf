@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:iconbase="https://w3id.org/icon/"
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0009001">
+    <obo:IAO_0000115 xml:lang="en">An article that independent experts reviewed before a journal or conference published it. A work counts as one only if its journal certainly peer-reviewed it.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/publications.owl"/>
+    <rdfs:label xml:lang="en">peer-reviewed paper</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000013"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0009000"/>
+    <skos:closeMatch rdf:resource="http://purl.org/ontology/bibo/AcademicArticle"/>
+    <skos:closeMatch rdf:resource="http://purl.org/spar/fabio/JournalArticle"/>
+    <skos:closeMatch rdf:resource="https://schema.org/ScholarlyArticle"/>
+    <iconbase:ICON_0000001>Crossref: journal-article</iconbase:ICON_0000001>
+    <iconbase:ICON_0000001>DataCite 4.5: resourceTypeGeneral JournalArticle</iconbase:ICON_0000001>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,639 @@
+# ICON Taxa and habitats ontology, as a LinkML schema.
+# Built by `ioc-ontologies` from ontology/src/biodiversity.terms; edit that, not this file.
+id: https://w3id.org/icon/linkml/icon-biodiversity
+name: icon-biodiversity
+prefixes:
+  linkml: https://w3id.org/linkml/
+  ICON: https://w3id.org/icon/ICON_
+  dcterms: http://purl.org/dc/terms/
+  dwc: http://rs.tdwg.org/dwc/terms/
+  skos: http://www.w3.org/2004/02/skos/core#
+title: ICON Taxa and habitats ontology
+description: 'The living things and habitats records concern: taxa (species and groups, identified by
+  NatureServe) habitat types (California Wildlife Habitat Relationships), vegetation types (Manual of
+  California Vegetation alliances under the US National Vegetation Classification) coastal and marine
+  habitat types (CMECS) and the IUCN Global Ecosystem Typology, the links between those classifications,
+  and the links that say a record concerns a taxon or a habitat type, or that a place is habitat for a
+  taxon.'
+version: '2026-11-21'
+license: https://creativecommons.org/licenses/by/4.0/
+default_prefix: ICON
+default_range: string
+see_also:
+- https://w3id.org/icon/biodiversity.owl
+imports:
+- linkml:types
+- icon-external
+classes:
+  Taxon:
+    class_uri: ICON:0011000
+    title: taxon
+    description: A species or a group of species that records concern, identified by its NatureServe element
+      where it has one. Groups (salmonids, bats) are taxa at a higher rank or informal groupings of them.
+    close_mappings:
+    - dwc:Taxon
+    annotations:
+      runtime: vocab Taxa
+    is_a: TaxonAsCollectionOfOrganisms
+    slots:
+    - scientific_name
+    - vernacular_name
+    - taxon_id
+    - natureserve_global_rank
+    - taxon_kind
+    - informal_group
+    - group_level
+    - group_value
+    - genera
+  CWHRHabitatType:
+    class_uri: ICON:0011001
+    title: CWHR habitat type
+    description: A habitat type of the California Wildlife Habitat Relationships system, the state's standard
+      classification of wildlife habitats (59 types, such as Valley Foothill Riparian or Blue Oak Woodland),
+      identified by its CWHR code.
+    annotations:
+      runtime: vocab Habitat
+    is_a: Habitat
+  VegetationType:
+    class_uri: ICON:0011004
+    title: vegetation type
+    description: 'A unit of vegetation: an alliance of the Manual of California Vegetation, as CDFW''s
+      California Natural Communities List names it (such as Valley oak woodland and forest, or Fremont''s
+      goldfields - Downingia vernal pools), or a group, macrogroup or division of the US National Vegetation
+      Classification above it (#1409).'
+    comments:
+    - Finer than a CWHR habitat type. An alliance has its USNVC group as a broader habitat type, and the
+      CWHR type CNPS places it in when there is one; where CNPS names several, it is related to each.
+    annotations:
+      runtime: vocab Vegetation
+    is_a: Habitat
+    slots:
+    - scientific_name
+    - vegetation_classification_level
+    - cdfw_cacode
+    - life_form
+    - natural_community_global_rank
+    - natural_community_state_rank
+    - sensitive_natural_community
+  CoastalAndMarineHabitatType:
+    class_uri: ICON:0011005
+    title: coastal and marine habitat type
+    description: 'A unit of the Coastal and Marine Ecological Classification Standard (CMECS, FGDC-STD-018-2012):
+      a system, subsystem or tidal zone of its Aquatic Setting (such as Estuarine Coastal Intertidal Tidal
+      Zone), or a biotic setting, class, subclass or group of its Biotic Component (such as Seagrass Bed),
+      identified by its CMECS ID (#1410).'
+    comments:
+    - Finer than CWHR for estuaries, shores and the ocean. A unit has the unit above it as a broader habitat
+      type; units are crosswalked to CWHR by hand in reference/cmecs-cwhr.csv, as broader where one CWHR
+      type matches and related where several do.
+    annotations:
+      runtime: vocab CMECS
+    is_a: Habitat
+    slots:
+    - cmecs_classification_level
+    - cmecs_code
+    - cmecs_id
+    - definition
+  IUCNEcosystemType:
+    class_uri: ICON:0011006
+    title: IUCN ecosystem type
+    description: 'A unit of the IUCN Global Ecosystem Typology 2.0 (Keith et al. 2022), the global classification
+      of ecosystems by how they function: one of its 11 realms (such as Terrestrial), 25 biomes (such
+      as Savannas and grasslands biome) or 110 ecosystem functional groups (such as T4.4 Temperate woodlands),
+      identified by its GET code and IRI (#1411).'
+    comments:
+    - Records are not tagged with GET. Every CWHR, MCV and CMECS term has the GET units it falls in as
+      IUCN ecosystem groups, so a record's habitat types lead to them. Within GET, a functional group
+      has its biome, and a biome its realm, as broader habitat types.
+    annotations:
+      runtime: vocab GET
+    is_a: Habitat
+    slots:
+    - get_classification_level
+    - get_code
+    - get_iri
+    - definition
+    - note
+  InvasiveRating:
+    class_uri: ICON:0011002
+    title: invasive rating
+    description: 'How invasive a non-native species is in California: for plants, the California Invasive
+      Plant Council (Cal-IPC) rating in its Inventory, High, Moderate, Limited, or Watch for a plant at
+      high risk of becoming invasive (#410); for animals, listing by the California Department of Fish
+      and Wildlife (CDFW), which does not rate them (#435).'
+    annotations:
+      runtime: vocab InvasiveRating
+    is_a: InformationContentEntity
+  CaliforniaRarePlantRank:
+    class_uri: ICON:0011003
+    title: California Rare Plant Rank
+    description: The California Native Plant Society's rank of how rare a plant, bryophyte, or lichen
+      is in California, from 1A (presumed extirpated or extinct) to 4 (a watch list of limited distribution),
+      assigned with CDFW's California Natural Diversity Database and printed in its Special Vascular Plants,
+      Bryophytes, and Lichens List. The decimal threat rank that follows it (.1 seriously, .2 moderately,
+      .3 not very threatened) is kept as the link's source note (#1210).
+    annotations:
+      runtime: vocab RarePlantRank
+    is_a: InformationContentEntity
+slots:
+  concerns_taxon:
+    slot_uri: ICON:0011100
+    title: concerns taxon
+    description: The record is about, works for or affects the species or group.
+    close_mappings:
+    - dcterms:subject
+    annotations:
+      crosswalk: 'EML 2.2: coverage/taxonomicCoverage'
+      runtime: phrase "concerns taxon"
+    range: Taxon
+    inverse: is_taxon_of
+    multivalued: true
+  is_taxon_of:
+    slot_uri: ICON:0011101
+    title: is taxon of
+    description: The reverse of concerns taxon.
+    annotations:
+      runtime: phrase "is taxon of"
+    domain: Taxon
+    domain_of:
+    - Taxon
+    range: uriorcurie
+    inverse: concerns_taxon
+    multivalued: true
+  has_habitat_type:
+    slot_uri: ICON:0011102
+    title: has habitat type
+    description: A CWHR habitat type (#169), vegetation type (#1409) or coastal and marine habitat type
+      (#1410) the record covers, works in or affects.
+    close_mappings:
+    - dcterms:subject
+    annotations:
+      runtime: phrase "has habitat type"
+      holds_over_chain: has_habitat_type | has_broader_habitat_type
+    any_of:
+    - range: CWHRHabitatType
+    - range: VegetationType
+    - range: CoastalAndMarineHabitatType
+    range: uriorcurie
+    inverse: is_habitat_type_of
+    multivalued: true
+  is_habitat_type_of:
+    slot_uri: ICON:0011103
+    title: is habitat type of
+    description: The reverse of has habitat type.
+    annotations:
+      runtime: phrase "is habitat type of"
+    domain_of:
+    - CWHRHabitatType
+    - VegetationType
+    - CoastalAndMarineHabitatType
+    range: uriorcurie
+    inverse: has_habitat_type
+    multivalued: true
+  has_broader_habitat_type:
+    slot_uri: ICON:0011108
+    title: has broader habitat type
+    description: 'Links a habitat or vegetation type to a broader one that contains it: an MCV alliance
+      to its USNVC group, a group to its macrogroup, a CMECS unit to the unit above it, a GET functional
+      group to its biome and a biome to its realm, and an alliance or CMECS unit to the one CWHR habitat
+      type it falls in. A record that has the narrower type has the broader one too (#1409, #1410, #1411).'
+    exact_mappings:
+    - skos:broader
+    annotations:
+      runtime: phrase "has broader habitat type"
+    domain_of:
+    - CWHRHabitatType
+    - VegetationType
+    - CoastalAndMarineHabitatType
+    - IUCNEcosystemType
+    any_of:
+    - range: CWHRHabitatType
+    - range: VegetationType
+    - range: CoastalAndMarineHabitatType
+    - range: IUCNEcosystemType
+    range: uriorcurie
+    inverse: has_narrower_habitat_type
+    multivalued: true
+  has_narrower_habitat_type:
+    slot_uri: ICON:0011109
+    title: has narrower habitat type
+    description: The reverse of has broader habitat type.
+    exact_mappings:
+    - skos:narrower
+    annotations:
+      runtime: phrase "has narrower habitat type"
+    domain_of:
+    - CWHRHabitatType
+    - VegetationType
+    - CoastalAndMarineHabitatType
+    - IUCNEcosystemType
+    any_of:
+    - range: CWHRHabitatType
+    - range: VegetationType
+    - range: CoastalAndMarineHabitatType
+    - range: IUCNEcosystemType
+    range: uriorcurie
+    inverse: has_broader_habitat_type
+    multivalued: true
+  is_related_to_habitat_type:
+    slot_uri: ICON:0011110
+    title: is related to habitat type
+    description: 'Links an MCV alliance or CMECS unit to each CWHR habitat type it may fall in, when there
+      is more than one: a stand of it falls within one of them, but not always the same one. Nothing passes
+      along it (#1409, #1410).'
+    exact_mappings:
+    - skos:related
+    annotations:
+      runtime: phrase "is related to habitat type"
+    domain_of:
+    - CWHRHabitatType
+    - VegetationType
+    - CoastalAndMarineHabitatType
+    any_of:
+    - range: CWHRHabitatType
+    - range: VegetationType
+    - range: CoastalAndMarineHabitatType
+    range: uriorcurie
+    symmetric: true
+    multivalued: true
+  has_iucn_ecosystem_group:
+    slot_uri: ICON:0011111
+    title: has IUCN ecosystem group
+    description: 'Links a CWHR, MCV or CMECS habitat type to the IUCN GET ecosystem functional groups
+      it falls in, or to the biome or realm when it spans several of their groups. Mapped by hand in reference/get-crosswalk.csv
+      at the broadest unit where the match holds and stated on every unit below it. Nothing passes along
+      it: records are not tagged with GET (#1411).'
+    exact_mappings:
+    - skos:broadMatch
+    annotations:
+      runtime: phrase "has IUCN ecosystem group"
+    domain_of:
+    - CWHRHabitatType
+    - VegetationType
+    - CoastalAndMarineHabitatType
+    range: IUCNEcosystemType
+    inverse: is_iucn_ecosystem_group_of
+    multivalued: true
+  is_iucn_ecosystem_group_of:
+    slot_uri: ICON:0011112
+    title: is IUCN ecosystem group of
+    description: The reverse of has IUCN ecosystem group.
+    exact_mappings:
+    - skos:narrowMatch
+    annotations:
+      runtime: phrase "is IUCN ecosystem group of"
+    domain: IUCNEcosystemType
+    domain_of:
+    - IUCNEcosystemType
+    any_of:
+    - range: CWHRHabitatType
+    - range: VegetationType
+    - range: CoastalAndMarineHabitatType
+    range: uriorcurie
+    inverse: has_iucn_ecosystem_group
+    multivalued: true
+  has_invasive_rating:
+    slot_uri: ICON:0011104
+    title: has invasive rating
+    description: The taxon is invasive in California, or at risk of becoming so, with this Cal-IPC rating
+      (#410) or CDFW listing (#435).
+    annotations:
+      runtime: phrase "has invasive rating"
+    domain: Taxon
+    domain_of:
+    - Taxon
+    range: InvasiveRatingEnum
+    inverse: is_invasive_rating_of
+    multivalued: true
+  is_invasive_rating_of:
+    slot_uri: ICON:0011105
+    title: is invasive rating of
+    description: The reverse of has invasive rating.
+    annotations:
+      runtime: phrase "is invasive rating of"
+    domain: InvasiveRating
+    domain_of:
+    - InvasiveRating
+    range: Taxon
+    inverse: has_invasive_rating
+    multivalued: true
+  has_rare_plant_rank:
+    slot_uri: ICON:0011106
+    title: has rare plant rank
+    description: The plant, bryophyte, or lichen has this California Rare Plant Rank in CDFW's Special
+      Vascular Plants, Bryophytes, and Lichens List (#1210).
+    annotations:
+      runtime: phrase "has rare plant rank"
+    domain: Taxon
+    domain_of:
+    - Taxon
+    range: CaliforniaRarePlantRankEnum
+    inverse: is_rare_plant_rank_of
+    multivalued: true
+  is_rare_plant_rank_of:
+    slot_uri: ICON:0011107
+    title: is rare plant rank of
+    description: The reverse of has rare plant rank.
+    annotations:
+      runtime: phrase "is rare plant rank of"
+    domain: CaliforniaRarePlantRank
+    domain_of:
+    - CaliforniaRarePlantRank
+    range: Taxon
+    inverse: has_rare_plant_rank
+    multivalued: true
+  natureserve_global_rank:
+    slot_uri: ICON:0011200
+    title: NatureServe global rank
+    description: The taxon's NatureServe conservation status across its whole range, G1 (critically imperiled)
+      to G5 (secure), with T ranks for subspecies.
+    annotations:
+      runtime: field taxon.g_rank
+    domain: Taxon
+    domain_of:
+    - Taxon
+    range: string
+    multivalued: true
+  taxon_kind:
+    slot_uri: ICON:0011201
+    title: taxon kind
+    description: Whether the term is a single NatureServe taxon (taxon), a group of taxa (group), or matched
+      nothing in NatureServe (none).
+    annotations:
+      runtime: field taxon.kind
+    domain: Taxon
+    domain_of:
+    - Taxon
+    range: string
+    multivalued: true
+  informal_group:
+    slot_uri: ICON:0011202
+    title: informal group
+    description: NatureServe's informal taxonomy path for the taxon, such as Animals | Vertebrates | Birds.
+    annotations:
+      runtime: field taxon.informal_group
+    domain: Taxon
+    domain_of:
+    - Taxon
+    range: string
+    multivalued: true
+  group_level:
+    slot_uri: ICON:0011203
+    title: group level
+    description: 'For a group, what defines it: NatureServe''s informal taxonomy, or a rank of its scientific
+      taxonomy (kingdom, phylum, class, order, family, subfamily, genus).'
+    annotations:
+      runtime: field taxon.group_level
+    domain: Taxon
+    domain_of:
+    - Taxon
+    range: string
+    multivalued: true
+  group_value:
+    slot_uri: ICON:0011204
+    title: group value
+    description: For a group, the name at its group level, such as Salmoninae for a subfamily group.
+    annotations:
+      runtime: field taxon.group_value
+    domain: Taxon
+    domain_of:
+    - Taxon
+    range: string
+    multivalued: true
+  genera:
+    slot_uri: ICON:0011205
+    title: genera
+    description: 'For a subfamily group, which NatureServe cannot search by rank, the genera it spans,
+      separated by semicolons: Oncorhynchus; Salmo; Salvelinus.'
+    annotations:
+      runtime: field taxon.genera
+    domain: Taxon
+    domain_of:
+    - Taxon
+    range: string
+    multivalued: true
+  vegetation_classification_level:
+    slot_uri: ICON:0011210
+    title: vegetation classification level
+    description: 'Where the vegetation type sits: an MCV Alliance, Semi-Natural Alliance (dominated by
+      non-native plants) or Special Stands, or a USNVC Group, Macrogroup or Division.'
+    annotations:
+      runtime: field vegetation_type.level
+    domain: VegetationType
+    domain_of:
+    - VegetationType
+    range: string
+    multivalued: true
+  cdfw_cacode:
+    slot_uri: ICON:0011211
+    title: CDFW CaCode
+    description: The alliance's code on CDFW's California Natural Communities List, such as 71.035.00
+      for Valley oak woodland and forest.
+    annotations:
+      runtime: field vegetation_type.cacode
+    domain: VegetationType
+    domain_of:
+    - VegetationType
+    range: string
+    multivalued: true
+  life_form:
+    slot_uri: ICON:0011212
+    title: life form
+    description: 'The alliance''s primary life form on the Natural Communities List: Tree, Shrub, Herb
+      or Non-vascular.'
+    annotations:
+      runtime: field vegetation_type.life_form
+    domain: VegetationType
+    domain_of:
+    - VegetationType
+    range: string
+    multivalued: true
+  natural_community_global_rank:
+    slot_uri: ICON:0011213
+    title: natural community global rank
+    description: How rare and threatened the alliance is across its whole range, G1 (very rare and threatened)
+      to G5 (secure), from NatureServe's method as CDFW applies it.
+    annotations:
+      runtime: field vegetation_type.g_rank
+    domain: VegetationType
+    domain_of:
+    - VegetationType
+    range: string
+    multivalued: true
+  natural_community_state_rank:
+    slot_uri: ICON:0011214
+    title: natural community state rank
+    description: How rare and threatened the alliance is in California, S1 to S5; SNA for a semi-natural
+      alliance, which is not ranked.
+    annotations:
+      runtime: field vegetation_type.s_rank
+    domain: VegetationType
+    domain_of:
+    - VegetationType
+    range: string
+    multivalued: true
+  sensitive_natural_community:
+    slot_uri: ICON:0011215
+    title: sensitive natural community
+    description: Yes for an alliance with a state rank of S1 to S3, which CDFW counts as a sensitive natural
+      community for environmental review under CEQA.
+    annotations:
+      runtime: field vegetation_type.sensitive
+    domain: VegetationType
+    domain_of:
+    - VegetationType
+    range: string
+    multivalued: true
+  cmecs_classification_level:
+    slot_uri: ICON:0011220
+    title: CMECS classification level
+    description: 'Where the CMECS unit sits: a System, Subsystem or Tidal Zone of the Aquatic Setting,
+      or a Biotic Setting, Biotic Class, Biotic Subclass or Biotic Group of the Biotic Component.'
+    annotations:
+      runtime: field cmecs_unit.level
+    domain: CoastalAndMarineHabitatType
+    domain_of:
+    - CoastalAndMarineHabitatType
+    range: string
+    multivalued: true
+  cmecs_code:
+    slot_uri: ICON:0011221
+    title: CMECS code
+    description: The unit's code in the CMECS Catalog, its component's letter (A for the Aquatic Setting,
+      B for the Biotic Component) followed by its unit code, such as B2.5.2.1 for Seagrass Bed.
+    exact_mappings:
+    - skos:notation
+    annotations:
+      runtime: field cmecs_unit.code
+    domain: CoastalAndMarineHabitatType
+    domain_of:
+    - CoastalAndMarineHabitatType
+    range: string
+    multivalued: true
+  cmecs_id:
+    slot_uri: ICON:0011222
+    title: CMECS ID
+    description: The unit's permanent identifier in the CMECS Catalog, such as CMECS_00000721; https://w3id.org/CMECS/
+      followed by it is the unit's IRI.
+    close_mappings:
+    - dcterms:identifier
+    annotations:
+      runtime: field cmecs_unit.cmecs_id
+    domain: CoastalAndMarineHabitatType
+    domain_of:
+    - CoastalAndMarineHabitatType
+    range: string
+    multivalued: true
+  get_classification_level:
+    slot_uri: ICON:0011230
+    title: GET classification level
+    description: 'Where the IUCN GET unit sits: a Realm, a Biome or a Functional group (an ecosystem functional
+      group).'
+    annotations:
+      runtime: field get_unit.level
+    domain: IUCNEcosystemType
+    domain_of:
+    - IUCNEcosystemType
+    range: string
+    multivalued: true
+  get_code:
+    slot_uri: ICON:0011231
+    title: GET code
+    description: 'The unit''s code in the IUCN Global Ecosystem Typology: a realm''s letters (T, or MT
+      for a transitional realm), a biome''s (T4) or a functional group''s (T4.4).'
+    exact_mappings:
+    - skos:notation
+    annotations:
+      runtime: field get_unit.code
+    domain: IUCNEcosystemType
+    domain_of:
+    - IUCNEcosystemType
+    range: string
+    multivalued: true
+  get_iri:
+    slot_uri: ICON:0011232
+    title: GET IRI
+    description: The unit's permanent identifier in the IUCN GET SKOS vocabulary, such as https://w3id.org/iucn-get/EFG_T4_4.
+    close_mappings:
+    - dcterms:identifier
+    annotations:
+      runtime: field get_unit.iri
+    domain: IUCNEcosystemType
+    domain_of:
+    - IUCNEcosystemType
+    range: uri
+    multivalued: true
+enums:
+  InvasiveRatingEnum:
+    enum_uri: ICON:0011002
+    description: The values of invasive rating.
+    permissible_values:
+      high invasive rating:
+        meaning: ICON:0011010
+        description: 'Cal-IPC: severe ecological impacts on physical processes, plant and animal communities
+          and vegetation structure, with rates of dispersal and establishment that are moderate to high;
+          most are widely distributed.'
+        annotations:
+          runtime: term InvasiveRating "Invasive - High"
+      moderate invasive rating:
+        meaning: ICON:0011011
+        description: 'Cal-IPC: substantial and apparent, but generally not severe, ecological impacts,
+          with moderate to high rates of dispersal, though establishment generally depends on disturbance.'
+        annotations:
+          runtime: term InvasiveRating "Invasive - Moderate"
+      limited invasive rating:
+        meaning: ICON:0011012
+        description: 'Cal-IPC: invasive, but with ecological impacts that are minor statewide, or too
+          little information to rate it higher; often locally persistent and problematic.'
+        annotations:
+          runtime: term InvasiveRating "Invasive - Limited"
+      watch invasive rating:
+        meaning: ICON:0011013
+        description: 'Cal-IPC: not yet invasive in California''s wildlands, but assessed as at high risk
+          of becoming invasive here.'
+        annotations:
+          runtime: term InvasiveRating "Invasive - Watch"
+      CDFW listed invasive rating:
+        meaning: ICON:0011014
+        description: 'CDFW: an animal on the Invasive Species Program''s list California''s Invaders,
+          as invasive in California or a threat to the state; CDFW does not rate how invasive it is (#435).'
+        annotations:
+          runtime: term InvasiveRating "Invasive - CDFW listed"
+  CaliforniaRarePlantRankEnum:
+    enum_uri: ICON:0011003
+    description: The values of California Rare Plant Rank.
+    permissible_values:
+      California Rare Plant Rank 1A:
+        meaning: ICON:0011020
+        description: 'CNPS: Plants presumed extirpated in California and either rare or extinct elsewhere:
+          not seen or collected in the wild in California for many years.'
+        annotations:
+          runtime: term RarePlantRank "Rare Plant Rank 1A"
+      California Rare Plant Rank 1B:
+        meaning: ICON:0011021
+        description: 'CNPS: Plants rare, threatened, or endangered in California and elsewhere; most are
+          endemic to California and have declined significantly over the last century.'
+        annotations:
+          runtime: term RarePlantRank "Rare Plant Rank 1B"
+      California Rare Plant Rank 2A:
+        meaning: ICON:0011022
+        description: 'CNPS: Plants presumed extirpated in California but common elsewhere.'
+        annotations:
+          runtime: term RarePlantRank "Rare Plant Rank 2A"
+      California Rare Plant Rank 2B:
+        meaning: ICON:0011023
+        description: 'CNPS: Plants rare, threatened, or endangered in California but more common elsewhere.'
+        annotations:
+          runtime: term RarePlantRank "Rare Plant Rank 2B"
+      California Rare Plant Rank 3:
+        meaning: ICON:0011024
+        description: 'CNPS: Review list: plants about which more information is needed, nearly all taxonomically
+          problematic.'
+        annotations:
+          runtime: term RarePlantRank "Rare Plant Rank 3"
+      California Rare Plant Rank 4:
+        meaning: ICON:0011025
+        description: 'CNPS: Watch list: plants of limited distribution or infrequent throughout a broader
+          area of California, whose status should be monitored.'
+        annotations:
+          runtime: term RarePlantRank "Rare Plant Rank 4"

@@ -1,0 +1,12 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0013004 a owl:Class ;
+    rdfs:label "calculator or model"@en ;
+    IAO:0000115 "A tool that computes an estimate from its user's inputs or runs a model, such as the carbon a riparian planting stores or the habitat a site provides. Example: Carbon in Riparian Ecosystems Estimator for California."@en ;
+    rdfs:isDefinedBy iconbase:tools.owl ;
+    rdfs:subClassOf icon:0013000 .
+

@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ICON Projects ontology</title>
+<link rel="icon" href="../brand/icon-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+:root {
+  --ground: #f1f4ef; --surface: #ffffff; --ink: #17221d; --muted: #5a6a62; --rule: #d3dbd3;
+  --accent: #2e6a4e; --accent-soft: #e3eee7;
+  --display: "Newsreader", Georgia, serif;
+  --body: "Instrument Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground: #0f1512; --surface: #17201b; --ink: #e3ebe6; --muted: #93a39a; --rule: #2b3730;
+    --accent: #74c39b; --accent-soft: #1d3127; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --ground: #0f1512; --surface: #17201b; --ink: #e3ebe6; --muted: #93a39a; --rule: #2b3730;
+  --accent: #74c39b; --accent-soft: #1d3127; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--ground); color: var(--ink); font: 15px/1.6 var(--body); }
+.page { max-width: 1040px; margin: 0 auto; padding: 24px 16px 56px; display: grid; gap: 24px; }
+header.top { display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 13px; }
+header.top nav { display: flex; gap: 16px; flex-wrap: wrap; }
+.logo { height: 34px; width: auto; }
+.logo.dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .logo.light { display: none; }
+  :root:not([data-theme="light"]) .logo.dark { display: block; }
+}
+:root[data-theme="dark"] .logo.light { display: none; }
+:root[data-theme="dark"] .logo.dark { display: block; }
+h1 { font: 600 clamp(28px, 4vw, 40px)/1.15 var(--display); margin: 0; text-wrap: balance; }
+h2 { font: 600 22px/1.25 var(--display); margin: 0 0 8px; }
+p { margin: 0 0 10px; max-width: 75ch; }
+a { color: var(--accent); }
+code { font: 0.88em var(--mono); overflow-wrap: anywhere; }
+.muted { color: var(--muted); }
+.kicker { font: 600 11px var(--body); letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+section.card { background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; padding: 18px 20px; min-width: 0; }
+.facts { display: flex; flex-wrap: wrap; gap: 8px 28px; font-variant-numeric: tabular-nums; }
+.facts div { display: grid; }
+.facts b { font: 600 22px/1.1 var(--display); }
+.facts span { font-size: 12px; color: var(--muted); }
+.scroll { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { text-align: left; vertical-align: top; padding: 8px 10px 8px 0; border-bottom: 1px solid var(--rule); }
+th { font-weight: 600; font-size: 12px; color: var(--muted); }
+td.files { white-space: nowrap; }
+td.files a + a { margin-left: 8px; }
+dl.facts-list { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 6px 16px; margin: 0; }
+dl.facts-list dt { color: var(--muted); font-size: 13px; padding-top: 1px; }
+dl.facts-list dd { margin: 0; }
+.button { display: inline-block; padding: 8px 14px; border-radius: 8px; background: var(--accent); color: var(--surface); text-decoration: none; font-weight: 600; }
+pre { background: var(--accent-soft); padding: 12px 14px; border-radius: 8px; overflow-x: auto; font: 13px/1.5 var(--mono); margin: 0 0 10px; white-space: pre-wrap; }
+footer { font-size: 13px; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="top">
+    <nav><a href=".././">ICON ontologies</a><a href="../map.html">Map</a><a href="https://github.com/ICON-IoC/icon-ontologies">Source files</a></nav>
+    <a href="https://icon-ioc.com" aria-label="ICON">
+      <img class="logo light" alt="ICON" src="../brand/icon-lockup.png">
+      <img class="logo dark" alt="ICON" src="../brand/icon-wordmark-reversed-cropped.png">
+    </a>
+  </header>
+
+  <section>
+    <div class="kicker">record module</div>
+    <h1>ICON Projects ontology</h1>
+    <p>Conservation projects: bounded efforts with a lead, partners and funders that restore, protect, acquire, study or manage something in a place. Covers project types and the links of a project to programs and to the places it works on.</p>
+    <dl class="facts-list">
+      <dt>Ontology IRI</dt><dd><code>https://w3id.org/icon/projects.owl</code></dd>
+      <dt>This release</dt><dd><code>https://w3id.org/icon/releases/2026-11-21/projects.owl</code></dd>
+      <dt>Own term IDs</dt><dd>ICON:0003000 to ICON:0003999</dd>
+      <dt>Files</dt><dd><a href="../icon-projects.ttl">Turtle</a>, <a href="../icon-projects.owl">RDF/XML</a>, <a href="../linkml/icon-projects.yaml">LinkML</a>, <a href="../guides/projects.md">guide (Markdown)</a></dd>
+      
+      <dt>Built on</dt><dd>BFO, OBI</dd>
+      
+      <dt>Mapped to</dt><dd>OBI, foaf, schema</dd>
+      
+    </dl>
+  </section>
+
+  <section class="card">
+    <h2>Terms</h2>
+    <p class="muted">Reused terms keep their own IDs and link to their source ontology.</p>
+    <div class="scroll">
+    <table>
+      <thead><tr><th>Term</th><th>Kind</th><th>ID</th><th>Definition</th></tr></thead>
+      <tbody>
+      
+        <tr id="ICON_0003000">
+          <td><a href="../terms/ICON_0003000.html">conservation project</a></td>
+          <td>class</td>
+          <td><code>ICON:0003000</code></td>
+          <td>A bounded effort with a lead and usually partners and funders that restores, protects, acquires, studies, plans or manages something in a place, and ends when its work is done.</td>
+        </tr>
+      
+        <tr id="ICON_0003001">
+          <td><a href="../terms/ICON_0003001.html">acquisition project</a></td>
+          <td>class</td>
+          <td><code>ICON:0003001</code></td>
+          <td>A project that buys land, water or easements for conservation.</td>
+        </tr>
+      
+        <tr id="ICON_0003002">
+          <td><a href="../terms/ICON_0003002.html">education project</a></td>
+          <td>class</td>
+          <td><code>ICON:0003002</code></td>
+          <td>A project that teaches the public, students or practitioners.</td>
+        </tr>
+      
+        <tr id="ICON_0003003">
+          <td><a href="../terms/ICON_0003003.html">habitat enhancement project</a></td>
+          <td>class</td>
+          <td><code>ICON:0003003</code></td>
+          <td>A project that restores or improves habitat.</td>
+        </tr>
+      
+        <tr id="ICON_0003004">
+          <td><a href="../terms/ICON_0003004.html">infrastructure project</a></td>
+          <td>class</td>
+          <td><code>ICON:0003004</code></td>
+          <td>A project that builds, removes or rebuilds a structure, such as a fish ladder, a levee setback or a wildlife crossing.</td>
+        </tr>
+      
+        <tr id="ICON_0003005">
+          <td><a href="../terms/ICON_0003005.html">land protection project</a></td>
+          <td>class</td>
+          <td><code>ICON:0003005</code></td>
+          <td>A project that secures land against conversion by easement, designation or agreement rather than purchase.</td>
+        </tr>
+      
+        <tr id="ICON_0003006">
+          <td><a href="../terms/ICON_0003006.html">management project</a></td>
+          <td>class</td>
+          <td><code>ICON:0003006</code></td>
+          <td>A project that manages land, water or wildlife, such as grazing, burning or invasive species control.</td>
+        </tr>
+      
+        <tr id="ICON_0003007">
+          <td><a href="../terms/ICON_0003007.html">planning project</a></td>
+          <td>class</td>
+          <td><code>ICON:0003007</code></td>
+          <td>A project that produces a plan.</td>
+        </tr>
+      
+        <tr id="ICON_0003008">
+          <td><a href="../terms/ICON_0003008.html">remediation project</a></td>
+          <td>class</td>
+          <td><code>ICON:0003008</code></td>
+          <td>A project that cleans up contamination or reverses damage, such as mine waste or polluted runoff.</td>
+        </tr>
+      
+        <tr id="ICON_0003009">
+          <td><a href="../terms/ICON_0003009.html">research project</a></td>
+          <td>class</td>
+          <td><code>ICON:0003009</code></td>
+          <td>A project that studies or monitors nature or conservation.</td>
+        </tr>
+      
+        <tr id="ICON_0003010">
+          <td><a href="../terms/ICON_0003010.html">compensatory mitigation project</a></td>
+          <td>class</td>
+          <td><code>ICON:0003010</code></td>
+          <td>A project that restores, creates or preserves habitat to make up for habitat a permitted development destroys elsewhere.</td>
+        </tr>
+      
+        <tr id="ICON_0003011">
+          <td><a href="../terms/ICON_0003011.html">wildlife crossing project</a></td>
+          <td>class</td>
+          <td><code>ICON:0003011</code></td>
+          <td>A project that plans, builds, improves or studies a structure that lets wildlife cross a road or railway, or that restores or secures the land leading to one.</td>
+        </tr>
+      
+        <tr id="ICON_0003100">
+          <td><a href="../terms/ICON_0003100.html">has project type</a></td>
+          <td>relation</td>
+          <td><code>ICON:0003100</code></td>
+          <td>Links a project to one of the project type classes it belongs to. The explorer&#39;s way of stating the project&#39;s class.</td>
+        </tr>
+      
+        <tr id="ICON_0003101">
+          <td><a href="../terms/ICON_0003101.html">is project type of</a></td>
+          <td>relation</td>
+          <td><code>ICON:0003101</code></td>
+          <td>The reverse of has project type.</td>
+        </tr>
+      
+        <tr id="ICON_0003102">
+          <td><a href="../terms/ICON_0003102.html">is part of program</a></td>
+          <td>relation</td>
+          <td><code>ICON:0003102</code></td>
+          <td>A project carried out within a program, as one grant within a grant program.</td>
+        </tr>
+      
+        <tr id="ICON_0003103">
+          <td><a href="../terms/ICON_0003103.html">has project</a></td>
+          <td>relation</td>
+          <td><code>ICON:0003103</code></td>
+          <td>The reverse of is part of program.</td>
+        </tr>
+      
+        <tr id="ICON_0003104">
+          <td><a href="../terms/ICON_0003104.html">tracked by</a></td>
+          <td>relation</td>
+          <td><code>ICON:0003104</code></td>
+          <td>The organization that keeps a project&#39;s or plan&#39;s record in a project tracker such as EcoAtlas, often the agency that permitted or funded it, without necessarily leading it. Keeping the record is not taking part in the work, so this is not a kind of is involved with.</td>
+        </tr>
+      
+        <tr id="ICON_0003105">
+          <td><a href="../terms/ICON_0003105.html">tracks</a></td>
+          <td>relation</td>
+          <td><code>ICON:0003105</code></td>
+          <td>The reverse of tracked by.</td>
+        </tr>
+      
+        <tr id="ICON_0003106">
+          <td><a href="../terms/ICON_0003106.html">works on</a></td>
+          <td>relation</td>
+          <td><code>ICON:0003106</code></td>
+          <td>The project acts on the place itself: it restores, manages, builds, repairs, widens or studies it, or mitigates for work on it. A fuel reduction project works on the national forest it thins, a coho habitat project works on its creek, and a Caltrans culvert replacement works on the highway it runs under. A project that only uses the place to say where it is intersects it instead.</td>
+        </tr>
+      
+        <tr id="ICON_0003107">
+          <td><a href="../terms/ICON_0003107.html">worked on by</a></td>
+          <td>relation</td>
+          <td><code>ICON:0003107</code></td>
+          <td>The reverse of works on.</td>
+        </tr>
+      
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <footer>
+    <p>ICON ontologies, version 2026-11-21. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: attribute as "Internet of Conservation, Information for the Conservation of Nature (ICON), CC BY 4.0". The ICON names and logos are not covered by that license.</p>
+  </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0013108 a owl:ObjectProperty ;
+    rdfs:label "gives output"@en ;
+    IAO:0000115 "A kind of data, or a format, the tool gives back, from the Data type list. A specific Data record the tool creates is a produces link instead."@en ;
+    rdfs:domain icon:0013000 ;
+    rdfs:isDefinedBy iconbase:tools.owl ;
+    rdfs:range icon:0008080 ;
+    owl:inverseOf icon:0013109 ;
+    icon:0000001 "EDAM: has_output" .
+

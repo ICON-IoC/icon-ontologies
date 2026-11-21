@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ICON Core ontology</title>
+<link rel="icon" href="../brand/icon-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+:root {
+  --ground: #f1f4ef; --surface: #ffffff; --ink: #17221d; --muted: #5a6a62; --rule: #d3dbd3;
+  --accent: #2e6a4e; --accent-soft: #e3eee7;
+  --display: "Newsreader", Georgia, serif;
+  --body: "Instrument Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground: #0f1512; --surface: #17201b; --ink: #e3ebe6; --muted: #93a39a; --rule: #2b3730;
+    --accent: #74c39b; --accent-soft: #1d3127; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --ground: #0f1512; --surface: #17201b; --ink: #e3ebe6; --muted: #93a39a; --rule: #2b3730;
+  --accent: #74c39b; --accent-soft: #1d3127; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--ground); color: var(--ink); font: 15px/1.6 var(--body); }
+.page { max-width: 1040px; margin: 0 auto; padding: 24px 16px 56px; display: grid; gap: 24px; }
+header.top { display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 13px; }
+header.top nav { display: flex; gap: 16px; flex-wrap: wrap; }
+.logo { height: 34px; width: auto; }
+.logo.dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .logo.light { display: none; }
+  :root:not([data-theme="light"]) .logo.dark { display: block; }
+}
+:root[data-theme="dark"] .logo.light { display: none; }
+:root[data-theme="dark"] .logo.dark { display: block; }
+h1 { font: 600 clamp(28px, 4vw, 40px)/1.15 var(--display); margin: 0; text-wrap: balance; }
+h2 { font: 600 22px/1.25 var(--display); margin: 0 0 8px; }
+p { margin: 0 0 10px; max-width: 75ch; }
+a { color: var(--accent); }
+code { font: 0.88em var(--mono); overflow-wrap: anywhere; }
+.muted { color: var(--muted); }
+.kicker { font: 600 11px var(--body); letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+section.card { background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; padding: 18px 20px; min-width: 0; }
+.facts { display: flex; flex-wrap: wrap; gap: 8px 28px; font-variant-numeric: tabular-nums; }
+.facts div { display: grid; }
+.facts b { font: 600 22px/1.1 var(--display); }
+.facts span { font-size: 12px; color: var(--muted); }
+.scroll { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { text-align: left; vertical-align: top; padding: 8px 10px 8px 0; border-bottom: 1px solid var(--rule); }
+th { font-weight: 600; font-size: 12px; color: var(--muted); }
+td.files { white-space: nowrap; }
+td.files a + a { margin-left: 8px; }
+dl.facts-list { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 6px 16px; margin: 0; }
+dl.facts-list dt { color: var(--muted); font-size: 13px; padding-top: 1px; }
+dl.facts-list dd { margin: 0; }
+.button { display: inline-block; padding: 8px 14px; border-radius: 8px; background: var(--accent); color: var(--surface); text-decoration: none; font-weight: 600; }
+pre { background: var(--accent-soft); padding: 12px 14px; border-radius: 8px; overflow-x: auto; font: 13px/1.5 var(--mono); margin: 0 0 10px; white-space: pre-wrap; }
+footer { font-size: 13px; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="top">
+    <nav><a href=".././">ICON ontologies</a><a href="../map.html">Map</a><a href="https://github.com/ICON-IoC/icon-ontologies">Source files</a></nav>
+    <a href="https://icon-ioc.com" aria-label="ICON">
+      <img class="logo light" alt="ICON" src="../brand/icon-lockup.png">
+      <img class="logo dark" alt="ICON" src="../brand/icon-wordmark-reversed-cropped.png">
+    </a>
+  </header>
+
+  <section>
+    <div class="kicker">core module</div>
+    <h1>ICON Core ontology</h1>
+    <p>The shared top of the ICON ontologies: the broad kinds of record (agent, endeavor, place, information resource, planning element), the involvement and funding links every kind of record uses, and the annotation properties the other modules share. Every other module builds on it.</p>
+    <dl class="facts-list">
+      <dt>Ontology IRI</dt><dd><code>https://w3id.org/icon/core.owl</code></dd>
+      <dt>This release</dt><dd><code>https://w3id.org/icon/releases/2026-11-21/core.owl</code></dd>
+      <dt>Own term IDs</dt><dd>ICON:0000000 to ICON:0000999</dd>
+      <dt>Files</dt><dd><a href="../icon-core.ttl">Turtle</a>, <a href="../icon-core.owl">RDF/XML</a>, <a href="../linkml/icon-core.yaml">LinkML</a>, <a href="../guides/core.md">guide (Markdown)</a></dd>
+      
+      <dt>Reused</dt><dd>BFO, OBI, RO, dcterms, schema, skos</dd>
+      
+      <dt>Built on</dt><dd>BFO, COB, IAO, NCBITaxon, OBI</dd>
+      
+      <dt>Mapped to</dt><dd>dcat, dcterms, foaf, frapo, prov, schema</dd>
+      
+    </dl>
+  </section>
+
+  <section class="card">
+    <h2>Terms</h2>
+    <p class="muted">Reused terms keep their own IDs and link to their source ontology.</p>
+    <div class="scroll">
+    <table>
+      <thead><tr><th>Term</th><th>Kind</th><th>ID</th><th>Definition</th></tr></thead>
+      <tbody>
+      
+        <tr id="ICON_0000010">
+          <td><a href="../terms/ICON_0000010.html">agent</a></td>
+          <td>class</td>
+          <td><code>ICON:0000010</code></td>
+          <td>An organization or a person: something that can lead, fund, own, manage or take part in conservation work.</td>
+        </tr>
+      
+        <tr id="ICON_0000011">
+          <td><a href="../terms/ICON_0000011.html">endeavor</a></td>
+          <td>class</td>
+          <td><code>ICON:0000011</code></td>
+          <td>A planned process carried out to achieve conservation ends over a span of time: a project or a program.</td>
+        </tr>
+      
+        <tr id="ICON_0000012">
+          <td><a href="../terms/ICON_0000012.html">place</a></td>
+          <td>class</td>
+          <td><code>ICON:0000012</code></td>
+          <td>A part of the landscape or a structure in it that records can be located at, worked on or bounded by: a river, a reserve, a dam, a crossing structure.</td>
+        </tr>
+      
+        <tr id="ICON_0000013">
+          <td><a href="../terms/ICON_0000013.html">information resource</a></td>
+          <td>class</td>
+          <td><code>ICON:0000013</code></td>
+          <td>An information content entity that records or publishes information: a data resource, a paper or a report.</td>
+        </tr>
+      
+        <tr id="ICON_0000014">
+          <td><a href="../terms/ICON_0000014.html">planning element</a></td>
+          <td>class</td>
+          <td><code>ICON:0000014</code></td>
+          <td>A directive information entity that sets out what conservation work should achieve or do: a plan, one of its objectives, or one of its actions.</td>
+        </tr>
+      
+        <tr id="BFO_0000001">
+          <td><a href="http://purl.obolibrary.org/obo/BFO_0000001">entity</a></td>
+          <td>class</td>
+          <td><code>BFO:0000001</code></td>
+          <td>The explorer&#39;s top class Resource, which every record belongs to.</td>
+        </tr>
+      
+        <tr id="skos_Concept">
+          <td><a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a></td>
+          <td>class</td>
+          <td><code>skos:Concept</code></td>
+          <td>An idea or notion; a unit of thought.</td>
+        </tr>
+      
+        <tr id="ICON_0000100">
+          <td><a href="../terms/ICON_0000100.html">is involved with</a></td>
+          <td>relation</td>
+          <td><code>ICON:0000100</code></td>
+          <td>A link between two records that work together or affect one another. Every more specific involvement link (leads, funds, manages, uses, is partner of and others) implies it.</td>
+        </tr>
+      
+        <tr id="ICON_0000101">
+          <td><a href="../terms/ICON_0000101.html">led by</a></td>
+          <td>relation</td>
+          <td><code>ICON:0000101</code></td>
+          <td>An organization or person that directs the work and answers for it.</td>
+        </tr>
+      
+        <tr id="ICON_0000102">
+          <td><a href="../terms/ICON_0000102.html">leads</a></td>
+          <td>relation</td>
+          <td><code>ICON:0000102</code></td>
+          <td>An organization or person directs this work: the reverse of led by.</td>
+        </tr>
+      
+        <tr id="ICON_0000103">
+          <td><a href="../terms/ICON_0000103.html">used by</a></td>
+          <td>relation</td>
+          <td><code>ICON:0000103</code></td>
+          <td>An organization, project or program relies on this place, data or tool in its work.</td>
+        </tr>
+      
+        <tr id="ICON_0000104">
+          <td><a href="../terms/ICON_0000104.html">uses</a></td>
+          <td>relation</td>
+          <td><code>ICON:0000104</code></td>
+          <td>The record relies on this place or data in its work: the reverse of used by.</td>
+        </tr>
+      
+        <tr id="ICON_0000105">
+          <td><a href="../terms/ICON_0000105.html">funded by</a></td>
+          <td>relation</td>
+          <td><code>ICON:0000105</code></td>
+          <td>An organization or funding source that paid for the work, the data or the publication.</td>
+        </tr>
+      
+        <tr id="ICON_0000106">
+          <td><a href="../terms/ICON_0000106.html">funds</a></td>
+          <td>relation</td>
+          <td><code>ICON:0000106</code></td>
+          <td>The organization or funding source pays for this work, data or publication: the reverse of funded by and of funded through.</td>
+        </tr>
+      
+        <tr id="ICON_0000107">
+          <td><a href="../terms/ICON_0000107.html">funded through</a></td>
+          <td>relation</td>
+          <td><code>ICON:0000107</code></td>
+          <td>A program or a guideline or mandate whose money paid for the work, such as a grant program or a bond measure. A kind of funded by, naming the channel the money came through.</td>
+        </tr>
+      
+        <tr id="ICON_0000108">
+          <td><a href="../terms/ICON_0000108.html">was created by</a></td>
+          <td>relation</td>
+          <td><code>ICON:0000108</code></td>
+          <td>The organization or person that produced the record&#39;s subject, or the guideline or mandate that brought an organization into being.</td>
+        </tr>
+      
+        <tr id="ICON_0000109">
+          <td><a href="../terms/ICON_0000109.html">created</a></td>
+          <td>relation</td>
+          <td><code>ICON:0000109</code></td>
+          <td>The organization, person or mandate produced this: the reverse of was created by.</td>
+        </tr>
+      
+        <tr id="ICON_0000110">
+          <td><a href="../terms/ICON_0000110.html">informs</a></td>
+          <td>relation</td>
+          <td><code>ICON:0000110</code></td>
+          <td>The data or publication is drawn on by a plan, an objective, an action or a guideline or mandate, as survey counts inform a recovery objective.</td>
+        </tr>
+      
+        <tr id="ICON_0000111">
+          <td><a href="../terms/ICON_0000111.html">is informed by</a></td>
+          <td>relation</td>
+          <td><code>ICON:0000111</code></td>
+          <td>The plan, objective, action or mandate draws on this data or publication: the reverse of informs.</td>
+        </tr>
+      
+        <tr id="BFO_0000050">
+          <td><a href="http://purl.obolibrary.org/obo/BFO_0000050">part of</a></td>
+          <td>relation</td>
+          <td><code>BFO:0000050</code></td>
+          <td>a core relation that holds between a part and its whole</td>
+        </tr>
+      
+        <tr id="BFO_0000051">
+          <td><a href="http://purl.obolibrary.org/obo/BFO_0000051">has part</a></td>
+          <td>relation</td>
+          <td><code>BFO:0000051</code></td>
+          <td>a core relation that holds between a whole and its part</td>
+        </tr>
+      
+        <tr id="RO_0001025">
+          <td><a href="http://purl.obolibrary.org/obo/RO_0001025">located in</a></td>
+          <td>relation</td>
+          <td><code>RO:0001025</code></td>
+          <td>a relation between two independent continuants, the target and the location, in which the target is entirely within the location</td>
+        </tr>
+      
+        <tr id="RO_0001015">
+          <td><a href="http://purl.obolibrary.org/obo/RO_0001015">location of</a></td>
+          <td>relation</td>
+          <td><code>RO:0001015</code></td>
+          <td>a relation between two independent continuants, the location and the target, in which the target is entirely within the location</td>
+        </tr>
+      
+        <tr id="RO_0002131">
+          <td><a href="http://purl.obolibrary.org/obo/RO_0002131">overlaps</a></td>
+          <td>relation</td>
+          <td><code>RO:0002131</code></td>
+          <td>x overlaps y if and only if there exists some z such that x has part z and z part of y</td>
+        </tr>
+      
+        <tr id="OBI_0000312">
+          <td><a href="http://purl.obolibrary.org/obo/OBI_0000312">is specified output of</a></td>
+          <td>relation</td>
+          <td><code>OBI:0000312</code></td>
+          <td>A relation between a completely executed planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.</td>
+        </tr>
+      
+        <tr id="OBI_0000299">
+          <td><a href="http://purl.obolibrary.org/obo/OBI_0000299">has specified output</a></td>
+          <td>relation</td>
+          <td><code>OBI:0000299</code></td>
+          <td>The inverse property of is specified output of</td>
+        </tr>
+      
+        <tr id="ICON_0000001">
+          <td><a href="../terms/ICON_0000001.html">crosswalk</a></td>
+          <td>attribute</td>
+          <td><code>ICON:0000001</code></td>
+          <td>The matching field in a metadata standard that is not published as RDF, written as the standard&#39;s name, a colon and the field&#39;s path, such as &#34;EML 2.2: dataset/title&#34;.</td>
+        </tr>
+      
+        <tr id="ICON_0000002">
+          <td><a href="../terms/ICON_0000002.html">expected attribute</a></td>
+          <td>attribute</td>
+          <td><code>ICON:0000002</code></td>
+          <td>A property the records of this class are expected to carry, such as a title or a year. Records the attributes a class uses without adding domain axioms to terms borrowed from other vocabularies.</td>
+        </tr>
+      
+        <tr id="rdfs_label">
+          <td><a href="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a></td>
+          <td>attribute</td>
+          <td><code>rdfs:label</code></td>
+          <td>Every record&#39;s name.</td>
+        </tr>
+      
+        <tr id="skos_altLabel">
+          <td><a href="http://www.w3.org/2004/02/skos/core#altLabel">alternative label</a></td>
+          <td>attribute</td>
+          <td><code>skos:altLabel</code></td>
+          <td>An alternative lexical label for a resource.</td>
+        </tr>
+      
+        <tr id="schema_url">
+          <td><a href="https://schema.org/url">url</a></td>
+          <td>attribute</td>
+          <td><code>schema:url</code></td>
+          <td>The record&#39;s web page.</td>
+        </tr>
+      
+        <tr id="schema_startDate">
+          <td><a href="https://schema.org/startDate">startDate</a></td>
+          <td>attribute</td>
+          <td><code>schema:startDate</code></td>
+          <td>The year a record or link began (#98). The explorer keeps a year, not a full date.</td>
+        </tr>
+      
+        <tr id="schema_endDate">
+          <td><a href="https://schema.org/endDate">endDate</a></td>
+          <td>attribute</td>
+          <td><code>schema:endDate</code></td>
+          <td>The year a record or link ended (#98).</td>
+        </tr>
+      
+        <tr id="skos_note">
+          <td><a href="http://www.w3.org/2004/02/skos/core#note">note</a></td>
+          <td>attribute</td>
+          <td><code>skos:note</code></td>
+          <td>A general note, for any purpose.</td>
+        </tr>
+      
+        <tr id="dcterms_issued">
+          <td><a href="http://purl.org/dc/terms/issued">Date Issued</a></td>
+          <td>attribute</td>
+          <td><code>dcterms:issued</code></td>
+          <td>The year a mandate was enacted, data released, a paper published or a plan issued.</td>
+        </tr>
+      
+        <tr id="dcterms_accessRights">
+          <td><a href="http://purl.org/dc/terms/accessRights">Access Rights</a></td>
+          <td>attribute</td>
+          <td><code>dcterms:accessRights</code></td>
+          <td>Who can get the data or read the publication; values from the Data and Papers and reports modules&#39; access lists.</td>
+        </tr>
+      
+        <tr id="dcterms_license">
+          <td><a href="http://purl.org/dc/terms/license">License</a></td>
+          <td>attribute</td>
+          <td><code>dcterms:license</code></td>
+          <td>The license data or a publication is released under.</td>
+        </tr>
+      
+        <tr id="dcterms_description">
+          <td><a href="http://purl.org/dc/terms/description">Description</a></td>
+          <td>attribute</td>
+          <td><code>dcterms:description</code></td>
+          <td>What data contains, or what a tool does.</td>
+        </tr>
+      
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <footer>
+    <p>ICON ontologies, version 2026-11-21. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: attribute as "Internet of Conservation, Information for the Conservation of Nature (ICON), CC BY 4.0". The ICON names and logos are not covered by that license.</p>
+  </footer>
+</div>
+</body>
+</html>

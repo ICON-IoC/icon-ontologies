@@ -1,0 +1,26 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+icon:0012100 a owl:ObjectProperty ;
+    rdfs:label "addresses issue"@en ;
+    IAO:0000115 "The record responds to, studies or bears on the issue. An organization that funds, leads, administers or manages work addressing an issue addresses it too."@en ;
+    rdfs:comment "The chains are the explorer's issue roll-up rules: from work to who backs it, and from a component issue to its integrated issues."@en ;
+    rdfs:isDefinedBy iconbase:issues.owl ;
+    rdfs:range icon:0012000 ;
+    owl:inverseOf icon:0012101 ;
+    owl:propertyChainAxiom ( icon:0000106 icon:0012100 ),
+        ( icon:0000102 icon:0012100 ),
+        ( icon:0005105 icon:0012100 ),
+        ( icon:0004103 icon:0012100 ),
+        ( icon:0012100 icon:0012102 ) ;
+    skos:closeMatch dcat:theme ;
+    icon:0000001 "DataCite 4.5: subject",
+        "EML 2.2: dataset/keywordSet",
+        "ISO 19115-1: descriptiveKeywords" .
+

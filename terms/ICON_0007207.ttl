@@ -1,0 +1,14 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+icon:0007207 a owl:DatatypeProperty ;
+    rdfs:label "action cost estimate"@en ;
+    IAO:0000115 "The action's estimated total cost."@en ;
+    rdfs:domain icon:0007003 ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:range xsd:string .
+

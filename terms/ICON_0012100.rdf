@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:iconbase="https://w3id.org/icon/"
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="cb10dd88153388673b6c66adc464236046d37a7c2c9d835fea03856aeef525a6b7a">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0000106"/>
+    <rdf:rest rdf:nodeID="cb189c4c09c5185037cc7e208e876928f8f255360740d41ccbb338c0e3780de91f8"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb11ca2f2c364804d5a498077a48db009721cd093cb8b952cda5510bcc0933e6d13">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0000102"/>
+    <rdf:rest rdf:nodeID="cb198f52c2ebafbf7a29e66a8273019ec77cc971cd3e354a2e4041070a40401e62a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb135c8a86a0a08e272be86712654b0df36c60fa6eeee85d794e1f0541047855d03">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005105"/>
+    <rdf:rest rdf:nodeID="cb15d8a310676df7d17a8576984253be2d6fd71258d473ec2df43439c2ae7085994"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb15d8a310676df7d17a8576984253be2d6fd71258d473ec2df43439c2ae7085994">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0012100"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb189c4c09c5185037cc7e208e876928f8f255360740d41ccbb338c0e3780de91f8">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0012100"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb18f3186623b08d1946b5fca8293ba81eca9d35d30ad30974272583461300c1b14">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0012102"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb198f52c2ebafbf7a29e66a8273019ec77cc971cd3e354a2e4041070a40401e62a">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0012100"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb21302e3ca6eb99e9fe165e17c1af094d7b571329a905fa732fe5bb16c33575fa4">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0012100"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb7da014563ea55cb8e42b6a15713c8f850c7155e065f68d22f1dc30896b62a12a">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0004103"/>
+    <rdf:rest rdf:nodeID="cb21302e3ca6eb99e9fe165e17c1af094d7b571329a905fa732fe5bb16c33575fa4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cbe4948e28e67d52dc29515b9a3d709d6dbf4e7f5206ec3653b9d46d23684b31aa">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0012100"/>
+    <rdf:rest rdf:nodeID="cb18f3186623b08d1946b5fca8293ba81eca9d35d30ad30974272583461300c1b14"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0012100">
+    <obo:IAO_0000115 xml:lang="en">The record responds to, studies or bears on the issue. An organization that funds, leads, administers or manages work addressing an issue addresses it too.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">The chains are the explorer's issue roll-up rules: from work to who backs it, and from a component issue to its integrated issues.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/issues.owl"/>
+    <rdfs:label xml:lang="en">addresses issue</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0012000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0012101"/>
+    <owl:propertyChainAxiom rdf:nodeID="cb10dd88153388673b6c66adc464236046d37a7c2c9d835fea03856aeef525a6b7a"/>
+    <owl:propertyChainAxiom rdf:nodeID="cb11ca2f2c364804d5a498077a48db009721cd093cb8b952cda5510bcc0933e6d13"/>
+    <owl:propertyChainAxiom rdf:nodeID="cb135c8a86a0a08e272be86712654b0df36c60fa6eeee85d794e1f0541047855d03"/>
+    <owl:propertyChainAxiom rdf:nodeID="cb7da014563ea55cb8e42b6a15713c8f850c7155e065f68d22f1dc30896b62a12a"/>
+    <owl:propertyChainAxiom rdf:nodeID="cbe4948e28e67d52dc29515b9a3d709d6dbf4e7f5206ec3653b9d46d23684b31aa"/>
+    <skos:closeMatch rdf:resource="http://www.w3.org/ns/dcat#theme"/>
+    <iconbase:ICON_0000001>DataCite 4.5: subject</iconbase:ICON_0000001>
+    <iconbase:ICON_0000001>EML 2.2: dataset/keywordSet</iconbase:ICON_0000001>
+    <iconbase:ICON_0000001>ISO 19115-1: descriptiveKeywords</iconbase:ICON_0000001>
+  </rdf:Description>
+</rdf:RDF>

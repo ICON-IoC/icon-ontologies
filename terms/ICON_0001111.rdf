@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001111">
+    <obo:IAO_0000115 xml:lang="en">The ecoregion section that holds the organization's headquarters, main office or seat. An organization is located in at most one ecoregion section, and may work in many (#949).</obo:IAO_0000115>
+    <oboInOwl:hasDbXref>Wikidata:P159</oboInOwl:hasDbXref>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">Every local government is located in one ecoregion section, the one its headquarters point lies in. Located in ecoregion is a kind of in ecoregion, so a question about the local governments in an ecoregion finds it.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:label xml:lang="en">located in ecoregion</rdfs:label>
+    <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000276"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ICON_0010108"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0001112"/>
+    <skos:closeMatch rdf:resource="http://www.w3.org/ns/org#hasPrimarySite"/>
+    <skos:closeMatch rdf:resource="https://schema.org/location"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,22 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+icon:0008108 a owl:ObjectProperty ;
+    rdfs:label "is derived from"@en ;
+    IAO:0000115 "Data built from other data, such as a connectivity map made from land cover and roads."@en ;
+    rdfs:domain icon:0008000 ;
+    rdfs:isDefinedBy iconbase:data.owl ;
+    rdfs:range icon:0008000 ;
+    owl:inverseOf icon:0008109 ;
+    skos:closeMatch prov:wasDerivedFrom,
+        schema:isBasedOn ;
+    icon:0000001 "DataCite 4.5: relatedIdentifier relationType IsDerivedFrom",
+        "EML 2.2: methods/methodStep/dataSource",
+        "ISO 19115-1: LI_Lineage/source" .
+

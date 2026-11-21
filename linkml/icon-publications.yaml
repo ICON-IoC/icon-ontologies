@@ -1,0 +1,375 @@
+# ICON Papers and reports ontology, as a LinkML schema.
+# Built by `ioc-ontologies` from ontology/src/publications.terms; edit that, not this file.
+id: https://w3id.org/icon/linkml/icon-publications
+name: icon-publications
+prefixes:
+  linkml: https://w3id.org/linkml/
+  ICON: https://w3id.org/icon/ICON_
+  bibo: http://purl.org/ontology/bibo/
+  cito: http://purl.org/spar/cito/
+  dcterms: http://purl.org/dc/terms/
+  fabio: http://purl.org/spar/fabio/
+  schema: https://schema.org/
+title: ICON Papers and reports ontology
+description: 'Peer-reviewed papers and technical reports: authors, publishers and sponsors, what a work
+  describes, which data it uses, which works it cites, and where its study was done.'
+version: '2026-11-21'
+license: https://creativecommons.org/licenses/by/4.0/
+default_prefix: ICON
+default_range: string
+see_also:
+- https://w3id.org/icon/publications.owl
+imports:
+- linkml:types
+- icon-external
+- icon-core
+- icon-data
+- icon-infrastructure
+- icon-tools
+classes:
+  PaperOrReport:
+    class_uri: ICON:0009000
+    title: paper or report
+    description: 'A written work that reports research, monitoring or assessment: a peer-reviewed paper
+      or a technical report. Shown in the explorer as Papers & reports.'
+    close_mappings:
+    - bibo:Document
+    - fabio:Work
+    - schema:CreativeWork
+    annotations:
+      crosswalk: 'Crossref: work; DataCite 4.5: resourceTypeGeneral Text'
+      runtime: class Publication; vocab PublicationType
+    is_a: InformationResource
+    mixins:
+    - Document
+    slots:
+    - authors
+    - date_issued
+    - published_in
+    - volume
+    - issue
+    - pages
+    - report_number
+    - doi
+    - abstract
+    - access_rights
+    - license
+    - keywords
+  PeerReviewedPaper:
+    class_uri: ICON:0009001
+    title: peer-reviewed paper
+    description: An article that independent experts reviewed before a journal or conference published
+      it. A work counts as one only if its journal certainly peer-reviewed it.
+    close_mappings:
+    - bibo:AcademicArticle
+    - fabio:JournalArticle
+    - schema:ScholarlyArticle
+    annotations:
+      crosswalk: 'Crossref: journal-article; DataCite 4.5: resourceTypeGeneral JournalArticle'
+      runtime: term PublicationType "Peer-reviewed paper"
+    is_a: PaperOrReport
+    mixins:
+    - JournalArticle
+    disjoint_with:
+    - TechnicalReport
+  TechnicalReport:
+    class_uri: ICON:0009002
+    title: technical report
+    description: A report an agency, organization or research group issues itself on a study, a monitoring
+      program, an assessment or a project's results, usually in a numbered series. It may or may not have
+      been reviewed.
+    close_mappings:
+    - bibo:Report
+    - fabio:TechnicalReport
+    - schema:Report
+    annotations:
+      crosswalk: 'Crossref: report; DataCite 4.5: resourceTypeGeneral Report'
+      runtime: term PublicationType "Technical report"
+    is_a: PaperOrReport
+    mixins:
+    - Report
+    disjoint_with:
+    - PeerReviewedPaper
+  PublicationAvailability:
+    class_uri: ICON:0009010
+    title: publication availability
+    description: Who can read a paper or report. Values follow the open-access status Unpaywall and Crossref
+      report.
+    is_a: InformationContentEntity
+slots:
+  has_publication_type:
+    slot_uri: ICON:0009100
+    title: has publication type
+    description: 'Links a paper or report to the class it belongs to: peer-reviewed paper or technical
+      report. The explorer''s way of stating its class.'
+    annotations:
+      runtime: phrase "has publication type"
+    domain: PaperOrReport
+    domain_of:
+    - PaperOrReport
+    range: uriorcurie
+    inverse: is_publication_type_of
+    multivalued: true
+  is_publication_type_of:
+    slot_uri: ICON:0009101
+    title: is publication type of
+    description: The reverse of has publication type.
+    annotations:
+      runtime: phrase "is publication type of"
+    range: PaperOrReport
+    inverse: has_publication_type
+    multivalued: true
+  authored_by:
+    slot_uri: ICON:0009102
+    title: authored by
+    description: A person or organization that wrote the work. The full author list as printed is the
+      authors attribute, since most authors have no record of their own.
+    close_mappings:
+    - dcterms:creator
+    - schema:author
+    annotations:
+      crosswalk: 'Crossref: contributors/person_name contributor_role author; DataCite 4.5: creator'
+      runtime: phrase "authored by"
+    is_a: is_involved_with
+    domain: PaperOrReport
+    domain_of:
+    - PaperOrReport
+    range: Agent
+    inverse: authored
+    multivalued: true
+  authored:
+    slot_uri: ICON:0009103
+    title: authored
+    description: The reverse of authored by.
+    annotations:
+      runtime: phrase "authored"
+    is_a: is_involved_with
+    domain: Agent
+    domain_of:
+    - Agent
+    range: PaperOrReport
+    inverse: authored_by
+    multivalued: true
+  commissioned_by:
+    slot_uri: ICON:0009104
+    title: commissioned by
+    description: The organization a technical report was prepared for, when someone else wrote it, as
+      a consultant's report for an agency.
+    close_mappings:
+    - schema:sponsor
+    annotations:
+      crosswalk: 'DataCite 4.5: contributorType Sponsor'
+      runtime: phrase "commissioned by"
+    is_a: is_involved_with
+    domain: PaperOrReport
+    domain_of:
+    - PaperOrReport
+    range: Organization
+    inverse: commissioned
+    multivalued: true
+  commissioned:
+    slot_uri: ICON:0009105
+    title: commissioned
+    description: The reverse of commissioned by.
+    annotations:
+      runtime: phrase "commissioned"
+    is_a: is_involved_with
+    domain: Organization
+    domain_of:
+    - Organization
+    range: PaperOrReport
+    inverse: commissioned_by
+    multivalued: true
+  describes:
+    slot_uri: ICON:0009106
+    title: describes
+    description: 'The work is about this project, program, organization or data resource: it reports,
+      evaluates or documents it. A data paper describes its dataset.'
+    close_mappings:
+    - cito:describes
+    - schema:about
+    annotations:
+      crosswalk: 'DataCite 4.5: relatedIdentifier relationType Describes'
+      runtime: phrase "describes"
+    is_a: is_about
+    domain: PaperOrReport
+    domain_of:
+    - PaperOrReport
+    range: uriorcurie
+    inverse: is_described_by
+    multivalued: true
+  is_described_by:
+    slot_uri: ICON:0009107
+    title: is described by
+    description: The reverse of describes.
+    annotations:
+      runtime: phrase "is described by"
+    range: PaperOrReport
+    inverse: describes
+    multivalued: true
+  uses_data_from:
+    slot_uri: ICON:0009108
+    title: uses data from
+    description: The work's analysis, or the tool, draws on this dataset, database or repository. For
+      a tool, the workbook's inDataset column.
+    close_mappings:
+    - cito:usesDataFrom
+    - schema:isBasedOn
+    annotations:
+      crosswalk: 'DataCite 4.5: relatedIdentifier relationType References'
+      runtime: phrase "uses data from"
+    domain_of:
+    - PaperOrReport
+    - Tool
+    range: DataResource
+    inverse: provides_data_for
+    multivalued: true
+  provides_data_for:
+    slot_uri: ICON:0009109
+    title: provides data for
+    description: The reverse of uses data from.
+    close_mappings:
+    - cito:providesDataFor
+    annotations:
+      runtime: phrase "provides data for"
+    domain: DataResource
+    domain_of:
+    - DataResource
+    any_of:
+    - range: PaperOrReport
+    - range: Tool
+    range: uriorcurie
+    inverse: uses_data_from
+    multivalued: true
+  cites:
+    slot_uri: ICON:0009110
+    title: cites
+    description: The work cites another paper or report in the graph.
+    exact_mappings:
+    - cito:cites
+    close_mappings:
+    - schema:citation
+    annotations:
+      crosswalk: 'Crossref: citation_list; DataCite 4.5: relatedIdentifier relationType Cites'
+      runtime: phrase "cites"
+    domain: PaperOrReport
+    domain_of:
+    - PaperOrReport
+    range: PaperOrReport
+    inverse: is_cited_by
+    multivalued: true
+  is_cited_by:
+    slot_uri: ICON:0009111
+    title: is cited by
+    description: The reverse of cites.
+    exact_mappings:
+    - cito:isCitedBy
+    annotations:
+      runtime: phrase "is cited by"
+    domain: PaperOrReport
+    domain_of:
+    - PaperOrReport
+    range: PaperOrReport
+    inverse: cites
+    multivalued: true
+  studied_at:
+    slot_uri: ICON:0009112
+    title: studied at
+    description: A place where the work's field study or monitoring was done, such as a reserve, a creek
+      or a dam.
+    close_mappings:
+    - schema:spatialCoverage
+    annotations:
+      runtime: phrase "studied at"
+    domain: PaperOrReport
+    domain_of:
+    - PaperOrReport
+    range: Infrastructure
+    inverse: is_study_site_of
+    multivalued: true
+  is_study_site_of:
+    slot_uri: ICON:0009113
+    title: is study site of
+    description: The reverse of studied at.
+    annotations:
+      runtime: phrase "is study site of"
+    domain: Infrastructure
+    domain_of:
+    - Infrastructure
+    range: PaperOrReport
+    inverse: studied_at
+    multivalued: true
+  authors:
+    slot_uri: ICON:0009200
+    title: authors
+    description: 'The author list as printed on the work: Smith, J., Lee, K. and Ortiz, M. Public bibliographic
+      information, not contact details.'
+    close_mappings:
+    - bibo:authorList
+    annotations:
+      crosswalk: 'Crossref: contributors; DataCite 4.5: creator/creatorName'
+      runtime: field publication.authors
+    domain: PaperOrReport
+    domain_of:
+    - PaperOrReport
+    range: string
+    multivalued: true
+  published_in:
+    slot_uri: ICON:0009201
+    title: published in
+    description: 'The journal a paper appeared in, or the series a report belongs to, by name: Conservation
+      Biology, USGS Open-File Report. Kept as text: journals are not records in the graph.'
+    close_mappings:
+    - schema:isPartOf
+    annotations:
+      crosswalk: 'Crossref: journal_metadata/full_title'
+      runtime: field publication.published_in
+    domain: PaperOrReport
+    domain_of:
+    - PaperOrReport
+    range: string
+    multivalued: true
+  report_number:
+    slot_uri: ICON:0009202
+    title: report number
+    description: A report's number in its series, such as 2019-1123.
+    close_mappings:
+    - bibo:number
+    annotations:
+      crosswalk: 'Crossref: report-paper/report_number'
+      runtime: field publication.report_number
+    domain: TechnicalReport
+    domain_of:
+    - TechnicalReport
+    range: string
+    multivalued: true
+enums:
+  PublicationAvailabilityEnum:
+    enum_uri: ICON:0009010
+    description: The values of publication availability.
+    permissible_values:
+      open access publication:
+        meaning: ICON:0009011
+        description: Anyone can read it free from the publisher or a repository.
+        annotations:
+          runtime: choice publication.availability "Open access"
+      free to read publication:
+        meaning: ICON:0009012
+        description: Free to read on the publisher's site but without an open license.
+        annotations:
+          runtime: choice publication.availability "Free to read"
+      subscription or purchase publication:
+        meaning: ICON:0009013
+        description: Behind a journal paywall.
+        annotations:
+          runtime: choice publication.availability "Subscription or purchase"
+      publication on request:
+        meaning: ICON:0009014
+        description: The authors or issuing agency send it when asked.
+        annotations:
+          runtime: choice publication.availability "On request"
+      publication not public:
+        meaning: ICON:0009015
+        description: Internal or restricted.
+        annotations:
+          runtime: choice publication.availability "Not public"

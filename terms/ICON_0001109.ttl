@@ -1,0 +1,25 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix OBI: <http://purl.obolibrary.org/obo/OBI_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+icon:0001109 a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "located in county"@en ;
+    IAO:0000115 "The county that holds the organization's headquarters, main office or seat. An organization is located in at most one county, and may operate in many (#949)."@en ;
+    oboInOwl:hasDbXref "Wikidata:P159" ;
+    rdfs:comment "Every local government is located in one county. A city's is the county the city lies in, a county government's is its own county, and a special district's or regional agency's is the county of its main office. Located in county is a kind of located in area, so the organization also operates in the county."@en ;
+    rdfs:domain OBI:0000245 ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:range icon:0010000 ;
+    rdfs:subPropertyOf icon:0010104 ;
+    owl:inverseOf icon:0001110 ;
+    skos:closeMatch org:hasPrimarySite,
+        schema:location .
+

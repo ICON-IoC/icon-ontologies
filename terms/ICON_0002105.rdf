@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="cb0">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0012000"/>
+    <rdf:rest rdf:nodeID="cb368a2a0c2cf2a6eb25831e7953477d0f2f637463fe6b6825c6ba8d66a70b5115"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb28c9cf20edfe9ea1b098db079057bce6a339c95f8a464b1f7dfd0a6d473df441">
+    <rdf:first rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000276"/>
+    <rdf:rest rdf:nodeID="cbea6dcb937e0df3d94ca3bdbf8fa4d9138e7138686a70881e05e9d146b15614e5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb368a2a0c2cf2a6eb25831e7953477d0f2f637463fe6b6825c6ba8d66a70b5115">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0010000"/>
+    <rdf:rest rdf:nodeID="cb28c9cf20edfe9ea1b098db079057bce6a339c95f8a464b1f7dfd0a6d473df441"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb74df0c6befae0231070083612f6e8080370a6582c31ccf637f22a45d6debab4e">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="cb0"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cbb2c846c0e8a7006eaef64cd0ebe7dd9fbd52c4f9493e6762711274d6359a084">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0011004"/>
+    <rdf:rest rdf:nodeID="cbd7c96744b860be374134b6eeace4a6009e3d5947219e59b3c009836ad1012775"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cbc52389ef49e1a29fb4e6feac406be1b00e169728b2657e7ed1a61e428b758494">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0011001"/>
+    <rdf:rest rdf:nodeID="cbb2c846c0e8a7006eaef64cd0ebe7dd9fbd52c4f9493e6762711274d6359a084"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cbd7c96744b860be374134b6eeace4a6009e3d5947219e59b3c009836ad1012775">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0011005"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cbea6dcb937e0df3d94ca3bdbf8fa4d9138e7138686a70881e05e9d146b15614e5">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0011000"/>
+    <rdf:rest rdf:nodeID="cbc52389ef49e1a29fb4e6feac406be1b00e169728b2657e7ed1a61e428b758494"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0002105">
+    <obo:IAO_0000115 xml:lang="en">The reverse of has expertise in.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:nodeID="cb74df0c6befae0231070083612f6e8080370a6582c31ccf637f22a45d6debab4e"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/people.owl"/>
+    <rdfs:label xml:lang="en">is expertise of</rdfs:label>
+    <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0002104"/>
+  </rdf:Description>
+</rdf:RDF>

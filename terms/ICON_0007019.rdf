@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0007019">
+    <obo:IAO_0000115 xml:lang="en">A conservation plan for one statewide land management need, such as reforestation after wildfire, written by state and federal agencies with nonprofit and university partners under an interagency body such as California's Wildfire and Forest Resilience Task Force, that measures the need and the progress against it, proposes how to prioritize the work, and sets goals with key actions assigned to named agencies and partnerships. It informs the body's action plan and binds no agency.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/plans.owl"/>
+    <rdfs:label xml:lang="en">interagency shared strategy</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0007001"/>
+  </rdf:Description>
+</rdf:RDF>

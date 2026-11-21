@@ -1,0 +1,14 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+icon:0014202 a owl:DatatypeProperty ;
+    rdfs:label "baseline value"@en ;
+    IAO:0000115 "The amount of the indicator before the target was set. Progress counts up from it: the baseline plus the outcomes achieved since."@en ;
+    rdfs:domain icon:0014001 ;
+    rdfs:isDefinedBy iconbase:outcomes.owl ;
+    rdfs:range xsd:decimal .
+

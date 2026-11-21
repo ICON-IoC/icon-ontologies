@@ -1,0 +1,812 @@
+# ICON Plans ontology
+# Built by `ioc-ontologies` from ontology/src/plans.terms; edit that file, not this one.
+# Guide: ontology/guides/plans.md
+@prefix BFO: <http://purl.obolibrary.org/obo/BFO_> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix OBI: <http://purl.obolibrary.org/obo/OBI_> .
+@prefix RO: <http://purl.obolibrary.org/obo/RO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pplan: <http://purl.org/net/p-plan#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+IAO:0000115 a owl:AnnotationProperty ;
+    rdfs:label "definition" .
+
+dcterms:creator a owl:AnnotationProperty .
+
+dcterms:description a owl:AnnotationProperty .
+
+dcterms:license a owl:AnnotationProperty .
+
+dcterms:references a owl:AnnotationProperty .
+
+dcterms:title a owl:AnnotationProperty .
+
+oboInOwl:hasDbXref a owl:AnnotationProperty ;
+    rdfs:label "database_cross_reference" .
+
+oboInOwl:hasExactSynonym a owl:AnnotationProperty ;
+    rdfs:label "has_exact_synonym" .
+
+skos:broadMatch a owl:AnnotationProperty .
+
+skos:closeMatch a owl:AnnotationProperty .
+
+skos:exactMatch a owl:AnnotationProperty .
+
+skos:historyNote a owl:AnnotationProperty ;
+    rdfs:label "history note"@en ;
+    IAO:0000115 "A note about the past state/use/meaning of a concept."@en ;
+    rdfs:subPropertyOf skos:note .
+
+skos:narrowMatch a owl:AnnotationProperty .
+
+skos:notation a owl:AnnotationProperty ;
+    rdfs:label "notation"@en ;
+    IAO:0000115 "A notation, also known as classification code, is a string of characters such as \"T58.5\" or \"303.4833\" used to uniquely identify a concept within the scope of a given concept scheme."@en .
+
+icon:0007004 a owl:Class ;
+    rdfs:label "recovery plan"@en ;
+    IAO:0000115 "A conservation plan for one or more species listed under the Endangered Species Act, issued by the Fish and Wildlife Service or NOAA Fisheries, that sets recovery criteria and actions."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007005 a owl:Class ;
+    rdfs:label "watershed management plan"@en ;
+    IAO:0000115 "A conservation plan for one or more watersheds, written by the agencies, landowners and groups working in them, that assesses their condition and sets out actions to restore them, protect the waters they drain to, or keep development from adding to flooding."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007006 a owl:Class ;
+    rdfs:label "conservation priorities plan"@en ;
+    IAO:0000115 "A conservation plan for a region, written by a partnership of agencies, organizations and residents, that ranks its lands by the conservation values they serve and sets out where and how to protect the highest-ranked ones."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007007 a owl:Class ;
+    rdfs:label "conservation action plan"@en ;
+    IAO:0000115 "A conservation plan written with The Nature Conservancy's Conservation Action Planning method: it names focal conservation targets, rates their viability, ranks the threats to them, and sets measurable objectives with strategic actions ranked by benefit, feasibility and cost."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007008 a owl:Class ;
+    rdfs:label "national marine sanctuary management plan"@en ;
+    IAO:0000115 "A conservation plan for a national marine sanctuary, issued by NOAA's Office of National Marine Sanctuaries and reviewed periodically under the National Marine Sanctuaries Act, that sets out action plans of strategies and activities for the sanctuary's resource issues and programs, often with revised regulations."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007009 a owl:Class ;
+    rdfs:label "wetland management plan"@en ;
+    IAO:0000115 "A conservation plan for a marsh or other wetland complex, written by the agencies and landowners that manage it, that sets acreage targets for restoring and managing its wetlands and the activities, permits and monitoring to reach them."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007010 a owl:Class ;
+    rdfs:label "comprehensive conservation and management plan"@en ;
+    IAO:0000115 "A conservation plan for an estuary of national significance, written under Clean Water Act Section 320 by the management conference of a National Estuary Program (agencies, scientists, local governments and the public) and approved by the Environmental Protection Agency, that sets goals and long-term actions for the estuary and its watershed and is revised every few years."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007011 a owl:Class ;
+    rdfs:label "landscape conservation strategy"@en ;
+    IAO:0000115 "A conservation plan for a region's lands, written by the agencies and organizations that own or fund them, that sets shared goals and high-level strategies for where conservation and restoration could go across the landscape alongside other aims such as flood management, agriculture and recreation, without committing any owner to projects."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007012 a owl:Class ;
+    rdfs:label "open space vision plan"@en ;
+    IAO:0000115 "A conservation plan for the lands of a regional open space or park district and the region around them, written by the district with a community advisory committee and public engagement, that sets long-term themes and goals for conservation, public access, education and working lands and ranks place-based priority actions, often as the basis for a funding measure."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007013 a owl:Class ;
+    rdfs:label "biodiversity action plan"@en ;
+    IAO:0000115 "A conservation plan for the biodiversity of a county, region or nation, written with the experts, agencies and organizations working there, that describes its habitats and species of concern, the threats to them, and recommended, usually voluntary, actions for science, land protection and stewardship, and education. Local plans follow the model of national biodiversity strategies and action plans under the Convention on Biological Diversity."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007014 a owl:Class ;
+    rdfs:label "ecoregional assessment"@en ;
+    IAO:0000115 "A conservation plan for a whole ecoregion, made with The Nature Conservancy's ecoregional planning method, that sets quantitative goals for a suite of species, ecological systems and other conservation targets, maps how much each part of the ecoregion contributes to meeting them, often with site-selection software such as Marxan, and recommends broad strategies for protecting the places of highest conservation value and steering development elsewhere. It informs the land-use and conservation decisions of others rather than committing any party to actions."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007015 a owl:Class ;
+    rdfs:label "statewide conservation strategy"@en ;
+    IAO:0000115 "A conservation plan for a whole state, issued by its government to meet a statewide area-based conservation goal such as conserving 30 percent of its lands and coastal waters by 2030, that defines what counts as conserved, sets key objectives, and lays out pathways of strategic actions for state agencies working with tribes, federal and local governments and other partners, with progress tracked in public data and periodic reports."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007016 a owl:Class ;
+    rdfs:label "habitat conservation and management plan"@en ;
+    IAO:0000115 "A conservation plan for one rare habitat type across its whole range, such as an endemic sand or serpentine community, written by scientists with the land trusts, agencies and landowners working there, that maps and ranks the remaining habitat sites, synthesizes the biology of its sensitive species and the threats to them, and recommends which lands to preserve and how to manage them (fire, invasive plants, recreation, restoration), with research and education. It is advisory and binds no owner, unlike a habitat conservation plan under the Endangered Species Act."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007017 a owl:Class ;
+    rdfs:label "regional conservation investment strategy"@en ;
+    IAO:0000115 "A voluntary, non-regulatory conservation assessment for a region, prepared by a public agency under California's Regional Conservation Investment Strategies Program (Fish and Game Code 1850 to 1861) and approved by the California Department of Fish and Wildlife for up to 10 years, that names focal species and other conservation elements, sets goals and measurable objectives for them, and lists conservation actions and habitat enhancement actions with priority locations. Its actions can earn advance mitigation credits through mitigation credit agreements, unlike a plan that binds no one to mitigation."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007018 a owl:Class ;
+    rdfs:label "agency strategic plan"@en ;
+    IAO:0000115 "A conservation plan in which a public agency or board sets its own goals, objectives and numerical targets for a fixed period, usually five years, to steer the grants, acquisitions and programs it funds, aligned with statewide strategies and shaped by public workshops and tribal consultation. It commits the agency itself, not other parties, and is carried out through the projects it chooses to fund."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007019 a owl:Class ;
+    rdfs:label "interagency shared strategy"@en ;
+    IAO:0000115 "A conservation plan for one statewide land management need, such as reforestation after wildfire, written by state and federal agencies with nonprofit and university partners under an interagency body such as California's Wildfire and Forest Resilience Task Force, that measures the need and the progress against it, proposes how to prioritize the work, and sets goals with key actions assigned to named agencies and partnerships. It informs the body's action plan and binds no agency."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007020 a owl:Class ;
+    rdfs:label "integrated regional water management plan"@en ;
+    IAO:0000115 "A plan for all aspects of water management in a region approved by the California Department of Water Resources, written under the Integrated Regional Water Management Planning Act by a Regional Water Management Group of local water, wastewater, flood control and watershed agencies, that sets regional objectives for water supply, water quality, flood management and ecosystem protection, ranks a living list of projects its members sponsor, and makes those projects eligible for state IRWM grants. Each member agency adopts it, and it binds none of them to carry out a project."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007021 a owl:Class ;
+    rdfs:label "habitat conservation plan"@en ;
+    IAO:0000115 "A conservation plan that a non-federal landowner or agency prepares under Section 10(a)(1)(B) of the federal Endangered Species Act to obtain an incidental take permit from the U.S. Fish and Wildlife Service or NOAA Fisheries, that names the covered species and covered activities, sets biological goals and objectives, and commits the permittee to measures that avoid, minimize and mitigate the take, with monitoring, adaptive management, funding assurances and a fixed permit term. It binds the permittee through the permit and its implementing agreement."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007022 a owl:Class ;
+    rdfs:label "fishery management plan"@en ;
+    IAO:0000115 "A conservation plan that a regional fishery management council prepares under Section 303 of the Magnuson-Stevens Fishery Conservation and Management Act for a fishery in federal waters, that names the managed stocks, sets goals and objectives, defines overfishing and optimum yield, describes and identifies essential fish habitat, and sets the framework for harvest limits, allocation and other management measures. The Secretary of Commerce approves it and its amendments, and NOAA Fisheries implements it through federal regulations that bind those who fish."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007023 a owl:Class ;
+    rdfs:label "fishery ecosystem plan"@en ;
+    IAO:0000115 "A conservation plan that a regional fishery management council adopts to bring ecosystem science and policy into its fishery management plans, that describes the marine ecosystem its fisheries depend on, sets ecosystem goals and objectives across those plans, and identifies research needs and cross-plan initiatives. It informs the council's decisions and binds no one."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007024 a owl:Class ;
+    rdfs:label "climate adaptation plan"@en ;
+    IAO:0000115 "A conservation plan that a public body adopts to prepare a region for climate change, that builds on an assessment of its vulnerability to hazards such as flooding, sea level rise, extreme heat and drought, and that sets adaptation strategies with implementing actions and recommended lead and partner agencies across sectors such as flood management, ecosystems, agriculture and water supply. Example: the Delta Stewardship Council's Delta Adapts Adaptation Plan (2025)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007025 a owl:Class ;
+    rdfs:label "regional priority plan"@en ;
+    IAO:0000115 "A conservation plan that a regional grantee of California's Regional Forest and Fire Capacity Program prepares for its planning area, that assesses wildfire risk and forest and landscape health, names landscapes of interest, strategies and near-term projects, and builds the region's capacity to carry them out. Example: the San Bernardino Mountains Regional Priority Plan."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007026 a owl:Class ;
+    rdfs:label "bird conservation plan"@en ;
+    IAO:0000115 "A conservation plan for the birds of one habitat across a state or region, written by a bird conservation partnership such as Partners in Flight or a habitat joint venture, that chooses focal bird species to stand for the habitat, sets population and habitat objectives for them, names portfolio sites, and recommends habitat protection, restoration, management, monitoring, research and policy actions. It binds no one. Example: California Partners in Flight's Riparian Bird Conservation Plan (2004)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007027 a owl:Class ;
+    rdfs:label "agricultural water management plan"@en ;
+    IAO:0000115 "A plan that an agricultural water supplier serving 10,000 or more irrigated acres prepares and adopts every five years under the California Water Code (Section 10826, from the Water Conservation Act of 2009), that describes its service area, water supplies and water use, accounts for its water budget, reports its efficient water management practices (accurate measurement and volumetric pricing, and the conditional practices that are feasible) and includes a drought plan. It is submitted to the Department of Water Resources and binds the supplier to report, not to reach set targets. Example: the Yolo County Flood Control and Water Conservation District Agricultural Water Management Plan 2025."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007028 a owl:Class ;
+    rdfs:label "groundwater management plan"@en ;
+    IAO:0000115 "A plan that a local agency adopts under California's Groundwater Management Act (Water Code Section 10750 and following, from AB 3030 of 1992 and SB 1938 of 2002) to manage the groundwater beneath its area, with basin management objectives, a monitoring program for water levels, quality and subsidence, and actions such as recharge and conjunctive use. It preceded the Sustainable Groundwater Management Act of 2014, whose groundwater sustainability plans now govern medium and high priority basins. Example: the Yolo County Flood Control and Water Conservation District Groundwater Management Plan 2006."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007029 a owl:Class ;
+    rdfs:label "water management plan"@en ;
+    IAO:0000115 "A water supplier's plan for managing its surface water and groundwater together, setting out its water rights, facilities and use and a program of actions to improve management and develop new supply, adopted under the agency's own authority rather than a specific planning statute. Example: the Yolo County Flood Control and Water Conservation District Water Management Plan 2000."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007030 a owl:Class ;
+    rdfs:label "state wildlife action plan"@en ;
+    IAO:0000115 "A state fish and wildlife agency's comprehensive wildlife conservation strategy, required every ten years for the state to receive federal State Wildlife Grant funds, that lists the Species of Greatest Conservation Need, describes their key habitats and the pressures on them, and sets conservation strategies by region and habitat, with monitoring and partner coordination. It is a guide for the agency and its partners, not a regulation. Example: California's State Wildlife Action Plan 2025 (CDFW)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007031 a owl:Class ;
+    rdfs:label "sector companion plan"@en ;
+    IAO:0000115 "A plan that carries a broader conservation plan into one sector, such as agriculture, energy, transportation, water management or tribal lands, written with that sector's agencies and organizations. It names the sector's priority pressures and strategy categories, potential conservation activities at statewide, regional and local scales, desired outcomes, and potential partners and funding, without binding anyone. It implements the broader plan. Example: the nine companion plans of California's State Wildlife Action Plan."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007032 a owl:Class ;
+    rdfs:label "flood risk management plan"@en ;
+    IAO:0000115 "A long-range plan for managing flood risk across a river basin or region, issued by the agency responsible for its flood system and updated on a fixed cycle, that sets goals for reducing the chance of flooding and the damage and loss of life when it happens, and recommends a portfolio of investments in levees, bypasses, reservoirs, floodplains and emergency response alongside ecosystem restoration, multi-benefit projects and the policies and funding needed to carry them out. Example: California's Central Valley Flood Protection Plan, updated every five years under the Central Valley Flood Protection Act of 2008."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007033 a owl:Class ;
+    rdfs:label "park management plan"@en ;
+    IAO:0000115 "A plan for one park or preserve, adopted by the public body that owns it and often required by a regional habitat conservation plan whose reserve the park belongs to, that sets for decades how its natural, cultural and paleontological resources are protected, restored and monitored (a resource management plan) or where trails, staging areas and facilities may go (a general development plan), and guides the agency's later land use and management decisions for that park. Examples: the Laguna Coast Wilderness Park General Development and Resource Management Plans (1998) and the Aliso and Wood Canyons Wilderness Park Resource Management Plan (2009) in Orange County."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007034 a owl:Class ;
+    rdfs:label "joint venture implementation plan"@en ;
+    IAO:0000115 "A conservation plan for the region of one Migratory Bird Joint Venture, the voluntary, non-regulatory partnerships of agencies, organizations and landowners set up under the North American Waterfowl Management Plan and administered by the U.S. Fish and Wildlife Service, that steps continental bird population objectives down to the region, sets habitat goals in acres to protect, restore and enhance, and names the partnership's priorities and strategies for reaching them. The partners carry out the projects; the plan binds no one. Example: the San Francisco Bay Joint Venture's 2022 Implementation Strategy, Restoring the Estuary."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007035 a owl:Class ;
+    rdfs:label "continental bird conservation plan"@en ;
+    IAO:0000115 "A conservation plan for one group of birds across North America, accepted by the national governments of Canada, the United States and Mexico or adopted by a continental partnership, that sets continental population, habitat and supporter goals and objectives and recommends how its governance bodies, science teams and partners should pursue them. Regional Migratory Bird Joint Ventures step its continental objectives down to their regions in joint venture implementation plans. It binds no one. Example: the North American Waterfowl Management Plan (1986; 2024 Update)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007036 a owl:Class ;
+    rdfs:label "storm water resource plan"@en ;
+    IAO:0000115 "A conservation plan for one watershed, written under California's Storm Water Resource Planning Act (Senate Bill 985, 2014) and the State Water Resources Control Board's guidelines by the cities, counties and special districts that manage storm water there, that identifies and ranks multi-benefit projects using storm water and dry weather runoff as a resource, to improve water quality, recharge groundwater, reduce flooding and restore habitat. Incorporated into the region's integrated regional water management plan, it makes its projects eligible for state storm water implementation grants, and it binds no agency to build them. Example: the Russian River Storm Water Resource Plan (2018)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007037 a owl:Class ;
+    rdfs:label "regional management plan"@en ;
+    IAO:0000115 "A comprehensive, long-term plan for one region that a state agency must adopt under a statute naming the region's goals, that sets regulatory policies binding the state and local agencies whose projects there are covered by the plan, together with nonregulatory recommendations to other agencies and the Legislature, and is amended as conditions and science change. Agencies certify their covered projects as consistent with the plan, and the adopting agency hears appeals of those certifications. Example: the Delta Plan, which the Delta Stewardship Council adopted in 2013 under the Sacramento-San Joaquin Delta Reform Act of 2009 to achieve the coequal goals of water supply reliability and a healthy Delta ecosystem."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007038 a owl:Class ;
+    rdfs:label "eagle conservation plan"@en ;
+    IAO:0000115 "A conservation plan that a project proponent prepares with the U.S. Fish and Wildlife Service under the Bald and Golden Eagle Protection Act and the Service's eagle take permit rules, that assesses how bald and golden eagles use the project area, estimates the eagle take the project's activities may cause, sets avoidance and minimization measures, and commits to monitoring and to mitigation that offsets the take, so the Service can issue an eagle take permit. Example: San Diego Gas & Electric's Eagle Conservation Plan (2023), Appendix B of its HCP Amendment."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007039 a owl:Class ;
+    rdfs:label "rangeland management plan"@en ;
+    IAO:0000115 "A plan for livestock grazing on land a public agency owns, that sets stocking rates, residual dry matter targets, grazing seasons and the fencing and water developments that keep cattle out of streams and reservoirs, so that grazing reduces wildland fuel and serves water quality and native habitat, and that the agency carries out through its grazing leases. Example: the San Francisco Public Utilities Commission's Alameda Creek Watershed Rangeland Management Plan (2026), which updates the 1997 Grazing Resources Management Plan of its Alameda Watershed Management Plan."@en ;
+    rdfs:comment "Added for the SFPUC Alameda Creek Watershed Rangeland Management Plan (#1115)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007040 a owl:Class ;
+    rdfs:label "conservation proposal"@en ;
+    IAO:0000115 "A conservation plan written by an organization that neither owns nor manages the lands it covers, proposing new designations, legislation or management direction for those lands, usually public ones, to the agencies and lawmakers who could adopt it. It binds no one until they act on it. Example: the California Chaparral Institute's California Chaparral Preservation Plan (2021), which asks that the four southern California national forests become National Chaparral Recreation Areas."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007041 a owl:Class ;
+    rdfs:label "forest health plan"@en ;
+    IAO:0000115 "A plan that maps, ranks and sequences fuel reduction, thinning, prescribed fire and related restoration treatments across a forest landscape, usually national forest land under a NEPA decision, so that the agency and its partners can fund and contract the work in priority order. Example: the Upper Mokelumne River Watershed Authority and Eldorado National Forest's Forest Projects Plan Phase 1 (2023), which sequences fuels treatments on about 26,000 acres of the Amador Ranger District."@en ;
+    rdfs:comment "Added for the Upper Mokelumne River Watershed Authority's Forest Projects Plan Phase 1 (#1132)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007042 a owl:Class ;
+    rdfs:label "invasive species management plan"@en ;
+    IAO:0000115 "A plan that inventories the invasive non-native plants or animals on a body of land, ranks the species and infestations for treatment, and sets out the control methods, monitoring and best management practices the land manager will use to contain or eradicate them. Example: the Conejo Open Space Conservation Agency's Invasive Plant Management Plan (2026), which ranks about 50 invasive plants in three priority tiers across about 13,000 acres of open space."@en ;
+    rdfs:comment "Added for the Conejo Open Space Conservation Agency's Invasive Plant Management Plan (#1157)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007043 a owl:Class ;
+    rdfs:label "hazard mitigation plan"@en ;
+    IAO:0000115 "A plan, usually written to FEMA's local hazard mitigation planning rules, that identifies the natural hazards such as wildfire, flood, earthquake and landslide that could damage an agency's or community's facilities and lands, assesses its vulnerability to them, and lists actions to reduce their impacts before a disaster. Example: the Mountains Recreation and Conservation Authority's Draft Hazard Mitigation Plan (2021), limited to the park facilities MRCA owns and maintains."@en ;
+    rdfs:comment "Added for the Mountains Recreation and Conservation Authority's Hazard Mitigation Plan (#1177)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007044 a owl:Class ;
+    rdfs:label "public works plan"@en ;
+    IAO:0000115 "A long-range plan under the California Coastal Act (Public Resources Code 30605) in which a public agency lays out the parks, trails, access ways, and facilities it intends to build in the coastal zone, so that the Coastal Commission can certify the whole program at once instead of permitting each project. Example: the Malibu Parks Public Access Enhancement Plan, adopted in 2010 by the Mountains Recreation and Conservation Authority and the Santa Monica Mountains Conservancy."@en ;
+    rdfs:comment "Added for the Mountains Recreation and Conservation Authority's Malibu public works plans (#1177)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007045 a owl:Class ;
+    rdfs:label "forest management plan"@en ;
+    IAO:0000115 "A plan for one forest property, adopted by the owner that manages it, that sets the forest's objectives (such as research, demonstration, education, or timber production) and how it is administered, and divides the forest into compartments or stands assigned to management regimes such as even-aged, uneven-aged, or reserve, so that harvests, treatments, and research can be planned and compared over decades while soil, water, and other resources are conserved. Example: the Policy for Use of Blodgett Forest Research Station (2012), UC Berkeley's management plan for its 4,356-acre research forest in El Dorado County."@en ;
+    rdfs:comment "Added for Berkeley Forests' Policy for Use of Blodgett Forest Research Station (#1187)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007046 a owl:Class ;
+    rdfs:label "interagency action plan"@en ;
+    IAO:0000115 "A statewide plan issued by an interagency task force that a governor convenes, which folds existing state and federal plans, mandates, and reports into one strategy, sets goals with acreage and other numerical targets for a fixed period, and assigns numbered actions with deadlines to named state and federal agencies, carried out as resources allow while the task force tracks progress. Example: California's Wildfire and Forest Resilience Action Plan (2021) of the Governor's Forest Management Task Force, the first five-year plan under the state's Shared Stewardship Agreement with the USDA Forest Service."@en ;
+    rdfs:comment "Added for California's Wildfire and Forest Resilience Action Plan (#1185)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007047 a owl:Class ;
+    rdfs:label "eelgrass management plan"@en ;
+    IAO:0000115 "A plan for the eelgrass (Zostera) beds of one bay or estuary, adopted by the agency that manages its waters, that maps existing and damaged beds, sets boundaries where anchoring, mooring or other uses that scour the beds are barred, sets acreage targets and methods for replanting, and lays out monitoring and adaptive management. Example: the Richardson's Bay Regional Agency's Eelgrass Protection and Management Plan (2021), which created the Eelgrass Protection Zone, and its Eelgrass Restoration and Adaptive Management Plan (2023)."@en ;
+    rdfs:comment "Added for the Richardson's Bay Regional Agency's two eelgrass plans (#1188)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007048 a owl:Class ;
+    rdfs:label "anchorage management plan"@en ;
+    IAO:0000115 "A plan adopted by the agency that regulates an anchorage, harbor or mooring area for the vessels kept there, that sets time limits, permits and enforcement priorities, schedules the removal of unpermitted, derelict or occupied vessels, and connects people living aboard with housing and other services, often to protect habitat on the bottom from anchor damage. Example: the Richardson's Bay Regional Agency Transition Plan (2020)."@en ;
+    rdfs:comment "Added for the Richardson's Bay Regional Agency Transition Plan (#1188)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007049 a owl:Class ;
+    rdfs:label "species management and monitoring plan"@en ;
+    IAO:0000115 "A plan for one listed species across its whole range, written by the agencies, land managers and scientists that hold its habitat, that maps its habitat and population units, assesses threats, sets desired habitat and population conditions, and standardizes how the species is managed, monitored and reported so that the separate reserves and permits covering it add up to a recovery assessment. It is not the recovery plan the Fish and Wildlife Service issues under the Endangered Species Act. Example: the Stephens' Kangaroo Rat Rangewide Management and Monitoring Plan (2021)."@en ;
+    rdfs:comment "Added for the Stephens' Kangaroo Rat Rangewide Management and Monitoring Plan (#1237)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007050 a owl:Class ;
+    rdfs:label "restoration feasibility plan"@en ;
+    IAO:0000115 "A plan that reviews the condition of a degraded lake, wetland or landscape and the restoration alternatives tried or proposed before, develops conceptual projects with cost estimates, and matches them to realistic funding sources, to recommend a restoration that is feasible and affordable rather than adopting a binding program. Example: the Salton Sea Funding and Feasibility Action Plan (2016)."@en ;
+    rdfs:comment "Added for the Salton Sea Authority's Funding and Feasibility Action Plan (#1243)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007051 a owl:Class ;
+    rdfs:label "statewide comprehensive outdoor recreation plan"@en ;
+    IAO:0000115 "A plan a state's outdoor recreation agency keeps current for the federal Land and Water Conservation Fund, which requires one for a state to receive its grants: it assesses the supply of and demand for outdoor recreation, sets the state's priorities for recreation grants for about five years, and states the criteria grant applications are scored by. Example: California's 2021-2025 Statewide Comprehensive Outdoor Recreation Plan, by State Parks' Office of Grants and Local Services, which centers park access and equity."@en ;
+    rdfs:comment "Added for California's 2021-2025 SCORP (#1348)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007052 a owl:Class ;
+    rdfs:label "species conservation plan"@en ;
+    IAO:0000115 "A conservation plan for one species that a state law directs the state wildlife agency to prepare across the species' range in the state, setting conservation targets and the actions to meet them, such as avoiding and minimizing impacts, conserving and managing land, tribal co-management, research and public education. Example: CDFW's Western Joshua Tree Conservation Plan, required by the Western Joshua Tree Conservation Act and approved by the Fish and Game Commission in 2025."@en ;
+    rdfs:comment "Added for the Western Joshua Tree Conservation Plan (#1362)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007053 a owl:Class ;
+    rdfs:label "groundwater sustainability plan"@en ;
+    IAO:0000115 "A plan that the groundwater sustainability agencies of a medium or high priority basin adopt under California's Sustainable Groundwater Management Act of 2014 (Water Code Section 10720 and following) and submit to the Department of Water Resources, which reviews it and approves it, finds it incomplete, or finds it inadequate. It sets a sustainability goal to be reached within 20 years, defines undesirable results for the six sustainability indicators (chronic lowering of groundwater levels, reduction of storage, seawater intrusion, degraded water quality, land subsidence, and depletion of interconnected surface water), sets minimum thresholds and measurable objectives at representative monitoring sites, and lists the projects and management actions that keep the basin sustainable. It is reviewed every five years. Example: the Tule Lake Subbasin Groundwater Sustainability Plan (2021)."@en ;
+    rdfs:comment "Added for the Tule Lake Subbasin Groundwater Sustainability Plan (#1453)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007054 a owl:Class ;
+    rdfs:label "habitat action plan"@en ;
+    IAO:0000115 "A plan by a state agency for one kind of habitat across the state's lands or waters, such as its kelp forests, that summarizes the state-supported research, monitoring and restoration under way, names the knowledge gaps resource managers face, and sets priorities for action in research and monitoring, policy, restoration, and community and tribal engagement, often as an interim step toward a fuller management plan. Lead entities and timelines may be left to a later version. Example: the Ocean Protection Council's Interim Action Plan for Protecting and Restoring California's Kelp Forests (2021), written with CDFW."@en ;
+    rdfs:comment "Added for the Interim Action Plan for Protecting and Restoring California's Kelp Forests (#1487)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007055 a owl:Class ;
+    rdfs:label "ecosystem-based management plan"@en ;
+    IAO:0000115 "A state plan for a marine ecosystem built on foundation species, such as California's kelp forests, that the state wildlife agency develops with its partners, the tribes, and a community working group, and the Fish and Game Commission adopts. It combines a harvest framework, which sets how and where the foundation species may be taken, with a restoration framework, which tracks the ecosystem's condition against a baseline and sets the permit pathways for restoration projects, and it is managed adaptively as monitoring reports change. Example: CDFW's statewide Kelp Restoration and Management Plan for giant kelp and bull kelp, in development with the Ocean Protection Council."@en ;
+    rdfs:comment "Added for CDFW's Kelp Restoration and Management Plan (#1495)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007056 a owl:Class ;
+    rdfs:label "land management plan"@en ;
+    IAO:0000115 "A plan by the California Department of Fish and Wildlife for one of its wildlife areas or ecological reserves, written to the Department's Guide and Annotated Outline for Writing Land Management Plans, that describes the property, its resources and its public uses and sets goals and tasks by element (biological, public use, agricultural, cultural, facilities maintenance, administrative, research and monitoring, and management coordination), with the staff hours and operations budget needed to carry them out. Example: the Napa-Sonoma Marshes Wildlife Area Land Management Plan (2011)."@en ;
+    rdfs:comment "Added for the Napa-Sonoma Marshes Wildlife Area Land Management Plan (#1543)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007057 a owl:Class ;
+    rdfs:label "statewide pollution strategy"@en ;
+    IAO:0000115 "A plan a state agency adopts because a statute requires it, to reduce one kind of pollution across the state: it reviews the sources and pathways of the pollutant, lays out a phased roadmap of solutions such as prevention at the source and interventions on pathways like stormwater, sets research priorities, and calls for further work with the sectors involved. It guides the agency's funding and recommendations but binds no one. Example: California's Statewide Microplastics Strategy (2022), which the Ocean Protection Council adopted under SB 1263 (2018)."@en ;
+    rdfs:comment "Added for California's Statewide Microplastics Strategy (#1351)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007102 a owl:ObjectProperty ;
+    rdfs:label "issued by"@en ;
+    IAO:0000115 "The agency or organization that issued the plan. A kind of was issued by."@en ;
+    rdfs:domain icon:0007001 ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:range OBI:0000245 ;
+    rdfs:subPropertyOf icon:0000100,
+        icon:0006113 .
+
+icon:0007117 a owl:ObjectProperty ;
+    rdfs:label "implements plan"@en ;
+    IAO:0000115 "A project or program carries out actions of the plan, or a plan carries the plan's strategies into one sector, as a State Wildlife Action Plan companion plan does. A kind of implements."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:range icon:0007001 ;
+    rdfs:subPropertyOf icon:0006108 .
+
+icon:0007122 a owl:Class ;
+    rdfs:label "regional economic plan"@en ;
+    IAO:0000115 "A plan for the economy of one region, prepared by a regional agency, often because a statute requires it, that assesses the region's economic sectors and the effects of proposed state projects and policies on them, and recommends actions to sustain the regional economy. Example: the Economic Sustainability Plan for the Sacramento-San Joaquin River Delta, which the Delta Protection Commission adopted in 2012 as the Delta Reform Act requires."@en ;
+    rdfs:comment "Added for the Delta Protection Commission's Economic Sustainability Plan (#1677)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007123 a owl:Class ;
+    rdfs:label "heritage area management plan"@en ;
+    IAO:0000115 "The plan that the local coordinating entity of a National Heritage Area writes with partners and the public, and the Secretary of the Interior approves, that sets the area's interpretive themes, goals, and strategies for preserving, interpreting, and promoting its natural, cultural, and historic resources. Example: the Sacramento-San Joaquin Delta National Heritage Area Management Plan, approved in January 2025."@en ;
+    rdfs:comment "Added for the Sacramento-San Joaquin Delta National Heritage Area Management Plan (#1677)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007124 a owl:Class ;
+    rdfs:label "community action plan"@en ;
+    IAO:0000115 "A plan for one small community, prepared with its residents and its local government, that names improvements to quality of life, economic development, historic preservation, transportation, and public safety, and the steps and partners to carry them out. Example: the Walnut Grove Community Action Plan (2016), prepared with support from the Delta Protection Commission."@en ;
+    rdfs:comment "Added for the community action plans of four Sacramento River Delta towns (#1677)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007125 a owl:Class ;
+    rdfs:label "trail master plan"@en ;
+    IAO:0000115 "A plan for a regional trail system that sets its alignment, the standards and process for designating segments, and how the segments are funded, built, operated, and maintained by the agencies along it. Example: the Great California Delta Trail Master Plan, by the Delta Protection Commission."@en ;
+    rdfs:comment "Added for the Great California Delta Trail Master Plan (#1677)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+
+icon:0007200 a owl:DatatypeProperty ;
+    rdfs:label "plan status"@en ;
+    IAO:0000115 "Where the plan stands: draft, final, revised, under review."@en ;
+    rdfs:domain icon:0007001 ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:range xsd:string .
+
+icon:0007201 a owl:DatatypeProperty ;
+    rdfs:label "recovery priority number"@en ;
+    IAO:0000115 "The Fish and Wildlife Service's recovery priority for the species, 1 (highest) to 18, with C when the species conflicts with development."@en ;
+    rdfs:domain icon:0007001 ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:range xsd:string .
+
+icon:0007202 a owl:DatatypeProperty ;
+    rdfs:label "target date"@en ;
+    IAO:0000115 "When the plan expects its objectives to be met, as a year or a phrase the plan uses."@en ;
+    rdfs:domain icon:0007001 ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:range xsd:string .
+
+icon:0007203 a owl:DatatypeProperty ;
+    rdfs:label "total estimated cost"@en ;
+    IAO:0000115 "The plan's estimated cost of carrying out all its actions, with its currency and the period it covers."@en ;
+    rdfs:domain icon:0007001 ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:range xsd:string .
+
+icon:0007204 a owl:DatatypeProperty ;
+    rdfs:label "objective criteria"@en ;
+    IAO:0000115 "The measurable conditions that show the objective has been met."@en ;
+    rdfs:domain icon:0007002 ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:range xsd:string .
+
+icon:0007205 a owl:DatatypeProperty ;
+    rdfs:label "action priority"@en ;
+    IAO:0000115 "The plan's priority for the action, usually 1 (must be done to prevent extinction) to 3."@en ;
+    rdfs:domain icon:0007003 ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:range xsd:string .
+
+icon:0007206 a owl:DatatypeProperty ;
+    rdfs:label "action duration"@en ;
+    IAO:0000115 "How long the action is expected to take, as the plan states it: a number of years, or ongoing."@en ;
+    rdfs:domain icon:0007003 ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:range xsd:string .
+
+icon:0007207 a owl:DatatypeProperty ;
+    rdfs:label "action cost estimate"@en ;
+    IAO:0000115 "The action's estimated total cost."@en ;
+    rdfs:domain icon:0007003 ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:range xsd:string .
+
+icon:0007208 a owl:DatatypeProperty ;
+    rdfs:label "cost by party"@en ;
+    IAO:0000115 "The action's estimated cost broken down by the parties expected to pay it."@en ;
+    rdfs:domain icon:0007003 ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:range xsd:string .
+
+BFO:0000001 a owl:Class ;
+    rdfs:label "entity"@en .
+
+BFO:0000031 a owl:Class ;
+    rdfs:label "generically dependent continuant"@en ;
+    IAO:0000115 "b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])"@en ;
+    rdfs:subClassOf BFO:0000002 .
+
+IAO:0000005 a owl:Class ;
+    rdfs:label "objective specification"@en ;
+    IAO:0000115 "A directive information entity that describes an intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved."@en ;
+    rdfs:subClassOf IAO:0000033 .
+
+IAO:0000007 a owl:Class ;
+    rdfs:label "action specification"@en ;
+    IAO:0000115 "A directive information entity that describes an action the bearer will take."@en ;
+    rdfs:subClassOf IAO:0000033 .
+
+IAO:0000030 a owl:Class ;
+    rdfs:label "information content entity"@en ;
+    IAO:0000115 "A generically dependent continuant that is about some thing."@en ;
+    rdfs:subClassOf BFO:0000031 .
+
+IAO:0000104 a owl:Class ;
+    rdfs:label "plan specification"@en ;
+    IAO:0000115 "A directive information entity with action specifications and objective specifications as parts, and that may be concretized as a realizable entity that, if realized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified."@en ;
+    rdfs:subClassOf IAO:0000033 .
+
+RO:0002323 a owl:ObjectProperty ;
+    rdfs:label "mereotopologically related to"@en ;
+    IAO:0000115 "A mereological relationship or a topological relationship"@en .
+
+skos:note a owl:AnnotationProperty ;
+    rdfs:label "note"@en ;
+    IAO:0000115 "A general note, for any purpose."@en .
+
+icon:0000012 a owl:Class ;
+    rdfs:label "place"@en ;
+    IAO:0000115 "A part of the landscape or a structure in it that records can be located at, worked on or bounded by: a river, a reserve, a dam, a crossing structure."@en ;
+    rdfs:isDefinedBy iconbase:core.owl ;
+    rdfs:subClassOf BFO:0000004 .
+
+icon:0006108 a owl:ObjectProperty ;
+    rdfs:label "implements"@en ;
+    IAO:0000115 "An organization, project, program or guideline or mandate carries out a guideline or mandate or a plan, as a program carries out the statute that authorizes it or the certification it runs, or a regulation carries out the statute that requires it."@en ;
+    rdfs:isDefinedBy iconbase:mandates.owl ;
+    rdfs:subPropertyOf icon:0000100 .
+
+icon:0006113 a owl:ObjectProperty ;
+    rdfs:label "was issued by"@en ;
+    IAO:0000115 "The reverse of issued."@en ;
+    rdfs:isDefinedBy iconbase:mandates.owl .
+
+icon:0007100 a owl:ObjectProperty ;
+    rdfs:label "has plan type"@en ;
+    IAO:0000115 "Links a plan to one of the plan type classes it belongs to. The explorer's way of stating the plan's class."@en ;
+    rdfs:domain icon:0007001 ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    owl:inverseOf icon:0007101 .
+
+icon:0007101 a owl:ObjectProperty ;
+    rdfs:label "is plan type of"@en ;
+    IAO:0000115 "The reverse of has plan type."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:range icon:0007001 ;
+    owl:inverseOf icon:0007100 .
+
+icon:0007103 a owl:ObjectProperty ;
+    rdfs:label "is objective of"@en ;
+    IAO:0000115 "The objective belongs to the plan."@en ;
+    rdfs:domain icon:0007002 ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:range icon:0007001 ;
+    rdfs:subPropertyOf BFO:0000050 ;
+    owl:inverseOf icon:0007104 .
+
+icon:0007104 a owl:ObjectProperty ;
+    rdfs:label "has objective"@en ;
+    IAO:0000115 "The reverse of is objective of."@en ;
+    rdfs:domain icon:0007001 ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:range icon:0007002 ;
+    rdfs:subPropertyOf BFO:0000051 ;
+    owl:inverseOf icon:0007103 .
+
+icon:0007105 a owl:ObjectProperty ;
+    rdfs:label "is action of"@en ;
+    IAO:0000115 "The action belongs to the plan."@en ;
+    rdfs:domain icon:0007003 ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:range icon:0007001 ;
+    rdfs:subPropertyOf BFO:0000050 ;
+    owl:inverseOf icon:0007106 .
+
+icon:0007106 a owl:ObjectProperty ;
+    rdfs:label "has action"@en ;
+    IAO:0000115 "The reverse of is action of."@en ;
+    rdfs:domain icon:0007001 ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:range icon:0007003 ;
+    rdfs:subPropertyOf BFO:0000051 ;
+    owl:inverseOf icon:0007105 .
+
+icon:0007107 a owl:ObjectProperty ;
+    rdfs:label "serves objective"@en ;
+    IAO:0000115 "The action is meant to help meet the objective."@en ;
+    rdfs:domain icon:0007003 ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:range icon:0007002 ;
+    owl:inverseOf icon:0007108 .
+
+icon:0007108 a owl:ObjectProperty ;
+    rdfs:label "is served by"@en ;
+    IAO:0000115 "The reverse of serves objective."@en ;
+    rdfs:domain icon:0007002 ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:range icon:0007003 ;
+    owl:inverseOf icon:0007107 .
+
+icon:0007109 a owl:ObjectProperty ;
+    rdfs:label "involves"@en ;
+    IAO:0000115 "An organization the plan or action names as a cooperator or party, beside its lead."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:range OBI:0000245 ;
+    rdfs:subPropertyOf icon:0000100 ;
+    owl:inverseOf icon:0007110 .
+
+icon:0007110 a owl:ObjectProperty ;
+    rdfs:label "is involved in"@en ;
+    IAO:0000115 "The reverse of involves."@en ;
+    rdfs:domain OBI:0000245 ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subPropertyOf icon:0000100 ;
+    owl:inverseOf icon:0007109 .
+
+icon:0007111 a owl:ObjectProperty ;
+    rdfs:label "at site"@en ;
+    IAO:0000115 "A place where the action is to be carried out."@en ;
+    rdfs:domain icon:0007003 ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:range icon:0005000 ;
+    owl:inverseOf icon:0007112 .
+
+icon:0007112 a owl:ObjectProperty ;
+    rdfs:label "is site of"@en ;
+    IAO:0000115 "The reverse of at site."@en ;
+    rdfs:domain icon:0005000 ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:range icon:0007003 ;
+    owl:inverseOf icon:0007111 .
+
+icon:0007113 a owl:ObjectProperty ;
+    rdfs:label "targets site"@en ;
+    IAO:0000115 "A place the objective's criteria are measured at, such as a recovery unit's streams."@en ;
+    rdfs:domain icon:0007002 ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:range icon:0005000 ;
+    owl:inverseOf icon:0007114 .
+
+icon:0007114 a owl:ObjectProperty ;
+    rdfs:label "is targeted by"@en ;
+    IAO:0000115 "The reverse of targets site."@en ;
+    rdfs:domain icon:0005000 ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:range icon:0007002 ;
+    owl:inverseOf icon:0007113 .
+
+icon:0007115 a owl:ObjectProperty ;
+    rdfs:label "covers site"@en ;
+    IAO:0000115 "A place within the plan's scope."@en ;
+    rdfs:domain icon:0007001 ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:range icon:0005000 ;
+    owl:inverseOf icon:0007116 .
+
+icon:0007116 a owl:ObjectProperty ;
+    rdfs:label "is covered by plan"@en ;
+    IAO:0000115 "The reverse of covers site."@en ;
+    rdfs:domain icon:0005000 ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:range icon:0007001 ;
+    owl:inverseOf icon:0007115 .
+
+icon:0007118 a owl:ObjectProperty ;
+    rdfs:label "has role in"@en ;
+    IAO:0000115 "An organization has a part in the plan because one of the plan's actions, at any depth, is led by it or involves it. Never stated in the sources: the explorer's plan role rule derives it."@en ;
+    rdfs:comment "OWL cannot restrict a property chain to plans and organizations, so the rule is kept in the explorer's reasoner (static/rdf.js, ppod:planRole) and described here."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:range icon:0007001 ;
+    owl:inverseOf icon:0007119 .
+
+icon:0007119 a owl:ObjectProperty ;
+    rdfs:label "assigns a role to"@en ;
+    IAO:0000115 "The reverse of has role in."@en ;
+    rdfs:domain icon:0007001 ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    owl:inverseOf icon:0007118 .
+
+icon:0007120 a owl:ObjectProperty ;
+    rdfs:label "counts toward"@en ;
+    IAO:0000115 "A protected place the state counts toward the plan's area-based conservation goal, such as a GAP 1 or 2 land in California's 30x30 Conserved Areas, which count toward Pathways to 30x30 California."@en ;
+    rdfs:domain icon:0005000 ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:range icon:0007001 ;
+    owl:inverseOf icon:0007121 .
+
+icon:0007121 a owl:ObjectProperty ;
+    rdfs:label "has conserved area"@en ;
+    IAO:0000115 "The reverse of counts toward."@en ;
+    rdfs:domain icon:0007001 ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:range icon:0005000 ;
+    owl:inverseOf icon:0007120 .
+
+BFO:0000002 a owl:Class ;
+    rdfs:label "continuant"@en ;
+    rdfs:subClassOf BFO:0000001 .
+
+BFO:0000004 a owl:Class ;
+    rdfs:label "independent continuant"@en ;
+    IAO:0000115 "b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])"@en ;
+    rdfs:subClassOf BFO:0000002 .
+
+BFO:0000050 a owl:ObjectProperty,
+        owl:TransitiveProperty ;
+    rdfs:label "part of"@en ;
+    IAO:0000115 "a core relation that holds between a part and its whole"@en ;
+    rdfs:subPropertyOf RO:0002131 ;
+    owl:inverseOf BFO:0000051 .
+
+RO:0002131 a owl:ObjectProperty,
+        owl:SymmetricProperty ;
+    rdfs:label "overlaps"@en ;
+    IAO:0000115 "x overlaps y if and only if there exists some z such that x has part z and z part of y"@en ;
+    rdfs:subPropertyOf RO:0002323 .
+
+BFO:0000051 a owl:ObjectProperty,
+        owl:TransitiveProperty ;
+    rdfs:label "has part"@en ;
+    IAO:0000115 "a core relation that holds between a whole and its part"@en ;
+    rdfs:subPropertyOf RO:0002131 .
+
+OBI:0000245 a owl:Class ;
+    rdfs:label "organization"@en ;
+    IAO:0000115 "An organization is a continuant entity which can play roles,  has members, and has a set of organization rules.  Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members."@en ;
+    rdfs:subClassOf BFO:0000004 .
+
+icon:0000014 a owl:Class ;
+    rdfs:label "planning element"@en ;
+    IAO:0000115 "A directive information entity that sets out what conservation work should achieve or do: a plan, one of its objectives, or one of its actions."@en ;
+    rdfs:isDefinedBy iconbase:core.owl ;
+    rdfs:subClassOf IAO:0000033 .
+
+IAO:0000033 a owl:Class ;
+    rdfs:label "directive information entity"@en ;
+    IAO:0000115 "An information content entity whose concretizations indicate to their bearer how to realize them in a process."@en ;
+    rdfs:subClassOf IAO:0000030 .
+
+icon:0000100 a owl:ObjectProperty ;
+    rdfs:label "is involved with"@en ;
+    IAO:0000115 "A link between two records that work together or affect one another. Every more specific involvement link (leads, funds, manages, uses, is partner of and others) implies it."@en ;
+    rdfs:isDefinedBy iconbase:core.owl .
+
+icon:0007002 a owl:Class ;
+    rdfs:label "plan objective"@en ;
+    IAO:0000115 "An objective specification within a conservation plan: a condition the plan aims to reach, often with measurable criteria, such as a population target for a recovery unit."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf IAO:0000005,
+        icon:0000014 .
+
+icon:0005000 a owl:Class ;
+    rdfs:label "infrastructure"@en ;
+    IAO:0000115 "A place or structure on the landscape that conservation works on or around: a water body, a conservation area, a water or energy work, a farm, a sensor, a road or trail. Called infrastructure in the PPOD model whether built or natural."@en ;
+    rdfs:isDefinedBy iconbase:infrastructure.owl ;
+    rdfs:subClassOf icon:0000012 .
+
+icon:0007003 a owl:Class ;
+    rdfs:label "plan action"@en ;
+    IAO:0000115 "An action specification within a conservation plan: a task the plan calls for, with its priority, cost, lead and cooperators. Actions nest: a sub-action is part of its action."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf IAO:0000007,
+        icon:0000014 ;
+    skos:closeMatch pplan:Step .
+
+icon:0007001 a owl:Class ;
+    rdfs:label "conservation plan"@en ;
+    IAO:0000115 "A plan specification issued by an agency or organization that sets conservation objectives and the actions to meet them, such as a species recovery plan."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf IAO:0000104,
+        icon:0000014 ;
+    skos:closeMatch pplan:Plan .
+
+iconbase:plans.owl a owl:Ontology ;
+    dcterms:creator "Internet of Conservation (ICON)" ;
+    dcterms:description "Conservation plans, such as species recovery plans, with their objectives and actions: who issues a plan, which sites and taxa it covers, which actions serve which objectives, and who leads or takes part in each action."@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references obo:bfo.owl,
+        obo:iao.owl,
+        obo:obi.owl,
+        <http://purl.org/net/p-plan>,
+        <http://www.w3.org/2004/02/skos/core> ;
+    dcterms:title "ICON Plans ontology"@en ;
+    rdfs:comment "Existing ontologies used. Reused: SKOS. Built on: Basic Formal Ontology, Information Artifact Ontology, Ontology for Biomedical Investigations. Mapped to: P-Plan."@en ;
+    rdfs:seeAlso iconbase:core.owl,
+        iconbase:infrastructure.owl,
+        iconbase:mandates.owl ;
+    owl:versionIRI <https://w3id.org/icon/releases/2026-11-21/plans.owl> ;
+    owl:versionInfo "2026-11-21" .
+

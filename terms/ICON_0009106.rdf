@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:iconbase="https://w3id.org/icon/"
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0009106">
+    <obo:IAO_0000115 xml:lang="en">The work is about this project, program, organization or data resource: it reports, evaluates or documents it. A data paper describes its dataset.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0009000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/publications.owl"/>
+    <rdfs:label xml:lang="en">describes</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0009107"/>
+    <skos:closeMatch rdf:resource="http://purl.org/spar/cito/describes"/>
+    <skos:closeMatch rdf:resource="https://schema.org/about"/>
+    <iconbase:ICON_0000001>DataCite 4.5: relatedIdentifier relationType Describes</iconbase:ICON_0000001>
+  </rdf:Description>
+</rdf:RDF>

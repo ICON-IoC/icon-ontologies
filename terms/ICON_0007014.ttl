@@ -1,0 +1,12 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0007014 a owl:Class ;
+    rdfs:label "ecoregional assessment"@en ;
+    IAO:0000115 "A conservation plan for a whole ecoregion, made with The Nature Conservancy's ecoregional planning method, that sets quantitative goals for a suite of species, ecological systems and other conservation targets, maps how much each part of the ecoregion contributes to meeting them, often with site-selection software such as Marxan, and recommends broad strategies for protecting the places of highest conservation value and steering development elsewhere. It informs the land-use and conservation decisions of others rather than committing any party to actions."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+

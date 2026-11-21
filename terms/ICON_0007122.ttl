@@ -1,0 +1,13 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0007122 a owl:Class ;
+    rdfs:label "regional economic plan"@en ;
+    IAO:0000115 "A plan for the economy of one region, prepared by a regional agency, often because a statute requires it, that assesses the region's economic sectors and the effects of proposed state projects and policies on them, and recommends actions to sustain the regional economy. Example: the Economic Sustainability Plan for the Sacramento-San Joaquin River Delta, which the Delta Protection Commission adopted in 2012 as the Delta Reform Act requires."@en ;
+    rdfs:comment "Added for the Delta Protection Commission's Economic Sustainability Plan (#1677)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+

@@ -1,0 +1,385 @@
+# ICON Guidelines and mandates ontology
+# Built by `ioc-ontologies` from ontology/src/mandates.terms; edit that file, not this one.
+# Guide: ontology/guides/mandates.md
+@prefix BFO: <http://purl.obolibrary.org/obo/BFO_> .
+@prefix COB: <http://purl.obolibrary.org/obo/COB_> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix OBI: <http://purl.obolibrary.org/obo/OBI_> .
+@prefix OMRSE: <http://purl.obolibrary.org/obo/OMRSE_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+IAO:0000115 a owl:AnnotationProperty ;
+    rdfs:label "definition" .
+
+dcterms:creator a owl:AnnotationProperty .
+
+dcterms:description a owl:AnnotationProperty .
+
+dcterms:license a owl:AnnotationProperty .
+
+dcterms:references a owl:AnnotationProperty .
+
+dcterms:title a owl:AnnotationProperty .
+
+oboInOwl:hasDbXref a owl:AnnotationProperty ;
+    rdfs:label "database_cross_reference" .
+
+oboInOwl:hasExactSynonym a owl:AnnotationProperty ;
+    rdfs:label "has_exact_synonym" .
+
+skos:broadMatch a owl:AnnotationProperty .
+
+skos:closeMatch a owl:AnnotationProperty .
+
+skos:exactMatch a owl:AnnotationProperty .
+
+skos:narrowMatch a owl:AnnotationProperty .
+
+icon:0006001 a owl:Class ;
+    rdfs:label "agreement"@en ;
+    IAO:0000115 "A guideline or mandate that two or more parties sign, such as a memorandum of understanding, a settlement or a habitat conservation plan's implementing agreement."@en ;
+    rdfs:isDefinedBy iconbase:mandates.owl ;
+    rdfs:subClassOf icon:0006000 ;
+    skos:closeMatch OMRSE:00000089 .
+
+icon:0006002 a owl:Class ;
+    rdfs:label "certification standard"@en ;
+    IAO:0000115 "A guideline or mandate that sets the practices land, products or operations must meet to be certified, such as a sustainable farming or forestry standard."@en ;
+    rdfs:isDefinedBy iconbase:mandates.owl ;
+    rdfs:subClassOf icon:0006000 .
+
+icon:0006003 a owl:Class ;
+    rdfs:label "executive order"@en ;
+    IAO:0000115 "A guideline or mandate that a president or governor issues to direct government agencies."@en ;
+    rdfs:isDefinedBy iconbase:mandates.owl ;
+    rdfs:subClassOf icon:0006000 .
+
+icon:0006004 a owl:Class ;
+    rdfs:label "guideline"@en ;
+    IAO:0000115 "A guideline or mandate that recommends how something should be done without binding anyone."@en ;
+    rdfs:isDefinedBy iconbase:mandates.owl ;
+    rdfs:subClassOf icon:0006000 .
+
+icon:0006005 a owl:Class ;
+    rdfs:label "legislation"@en ;
+    IAO:0000115 "A guideline or mandate that a legislature or the voters enact: a statute, an act, a ballot measure."@en ;
+    rdfs:isDefinedBy iconbase:mandates.owl ;
+    rdfs:subClassOf icon:0006000 ;
+    skos:closeMatch schema:Legislation .
+
+icon:0006006 a owl:Class ;
+    rdfs:label "regulation"@en ;
+    IAO:0000115 "A guideline or mandate that an agency adopts under authority a statute gives it, with the force of law, as in the California Code of Regulations."@en ;
+    rdfs:isDefinedBy iconbase:mandates.owl ;
+    rdfs:subClassOf icon:0006000 .
+
+icon:0006007 a owl:Class ;
+    rdfs:label "agency rule"@en ;
+    IAO:0000115 "A guideline or mandate that a body adopts to govern its own lands, programs or members, short of a codified regulation."@en ;
+    rdfs:isDefinedBy iconbase:mandates.owl ;
+    rdfs:subClassOf icon:0006000 .
+
+icon:0006008 a owl:Class ;
+    rdfs:label "court order"@en ;
+    IAO:0000115 "A guideline or mandate that a court issues in a case, such as a writ of mandate or an injunction, directing a party, often a government agency, to act or to stop acting. It binds the parties named in it. Example: the 2025 writ of mandate in California Chaparral Institute v. Board of Forestry and Fire Protection, which limits the California Vegetation Treatment Program in chaparral and coastal sage scrub."@en ;
+    rdfs:isDefinedBy iconbase:mandates.owl ;
+    rdfs:subClassOf icon:0006000 .
+
+icon:0006011 a owl:NamedIndividual,
+        icon:0006010 ;
+    rdfs:label "federal level"@en ;
+    IAO:0000115 "The United States government."@en ;
+    rdfs:isDefinedBy iconbase:mandates.owl .
+
+icon:0006012 a owl:NamedIndividual,
+        icon:0006010 ;
+    rdfs:label "state level"@en ;
+    IAO:0000115 "The State of California."@en ;
+    rdfs:isDefinedBy iconbase:mandates.owl .
+
+icon:0006013 a owl:NamedIndividual,
+        icon:0006010 ;
+    rdfs:label "local level"@en ;
+    IAO:0000115 "Counties, cities and special districts."@en ;
+    rdfs:isDefinedBy iconbase:mandates.owl .
+
+icon:0006014 a owl:NamedIndividual,
+        icon:0006010 ;
+    rdfs:label "private level"@en ;
+    IAO:0000115 "No government: a standard or agreement set by private parties."@en ;
+    rdfs:isDefinedBy iconbase:mandates.owl .
+
+icon:0006015 a owl:NamedIndividual,
+        icon:0006010 ;
+    rdfs:label "international level"@en ;
+    IAO:0000115 "An agreement among national governments, such as a treaty or a decision of the parties to a convention. Example: the Kunming-Montreal Global Biodiversity Framework (2022), adopted under the Convention on Biological Diversity."@en ;
+    rdfs:isDefinedBy iconbase:mandates.owl .
+
+icon:0006120 a owl:ObjectProperty ;
+    rdfs:label "funds established by"@en ;
+    IAO:0000115 "An organization pays out money a guideline or mandate set up, as a board awarding bond-measure grants."@en ;
+    rdfs:isDefinedBy iconbase:mandates.owl ;
+    rdfs:range icon:0006000 .
+
+BFO:0000001 a owl:Class ;
+    rdfs:label "entity"@en .
+
+BFO:0000004 a owl:Class ;
+    rdfs:label "independent continuant"@en ;
+    IAO:0000115 "b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])"@en ;
+    rdfs:subClassOf BFO:0000002 .
+
+BFO:0000015 a owl:Class ;
+    rdfs:label "process"@en .
+
+BFO:0000031 a owl:Class ;
+    rdfs:label "generically dependent continuant"@en ;
+    IAO:0000115 "b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])"@en ;
+    rdfs:subClassOf BFO:0000002 .
+
+COB:0000082 a owl:Class ;
+    rdfs:label "planned process"@en ;
+    IAO:0000115 "A process that is initiated by an agent who intends to carry out a plan to achieve an objective through one or more actions as described in a plan specification."@en ;
+    rdfs:subClassOf BFO:0000015 .
+
+IAO:0000033 a owl:Class ;
+    rdfs:label "directive information entity"@en ;
+    IAO:0000115 "An information content entity whose concretizations indicate to their bearer how to realize them in a process."@en ;
+    rdfs:subClassOf IAO:0000030 .
+
+icon:0000011 a owl:Class ;
+    rdfs:label "endeavor"@en ;
+    IAO:0000115 "A planned process carried out to achieve conservation ends over a span of time: a project or a program."@en ;
+    rdfs:isDefinedBy iconbase:core.owl ;
+    rdfs:subClassOf COB:0000082 .
+
+icon:0006100 a owl:ObjectProperty ;
+    rdfs:label "has instrument type"@en ;
+    IAO:0000115 "Links a guideline or mandate to one of the instrument type classes it belongs to. The explorer's way of stating its class."@en ;
+    rdfs:domain icon:0006000 ;
+    rdfs:isDefinedBy iconbase:mandates.owl ;
+    owl:inverseOf icon:0006101 .
+
+icon:0006101 a owl:ObjectProperty ;
+    rdfs:label "is instrument type of"@en ;
+    IAO:0000115 "The reverse of has instrument type."@en ;
+    rdfs:isDefinedBy iconbase:mandates.owl ;
+    rdfs:range icon:0006000 ;
+    owl:inverseOf icon:0006100 .
+
+icon:0006102 a owl:ObjectProperty ;
+    rdfs:label "at government level"@en ;
+    IAO:0000115 "The level of government a guideline or mandate comes from."@en ;
+    rdfs:domain icon:0006000 ;
+    rdfs:isDefinedBy iconbase:mandates.owl ;
+    rdfs:range icon:0006010 ;
+    owl:inverseOf icon:0006103 .
+
+icon:0006103 a owl:ObjectProperty ;
+    rdfs:label "is government level of"@en ;
+    IAO:0000115 "The reverse of at government level."@en ;
+    rdfs:domain icon:0006010 ;
+    rdfs:isDefinedBy iconbase:mandates.owl ;
+    rdfs:range icon:0006000 ;
+    owl:inverseOf icon:0006102 .
+
+icon:0006104 a owl:ObjectProperty ;
+    rdfs:label "is required by"@en ;
+    IAO:0000115 "A guideline or mandate requires this data, publication or plan to be produced, as the Endangered Species Act requires recovery plans."@en ;
+    rdfs:isDefinedBy iconbase:mandates.owl ;
+    rdfs:range icon:0006000 ;
+    owl:inverseOf icon:0006105 .
+
+icon:0006105 a owl:ObjectProperty ;
+    rdfs:label "requires"@en ;
+    IAO:0000115 "The reverse of is required by."@en ;
+    rdfs:domain icon:0006000 ;
+    rdfs:isDefinedBy iconbase:mandates.owl ;
+    owl:inverseOf icon:0006104 .
+
+icon:0006106 a owl:ObjectProperty ;
+    rdfs:label "is bound by"@en ;
+    IAO:0000115 "A guideline or mandate binds the organization: it must comply with it. A project, program or other record is bound by a mandate only when a source says so for that record."@en ;
+    rdfs:comment "Mandates do not pass from an organization to its units or to work carried out under it (#429, #466)."@en ;
+    rdfs:isDefinedBy iconbase:mandates.owl ;
+    rdfs:range icon:0006000 ;
+    owl:inverseOf icon:0006107 .
+
+icon:0006107 a owl:ObjectProperty ;
+    rdfs:label "binds"@en ;
+    IAO:0000115 "The reverse of is bound by."@en ;
+    rdfs:domain icon:0006000 ;
+    rdfs:isDefinedBy iconbase:mandates.owl ;
+    owl:inverseOf icon:0006106 .
+
+icon:0006108 a owl:ObjectProperty ;
+    rdfs:label "implements"@en ;
+    IAO:0000115 "An organization, project, program or guideline or mandate carries out a guideline or mandate or a plan, as a program carries out the statute that authorizes it or the certification it runs, or a regulation carries out the statute that requires it."@en ;
+    rdfs:isDefinedBy iconbase:mandates.owl ;
+    rdfs:subPropertyOf icon:0000100 ;
+    owl:inverseOf icon:0006109 .
+
+icon:0006109 a owl:ObjectProperty ;
+    rdfs:label "is implemented by"@en ;
+    IAO:0000115 "The reverse of implements."@en ;
+    rdfs:isDefinedBy iconbase:mandates.owl ;
+    rdfs:subPropertyOf icon:0000100 ;
+    owl:inverseOf icon:0006108 .
+
+icon:0006110 a owl:ObjectProperty ;
+    rdfs:label "enforces"@en ;
+    IAO:0000115 "An organization holds the authority to enforce a guideline or mandate."@en ;
+    rdfs:isDefinedBy iconbase:mandates.owl ;
+    owl:inverseOf icon:0006111 .
+
+icon:0006111 a owl:ObjectProperty ;
+    rdfs:label "is enforced by"@en ;
+    IAO:0000115 "The reverse of enforces."@en ;
+    rdfs:isDefinedBy iconbase:mandates.owl ;
+    owl:inverseOf icon:0006110 .
+
+icon:0006112 a owl:ObjectProperty ;
+    rdfs:label "issued"@en ;
+    IAO:0000115 "An organization issued a guideline, mandate or plan: adopted, signed or published it."@en ;
+    rdfs:isDefinedBy iconbase:mandates.owl ;
+    owl:inverseOf icon:0006113 .
+
+icon:0006113 a owl:ObjectProperty ;
+    rdfs:label "was issued by"@en ;
+    IAO:0000115 "The reverse of issued."@en ;
+    rdfs:isDefinedBy iconbase:mandates.owl ;
+    owl:inverseOf icon:0006112 ;
+    skos:closeMatch eli:passed_by .
+
+icon:0006114 a owl:ObjectProperty ;
+    rdfs:label "is supported by"@en ;
+    IAO:0000115 "An organization's work rests on a guideline or mandate, as a program on the statute that authorizes it."@en ;
+    rdfs:isDefinedBy iconbase:mandates.owl ;
+    owl:inverseOf icon:0006115 .
+
+icon:0006115 a owl:ObjectProperty ;
+    rdfs:label "supports"@en ;
+    IAO:0000115 "The reverse of is supported by."@en ;
+    rdfs:isDefinedBy iconbase:mandates.owl ;
+    owl:inverseOf icon:0006114 .
+
+icon:0006116 a owl:ObjectProperty ;
+    rdfs:label "advises about"@en ;
+    IAO:0000115 "An organization gives advice on how to meet or apply a guideline or mandate."@en ;
+    rdfs:isDefinedBy iconbase:mandates.owl ;
+    owl:inverseOf icon:0006117 .
+
+icon:0006117 a owl:ObjectProperty ;
+    rdfs:label "is advised about by"@en ;
+    IAO:0000115 "The reverse of advises about."@en ;
+    rdfs:isDefinedBy iconbase:mandates.owl ;
+    owl:inverseOf icon:0006116 .
+
+icon:0006118 a owl:ObjectProperty ;
+    rdfs:label "is certified by"@en ;
+    IAO:0000115 "An organization, or a place such as a ranch or preserve, holds certification under a certification standard."@en ;
+    rdfs:isDefinedBy iconbase:mandates.owl ;
+    owl:inverseOf icon:0006119 .
+
+icon:0006119 a owl:ObjectProperty ;
+    rdfs:label "certifies"@en ;
+    IAO:0000115 "The reverse of is certified by."@en ;
+    rdfs:isDefinedBy iconbase:mandates.owl ;
+    owl:inverseOf icon:0006118 .
+
+icon:0006121 a owl:ObjectProperty ;
+    rdfs:label "sponsored"@en ;
+    IAO:0000115 "An organization sponsored a bill or ballot measure: it brought the proposal to the legislator who carried it, or campaigned for the measure, and backed it to passage."@en ;
+    rdfs:domain OBI:0000245 ;
+    rdfs:isDefinedBy iconbase:mandates.owl ;
+    rdfs:range icon:0006000 ;
+    owl:inverseOf icon:0006122 .
+
+icon:0006122 a owl:ObjectProperty ;
+    rdfs:label "was sponsored by"@en ;
+    IAO:0000115 "The reverse of sponsored."@en ;
+    rdfs:domain icon:0006000 ;
+    rdfs:isDefinedBy iconbase:mandates.owl ;
+    rdfs:range OBI:0000245 ;
+    owl:inverseOf icon:0006121 .
+
+icon:0006123 a owl:ObjectProperty ;
+    rdfs:label "is authorized under"@en ;
+    IAO:0000115 "A project went ahead under a permit, order, biological opinion or exemption that approved its work, such as a restoration project covered by a programmatic biological opinion or a nationwide permit."@en ;
+    rdfs:domain icon:0003000 ;
+    rdfs:isDefinedBy iconbase:mandates.owl ;
+    rdfs:range icon:0006000 ;
+    owl:inverseOf icon:0006124 .
+
+icon:0006124 a owl:ObjectProperty ;
+    rdfs:label "authorizes"@en ;
+    IAO:0000115 "The reverse of is authorized under."@en ;
+    rdfs:domain icon:0006000 ;
+    rdfs:isDefinedBy iconbase:mandates.owl ;
+    rdfs:range icon:0003000 ;
+    owl:inverseOf icon:0006123 .
+
+BFO:0000002 a owl:Class ;
+    rdfs:label "continuant"@en ;
+    rdfs:subClassOf BFO:0000001 .
+
+IAO:0000030 a owl:Class ;
+    rdfs:label "information content entity"@en ;
+    IAO:0000115 "A generically dependent continuant that is about some thing."@en ;
+    rdfs:subClassOf BFO:0000031 .
+
+OBI:0000245 a owl:Class ;
+    rdfs:label "organization"@en ;
+    IAO:0000115 "An organization is a continuant entity which can play roles,  has members, and has a set of organization rules.  Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members."@en ;
+    rdfs:subClassOf BFO:0000004 .
+
+icon:0000100 a owl:ObjectProperty ;
+    rdfs:label "is involved with"@en ;
+    IAO:0000115 "A link between two records that work together or affect one another. Every more specific involvement link (leads, funds, manages, uses, is partner of and others) implies it."@en ;
+    rdfs:isDefinedBy iconbase:core.owl .
+
+icon:0003000 a owl:Class ;
+    rdfs:label "conservation project"@en ;
+    IAO:0000115 "A bounded effort with a lead and usually partners and funders that restores, protects, acquires, studies, plans or manages something in a place, and ends when its work is done."@en ;
+    rdfs:isDefinedBy iconbase:projects.owl ;
+    rdfs:subClassOf icon:0000011 .
+
+icon:0006010 a owl:Class ;
+    rdfs:label "government level"@en ;
+    IAO:0000115 "The level of government a guideline or mandate comes from or applies at."@en ;
+    rdfs:isDefinedBy iconbase:mandates.owl ;
+    rdfs:subClassOf IAO:0000030 .
+
+icon:0006000 a owl:Class ;
+    rdfs:label "guideline or mandate"@en ;
+    IAO:0000115 "A directive that requires, allows, funds or shapes conservation work: a law, regulation, executive order, agreement, certification standard or guideline. Some bind; others only advise."@en ;
+    rdfs:isDefinedBy iconbase:mandates.owl ;
+    rdfs:subClassOf IAO:0000033 ;
+    skos:closeMatch eli:LegalResource,
+        schema:Legislation .
+
+iconbase:mandates.owl a owl:Ontology ;
+    dcterms:creator "Internet of Conservation (ICON)" ;
+    dcterms:description "Laws, regulations, executive orders, agreements, certifications and guidelines that require, allow, fund or shape conservation work, and the ways organizations stand toward them: bound by, implementing, enforcing, issuing, certified by."@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references <http://data.europa.eu/eli/ontology>,
+        obo:iao.owl,
+        obo:obi.owl,
+        obo:omrse.owl,
+        schema: ;
+    dcterms:title "ICON Guidelines and mandates ontology"@en ;
+    rdfs:comment "Existing ontologies used. Built on: Information Artifact Ontology, Ontology for Biomedical Investigations. Mapped to: European Legislation Identifier (ELI), Ontology of Medically Related Social Entities, schema.org."@en ;
+    rdfs:seeAlso iconbase:core.owl,
+        iconbase:projects.owl ;
+    owl:versionIRI <https://w3id.org/icon/releases/2026-11-21/mandates.owl> ;
+    owl:versionInfo "2026-11-21" .
+

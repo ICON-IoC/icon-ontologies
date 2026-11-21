@@ -1,0 +1,20 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix NCBITaxon: <http://purl.obolibrary.org/obo/NCBITaxon_> .
+@prefix OBI: <http://purl.obolibrary.org/obo/OBI_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+icon:0002100 a owl:ObjectProperty ;
+    rdfs:label "is affiliated with"@en ;
+    IAO:0000115 "A person works for, serves on the board of, or is otherwise attached to an organization. The link may carry the person's title and its role type."@en ;
+    rdfs:domain NCBITaxon:9606 ;
+    rdfs:isDefinedBy iconbase:people.owl ;
+    rdfs:range OBI:0000245 ;
+    rdfs:subPropertyOf icon:0000100 ;
+    owl:inverseOf icon:0002101 ;
+    skos:closeMatch schema:affiliation .
+

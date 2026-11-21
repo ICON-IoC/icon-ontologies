@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0003106">
+    <obo:IAO_0000115 xml:lang="en">The project acts on the place itself: it restores, manages, builds, repairs, widens or studies it, or mitigates for work on it. A fuel reduction project works on the national forest it thins, a coho habitat project works on its creek, and a Caltrans culvert replacement works on the highway it runs under. A project that only uses the place to say where it is intersects it instead.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0003000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/projects.owl"/>
+    <rdfs:label xml:lang="en">works on</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0005000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0003107"/>
+  </rdf:Description>
+</rdf:RDF>

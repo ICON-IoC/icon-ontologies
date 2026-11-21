@@ -1,0 +1,13 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0007047 a owl:Class ;
+    rdfs:label "eelgrass management plan"@en ;
+    IAO:0000115 "A plan for the eelgrass (Zostera) beds of one bay or estuary, adopted by the agency that manages its waters, that maps existing and damaged beds, sets boundaries where anchoring, mooring or other uses that scour the beds are barred, sets acreage targets and methods for replanting, and lays out monitoring and adaptive management. Example: the Richardson's Bay Regional Agency's Eelgrass Protection and Management Plan (2021), which created the Eelgrass Protection Zone, and its Eelgrass Restoration and Adaptive Management Plan (2023)."@en ;
+    rdfs:comment "Added for the Richardson's Bay Regional Agency's two eelgrass plans (#1188)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+

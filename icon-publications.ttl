@@ -1,0 +1,485 @@
+# ICON Papers and reports ontology
+# Built by `ioc-ontologies` from ontology/src/publications.terms; edit that file, not this one.
+# Guide: ontology/guides/publications.md
+@prefix BFO: <http://purl.obolibrary.org/obo/BFO_> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix OBI: <http://purl.obolibrary.org/obo/OBI_> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix cito: <http://purl.org/spar/cito/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+IAO:0000115 a owl:AnnotationProperty ;
+    rdfs:label "definition" .
+
+dcterms:references a owl:AnnotationProperty .
+
+dcterms:title a owl:AnnotationProperty .
+
+oboInOwl:hasDbXref a owl:AnnotationProperty ;
+    rdfs:label "database_cross_reference" .
+
+oboInOwl:hasExactSynonym a owl:AnnotationProperty ;
+    rdfs:label "has_exact_synonym" .
+
+skos:broadMatch a owl:AnnotationProperty .
+
+skos:closeMatch a owl:AnnotationProperty .
+
+skos:exactMatch a owl:AnnotationProperty .
+
+skos:narrowMatch a owl:AnnotationProperty .
+
+icon:0000001 a owl:AnnotationProperty ;
+    rdfs:label "crosswalk"@en ;
+    IAO:0000115 "The matching field in a metadata standard that is not published as RDF, written as the standard's name, a colon and the field's path, such as \"EML 2.2: dataset/title\"."@en ;
+    rdfs:isDefinedBy iconbase:core.owl .
+
+icon:0000002 a owl:AnnotationProperty ;
+    rdfs:label "expected attribute"@en ;
+    IAO:0000115 "A property the records of this class are expected to carry, such as a title or a year. Records the attributes a class uses without adding domain axioms to terms borrowed from other vocabularies."@en ;
+    rdfs:isDefinedBy iconbase:core.owl .
+
+icon:0009011 a owl:NamedIndividual,
+        icon:0009010 ;
+    rdfs:label "open access publication"@en ;
+    IAO:0000115 "Anyone can read it free from the publisher or a repository."@en ;
+    rdfs:isDefinedBy iconbase:publications.owl .
+
+icon:0009012 a owl:NamedIndividual,
+        icon:0009010 ;
+    rdfs:label "free to read publication"@en ;
+    IAO:0000115 "Free to read on the publisher's site but without an open license."@en ;
+    rdfs:isDefinedBy iconbase:publications.owl .
+
+icon:0009013 a owl:NamedIndividual,
+        icon:0009010 ;
+    rdfs:label "subscription or purchase publication"@en ;
+    IAO:0000115 "Behind a journal paywall."@en ;
+    rdfs:isDefinedBy iconbase:publications.owl .
+
+icon:0009014 a owl:NamedIndividual,
+        icon:0009010 ;
+    rdfs:label "publication on request"@en ;
+    IAO:0000115 "The authors or issuing agency send it when asked."@en ;
+    rdfs:isDefinedBy iconbase:publications.owl .
+
+icon:0009015 a owl:NamedIndividual,
+        icon:0009010 ;
+    rdfs:label "publication not public"@en ;
+    IAO:0000115 "Internal or restricted."@en ;
+    rdfs:isDefinedBy iconbase:publications.owl .
+
+BFO:0000001 a owl:Class ;
+    rdfs:label "entity"@en .
+
+BFO:0000031 a owl:Class ;
+    rdfs:label "generically dependent continuant"@en ;
+    IAO:0000115 "b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])"@en ;
+    rdfs:subClassOf BFO:0000002 .
+
+BFO:0000040 a owl:Class ;
+    rdfs:label "material entity"@en ;
+    rdfs:subClassOf BFO:0000004 .
+
+IAO:0000010 a owl:Class ;
+    rdfs:label "software"@en ;
+    IAO:0000115 """Software is a plan specification composed of a series of instructions that can be 
+interpreted by or directly executed by a processing unit."""@en ;
+    rdfs:subClassOf IAO:0000104 .
+
+IAO:0000013 a owl:Class ;
+    rdfs:label "journal article"@en ;
+    IAO:0000115 "A report that is published in a journal."@en ;
+    rdfs:subClassOf IAO:0000088,
+        IAO:0000311 .
+
+IAO:0000033 a owl:Class ;
+    rdfs:label "directive information entity"@en ;
+    IAO:0000115 "An information content entity whose concretizations indicate to their bearer how to realize them in a process."@en ;
+    rdfs:subClassOf IAO:0000030 .
+
+IAO:0000104 a owl:Class ;
+    rdfs:label "plan specification"@en ;
+    IAO:0000115 "A directive information entity with action specifications and objective specifications as parts, and that may be concretized as a realizable entity that, if realized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified."@en ;
+    rdfs:subClassOf IAO:0000033 .
+
+IAO:0000136 a owl:ObjectProperty ;
+    rdfs:label "is about"@en ;
+    IAO:0000115 "A (currently) primitive relation that relates an information artifact to an entity."@en .
+
+IAO:0000311 a owl:Class ;
+    rdfs:label "publication"@en ;
+    IAO:0000115 "A document that is the output of a publishing process."@en ;
+    rdfs:subClassOf IAO:0000310 .
+
+dcterms:abstract a owl:AnnotationProperty ;
+    rdfs:label "Abstract"@en ;
+    rdfs:subPropertyOf dcterms:description .
+
+dcterms:accessRights a owl:AnnotationProperty ;
+    rdfs:label "Access Rights"@en ;
+    rdfs:subPropertyOf dcterms:rights .
+
+dcterms:creator a owl:AnnotationProperty .
+
+dcterms:date a owl:AnnotationProperty ;
+    rdfs:label "Date"@en .
+
+dcterms:description a owl:AnnotationProperty ;
+    rdfs:label "Description"@en .
+
+dcterms:issued a owl:AnnotationProperty ;
+    rdfs:label "Date Issued"@en ;
+    rdfs:subPropertyOf dcterms:date .
+
+dcterms:license a owl:AnnotationProperty ;
+    rdfs:label "License"@en ;
+    rdfs:subPropertyOf dcterms:rights .
+
+bibo:doi a owl:AnnotationProperty ;
+    rdfs:subPropertyOf bibo:identifier .
+
+bibo:identifier a owl:AnnotationProperty .
+
+bibo:issue a owl:AnnotationProperty ;
+    rdfs:label "issue"@en ;
+    rdfs:subPropertyOf bibo:locator .
+
+bibo:pages a owl:AnnotationProperty ;
+    rdfs:label "pages"@en ;
+    rdfs:subPropertyOf bibo:locator .
+
+bibo:volume a owl:AnnotationProperty ;
+    rdfs:label "volume"@en ;
+    rdfs:subPropertyOf bibo:locator .
+
+schema:keywords a owl:AnnotationProperty ;
+    rdfs:label "keywords"@en .
+
+icon:0000012 a owl:Class ;
+    rdfs:label "place"@en ;
+    IAO:0000115 "A part of the landscape or a structure in it that records can be located at, worked on or bounded by: a river, a reserve, a dam, a crossing structure."@en ;
+    rdfs:isDefinedBy iconbase:core.owl ;
+    rdfs:subClassOf BFO:0000004 .
+
+icon:0009001 a owl:Class ;
+    rdfs:label "peer-reviewed paper"@en ;
+    IAO:0000115 "An article that independent experts reviewed before a journal or conference published it. A work counts as one only if its journal certainly peer-reviewed it."@en ;
+    rdfs:isDefinedBy iconbase:publications.owl ;
+    rdfs:subClassOf IAO:0000013,
+        icon:0009000 ;
+    skos:closeMatch bibo:AcademicArticle,
+        fabio:JournalArticle,
+        schema:ScholarlyArticle ;
+    icon:0000001 "Crossref: journal-article",
+        "DataCite 4.5: resourceTypeGeneral JournalArticle" .
+
+icon:0009100 a owl:ObjectProperty ;
+    rdfs:label "has publication type"@en ;
+    IAO:0000115 "Links a paper or report to the class it belongs to: peer-reviewed paper or technical report. The explorer's way of stating its class."@en ;
+    rdfs:domain icon:0009000 ;
+    rdfs:isDefinedBy iconbase:publications.owl ;
+    owl:inverseOf icon:0009101 .
+
+icon:0009101 a owl:ObjectProperty ;
+    rdfs:label "is publication type of"@en ;
+    IAO:0000115 "The reverse of has publication type."@en ;
+    rdfs:isDefinedBy iconbase:publications.owl ;
+    rdfs:range icon:0009000 ;
+    owl:inverseOf icon:0009100 .
+
+icon:0009102 a owl:ObjectProperty ;
+    rdfs:label "authored by"@en ;
+    IAO:0000115 "A person or organization that wrote the work. The full author list as printed is the authors attribute, since most authors have no record of their own."@en ;
+    rdfs:domain icon:0009000 ;
+    rdfs:isDefinedBy iconbase:publications.owl ;
+    rdfs:range icon:0000010 ;
+    rdfs:subPropertyOf icon:0000100 ;
+    owl:inverseOf icon:0009103 ;
+    skos:closeMatch dcterms:creator,
+        schema:author ;
+    icon:0000001 "Crossref: contributors/person_name contributor_role author",
+        "DataCite 4.5: creator" .
+
+icon:0009103 a owl:ObjectProperty ;
+    rdfs:label "authored"@en ;
+    IAO:0000115 "The reverse of authored by."@en ;
+    rdfs:domain icon:0000010 ;
+    rdfs:isDefinedBy iconbase:publications.owl ;
+    rdfs:range icon:0009000 ;
+    rdfs:subPropertyOf icon:0000100 ;
+    owl:inverseOf icon:0009102 .
+
+icon:0009104 a owl:ObjectProperty ;
+    rdfs:label "commissioned by"@en ;
+    IAO:0000115 "The organization a technical report was prepared for, when someone else wrote it, as a consultant's report for an agency."@en ;
+    rdfs:domain icon:0009000 ;
+    rdfs:isDefinedBy iconbase:publications.owl ;
+    rdfs:range OBI:0000245 ;
+    rdfs:subPropertyOf icon:0000100 ;
+    owl:inverseOf icon:0009105 ;
+    skos:closeMatch schema:sponsor ;
+    icon:0000001 "DataCite 4.5: contributorType Sponsor" .
+
+icon:0009105 a owl:ObjectProperty ;
+    rdfs:label "commissioned"@en ;
+    IAO:0000115 "The reverse of commissioned by."@en ;
+    rdfs:domain OBI:0000245 ;
+    rdfs:isDefinedBy iconbase:publications.owl ;
+    rdfs:range icon:0009000 ;
+    rdfs:subPropertyOf icon:0000100 ;
+    owl:inverseOf icon:0009104 .
+
+icon:0009106 a owl:ObjectProperty ;
+    rdfs:label "describes"@en ;
+    IAO:0000115 "The work is about this project, program, organization or data resource: it reports, evaluates or documents it. A data paper describes its dataset."@en ;
+    rdfs:domain icon:0009000 ;
+    rdfs:isDefinedBy iconbase:publications.owl ;
+    rdfs:subPropertyOf IAO:0000136 ;
+    owl:inverseOf icon:0009107 ;
+    skos:closeMatch cito:describes,
+        schema:about ;
+    icon:0000001 "DataCite 4.5: relatedIdentifier relationType Describes" .
+
+icon:0009107 a owl:ObjectProperty ;
+    rdfs:label "is described by"@en ;
+    IAO:0000115 "The reverse of describes."@en ;
+    rdfs:isDefinedBy iconbase:publications.owl ;
+    rdfs:range icon:0009000 ;
+    owl:inverseOf icon:0009106 .
+
+icon:0009108 a owl:ObjectProperty ;
+    rdfs:label "uses data from"@en ;
+    IAO:0000115 "The work's analysis, or the tool, draws on this dataset, database or repository. For a tool, the workbook's inDataset column."@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( icon:0009000 icon:0013000 ) ] ;
+    rdfs:isDefinedBy iconbase:publications.owl ;
+    rdfs:range icon:0008000 ;
+    owl:inverseOf icon:0009109 ;
+    skos:closeMatch cito:usesDataFrom,
+        schema:isBasedOn ;
+    icon:0000001 "DataCite 4.5: relatedIdentifier relationType References" .
+
+icon:0009109 a owl:ObjectProperty ;
+    rdfs:label "provides data for"@en ;
+    IAO:0000115 "The reverse of uses data from."@en ;
+    rdfs:domain icon:0008000 ;
+    rdfs:isDefinedBy iconbase:publications.owl ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( icon:0009000 icon:0013000 ) ] ;
+    owl:inverseOf icon:0009108 ;
+    skos:closeMatch cito:providesDataFor .
+
+icon:0009110 a owl:ObjectProperty ;
+    rdfs:label "cites"@en ;
+    IAO:0000115 "The work cites another paper or report in the graph."@en ;
+    rdfs:domain icon:0009000 ;
+    rdfs:isDefinedBy iconbase:publications.owl ;
+    rdfs:range icon:0009000 ;
+    owl:inverseOf icon:0009111 ;
+    skos:closeMatch schema:citation ;
+    skos:exactMatch cito:cites ;
+    icon:0000001 "Crossref: citation_list",
+        "DataCite 4.5: relatedIdentifier relationType Cites" .
+
+icon:0009111 a owl:ObjectProperty ;
+    rdfs:label "is cited by"@en ;
+    IAO:0000115 "The reverse of cites."@en ;
+    rdfs:domain icon:0009000 ;
+    rdfs:isDefinedBy iconbase:publications.owl ;
+    rdfs:range icon:0009000 ;
+    owl:inverseOf icon:0009110 ;
+    skos:exactMatch cito:isCitedBy .
+
+icon:0009112 a owl:ObjectProperty ;
+    rdfs:label "studied at"@en ;
+    IAO:0000115 "A place where the work's field study or monitoring was done, such as a reserve, a creek or a dam."@en ;
+    rdfs:domain icon:0009000 ;
+    rdfs:isDefinedBy iconbase:publications.owl ;
+    rdfs:range icon:0005000 ;
+    owl:inverseOf icon:0009113 ;
+    skos:closeMatch schema:spatialCoverage .
+
+icon:0009113 a owl:ObjectProperty ;
+    rdfs:label "is study site of"@en ;
+    IAO:0000115 "The reverse of studied at."@en ;
+    rdfs:domain icon:0005000 ;
+    rdfs:isDefinedBy iconbase:publications.owl ;
+    rdfs:range icon:0009000 ;
+    owl:inverseOf icon:0009112 .
+
+icon:0009200 a owl:DatatypeProperty ;
+    rdfs:label "authors"@en ;
+    IAO:0000115 "The author list as printed on the work: Smith, J., Lee, K. and Ortiz, M. Public bibliographic information, not contact details."@en ;
+    rdfs:domain icon:0009000 ;
+    rdfs:isDefinedBy iconbase:publications.owl ;
+    rdfs:range xsd:string ;
+    skos:closeMatch bibo:authorList ;
+    icon:0000001 "Crossref: contributors",
+        "DataCite 4.5: creator/creatorName" .
+
+icon:0009201 a owl:DatatypeProperty ;
+    rdfs:label "published in"@en ;
+    IAO:0000115 "The journal a paper appeared in, or the series a report belongs to, by name: Conservation Biology, USGS Open-File Report. Kept as text: journals are not records in the graph."@en ;
+    rdfs:domain icon:0009000 ;
+    rdfs:isDefinedBy iconbase:publications.owl ;
+    rdfs:range xsd:string ;
+    skos:closeMatch schema:isPartOf ;
+    icon:0000001 "Crossref: journal_metadata/full_title" .
+
+icon:0009202 a owl:DatatypeProperty ;
+    rdfs:label "report number"@en ;
+    IAO:0000115 "A report's number in its series, such as 2019-1123."@en ;
+    rdfs:domain icon:0009002 ;
+    rdfs:isDefinedBy iconbase:publications.owl ;
+    rdfs:range xsd:string ;
+    skos:closeMatch bibo:number ;
+    icon:0000001 "Crossref: report-paper/report_number" .
+
+BFO:0000002 a owl:Class ;
+    rdfs:label "continuant"@en ;
+    rdfs:subClassOf BFO:0000001 .
+
+IAO:0000088 a owl:Class ;
+    rdfs:label "report"@en ;
+    IAO:0000115 "A document assembled by an author for the purpose of providing information for the audience. A report is the output of a documenting process and has the objective to be consumed by a specific audience. Topic of the report is on something that has completed. A report is not a single figure. Examples of reports are journal article, patent application, grant progress report, case report (not patient record)."@en ;
+    rdfs:subClassOf IAO:0000310 .
+
+OBI:0000245 a owl:Class ;
+    rdfs:label "organization"@en ;
+    IAO:0000115 "An organization is a continuant entity which can play roles,  has members, and has a set of organization rules.  Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members."@en ;
+    rdfs:subClassOf BFO:0000004 .
+
+dcterms:rights a owl:AnnotationProperty ;
+    rdfs:label "Rights"@en .
+
+icon:0000010 a owl:Class ;
+    rdfs:label "agent"@en ;
+    IAO:0000115 "An organization or a person: something that can lead, fund, own, manage or take part in conservation work."@en ;
+    rdfs:isDefinedBy iconbase:core.owl ;
+    rdfs:subClassOf BFO:0000040 .
+
+icon:0005000 a owl:Class ;
+    rdfs:label "infrastructure"@en ;
+    IAO:0000115 "A place or structure on the landscape that conservation works on or around: a water body, a conservation area, a water or energy work, a farm, a sensor, a road or trail. Called infrastructure in the PPOD model whether built or natural."@en ;
+    rdfs:isDefinedBy iconbase:infrastructure.owl ;
+    rdfs:subClassOf icon:0000012 .
+
+icon:0008000 a owl:Class ;
+    rdfs:label "data resource"@en ;
+    IAO:0000115 "Data at any of three levels: a dataset, a database or a data repository. Replaced the PPOD Dataset class."@en ;
+    rdfs:isDefinedBy iconbase:data.owl ;
+    rdfs:subClassOf icon:0000013 .
+
+icon:0009002 a owl:Class ;
+    rdfs:label "technical report"@en ;
+    IAO:0000115 "A report an agency, organization or research group issues itself on a study, a monitoring program, an assessment or a project's results, usually in a numbered series. It may or may not have been reviewed."@en ;
+    rdfs:isDefinedBy iconbase:publications.owl ;
+    rdfs:subClassOf IAO:0000088,
+        icon:0009000 ;
+    skos:closeMatch bibo:Report,
+        fabio:TechnicalReport,
+        schema:Report ;
+    icon:0000001 "Crossref: report",
+        "DataCite 4.5: resourceTypeGeneral Report" .
+
+icon:0013000 a owl:Class ;
+    rdfs:label "tool"@en ;
+    IAO:0000115 "Software people use to plan, assess or track conservation work: a decision-support tool, a map viewer, a dashboard, a calculator or model, a software package or an identification key. A site whose main job is holding and serving data is a data repository, not a tool; a tool that works with such data links to it. Read from the master PPOD workbook's Tools sheet."@en ;
+    rdfs:isDefinedBy iconbase:tools.owl ;
+    rdfs:subClassOf IAO:0000010,
+        icon:0000013 .
+
+BFO:0000004 a owl:Class ;
+    rdfs:label "independent continuant"@en ;
+    IAO:0000115 "b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])"@en ;
+    rdfs:subClassOf BFO:0000002 .
+
+IAO:0000310 a owl:Class ;
+    rdfs:label "document"@en ;
+    IAO:0000115 "A collection of information content entities intended to be understood together as a whole"@en ;
+    rdfs:subClassOf IAO:0000030 .
+
+bibo:locator a owl:AnnotationProperty ;
+    rdfs:label "locator"@en .
+
+icon:0000013 a owl:Class ;
+    rdfs:label "information resource"@en ;
+    IAO:0000115 "An information content entity that records or publishes information: a data resource, a paper or a report."@en ;
+    rdfs:isDefinedBy iconbase:core.owl ;
+    rdfs:subClassOf IAO:0000030 .
+
+IAO:0000030 a owl:Class ;
+    rdfs:label "information content entity"@en ;
+    IAO:0000115 "A generically dependent continuant that is about some thing."@en ;
+    rdfs:subClassOf BFO:0000031 .
+
+icon:0000100 a owl:ObjectProperty ;
+    rdfs:label "is involved with"@en ;
+    IAO:0000115 "A link between two records that work together or affect one another. Every more specific involvement link (leads, funds, manages, uses, is partner of and others) implies it."@en ;
+    rdfs:isDefinedBy iconbase:core.owl .
+
+icon:0009010 a owl:Class ;
+    rdfs:label "publication availability"@en ;
+    IAO:0000115 "Who can read a paper or report. Values follow the open-access status Unpaywall and Crossref report."@en ;
+    rdfs:isDefinedBy iconbase:publications.owl ;
+    rdfs:subClassOf IAO:0000030 .
+
+icon:0009000 a owl:Class ;
+    rdfs:label "paper or report"@en ;
+    IAO:0000115 "A written work that reports research, monitoring or assessment: a peer-reviewed paper or a technical report. Shown in the explorer as Papers & reports."@en ;
+    rdfs:isDefinedBy iconbase:publications.owl ;
+    rdfs:subClassOf IAO:0000310,
+        icon:0000013 ;
+    skos:closeMatch bibo:Document,
+        fabio:Work,
+        schema:CreativeWork ;
+    icon:0000001 "Crossref: work",
+        "DataCite 4.5: resourceTypeGeneral Text" ;
+    icon:0000002 dcterms:abstract,
+        dcterms:accessRights,
+        dcterms:issued,
+        dcterms:license,
+        bibo:doi,
+        bibo:issue,
+        bibo:pages,
+        bibo:volume,
+        schema:keywords,
+        icon:0009200,
+        icon:0009201,
+        icon:0009202 .
+
+iconbase:publications.owl a owl:Ontology ;
+    dcterms:creator "Internet of Conservation (ICON)" ;
+    dcterms:description "Peer-reviewed papers and technical reports: authors, publishers and sponsors, what a work describes, which data it uses, which works it cites, and where its study was done."@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references obo:iao.owl,
+        obo:obi.owl,
+        dcterms:,
+        bibo:,
+        <http://purl.org/spar/cito>,
+        <http://purl.org/spar/fabio>,
+        schema: ;
+    dcterms:title "ICON Papers and reports ontology"@en ;
+    rdfs:comment "Existing ontologies used. Reused: Bibliographic Ontology (BIBO), Dublin Core terms, schema.org. Built on: Dublin Core terms, Information Artifact Ontology, Ontology for Biomedical Investigations. Mapped to: Bibliographic Ontology (BIBO), Citation Typing Ontology (CiTO), Dublin Core terms, FRBR-aligned Bibliographic Ontology (FaBiO), schema.org."@en ;
+    rdfs:seeAlso iconbase:core.owl,
+        iconbase:data.owl,
+        iconbase:infrastructure.owl,
+        iconbase:tools.owl ;
+    owl:versionIRI <https://w3id.org/icon/releases/2026-11-21/publications.owl> ;
+    owl:versionInfo "2026-11-21" .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( icon:0009001 icon:0009002 ) .
+

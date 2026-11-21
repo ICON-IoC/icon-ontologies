@@ -1,0 +1,12 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0006015 a owl:NamedIndividual,
+        icon:0006010 ;
+    rdfs:label "international level"@en ;
+    IAO:0000115 "An agreement among national governments, such as a treaty or a decision of the parties to a convention. Example: the Kunming-Montreal Global Biodiversity Framework (2022), adopted under the Convention on Biological Diversity."@en ;
+    rdfs:isDefinedBy iconbase:mandates.owl .
+

@@ -1,0 +1,13 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0007051 a owl:Class ;
+    rdfs:label "statewide comprehensive outdoor recreation plan"@en ;
+    IAO:0000115 "A plan a state's outdoor recreation agency keeps current for the federal Land and Water Conservation Fund, which requires one for a state to receive its grants: it assesses the supply of and demand for outdoor recreation, sets the state's priorities for recreation grants for about five years, and states the criteria grant applications are scored by. Example: California's 2021-2025 Statewide Comprehensive Outdoor Recreation Plan, by State Parks' Office of Grants and Local Services, which centers park access and equity."@en ;
+    rdfs:comment "Added for California's 2021-2025 SCORP (#1348)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+

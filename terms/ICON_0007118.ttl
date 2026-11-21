@@ -1,0 +1,14 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0007118 a owl:ObjectProperty ;
+    rdfs:label "has role in"@en ;
+    IAO:0000115 "An organization has a part in the plan because one of the plan's actions, at any depth, is led by it or involves it. Never stated in the sources: the explorer's plan role rule derives it."@en ;
+    rdfs:comment "OWL cannot restrict a property chain to plans and organizations, so the rule is kept in the explorer's reasoner (static/rdf.js, ppod:planRole) and described here."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:range icon:0007001 ;
+    owl:inverseOf icon:0007119 .
+

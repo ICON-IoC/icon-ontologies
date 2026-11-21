@@ -1,0 +1,13 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0007048 a owl:Class ;
+    rdfs:label "anchorage management plan"@en ;
+    IAO:0000115 "A plan adopted by the agency that regulates an anchorage, harbor or mooring area for the vessels kept there, that sets time limits, permits and enforcement priorities, schedules the removal of unpermitted, derelict or occupied vessels, and connects people living aboard with housing and other services, often to protect habitat on the bottom from anchor damage. Example: the Richardson's Bay Regional Agency Transition Plan (2020)."@en ;
+    rdfs:comment "Added for the Richardson's Bay Regional Agency Transition Plan (#1188)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+

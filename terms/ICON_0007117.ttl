@@ -1,0 +1,13 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0007117 a owl:ObjectProperty ;
+    rdfs:label "implements plan"@en ;
+    IAO:0000115 "A project or program carries out actions of the plan, or a plan carries the plan's strategies into one sector, as a State Wildlife Action Plan companion plan does. A kind of implements."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:range icon:0007001 ;
+    rdfs:subPropertyOf icon:0006108 .
+

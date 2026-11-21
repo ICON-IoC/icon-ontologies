@@ -1,0 +1,12 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0010008 a owl:Class ;
+    rdfs:label "congressional district"@en ;
+    IAO:0000115 "One of California's 52 districts that each elect a member of the U.S. House of Representatives, as the map in force draws them: the 2021 Citizens Redistricting Commission map until January 3, 2027, then the Proposition 50 (AB 604) map."@en ;
+    rdfs:isDefinedBy iconbase:places.owl ;
+    rdfs:subClassOf icon:0010005 .
+

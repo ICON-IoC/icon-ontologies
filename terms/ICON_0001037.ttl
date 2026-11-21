@@ -1,0 +1,15 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix OBI: <http://purl.obolibrary.org/obo/OBI_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+icon:0001037 a owl:Class ;
+    rdfs:label "research activity"@en ;
+    IAO:0000115 "Studying nature or conservation."@en ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:subClassOf icon:0001020 ;
+    skos:closeMatch OBI:0000066 .
+

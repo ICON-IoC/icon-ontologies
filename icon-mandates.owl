@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000001">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">entity</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000002">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">continuant</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000004">
+    <obo:IAO_0000115 xml:lang="en">b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">independent continuant</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">process</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000031">
+    <obo:IAO_0000115 xml:lang="en">b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">generically dependent continuant</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000082">
+    <obo:IAO_0000115 xml:lang="en">A process that is initiated by an agent who intends to carry out a plan to achieve an objective through one or more actions as described in a plan specification.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">planned process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
+    <obo:IAO_0000115 xml:lang="en">A generically dependent continuant that is about some thing.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">information content entity</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000033">
+    <obo:IAO_0000115 xml:lang="en">An information content entity whose concretizations indicate to their bearer how to realize them in a process.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">directive information entity</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:label>definition</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000245">
+    <obo:IAO_0000115 xml:lang="en">An organization is a continuant entity which can play roles,  has members, and has a set of organization rules.  Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">organization</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/description">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/license">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/references">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/title">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:label>database_cross_reference</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:label>has_exact_synonym</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#broadMatch">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#narrowMatch">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000011">
+    <obo:IAO_0000115 xml:lang="en">A planned process carried out to achieve conservation ends over a span of time: a project or a program.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:label xml:lang="en">endeavor</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000100">
+    <obo:IAO_0000115 xml:lang="en">A link between two records that work together or affect one another. Every more specific involvement link (leads, funds, manages, uses, is partner of and others) implies it.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:label xml:lang="en">is involved with</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0003000">
+    <obo:IAO_0000115 xml:lang="en">A bounded effort with a lead and usually partners and funders that restores, protects, acquires, studies, plans or manages something in a place, and ends when its work is done.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/projects.owl"/>
+    <rdfs:label xml:lang="en">conservation project</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0000011"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0006000">
+    <obo:IAO_0000115 xml:lang="en">A directive that requires, allows, funds or shapes conservation work: a law, regulation, executive order, agreement, certification standard or guideline. Some bind; others only advise.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/mandates.owl"/>
+    <rdfs:label xml:lang="en">guideline or mandate</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+    <skos:closeMatch rdf:resource="http://data.europa.eu/eli/ontology#LegalResource"/>
+    <skos:closeMatch rdf:resource="https://schema.org/Legislation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0006001">
+    <obo:IAO_0000115 xml:lang="en">A guideline or mandate that two or more parties sign, such as a memorandum of understanding, a settlement or a habitat conservation plan's implementing agreement.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/mandates.owl"/>
+    <rdfs:label xml:lang="en">agreement</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0006000"/>
+    <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000089"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0006002">
+    <obo:IAO_0000115 xml:lang="en">A guideline or mandate that sets the practices land, products or operations must meet to be certified, such as a sustainable farming or forestry standard.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/mandates.owl"/>
+    <rdfs:label xml:lang="en">certification standard</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0006000"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0006003">
+    <obo:IAO_0000115 xml:lang="en">A guideline or mandate that a president or governor issues to direct government agencies.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/mandates.owl"/>
+    <rdfs:label xml:lang="en">executive order</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0006000"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0006004">
+    <obo:IAO_0000115 xml:lang="en">A guideline or mandate that recommends how something should be done without binding anyone.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/mandates.owl"/>
+    <rdfs:label xml:lang="en">guideline</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0006000"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0006005">
+    <obo:IAO_0000115 xml:lang="en">A guideline or mandate that a legislature or the voters enact: a statute, an act, a ballot measure.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/mandates.owl"/>
+    <rdfs:label xml:lang="en">legislation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0006000"/>
+    <skos:closeMatch rdf:resource="https://schema.org/Legislation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0006006">
+    <obo:IAO_0000115 xml:lang="en">A guideline or mandate that an agency adopts under authority a statute gives it, with the force of law, as in the California Code of Regulations.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/mandates.owl"/>
+    <rdfs:label xml:lang="en">regulation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0006000"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0006007">
+    <obo:IAO_0000115 xml:lang="en">A guideline or mandate that a body adopts to govern its own lands, programs or members, short of a codified regulation.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/mandates.owl"/>
+    <rdfs:label xml:lang="en">agency rule</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0006000"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0006008">
+    <obo:IAO_0000115 xml:lang="en">A guideline or mandate that a court issues in a case, such as a writ of mandate or an injunction, directing a party, often a government agency, to act or to stop acting. It binds the parties named in it. Example: the 2025 writ of mandate in California Chaparral Institute v. Board of Forestry and Fire Protection, which limits the California Vegetation Treatment Program in chaparral and coastal sage scrub.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/mandates.owl"/>
+    <rdfs:label xml:lang="en">court order</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0006000"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0006010">
+    <obo:IAO_0000115 xml:lang="en">The level of government a guideline or mandate comes from or applies at.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/mandates.owl"/>
+    <rdfs:label xml:lang="en">government level</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0006011">
+    <obo:IAO_0000115 xml:lang="en">The United States government.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0006010"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/mandates.owl"/>
+    <rdfs:label xml:lang="en">federal level</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0006012">
+    <obo:IAO_0000115 xml:lang="en">The State of California.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0006010"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/mandates.owl"/>
+    <rdfs:label xml:lang="en">state level</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0006013">
+    <obo:IAO_0000115 xml:lang="en">Counties, cities and special districts.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0006010"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/mandates.owl"/>
+    <rdfs:label xml:lang="en">local level</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0006014">
+    <obo:IAO_0000115 xml:lang="en">No government: a standard or agreement set by private parties.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0006010"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/mandates.owl"/>
+    <rdfs:label xml:lang="en">private level</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0006015">
+    <obo:IAO_0000115 xml:lang="en">An agreement among national governments, such as a treaty or a decision of the parties to a convention. Example: the Kunming-Montreal Global Biodiversity Framework (2022), adopted under the Convention on Biological Diversity.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0006010"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/mandates.owl"/>
+    <rdfs:label xml:lang="en">international level</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0006100">
+    <obo:IAO_0000115 xml:lang="en">Links a guideline or mandate to one of the instrument type classes it belongs to. The explorer's way of stating its class.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0006000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/mandates.owl"/>
+    <rdfs:label xml:lang="en">has instrument type</rdfs:label>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0006101"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0006101">
+    <obo:IAO_0000115 xml:lang="en">The reverse of has instrument type.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/mandates.owl"/>
+    <rdfs:label xml:lang="en">is instrument type of</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0006000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0006100"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0006102">
+    <obo:IAO_0000115 xml:lang="en">The level of government a guideline or mandate comes from.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0006000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/mandates.owl"/>
+    <rdfs:label xml:lang="en">at government level</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0006010"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0006103"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0006103">
+    <obo:IAO_0000115 xml:lang="en">The reverse of at government level.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0006010"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/mandates.owl"/>
+    <rdfs:label xml:lang="en">is government level of</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0006000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0006102"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0006104">
+    <obo:IAO_0000115 xml:lang="en">A guideline or mandate requires this data, publication or plan to be produced, as the Endangered Species Act requires recovery plans.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/mandates.owl"/>
+    <rdfs:label xml:lang="en">is required by</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0006000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0006105"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0006105">
+    <obo:IAO_0000115 xml:lang="en">The reverse of is required by.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0006000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/mandates.owl"/>
+    <rdfs:label xml:lang="en">requires</rdfs:label>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0006104"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0006106">
+    <obo:IAO_0000115 xml:lang="en">A guideline or mandate binds the organization: it must comply with it. A project, program or other record is bound by a mandate only when a source says so for that record.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">Mandates do not pass from an organization to its units or to work carried out under it (#429, #466).</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/mandates.owl"/>
+    <rdfs:label xml:lang="en">is bound by</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0006000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0006107"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0006107">
+    <obo:IAO_0000115 xml:lang="en">The reverse of is bound by.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0006000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/mandates.owl"/>
+    <rdfs:label xml:lang="en">binds</rdfs:label>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0006106"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0006108">
+    <obo:IAO_0000115 xml:lang="en">An organization, project, program or guideline or mandate carries out a guideline or mandate or a plan, as a program carries out the statute that authorizes it or the certification it runs, or a regulation carries out the statute that requires it.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/mandates.owl"/>
+    <rdfs:label xml:lang="en">implements</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ICON_0000100"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0006109"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0006109">
+    <obo:IAO_0000115 xml:lang="en">The reverse of implements.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/mandates.owl"/>
+    <rdfs:label xml:lang="en">is implemented by</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ICON_0000100"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0006108"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0006110">
+    <obo:IAO_0000115 xml:lang="en">An organization holds the authority to enforce a guideline or mandate.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/mandates.owl"/>
+    <rdfs:label xml:lang="en">enforces</rdfs:label>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0006111"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0006111">
+    <obo:IAO_0000115 xml:lang="en">The reverse of enforces.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/mandates.owl"/>
+    <rdfs:label xml:lang="en">is enforced by</rdfs:label>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0006110"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0006112">
+    <obo:IAO_0000115 xml:lang="en">An organization issued a guideline, mandate or plan: adopted, signed or published it.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/mandates.owl"/>
+    <rdfs:label xml:lang="en">issued</rdfs:label>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0006113"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0006113">
+    <obo:IAO_0000115 xml:lang="en">The reverse of issued.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/mandates.owl"/>
+    <rdfs:label xml:lang="en">was issued by</rdfs:label>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0006112"/>
+    <skos:closeMatch rdf:resource="http://data.europa.eu/eli/ontology#passed_by"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0006114">
+    <obo:IAO_0000115 xml:lang="en">An organization's work rests on a guideline or mandate, as a program on the statute that authorizes it.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/mandates.owl"/>
+    <rdfs:label xml:lang="en">is supported by</rdfs:label>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0006115"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0006115">
+    <obo:IAO_0000115 xml:lang="en">The reverse of is supported by.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/mandates.owl"/>
+    <rdfs:label xml:lang="en">supports</rdfs:label>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0006114"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0006116">
+    <obo:IAO_0000115 xml:lang="en">An organization gives advice on how to meet or apply a guideline or mandate.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/mandates.owl"/>
+    <rdfs:label xml:lang="en">advises about</rdfs:label>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0006117"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0006117">
+    <obo:IAO_0000115 xml:lang="en">The reverse of advises about.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/mandates.owl"/>
+    <rdfs:label xml:lang="en">is advised about by</rdfs:label>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0006116"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0006118">
+    <obo:IAO_0000115 xml:lang="en">An organization, or a place such as a ranch or preserve, holds certification under a certification standard.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/mandates.owl"/>
+    <rdfs:label xml:lang="en">is certified by</rdfs:label>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0006119"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0006119">
+    <obo:IAO_0000115 xml:lang="en">The reverse of is certified by.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/mandates.owl"/>
+    <rdfs:label xml:lang="en">certifies</rdfs:label>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0006118"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0006120">
+    <obo:IAO_0000115 xml:lang="en">An organization pays out money a guideline or mandate set up, as a board awarding bond-measure grants.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/mandates.owl"/>
+    <rdfs:label xml:lang="en">funds established by</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0006000"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0006121">
+    <obo:IAO_0000115 xml:lang="en">An organization sponsored a bill or ballot measure: it brought the proposal to the legislator who carried it, or campaigned for the measure, and backed it to passage.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/mandates.owl"/>
+    <rdfs:label xml:lang="en">sponsored</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0006000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0006122"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0006122">
+    <obo:IAO_0000115 xml:lang="en">The reverse of sponsored.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0006000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/mandates.owl"/>
+    <rdfs:label xml:lang="en">was sponsored by</rdfs:label>
+    <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0006121"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0006123">
+    <obo:IAO_0000115 xml:lang="en">A project went ahead under a permit, order, biological opinion or exemption that approved its work, such as a restoration project covered by a programmatic biological opinion or a nationwide permit.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0003000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/mandates.owl"/>
+    <rdfs:label xml:lang="en">is authorized under</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0006000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0006124"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0006124">
+    <obo:IAO_0000115 xml:lang="en">The reverse of is authorized under.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0006000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/mandates.owl"/>
+    <rdfs:label xml:lang="en">authorizes</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0003000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0006123"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/mandates.owl">
+    <dcterms:creator>Internet of Conservation (ICON)</dcterms:creator>
+    <dcterms:description xml:lang="en">Laws, regulations, executive orders, agreements, certifications and guidelines that require, allow, fund or shape conservation work, and the ways organizations stand toward them: bound by, implementing, enforcing, issuing, certified by.</dcterms:description>
+    <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dcterms:references rdf:resource="http://data.europa.eu/eli/ontology"/>
+    <dcterms:references rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    <dcterms:references rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    <dcterms:references rdf:resource="http://purl.obolibrary.org/obo/omrse.owl"/>
+    <dcterms:references rdf:resource="https://schema.org/"/>
+    <dcterms:title xml:lang="en">ICON Guidelines and mandates ontology</dcterms:title>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:comment xml:lang="en">Existing ontologies used. Built on: Information Artifact Ontology, Ontology for Biomedical Investigations. Mapped to: European Legislation Identifier (ELI), Ontology of Medically Related Social Entities, schema.org.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:seeAlso rdf:resource="https://w3id.org/icon/projects.owl"/>
+    <owl:versionIRI rdf:resource="https://w3id.org/icon/releases/2026-11-21/mandates.owl"/>
+    <owl:versionInfo>2026-11-21</owl:versionInfo>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,110 @@
+# ICON Issues ontology, as a LinkML schema.
+# Built by `ioc-ontologies` from ontology/src/issues.terms; edit that, not this file.
+id: https://w3id.org/icon/linkml/icon-issues
+name: icon-issues
+prefixes:
+  linkml: https://w3id.org/linkml/
+  ICON: https://w3id.org/icon/ICON_
+  dcat: http://www.w3.org/ns/dcat#
+  skos: http://www.w3.org/2004/02/skos/core#
+title: ICON Issues ontology
+description: 'The conservation issues records address, from water quality to wildfire: one class for the
+  issue vocabulary and the link that says a record addresses an issue.'
+version: '2026-11-21'
+license: https://creativecommons.org/licenses/by/4.0/
+default_prefix: ICON
+default_range: string
+see_also:
+- https://w3id.org/icon/issues.owl
+imports:
+- linkml:types
+- icon-external
+- icon-core
+- icon-infrastructure
+- icon-programs
+classes:
+  ConservationIssue:
+    class_uri: ICON:0012000
+    title: conservation issue
+    description: A problem, pressure or concern conservation work responds to, such as water quality,
+      wildfire, habitat loss or a declining species. Issues are of many kinds (processes, qualities, entities),
+      so the class sits directly under entity.
+    annotations:
+      runtime: vocab Issues
+    is_a: Entity
+slots:
+  addresses_issue:
+    slot_uri: ICON:0012100
+    title: addresses issue
+    description: The record responds to, studies or bears on the issue. An organization that funds, leads,
+      administers or manages work addressing an issue addresses it too.
+    comments:
+    - 'The chains are the explorer''s issue roll-up rules: from work to who backs it, and from a component
+      issue to its integrated issues.'
+    close_mappings:
+    - dcat:theme
+    annotations:
+      crosswalk: 'DataCite 4.5: subject; EML 2.2: dataset/keywordSet; ISO 19115-1: descriptiveKeywords'
+      runtime: phrase "addresses issue"
+      holds_over_chain: funds | addresses_issue; leads | addresses_issue; administers | addresses_issue;
+        manages | addresses_issue; addresses_issue | has_broader_issue
+    range: ConservationIssue
+    inverse: is_addressed_by
+    multivalued: true
+  is_addressed_by:
+    slot_uri: ICON:0012101
+    title: is addressed by
+    description: The reverse of addresses issue.
+    annotations:
+      runtime: phrase "is addressed by"
+    domain: ConservationIssue
+    domain_of:
+    - ConservationIssue
+    range: uriorcurie
+    inverse: addresses_issue
+    multivalued: true
+  has_broader_issue:
+    slot_uri: ICON:0012102
+    title: has broader issue
+    description: 'Links a component issue to an integrated issue it is primarily part of, as the issue
+      list of Springer et al. (2022) records: Floods has broader issues Water and Disasters. A record
+      that addresses the component issue addresses the integrated one too.'
+    exact_mappings:
+    - skos:broader
+    annotations:
+      runtime: phrase "has broader issue"
+    domain: ConservationIssue
+    domain_of:
+    - ConservationIssue
+    range: ConservationIssue
+    inverse: has_narrower_issue
+    multivalued: true
+  has_narrower_issue:
+    slot_uri: ICON:0012103
+    title: has narrower issue
+    description: 'The reverse of has broader issue: an integrated issue''s component issues.'
+    exact_mappings:
+    - skos:narrower
+    annotations:
+      runtime: phrase "has narrower issue"
+    domain: ConservationIssue
+    domain_of:
+    - ConservationIssue
+    range: ConservationIssue
+    inverse: has_broader_issue
+    multivalued: true
+  is_related_to_issue:
+    slot_uri: ICON:0012104
+    title: is related to issue
+    description: Links a component issue to an integrated issue it bears on secondarily, as the issue
+      list of Springer et al. (2022) records. Nothing rolls up along it.
+    exact_mappings:
+    - skos:related
+    annotations:
+      runtime: phrase "is related to issue"
+    domain: ConservationIssue
+    domain_of:
+    - ConservationIssue
+    range: ConservationIssue
+    symmetric: true
+    multivalued: true

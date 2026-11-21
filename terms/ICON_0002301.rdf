@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:iconbase="https://w3id.org/icon/"
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0002301">
+    <obo:IAO_0000115 xml:lang="en">The person's ORCID identifier, the persistent researcher id used by journals and funders: 0000-0002-1825-0097.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/people.owl"/>
+    <rdfs:label xml:lang="en">ORCID iD</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <skos:closeMatch rdf:resource="https://schema.org/identifier"/>
+    <iconbase:ICON_0000001>DataCite 4.5: creator/nameIdentifier (nameIdentifierScheme ORCID)</iconbase:ICON_0000001>
+  </rdf:Description>
+</rdf:RDF>

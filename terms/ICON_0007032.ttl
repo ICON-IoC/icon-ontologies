@@ -1,0 +1,12 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0007032 a owl:Class ;
+    rdfs:label "flood risk management plan"@en ;
+    IAO:0000115 "A long-range plan for managing flood risk across a river basin or region, issued by the agency responsible for its flood system and updated on a fixed cycle, that sets goals for reducing the chance of flooding and the damage and loss of life when it happens, and recommends a portfolio of investments in levees, bypasses, reservoirs, floodplains and emergency response alongside ecosystem restoration, multi-benefit projects and the policies and funding needed to carry them out. Example: California's Central Valley Flood Protection Plan, updated every five years under the Central Valley Flood Protection Act of 2008."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0012104">
+    <obo:IAO_0000115 xml:lang="en">Links a component issue to an integrated issue it bears on secondarily, as the issue list of Springer et al. (2022) records. Nothing rolls up along it.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0012000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/issues.owl"/>
+    <rdfs:label xml:lang="en">is related to issue</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0012000"/>
+    <skos:exactMatch rdf:resource="http://www.w3.org/2004/02/skos/core#related"/>
+  </rdf:Description>
+</rdf:RDF>

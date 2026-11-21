@@ -1,0 +1,16 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+icon:0013003 a owl:Class ;
+    rdfs:label "dashboard"@en ;
+    IAO:0000115 "A web page that tracks a set of indicators in charts and maps, often over time. Example: California Carbon Dashboard."@en ;
+    rdfs:isDefinedBy iconbase:tools.owl ;
+    rdfs:subClassOf IAO:0000594,
+        icon:0013000 ;
+    skos:closeMatch schema:WebApplication .
+

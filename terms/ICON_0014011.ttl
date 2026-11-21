@@ -1,0 +1,12 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0014011 a owl:NamedIndividual,
+        icon:0014000 ;
+    rdfs:label "habitat restored"@en ;
+    IAO:0000115 "Acres where a habitat lost or degraded was re-established, such as tidal marsh restored from diked land."@en ;
+    rdfs:isDefinedBy iconbase:outcomes.owl .
+

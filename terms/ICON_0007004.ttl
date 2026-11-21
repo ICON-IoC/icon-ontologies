@@ -1,0 +1,12 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0007004 a owl:Class ;
+    rdfs:label "recovery plan"@en ;
+    IAO:0000115 "A conservation plan for one or more species listed under the Endangered Species Act, issued by the Fish and Wildlife Service or NOAA Fisheries, that sets recovery criteria and actions."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+

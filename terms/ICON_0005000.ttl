@@ -1,0 +1,15 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix gsp: <http://www.opengis.net/ont/geosparql#> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+icon:0005000 a owl:Class ;
+    rdfs:label "infrastructure"@en ;
+    IAO:0000115 "A place or structure on the landscape that conservation works on or around: a water body, a conservation area, a water or energy work, a farm, a sensor, a road or trail. Called infrastructure in the PPOD model whether built or natural."@en ;
+    rdfs:isDefinedBy iconbase:infrastructure.owl ;
+    rdfs:subClassOf icon:0000012 ;
+    skos:closeMatch gsp:Feature .
+

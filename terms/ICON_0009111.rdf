@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0009111">
+    <obo:IAO_0000115 xml:lang="en">The reverse of cites.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0009000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/publications.owl"/>
+    <rdfs:label xml:lang="en">is cited by</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0009000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0009110"/>
+    <skos:exactMatch rdf:resource="http://purl.org/spar/cito/isCitedBy"/>
+  </rdf:Description>
+</rdf:RDF>

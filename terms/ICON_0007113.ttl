@@ -1,0 +1,14 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0007113 a owl:ObjectProperty ;
+    rdfs:label "targets site"@en ;
+    IAO:0000115 "A place the objective's criteria are measured at, such as a recovery unit's streams."@en ;
+    rdfs:domain icon:0007002 ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:range icon:0005000 ;
+    owl:inverseOf icon:0007114 .
+

@@ -1,0 +1,12 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0007006 a owl:Class ;
+    rdfs:label "conservation priorities plan"@en ;
+    IAO:0000115 "A conservation plan for a region, written by a partnership of agencies, organizations and residents, that ranks its lands by the conservation values they serve and sets out where and how to protect the highest-ranked ones."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+

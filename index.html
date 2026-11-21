@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ICON Ontologies</title>
+<link rel="icon" href="brand/icon-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+:root {
+  --ground: #f1f4ef; --surface: #ffffff; --ink: #17221d; --muted: #5a6a62; --rule: #d3dbd3;
+  --accent: #2e6a4e; --accent-soft: #e3eee7;
+  --display: "Newsreader", Georgia, serif;
+  --body: "Instrument Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground: #0f1512; --surface: #17201b; --ink: #e3ebe6; --muted: #93a39a; --rule: #2b3730;
+    --accent: #74c39b; --accent-soft: #1d3127; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --ground: #0f1512; --surface: #17201b; --ink: #e3ebe6; --muted: #93a39a; --rule: #2b3730;
+  --accent: #74c39b; --accent-soft: #1d3127; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--ground); color: var(--ink); font: 15px/1.6 var(--body); }
+.page { max-width: 1040px; margin: 0 auto; padding: 24px 16px 56px; display: grid; gap: 24px; }
+header.top { display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 13px; }
+header.top nav { display: flex; gap: 16px; flex-wrap: wrap; }
+.logo { height: 34px; width: auto; }
+.logo.dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .logo.light { display: none; }
+  :root:not([data-theme="light"]) .logo.dark { display: block; }
+}
+:root[data-theme="dark"] .logo.light { display: none; }
+:root[data-theme="dark"] .logo.dark { display: block; }
+h1 { font: 600 clamp(28px, 4vw, 40px)/1.15 var(--display); margin: 0; text-wrap: balance; }
+h2 { font: 600 22px/1.25 var(--display); margin: 0 0 8px; }
+p { margin: 0 0 10px; max-width: 75ch; }
+a { color: var(--accent); }
+code { font: 0.88em var(--mono); overflow-wrap: anywhere; }
+.muted { color: var(--muted); }
+.kicker { font: 600 11px var(--body); letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+section.card { background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; padding: 18px 20px; min-width: 0; }
+.facts { display: flex; flex-wrap: wrap; gap: 8px 28px; font-variant-numeric: tabular-nums; }
+.facts div { display: grid; }
+.facts b { font: 600 22px/1.1 var(--display); }
+.facts span { font-size: 12px; color: var(--muted); }
+.scroll { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { text-align: left; vertical-align: top; padding: 8px 10px 8px 0; border-bottom: 1px solid var(--rule); }
+th { font-weight: 600; font-size: 12px; color: var(--muted); }
+td.files { white-space: nowrap; }
+td.files a + a { margin-left: 8px; }
+dl.facts-list { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 6px 16px; margin: 0; }
+dl.facts-list dt { color: var(--muted); font-size: 13px; padding-top: 1px; }
+dl.facts-list dd { margin: 0; }
+.button { display: inline-block; padding: 8px 14px; border-radius: 8px; background: var(--accent); color: var(--surface); text-decoration: none; font-weight: 600; }
+pre { background: var(--accent-soft); padding: 12px 14px; border-radius: 8px; overflow-x: auto; font: 13px/1.5 var(--mono); margin: 0 0 10px; white-space: pre-wrap; }
+footer { font-size: 13px; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="top">
+    <nav><a href="./">ICON ontologies</a><a href="map.html">Map</a><a href="https://github.com/ICON-IoC/icon-ontologies">Source files</a></nav>
+    <a href="https://icon-ioc.com" aria-label="ICON">
+      <img class="logo light" alt="ICON" src="brand/icon-lockup.png">
+      <img class="logo dark" alt="ICON" src="brand/icon-wordmark-reversed-cropped.png">
+    </a>
+  </header>
+
+  <section>
+    <div class="kicker">Information for the Conservation of Nature</div>
+    <h1>ICON ontologies</h1>
+    <p>The Internet of Conservation ontologies: one module per kind of record in the conservation knowledge graph, each usable on its own.</p>
+    <p>They are the model behind the <a href="https://icon-ioc.com/ioc.html">Internet of Conservation</a>, which links California's conservation organizations, projects, programs, plans, places, species, data, and tools. Anyone may use them, extend them, or map their own data to them.</p>
+    <div class="facts">
+      <div><b>15</b><span>modules</span></div>
+      <div><b>594</b><span>ICON terms</span></div>
+      <div><b>2026-11-21</b><span>current release</span></div>
+      <div><b>CC BY 4.0</b><span>license</span></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>See how they fit together</h2>
+    <p>The map shows each module, the existing ontologies it reuses, and the links its records make to the other modules. Select a module to read its terms.</p>
+    <a class="button" href="map.html">Open the map</a>
+  </section>
+
+  <section class="card">
+    <h2>Modules</h2>
+    <div class="scroll">
+    <table>
+      <thead><tr><th>Module</th><th>What it covers</th><th>Files</th></tr></thead>
+      <tbody>
+      
+        <tr>
+          <td><a href="modules/core.html">Core</a></td>
+          <td>The shared top of the ICON ontologies: the broad kinds of record (agent, endeavor, place, information resource, planning element), the involvement and funding links every kind of record uses, and the annotation properties the other modules share. Every other module builds on it.</td>
+          <td class="files"><a href="icon-core.ttl">TTL</a><a href="icon-core.owl">OWL</a><a href="linkml/icon-core.yaml">LinkML</a></td>
+        </tr>
+      
+        <tr>
+          <td><a href="modules/organizations.html">Organizations</a></td>
+          <td>Organizations in conservation: agencies, non-profits, tribes, companies, universities and partnerships, their types and activities, how they nest and join one another, and the links by which they publish, host, fund or partner in other work.</td>
+          <td class="files"><a href="icon-organizations.ttl">TTL</a><a href="icon-organizations.owl">OWL</a><a href="linkml/icon-organizations.yaml">LinkML</a></td>
+        </tr>
+      
+        <tr>
+          <td><a href="modules/people.html">People</a></td>
+          <td>People named in the graph: whom they are affiliated with, whom they are the contact for, and the leadership roles they hold. Names are public; contact details are kept out of the graph&#39;s public face and out of this ontology.</td>
+          <td class="files"><a href="icon-people.ttl">TTL</a><a href="icon-people.owl">OWL</a><a href="linkml/icon-people.yaml">LinkML</a></td>
+        </tr>
+      
+        <tr>
+          <td><a href="modules/projects.html">Projects</a></td>
+          <td>Conservation projects: bounded efforts with a lead, partners and funders that restore, protect, acquire, study or manage something in a place. Covers project types and the links of a project to programs and to the places it works on.</td>
+          <td class="files"><a href="icon-projects.ttl">TTL</a><a href="icon-projects.owl">OWL</a><a href="linkml/icon-projects.yaml">LinkML</a></td>
+        </tr>
+      
+        <tr>
+          <td><a href="modules/programs.html">Programs</a></td>
+          <td>Conservation programs: ongoing arrangements, usually run by an agency, that fund, regulate, certify, plan or carry out work through many projects. Covers program types and administration.</td>
+          <td class="files"><a href="icon-programs.ttl">TTL</a><a href="icon-programs.owl">OWL</a><a href="linkml/icon-programs.yaml">LinkML</a></td>
+        </tr>
+      
+        <tr>
+          <td><a href="modules/infrastructure.html">Infrastructure</a></td>
+          <td>Places and structures on the landscape that conservation works on or around: waters (blue), conservation lands (green), water works, energy, food production and sensors. Covers their types, ownership and management, and how they lie relative to one another (upstream, adjacent, intersecting).</td>
+          <td class="files"><a href="icon-infrastructure.ttl">TTL</a><a href="icon-infrastructure.owl">OWL</a><a href="linkml/icon-infrastructure.yaml">LinkML</a></td>
+        </tr>
+      
+        <tr>
+          <td><a href="modules/mandates.html">Guidelines and mandates</a></td>
+          <td>Laws, regulations, executive orders, agreements, certifications and guidelines that require, allow, fund or shape conservation work, and the ways organizations stand toward them: bound by, implementing, enforcing, issuing, certified by.</td>
+          <td class="files"><a href="icon-mandates.ttl">TTL</a><a href="icon-mandates.owl">OWL</a><a href="linkml/icon-mandates.yaml">LinkML</a></td>
+        </tr>
+      
+        <tr>
+          <td><a href="modules/plans.html">Plans</a></td>
+          <td>Conservation plans, such as species recovery plans, with their objectives and actions: who issues a plan, which sites and taxa it covers, which actions serve which objectives, and who leads or takes part in each action.</td>
+          <td class="files"><a href="icon-plans.ttl">TTL</a><a href="icon-plans.owl">OWL</a><a href="linkml/icon-plans.yaml">LinkML</a></td>
+        </tr>
+      
+        <tr>
+          <td><a href="modules/data.html">Data</a></td>
+          <td>Data resources at three levels (dataset, database, data repository): who creates, publishes, hosts, funds and uses them, what they cover in time, space and subject, and how they derive from and hold one another.</td>
+          <td class="files"><a href="icon-data.ttl">TTL</a><a href="icon-data.owl">OWL</a><a href="linkml/icon-data.yaml">LinkML</a></td>
+        </tr>
+      
+        <tr>
+          <td><a href="modules/publications.html">Papers and reports</a></td>
+          <td>Peer-reviewed papers and technical reports: authors, publishers and sponsors, what a work describes, which data it uses, which works it cites, and where its study was done.</td>
+          <td class="files"><a href="icon-publications.ttl">TTL</a><a href="icon-publications.owl">OWL</a><a href="linkml/icon-publications.yaml">LinkML</a></td>
+        </tr>
+      
+        <tr>
+          <td><a href="modules/tools.html">Tools</a></td>
+          <td>Software people use to plan, assess and track conservation work: decision-support tools, map viewers, dashboards, calculators and models, and software packages. Covers who builds and uses them, the issues they address, and the data they take in and produce.</td>
+          <td class="files"><a href="icon-tools.ttl">TTL</a><a href="icon-tools.owl">OWL</a><a href="linkml/icon-tools.yaml">LinkML</a></td>
+        </tr>
+      
+        <tr>
+          <td><a href="modules/places.html">Places</a></td>
+          <td>The areas records are placed in: California counties, USDA ecoregion sections, the HUC8 subbasins and HUC10 watersheds of the USGS Watershed Boundary Dataset, and the State Assembly, State Senate, congressional, and county supervisorial districts that elected officials represent, with statewide scope, and the links that say a record operates, applies or lies in one of them.</td>
+          <td class="files"><a href="icon-places.ttl">TTL</a><a href="icon-places.owl">OWL</a><a href="linkml/icon-places.yaml">LinkML</a></td>
+        </tr>
+      
+        <tr>
+          <td><a href="modules/biodiversity.html">Taxa and habitats</a></td>
+          <td>The living things and habitats records concern: taxa (species and groups, identified by NatureServe) habitat types (California Wildlife Habitat Relationships), vegetation types (Manual of California Vegetation alliances under the US National Vegetation Classification) coastal and marine habitat types (CMECS) and the IUCN Global Ecosystem Typology, the links between those classifications, and the links that say a record concerns a taxon or a habitat type, or that a place is habitat for a taxon.</td>
+          <td class="files"><a href="icon-biodiversity.ttl">TTL</a><a href="icon-biodiversity.owl">OWL</a><a href="linkml/icon-biodiversity.yaml">LinkML</a></td>
+        </tr>
+      
+        <tr>
+          <td><a href="modules/issues.html">Issues</a></td>
+          <td>The conservation issues records address, from water quality to wildfire: one class for the issue vocabulary and the link that says a record addresses an issue.</td>
+          <td class="files"><a href="icon-issues.ttl">TTL</a><a href="icon-issues.owl">OWL</a><a href="linkml/icon-issues.yaml">LinkML</a></td>
+        </tr>
+      
+        <tr>
+          <td><a href="modules/outcomes.html">Indicators, targets and outcomes</a></td>
+          <td>What conservation work is measured by: indicators with their units, the targets that objectives, plans, programs and guidelines or mandates set on them, and the outcomes projects and places deliver, linked by the results chain (contributes to) so progress toward a target can be added up.</td>
+          <td class="files"><a href="icon-outcomes.ttl">TTL</a><a href="icon-outcomes.owl">OWL</a><a href="linkml/icon-outcomes.yaml">LinkML</a></td>
+        </tr>
+      
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Use them</h2>
+    <p>Every term has a permanent address under <code>https://w3id.org/icon/</code>, such as <a href="terms/ICON_0000101.html"><code>https://w3id.org/icon/ICON_0000101</code></a> (<i>led by</i>). A browser gets the term's page; a client asking for Turtle or RDF/XML gets the term's triples.</p>
+    <dl class="facts-list">
+      <dt>All modules</dt><dd><code>https://w3id.org/icon/icon.owl</code> imports every module. Open it in Protégé with <i>File, Open from URL</i>.</dd>
+      <dt>One module</dt><dd><code>https://w3id.org/icon/&lt;module&gt;.owl</code>, such as <code>https://w3id.org/icon/projects.owl</code>.</dd>
+      <dt>This release</dt><dd><code>https://w3id.org/icon/releases/2026-11-21/&lt;module&gt;.owl</code> never changes.</dd>
+      <dt>LinkML</dt><dd><a href="linkml/icon.yaml"><code>linkml/icon.yaml</code></a> and one schema per module, for generating Python classes, JSON Schema, and SQL.</dd>
+      <dt>Mappings</dt><dd><a href="mappings/icon-external.sssom.tsv">ICON terms to outside vocabularies</a> and <a href="mappings/icon-habitat-envo.sssom.tsv">California habitat classifications to ENVO</a>, as SSSOM tables.</dd>
+      <dt>Guides</dt><dd>Each module page lists its terms, with definitions and the outside ontologies it reuses.</dd>
+    </dl>
+  </section>
+
+  <section class="card">
+    <h2>Cite</h2>
+    <pre>Internet of Conservation, Information for the Conservation of Nature (ICON). ICON ontologies, version 2026-11-21. https://w3id.org/icon/. Licensed under CC BY 4.0.</pre>
+    <p>The modules follow OBO Foundry conventions: BFO, RO, and IAO as the upper layer, opaque numeric IDs, a definition for every term, and versioned release addresses. Each passes the ROBOT report and the OWL 2 DL profile, and the merged set is consistent under HermiT. They build on the PPOD schema (<a href="https://github.com/adhollander/PPOD_Core">PPOD_Core</a>, CC0 1.0).</p>
+  </section>
+
+  <footer>
+    <p>ICON ontologies, version 2026-11-21. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: attribute as "Internet of Conservation, Information for the Conservation of Nature (ICON), CC BY 4.0". The ICON names and logos are not covered by that license.</p>
+  </footer>
+</div>
+</body>
+</html>

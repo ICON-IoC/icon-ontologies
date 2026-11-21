@@ -1,0 +1,19 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+icon:0008201 a owl:DatatypeProperty ;
+    rdfs:label "coverage start"@en ;
+    IAO:0000115 "The first year the data describes. With coverage end, the Dataset Dictionary's Time Period; exported as dcterms:temporal with a dcat:startDate."@en ;
+    rdfs:domain icon:0008000 ;
+    rdfs:isDefinedBy iconbase:data.owl ;
+    rdfs:range xsd:integer ;
+    skos:closeMatch dcat:startDate ;
+    icon:0000001 "DataCite 4.5: date dateType Coverage",
+        "EML 2.2: coverage/temporalCoverage/rangeOfDates/beginDate" .
+

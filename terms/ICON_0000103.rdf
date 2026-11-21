@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:iconbase="https://w3id.org/icon/"
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000103">
+    <obo:IAO_0000115 xml:lang="en">An organization, project or program relies on this place, data or tool in its work.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:label xml:lang="en">used by</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ICON_0000100"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0000104"/>
+    <iconbase:ICON_0000001>ISO 19115-1: CI_RoleCode user</iconbase:ICON_0000001>
+  </rdf:Description>
+</rdf:RDF>

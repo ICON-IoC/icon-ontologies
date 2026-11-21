@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ICON Organizations ontology</title>
+<link rel="icon" href="../brand/icon-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+:root {
+  --ground: #f1f4ef; --surface: #ffffff; --ink: #17221d; --muted: #5a6a62; --rule: #d3dbd3;
+  --accent: #2e6a4e; --accent-soft: #e3eee7;
+  --display: "Newsreader", Georgia, serif;
+  --body: "Instrument Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground: #0f1512; --surface: #17201b; --ink: #e3ebe6; --muted: #93a39a; --rule: #2b3730;
+    --accent: #74c39b; --accent-soft: #1d3127; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --ground: #0f1512; --surface: #17201b; --ink: #e3ebe6; --muted: #93a39a; --rule: #2b3730;
+  --accent: #74c39b; --accent-soft: #1d3127; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--ground); color: var(--ink); font: 15px/1.6 var(--body); }
+.page { max-width: 1040px; margin: 0 auto; padding: 24px 16px 56px; display: grid; gap: 24px; }
+header.top { display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 13px; }
+header.top nav { display: flex; gap: 16px; flex-wrap: wrap; }
+.logo { height: 34px; width: auto; }
+.logo.dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .logo.light { display: none; }
+  :root:not([data-theme="light"]) .logo.dark { display: block; }
+}
+:root[data-theme="dark"] .logo.light { display: none; }
+:root[data-theme="dark"] .logo.dark { display: block; }
+h1 { font: 600 clamp(28px, 4vw, 40px)/1.15 var(--display); margin: 0; text-wrap: balance; }
+h2 { font: 600 22px/1.25 var(--display); margin: 0 0 8px; }
+p { margin: 0 0 10px; max-width: 75ch; }
+a { color: var(--accent); }
+code { font: 0.88em var(--mono); overflow-wrap: anywhere; }
+.muted { color: var(--muted); }
+.kicker { font: 600 11px var(--body); letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+section.card { background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; padding: 18px 20px; min-width: 0; }
+.facts { display: flex; flex-wrap: wrap; gap: 8px 28px; font-variant-numeric: tabular-nums; }
+.facts div { display: grid; }
+.facts b { font: 600 22px/1.1 var(--display); }
+.facts span { font-size: 12px; color: var(--muted); }
+.scroll { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { text-align: left; vertical-align: top; padding: 8px 10px 8px 0; border-bottom: 1px solid var(--rule); }
+th { font-weight: 600; font-size: 12px; color: var(--muted); }
+td.files { white-space: nowrap; }
+td.files a + a { margin-left: 8px; }
+dl.facts-list { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 6px 16px; margin: 0; }
+dl.facts-list dt { color: var(--muted); font-size: 13px; padding-top: 1px; }
+dl.facts-list dd { margin: 0; }
+.button { display: inline-block; padding: 8px 14px; border-radius: 8px; background: var(--accent); color: var(--surface); text-decoration: none; font-weight: 600; }
+pre { background: var(--accent-soft); padding: 12px 14px; border-radius: 8px; overflow-x: auto; font: 13px/1.5 var(--mono); margin: 0 0 10px; white-space: pre-wrap; }
+footer { font-size: 13px; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="top">
+    <nav><a href=".././">ICON ontologies</a><a href="../map.html">Map</a><a href="https://github.com/ICON-IoC/icon-ontologies">Source files</a></nav>
+    <a href="https://icon-ioc.com" aria-label="ICON">
+      <img class="logo light" alt="ICON" src="../brand/icon-lockup.png">
+      <img class="logo dark" alt="ICON" src="../brand/icon-wordmark-reversed-cropped.png">
+    </a>
+  </header>
+
+  <section>
+    <div class="kicker">record module</div>
+    <h1>ICON Organizations ontology</h1>
+    <p>Organizations in conservation: agencies, non-profits, tribes, companies, universities and partnerships, their types and activities, how they nest and join one another, and the links by which they publish, host, fund or partner in other work.</p>
+    <dl class="facts-list">
+      <dt>Ontology IRI</dt><dd><code>https://w3id.org/icon/organizations.owl</code></dd>
+      <dt>This release</dt><dd><code>https://w3id.org/icon/releases/2026-11-21/organizations.owl</code></dd>
+      <dt>Own term IDs</dt><dd>ICON:0001000 to ICON:0001999</dd>
+      <dt>Files</dt><dd><a href="../icon-organizations.ttl">Turtle</a>, <a href="../icon-organizations.owl">RDF/XML</a>, <a href="../linkml/icon-organizations.yaml">LinkML</a>, <a href="../guides/organizations.md">guide (Markdown)</a></dd>
+      
+      <dt>Reused</dt><dd>OBI, RO</dd>
+      
+      <dt>Built on</dt><dd>BFO, COB, ENVO, GEO, OBI, RO</dd>
+      
+      <dt>Mapped to</dt><dd>OBI, dcterms, foaf, org, schema</dd>
+      
+    </dl>
+  </section>
+
+  <section class="card">
+    <h2>Terms</h2>
+    <p class="muted">Reused terms keep their own IDs and link to their source ontology.</p>
+    <div class="scroll">
+    <table>
+      <thead><tr><th>Term</th><th>Kind</th><th>ID</th><th>Definition</th></tr></thead>
+      <tbody>
+      
+        <tr id="OBI_0000245">
+          <td><a href="http://purl.obolibrary.org/obo/OBI_0000245">organization</a></td>
+          <td>class</td>
+          <td><code>OBI:0000245</code></td>
+          <td>An organization is a continuant entity which can play roles,  has members, and has a set of organization rules.  Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members.</td>
+        </tr>
+      
+        <tr id="ICON_0001001">
+          <td><a href="../terms/ICON_0001001.html">academic organization</a></td>
+          <td>class</td>
+          <td><code>ICON:0001001</code></td>
+          <td>A university, college or research institute, or a department of one.</td>
+        </tr>
+      
+        <tr id="ICON_0001002">
+          <td><a href="../terms/ICON_0001002.html">commercial organization</a></td>
+          <td>class</td>
+          <td><code>ICON:0001002</code></td>
+          <td>A business run for profit, such as a consultancy, a utility company, a farm business or a developer.</td>
+        </tr>
+      
+        <tr id="ICON_0001003">
+          <td><a href="../terms/ICON_0001003.html">federal government organization</a></td>
+          <td>class</td>
+          <td><code>ICON:0001003</code></td>
+          <td>An agency or office of the United States government, such as the Fish and Wildlife Service or the Bureau of Reclamation.</td>
+        </tr>
+      
+        <tr id="ICON_0001004">
+          <td><a href="../terms/ICON_0001004.html">state government organization</a></td>
+          <td>class</td>
+          <td><code>ICON:0001004</code></td>
+          <td>An agency, department, board or commission of the State of California, such as the Department of Fish and Wildlife.</td>
+        </tr>
+      
+        <tr id="ICON_0001005">
+          <td><a href="../terms/ICON_0001005.html">local government organization</a></td>
+          <td>class</td>
+          <td><code>ICON:0001005</code></td>
+          <td>A county, city, special district (water, resource conservation, flood control) or one of their departments.</td>
+        </tr>
+      
+        <tr id="ICON_0001006">
+          <td><a href="../terms/ICON_0001006.html">joint powers authority</a></td>
+          <td>class</td>
+          <td><code>ICON:0001006</code></td>
+          <td>A public agency formed by two or more public agencies under California&#39;s Joint Exercise of Powers Act to carry out a shared purpose, such as a regional water or habitat authority.</td>
+        </tr>
+      
+        <tr id="ICON_0001007">
+          <td><a href="../terms/ICON_0001007.html">tribal organization</a></td>
+          <td>class</td>
+          <td><code>ICON:0001007</code></td>
+          <td>A tribal government or an organization of one or more tribes or tribal members.</td>
+        </tr>
+      
+        <tr id="ICON_0001008">
+          <td><a href="../terms/ICON_0001008.html">non-profit organization</a></td>
+          <td>class</td>
+          <td><code>ICON:0001008</code></td>
+          <td>A private organization that does not distribute profit, such as a land trust, a watershed group or a conservation society.</td>
+        </tr>
+      
+        <tr id="ICON_0001009">
+          <td><a href="../terms/ICON_0001009.html">foundation</a></td>
+          <td>class</td>
+          <td><code>ICON:0001009</code></td>
+          <td>A private organization, usually endowed, that makes grants to others&#39; work.</td>
+        </tr>
+      
+        <tr id="ICON_0001010">
+          <td><a href="../terms/ICON_0001010.html">partnership</a></td>
+          <td>class</td>
+          <td><code>ICON:0001010</code></td>
+          <td>A standing collaboration of several organizations with a name of its own, such as a regional conservation partnership or a working group.</td>
+        </tr>
+      
+        <tr id="ICON_0001011">
+          <td><a href="../terms/ICON_0001011.html">team</a></td>
+          <td>class</td>
+          <td><code>ICON:0001011</code></td>
+          <td>A unit inside an organization with a name of its own, such as a program office or a field crew.</td>
+        </tr>
+      
+        <tr id="ICON_0001012">
+          <td><a href="../terms/ICON_0001012.html">international organization</a></td>
+          <td>class</td>
+          <td><code>ICON:0001012</code></td>
+          <td>An organization whose members are national governments, set up by a treaty or convention, such as a regional fisheries management commission.</td>
+        </tr>
+      
+        <tr id="ICON_0001013">
+          <td><a href="../terms/ICON_0001013.html">city government organization</a></td>
+          <td>class</td>
+          <td><code>ICON:0001013</code></td>
+          <td>An incorporated city or town of California, or one of its departments, boards or commissions.</td>
+        </tr>
+      
+        <tr id="ICON_0001014">
+          <td><a href="../terms/ICON_0001014.html">county government organization</a></td>
+          <td>class</td>
+          <td><code>ICON:0001014</code></td>
+          <td>A county of California, or one of its departments, boards or commissions, such as a county parks department or fish and game commission.</td>
+        </tr>
+      
+        <tr id="ICON_0001015">
+          <td><a href="../terms/ICON_0001015.html">special district</a></td>
+          <td>class</td>
+          <td><code>ICON:0001015</code></td>
+          <td>A local agency formed under state law to provide one or a few services within set boundaries, such as a water, irrigation, resource conservation, park, flood control or sanitation district.</td>
+        </tr>
+      
+        <tr id="ICON_0001016">
+          <td><a href="../terms/ICON_0001016.html">regional agency</a></td>
+          <td>class</td>
+          <td><code>ICON:0001016</code></td>
+          <td>A local agency that serves several cities or counties together, such as a council of governments or a regional transportation commission.</td>
+        </tr>
+      
+        <tr id="ICON_0001020">
+          <td><a href="../terms/ICON_0001020.html">organizational activity</a></td>
+          <td>class</td>
+          <td><code>ICON:0001020</code></td>
+          <td>A kind of work an organization carries out, from the Terms sheet&#39;s organization activities. An organization is linked to the kinds it is capable of.</td>
+        </tr>
+      
+        <tr id="ICON_0001021">
+          <td><a href="../terms/ICON_0001021.html">acquisition activity</a></td>
+          <td>class</td>
+          <td><code>ICON:0001021</code></td>
+          <td>Buying land, water or easements, or rights in them, for conservation.</td>
+        </tr>
+      
+        <tr id="ICON_0001022">
+          <td><a href="../terms/ICON_0001022.html">advising activity</a></td>
+          <td>class</td>
+          <td><code>ICON:0001022</code></td>
+          <td>Giving expert advice to landowners, agencies or other organizations.</td>
+        </tr>
+      
+        <tr id="ICON_0001023">
+          <td><a href="../terms/ICON_0001023.html">advocacy activity</a></td>
+          <td>class</td>
+          <td><code>ICON:0001023</code></td>
+          <td>Arguing for a cause or a policy before the public or decision makers.</td>
+        </tr>
+      
+        <tr id="ICON_0001024">
+          <td><a href="../terms/ICON_0001024.html">agricultural production activity</a></td>
+          <td>class</td>
+          <td><code>ICON:0001024</code></td>
+          <td>Growing crops or raising livestock.</td>
+        </tr>
+      
+        <tr id="ICON_0001025">
+          <td><a href="../terms/ICON_0001025.html">certification activity</a></td>
+          <td>class</td>
+          <td><code>ICON:0001025</code></td>
+          <td>Checking that land, products or practices meet a standard and certifying them.</td>
+        </tr>
+      
+        <tr id="ICON_0001026">
+          <td><a href="../terms/ICON_0001026.html">construction activity</a></td>
+          <td>class</td>
+          <td><code>ICON:0001026</code></td>
+          <td>Building or rebuilding structures, such as fish passage, levees or crossings.</td>
+        </tr>
+      
+        <tr id="ICON_0001027">
+          <td><a href="../terms/ICON_0001027.html">coordinating activity</a></td>
+          <td>class</td>
+          <td><code>ICON:0001027</code></td>
+          <td>Bringing organizations together and keeping their work aligned.</td>
+        </tr>
+      
+        <tr id="ICON_0001028">
+          <td><a href="../terms/ICON_0001028.html">education activity</a></td>
+          <td>class</td>
+          <td><code>ICON:0001028</code></td>
+          <td>Teaching the public, students or practitioners.</td>
+        </tr>
+      
+        <tr id="ICON_0001029">
+          <td><a href="../terms/ICON_0001029.html">funding activity</a></td>
+          <td>class</td>
+          <td><code>ICON:0001029</code></td>
+          <td>Paying for other organizations&#39; work, as through grants or contracts.</td>
+        </tr>
+      
+        <tr id="ICON_0001030">
+          <td><a href="../terms/ICON_0001030.html">governing activity</a></td>
+          <td>class</td>
+          <td><code>ICON:0001030</code></td>
+          <td>Exercising public authority over a jurisdiction.</td>
+        </tr>
+      
+        <tr id="ICON_0001031">
+          <td><a href="../terms/ICON_0001031.html">habitat enhancement activity</a></td>
+          <td>class</td>
+          <td><code>ICON:0001031</code></td>
+          <td>Restoring or improving habitat, such as replanting, removing invasive plants or reconnecting floodplains.</td>
+        </tr>
+      
+        <tr id="ICON_0001032">
+          <td><a href="../terms/ICON_0001032.html">management activity</a></td>
+          <td>class</td>
+          <td><code>ICON:0001032</code></td>
+          <td>Managing land, water or wildlife over time.</td>
+        </tr>
+      
+        <tr id="ICON_0001033">
+          <td><a href="../terms/ICON_0001033.html">planning activity</a></td>
+          <td>class</td>
+          <td><code>ICON:0001033</code></td>
+          <td>Preparing plans for conservation, land use or resources.</td>
+        </tr>
+      
+        <tr id="ICON_0001034">
+          <td><a href="../terms/ICON_0001034.html">policy activity</a></td>
+          <td>class</td>
+          <td><code>ICON:0001034</code></td>
+          <td>Making or shaping policy.</td>
+        </tr>
+      
+        <tr id="ICON_0001035">
+          <td><a href="../terms/ICON_0001035.html">production activity</a></td>
+          <td>class</td>
+          <td><code>ICON:0001035</code></td>
+          <td>Producing goods or energy other than crops and livestock.</td>
+        </tr>
+      
+        <tr id="ICON_0001036">
+          <td><a href="../terms/ICON_0001036.html">regulating activity</a></td>
+          <td>class</td>
+          <td><code>ICON:0001036</code></td>
+          <td>Issuing and enforcing permits and rules.</td>
+        </tr>
+      
+        <tr id="ICON_0001037">
+          <td><a href="../terms/ICON_0001037.html">research activity</a></td>
+          <td>class</td>
+          <td><code>ICON:0001037</code></td>
+          <td>Studying nature or conservation.</td>
+        </tr>
+      
+        <tr id="ICON_0001038">
+          <td><a href="../terms/ICON_0001038.html">services activity</a></td>
+          <td>class</td>
+          <td><code>ICON:0001038</code></td>
+          <td>Providing services to others, such as technical, legal or financial services.</td>
+        </tr>
+      
+        <tr id="ICON_0001039">
+          <td><a href="../terms/ICON_0001039.html">monitoring activity</a></td>
+          <td>class</td>
+          <td><code>ICON:0001039</code></td>
+          <td>Repeating surveys or measurements over years to track the status of species, habitats, water or fisheries.</td>
+        </tr>
+      
+        <tr id="ICON_0001100">
+          <td><a href="../terms/ICON_0001100.html">has org type</a></td>
+          <td>relation</td>
+          <td><code>ICON:0001100</code></td>
+          <td>Links an organization to one of the organization type classes it belongs to. The explorer&#39;s way of stating the organization&#39;s class.</td>
+        </tr>
+      
+        <tr id="ICON_0001101">
+          <td><a href="../terms/ICON_0001101.html">is org type of</a></td>
+          <td>relation</td>
+          <td><code>ICON:0001101</code></td>
+          <td>The reverse of has org type.</td>
+        </tr>
+      
+        <tr id="RO_0002215">
+          <td><a href="http://purl.obolibrary.org/obo/RO_0002215">capable of</a></td>
+          <td>relation</td>
+          <td><code>RO:0002215</code></td>
+          <td>A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. </td>
+        </tr>
+      
+        <tr id="ICON_0001102">
+          <td><a href="../terms/ICON_0001102.html">is activity of</a></td>
+          <td>relation</td>
+          <td><code>ICON:0001102</code></td>
+          <td>A kind of activity an organization carries out: the reverse of capable of.</td>
+        </tr>
+      
+        <tr id="ICON_0001103">
+          <td><a href="../terms/ICON_0001103.html">is member of</a></td>
+          <td>relation</td>
+          <td><code>ICON:0001103</code></td>
+          <td>An organization belongs to a coalition, association or partnership as a member while keeping its own identity. A kind of part of in the explorer.</td>
+        </tr>
+      
+        <tr id="ICON_0001104">
+          <td><a href="../terms/ICON_0001104.html">has member</a></td>
+          <td>relation</td>
+          <td><code>ICON:0001104</code></td>
+          <td>The reverse of is member of.</td>
+        </tr>
+      
+        <tr id="ICON_0001105">
+          <td><a href="../terms/ICON_0001105.html">has partner</a></td>
+          <td>relation</td>
+          <td><code>ICON:0001105</code></td>
+          <td>An organization that works on a project or program alongside its lead, without leading or funding it.</td>
+        </tr>
+      
+        <tr id="ICON_0001106">
+          <td><a href="../terms/ICON_0001106.html">is partner of</a></td>
+          <td>relation</td>
+          <td><code>ICON:0001106</code></td>
+          <td>The reverse of has partner.</td>
+        </tr>
+      
+        <tr id="ICON_0001107">
+          <td><a href="../terms/ICON_0001107.html">is published by</a></td>
+          <td>relation</td>
+          <td><code>ICON:0001107</code></td>
+          <td>The organization responsible for making data or a publication available, when it is not the creator.</td>
+        </tr>
+      
+        <tr id="ICON_0001108">
+          <td><a href="../terms/ICON_0001108.html">published</a></td>
+          <td>relation</td>
+          <td><code>ICON:0001108</code></td>
+          <td>The reverse of is published by.</td>
+        </tr>
+      
+        <tr id="ICON_0001109">
+          <td><a href="../terms/ICON_0001109.html">located in county</a></td>
+          <td>relation</td>
+          <td><code>ICON:0001109</code></td>
+          <td>The county that holds the organization&#39;s headquarters, main office or seat. An organization is located in at most one county, and may operate in many (#949).</td>
+        </tr>
+      
+        <tr id="ICON_0001110">
+          <td><a href="../terms/ICON_0001110.html">is county location of</a></td>
+          <td>relation</td>
+          <td><code>ICON:0001110</code></td>
+          <td>The reverse of located in county: the county holds the organization&#39;s headquarters.</td>
+        </tr>
+      
+        <tr id="ICON_0001111">
+          <td><a href="../terms/ICON_0001111.html">located in ecoregion</a></td>
+          <td>relation</td>
+          <td><code>ICON:0001111</code></td>
+          <td>The ecoregion section that holds the organization&#39;s headquarters, main office or seat. An organization is located in at most one ecoregion section, and may work in many (#949).</td>
+        </tr>
+      
+        <tr id="ICON_0001112">
+          <td><a href="../terms/ICON_0001112.html">is ecoregion location of</a></td>
+          <td>relation</td>
+          <td><code>ICON:0001112</code></td>
+          <td>The reverse of located in ecoregion: the ecoregion section holds the organization&#39;s headquarters.</td>
+        </tr>
+      
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <footer>
+    <p>ICON ontologies, version 2026-11-21. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: attribute as "Internet of Conservation, Information for the Conservation of Nature (ICON), CC BY 4.0". The ICON names and logos are not covered by that license.</p>
+  </footer>
+</div>
+</body>
+</html>

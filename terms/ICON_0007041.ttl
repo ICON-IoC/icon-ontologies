@@ -1,0 +1,13 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0007041 a owl:Class ;
+    rdfs:label "forest health plan"@en ;
+    IAO:0000115 "A plan that maps, ranks and sequences fuel reduction, thinning, prescribed fire and related restoration treatments across a forest landscape, usually national forest land under a NEPA decision, so that the agency and its partners can fund and contract the work in priority order. Example: the Upper Mokelumne River Watershed Authority and Eldorado National Forest's Forest Projects Plan Phase 1 (2023), which sequences fuels treatments on about 26,000 acres of the Amador Ranger District."@en ;
+    rdfs:comment "Added for the Upper Mokelumne River Watershed Authority's Forest Projects Plan Phase 1 (#1132)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+

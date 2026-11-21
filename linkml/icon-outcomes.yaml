@@ -1,0 +1,475 @@
+# ICON Indicators, targets and outcomes ontology, as a LinkML schema.
+# Built by `ioc-ontologies` from ontology/src/outcomes.terms; edit that, not this file.
+id: https://w3id.org/icon/linkml/icon-outcomes
+name: icon-outcomes
+prefixes:
+  linkml: https://w3id.org/linkml/
+  ICON: https://w3id.org/icon/ICON_
+  OBI: http://purl.obolibrary.org/obo/OBI_
+title: ICON Indicators, targets and outcomes ontology
+description: 'What conservation work is measured by: indicators with their units, the targets that objectives,
+  plans, programs and guidelines or mandates set on them, and the outcomes projects and places deliver,
+  linked by the results chain (contributes to) so progress toward a target can be added up.'
+version: '2026-11-21'
+license: https://creativecommons.org/licenses/by/4.0/
+default_prefix: ICON
+default_range: string
+see_also:
+- https://w3id.org/icon/outcomes.owl
+imports:
+- linkml:types
+- icon-external
+- icon-infrastructure
+- icon-mandates
+- icon-plans
+- icon-programs
+- icon-projects
+classes:
+  Indicator:
+    class_uri: ICON:0014000
+    title: indicator
+    description: Something measurable that shows progress toward a conservation goal, with the unit it
+      is counted in, such as acres of habitat restored or miles of stream opened to fish passage. Targets
+      and outcomes on the same indicator can be added up and compared.
+    annotations:
+      crosswalk: 'Conservation Standards 4.0: indicator'
+      runtime: vocab Indicator
+    is_a: InformationContentEntity
+  Target:
+    class_uri: ICON:0014001
+    title: target
+    description: 'The amount of an indicator that an objective, plan, program or guideline or mandate
+      sets out to reach, by a year where it gives one: restore 5,000 to 7,000 acres of tidal marsh within
+      30 years. A range keeps its low and high values; a milestone is another target on the same indicator
+      with an earlier year.'
+    annotations:
+      crosswalk: 'Conservation Standards 4.0: objective'
+    is_a: DirectiveInformationEntity
+    slots:
+    - target_low_value
+    - target_high_value
+    - baseline_value
+    - baseline_year
+    - target_year
+    - target_total
+  Outcome:
+    class_uri: ICON:0014002
+    title: outcome
+    description: 'An amount of an indicator that a project, program or place delivers: expected, as a
+      grant award or project plan states it, or measured, as a report or an inventory such as CPAD records
+      it.'
+    annotations:
+      crosswalk: 'Conservation Standards 4.0: result'
+    is_a: InformationContentEntity
+    slots:
+    - outcome_value
+    - outcome_year
+    - outcome_status
+  ExpectedOutcome:
+    class_uri: ICON:0014003
+    title: expected outcome
+    description: 'An outcome a project or program sets out to deliver and has not yet been shown to: the
+      acres a grant award or a project plan states, or the planned and in-progress work a project tracker
+      lists.'
+    aliases:
+    - planned outcome
+    is_a: Outcome
+    mixins:
+    - ObjectiveSpecification
+  MeasuredOutcome:
+    class_uri: ICON:0014004
+    title: measured outcome
+    description: An outcome recorded as delivered, by a report, a monitoring survey or an inventory such
+      as CPAD, or by a project tracker that lists the work as completed.
+    aliases:
+    - achieved outcome
+    is_a: Outcome
+    mixins:
+    - MeasurementDatum
+slots:
+  is_measured_by:
+    slot_uri: ICON:0014100
+    title: is measured by
+    description: A record sets a target on the indicator, or reports an outcome on it.
+    annotations:
+      runtime: phrase "is measured by"
+    domain_of:
+    - ConservationProject
+    - ConservationProgram
+    - Infrastructure
+    - GuidelineOrMandate
+    - ConservationPlan
+    - PlanObjective
+    - PlanAction
+    range: IndicatorEnum
+    inverse: measures
+    multivalued: true
+  measures:
+    slot_uri: ICON:0014101
+    title: measures
+    description: The reverse of is measured by.
+    annotations:
+      runtime: phrase "measures"
+    domain: Indicator
+    domain_of:
+    - Indicator
+    any_of:
+    - range: ConservationProject
+    - range: ConservationProgram
+    - range: Infrastructure
+    - range: GuidelineOrMandate
+    - range: ConservationPlan
+    - range: PlanObjective
+    - range: PlanAction
+    range: uriorcurie
+    inverse: is_measured_by
+    multivalued: true
+  contributes_to:
+    slot_uri: ICON:0014102
+    title: contributes to
+    description: A project, program or place advances an objective, action, plan, program or guideline
+      or mandate, so its outcomes count toward that record's targets.
+    annotations:
+      crosswalk: 'Conservation Standards 4.0: results chain'
+      runtime: phrase "contributes to"
+    domain_of:
+    - ConservationProject
+    - ConservationProgram
+    - Infrastructure
+    any_of:
+    - range: ConservationProgram
+    - range: GuidelineOrMandate
+    - range: ConservationPlan
+    - range: PlanObjective
+    - range: PlanAction
+    range: uriorcurie
+    inverse: is_advanced_by
+    multivalued: true
+  is_advanced_by:
+    slot_uri: ICON:0014103
+    title: is advanced by
+    description: The reverse of contributes to.
+    annotations:
+      runtime: phrase "is advanced by"
+    domain_of:
+    - ConservationProgram
+    - GuidelineOrMandate
+    - ConservationPlan
+    - PlanObjective
+    - PlanAction
+    any_of:
+    - range: ConservationProject
+    - range: ConservationProgram
+    - range: Infrastructure
+    range: uriorcurie
+    inverse: contributes_to
+    multivalued: true
+  has_outcome:
+    slot_uri: ICON:0014104
+    title: has outcome
+    description: A project, program or place delivers the outcome, expected or measured (#959). The explorer
+      shows a record's outcomes in its panel rather than as links.
+    close_mappings:
+    - OBI:0000299
+    annotations:
+      crosswalk: 'Conservation Standards 4.0: result'
+    domain_of:
+    - ConservationProject
+    - ConservationProgram
+    - Infrastructure
+    range: Outcome
+    inverse: is_outcome_of
+    multivalued: true
+  is_outcome_of:
+    slot_uri: ICON:0014105
+    title: is outcome of
+    description: The reverse of has outcome.
+    domain: Outcome
+    domain_of:
+    - Outcome
+    any_of:
+    - range: ConservationProject
+    - range: ConservationProgram
+    - range: Infrastructure
+    range: uriorcurie
+    inverse: has_outcome
+    multivalued: true
+  has_target:
+    slot_uri: ICON:0014106
+    title: has target
+    description: An objective, action, plan, program or guideline or mandate sets the target (#959). The
+      explorer shows a record's targets, with progress toward them, in its panel rather than as links.
+    annotations:
+      crosswalk: 'Conservation Standards 4.0: objective'
+    domain_of:
+    - ConservationProgram
+    - GuidelineOrMandate
+    - ConservationPlan
+    - PlanObjective
+    - PlanAction
+    range: Target
+    inverse: is_target_of
+    multivalued: true
+  is_target_of:
+    slot_uri: ICON:0014107
+    title: is target of
+    description: The reverse of has target.
+    domain: Target
+    domain_of:
+    - Target
+    any_of:
+    - range: ConservationProgram
+    - range: GuidelineOrMandate
+    - range: ConservationPlan
+    - range: PlanObjective
+    - range: PlanAction
+    range: uriorcurie
+    inverse: has_target
+    multivalued: true
+  target_low_value:
+    slot_uri: ICON:0014200
+    title: target low value
+    description: The target's amount in its indicator's unit, or the low end when the target is a range.
+    domain: Target
+    domain_of:
+    - Target
+    range: decimal
+    multivalued: true
+  target_high_value:
+    slot_uri: ICON:0014201
+    title: target high value
+    description: The high end of a target given as a range.
+    domain: Target
+    domain_of:
+    - Target
+    range: decimal
+    multivalued: true
+  baseline_value:
+    slot_uri: ICON:0014202
+    title: baseline value
+    description: 'The amount of the indicator before the target was set. Progress counts up from it: the
+      baseline plus the outcomes achieved since.'
+    domain: Target
+    domain_of:
+    - Target
+    range: decimal
+    multivalued: true
+  baseline_year:
+    slot_uri: ICON:0014203
+    title: baseline year
+    description: The year of the baseline value.
+    domain: Target
+    domain_of:
+    - Target
+    range: integer
+    multivalued: true
+  target_year:
+    slot_uri: ICON:0014204
+    title: target year
+    description: The year by which the target is to be met.
+    domain: Target
+    domain_of:
+    - Target
+    range: integer
+    multivalued: true
+  outcome_value:
+    slot_uri: ICON:0014205
+    title: outcome value
+    description: The outcome's amount in its indicator's unit.
+    domain: Outcome
+    domain_of:
+    - Outcome
+    range: decimal
+    multivalued: true
+  outcome_year:
+    slot_uri: ICON:0014206
+    title: outcome year
+    description: The year the outcome was measured, or is expected to be delivered.
+    domain: Outcome
+    domain_of:
+    - Outcome
+    range: integer
+    multivalued: true
+  target_total:
+    slot_uri: ICON:0014208
+    title: target total
+    description: The whole a target's percentages are of, in its indicator's unit, such as California's
+      land area for a goal of conserving 30 percent of its lands. A target with a total is shown in both
+      amounts and percentages.
+    domain: Target
+    domain_of:
+    - Target
+    range: decimal
+    multivalued: true
+  outcome_status:
+    slot_uri: ICON:0014207
+    title: outcome status
+    description: Expected (an expected outcome, as a grant award or proposal states it) or measured (a
+      measured outcome, as a report or inventory records it).
+    domain: Outcome
+    domain_of:
+    - Outcome
+    range: string
+    multivalued: true
+enums:
+  IndicatorEnum:
+    enum_uri: ICON:0014000
+    description: The values of indicator.
+    permissible_values:
+      area conserved:
+        meaning: ICON:0014010
+        description: Acres of land or water protected for conservation in fee title or by easement.
+        annotations:
+          runtime: term Indicator "Area conserved"
+      habitat restored:
+        meaning: ICON:0014011
+        description: Acres where a habitat lost or degraded was re-established, such as tidal marsh restored
+          from diked land.
+        annotations:
+          runtime: term Indicator "Habitat restored"
+      habitat enhanced:
+        meaning: ICON:0014012
+        description: Acres of existing habitat whose condition was improved without changing its type.
+        annotations:
+          runtime: term Indicator "Habitat enhanced"
+      area under conservation management:
+        meaning: ICON:0014013
+        description: Acres managed under a plan that benefits habitat or species, such as managed wetlands
+          or grazing under a conservation plan.
+        annotations:
+          runtime: term Indicator "Area under conservation management"
+      floodplain reconnected:
+        meaning: ICON:0014014
+        description: Acres of floodplain reconnected to its river, so that it floods again.
+        annotations:
+          runtime: term Indicator "Floodplain reconnected"
+      area treated for invasive species:
+        meaning: ICON:0014015
+        description: Acres where invasive plants or animals were removed or controlled.
+        annotations:
+          runtime: term Indicator "Area treated for invasive species"
+      area treated for wildfire resilience:
+        meaning: ICON:0014016
+        description: Acres of fuel reduction, prescribed fire or forest thinning.
+        annotations:
+          runtime: term Indicator "Area treated for wildfire resilience"
+      area opened to public access:
+        meaning: ICON:0014017
+        description: Acres newly opened to the public for recreation or access to nature.
+        annotations:
+          runtime: term Indicator "Area opened to public access"
+      stream habitat restored:
+        meaning: ICON:0014018
+        description: Miles of stream channel or bank restored.
+        annotations:
+          runtime: term Indicator "Stream habitat restored"
+      stream opened to fish passage:
+        meaning: ICON:0014019
+        description: Miles of stream made reachable by migratory fish by removing or fixing barriers.
+        annotations:
+          runtime: term Indicator "Stream opened to fish passage"
+      levee improved:
+        meaning: ICON:0014020
+        description: Miles of levee repaired, raised or set back.
+        annotations:
+          runtime: term Indicator "Levee improved"
+      trail built or opened:
+        meaning: ICON:0014021
+        description: Miles of trail built or opened to the public.
+        annotations:
+          runtime: term Indicator "Trail built or opened"
+      water for the environment:
+        meaning: ICON:0014022
+        description: Acre-feet a year of water dedicated to streams, wetlands or habitat.
+        annotations:
+          runtime: term Indicator "Water for the environment"
+      groundwater recharged:
+        meaning: ICON:0014023
+        description: Acre-feet a year of water added to groundwater by recharge projects.
+        annotations:
+          runtime: term Indicator "Groundwater recharged"
+      fish passage barriers remediated:
+        meaning: ICON:0014024
+        description: The number of dams, culverts or other barriers to fish removed or fitted with passage.
+        annotations:
+          runtime: term Indicator "Fish passage barriers remediated"
+      wildlife crossings built:
+        meaning: ICON:0014025
+        description: The number of wildlife crossing structures built or retrofitted.
+        annotations:
+          runtime: term Indicator "Wildlife crossings built"
+      populations secured:
+        meaning: ICON:0014026
+        description: The number of populations of a species that meet a plan's test of being secure, such
+          as protected and self-sustaining.
+        annotations:
+          runtime: term Indicator "Populations secured"
+      population size:
+        meaning: ICON:0014027
+        description: The number of individuals of a species counted or estimated, such as adult fish returning
+          to spawn.
+        annotations:
+          runtime: term Indicator "Population size"
+      projects completed:
+        meaning: ICON:0014028
+        description: The number of projects of a kind carried out to completion.
+        annotations:
+          runtime: term Indicator "Projects completed"
+      partnerships formed:
+        meaning: ICON:0014029
+        description: The number of partnerships or agreements formed among organizations.
+        annotations:
+          runtime: term Indicator "Partnerships formed"
+      funding invested:
+        meaning: ICON:0014030
+        description: Dollars spent or awarded on the work.
+        annotations:
+          runtime: term Indicator "Funding invested"
+      carbon stored:
+        meaning: ICON:0014031
+        description: Metric tons of carbon dioxide equivalent stored or kept from release.
+        annotations:
+          runtime: term Indicator "Carbon stored"
+      projects funded:
+        meaning: ICON:0014032
+        description: The number of projects of a kind a funder approves a grant or acquisition for, counted
+          when the award is made, whether or not the work is done yet.
+        annotations:
+          runtime: term Indicator "Projects funded"
+      projects monitored:
+        meaning: ICON:0014033
+        description: The number of completed projects checked in a year for whether they are operated,
+          used and maintained as their grant agreements require.
+        annotations:
+          runtime: term Indicator "Projects monitored"
+      outreach events held:
+        meaning: ICON:0014034
+        description: The number of meetings, workshops or conferences held or sponsored to reach the public,
+          partners or prospective grantees.
+        annotations:
+          runtime: term Indicator "Outreach events held"
+      process improvements made:
+        meaning: ICON:0014035
+        description: The number of changes put in place to make an organization's processes, such as grant
+          applications, reporting or payment, simpler or faster.
+        annotations:
+          runtime: term Indicator "Process improvements made"
+      land conserved:
+        meaning: ICON:0014036
+        description: Acres of land durably protected and managed for biodiversity, as California counts
+          its 30x30 Conservation Areas on land. Narrower than area conserved, which takes in water and
+          any protection by fee or easement.
+        annotations:
+          runtime: term Indicator "Land conserved"
+      coastal waters conserved:
+        meaning: ICON:0014037
+        description: Acres of coastal waters durably protected and managed for biodiversity, as California
+          counts its 30x30 Conservation Areas in its coastal state waters.
+        annotations:
+          runtime: term Indicator "Coastal waters conserved"
+      habitat created:
+        meaning: ICON:0014038
+        description: Acres where a habitat was established where it did not exist before, such as a wetland
+          built on upland. Habitat restored is where it once was.
+        annotations:
+          runtime: term Indicator "Habitat created"

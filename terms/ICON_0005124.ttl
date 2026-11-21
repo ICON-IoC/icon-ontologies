@@ -1,0 +1,13 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0005124 a owl:Class ;
+    rdfs:label "important plant area"@en ;
+    IAO:0000115 "An area that the California Native Plant Society's Important Plant Areas Initiative identifies as among the most important places in the state for rare plants and rare vegetation types, without itself being protected. Example: a Tier 1 area of the Northwestern California ecoregion around the Mendocino pygmy forest, home to 37 California Rare Plant Rank 1B species."@en ;
+    rdfs:comment "Added for the statewide draft Important Plant Areas that CNPS published for review in 2026 (#1210)."@en ;
+    rdfs:isDefinedBy iconbase:infrastructure.owl ;
+    rdfs:subClassOf icon:0005002 .
+

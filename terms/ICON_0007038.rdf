@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0007038">
+    <obo:IAO_0000115 xml:lang="en">A conservation plan that a project proponent prepares with the U.S. Fish and Wildlife Service under the Bald and Golden Eagle Protection Act and the Service's eagle take permit rules, that assesses how bald and golden eagles use the project area, estimates the eagle take the project's activities may cause, sets avoidance and minimization measures, and commits to monitoring and to mitigation that offsets the take, so the Service can issue an eagle take permit. Example: San Diego Gas &amp; Electric's Eagle Conservation Plan (2023), Appendix B of its HCP Amendment.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/plans.owl"/>
+    <rdfs:label xml:lang="en">eagle conservation plan</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0007001"/>
+  </rdf:Description>
+</rdf:RDF>

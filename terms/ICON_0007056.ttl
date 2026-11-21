@@ -1,0 +1,13 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0007056 a owl:Class ;
+    rdfs:label "land management plan"@en ;
+    IAO:0000115 "A plan by the California Department of Fish and Wildlife for one of its wildlife areas or ecological reserves, written to the Department's Guide and Annotated Outline for Writing Land Management Plans, that describes the property, its resources and its public uses and sets goals and tasks by element (biological, public use, agricultural, cultural, facilities maintenance, administrative, research and monitoring, and management coordination), with the staff hours and operations budget needed to carry them out. Example: the Napa-Sonoma Marshes Wildlife Area Land Management Plan (2011)."@en ;
+    rdfs:comment "Added for the Napa-Sonoma Marshes Wildlife Area Land Management Plan (#1543)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+

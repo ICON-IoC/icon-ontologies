@@ -1,0 +1,22 @@
+@prefix ENVO: <http://purl.obolibrary.org/obo/ENVO_> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0011004 a owl:Class ;
+    rdfs:label "vegetation type"@en ;
+    IAO:0000115 "A unit of vegetation: an alliance of the Manual of California Vegetation, as CDFW's California Natural Communities List names it (such as Valley oak woodland and forest, or Fremont's goldfields - Downingia vernal pools), or a group, macrogroup or division of the US National Vegetation Classification above it (#1409)."@en ;
+    rdfs:comment "Finer than a CWHR habitat type. An alliance has its USNVC group as a broader habitat type, and the CWHR type CNPS places it in when there is one; where CNPS names several, it is related to each."@en ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:subClassOf ENVO:01000739 ;
+    icon:0000002 dwc:scientificName,
+        icon:0011210,
+        icon:0011211,
+        icon:0011212,
+        icon:0011213,
+        icon:0011214,
+        icon:0011215 .
+

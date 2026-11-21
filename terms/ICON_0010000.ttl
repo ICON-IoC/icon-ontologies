@@ -1,0 +1,16 @@
+@prefix ENVO: <http://purl.obolibrary.org/obo/ENVO_> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+icon:0010000 a owl:Class ;
+    rdfs:label "county"@en ;
+    IAO:0000115 "One of California's 58 counties, as an administrative region rather than as its government."@en ;
+    rdfs:isDefinedBy iconbase:places.owl ;
+    rdfs:subClassOf ENVO:00000004 ;
+    skos:closeMatch schema:AdministrativeArea .
+

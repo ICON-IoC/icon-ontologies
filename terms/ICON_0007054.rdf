@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0007054">
+    <obo:IAO_0000115 xml:lang="en">A plan by a state agency for one kind of habitat across the state's lands or waters, such as its kelp forests, that summarizes the state-supported research, monitoring and restoration under way, names the knowledge gaps resource managers face, and sets priorities for action in research and monitoring, policy, restoration, and community and tribal engagement, often as an interim step toward a fuller management plan. Lead entities and timelines may be left to a later version. Example: the Ocean Protection Council's Interim Action Plan for Protecting and Restoring California's Kelp Forests (2021), written with CDFW.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Added for the Interim Action Plan for Protecting and Restoring California's Kelp Forests (#1487).</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/plans.owl"/>
+    <rdfs:label xml:lang="en">habitat action plan</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0007001"/>
+  </rdf:Description>
+</rdf:RDF>

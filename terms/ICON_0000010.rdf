@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="cb0">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="cba97a3ab15f60cf144931e07baae90d27f1c957cf37cac36926056781cd469b39"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cba97a3ab15f60cf144931e07baae90d27f1c957cf37cac36926056781cd469b39">
+    <rdf:first rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+    <rdf:rest rdf:nodeID="cbb82a0c8b0211741a67de94d630dfbd41317fffd5c8261256f2c7543571d3d364"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cbb82a0c8b0211741a67de94d630dfbd41317fffd5c8261256f2c7543571d3d364">
+    <rdf:first rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000010">
+    <obo:IAO_0000115 xml:lang="en">An organization or a person: something that can lead, fund, own, manage or take part in conservation work.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:label xml:lang="en">agent</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    <owl:equivalentClass rdf:nodeID="cb0"/>
+    <skos:closeMatch rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+    <skos:closeMatch rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+  </rdf:Description>
+</rdf:RDF>

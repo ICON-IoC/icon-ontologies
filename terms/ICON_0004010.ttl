@@ -1,0 +1,13 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0004010 a owl:Class ;
+    rdfs:label "technical assistance program"@en ;
+    IAO:0000115 "A program that gives free expert help rather than money, so that communities, Tribes, and organizations can plan projects, build capacity, and apply for and manage funding. Example: the U.S. Environmental Protection Agency's Water Technical Assistance (WaterTA)."@en ;
+    rdfs:comment "Added for the technical assistance tab of the LPCCC grant funding sources list (#1383)."@en ;
+    rdfs:isDefinedBy iconbase:programs.owl ;
+    rdfs:subClassOf icon:0004000 .
+

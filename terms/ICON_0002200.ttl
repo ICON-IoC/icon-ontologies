@@ -1,0 +1,14 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+icon:0002200 a owl:AnnotationProperty ;
+    rdfs:label "role title"@en ;
+    IAO:0000115 "A person's title in the role a link records, as the organization or project writes it: Executive Director, Principal Investigator."@en ;
+    rdfs:isDefinedBy iconbase:people.owl ;
+    skos:closeMatch org:role .
+

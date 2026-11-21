@@ -1,0 +1,774 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ICON Plans ontology</title>
+<link rel="icon" href="../brand/icon-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+:root {
+  --ground: #f1f4ef; --surface: #ffffff; --ink: #17221d; --muted: #5a6a62; --rule: #d3dbd3;
+  --accent: #2e6a4e; --accent-soft: #e3eee7;
+  --display: "Newsreader", Georgia, serif;
+  --body: "Instrument Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground: #0f1512; --surface: #17201b; --ink: #e3ebe6; --muted: #93a39a; --rule: #2b3730;
+    --accent: #74c39b; --accent-soft: #1d3127; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --ground: #0f1512; --surface: #17201b; --ink: #e3ebe6; --muted: #93a39a; --rule: #2b3730;
+  --accent: #74c39b; --accent-soft: #1d3127; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--ground); color: var(--ink); font: 15px/1.6 var(--body); }
+.page { max-width: 1040px; margin: 0 auto; padding: 24px 16px 56px; display: grid; gap: 24px; }
+header.top { display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 13px; }
+header.top nav { display: flex; gap: 16px; flex-wrap: wrap; }
+.logo { height: 34px; width: auto; }
+.logo.dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .logo.light { display: none; }
+  :root:not([data-theme="light"]) .logo.dark { display: block; }
+}
+:root[data-theme="dark"] .logo.light { display: none; }
+:root[data-theme="dark"] .logo.dark { display: block; }
+h1 { font: 600 clamp(28px, 4vw, 40px)/1.15 var(--display); margin: 0; text-wrap: balance; }
+h2 { font: 600 22px/1.25 var(--display); margin: 0 0 8px; }
+p { margin: 0 0 10px; max-width: 75ch; }
+a { color: var(--accent); }
+code { font: 0.88em var(--mono); overflow-wrap: anywhere; }
+.muted { color: var(--muted); }
+.kicker { font: 600 11px var(--body); letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+section.card { background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; padding: 18px 20px; min-width: 0; }
+.facts { display: flex; flex-wrap: wrap; gap: 8px 28px; font-variant-numeric: tabular-nums; }
+.facts div { display: grid; }
+.facts b { font: 600 22px/1.1 var(--display); }
+.facts span { font-size: 12px; color: var(--muted); }
+.scroll { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { text-align: left; vertical-align: top; padding: 8px 10px 8px 0; border-bottom: 1px solid var(--rule); }
+th { font-weight: 600; font-size: 12px; color: var(--muted); }
+td.files { white-space: nowrap; }
+td.files a + a { margin-left: 8px; }
+dl.facts-list { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 6px 16px; margin: 0; }
+dl.facts-list dt { color: var(--muted); font-size: 13px; padding-top: 1px; }
+dl.facts-list dd { margin: 0; }
+.button { display: inline-block; padding: 8px 14px; border-radius: 8px; background: var(--accent); color: var(--surface); text-decoration: none; font-weight: 600; }
+pre { background: var(--accent-soft); padding: 12px 14px; border-radius: 8px; overflow-x: auto; font: 13px/1.5 var(--mono); margin: 0 0 10px; white-space: pre-wrap; }
+footer { font-size: 13px; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="top">
+    <nav><a href=".././">ICON ontologies</a><a href="../map.html">Map</a><a href="https://github.com/ICON-IoC/icon-ontologies">Source files</a></nav>
+    <a href="https://icon-ioc.com" aria-label="ICON">
+      <img class="logo light" alt="ICON" src="../brand/icon-lockup.png">
+      <img class="logo dark" alt="ICON" src="../brand/icon-wordmark-reversed-cropped.png">
+    </a>
+  </header>
+
+  <section>
+    <div class="kicker">record module</div>
+    <h1>ICON Plans ontology</h1>
+    <p>Conservation plans, such as species recovery plans, with their objectives and actions: who issues a plan, which sites and taxa it covers, which actions serve which objectives, and who leads or takes part in each action.</p>
+    <dl class="facts-list">
+      <dt>Ontology IRI</dt><dd><code>https://w3id.org/icon/plans.owl</code></dd>
+      <dt>This release</dt><dd><code>https://w3id.org/icon/releases/2026-11-21/plans.owl</code></dd>
+      <dt>Own term IDs</dt><dd>ICON:0007000 to ICON:0007999</dd>
+      <dt>Files</dt><dd><a href="../icon-plans.ttl">Turtle</a>, <a href="../icon-plans.owl">RDF/XML</a>, <a href="../linkml/icon-plans.yaml">LinkML</a>, <a href="../guides/plans.md">guide (Markdown)</a></dd>
+      
+      <dt>Reused</dt><dd>skos</dd>
+      
+      <dt>Built on</dt><dd>BFO, IAO, OBI</dd>
+      
+      <dt>Mapped to</dt><dd>pplan</dd>
+      
+    </dl>
+  </section>
+
+  <section class="card">
+    <h2>Terms</h2>
+    <p class="muted">Reused terms keep their own IDs and link to their source ontology.</p>
+    <div class="scroll">
+    <table>
+      <thead><tr><th>Term</th><th>Kind</th><th>ID</th><th>Definition</th></tr></thead>
+      <tbody>
+      
+        <tr id="ICON_0007001">
+          <td><a href="../terms/ICON_0007001.html">conservation plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007001</code></td>
+          <td>A plan specification issued by an agency or organization that sets conservation objectives and the actions to meet them, such as a species recovery plan.</td>
+        </tr>
+      
+        <tr id="ICON_0007002">
+          <td><a href="../terms/ICON_0007002.html">plan objective</a></td>
+          <td>class</td>
+          <td><code>ICON:0007002</code></td>
+          <td>An objective specification within a conservation plan: a condition the plan aims to reach, often with measurable criteria, such as a population target for a recovery unit.</td>
+        </tr>
+      
+        <tr id="ICON_0007003">
+          <td><a href="../terms/ICON_0007003.html">plan action</a></td>
+          <td>class</td>
+          <td><code>ICON:0007003</code></td>
+          <td>An action specification within a conservation plan: a task the plan calls for, with its priority, cost, lead and cooperators. Actions nest: a sub-action is part of its action.</td>
+        </tr>
+      
+        <tr id="ICON_0007004">
+          <td><a href="../terms/ICON_0007004.html">recovery plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007004</code></td>
+          <td>A conservation plan for one or more species listed under the Endangered Species Act, issued by the Fish and Wildlife Service or NOAA Fisheries, that sets recovery criteria and actions.</td>
+        </tr>
+      
+        <tr id="ICON_0007005">
+          <td><a href="../terms/ICON_0007005.html">watershed management plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007005</code></td>
+          <td>A conservation plan for one or more watersheds, written by the agencies, landowners and groups working in them, that assesses their condition and sets out actions to restore them, protect the waters they drain to, or keep development from adding to flooding.</td>
+        </tr>
+      
+        <tr id="ICON_0007006">
+          <td><a href="../terms/ICON_0007006.html">conservation priorities plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007006</code></td>
+          <td>A conservation plan for a region, written by a partnership of agencies, organizations and residents, that ranks its lands by the conservation values they serve and sets out where and how to protect the highest-ranked ones.</td>
+        </tr>
+      
+        <tr id="ICON_0007007">
+          <td><a href="../terms/ICON_0007007.html">conservation action plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007007</code></td>
+          <td>A conservation plan written with The Nature Conservancy&#39;s Conservation Action Planning method: it names focal conservation targets, rates their viability, ranks the threats to them, and sets measurable objectives with strategic actions ranked by benefit, feasibility and cost.</td>
+        </tr>
+      
+        <tr id="ICON_0007008">
+          <td><a href="../terms/ICON_0007008.html">national marine sanctuary management plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007008</code></td>
+          <td>A conservation plan for a national marine sanctuary, issued by NOAA&#39;s Office of National Marine Sanctuaries and reviewed periodically under the National Marine Sanctuaries Act, that sets out action plans of strategies and activities for the sanctuary&#39;s resource issues and programs, often with revised regulations.</td>
+        </tr>
+      
+        <tr id="ICON_0007009">
+          <td><a href="../terms/ICON_0007009.html">wetland management plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007009</code></td>
+          <td>A conservation plan for a marsh or other wetland complex, written by the agencies and landowners that manage it, that sets acreage targets for restoring and managing its wetlands and the activities, permits and monitoring to reach them.</td>
+        </tr>
+      
+        <tr id="ICON_0007010">
+          <td><a href="../terms/ICON_0007010.html">comprehensive conservation and management plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007010</code></td>
+          <td>A conservation plan for an estuary of national significance, written under Clean Water Act Section 320 by the management conference of a National Estuary Program (agencies, scientists, local governments and the public) and approved by the Environmental Protection Agency, that sets goals and long-term actions for the estuary and its watershed and is revised every few years.</td>
+        </tr>
+      
+        <tr id="ICON_0007011">
+          <td><a href="../terms/ICON_0007011.html">landscape conservation strategy</a></td>
+          <td>class</td>
+          <td><code>ICON:0007011</code></td>
+          <td>A conservation plan for a region&#39;s lands, written by the agencies and organizations that own or fund them, that sets shared goals and high-level strategies for where conservation and restoration could go across the landscape alongside other aims such as flood management, agriculture and recreation, without committing any owner to projects.</td>
+        </tr>
+      
+        <tr id="ICON_0007012">
+          <td><a href="../terms/ICON_0007012.html">open space vision plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007012</code></td>
+          <td>A conservation plan for the lands of a regional open space or park district and the region around them, written by the district with a community advisory committee and public engagement, that sets long-term themes and goals for conservation, public access, education and working lands and ranks place-based priority actions, often as the basis for a funding measure.</td>
+        </tr>
+      
+        <tr id="ICON_0007013">
+          <td><a href="../terms/ICON_0007013.html">biodiversity action plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007013</code></td>
+          <td>A conservation plan for the biodiversity of a county, region or nation, written with the experts, agencies and organizations working there, that describes its habitats and species of concern, the threats to them, and recommended, usually voluntary, actions for science, land protection and stewardship, and education. Local plans follow the model of national biodiversity strategies and action plans under the Convention on Biological Diversity.</td>
+        </tr>
+      
+        <tr id="ICON_0007014">
+          <td><a href="../terms/ICON_0007014.html">ecoregional assessment</a></td>
+          <td>class</td>
+          <td><code>ICON:0007014</code></td>
+          <td>A conservation plan for a whole ecoregion, made with The Nature Conservancy&#39;s ecoregional planning method, that sets quantitative goals for a suite of species, ecological systems and other conservation targets, maps how much each part of the ecoregion contributes to meeting them, often with site-selection software such as Marxan, and recommends broad strategies for protecting the places of highest conservation value and steering development elsewhere. It informs the land-use and conservation decisions of others rather than committing any party to actions.</td>
+        </tr>
+      
+        <tr id="ICON_0007015">
+          <td><a href="../terms/ICON_0007015.html">statewide conservation strategy</a></td>
+          <td>class</td>
+          <td><code>ICON:0007015</code></td>
+          <td>A conservation plan for a whole state, issued by its government to meet a statewide area-based conservation goal such as conserving 30 percent of its lands and coastal waters by 2030, that defines what counts as conserved, sets key objectives, and lays out pathways of strategic actions for state agencies working with tribes, federal and local governments and other partners, with progress tracked in public data and periodic reports.</td>
+        </tr>
+      
+        <tr id="ICON_0007016">
+          <td><a href="../terms/ICON_0007016.html">habitat conservation and management plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007016</code></td>
+          <td>A conservation plan for one rare habitat type across its whole range, such as an endemic sand or serpentine community, written by scientists with the land trusts, agencies and landowners working there, that maps and ranks the remaining habitat sites, synthesizes the biology of its sensitive species and the threats to them, and recommends which lands to preserve and how to manage them (fire, invasive plants, recreation, restoration), with research and education. It is advisory and binds no owner, unlike a habitat conservation plan under the Endangered Species Act.</td>
+        </tr>
+      
+        <tr id="ICON_0007017">
+          <td><a href="../terms/ICON_0007017.html">regional conservation investment strategy</a></td>
+          <td>class</td>
+          <td><code>ICON:0007017</code></td>
+          <td>A voluntary, non-regulatory conservation assessment for a region, prepared by a public agency under California&#39;s Regional Conservation Investment Strategies Program (Fish and Game Code 1850 to 1861) and approved by the California Department of Fish and Wildlife for up to 10 years, that names focal species and other conservation elements, sets goals and measurable objectives for them, and lists conservation actions and habitat enhancement actions with priority locations. Its actions can earn advance mitigation credits through mitigation credit agreements, unlike a plan that binds no one to mitigation.</td>
+        </tr>
+      
+        <tr id="ICON_0007018">
+          <td><a href="../terms/ICON_0007018.html">agency strategic plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007018</code></td>
+          <td>A conservation plan in which a public agency or board sets its own goals, objectives and numerical targets for a fixed period, usually five years, to steer the grants, acquisitions and programs it funds, aligned with statewide strategies and shaped by public workshops and tribal consultation. It commits the agency itself, not other parties, and is carried out through the projects it chooses to fund.</td>
+        </tr>
+      
+        <tr id="ICON_0007019">
+          <td><a href="../terms/ICON_0007019.html">interagency shared strategy</a></td>
+          <td>class</td>
+          <td><code>ICON:0007019</code></td>
+          <td>A conservation plan for one statewide land management need, such as reforestation after wildfire, written by state and federal agencies with nonprofit and university partners under an interagency body such as California&#39;s Wildfire and Forest Resilience Task Force, that measures the need and the progress against it, proposes how to prioritize the work, and sets goals with key actions assigned to named agencies and partnerships. It informs the body&#39;s action plan and binds no agency.</td>
+        </tr>
+      
+        <tr id="ICON_0007020">
+          <td><a href="../terms/ICON_0007020.html">integrated regional water management plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007020</code></td>
+          <td>A plan for all aspects of water management in a region approved by the California Department of Water Resources, written under the Integrated Regional Water Management Planning Act by a Regional Water Management Group of local water, wastewater, flood control and watershed agencies, that sets regional objectives for water supply, water quality, flood management and ecosystem protection, ranks a living list of projects its members sponsor, and makes those projects eligible for state IRWM grants. Each member agency adopts it, and it binds none of them to carry out a project.</td>
+        </tr>
+      
+        <tr id="ICON_0007021">
+          <td><a href="../terms/ICON_0007021.html">habitat conservation plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007021</code></td>
+          <td>A conservation plan that a non-federal landowner or agency prepares under Section 10(a)(1)(B) of the federal Endangered Species Act to obtain an incidental take permit from the U.S. Fish and Wildlife Service or NOAA Fisheries, that names the covered species and covered activities, sets biological goals and objectives, and commits the permittee to measures that avoid, minimize and mitigate the take, with monitoring, adaptive management, funding assurances and a fixed permit term. It binds the permittee through the permit and its implementing agreement.</td>
+        </tr>
+      
+        <tr id="ICON_0007022">
+          <td><a href="../terms/ICON_0007022.html">fishery management plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007022</code></td>
+          <td>A conservation plan that a regional fishery management council prepares under Section 303 of the Magnuson-Stevens Fishery Conservation and Management Act for a fishery in federal waters, that names the managed stocks, sets goals and objectives, defines overfishing and optimum yield, describes and identifies essential fish habitat, and sets the framework for harvest limits, allocation and other management measures. The Secretary of Commerce approves it and its amendments, and NOAA Fisheries implements it through federal regulations that bind those who fish.</td>
+        </tr>
+      
+        <tr id="ICON_0007023">
+          <td><a href="../terms/ICON_0007023.html">fishery ecosystem plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007023</code></td>
+          <td>A conservation plan that a regional fishery management council adopts to bring ecosystem science and policy into its fishery management plans, that describes the marine ecosystem its fisheries depend on, sets ecosystem goals and objectives across those plans, and identifies research needs and cross-plan initiatives. It informs the council&#39;s decisions and binds no one.</td>
+        </tr>
+      
+        <tr id="ICON_0007024">
+          <td><a href="../terms/ICON_0007024.html">climate adaptation plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007024</code></td>
+          <td>A conservation plan that a public body adopts to prepare a region for climate change, that builds on an assessment of its vulnerability to hazards such as flooding, sea level rise, extreme heat and drought, and that sets adaptation strategies with implementing actions and recommended lead and partner agencies across sectors such as flood management, ecosystems, agriculture and water supply. Example: the Delta Stewardship Council&#39;s Delta Adapts Adaptation Plan (2025).</td>
+        </tr>
+      
+        <tr id="ICON_0007025">
+          <td><a href="../terms/ICON_0007025.html">regional priority plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007025</code></td>
+          <td>A conservation plan that a regional grantee of California&#39;s Regional Forest and Fire Capacity Program prepares for its planning area, that assesses wildfire risk and forest and landscape health, names landscapes of interest, strategies and near-term projects, and builds the region&#39;s capacity to carry them out. Example: the San Bernardino Mountains Regional Priority Plan.</td>
+        </tr>
+      
+        <tr id="ICON_0007026">
+          <td><a href="../terms/ICON_0007026.html">bird conservation plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007026</code></td>
+          <td>A conservation plan for the birds of one habitat across a state or region, written by a bird conservation partnership such as Partners in Flight or a habitat joint venture, that chooses focal bird species to stand for the habitat, sets population and habitat objectives for them, names portfolio sites, and recommends habitat protection, restoration, management, monitoring, research and policy actions. It binds no one. Example: California Partners in Flight&#39;s Riparian Bird Conservation Plan (2004).</td>
+        </tr>
+      
+        <tr id="ICON_0007027">
+          <td><a href="../terms/ICON_0007027.html">agricultural water management plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007027</code></td>
+          <td>A plan that an agricultural water supplier serving 10,000 or more irrigated acres prepares and adopts every five years under the California Water Code (Section 10826, from the Water Conservation Act of 2009), that describes its service area, water supplies and water use, accounts for its water budget, reports its efficient water management practices (accurate measurement and volumetric pricing, and the conditional practices that are feasible) and includes a drought plan. It is submitted to the Department of Water Resources and binds the supplier to report, not to reach set targets. Example: the Yolo County Flood Control and Water Conservation District Agricultural Water Management Plan 2025.</td>
+        </tr>
+      
+        <tr id="ICON_0007028">
+          <td><a href="../terms/ICON_0007028.html">groundwater management plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007028</code></td>
+          <td>A plan that a local agency adopts under California&#39;s Groundwater Management Act (Water Code Section 10750 and following, from AB 3030 of 1992 and SB 1938 of 2002) to manage the groundwater beneath its area, with basin management objectives, a monitoring program for water levels, quality and subsidence, and actions such as recharge and conjunctive use. It preceded the Sustainable Groundwater Management Act of 2014, whose groundwater sustainability plans now govern medium and high priority basins. Example: the Yolo County Flood Control and Water Conservation District Groundwater Management Plan 2006.</td>
+        </tr>
+      
+        <tr id="ICON_0007029">
+          <td><a href="../terms/ICON_0007029.html">water management plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007029</code></td>
+          <td>A water supplier&#39;s plan for managing its surface water and groundwater together, setting out its water rights, facilities and use and a program of actions to improve management and develop new supply, adopted under the agency&#39;s own authority rather than a specific planning statute. Example: the Yolo County Flood Control and Water Conservation District Water Management Plan 2000.</td>
+        </tr>
+      
+        <tr id="ICON_0007030">
+          <td><a href="../terms/ICON_0007030.html">state wildlife action plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007030</code></td>
+          <td>A state fish and wildlife agency&#39;s comprehensive wildlife conservation strategy, required every ten years for the state to receive federal State Wildlife Grant funds, that lists the Species of Greatest Conservation Need, describes their key habitats and the pressures on them, and sets conservation strategies by region and habitat, with monitoring and partner coordination. It is a guide for the agency and its partners, not a regulation. Example: California&#39;s State Wildlife Action Plan 2025 (CDFW).</td>
+        </tr>
+      
+        <tr id="ICON_0007031">
+          <td><a href="../terms/ICON_0007031.html">sector companion plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007031</code></td>
+          <td>A plan that carries a broader conservation plan into one sector, such as agriculture, energy, transportation, water management or tribal lands, written with that sector&#39;s agencies and organizations. It names the sector&#39;s priority pressures and strategy categories, potential conservation activities at statewide, regional and local scales, desired outcomes, and potential partners and funding, without binding anyone. It implements the broader plan. Example: the nine companion plans of California&#39;s State Wildlife Action Plan.</td>
+        </tr>
+      
+        <tr id="ICON_0007032">
+          <td><a href="../terms/ICON_0007032.html">flood risk management plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007032</code></td>
+          <td>A long-range plan for managing flood risk across a river basin or region, issued by the agency responsible for its flood system and updated on a fixed cycle, that sets goals for reducing the chance of flooding and the damage and loss of life when it happens, and recommends a portfolio of investments in levees, bypasses, reservoirs, floodplains and emergency response alongside ecosystem restoration, multi-benefit projects and the policies and funding needed to carry them out. Example: California&#39;s Central Valley Flood Protection Plan, updated every five years under the Central Valley Flood Protection Act of 2008.</td>
+        </tr>
+      
+        <tr id="ICON_0007033">
+          <td><a href="../terms/ICON_0007033.html">park management plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007033</code></td>
+          <td>A plan for one park or preserve, adopted by the public body that owns it and often required by a regional habitat conservation plan whose reserve the park belongs to, that sets for decades how its natural, cultural and paleontological resources are protected, restored and monitored (a resource management plan) or where trails, staging areas and facilities may go (a general development plan), and guides the agency&#39;s later land use and management decisions for that park. Examples: the Laguna Coast Wilderness Park General Development and Resource Management Plans (1998) and the Aliso and Wood Canyons Wilderness Park Resource Management Plan (2009) in Orange County.</td>
+        </tr>
+      
+        <tr id="ICON_0007034">
+          <td><a href="../terms/ICON_0007034.html">joint venture implementation plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007034</code></td>
+          <td>A conservation plan for the region of one Migratory Bird Joint Venture, the voluntary, non-regulatory partnerships of agencies, organizations and landowners set up under the North American Waterfowl Management Plan and administered by the U.S. Fish and Wildlife Service, that steps continental bird population objectives down to the region, sets habitat goals in acres to protect, restore and enhance, and names the partnership&#39;s priorities and strategies for reaching them. The partners carry out the projects; the plan binds no one. Example: the San Francisco Bay Joint Venture&#39;s 2022 Implementation Strategy, Restoring the Estuary.</td>
+        </tr>
+      
+        <tr id="ICON_0007035">
+          <td><a href="../terms/ICON_0007035.html">continental bird conservation plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007035</code></td>
+          <td>A conservation plan for one group of birds across North America, accepted by the national governments of Canada, the United States and Mexico or adopted by a continental partnership, that sets continental population, habitat and supporter goals and objectives and recommends how its governance bodies, science teams and partners should pursue them. Regional Migratory Bird Joint Ventures step its continental objectives down to their regions in joint venture implementation plans. It binds no one. Example: the North American Waterfowl Management Plan (1986; 2024 Update).</td>
+        </tr>
+      
+        <tr id="ICON_0007036">
+          <td><a href="../terms/ICON_0007036.html">storm water resource plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007036</code></td>
+          <td>A conservation plan for one watershed, written under California&#39;s Storm Water Resource Planning Act (Senate Bill 985, 2014) and the State Water Resources Control Board&#39;s guidelines by the cities, counties and special districts that manage storm water there, that identifies and ranks multi-benefit projects using storm water and dry weather runoff as a resource, to improve water quality, recharge groundwater, reduce flooding and restore habitat. Incorporated into the region&#39;s integrated regional water management plan, it makes its projects eligible for state storm water implementation grants, and it binds no agency to build them. Example: the Russian River Storm Water Resource Plan (2018).</td>
+        </tr>
+      
+        <tr id="ICON_0007037">
+          <td><a href="../terms/ICON_0007037.html">regional management plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007037</code></td>
+          <td>A comprehensive, long-term plan for one region that a state agency must adopt under a statute naming the region&#39;s goals, that sets regulatory policies binding the state and local agencies whose projects there are covered by the plan, together with nonregulatory recommendations to other agencies and the Legislature, and is amended as conditions and science change. Agencies certify their covered projects as consistent with the plan, and the adopting agency hears appeals of those certifications. Example: the Delta Plan, which the Delta Stewardship Council adopted in 2013 under the Sacramento-San Joaquin Delta Reform Act of 2009 to achieve the coequal goals of water supply reliability and a healthy Delta ecosystem.</td>
+        </tr>
+      
+        <tr id="ICON_0007038">
+          <td><a href="../terms/ICON_0007038.html">eagle conservation plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007038</code></td>
+          <td>A conservation plan that a project proponent prepares with the U.S. Fish and Wildlife Service under the Bald and Golden Eagle Protection Act and the Service&#39;s eagle take permit rules, that assesses how bald and golden eagles use the project area, estimates the eagle take the project&#39;s activities may cause, sets avoidance and minimization measures, and commits to monitoring and to mitigation that offsets the take, so the Service can issue an eagle take permit. Example: San Diego Gas &amp; Electric&#39;s Eagle Conservation Plan (2023), Appendix B of its HCP Amendment.</td>
+        </tr>
+      
+        <tr id="ICON_0007039">
+          <td><a href="../terms/ICON_0007039.html">rangeland management plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007039</code></td>
+          <td>A plan for livestock grazing on land a public agency owns, that sets stocking rates, residual dry matter targets, grazing seasons and the fencing and water developments that keep cattle out of streams and reservoirs, so that grazing reduces wildland fuel and serves water quality and native habitat, and that the agency carries out through its grazing leases. Example: the San Francisco Public Utilities Commission&#39;s Alameda Creek Watershed Rangeland Management Plan (2026), which updates the 1997 Grazing Resources Management Plan of its Alameda Watershed Management Plan.</td>
+        </tr>
+      
+        <tr id="ICON_0007040">
+          <td><a href="../terms/ICON_0007040.html">conservation proposal</a></td>
+          <td>class</td>
+          <td><code>ICON:0007040</code></td>
+          <td>A conservation plan written by an organization that neither owns nor manages the lands it covers, proposing new designations, legislation or management direction for those lands, usually public ones, to the agencies and lawmakers who could adopt it. It binds no one until they act on it. Example: the California Chaparral Institute&#39;s California Chaparral Preservation Plan (2021), which asks that the four southern California national forests become National Chaparral Recreation Areas.</td>
+        </tr>
+      
+        <tr id="ICON_0007041">
+          <td><a href="../terms/ICON_0007041.html">forest health plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007041</code></td>
+          <td>A plan that maps, ranks and sequences fuel reduction, thinning, prescribed fire and related restoration treatments across a forest landscape, usually national forest land under a NEPA decision, so that the agency and its partners can fund and contract the work in priority order. Example: the Upper Mokelumne River Watershed Authority and Eldorado National Forest&#39;s Forest Projects Plan Phase 1 (2023), which sequences fuels treatments on about 26,000 acres of the Amador Ranger District.</td>
+        </tr>
+      
+        <tr id="ICON_0007042">
+          <td><a href="../terms/ICON_0007042.html">invasive species management plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007042</code></td>
+          <td>A plan that inventories the invasive non-native plants or animals on a body of land, ranks the species and infestations for treatment, and sets out the control methods, monitoring and best management practices the land manager will use to contain or eradicate them. Example: the Conejo Open Space Conservation Agency&#39;s Invasive Plant Management Plan (2026), which ranks about 50 invasive plants in three priority tiers across about 13,000 acres of open space.</td>
+        </tr>
+      
+        <tr id="ICON_0007043">
+          <td><a href="../terms/ICON_0007043.html">hazard mitigation plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007043</code></td>
+          <td>A plan, usually written to FEMA&#39;s local hazard mitigation planning rules, that identifies the natural hazards such as wildfire, flood, earthquake and landslide that could damage an agency&#39;s or community&#39;s facilities and lands, assesses its vulnerability to them, and lists actions to reduce their impacts before a disaster. Example: the Mountains Recreation and Conservation Authority&#39;s Draft Hazard Mitigation Plan (2021), limited to the park facilities MRCA owns and maintains.</td>
+        </tr>
+      
+        <tr id="ICON_0007044">
+          <td><a href="../terms/ICON_0007044.html">public works plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007044</code></td>
+          <td>A long-range plan under the California Coastal Act (Public Resources Code 30605) in which a public agency lays out the parks, trails, access ways, and facilities it intends to build in the coastal zone, so that the Coastal Commission can certify the whole program at once instead of permitting each project. Example: the Malibu Parks Public Access Enhancement Plan, adopted in 2010 by the Mountains Recreation and Conservation Authority and the Santa Monica Mountains Conservancy.</td>
+        </tr>
+      
+        <tr id="ICON_0007045">
+          <td><a href="../terms/ICON_0007045.html">forest management plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007045</code></td>
+          <td>A plan for one forest property, adopted by the owner that manages it, that sets the forest&#39;s objectives (such as research, demonstration, education, or timber production) and how it is administered, and divides the forest into compartments or stands assigned to management regimes such as even-aged, uneven-aged, or reserve, so that harvests, treatments, and research can be planned and compared over decades while soil, water, and other resources are conserved. Example: the Policy for Use of Blodgett Forest Research Station (2012), UC Berkeley&#39;s management plan for its 4,356-acre research forest in El Dorado County.</td>
+        </tr>
+      
+        <tr id="ICON_0007046">
+          <td><a href="../terms/ICON_0007046.html">interagency action plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007046</code></td>
+          <td>A statewide plan issued by an interagency task force that a governor convenes, which folds existing state and federal plans, mandates, and reports into one strategy, sets goals with acreage and other numerical targets for a fixed period, and assigns numbered actions with deadlines to named state and federal agencies, carried out as resources allow while the task force tracks progress. Example: California&#39;s Wildfire and Forest Resilience Action Plan (2021) of the Governor&#39;s Forest Management Task Force, the first five-year plan under the state&#39;s Shared Stewardship Agreement with the USDA Forest Service.</td>
+        </tr>
+      
+        <tr id="ICON_0007047">
+          <td><a href="../terms/ICON_0007047.html">eelgrass management plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007047</code></td>
+          <td>A plan for the eelgrass (Zostera) beds of one bay or estuary, adopted by the agency that manages its waters, that maps existing and damaged beds, sets boundaries where anchoring, mooring or other uses that scour the beds are barred, sets acreage targets and methods for replanting, and lays out monitoring and adaptive management. Example: the Richardson&#39;s Bay Regional Agency&#39;s Eelgrass Protection and Management Plan (2021), which created the Eelgrass Protection Zone, and its Eelgrass Restoration and Adaptive Management Plan (2023).</td>
+        </tr>
+      
+        <tr id="ICON_0007048">
+          <td><a href="../terms/ICON_0007048.html">anchorage management plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007048</code></td>
+          <td>A plan adopted by the agency that regulates an anchorage, harbor or mooring area for the vessels kept there, that sets time limits, permits and enforcement priorities, schedules the removal of unpermitted, derelict or occupied vessels, and connects people living aboard with housing and other services, often to protect habitat on the bottom from anchor damage. Example: the Richardson&#39;s Bay Regional Agency Transition Plan (2020).</td>
+        </tr>
+      
+        <tr id="ICON_0007049">
+          <td><a href="../terms/ICON_0007049.html">species management and monitoring plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007049</code></td>
+          <td>A plan for one listed species across its whole range, written by the agencies, land managers and scientists that hold its habitat, that maps its habitat and population units, assesses threats, sets desired habitat and population conditions, and standardizes how the species is managed, monitored and reported so that the separate reserves and permits covering it add up to a recovery assessment. It is not the recovery plan the Fish and Wildlife Service issues under the Endangered Species Act. Example: the Stephens&#39; Kangaroo Rat Rangewide Management and Monitoring Plan (2021).</td>
+        </tr>
+      
+        <tr id="ICON_0007050">
+          <td><a href="../terms/ICON_0007050.html">restoration feasibility plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007050</code></td>
+          <td>A plan that reviews the condition of a degraded lake, wetland or landscape and the restoration alternatives tried or proposed before, develops conceptual projects with cost estimates, and matches them to realistic funding sources, to recommend a restoration that is feasible and affordable rather than adopting a binding program. Example: the Salton Sea Funding and Feasibility Action Plan (2016).</td>
+        </tr>
+      
+        <tr id="ICON_0007051">
+          <td><a href="../terms/ICON_0007051.html">statewide comprehensive outdoor recreation plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007051</code></td>
+          <td>A plan a state&#39;s outdoor recreation agency keeps current for the federal Land and Water Conservation Fund, which requires one for a state to receive its grants: it assesses the supply of and demand for outdoor recreation, sets the state&#39;s priorities for recreation grants for about five years, and states the criteria grant applications are scored by. Example: California&#39;s 2021-2025 Statewide Comprehensive Outdoor Recreation Plan, by State Parks&#39; Office of Grants and Local Services, which centers park access and equity.</td>
+        </tr>
+      
+        <tr id="ICON_0007052">
+          <td><a href="../terms/ICON_0007052.html">species conservation plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007052</code></td>
+          <td>A conservation plan for one species that a state law directs the state wildlife agency to prepare across the species&#39; range in the state, setting conservation targets and the actions to meet them, such as avoiding and minimizing impacts, conserving and managing land, tribal co-management, research and public education. Example: CDFW&#39;s Western Joshua Tree Conservation Plan, required by the Western Joshua Tree Conservation Act and approved by the Fish and Game Commission in 2025.</td>
+        </tr>
+      
+        <tr id="ICON_0007053">
+          <td><a href="../terms/ICON_0007053.html">groundwater sustainability plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007053</code></td>
+          <td>A plan that the groundwater sustainability agencies of a medium or high priority basin adopt under California&#39;s Sustainable Groundwater Management Act of 2014 (Water Code Section 10720 and following) and submit to the Department of Water Resources, which reviews it and approves it, finds it incomplete, or finds it inadequate. It sets a sustainability goal to be reached within 20 years, defines undesirable results for the six sustainability indicators (chronic lowering of groundwater levels, reduction of storage, seawater intrusion, degraded water quality, land subsidence, and depletion of interconnected surface water), sets minimum thresholds and measurable objectives at representative monitoring sites, and lists the projects and management actions that keep the basin sustainable. It is reviewed every five years. Example: the Tule Lake Subbasin Groundwater Sustainability Plan (2021).</td>
+        </tr>
+      
+        <tr id="ICON_0007054">
+          <td><a href="../terms/ICON_0007054.html">habitat action plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007054</code></td>
+          <td>A plan by a state agency for one kind of habitat across the state&#39;s lands or waters, such as its kelp forests, that summarizes the state-supported research, monitoring and restoration under way, names the knowledge gaps resource managers face, and sets priorities for action in research and monitoring, policy, restoration, and community and tribal engagement, often as an interim step toward a fuller management plan. Lead entities and timelines may be left to a later version. Example: the Ocean Protection Council&#39;s Interim Action Plan for Protecting and Restoring California&#39;s Kelp Forests (2021), written with CDFW.</td>
+        </tr>
+      
+        <tr id="ICON_0007055">
+          <td><a href="../terms/ICON_0007055.html">ecosystem-based management plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007055</code></td>
+          <td>A state plan for a marine ecosystem built on foundation species, such as California&#39;s kelp forests, that the state wildlife agency develops with its partners, the tribes, and a community working group, and the Fish and Game Commission adopts. It combines a harvest framework, which sets how and where the foundation species may be taken, with a restoration framework, which tracks the ecosystem&#39;s condition against a baseline and sets the permit pathways for restoration projects, and it is managed adaptively as monitoring reports change. Example: CDFW&#39;s statewide Kelp Restoration and Management Plan for giant kelp and bull kelp, in development with the Ocean Protection Council.</td>
+        </tr>
+      
+        <tr id="ICON_0007056">
+          <td><a href="../terms/ICON_0007056.html">land management plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007056</code></td>
+          <td>A plan by the California Department of Fish and Wildlife for one of its wildlife areas or ecological reserves, written to the Department&#39;s Guide and Annotated Outline for Writing Land Management Plans, that describes the property, its resources and its public uses and sets goals and tasks by element (biological, public use, agricultural, cultural, facilities maintenance, administrative, research and monitoring, and management coordination), with the staff hours and operations budget needed to carry them out. Example: the Napa-Sonoma Marshes Wildlife Area Land Management Plan (2011).</td>
+        </tr>
+      
+        <tr id="ICON_0007057">
+          <td><a href="../terms/ICON_0007057.html">statewide pollution strategy</a></td>
+          <td>class</td>
+          <td><code>ICON:0007057</code></td>
+          <td>A plan a state agency adopts because a statute requires it, to reduce one kind of pollution across the state: it reviews the sources and pathways of the pollutant, lays out a phased roadmap of solutions such as prevention at the source and interventions on pathways like stormwater, sets research priorities, and calls for further work with the sectors involved. It guides the agency&#39;s funding and recommendations but binds no one. Example: California&#39;s Statewide Microplastics Strategy (2022), which the Ocean Protection Council adopted under SB 1263 (2018).</td>
+        </tr>
+      
+        <tr id="ICON_0007122">
+          <td><a href="../terms/ICON_0007122.html">regional economic plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007122</code></td>
+          <td>A plan for the economy of one region, prepared by a regional agency, often because a statute requires it, that assesses the region&#39;s economic sectors and the effects of proposed state projects and policies on them, and recommends actions to sustain the regional economy. Example: the Economic Sustainability Plan for the Sacramento-San Joaquin River Delta, which the Delta Protection Commission adopted in 2012 as the Delta Reform Act requires.</td>
+        </tr>
+      
+        <tr id="ICON_0007123">
+          <td><a href="../terms/ICON_0007123.html">heritage area management plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007123</code></td>
+          <td>The plan that the local coordinating entity of a National Heritage Area writes with partners and the public, and the Secretary of the Interior approves, that sets the area&#39;s interpretive themes, goals, and strategies for preserving, interpreting, and promoting its natural, cultural, and historic resources. Example: the Sacramento-San Joaquin Delta National Heritage Area Management Plan, approved in January 2025.</td>
+        </tr>
+      
+        <tr id="ICON_0007124">
+          <td><a href="../terms/ICON_0007124.html">community action plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007124</code></td>
+          <td>A plan for one small community, prepared with its residents and its local government, that names improvements to quality of life, economic development, historic preservation, transportation, and public safety, and the steps and partners to carry them out. Example: the Walnut Grove Community Action Plan (2016), prepared with support from the Delta Protection Commission.</td>
+        </tr>
+      
+        <tr id="ICON_0007125">
+          <td><a href="../terms/ICON_0007125.html">trail master plan</a></td>
+          <td>class</td>
+          <td><code>ICON:0007125</code></td>
+          <td>A plan for a regional trail system that sets its alignment, the standards and process for designating segments, and how the segments are funded, built, operated, and maintained by the agencies along it. Example: the Great California Delta Trail Master Plan, by the Delta Protection Commission.</td>
+        </tr>
+      
+        <tr id="ICON_0007100">
+          <td><a href="../terms/ICON_0007100.html">has plan type</a></td>
+          <td>relation</td>
+          <td><code>ICON:0007100</code></td>
+          <td>Links a plan to one of the plan type classes it belongs to. The explorer&#39;s way of stating the plan&#39;s class.</td>
+        </tr>
+      
+        <tr id="ICON_0007101">
+          <td><a href="../terms/ICON_0007101.html">is plan type of</a></td>
+          <td>relation</td>
+          <td><code>ICON:0007101</code></td>
+          <td>The reverse of has plan type.</td>
+        </tr>
+      
+        <tr id="ICON_0007102">
+          <td><a href="../terms/ICON_0007102.html">issued by</a></td>
+          <td>relation</td>
+          <td><code>ICON:0007102</code></td>
+          <td>The agency or organization that issued the plan. A kind of was issued by.</td>
+        </tr>
+      
+        <tr id="ICON_0007103">
+          <td><a href="../terms/ICON_0007103.html">is objective of</a></td>
+          <td>relation</td>
+          <td><code>ICON:0007103</code></td>
+          <td>The objective belongs to the plan.</td>
+        </tr>
+      
+        <tr id="ICON_0007104">
+          <td><a href="../terms/ICON_0007104.html">has objective</a></td>
+          <td>relation</td>
+          <td><code>ICON:0007104</code></td>
+          <td>The reverse of is objective of.</td>
+        </tr>
+      
+        <tr id="ICON_0007105">
+          <td><a href="../terms/ICON_0007105.html">is action of</a></td>
+          <td>relation</td>
+          <td><code>ICON:0007105</code></td>
+          <td>The action belongs to the plan.</td>
+        </tr>
+      
+        <tr id="ICON_0007106">
+          <td><a href="../terms/ICON_0007106.html">has action</a></td>
+          <td>relation</td>
+          <td><code>ICON:0007106</code></td>
+          <td>The reverse of is action of.</td>
+        </tr>
+      
+        <tr id="ICON_0007107">
+          <td><a href="../terms/ICON_0007107.html">serves objective</a></td>
+          <td>relation</td>
+          <td><code>ICON:0007107</code></td>
+          <td>The action is meant to help meet the objective.</td>
+        </tr>
+      
+        <tr id="ICON_0007108">
+          <td><a href="../terms/ICON_0007108.html">is served by</a></td>
+          <td>relation</td>
+          <td><code>ICON:0007108</code></td>
+          <td>The reverse of serves objective.</td>
+        </tr>
+      
+        <tr id="ICON_0007109">
+          <td><a href="../terms/ICON_0007109.html">involves</a></td>
+          <td>relation</td>
+          <td><code>ICON:0007109</code></td>
+          <td>An organization the plan or action names as a cooperator or party, beside its lead.</td>
+        </tr>
+      
+        <tr id="ICON_0007110">
+          <td><a href="../terms/ICON_0007110.html">is involved in</a></td>
+          <td>relation</td>
+          <td><code>ICON:0007110</code></td>
+          <td>The reverse of involves.</td>
+        </tr>
+      
+        <tr id="ICON_0007111">
+          <td><a href="../terms/ICON_0007111.html">at site</a></td>
+          <td>relation</td>
+          <td><code>ICON:0007111</code></td>
+          <td>A place where the action is to be carried out.</td>
+        </tr>
+      
+        <tr id="ICON_0007112">
+          <td><a href="../terms/ICON_0007112.html">is site of</a></td>
+          <td>relation</td>
+          <td><code>ICON:0007112</code></td>
+          <td>The reverse of at site.</td>
+        </tr>
+      
+        <tr id="ICON_0007113">
+          <td><a href="../terms/ICON_0007113.html">targets site</a></td>
+          <td>relation</td>
+          <td><code>ICON:0007113</code></td>
+          <td>A place the objective&#39;s criteria are measured at, such as a recovery unit&#39;s streams.</td>
+        </tr>
+      
+        <tr id="ICON_0007114">
+          <td><a href="../terms/ICON_0007114.html">is targeted by</a></td>
+          <td>relation</td>
+          <td><code>ICON:0007114</code></td>
+          <td>The reverse of targets site.</td>
+        </tr>
+      
+        <tr id="ICON_0007115">
+          <td><a href="../terms/ICON_0007115.html">covers site</a></td>
+          <td>relation</td>
+          <td><code>ICON:0007115</code></td>
+          <td>A place within the plan&#39;s scope.</td>
+        </tr>
+      
+        <tr id="ICON_0007116">
+          <td><a href="../terms/ICON_0007116.html">is covered by plan</a></td>
+          <td>relation</td>
+          <td><code>ICON:0007116</code></td>
+          <td>The reverse of covers site.</td>
+        </tr>
+      
+        <tr id="ICON_0007117">
+          <td><a href="../terms/ICON_0007117.html">implements plan</a></td>
+          <td>relation</td>
+          <td><code>ICON:0007117</code></td>
+          <td>A project or program carries out actions of the plan, or a plan carries the plan&#39;s strategies into one sector, as a State Wildlife Action Plan companion plan does. A kind of implements.</td>
+        </tr>
+      
+        <tr id="ICON_0007118">
+          <td><a href="../terms/ICON_0007118.html">has role in</a></td>
+          <td>relation</td>
+          <td><code>ICON:0007118</code></td>
+          <td>An organization has a part in the plan because one of the plan&#39;s actions, at any depth, is led by it or involves it. Never stated in the sources: the explorer&#39;s plan role rule derives it.</td>
+        </tr>
+      
+        <tr id="ICON_0007119">
+          <td><a href="../terms/ICON_0007119.html">assigns a role to</a></td>
+          <td>relation</td>
+          <td><code>ICON:0007119</code></td>
+          <td>The reverse of has role in.</td>
+        </tr>
+      
+        <tr id="ICON_0007120">
+          <td><a href="../terms/ICON_0007120.html">counts toward</a></td>
+          <td>relation</td>
+          <td><code>ICON:0007120</code></td>
+          <td>A protected place the state counts toward the plan&#39;s area-based conservation goal, such as a GAP 1 or 2 land in California&#39;s 30x30 Conserved Areas, which count toward Pathways to 30x30 California.</td>
+        </tr>
+      
+        <tr id="ICON_0007121">
+          <td><a href="../terms/ICON_0007121.html">has conserved area</a></td>
+          <td>relation</td>
+          <td><code>ICON:0007121</code></td>
+          <td>The reverse of counts toward.</td>
+        </tr>
+      
+        <tr id="ICON_0007200">
+          <td><a href="../terms/ICON_0007200.html">plan status</a></td>
+          <td>attribute</td>
+          <td><code>ICON:0007200</code></td>
+          <td>Where the plan stands: draft, final, revised, under review.</td>
+        </tr>
+      
+        <tr id="skos_historyNote">
+          <td><a href="http://www.w3.org/2004/02/skos/core#historyNote">history note</a></td>
+          <td>attribute</td>
+          <td><code>skos:historyNote</code></td>
+          <td>A note about the past state/use/meaning of a concept.</td>
+        </tr>
+      
+        <tr id="ICON_0007201">
+          <td><a href="../terms/ICON_0007201.html">recovery priority number</a></td>
+          <td>attribute</td>
+          <td><code>ICON:0007201</code></td>
+          <td>The Fish and Wildlife Service&#39;s recovery priority for the species, 1 (highest) to 18, with C when the species conflicts with development.</td>
+        </tr>
+      
+        <tr id="ICON_0007202">
+          <td><a href="../terms/ICON_0007202.html">target date</a></td>
+          <td>attribute</td>
+          <td><code>ICON:0007202</code></td>
+          <td>When the plan expects its objectives to be met, as a year or a phrase the plan uses.</td>
+        </tr>
+      
+        <tr id="ICON_0007203">
+          <td><a href="../terms/ICON_0007203.html">total estimated cost</a></td>
+          <td>attribute</td>
+          <td><code>ICON:0007203</code></td>
+          <td>The plan&#39;s estimated cost of carrying out all its actions, with its currency and the period it covers.</td>
+        </tr>
+      
+        <tr id="ICON_0007204">
+          <td><a href="../terms/ICON_0007204.html">objective criteria</a></td>
+          <td>attribute</td>
+          <td><code>ICON:0007204</code></td>
+          <td>The measurable conditions that show the objective has been met.</td>
+        </tr>
+      
+        <tr id="skos_notation">
+          <td><a href="http://www.w3.org/2004/02/skos/core#notation">notation</a></td>
+          <td>attribute</td>
+          <td><code>skos:notation</code></td>
+          <td>A notation, also known as classification code, is a string of characters such as &#34;T58.5&#34; or &#34;303.4833&#34; used to uniquely identify a concept within the scope of a given concept scheme.</td>
+        </tr>
+      
+        <tr id="ICON_0007205">
+          <td><a href="../terms/ICON_0007205.html">action priority</a></td>
+          <td>attribute</td>
+          <td><code>ICON:0007205</code></td>
+          <td>The plan&#39;s priority for the action, usually 1 (must be done to prevent extinction) to 3.</td>
+        </tr>
+      
+        <tr id="ICON_0007206">
+          <td><a href="../terms/ICON_0007206.html">action duration</a></td>
+          <td>attribute</td>
+          <td><code>ICON:0007206</code></td>
+          <td>How long the action is expected to take, as the plan states it: a number of years, or ongoing.</td>
+        </tr>
+      
+        <tr id="ICON_0007207">
+          <td><a href="../terms/ICON_0007207.html">action cost estimate</a></td>
+          <td>attribute</td>
+          <td><code>ICON:0007207</code></td>
+          <td>The action&#39;s estimated total cost.</td>
+        </tr>
+      
+        <tr id="ICON_0007208">
+          <td><a href="../terms/ICON_0007208.html">cost by party</a></td>
+          <td>attribute</td>
+          <td><code>ICON:0007208</code></td>
+          <td>The action&#39;s estimated cost broken down by the parties expected to pay it.</td>
+        </tr>
+      
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <footer>
+    <p>ICON ontologies, version 2026-11-21. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: attribute as "Internet of Conservation, Information for the Conservation of Nature (ICON), CC BY 4.0". The ICON names and logos are not covered by that license.</p>
+  </footer>
+</div>
+</body>
+</html>

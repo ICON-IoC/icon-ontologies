@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0007123">
+    <obo:IAO_0000115 xml:lang="en">The plan that the local coordinating entity of a National Heritage Area writes with partners and the public, and the Secretary of the Interior approves, that sets the area's interpretive themes, goals, and strategies for preserving, interpreting, and promoting its natural, cultural, and historic resources. Example: the Sacramento-San Joaquin Delta National Heritage Area Management Plan, approved in January 2025.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Added for the Sacramento-San Joaquin Delta National Heritage Area Management Plan (#1677).</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/plans.owl"/>
+    <rdfs:label xml:lang="en">heritage area management plan</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0007001"/>
+  </rdf:Description>
+</rdf:RDF>

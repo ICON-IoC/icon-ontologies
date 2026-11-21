@@ -1,0 +1,16 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+icon:0012102 a owl:ObjectProperty ;
+    rdfs:label "has broader issue"@en ;
+    IAO:0000115 "Links a component issue to an integrated issue it is primarily part of, as the issue list of Springer et al. (2022) records: Floods has broader issues Water and Disasters. A record that addresses the component issue addresses the integrated one too."@en ;
+    rdfs:domain icon:0012000 ;
+    rdfs:isDefinedBy iconbase:issues.owl ;
+    rdfs:range icon:0012000 ;
+    owl:inverseOf icon:0012103 ;
+    skos:exactMatch skos:broader .
+

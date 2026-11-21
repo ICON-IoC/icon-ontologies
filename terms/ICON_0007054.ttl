@@ -1,0 +1,13 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0007054 a owl:Class ;
+    rdfs:label "habitat action plan"@en ;
+    IAO:0000115 "A plan by a state agency for one kind of habitat across the state's lands or waters, such as its kelp forests, that summarizes the state-supported research, monitoring and restoration under way, names the knowledge gaps resource managers face, and sets priorities for action in research and monitoring, policy, restoration, and community and tribal engagement, often as an interim step toward a fuller management plan. Lead entities and timelines may be left to a later version. Example: the Ocean Protection Council's Interim Action Plan for Protecting and Restoring California's Kelp Forests (2021), written with CDFW."@en ;
+    rdfs:comment "Added for the Interim Action Plan for Protecting and Restoring California's Kelp Forests (#1487)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+

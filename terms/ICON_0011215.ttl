@@ -1,0 +1,14 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+icon:0011215 a owl:DatatypeProperty ;
+    rdfs:label "sensitive natural community"@en ;
+    IAO:0000115 "Yes for an alliance with a state rank of S1 to S3, which CDFW counts as a sensitive natural community for environmental review under CEQA."@en ;
+    rdfs:domain icon:0011004 ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:range xsd:string .
+

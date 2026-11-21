@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:iconbase="https://w3id.org/icon/"
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0011005">
+    <obo:IAO_0000115 xml:lang="en">A unit of the Coastal and Marine Ecological Classification Standard (CMECS, FGDC-STD-018-2012): a system, subsystem or tidal zone of its Aquatic Setting (such as Estuarine Coastal Intertidal Tidal Zone), or a biotic setting, class, subclass or group of its Biotic Component (such as Seagrass Bed), identified by its CMECS ID (#1410).</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Finer than CWHR for estuaries, shores and the ocean. A unit has the unit above it as a broader habitat type; units are crosswalked to CWHR by hand in reference/cmecs-cwhr.csv, as broader where one CWHR type matches and related where several do.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/biodiversity.owl"/>
+    <rdfs:label xml:lang="en">coastal and marine habitat type</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000739"/>
+    <iconbase:ICON_0000002 rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+    <iconbase:ICON_0000002 rdf:resource="https://w3id.org/icon/ICON_0011220"/>
+    <iconbase:ICON_0000002 rdf:resource="https://w3id.org/icon/ICON_0011221"/>
+    <iconbase:ICON_0000002 rdf:resource="https://w3id.org/icon/ICON_0011222"/>
+  </rdf:Description>
+</rdf:RDF>

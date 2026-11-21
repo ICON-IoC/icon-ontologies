@@ -1,0 +1,152 @@
+# ICON Issues ontology
+# Built by `ioc-ontologies` from ontology/src/issues.terms; edit that file, not this one.
+# Guide: ontology/guides/issues.md
+@prefix BFO: <http://purl.obolibrary.org/obo/BFO_> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+IAO:0000115 a owl:AnnotationProperty ;
+    rdfs:label "definition" .
+
+dcterms:creator a owl:AnnotationProperty .
+
+dcterms:description a owl:AnnotationProperty .
+
+dcterms:license a owl:AnnotationProperty .
+
+dcterms:references a owl:AnnotationProperty .
+
+dcterms:title a owl:AnnotationProperty .
+
+oboInOwl:hasDbXref a owl:AnnotationProperty ;
+    rdfs:label "database_cross_reference" .
+
+oboInOwl:hasExactSynonym a owl:AnnotationProperty ;
+    rdfs:label "has_exact_synonym" .
+
+skos:broadMatch a owl:AnnotationProperty .
+
+skos:closeMatch a owl:AnnotationProperty .
+
+skos:exactMatch a owl:AnnotationProperty .
+
+skos:narrowMatch a owl:AnnotationProperty .
+
+icon:0000001 a owl:AnnotationProperty ;
+    rdfs:label "crosswalk"@en ;
+    IAO:0000115 "The matching field in a metadata standard that is not published as RDF, written as the standard's name, a colon and the field's path, such as \"EML 2.2: dataset/title\"."@en ;
+    rdfs:isDefinedBy iconbase:core.owl .
+
+icon:0012104 a owl:ObjectProperty,
+        owl:SymmetricProperty ;
+    rdfs:label "is related to issue"@en ;
+    IAO:0000115 "Links a component issue to an integrated issue it bears on secondarily, as the issue list of Springer et al. (2022) records. Nothing rolls up along it."@en ;
+    rdfs:domain icon:0012000 ;
+    rdfs:isDefinedBy iconbase:issues.owl ;
+    rdfs:range icon:0012000 ;
+    skos:exactMatch skos:related .
+
+BFO:0000001 a owl:Class ;
+    rdfs:label "entity"@en .
+
+icon:0000102 a owl:ObjectProperty ;
+    rdfs:label "leads"@en ;
+    IAO:0000115 "An organization or person directs this work: the reverse of led by."@en ;
+    rdfs:isDefinedBy iconbase:core.owl ;
+    rdfs:subPropertyOf icon:0000100 .
+
+icon:0000106 a owl:ObjectProperty ;
+    rdfs:label "funds"@en ;
+    IAO:0000115 "The organization or funding source pays for this work, data or publication: the reverse of funded by and of funded through."@en ;
+    rdfs:isDefinedBy iconbase:core.owl ;
+    rdfs:subPropertyOf icon:0000100 .
+
+icon:0004103 a owl:ObjectProperty ;
+    rdfs:label "administers"@en ;
+    IAO:0000115 "The reverse of administered by."@en ;
+    rdfs:isDefinedBy iconbase:programs.owl ;
+    rdfs:subPropertyOf icon:0000100 .
+
+icon:0005105 a owl:ObjectProperty ;
+    rdfs:label "manages"@en ;
+    IAO:0000115 "The reverse of managed by."@en ;
+    rdfs:isDefinedBy iconbase:infrastructure.owl ;
+    rdfs:subPropertyOf icon:0000100 .
+
+icon:0012101 a owl:ObjectProperty ;
+    rdfs:label "is addressed by"@en ;
+    IAO:0000115 "The reverse of addresses issue."@en ;
+    rdfs:domain icon:0012000 ;
+    rdfs:isDefinedBy iconbase:issues.owl ;
+    owl:inverseOf icon:0012100 .
+
+icon:0012103 a owl:ObjectProperty ;
+    rdfs:label "has narrower issue"@en ;
+    IAO:0000115 "The reverse of has broader issue: an integrated issue's component issues."@en ;
+    rdfs:domain icon:0012000 ;
+    rdfs:isDefinedBy iconbase:issues.owl ;
+    rdfs:range icon:0012000 ;
+    owl:inverseOf icon:0012102 ;
+    skos:exactMatch skos:narrower .
+
+icon:0012102 a owl:ObjectProperty ;
+    rdfs:label "has broader issue"@en ;
+    IAO:0000115 "Links a component issue to an integrated issue it is primarily part of, as the issue list of Springer et al. (2022) records: Floods has broader issues Water and Disasters. A record that addresses the component issue addresses the integrated one too."@en ;
+    rdfs:domain icon:0012000 ;
+    rdfs:isDefinedBy iconbase:issues.owl ;
+    rdfs:range icon:0012000 ;
+    owl:inverseOf icon:0012103 ;
+    skos:exactMatch skos:broader .
+
+icon:0000100 a owl:ObjectProperty ;
+    rdfs:label "is involved with"@en ;
+    IAO:0000115 "A link between two records that work together or affect one another. Every more specific involvement link (leads, funds, manages, uses, is partner of and others) implies it."@en ;
+    rdfs:isDefinedBy iconbase:core.owl .
+
+icon:0012100 a owl:ObjectProperty ;
+    rdfs:label "addresses issue"@en ;
+    IAO:0000115 "The record responds to, studies or bears on the issue. An organization that funds, leads, administers or manages work addressing an issue addresses it too."@en ;
+    rdfs:comment "The chains are the explorer's issue roll-up rules: from work to who backs it, and from a component issue to its integrated issues."@en ;
+    rdfs:isDefinedBy iconbase:issues.owl ;
+    rdfs:range icon:0012000 ;
+    owl:inverseOf icon:0012101 ;
+    owl:propertyChainAxiom ( icon:0000106 icon:0012100 ),
+        ( icon:0000102 icon:0012100 ),
+        ( icon:0005105 icon:0012100 ),
+        ( icon:0004103 icon:0012100 ),
+        ( icon:0012100 icon:0012102 ) ;
+    skos:closeMatch dcat:theme ;
+    icon:0000001 "DataCite 4.5: subject",
+        "EML 2.2: dataset/keywordSet",
+        "ISO 19115-1: descriptiveKeywords" .
+
+iconbase:issues.owl a owl:Ontology ;
+    dcterms:creator "Internet of Conservation (ICON)" ;
+    dcterms:description "The conservation issues records address, from water quality to wildfire: one class for the issue vocabulary and the link that says a record addresses an issue."@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references obo:bfo.owl,
+        <http://www.w3.org/2004/02/skos/core>,
+        <http://www.w3.org/ns/dcat> ;
+    dcterms:title "ICON Issues ontology"@en ;
+    rdfs:comment "Existing ontologies used. Built on: Basic Formal Ontology. Mapped to: DCAT 3 (W3C Data Catalog Vocabulary), SKOS."@en ;
+    rdfs:seeAlso iconbase:core.owl,
+        iconbase:infrastructure.owl,
+        iconbase:programs.owl ;
+    owl:versionIRI <https://w3id.org/icon/releases/2026-11-21/issues.owl> ;
+    owl:versionInfo "2026-11-21" .
+
+icon:0012000 a owl:Class ;
+    rdfs:label "conservation issue"@en ;
+    IAO:0000115 "A problem, pressure or concern conservation work responds to, such as water quality, wildfire, habitat loss or a declining species. Issues are of many kinds (processes, qualities, entities), so the class sits directly under entity."@en ;
+    rdfs:isDefinedBy iconbase:issues.owl ;
+    rdfs:subClassOf BFO:0000001 .
+

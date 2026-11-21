@@ -1,0 +1,282 @@
+# ICON Places ontology, as a LinkML schema.
+# Built by `ioc-ontologies` from ontology/src/places.terms; edit that, not this file.
+id: https://w3id.org/icon/linkml/icon-places
+name: icon-places
+prefixes:
+  linkml: https://w3id.org/linkml/
+  GEO: http://purl.obolibrary.org/obo/GEO_
+  ICON: https://w3id.org/icon/ICON_
+  dcterms: http://purl.org/dc/terms/
+  schema: https://schema.org/
+title: ICON Places ontology
+description: 'The areas records are placed in: California counties, USDA ecoregion sections, the HUC8
+  subbasins and HUC10 watersheds of the USGS Watershed Boundary Dataset, and the State Assembly, State
+  Senate, congressional, and county supervisorial districts that elected officials represent, with statewide
+  scope, and the links that say a record operates, applies or lies in one of them.'
+version: '2026-11-21'
+license: https://creativecommons.org/licenses/by/4.0/
+default_prefix: ICON
+default_range: string
+see_also:
+- https://w3id.org/icon/places.owl
+imports:
+- linkml:types
+- icon-external
+- icon-core
+- icon-infrastructure
+- icon-plans
+classes:
+  County:
+    class_uri: ICON:0010000
+    title: county
+    description: One of California's 58 counties, as an administrative region rather than as its government.
+    close_mappings:
+    - schema:AdministrativeArea
+    annotations:
+      runtime: vocab County
+    is_a: AdministrativeRegion
+  HUC8Subbasin:
+    class_uri: ICON:0010001
+    title: HUC8 subbasin
+    description: A drainage basin at the subbasin level (eight-digit hydrologic unit code) of the USGS
+      Watershed Boundary Dataset.
+    annotations:
+      runtime: vocab HUC8
+    is_a: DrainageBasin
+  HUC10Watershed:
+    class_uri: ICON:0010002
+    title: HUC10 watershed
+    description: A drainage basin at the watershed level (ten-digit hydrologic unit code) of the USGS
+      Watershed Boundary Dataset. Each lies within one HUC8 subbasin.
+    annotations:
+      runtime: vocab HUC10
+    is_a: DrainageBasin
+  ElectoralDistrict:
+    class_uri: ICON:0010005
+    title: electoral district
+    description: 'An area whose voters elect an official to a legislature or a county board: a California
+      State Assembly, State Senate, congressional or county supervisorial district (#1432).'
+    comments:
+    - A district is linked to the counties, ecoregion sections, subbasins, watersheds and other districts
+      it overlaps, and to the places it holds part of, by intersects.
+    close_mappings:
+    - schema:AdministrativeArea
+    is_a: AdministrativeRegion
+  StateAssemblyDistrict:
+    class_uri: ICON:0010006
+    title: State Assembly district
+    description: One of the 80 districts that each elect a member of the California State Assembly, as
+      the Citizens Redistricting Commission drew them in 2021.
+    annotations:
+      runtime: vocab AssemblyDistrict
+    is_a: ElectoralDistrict
+  StateSenateDistrict:
+    class_uri: ICON:0010007
+    title: State Senate district
+    description: One of the 40 districts that each elect a California State Senator, as the Citizens Redistricting
+      Commission drew them in 2021.
+    annotations:
+      runtime: vocab SenateDistrict
+    is_a: ElectoralDistrict
+  CongressionalDistrict:
+    class_uri: ICON:0010008
+    title: congressional district
+    description: 'One of California''s 52 districts that each elect a member of the U.S. House of Representatives,
+      as the map in force draws them: the 2021 Citizens Redistricting Commission map until January 3,
+      2027, then the Proposition 50 (AB 604) map.'
+    annotations:
+      runtime: vocab CongressionalDistrict
+    is_a: ElectoralDistrict
+  SupervisorialDistrict:
+    class_uri: ICON:0010009
+    title: supervisorial district
+    description: A district of a California county that elects one member of the county's board of supervisors,
+      as the county's own current map draws it.
+    annotations:
+      runtime: vocab SupervisorialDistrict
+    is_a: ElectoralDistrict
+  GeographicScope:
+    class_uri: ICON:0010003
+    title: geographic scope
+    description: An extent a record can claim in place of a list of areas.
+    annotations:
+      runtime: vocab Scope
+    is_a: InformationContentEntity
+slots:
+  operates_in:
+    slot_uri: ICON:0010100
+    title: operates in
+    description: The record works in, covers or is about the area. A county cell of All in a workbook
+      links the record to statewide instead.
+    comments:
+    - 'The chains are two of the explorer''s rules. Place roll-up: working on a place located in an area
+      means operating in that area. Place containment: operating in an area means operating in every area
+      that contains it.'
+    close_mappings:
+    - dcterms:spatial
+    - schema:areaServed
+    annotations:
+      crosswalk: 'DataCite 4.5: geoLocation/geoLocationPlace; EML 2.2: coverage/geographicCoverage; ISO
+        19115-1: EX_Extent/geographicElement'
+      runtime: phrase "operates in"
+      holds_over_chain: uses | located_in_area; manages | located_in_area; owns | located_in_area; at_site
+        | located_in_area; operates_in | located_in
+    range: uriorcurie
+    inverse: is_place_of_work_of
+    multivalued: true
+  is_place_of_work_of:
+    slot_uri: ICON:0010101
+    title: is place of work of
+    description: The reverse of operates in.
+    annotations:
+      runtime: phrase "is place of work of"
+    range: uriorcurie
+    inverse: operates_in
+    multivalued: true
+  applies_in:
+    slot_uri: ICON:0010102
+    title: applies in
+    description: A guideline, mandate or plan has force or scope in the area.
+    close_mappings:
+    - GEO:000000336
+    annotations:
+      runtime: phrase "applies in"
+    range: uriorcurie
+    inverse: is_jurisdiction_of
+    multivalued: true
+  is_jurisdiction_of:
+    slot_uri: ICON:0010103
+    title: is jurisdiction of
+    description: The reverse of applies in.
+    annotations:
+      runtime: phrase "is jurisdiction of"
+    range: uriorcurie
+    inverse: applies_in
+    multivalued: true
+  located_in_area:
+    slot_uri: ICON:0010104
+    title: located in area
+    description: A place, objective or action lies in the area. A kind of operates in, and a kind of the
+      Relation Ontology's located in.
+    aliases:
+    - located in
+    annotations:
+      runtime: phrase "located in"
+    is_a: operates_in
+    mixins:
+    - located_in
+    range: uriorcurie
+    inverse: is_location_of
+    multivalued: true
+  is_location_of:
+    slot_uri: ICON:0010105
+    title: is location of
+    description: The reverse of located in area.
+    annotations:
+      runtime: phrase "is location of"
+    range: uriorcurie
+    inverse: located_in_area
+    multivalued: true
+  covers:
+    slot_uri: ICON:0010106
+    title: covers
+    description: The record's area takes in the area. Listed with the place links since the explorer's
+      phrase table began (#35); no link uses it at present.
+    annotations:
+      runtime: phrase "covers"
+    range: uriorcurie
+    inverse: is_covered_by
+    multivalued: true
+  is_covered_by:
+    slot_uri: ICON:0010107
+    title: is covered by
+    description: The reverse of covers.
+    annotations:
+      runtime: phrase "is covered by"
+    range: uriorcurie
+    inverse: covers
+    multivalued: true
+  in_ecoregion:
+    slot_uri: ICON:0010108
+    title: in ecoregion
+    description: The record works in, covers or lies in the ecoregion section.
+    close_mappings:
+    - dcterms:spatial
+    annotations:
+      runtime: phrase "in ecoregion"
+    range: Ecoregion
+    inverse: is_ecoregion_of
+    multivalued: true
+  is_ecoregion_of:
+    slot_uri: ICON:0010109
+    title: is ecoregion of
+    description: The reverse of in ecoregion.
+    annotations:
+      runtime: phrase "is ecoregion of"
+    domain: Ecoregion
+    domain_of:
+    - Ecoregion
+    range: uriorcurie
+    inverse: in_ecoregion
+    multivalued: true
+  in_subbasin:
+    slot_uri: ICON:0010110
+    title: in subbasin
+    description: The record works in, covers or lies in the HUC8 subbasin.
+    close_mappings:
+    - dcterms:spatial
+    annotations:
+      runtime: phrase "in subbasin"
+    range: HUC8Subbasin
+    inverse: is_subbasin_of
+    multivalued: true
+  is_subbasin_of:
+    slot_uri: ICON:0010111
+    title: is subbasin of
+    description: The reverse of in subbasin.
+    annotations:
+      runtime: phrase "is subbasin of"
+    domain: HUC8Subbasin
+    domain_of:
+    - HUC8Subbasin
+    range: uriorcurie
+    inverse: in_subbasin
+    multivalued: true
+  in_watershed:
+    slot_uri: ICON:0010112
+    title: in watershed
+    description: The record works in, covers or lies in the HUC10 watershed.
+    close_mappings:
+    - dcterms:spatial
+    annotations:
+      runtime: phrase "in watershed"
+    range: HUC10Watershed
+    inverse: is_watershed_of
+    multivalued: true
+  is_watershed_of:
+    slot_uri: ICON:0010113
+    title: is watershed of
+    description: The reverse of in watershed.
+    annotations:
+      runtime: phrase "is watershed of"
+    domain: HUC10Watershed
+    domain_of:
+    - HUC10Watershed
+    range: uriorcurie
+    inverse: in_watershed
+    multivalued: true
+enums:
+  GeographicScopeEnum:
+    enum_uri: ICON:0010003
+    description: The values of geographic scope.
+    permissible_values:
+      statewide:
+        meaning: ICON:0010004
+        description: The whole of California. A record that operates, applies or lies statewide is linked
+          to this value rather than to every county, ecoregion, subbasin and watershed (#281).
+        comments:
+        - The explorer's statewide rule derives the record's links to every county and ecoregion when
+          a question needs them. OWL cannot state it, since it turns one link into many by the category
+          of the target.
+        annotations:
+          runtime: term Scope "Statewide"

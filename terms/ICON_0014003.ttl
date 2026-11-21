@@ -1,0 +1,15 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0014003 a owl:Class ;
+    rdfs:label "expected outcome"@en ;
+    IAO:0000115 "An outcome a project or program sets out to deliver and has not yet been shown to: the acres a grant award or a project plan states, or the planned and in-progress work a project tracker lists."@en ;
+    oboInOwl:hasExactSynonym "planned outcome"@en ;
+    rdfs:isDefinedBy iconbase:outcomes.owl ;
+    rdfs:subClassOf IAO:0000005,
+        icon:0014002 .
+

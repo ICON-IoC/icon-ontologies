@@ -1,0 +1,13 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0007042 a owl:Class ;
+    rdfs:label "invasive species management plan"@en ;
+    IAO:0000115 "A plan that inventories the invasive non-native plants or animals on a body of land, ranks the species and infestations for treatment, and sets out the control methods, monitoring and best management practices the land manager will use to contain or eradicate them. Example: the Conejo Open Space Conservation Agency's Invasive Plant Management Plan (2026), which ranks about 50 invasive plants in three priority tiers across about 13,000 acres of open space."@en ;
+    rdfs:comment "Added for the Conejo Open Space Conservation Agency's Invasive Plant Management Plan (#1157)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+

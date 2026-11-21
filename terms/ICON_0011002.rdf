@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0011002">
+    <obo:IAO_0000115 xml:lang="en">How invasive a non-native species is in California: for plants, the California Invasive Plant Council (Cal-IPC) rating in its Inventory, High, Moderate, Limited, or Watch for a plant at high risk of becoming invasive (#410); for animals, listing by the California Department of Fish and Wildlife (CDFW), which does not rate them (#435).</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/biodiversity.owl"/>
+    <rdfs:label xml:lang="en">invasive rating</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+  </rdf:Description>
+</rdf:RDF>

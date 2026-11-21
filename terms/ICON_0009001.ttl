@@ -1,0 +1,22 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+icon:0009001 a owl:Class ;
+    rdfs:label "peer-reviewed paper"@en ;
+    IAO:0000115 "An article that independent experts reviewed before a journal or conference published it. A work counts as one only if its journal certainly peer-reviewed it."@en ;
+    rdfs:isDefinedBy iconbase:publications.owl ;
+    rdfs:subClassOf IAO:0000013,
+        icon:0009000 ;
+    skos:closeMatch bibo:AcademicArticle,
+        fabio:JournalArticle,
+        schema:ScholarlyArticle ;
+    icon:0000001 "Crossref: journal-article",
+        "DataCite 4.5: resourceTypeGeneral JournalArticle" .
+

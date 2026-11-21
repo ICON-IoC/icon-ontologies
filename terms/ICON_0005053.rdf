@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005053">
+    <obo:IAO_0000115 xml:lang="en">A facility on a natural gas transmission pipeline that raises the gas pressure to keep it moving along the line. Example: San Diego Gas &amp; Electric's Moreno Compressor Station in Moreno Valley, which boosts the gas supply into San Diego County.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:label xml:lang="en">natural gas compressor station</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000070"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005004"/>
+  </rdf:Description>
+</rdf:RDF>

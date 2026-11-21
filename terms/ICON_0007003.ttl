@@ -1,0 +1,16 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pplan: <http://purl.org/net/p-plan#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+icon:0007003 a owl:Class ;
+    rdfs:label "plan action"@en ;
+    IAO:0000115 "An action specification within a conservation plan: a task the plan calls for, with its priority, cost, lead and cooperators. Actions nest: a sub-action is part of its action."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf IAO:0000007,
+        icon:0000014 ;
+    skos:closeMatch pplan:Step .
+

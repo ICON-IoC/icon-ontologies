@@ -1,0 +1,12 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0011003 a owl:Class ;
+    rdfs:label "California Rare Plant Rank"@en ;
+    IAO:0000115 "The California Native Plant Society's rank of how rare a plant, bryophyte, or lichen is in California, from 1A (presumed extirpated or extinct) to 4 (a watch list of limited distribution), assigned with CDFW's California Natural Diversity Database and printed in its Special Vascular Plants, Bryophytes, and Lichens List. The decimal threat rank that follows it (.1 seriously, .2 moderately, .3 not very threatened) is kept as the link's source note (#1210)."@en ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:subClassOf IAO:0000030 .
+

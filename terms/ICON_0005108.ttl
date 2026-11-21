@@ -1,0 +1,16 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix RO: <http://purl.obolibrary.org/obo/RO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0005108 a owl:ObjectProperty,
+        owl:SymmetricProperty ;
+    rdfs:label "is adjacent to"@en ;
+    IAO:0000115 "Two places share a boundary. Symmetric, unlike the Relation Ontology's adjacent to, which it narrows."@en ;
+    rdfs:domain icon:0005000 ;
+    rdfs:isDefinedBy iconbase:infrastructure.owl ;
+    rdfs:range icon:0005000 ;
+    rdfs:subPropertyOf RO:0002220 .
+

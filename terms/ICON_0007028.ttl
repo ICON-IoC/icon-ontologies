@@ -1,0 +1,12 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0007028 a owl:Class ;
+    rdfs:label "groundwater management plan"@en ;
+    IAO:0000115 "A plan that a local agency adopts under California's Groundwater Management Act (Water Code Section 10750 and following, from AB 3030 of 1992 and SB 1938 of 2002) to manage the groundwater beneath its area, with basin management objectives, a monitoring program for water levels, quality and subsidence, and actions such as recharge and conjunctive use. It preceded the Sustainable Groundwater Management Act of 2014, whose groundwater sustainability plans now govern medium and high priority basins. Example: the Yolo County Flood Control and Water Conservation District Groundwater Management Plan 2006."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+

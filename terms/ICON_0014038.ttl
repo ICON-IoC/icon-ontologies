@@ -1,0 +1,12 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0014038 a owl:NamedIndividual,
+        icon:0014000 ;
+    rdfs:label "habitat created"@en ;
+    IAO:0000115 "Acres where a habitat was established where it did not exist before, such as a wetland built on upland. Habitat restored is where it once was."@en ;
+    rdfs:isDefinedBy iconbase:outcomes.owl .
+

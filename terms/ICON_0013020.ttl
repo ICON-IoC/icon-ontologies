@@ -1,0 +1,12 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0013020 a owl:NamedIndividual,
+        icon:0013010 ;
+    rdfs:label "tracking function"@en ;
+    IAO:0000115 "Records projects, prices or indicators over time and reports on them."@en ;
+    rdfs:isDefinedBy iconbase:tools.owl .
+

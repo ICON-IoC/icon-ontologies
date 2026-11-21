@@ -1,0 +1,17 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+icon:0009112 a owl:ObjectProperty ;
+    rdfs:label "studied at"@en ;
+    IAO:0000115 "A place where the work's field study or monitoring was done, such as a reserve, a creek or a dam."@en ;
+    rdfs:domain icon:0009000 ;
+    rdfs:isDefinedBy iconbase:publications.owl ;
+    rdfs:range icon:0005000 ;
+    owl:inverseOf icon:0009113 ;
+    skos:closeMatch schema:spatialCoverage .
+

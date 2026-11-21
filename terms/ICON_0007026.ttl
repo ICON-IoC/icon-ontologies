@@ -1,0 +1,12 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0007026 a owl:Class ;
+    rdfs:label "bird conservation plan"@en ;
+    IAO:0000115 "A conservation plan for the birds of one habitat across a state or region, written by a bird conservation partnership such as Partners in Flight or a habitat joint venture, that chooses focal bird species to stand for the habitat, sets population and habitat objectives for them, names portfolio sites, and recommends habitat protection, restoration, management, monitoring, research and policy actions. It binds no one. Example: California Partners in Flight's Riparian Bird Conservation Plan (2004)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+

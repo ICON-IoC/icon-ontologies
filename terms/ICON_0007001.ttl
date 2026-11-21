@@ -1,0 +1,16 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pplan: <http://purl.org/net/p-plan#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+icon:0007001 a owl:Class ;
+    rdfs:label "conservation plan"@en ;
+    IAO:0000115 "A plan specification issued by an agency or organization that sets conservation objectives and the actions to meet them, such as a species recovery plan."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf IAO:0000104,
+        icon:0000014 ;
+    skos:closeMatch pplan:Plan .
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0010008">
+    <obo:IAO_0000115 xml:lang="en">One of California's 52 districts that each elect a member of the U.S. House of Representatives, as the map in force draws them: the 2021 Citizens Redistricting Commission map until January 3, 2027, then the Proposition 50 (AB 604) map.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/places.owl"/>
+    <rdfs:label xml:lang="en">congressional district</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0010005"/>
+  </rdf:Description>
+</rdf:RDF>

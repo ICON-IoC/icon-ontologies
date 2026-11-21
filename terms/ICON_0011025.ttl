@@ -1,0 +1,12 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0011025 a owl:NamedIndividual,
+        icon:0011003 ;
+    rdfs:label "California Rare Plant Rank 4"@en ;
+    IAO:0000115 "CNPS: Watch list: plants of limited distribution or infrequent throughout a broader area of California, whose status should be monitored."@en ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl .
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:iconbase="https://w3id.org/icon/"
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008000">
+    <obo:IAO_0000115 xml:lang="en">Data at any of three levels: a dataset, a database or a data repository. Replaced the PPOD Dataset class.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdfs:label xml:lang="en">data resource</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0000013"/>
+    <skos:closeMatch rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
+    <skos:closeMatch rdf:resource="https://schema.org/CreativeWork"/>
+    <iconbase:ICON_0000002 rdf:resource="http://purl.org/dc/terms/accessRights"/>
+    <iconbase:ICON_0000002 rdf:resource="http://purl.org/dc/terms/accrualPeriodicity"/>
+    <iconbase:ICON_0000002 rdf:resource="http://purl.org/dc/terms/description"/>
+    <iconbase:ICON_0000002 rdf:resource="http://purl.org/dc/terms/identifier"/>
+    <iconbase:ICON_0000002 rdf:resource="http://purl.org/dc/terms/issued"/>
+    <iconbase:ICON_0000002 rdf:resource="http://purl.org/dc/terms/license"/>
+    <iconbase:ICON_0000002 rdf:resource="http://www.w3.org/ns/dcat#keyword"/>
+    <iconbase:ICON_0000002 rdf:resource="http://www.w3.org/ns/dcat#temporalResolution"/>
+    <iconbase:ICON_0000002 rdf:resource="http://www.w3.org/ns/dcat#version"/>
+    <iconbase:ICON_0000002 rdf:resource="https://w3id.org/icon/ICON_0008200"/>
+    <iconbase:ICON_0000002 rdf:resource="https://w3id.org/icon/ICON_0008201"/>
+    <iconbase:ICON_0000002 rdf:resource="https://w3id.org/icon/ICON_0008202"/>
+    <iconbase:ICON_0000002 rdf:resource="https://w3id.org/icon/ICON_0008203"/>
+    <iconbase:ICON_0000002 rdf:resource="https://w3id.org/icon/ICON_0008204"/>
+  </rdf:Description>
+</rdf:RDF>

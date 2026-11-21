@@ -1,0 +1,12 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0014035 a owl:NamedIndividual,
+        icon:0014000 ;
+    rdfs:label "process improvements made"@en ;
+    IAO:0000115 "The number of changes put in place to make an organization's processes, such as grant applications, reporting or payment, simpler or faster."@en ;
+    rdfs:isDefinedBy iconbase:outcomes.owl .
+

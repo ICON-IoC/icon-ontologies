@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0007034">
+    <obo:IAO_0000115 xml:lang="en">A conservation plan for the region of one Migratory Bird Joint Venture, the voluntary, non-regulatory partnerships of agencies, organizations and landowners set up under the North American Waterfowl Management Plan and administered by the U.S. Fish and Wildlife Service, that steps continental bird population objectives down to the region, sets habitat goals in acres to protect, restore and enhance, and names the partnership's priorities and strategies for reaching them. The partners carry out the projects; the plan binds no one. Example: the San Francisco Bay Joint Venture's 2022 Implementation Strategy, Restoring the Estuary.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/plans.owl"/>
+    <rdfs:label xml:lang="en">joint venture implementation plan</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0007001"/>
+  </rdf:Description>
+</rdf:RDF>

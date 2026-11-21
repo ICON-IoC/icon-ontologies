@@ -1,0 +1,14 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0008034 a owl:NamedIndividual,
+        icon:0008030 ;
+    rdfs:label "monthly resolution"@en ;
+    IAO:0000115 "A value every month."@en ;
+    oboInOwl:hasDbXref "ISO8601:P1M" ;
+    rdfs:isDefinedBy iconbase:data.owl .
+

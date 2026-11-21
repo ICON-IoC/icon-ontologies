@@ -1,0 +1,12 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0011012 a owl:NamedIndividual,
+        icon:0011002 ;
+    rdfs:label "limited invasive rating"@en ;
+    IAO:0000115 "Cal-IPC: invasive, but with ecological impacts that are minor statewide, or too little information to rate it higher; often locally persistent and problematic."@en ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl .
+

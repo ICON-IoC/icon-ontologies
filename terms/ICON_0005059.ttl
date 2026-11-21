@@ -1,0 +1,15 @@
+@prefix ENVO: <http://purl.obolibrary.org/obo/ENVO_> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0005059 a owl:Class ;
+    rdfs:label "wastewater treatment plant"@en ;
+    IAO:0000115 "A facility that treats sewage and other wastewater before it is discharged or reused, for example as recycled water for irrigation. Example: the City of Santa Rosa's Laguna Treatment Plant, on the floodplain of the Laguna de Santa Rosa."@en ;
+    rdfs:comment "Added for the Laguna Treatment Plant, beside two restoration concepts of the Restoration Plan for the Laguna de Santa Rosa (#1643)."@en ;
+    rdfs:isDefinedBy iconbase:infrastructure.owl ;
+    rdfs:subClassOf ENVO:00000070,
+        icon:0005003 .
+

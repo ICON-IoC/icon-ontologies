@@ -1,0 +1,223 @@
+# ICON Programs ontology
+# Built by `ioc-ontologies` from ontology/src/programs.terms; edit that file, not this one.
+# Guide: ontology/guides/programs.md
+@prefix BFO: <http://purl.obolibrary.org/obo/BFO_> .
+@prefix COB: <http://purl.obolibrary.org/obo/COB_> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix OBI: <http://purl.obolibrary.org/obo/OBI_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+IAO:0000115 a owl:AnnotationProperty ;
+    rdfs:label "definition" .
+
+dcterms:creator a owl:AnnotationProperty .
+
+dcterms:description a owl:AnnotationProperty .
+
+dcterms:license a owl:AnnotationProperty .
+
+dcterms:references a owl:AnnotationProperty .
+
+dcterms:title a owl:AnnotationProperty .
+
+oboInOwl:hasDbXref a owl:AnnotationProperty ;
+    rdfs:label "database_cross_reference" .
+
+oboInOwl:hasExactSynonym a owl:AnnotationProperty ;
+    rdfs:label "has_exact_synonym" .
+
+skos:broadMatch a owl:AnnotationProperty .
+
+skos:closeMatch a owl:AnnotationProperty .
+
+skos:exactMatch a owl:AnnotationProperty .
+
+skos:narrowMatch a owl:AnnotationProperty .
+
+icon:0004001 a owl:Class ;
+    rdfs:label "acquisition program"@en ;
+    IAO:0000115 "A program that buys land, water or easements, or pays others to."@en ;
+    rdfs:isDefinedBy iconbase:programs.owl ;
+    rdfs:subClassOf icon:0004000 .
+
+icon:0004002 a owl:Class ;
+    rdfs:label "certification program"@en ;
+    IAO:0000115 "A program that certifies land, products or practices against a standard."@en ;
+    rdfs:isDefinedBy iconbase:programs.owl ;
+    rdfs:subClassOf icon:0004000 .
+
+icon:0004003 a owl:Class ;
+    rdfs:label "education program"@en ;
+    IAO:0000115 "A program that teaches the public, students or practitioners."@en ;
+    rdfs:isDefinedBy iconbase:programs.owl ;
+    rdfs:subClassOf icon:0004000 .
+
+icon:0004004 a owl:Class ;
+    rdfs:label "funding program"@en ;
+    IAO:0000115 "A program that pays for others' conservation work, as a grant or cost-share program."@en ;
+    rdfs:isDefinedBy iconbase:programs.owl ;
+    rdfs:subClassOf icon:0004000 ;
+    skos:closeMatch frapo:FundingProgramme .
+
+icon:0004005 a owl:Class ;
+    rdfs:label "habitat enhancement program"@en ;
+    IAO:0000115 "A program that restores or improves habitat."@en ;
+    oboInOwl:hasExactSynonym "restoration program"@en ;
+    rdfs:isDefinedBy iconbase:programs.owl ;
+    rdfs:subClassOf icon:0004000 .
+
+icon:0004006 a owl:Class ;
+    rdfs:label "management program"@en ;
+    IAO:0000115 "A program that manages land, water or wildlife over time."@en ;
+    rdfs:isDefinedBy iconbase:programs.owl ;
+    rdfs:subClassOf icon:0004000 .
+
+icon:0004007 a owl:Class ;
+    rdfs:label "planning program"@en ;
+    IAO:0000115 "A program that prepares plans, such as regional conservation planning."@en ;
+    rdfs:isDefinedBy iconbase:programs.owl ;
+    rdfs:subClassOf icon:0004000 .
+
+icon:0004008 a owl:Class ;
+    rdfs:label "regulatory program"@en ;
+    IAO:0000115 "A program that issues permits or enforces rules."@en ;
+    rdfs:isDefinedBy iconbase:programs.owl ;
+    rdfs:subClassOf icon:0004000 .
+
+icon:0004009 a owl:Class ;
+    rdfs:label "research program"@en ;
+    IAO:0000115 "A program that studies or monitors nature or conservation."@en ;
+    rdfs:isDefinedBy iconbase:programs.owl ;
+    rdfs:subClassOf icon:0004000 ;
+    skos:closeMatch OBI:0000066 .
+
+icon:0004010 a owl:Class ;
+    rdfs:label "technical assistance program"@en ;
+    IAO:0000115 "A program that gives free expert help rather than money, so that communities, Tribes, and organizations can plan projects, build capacity, and apply for and manage funding. Example: the U.S. Environmental Protection Agency's Water Technical Assistance (WaterTA)."@en ;
+    rdfs:comment "Added for the technical assistance tab of the LPCCC grant funding sources list (#1383)."@en ;
+    rdfs:isDefinedBy iconbase:programs.owl ;
+    rdfs:subClassOf icon:0004000 .
+
+BFO:0000001 a owl:Class ;
+    rdfs:label "entity"@en .
+
+BFO:0000002 a owl:Class ;
+    rdfs:label "continuant"@en ;
+    rdfs:subClassOf BFO:0000001 .
+
+BFO:0000015 a owl:Class ;
+    rdfs:label "process"@en .
+
+COB:0000082 a owl:Class ;
+    rdfs:label "planned process"@en ;
+    IAO:0000115 "A process that is initiated by an agent who intends to carry out a plan to achieve an objective through one or more actions as described in a plan specification."@en ;
+    rdfs:subClassOf BFO:0000015 .
+
+icon:0000011 a owl:Class ;
+    rdfs:label "endeavor"@en ;
+    IAO:0000115 "A planned process carried out to achieve conservation ends over a span of time: a project or a program."@en ;
+    rdfs:isDefinedBy iconbase:core.owl ;
+    rdfs:subClassOf COB:0000082 .
+
+icon:0000012 a owl:Class ;
+    rdfs:label "place"@en ;
+    IAO:0000115 "A part of the landscape or a structure in it that records can be located at, worked on or bounded by: a river, a reserve, a dam, a crossing structure."@en ;
+    rdfs:isDefinedBy iconbase:core.owl ;
+    rdfs:subClassOf BFO:0000004 .
+
+icon:0004100 a owl:ObjectProperty ;
+    rdfs:label "has program type"@en ;
+    IAO:0000115 "Links a program to one of the program type classes it belongs to. The explorer's way of stating the program's class."@en ;
+    rdfs:domain icon:0004000 ;
+    rdfs:isDefinedBy iconbase:programs.owl ;
+    owl:inverseOf icon:0004101 .
+
+icon:0004101 a owl:ObjectProperty ;
+    rdfs:label "is program type of"@en ;
+    IAO:0000115 "The reverse of has program type."@en ;
+    rdfs:isDefinedBy iconbase:programs.owl ;
+    rdfs:range icon:0004000 ;
+    owl:inverseOf icon:0004100 .
+
+icon:0004102 a owl:ObjectProperty ;
+    rdfs:label "administered by"@en ;
+    IAO:0000115 "The organization that runs the program."@en ;
+    rdfs:domain icon:0004000 ;
+    rdfs:isDefinedBy iconbase:programs.owl ;
+    rdfs:range OBI:0000245 ;
+    rdfs:subPropertyOf icon:0000100 ;
+    owl:inverseOf icon:0004103 .
+
+icon:0004103 a owl:ObjectProperty ;
+    rdfs:label "administers"@en ;
+    IAO:0000115 "The reverse of administered by."@en ;
+    rdfs:domain OBI:0000245 ;
+    rdfs:isDefinedBy iconbase:programs.owl ;
+    rdfs:range icon:0004000 ;
+    rdfs:subPropertyOf icon:0000100 ;
+    owl:inverseOf icon:0004102 .
+
+icon:0004104 a owl:ObjectProperty ;
+    rdfs:label "operates at"@en ;
+    IAO:0000115 "A place where the program does its work, such as a river a restoration program works along, a groundwater basin a banking program recharges, or a camera array a research program runs."@en ;
+    rdfs:domain icon:0004000 ;
+    rdfs:isDefinedBy iconbase:programs.owl ;
+    rdfs:range icon:0005000 ;
+    owl:inverseOf icon:0004105 .
+
+icon:0004105 a owl:ObjectProperty ;
+    rdfs:label "hosts program"@en ;
+    IAO:0000115 "The reverse of operates at."@en ;
+    rdfs:domain icon:0005000 ;
+    rdfs:isDefinedBy iconbase:programs.owl ;
+    rdfs:range icon:0004000 ;
+    owl:inverseOf icon:0004104 .
+
+BFO:0000004 a owl:Class ;
+    rdfs:label "independent continuant"@en ;
+    IAO:0000115 "b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])"@en ;
+    rdfs:subClassOf BFO:0000002 .
+
+OBI:0000245 a owl:Class ;
+    rdfs:label "organization"@en ;
+    IAO:0000115 "An organization is a continuant entity which can play roles,  has members, and has a set of organization rules.  Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members."@en ;
+    rdfs:subClassOf BFO:0000004 .
+
+icon:0000100 a owl:ObjectProperty ;
+    rdfs:label "is involved with"@en ;
+    IAO:0000115 "A link between two records that work together or affect one another. Every more specific involvement link (leads, funds, manages, uses, is partner of and others) implies it."@en ;
+    rdfs:isDefinedBy iconbase:core.owl .
+
+icon:0005000 a owl:Class ;
+    rdfs:label "infrastructure"@en ;
+    IAO:0000115 "A place or structure on the landscape that conservation works on or around: a water body, a conservation area, a water or energy work, a farm, a sensor, a road or trail. Called infrastructure in the PPOD model whether built or natural."@en ;
+    rdfs:isDefinedBy iconbase:infrastructure.owl ;
+    rdfs:subClassOf icon:0000012 .
+
+icon:0004000 a owl:Class ;
+    rdfs:label "conservation program"@en ;
+    IAO:0000115 "An ongoing arrangement, usually run by an agency, that funds, regulates, certifies, plans or carries out conservation work through many projects or participants, with no set end."@en ;
+    rdfs:isDefinedBy iconbase:programs.owl ;
+    rdfs:subClassOf icon:0000011 .
+
+iconbase:programs.owl a owl:Ontology ;
+    dcterms:creator "Internet of Conservation (ICON)" ;
+    dcterms:description "Conservation programs: ongoing arrangements, usually run by an agency, that fund, regulate, certify, plan or carry out work through many projects. Covers program types and administration."@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references obo:obi.owl,
+        <http://purl.org/cerif/frapo> ;
+    dcterms:title "ICON Programs ontology"@en ;
+    rdfs:comment "Existing ontologies used. Built on: Ontology for Biomedical Investigations. Mapped to: Funding, Research Administration and Projects Ontology (FRAPO), Ontology for Biomedical Investigations."@en ;
+    rdfs:seeAlso iconbase:core.owl,
+        iconbase:infrastructure.owl ;
+    owl:versionIRI <https://w3id.org/icon/releases/2026-11-21/programs.owl> ;
+    owl:versionInfo "2026-11-21" .
+

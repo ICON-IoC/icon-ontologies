@@ -1,0 +1,19 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix NCBITaxon: <http://purl.obolibrary.org/obo/NCBITaxon_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+icon:0002301 a owl:DatatypeProperty ;
+    rdfs:label "ORCID iD"@en ;
+    IAO:0000115 "The person's ORCID identifier, the persistent researcher id used by journals and funders: 0000-0002-1825-0097."@en ;
+    rdfs:domain NCBITaxon:9606 ;
+    rdfs:isDefinedBy iconbase:people.owl ;
+    rdfs:range xsd:string ;
+    skos:closeMatch schema:identifier ;
+    icon:0000001 "DataCite 4.5: creator/nameIdentifier (nameIdentifierScheme ORCID)" .
+

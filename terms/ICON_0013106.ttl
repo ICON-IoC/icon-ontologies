@@ -1,0 +1,15 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0013106 a owl:ObjectProperty ;
+    rdfs:label "takes input"@en ;
+    IAO:0000115 "A kind of data, or a format, the tool takes in, from the Data type list that also describes Data records, so data can be matched to the tools that take it. A specific Data record the tool uses is a uses data from link instead."@en ;
+    rdfs:domain icon:0013000 ;
+    rdfs:isDefinedBy iconbase:tools.owl ;
+    rdfs:range icon:0008080 ;
+    owl:inverseOf icon:0013107 ;
+    icon:0000001 "EDAM: has_input" .
+

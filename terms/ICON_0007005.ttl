@@ -1,0 +1,12 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0007005 a owl:Class ;
+    rdfs:label "watershed management plan"@en ;
+    IAO:0000115 "A conservation plan for one or more watersheds, written by the agencies, landowners and groups working in them, that assesses their condition and sets out actions to restore them, protect the waters they drain to, or keep development from adding to flooding."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+

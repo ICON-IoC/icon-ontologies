@@ -1,0 +1,551 @@
+# ICON Taxa and habitats ontology
+# Built by `ioc-ontologies` from ontology/src/biodiversity.terms; edit that file, not this one.
+# Guide: ontology/guides/biodiversity.md
+@prefix BFO: <http://purl.obolibrary.org/obo/BFO_> .
+@prefix ENVO: <http://purl.obolibrary.org/obo/ENVO_> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix PCO: <http://purl.obolibrary.org/obo/PCO_> .
+@prefix RO: <http://purl.obolibrary.org/obo/RO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+IAO:0000115 a owl:AnnotationProperty ;
+    rdfs:label "definition" .
+
+dcterms:creator a owl:AnnotationProperty .
+
+dcterms:description a owl:AnnotationProperty .
+
+dcterms:license a owl:AnnotationProperty .
+
+dcterms:references a owl:AnnotationProperty .
+
+dcterms:title a owl:AnnotationProperty .
+
+oboInOwl:hasDbXref a owl:AnnotationProperty ;
+    rdfs:label "database_cross_reference" .
+
+oboInOwl:hasExactSynonym a owl:AnnotationProperty ;
+    rdfs:label "has_exact_synonym" .
+
+skos:closeMatch a owl:AnnotationProperty .
+
+skos:exactMatch a owl:AnnotationProperty .
+
+icon:0000001 a owl:AnnotationProperty ;
+    rdfs:label "crosswalk"@en ;
+    IAO:0000115 "The matching field in a metadata standard that is not published as RDF, written as the standard's name, a colon and the field's path, such as \"EML 2.2: dataset/title\"."@en ;
+    rdfs:isDefinedBy iconbase:core.owl .
+
+icon:0000002 a owl:AnnotationProperty ;
+    rdfs:label "expected attribute"@en ;
+    IAO:0000115 "A property the records of this class are expected to carry, such as a title or a year. Records the attributes a class uses without adding domain axioms to terms borrowed from other vocabularies."@en ;
+    rdfs:isDefinedBy iconbase:core.owl .
+
+icon:0011010 a owl:NamedIndividual,
+        icon:0011002 ;
+    rdfs:label "high invasive rating"@en ;
+    IAO:0000115 "Cal-IPC: severe ecological impacts on physical processes, plant and animal communities and vegetation structure, with rates of dispersal and establishment that are moderate to high; most are widely distributed."@en ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl .
+
+icon:0011011 a owl:NamedIndividual,
+        icon:0011002 ;
+    rdfs:label "moderate invasive rating"@en ;
+    IAO:0000115 "Cal-IPC: substantial and apparent, but generally not severe, ecological impacts, with moderate to high rates of dispersal, though establishment generally depends on disturbance."@en ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl .
+
+icon:0011012 a owl:NamedIndividual,
+        icon:0011002 ;
+    rdfs:label "limited invasive rating"@en ;
+    IAO:0000115 "Cal-IPC: invasive, but with ecological impacts that are minor statewide, or too little information to rate it higher; often locally persistent and problematic."@en ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl .
+
+icon:0011013 a owl:NamedIndividual,
+        icon:0011002 ;
+    rdfs:label "watch invasive rating"@en ;
+    IAO:0000115 "Cal-IPC: not yet invasive in California's wildlands, but assessed as at high risk of becoming invasive here."@en ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl .
+
+icon:0011014 a owl:NamedIndividual,
+        icon:0011002 ;
+    rdfs:label "CDFW listed invasive rating"@en ;
+    IAO:0000115 "CDFW: an animal on the Invasive Species Program's list California's Invaders, as invasive in California or a threat to the state; CDFW does not rate how invasive it is (#435)."@en ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl .
+
+icon:0011020 a owl:NamedIndividual,
+        icon:0011003 ;
+    rdfs:label "California Rare Plant Rank 1A"@en ;
+    IAO:0000115 "CNPS: Plants presumed extirpated in California and either rare or extinct elsewhere: not seen or collected in the wild in California for many years."@en ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl .
+
+icon:0011021 a owl:NamedIndividual,
+        icon:0011003 ;
+    rdfs:label "California Rare Plant Rank 1B"@en ;
+    IAO:0000115 "CNPS: Plants rare, threatened, or endangered in California and elsewhere; most are endemic to California and have declined significantly over the last century."@en ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl .
+
+icon:0011022 a owl:NamedIndividual,
+        icon:0011003 ;
+    rdfs:label "California Rare Plant Rank 2A"@en ;
+    IAO:0000115 "CNPS: Plants presumed extirpated in California but common elsewhere."@en ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl .
+
+icon:0011023 a owl:NamedIndividual,
+        icon:0011003 ;
+    rdfs:label "California Rare Plant Rank 2B"@en ;
+    IAO:0000115 "CNPS: Plants rare, threatened, or endangered in California but more common elsewhere."@en ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl .
+
+icon:0011024 a owl:NamedIndividual,
+        icon:0011003 ;
+    rdfs:label "California Rare Plant Rank 3"@en ;
+    IAO:0000115 "CNPS: Review list: plants about which more information is needed, nearly all taxonomically problematic."@en ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl .
+
+icon:0011025 a owl:NamedIndividual,
+        icon:0011003 ;
+    rdfs:label "California Rare Plant Rank 4"@en ;
+    IAO:0000115 "CNPS: Watch list: plants of limited distribution or infrequent throughout a broader area of California, whose status should be monitored."@en ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl .
+
+icon:0011110 a owl:ObjectProperty,
+        owl:SymmetricProperty ;
+    rdfs:label "is related to habitat type"@en ;
+    IAO:0000115 "Links an MCV alliance or CMECS unit to each CWHR habitat type it may fall in, when there is more than one: a stand of it falls within one of them, but not always the same one. Nothing passes along it (#1409, #1410)."@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( icon:0011001 icon:0011004 icon:0011005 ) ] ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( icon:0011001 icon:0011004 icon:0011005 ) ] ;
+    skos:exactMatch skos:related .
+
+BFO:0000001 a owl:Class ;
+    rdfs:label "entity"@en .
+
+BFO:0000004 a owl:Class ;
+    rdfs:label "independent continuant"@en ;
+    IAO:0000115 "b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])"@en ;
+    rdfs:subClassOf BFO:0000002 .
+
+BFO:0000027 a owl:Class ;
+    rdfs:label "object aggregate"@en ;
+    rdfs:subClassOf BFO:0000040 .
+
+BFO:0000031 a owl:Class ;
+    rdfs:label "generically dependent continuant"@en ;
+    IAO:0000115 "b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])"@en ;
+    rdfs:subClassOf BFO:0000002 .
+
+ENVO:01000254 a owl:Class ;
+    rdfs:label "environmental system"@en ;
+    IAO:0000115 "A system which has the disposition to environ one or more material entities."@en ;
+    rdfs:subClassOf RO:0002577 .
+
+ENVO:01000813 a owl:Class ;
+    rdfs:label "astronomical body part"@en ;
+    IAO:0000115 "A material part of an astronomical body."@en ;
+    rdfs:subClassOf BFO:0000040 .
+
+ENVO:01001110 a owl:Class ;
+    rdfs:label "ecosystem"@en ;
+    IAO:0000115 "An environmental system which includes both living and non-living components."@en ;
+    rdfs:subClassOf ENVO:01000254 .
+
+PCO:0000000 a owl:Class ;
+    rdfs:label "collection of organisms"@en ;
+    IAO:0000115 "A material entity that consists of two or more organisms, viruses, or viroids."@en ;
+    rdfs:subClassOf BFO:0000027,
+        PCO:0000031 .
+
+PCO:0000031 a owl:Class ;
+    rdfs:label "organismal entity"@en ;
+    IAO:0000115 "A material entity that is one or more organisms, viruses or viroids."@en ;
+    rdfs:subClassOf BFO:0000040 .
+
+PCO:0000059 a owl:Class ;
+    rdfs:label "taxon as collection of organisms"@en ;
+    IAO:0000115 "A collection of organisms that has as members every organism of a taxon and no organisms of any other equal or higher ranked taxon. The taxon may be at any level. If the taxon is species, then this is the same as the class species as a collection of organisms. When defining a taxon, it is generally understood that members include both living organisms and dead organisms that are known through specimens or observations."@en ;
+    rdfs:subClassOf PCO:0000000 .
+
+RO:0002577 a owl:Class ;
+    rdfs:label "system"@en ;
+    IAO:0000115 "A material entity consisting of multiple components that are causally integrated."@en ;
+    rdfs:subClassOf BFO:0000040 .
+
+dwc:taxonID a owl:AnnotationProperty ;
+    rdfs:label "Taxon ID"@en ;
+    IAO:0000115 "An identifier for a dwc:Taxon."@en .
+
+dwc:vernacularName a owl:AnnotationProperty ;
+    rdfs:label "Vernacular Name"@en ;
+    IAO:0000115 "A common or vernacular name."@en .
+
+skos:broadMatch a owl:AnnotationProperty .
+
+skos:narrowMatch a owl:AnnotationProperty .
+
+icon:0011100 a owl:ObjectProperty ;
+    rdfs:label "concerns taxon"@en ;
+    IAO:0000115 "The record is about, works for or affects the species or group."@en ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:range icon:0011000 ;
+    owl:inverseOf icon:0011101 ;
+    skos:closeMatch dcterms:subject ;
+    icon:0000001 "EML 2.2: coverage/taxonomicCoverage" .
+
+icon:0011101 a owl:ObjectProperty ;
+    rdfs:label "is taxon of"@en ;
+    IAO:0000115 "The reverse of concerns taxon."@en ;
+    rdfs:domain icon:0011000 ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    owl:inverseOf icon:0011100 .
+
+icon:0011103 a owl:ObjectProperty ;
+    rdfs:label "is habitat type of"@en ;
+    IAO:0000115 "The reverse of has habitat type."@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( icon:0011001 icon:0011004 icon:0011005 ) ] ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    owl:inverseOf icon:0011102 .
+
+icon:0011104 a owl:ObjectProperty ;
+    rdfs:label "has invasive rating"@en ;
+    IAO:0000115 "The taxon is invasive in California, or at risk of becoming so, with this Cal-IPC rating (#410) or CDFW listing (#435)."@en ;
+    rdfs:domain icon:0011000 ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:range icon:0011002 ;
+    owl:inverseOf icon:0011105 .
+
+icon:0011105 a owl:ObjectProperty ;
+    rdfs:label "is invasive rating of"@en ;
+    IAO:0000115 "The reverse of has invasive rating."@en ;
+    rdfs:domain icon:0011002 ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:range icon:0011000 ;
+    owl:inverseOf icon:0011104 .
+
+icon:0011106 a owl:ObjectProperty ;
+    rdfs:label "has rare plant rank"@en ;
+    IAO:0000115 "The plant, bryophyte, or lichen has this California Rare Plant Rank in CDFW's Special Vascular Plants, Bryophytes, and Lichens List (#1210)."@en ;
+    rdfs:domain icon:0011000 ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:range icon:0011003 ;
+    owl:inverseOf icon:0011107 .
+
+icon:0011107 a owl:ObjectProperty ;
+    rdfs:label "is rare plant rank of"@en ;
+    IAO:0000115 "The reverse of has rare plant rank."@en ;
+    rdfs:domain icon:0011003 ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:range icon:0011000 ;
+    owl:inverseOf icon:0011106 .
+
+icon:0011109 a owl:ObjectProperty ;
+    rdfs:label "has narrower habitat type"@en ;
+    IAO:0000115 "The reverse of has broader habitat type."@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( icon:0011001 icon:0011004 icon:0011005 icon:0011006 ) ] ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( icon:0011001 icon:0011004 icon:0011005 icon:0011006 ) ] ;
+    owl:inverseOf icon:0011108 ;
+    skos:exactMatch skos:narrower .
+
+icon:0011111 a owl:ObjectProperty ;
+    rdfs:label "has IUCN ecosystem group"@en ;
+    IAO:0000115 "Links a CWHR, MCV or CMECS habitat type to the IUCN GET ecosystem functional groups it falls in, or to the biome or realm when it spans several of their groups. Mapped by hand in reference/get-crosswalk.csv at the broadest unit where the match holds and stated on every unit below it. Nothing passes along it: records are not tagged with GET (#1411)."@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( icon:0011001 icon:0011004 icon:0011005 ) ] ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:range icon:0011006 ;
+    owl:inverseOf icon:0011112 ;
+    skos:exactMatch skos:broadMatch .
+
+icon:0011112 a owl:ObjectProperty ;
+    rdfs:label "is IUCN ecosystem group of"@en ;
+    IAO:0000115 "The reverse of has IUCN ecosystem group."@en ;
+    rdfs:domain icon:0011006 ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( icon:0011001 icon:0011004 icon:0011005 ) ] ;
+    owl:inverseOf icon:0011111 ;
+    skos:exactMatch skos:narrowMatch .
+
+icon:0011200 a owl:DatatypeProperty ;
+    rdfs:label "NatureServe global rank"@en ;
+    IAO:0000115 "The taxon's NatureServe conservation status across its whole range, G1 (critically imperiled) to G5 (secure), with T ranks for subspecies."@en ;
+    rdfs:domain icon:0011000 ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:range xsd:string .
+
+icon:0011201 a owl:DatatypeProperty ;
+    rdfs:label "taxon kind"@en ;
+    IAO:0000115 "Whether the term is a single NatureServe taxon (taxon), a group of taxa (group), or matched nothing in NatureServe (none)."@en ;
+    rdfs:domain icon:0011000 ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:range xsd:string .
+
+icon:0011202 a owl:DatatypeProperty ;
+    rdfs:label "informal group"@en ;
+    IAO:0000115 "NatureServe's informal taxonomy path for the taxon, such as Animals | Vertebrates | Birds."@en ;
+    rdfs:domain icon:0011000 ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:range xsd:string .
+
+icon:0011203 a owl:DatatypeProperty ;
+    rdfs:label "group level"@en ;
+    IAO:0000115 "For a group, what defines it: NatureServe's informal taxonomy, or a rank of its scientific taxonomy (kingdom, phylum, class, order, family, subfamily, genus)."@en ;
+    rdfs:domain icon:0011000 ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:range xsd:string .
+
+icon:0011204 a owl:DatatypeProperty ;
+    rdfs:label "group value"@en ;
+    IAO:0000115 "For a group, the name at its group level, such as Salmoninae for a subfamily group."@en ;
+    rdfs:domain icon:0011000 ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:range xsd:string .
+
+icon:0011205 a owl:DatatypeProperty ;
+    rdfs:label "genera"@en ;
+    IAO:0000115 "For a subfamily group, which NatureServe cannot search by rank, the genera it spans, separated by semicolons: Oncorhynchus; Salmo; Salvelinus."@en ;
+    rdfs:domain icon:0011000 ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:range xsd:string .
+
+icon:0011210 a owl:DatatypeProperty ;
+    rdfs:label "vegetation classification level"@en ;
+    IAO:0000115 "Where the vegetation type sits: an MCV Alliance, Semi-Natural Alliance (dominated by non-native plants) or Special Stands, or a USNVC Group, Macrogroup or Division."@en ;
+    rdfs:domain icon:0011004 ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:range xsd:string .
+
+icon:0011211 a owl:DatatypeProperty ;
+    rdfs:label "CDFW CaCode"@en ;
+    IAO:0000115 "The alliance's code on CDFW's California Natural Communities List, such as 71.035.00 for Valley oak woodland and forest."@en ;
+    rdfs:domain icon:0011004 ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:range xsd:string .
+
+icon:0011212 a owl:DatatypeProperty ;
+    rdfs:label "life form"@en ;
+    IAO:0000115 "The alliance's primary life form on the Natural Communities List: Tree, Shrub, Herb or Non-vascular."@en ;
+    rdfs:domain icon:0011004 ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:range xsd:string .
+
+icon:0011213 a owl:DatatypeProperty ;
+    rdfs:label "natural community global rank"@en ;
+    IAO:0000115 "How rare and threatened the alliance is across its whole range, G1 (very rare and threatened) to G5 (secure), from NatureServe's method as CDFW applies it."@en ;
+    rdfs:domain icon:0011004 ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:range xsd:string .
+
+icon:0011214 a owl:DatatypeProperty ;
+    rdfs:label "natural community state rank"@en ;
+    IAO:0000115 "How rare and threatened the alliance is in California, S1 to S5; SNA for a semi-natural alliance, which is not ranked."@en ;
+    rdfs:domain icon:0011004 ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:range xsd:string .
+
+icon:0011215 a owl:DatatypeProperty ;
+    rdfs:label "sensitive natural community"@en ;
+    IAO:0000115 "Yes for an alliance with a state rank of S1 to S3, which CDFW counts as a sensitive natural community for environmental review under CEQA."@en ;
+    rdfs:domain icon:0011004 ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:range xsd:string .
+
+icon:0011220 a owl:DatatypeProperty ;
+    rdfs:label "CMECS classification level"@en ;
+    IAO:0000115 "Where the CMECS unit sits: a System, Subsystem or Tidal Zone of the Aquatic Setting, or a Biotic Setting, Biotic Class, Biotic Subclass or Biotic Group of the Biotic Component."@en ;
+    rdfs:domain icon:0011005 ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:range xsd:string .
+
+icon:0011221 a owl:DatatypeProperty ;
+    rdfs:label "CMECS code"@en ;
+    IAO:0000115 "The unit's code in the CMECS Catalog, its component's letter (A for the Aquatic Setting, B for the Biotic Component) followed by its unit code, such as B2.5.2.1 for Seagrass Bed."@en ;
+    rdfs:domain icon:0011005 ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:range xsd:string ;
+    skos:exactMatch skos:notation .
+
+icon:0011222 a owl:DatatypeProperty ;
+    rdfs:label "CMECS ID"@en ;
+    IAO:0000115 "The unit's permanent identifier in the CMECS Catalog, such as CMECS_00000721; https://w3id.org/CMECS/ followed by it is the unit's IRI."@en ;
+    rdfs:domain icon:0011005 ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:range xsd:string ;
+    skos:closeMatch dcterms:identifier .
+
+icon:0011230 a owl:DatatypeProperty ;
+    rdfs:label "GET classification level"@en ;
+    IAO:0000115 "Where the IUCN GET unit sits: a Realm, a Biome or a Functional group (an ecosystem functional group)."@en ;
+    rdfs:domain icon:0011006 ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:range xsd:string .
+
+icon:0011231 a owl:DatatypeProperty ;
+    rdfs:label "GET code"@en ;
+    IAO:0000115 "The unit's code in the IUCN Global Ecosystem Typology: a realm's letters (T, or MT for a transitional realm), a biome's (T4) or a functional group's (T4.4)."@en ;
+    rdfs:domain icon:0011006 ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:range xsd:string ;
+    skos:exactMatch skos:notation .
+
+icon:0011232 a owl:DatatypeProperty ;
+    rdfs:label "GET IRI"@en ;
+    IAO:0000115 "The unit's permanent identifier in the IUCN GET SKOS vocabulary, such as https://w3id.org/iucn-get/EFG_T4_4."@en ;
+    rdfs:domain icon:0011006 ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:range xsd:anyURI ;
+    skos:closeMatch dcterms:identifier .
+
+BFO:0000002 a owl:Class ;
+    rdfs:label "continuant"@en ;
+    rdfs:subClassOf BFO:0000001 .
+
+IAO:0000030 a owl:Class ;
+    rdfs:label "information content entity"@en ;
+    IAO:0000115 "A generically dependent continuant that is about some thing."@en ;
+    rdfs:subClassOf BFO:0000031 .
+
+dwc:scientificName a owl:AnnotationProperty ;
+    rdfs:label "Scientific Name"@en ;
+    IAO:0000115 "The full scientific name, with authorship and date information if known. When forming part of a dwc:Identification, this should be the name in lowest level taxonomic rank that can be determined."@en .
+
+skos:definition a owl:AnnotationProperty ;
+    rdfs:label "definition"@en ;
+    IAO:0000115 "A statement or formal explanation of the meaning of a concept."@en ;
+    rdfs:subPropertyOf skos:note .
+
+skos:note a owl:AnnotationProperty ;
+    rdfs:label "note"@en ;
+    IAO:0000115 "A general note, for any purpose."@en .
+
+icon:0011102 a owl:ObjectProperty ;
+    rdfs:label "has habitat type"@en ;
+    IAO:0000115 "A CWHR habitat type (#169), vegetation type (#1409) or coastal and marine habitat type (#1410) the record covers, works in or affects."@en ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( icon:0011001 icon:0011004 icon:0011005 ) ] ;
+    owl:inverseOf icon:0011103 ;
+    owl:propertyChainAxiom ( icon:0011102 icon:0011108 ) ;
+    skos:closeMatch dcterms:subject .
+
+icon:0011108 a owl:ObjectProperty ;
+    rdfs:label "has broader habitat type"@en ;
+    IAO:0000115 "Links a habitat or vegetation type to a broader one that contains it: an MCV alliance to its USNVC group, a group to its macrogroup, a CMECS unit to the unit above it, a GET functional group to its biome and a biome to its realm, and an alliance or CMECS unit to the one CWHR habitat type it falls in. A record that has the narrower type has the broader one too (#1409, #1410, #1411)."@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( icon:0011001 icon:0011004 icon:0011005 icon:0011006 ) ] ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( icon:0011001 icon:0011004 icon:0011005 icon:0011006 ) ] ;
+    owl:inverseOf icon:0011109 ;
+    skos:exactMatch skos:broader .
+
+BFO:0000040 a owl:Class ;
+    rdfs:label "material entity"@en ;
+    rdfs:subClassOf BFO:0000004 .
+
+ENVO:01000739 a owl:Class ;
+    rdfs:label "habitat"@en ;
+    IAO:0000115 "An environmental system which can sustain and allow the growth of an ecological population."@en ;
+    rdfs:subClassOf ENVO:01000813,
+        ENVO:01001110 .
+
+icon:0011002 a owl:Class ;
+    rdfs:label "invasive rating"@en ;
+    IAO:0000115 "How invasive a non-native species is in California: for plants, the California Invasive Plant Council (Cal-IPC) rating in its Inventory, High, Moderate, Limited, or Watch for a plant at high risk of becoming invasive (#410); for animals, listing by the California Department of Fish and Wildlife (CDFW), which does not rate them (#435)."@en ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:subClassOf IAO:0000030 .
+
+icon:0011003 a owl:Class ;
+    rdfs:label "California Rare Plant Rank"@en ;
+    IAO:0000115 "The California Native Plant Society's rank of how rare a plant, bryophyte, or lichen is in California, from 1A (presumed extirpated or extinct) to 4 (a watch list of limited distribution), assigned with CDFW's California Natural Diversity Database and printed in its Special Vascular Plants, Bryophytes, and Lichens List. The decimal threat rank that follows it (.1 seriously, .2 moderately, .3 not very threatened) is kept as the link's source note (#1210)."@en ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:subClassOf IAO:0000030 .
+
+icon:0011006 a owl:Class ;
+    rdfs:label "IUCN ecosystem type"@en ;
+    IAO:0000115 "A unit of the IUCN Global Ecosystem Typology 2.0 (Keith et al. 2022), the global classification of ecosystems by how they function: one of its 11 realms (such as Terrestrial), 25 biomes (such as Savannas and grasslands biome) or 110 ecosystem functional groups (such as T4.4 Temperate woodlands), identified by its GET code and IRI (#1411)."@en ;
+    rdfs:comment "Records are not tagged with GET. Every CWHR, MCV and CMECS term has the GET units it falls in as IUCN ecosystem groups, so a record's habitat types lead to them. Within GET, a functional group has its biome, and a biome its realm, as broader habitat types."@en ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:subClassOf ENVO:01000739 ;
+    icon:0000002 skos:definition,
+        skos:note,
+        icon:0011230,
+        icon:0011231,
+        icon:0011232 .
+
+icon:0011001 a owl:Class ;
+    rdfs:label "CWHR habitat type"@en ;
+    IAO:0000115 "A habitat type of the California Wildlife Habitat Relationships system, the state's standard classification of wildlife habitats (59 types, such as Valley Foothill Riparian or Blue Oak Woodland), identified by its CWHR code."@en ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:subClassOf ENVO:01000739 .
+
+icon:0011000 a owl:Class ;
+    rdfs:label "taxon"@en ;
+    IAO:0000115 "A species or a group of species that records concern, identified by its NatureServe element where it has one. Groups (salmonids, bats) are taxa at a higher rank or informal groupings of them."@en ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:subClassOf PCO:0000059 ;
+    skos:closeMatch dwc:Taxon ;
+    icon:0000002 dwc:scientificName,
+        dwc:taxonID,
+        dwc:vernacularName,
+        icon:0011200,
+        icon:0011201,
+        icon:0011202,
+        icon:0011203,
+        icon:0011204,
+        icon:0011205 .
+
+icon:0011005 a owl:Class ;
+    rdfs:label "coastal and marine habitat type"@en ;
+    IAO:0000115 "A unit of the Coastal and Marine Ecological Classification Standard (CMECS, FGDC-STD-018-2012): a system, subsystem or tidal zone of its Aquatic Setting (such as Estuarine Coastal Intertidal Tidal Zone), or a biotic setting, class, subclass or group of its Biotic Component (such as Seagrass Bed), identified by its CMECS ID (#1410)."@en ;
+    rdfs:comment "Finer than CWHR for estuaries, shores and the ocean. A unit has the unit above it as a broader habitat type; units are crosswalked to CWHR by hand in reference/cmecs-cwhr.csv, as broader where one CWHR type matches and related where several do."@en ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:subClassOf ENVO:01000739 ;
+    icon:0000002 skos:definition,
+        icon:0011220,
+        icon:0011221,
+        icon:0011222 .
+
+icon:0011004 a owl:Class ;
+    rdfs:label "vegetation type"@en ;
+    IAO:0000115 "A unit of vegetation: an alliance of the Manual of California Vegetation, as CDFW's California Natural Communities List names it (such as Valley oak woodland and forest, or Fremont's goldfields - Downingia vernal pools), or a group, macrogroup or division of the US National Vegetation Classification above it (#1409)."@en ;
+    rdfs:comment "Finer than a CWHR habitat type. An alliance has its USNVC group as a broader habitat type, and the CWHR type CNPS places it in when there is one; where CNPS names several, it is related to each."@en ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:subClassOf ENVO:01000739 ;
+    icon:0000002 dwc:scientificName,
+        icon:0011210,
+        icon:0011211,
+        icon:0011212,
+        icon:0011213,
+        icon:0011214,
+        icon:0011215 .
+
+iconbase:biodiversity.owl a owl:Ontology ;
+    dcterms:creator "Internet of Conservation (ICON)" ;
+    dcterms:description "The living things and habitats records concern: taxa (species and groups, identified by NatureServe) habitat types (California Wildlife Habitat Relationships), vegetation types (Manual of California Vegetation alliances under the US National Vegetation Classification) coastal and marine habitat types (CMECS) and the IUCN Global Ecosystem Typology, the links between those classifications, and the links that say a record concerns a taxon or a habitat type, or that a place is habitat for a taxon."@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references obo:envo.owl,
+        obo:iao.owl,
+        obo:pco.owl,
+        dcterms:,
+        dwc:,
+        <http://www.w3.org/2004/02/skos/core> ;
+    dcterms:title "ICON Taxa and habitats ontology"@en ;
+    rdfs:comment "Existing ontologies used. Reused: Darwin Core, SKOS. Built on: Environment Ontology, Information Artifact Ontology, Population and Community Ontology, SKOS. Mapped to: Darwin Core, Dublin Core terms, SKOS."@en ;
+    owl:versionIRI <https://w3id.org/icon/releases/2026-11-21/biodiversity.owl> ;
+    owl:versionInfo "2026-11-21" .
+

@@ -1,0 +1,12 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0007031 a owl:Class ;
+    rdfs:label "sector companion plan"@en ;
+    IAO:0000115 "A plan that carries a broader conservation plan into one sector, such as agriculture, energy, transportation, water management or tribal lands, written with that sector's agencies and organizations. It names the sector's priority pressures and strategy categories, potential conservation activities at statewide, regional and local scales, desired outcomes, and potential partners and funding, without binding anyone. It implements the broader plan. Example: the nine companion plans of California's State Wildlife Action Plan."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+

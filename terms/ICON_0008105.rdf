@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008105">
+    <obo:IAO_0000115 xml:lang="en">The reverse of is held in.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0008003"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdfs:label xml:lang="en">holds</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0008000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0008104"/>
+    <skos:closeMatch rdf:resource="http://www.w3.org/ns/dcat#dataset"/>
+  </rdf:Description>
+</rdf:RDF>

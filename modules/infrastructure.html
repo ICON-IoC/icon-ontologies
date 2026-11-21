@@ -1,0 +1,753 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ICON Infrastructure ontology</title>
+<link rel="icon" href="../brand/icon-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+:root {
+  --ground: #f1f4ef; --surface: #ffffff; --ink: #17221d; --muted: #5a6a62; --rule: #d3dbd3;
+  --accent: #2e6a4e; --accent-soft: #e3eee7;
+  --display: "Newsreader", Georgia, serif;
+  --body: "Instrument Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground: #0f1512; --surface: #17201b; --ink: #e3ebe6; --muted: #93a39a; --rule: #2b3730;
+    --accent: #74c39b; --accent-soft: #1d3127; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --ground: #0f1512; --surface: #17201b; --ink: #e3ebe6; --muted: #93a39a; --rule: #2b3730;
+  --accent: #74c39b; --accent-soft: #1d3127; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--ground); color: var(--ink); font: 15px/1.6 var(--body); }
+.page { max-width: 1040px; margin: 0 auto; padding: 24px 16px 56px; display: grid; gap: 24px; }
+header.top { display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 13px; }
+header.top nav { display: flex; gap: 16px; flex-wrap: wrap; }
+.logo { height: 34px; width: auto; }
+.logo.dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .logo.light { display: none; }
+  :root:not([data-theme="light"]) .logo.dark { display: block; }
+}
+:root[data-theme="dark"] .logo.light { display: none; }
+:root[data-theme="dark"] .logo.dark { display: block; }
+h1 { font: 600 clamp(28px, 4vw, 40px)/1.15 var(--display); margin: 0; text-wrap: balance; }
+h2 { font: 600 22px/1.25 var(--display); margin: 0 0 8px; }
+p { margin: 0 0 10px; max-width: 75ch; }
+a { color: var(--accent); }
+code { font: 0.88em var(--mono); overflow-wrap: anywhere; }
+.muted { color: var(--muted); }
+.kicker { font: 600 11px var(--body); letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+section.card { background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; padding: 18px 20px; min-width: 0; }
+.facts { display: flex; flex-wrap: wrap; gap: 8px 28px; font-variant-numeric: tabular-nums; }
+.facts div { display: grid; }
+.facts b { font: 600 22px/1.1 var(--display); }
+.facts span { font-size: 12px; color: var(--muted); }
+.scroll { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { text-align: left; vertical-align: top; padding: 8px 10px 8px 0; border-bottom: 1px solid var(--rule); }
+th { font-weight: 600; font-size: 12px; color: var(--muted); }
+td.files { white-space: nowrap; }
+td.files a + a { margin-left: 8px; }
+dl.facts-list { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 6px 16px; margin: 0; }
+dl.facts-list dt { color: var(--muted); font-size: 13px; padding-top: 1px; }
+dl.facts-list dd { margin: 0; }
+.button { display: inline-block; padding: 8px 14px; border-radius: 8px; background: var(--accent); color: var(--surface); text-decoration: none; font-weight: 600; }
+pre { background: var(--accent-soft); padding: 12px 14px; border-radius: 8px; overflow-x: auto; font: 13px/1.5 var(--mono); margin: 0 0 10px; white-space: pre-wrap; }
+footer { font-size: 13px; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="top">
+    <nav><a href=".././">ICON ontologies</a><a href="../map.html">Map</a><a href="https://github.com/ICON-IoC/icon-ontologies">Source files</a></nav>
+    <a href="https://icon-ioc.com" aria-label="ICON">
+      <img class="logo light" alt="ICON" src="../brand/icon-lockup.png">
+      <img class="logo dark" alt="ICON" src="../brand/icon-wordmark-reversed-cropped.png">
+    </a>
+  </header>
+
+  <section>
+    <div class="kicker">record module</div>
+    <h1>ICON Infrastructure ontology</h1>
+    <p>Places and structures on the landscape that conservation works on or around: waters (blue), conservation lands (green), water works, energy, food production and sensors. Covers their types, ownership and management, and how they lie relative to one another (upstream, adjacent, intersecting).</p>
+    <dl class="facts-list">
+      <dt>Ontology IRI</dt><dd><code>https://w3id.org/icon/infrastructure.owl</code></dd>
+      <dt>This release</dt><dd><code>https://w3id.org/icon/releases/2026-11-21/infrastructure.owl</code></dd>
+      <dt>Own term IDs</dt><dd>ICON:0005000 to ICON:0005999</dd>
+      <dt>Files</dt><dd><a href="../icon-infrastructure.ttl">Turtle</a>, <a href="../icon-infrastructure.owl">RDF/XML</a>, <a href="../linkml/icon-infrastructure.yaml">LinkML</a>, <a href="../guides/infrastructure.md">guide (Markdown)</a></dd>
+      
+      <dt>Reused</dt><dd>ENVO</dd>
+      
+      <dt>Built on</dt><dd>COB, ENVO, IAO, OBI, RO</dd>
+      
+      <dt>Mapped to</dt><dd>ENVO, RO, gsp</dd>
+      
+    </dl>
+  </section>
+
+  <section class="card">
+    <h2>Terms</h2>
+    <p class="muted">Reused terms keep their own IDs and link to their source ontology.</p>
+    <div class="scroll">
+    <table>
+      <thead><tr><th>Term</th><th>Kind</th><th>ID</th><th>Definition</th></tr></thead>
+      <tbody>
+      
+        <tr id="ICON_0005000">
+          <td><a href="../terms/ICON_0005000.html">infrastructure</a></td>
+          <td>class</td>
+          <td><code>ICON:0005000</code></td>
+          <td>A place or structure on the landscape that conservation works on or around: a water body, a conservation area, a water or energy work, a farm, a sensor, a road or trail. Called infrastructure in the PPOD model whether built or natural.</td>
+        </tr>
+      
+        <tr id="ICON_0005001">
+          <td><a href="../terms/ICON_0005001.html">blue infrastructure</a></td>
+          <td>class</td>
+          <td><code>ICON:0005001</code></td>
+          <td>A body of water: a river or stream, a lake or pond, a dry lake or playa, a wetland, an estuary or the ocean.</td>
+        </tr>
+      
+        <tr id="ICON_0005002">
+          <td><a href="../terms/ICON_0005002.html">green infrastructure</a></td>
+          <td>class</td>
+          <td><code>ICON:0005002</code></td>
+          <td>Land or water held or designed for wildlife and habitat: conservation areas, mitigation banks, greenbelts, corridors and crossing structures.</td>
+        </tr>
+      
+        <tr id="ICON_0005003">
+          <td><a href="../terms/ICON_0005003.html">water infrastructure</a></td>
+          <td>class</td>
+          <td><code>ICON:0005003</code></td>
+          <td>A work that stores, moves, controls or recharges water.</td>
+        </tr>
+      
+        <tr id="ICON_0005004">
+          <td><a href="../terms/ICON_0005004.html">energy infrastructure</a></td>
+          <td>class</td>
+          <td><code>ICON:0005004</code></td>
+          <td>A work that generates or carries electric power.</td>
+        </tr>
+      
+        <tr id="ICON_0005005">
+          <td><a href="../terms/ICON_0005005.html">food production infrastructure</a></td>
+          <td>class</td>
+          <td><code>ICON:0005005</code></td>
+          <td>Land or facilities used to grow crops or raise animals.</td>
+        </tr>
+      
+        <tr id="ICON_0005006">
+          <td><a href="../terms/ICON_0005006.html">sensor infrastructure</a></td>
+          <td>class</td>
+          <td><code>ICON:0005006</code></td>
+          <td>A device placed in the landscape to record what passes or happens there.</td>
+        </tr>
+      
+        <tr id="ICON_0005007">
+          <td><a href="../terms/ICON_0005007.html">transport infrastructure</a></td>
+          <td>class</td>
+          <td><code>ICON:0005007</code></td>
+          <td>A route that carries people, vehicles or goods across the landscape: a trail, a highway, a local road, a railway or a bridge.</td>
+        </tr>
+      
+        <tr id="ICON_0005009">
+          <td><a href="../terms/ICON_0005009.html">waste infrastructure</a></td>
+          <td>class</td>
+          <td><code>ICON:0005009</code></td>
+          <td>A facility that receives, stores or disposes of solid waste, such as a landfill.</td>
+        </tr>
+      
+        <tr id="ENVO_00000045">
+          <td><a href="http://purl.obolibrary.org/obo/ENVO_00000045">estuary</a></td>
+          <td>class</td>
+          <td><code>ENVO:00000045</code></td>
+          <td>A semi-enclosed coastal body of water with one or more rivers or streams flowing into it, and with a free connection to the open sea.</td>
+        </tr>
+      
+        <tr id="ENVO_01000617">
+          <td><a href="http://purl.obolibrary.org/obo/ENVO_01000617">lentic water body</a></td>
+          <td>class</td>
+          <td><code>ENVO:01000617</code></td>
+          <td>A lentic water body is a water body in which the accumulated water, in its totality, has very little to no directed flow.</td>
+        </tr>
+      
+        <tr id="ENVO_00000277">
+          <td><a href="http://purl.obolibrary.org/obo/ENVO_00000277">dry lake</a></td>
+          <td>class</td>
+          <td><code>ENVO:00000277</code></td>
+          <td>A lake that has either permanently or temporally lost its water.</td>
+        </tr>
+      
+        <tr id="ENVO_00001999">
+          <td><a href="http://purl.obolibrary.org/obo/ENVO_00001999">marine water body</a></td>
+          <td>class</td>
+          <td><code>ENVO:00001999</code></td>
+          <td>A lentic water body which is composed primarily of marine water.</td>
+        </tr>
+      
+        <tr id="ENVO_00000023">
+          <td><a href="http://purl.obolibrary.org/obo/ENVO_00000023">stream</a></td>
+          <td>class</td>
+          <td><code>ENVO:00000023</code></td>
+          <td>A watercourse which is linear and flows across the solid portion of a planetary surface.</td>
+        </tr>
+      
+        <tr id="ENVO_00000043">
+          <td><a href="http://purl.obolibrary.org/obo/ENVO_00000043">wetland area</a></td>
+          <td>class</td>
+          <td><code>ENVO:00000043</code></td>
+          <td>An vegetated area which overlaps a wetland ecosystem.</td>
+        </tr>
+      
+        <tr id="ENVO_00000014">
+          <td><a href="http://purl.obolibrary.org/obo/ENVO_00000014">canal</a></td>
+          <td>class</td>
+          <td><code>ENVO:00000014</code></td>
+          <td>Artificial watercourse with no flow or a controlled flow used for navigation, drainage or irrigation.</td>
+        </tr>
+      
+        <tr id="ENVO_00000256">
+          <td><a href="http://purl.obolibrary.org/obo/ENVO_00000256">floodway</a></td>
+          <td>class</td>
+          <td><code>ENVO:00000256</code></td>
+          <td>The stream channel and adjacent areas that carry flood flows in a flood plain.</td>
+        </tr>
+      
+        <tr id="ENVO_00000178">
+          <td><a href="http://purl.obolibrary.org/obo/ENVO_00000178">levee</a></td>
+          <td>class</td>
+          <td><code>ENVO:00000178</code></td>
+          <td>An artificial slope or wall, usually earthen, which parallels the course of a river, built for the purpose of containing the river.</td>
+        </tr>
+      
+        <tr id="ENVO_00000025">
+          <td><a href="http://purl.obolibrary.org/obo/ENVO_00000025">reservoir</a></td>
+          <td>class</td>
+          <td><code>ENVO:00000025</code></td>
+          <td>An artificial body of water, often contained by a dam, constructed for the purpose of water storage.</td>
+        </tr>
+      
+        <tr id="ENVO_00000535">
+          <td><a href="http://purl.obolibrary.org/obo/ENVO_00000535">weir</a></td>
+          <td>class</td>
+          <td><code>ENVO:00000535</code></td>
+          <td>A low obstruction built across the path of s stream to raise its level.</td>
+        </tr>
+      
+        <tr id="ENVO_00002215">
+          <td><a href="http://purl.obolibrary.org/obo/ENVO_00002215">geothermal power plant</a></td>
+          <td>class</td>
+          <td><code>ENVO:00002215</code></td>
+          <td>A geothermal power plant is a power plant which uses heat generated by the decay of radioactive isotopes in the Earth&#39;s mantle and crust as well as primordial heat left over from the formation of the Earth to drive its generators.</td>
+        </tr>
+      
+        <tr id="ENVO_00002214">
+          <td><a href="http://purl.obolibrary.org/obo/ENVO_00002214">power plant</a></td>
+          <td>class</td>
+          <td><code>ENVO:00002214</code></td>
+          <td>A power plant is a building which contains one or more generators which convert mechanical energy into electrical energy through the relative motion between a magnetic field and a conductor. The energy source harnessed to turn the generator varies widely.</td>
+        </tr>
+      
+        <tr id="ENVO_01000930">
+          <td><a href="http://purl.obolibrary.org/obo/ENVO_01000930">ecological corridor</a></td>
+          <td>class</td>
+          <td><code>ENVO:01000930</code></td>
+          <td>An ecosystem which bridges two or more adjoining ecosystems and through which organisms may move or propagate.</td>
+        </tr>
+      
+        <tr id="ICON_0005020">
+          <td><a href="../terms/ICON_0005020.html">groundwater basin</a></td>
+          <td>class</td>
+          <td><code>ICON:0005020</code></td>
+          <td>An aquifer or group of aquifers managed as a unit, such as a basin or subbasin of California&#39;s Bulletin 118.</td>
+        </tr>
+      
+        <tr id="ICON_0005021">
+          <td><a href="../terms/ICON_0005021.html">water pipeline</a></td>
+          <td>class</td>
+          <td><code>ICON:0005021</code></td>
+          <td>A pipe or aqueduct that carries water over a distance.</td>
+        </tr>
+      
+        <tr id="ICON_0005022">
+          <td><a href="../terms/ICON_0005022.html">pumping station</a></td>
+          <td>class</td>
+          <td><code>ICON:0005022</code></td>
+          <td>A facility that lifts or moves water with pumps.</td>
+        </tr>
+      
+        <tr id="ICON_0005023">
+          <td><a href="../terms/ICON_0005023.html">groundwater recharge facility</a></td>
+          <td>class</td>
+          <td><code>ICON:0005023</code></td>
+          <td>Basins or works that put surface water into the ground to refill an aquifer.</td>
+        </tr>
+      
+        <tr id="ICON_0005024">
+          <td><a href="../terms/ICON_0005024.html">water retention structure</a></td>
+          <td>class</td>
+          <td><code>ICON:0005024</code></td>
+          <td>A structure that holds water back, such as a dam, a check dam or a detention basin.</td>
+        </tr>
+      
+        <tr id="ICON_0005025">
+          <td><a href="../terms/ICON_0005025.html">natural gas-fired power plant</a></td>
+          <td>class</td>
+          <td><code>ICON:0005025</code></td>
+          <td>A power plant that burns natural gas.</td>
+        </tr>
+      
+        <tr id="ICON_0005026">
+          <td><a href="../terms/ICON_0005026.html">hydroelectric powerhouse</a></td>
+          <td>class</td>
+          <td><code>ICON:0005026</code></td>
+          <td>The building at a dam or penstock that holds the turbines and generators.</td>
+        </tr>
+      
+        <tr id="ICON_0005027">
+          <td><a href="../terms/ICON_0005027.html">pumped storage facility</a></td>
+          <td>class</td>
+          <td><code>ICON:0005027</code></td>
+          <td>A hydroelectric plant that pumps water uphill when power is cheap and releases it through turbines when power is needed.</td>
+        </tr>
+      
+        <tr id="ICON_0005028">
+          <td><a href="../terms/ICON_0005028.html">solar power plant</a></td>
+          <td>class</td>
+          <td><code>ICON:0005028</code></td>
+          <td>A power plant that makes electricity from sunlight.</td>
+        </tr>
+      
+        <tr id="ICON_0005029">
+          <td><a href="../terms/ICON_0005029.html">wind power plant</a></td>
+          <td>class</td>
+          <td><code>ICON:0005029</code></td>
+          <td>A group of wind turbines that makes electricity.</td>
+        </tr>
+      
+        <tr id="ICON_0005030">
+          <td><a href="../terms/ICON_0005030.html">electric transmission line</a></td>
+          <td>class</td>
+          <td><code>ICON:0005030</code></td>
+          <td>A high-voltage power line carrying electricity from plants to substations.</td>
+        </tr>
+      
+        <tr id="ICON_0005031">
+          <td><a href="../terms/ICON_0005031.html">electrical substation</a></td>
+          <td>class</td>
+          <td><code>ICON:0005031</code></td>
+          <td>A facility where transmission lines meet and voltage is changed.</td>
+        </tr>
+      
+        <tr id="ICON_0005053">
+          <td><a href="../terms/ICON_0005053.html">natural gas compressor station</a></td>
+          <td>class</td>
+          <td><code>ICON:0005053</code></td>
+          <td>A facility on a natural gas transmission pipeline that raises the gas pressure to keep it moving along the line. Example: San Diego Gas &amp; Electric&#39;s Moreno Compressor Station in Moreno Valley, which boosts the gas supply into San Diego County.</td>
+        </tr>
+      
+        <tr id="ICON_0005032">
+          <td><a href="../terms/ICON_0005032.html">animal production site</a></td>
+          <td>class</td>
+          <td><code>ICON:0005032</code></td>
+          <td>A ranch, dairy, feedlot or other place where animals are raised.</td>
+        </tr>
+      
+        <tr id="ICON_0005033">
+          <td><a href="../terms/ICON_0005033.html">crop production site</a></td>
+          <td>class</td>
+          <td><code>ICON:0005033</code></td>
+          <td>A farm, orchard, vineyard or field where crops are grown.</td>
+        </tr>
+      
+        <tr id="ICON_0005034">
+          <td><a href="../terms/ICON_0005034.html">conservation easement area</a></td>
+          <td>class</td>
+          <td><code>ICON:0005034</code></td>
+          <td>Land protected by a conservation easement while its owner keeps title.</td>
+        </tr>
+      
+        <tr id="ICON_0005035">
+          <td><a href="../terms/ICON_0005035.html">fee-title conservation area</a></td>
+          <td>class</td>
+          <td><code>ICON:0005035</code></td>
+          <td>Land owned outright by an agency or organization for conservation, such as a reserve, refuge, park or wildlife area.</td>
+        </tr>
+      
+        <tr id="ICON_0005036">
+          <td><a href="../terms/ICON_0005036.html">marine conservation area</a></td>
+          <td>class</td>
+          <td><code>ICON:0005036</code></td>
+          <td>Ocean or bay waters protected for conservation, such as a marine protected area or sanctuary.</td>
+        </tr>
+      
+        <tr id="ICON_0005037">
+          <td><a href="../terms/ICON_0005037.html">conservation area under several protections</a></td>
+          <td>class</td>
+          <td><code>ICON:0005037</code></td>
+          <td>A conservation area made of parts held by fee title, easement or other protections together.</td>
+        </tr>
+      
+        <tr id="ICON_0005038">
+          <td><a href="../terms/ICON_0005038.html">greenbelt</a></td>
+          <td>class</td>
+          <td><code>ICON:0005038</code></td>
+          <td>Open land kept undeveloped around or between towns.</td>
+        </tr>
+      
+        <tr id="ICON_0005039">
+          <td><a href="../terms/ICON_0005039.html">mitigation bank</a></td>
+          <td>class</td>
+          <td><code>ICON:0005039</code></td>
+          <td>Land restored or protected so that credits can be sold to offset habitat loss elsewhere.</td>
+        </tr>
+      
+        <tr id="ICON_0005040">
+          <td><a href="../terms/ICON_0005040.html">wildlife crossing structure</a></td>
+          <td>class</td>
+          <td><code>ICON:0005040</code></td>
+          <td>An overpass, underpass, culvert or bridge built or adapted so that animals can cross a road or railway.</td>
+        </tr>
+      
+        <tr id="ICON_0005041">
+          <td><a href="../terms/ICON_0005041.html">camera trap</a></td>
+          <td>class</td>
+          <td><code>ICON:0005041</code></td>
+          <td>A camera set off by motion or heat that photographs animals passing.</td>
+        </tr>
+      
+        <tr id="ICON_0005042">
+          <td><a href="../terms/ICON_0005042.html">field station</a></td>
+          <td>class</td>
+          <td><code>ICON:0005042</code></td>
+          <td>A research station or reserve that a university or agency runs for research and teaching, often with housing and labs, giving access to protected lands it may not own.</td>
+        </tr>
+      
+        <tr id="ICON_0005043">
+          <td><a href="../terms/ICON_0005043.html">trail</a></td>
+          <td>class</td>
+          <td><code>ICON:0005043</code></td>
+          <td>A path for walking, cycling or riding, such as a regional trail like the Bay Area Ridge Trail or a preserve&#39;s trail network.</td>
+        </tr>
+      
+        <tr id="ICON_0005044">
+          <td><a href="../terms/ICON_0005044.html">highway</a></td>
+          <td>class</td>
+          <td><code>ICON:0005044</code></td>
+          <td>A road in the state or federal highway system: an Interstate, a U.S. route or a California state route.</td>
+        </tr>
+      
+        <tr id="ICON_0005045">
+          <td><a href="../terms/ICON_0005045.html">local road</a></td>
+          <td>class</td>
+          <td><code>ICON:0005045</code></td>
+          <td>A road a county or city owns and maintains, outside the state and federal highway systems.</td>
+        </tr>
+      
+        <tr id="ICON_0005046">
+          <td><a href="../terms/ICON_0005046.html">railway</a></td>
+          <td>class</td>
+          <td><code>ICON:0005046</code></td>
+          <td>A rail line for freight or passenger trains.</td>
+        </tr>
+      
+        <tr id="ICON_0005057">
+          <td><a href="../terms/ICON_0005057.html">bridge</a></td>
+          <td>class</td>
+          <td><code>ICON:0005057</code></td>
+          <td>A structure that carries a road, trail or railway over a creek, river or other obstacle. Example: the Pope-Chaucer Bridge over San Francisquito Creek between Menlo Park and Palo Alto.</td>
+        </tr>
+      
+        <tr id="ICON_0005008">
+          <td><a href="../terms/ICON_0005008.html">GAP status</a></td>
+          <td>class</td>
+          <td><code>ICON:0005008</code></td>
+          <td>How a protected place is managed for biodiversity on the USGS Gap Analysis Project scale, as California&#39;s 30x30 Conserved Areas rate it; only GAP 1 and 2 count toward 30x30 (#427).</td>
+        </tr>
+      
+        <tr id="ICON_0005049">
+          <td><a href="../terms/ICON_0005049.html">fish hatchery</a></td>
+          <td>class</td>
+          <td><code>ICON:0005049</code></td>
+          <td>A facility that spawns and rears fish, mostly salmon and trout, for release into rivers and lakes to supply fisheries or to make up for spawning habitat a dam has blocked.</td>
+        </tr>
+      
+        <tr id="ICON_0005050">
+          <td><a href="../terms/ICON_0005050.html">native plant nursery</a></td>
+          <td>class</td>
+          <td><code>ICON:0005050</code></td>
+          <td>A farm or nursery that grows native plants and their seed from local wild sources for habitat restoration, rather than for sale or food.</td>
+        </tr>
+      
+        <tr id="ICON_0005051">
+          <td><a href="../terms/ICON_0005051.html">marine conservation priority area</a></td>
+          <td>class</td>
+          <td><code>ICON:0005051</code></td>
+          <td>An area of ocean, estuary or shoreline that a conservation plan marks as a priority for protecting marine biodiversity, without itself being protected, such as a portfolio conservation area of a marine ecoregional assessment.</td>
+        </tr>
+      
+        <tr id="ICON_0005052">
+          <td><a href="../terms/ICON_0005052.html">important bird area</a></td>
+          <td>class</td>
+          <td><code>ICON:0005052</code></td>
+          <td>A site that BirdLife International&#39;s Important Bird Areas program, run in the United States by the National Audubon Society, identifies as essential for birds because it holds species of conservation concern, range-restricted species or large concentrations of birds, without itself being protected.</td>
+        </tr>
+      
+        <tr id="ICON_0005124">
+          <td><a href="../terms/ICON_0005124.html">important plant area</a></td>
+          <td>class</td>
+          <td><code>ICON:0005124</code></td>
+          <td>An area that the California Native Plant Society&#39;s Important Plant Areas Initiative identifies as among the most important places in the state for rare plants and rare vegetation types, without itself being protected. Example: a Tier 1 area of the Northwestern California ecoregion around the Mendocino pygmy forest, home to 37 California Rare Plant Rank 1B species.</td>
+        </tr>
+      
+        <tr id="ICON_0005054">
+          <td><a href="../terms/ICON_0005054.html">named landform</a></td>
+          <td>class</td>
+          <td><code>ICON:0005054</code></td>
+          <td>A named natural feature of the land surface, such as a range of hills, a ridge or a valley, that a conservation plan treats as an area to protect or work in, without itself being protected. Example: the Dunnigan Hills of Yolo County, where the Yolo HCP/NCCP protects grassland for California tiger salamander.</td>
+        </tr>
+      
+        <tr id="ICON_0005055">
+          <td><a href="../terms/ICON_0005055.html">water treatment plant</a></td>
+          <td>class</td>
+          <td><code>ICON:0005055</code></td>
+          <td>A facility that treats raw water from reservoirs, rivers or wells to drinking water standards before it enters a distribution system. Example: the San Francisco Public Utilities Commission&#39;s Sunol Valley Water Treatment Plant, which treats water from San Antonio and Calaveras reservoirs.</td>
+        </tr>
+      
+        <tr id="ICON_0005059">
+          <td><a href="../terms/ICON_0005059.html">wastewater treatment plant</a></td>
+          <td>class</td>
+          <td><code>ICON:0005059</code></td>
+          <td>A facility that treats sewage and other wastewater before it is discharged or reused, for example as recycled water for irrigation. Example: the City of Santa Rosa&#39;s Laguna Treatment Plant, on the floodplain of the Laguna de Santa Rosa.</td>
+        </tr>
+      
+        <tr id="ICON_0005056">
+          <td><a href="../terms/ICON_0005056.html">landfill</a></td>
+          <td>class</td>
+          <td><code>ICON:0005056</code></td>
+          <td>A site where solid waste is buried in the ground, usually in lined cells that are covered and capped when full. Example: the Sanitation Districts of Los Angeles County&#39;s Puente Hills Landfill, which closed in 2013.</td>
+        </tr>
+      
+        <tr id="ICON_0005058">
+          <td><a href="../terms/ICON_0005058.html">species recovery area</a></td>
+          <td>class</td>
+          <td><code>ICON:0005058</code></td>
+          <td>An area that a federal or state recovery plan designates as essential to the recovery of listed species, such as a core area whose habitat the plan says to protect, without itself being protected. Example: the Mather Core Recovery Area of the 2005 Recovery Plan for Vernal Pool Ecosystems of California and Southern Oregon, where the South Sacramento HCP must mitigate vernal pool losses.</td>
+        </tr>
+      
+        <tr id="ICON_0005125">
+          <td><a href="../terms/ICON_0005125.html">national heritage area</a></td>
+          <td>class</td>
+          <td><code>ICON:0005125</code></td>
+          <td>A region that the United States Congress designates for its nationally important natural, cultural, and historic resources, managed through partnerships led by a local coordinating entity under a management plan approved by the Secretary of the Interior, without federal ownership or land use regulation. Example: the Sacramento-San Joaquin Delta National Heritage Area, designated in 2019, whose local coordinating entity is the Delta Protection Commission.</td>
+        </tr>
+      
+        <tr id="ICON_0005100">
+          <td><a href="../terms/ICON_0005100.html">has infrastructure type</a></td>
+          <td>relation</td>
+          <td><code>ICON:0005100</code></td>
+          <td>Links a place to one of the infrastructure type classes it belongs to. The explorer&#39;s way of stating the place&#39;s class.</td>
+        </tr>
+      
+        <tr id="ICON_0005101">
+          <td><a href="../terms/ICON_0005101.html">is infrastructure type of</a></td>
+          <td>relation</td>
+          <td><code>ICON:0005101</code></td>
+          <td>The reverse of has infrastructure type.</td>
+        </tr>
+      
+        <tr id="ICON_0005102">
+          <td><a href="../terms/ICON_0005102.html">owned by</a></td>
+          <td>relation</td>
+          <td><code>ICON:0005102</code></td>
+          <td>The organization holding legal title to the place.</td>
+        </tr>
+      
+        <tr id="ICON_0005103">
+          <td><a href="../terms/ICON_0005103.html">owns</a></td>
+          <td>relation</td>
+          <td><code>ICON:0005103</code></td>
+          <td>The reverse of owned by.</td>
+        </tr>
+      
+        <tr id="ICON_0005104">
+          <td><a href="../terms/ICON_0005104.html">managed by</a></td>
+          <td>relation</td>
+          <td><code>ICON:0005104</code></td>
+          <td>The organization that operates or manages the place, whether or not it owns it.</td>
+        </tr>
+      
+        <tr id="ICON_0005105">
+          <td><a href="../terms/ICON_0005105.html">manages</a></td>
+          <td>relation</td>
+          <td><code>ICON:0005105</code></td>
+          <td>The reverse of managed by.</td>
+        </tr>
+      
+        <tr id="ICON_0005106">
+          <td><a href="../terms/ICON_0005106.html">is upstream of</a></td>
+          <td>relation</td>
+          <td><code>ICON:0005106</code></td>
+          <td>Water flows from this place to the other, directly or through places between: Lake Berryessa is upstream of Monticello Dam.</td>
+        </tr>
+      
+        <tr id="ICON_0005107">
+          <td><a href="../terms/ICON_0005107.html">is downstream of</a></td>
+          <td>relation</td>
+          <td><code>ICON:0005107</code></td>
+          <td>The reverse of is upstream of.</td>
+        </tr>
+      
+        <tr id="ICON_0005108">
+          <td><a href="../terms/ICON_0005108.html">is adjacent to</a></td>
+          <td>relation</td>
+          <td><code>ICON:0005108</code></td>
+          <td>Two places share a boundary. Symmetric, unlike the Relation Ontology&#39;s adjacent to, which it narrows.</td>
+        </tr>
+      
+        <tr id="ICON_0005109">
+          <td><a href="../terms/ICON_0005109.html">is habitat for</a></td>
+          <td>relation</td>
+          <td><code>ICON:0005109</code></td>
+          <td>The place supports a population of the taxon.</td>
+        </tr>
+      
+        <tr id="ICON_0005110">
+          <td><a href="../terms/ICON_0005110.html">is found in</a></td>
+          <td>relation</td>
+          <td><code>ICON:0005110</code></td>
+          <td>The taxon lives in or uses the place: the reverse of is habitat for.</td>
+        </tr>
+      
+        <tr id="ICON_0005111">
+          <td><a href="../terms/ICON_0005111.html">built for</a></td>
+          <td>relation</td>
+          <td><code>ICON:0005111</code></td>
+          <td>The structure was built or adapted so that the taxon can get past a barrier, as a wildlife crossing is built for the animals it lets cross a road. Unlike is habitat for, it says nothing about the taxon living there.</td>
+        </tr>
+      
+        <tr id="ICON_0005112">
+          <td><a href="../terms/ICON_0005112.html">has crossing</a></td>
+          <td>relation</td>
+          <td><code>ICON:0005112</code></td>
+          <td>The taxon has a structure built or adapted to let it get past a barrier: the reverse of built for.</td>
+        </tr>
+      
+        <tr id="ICON_0005117">
+          <td><a href="../terms/ICON_0005117.html">crosses</a></td>
+          <td>relation</td>
+          <td><code>ICON:0005117</code></td>
+          <td>The structure carries animals under or over the road or railway, as a wildlife crossing structure crosses the highway it passes beneath.</td>
+        </tr>
+      
+        <tr id="ICON_0005118">
+          <td><a href="../terms/ICON_0005118.html">crossed by</a></td>
+          <td>relation</td>
+          <td><code>ICON:0005118</code></td>
+          <td>The road or railway has a structure that carries animals under or over it: the reverse of crosses.</td>
+        </tr>
+      
+        <tr id="ICON_0005113">
+          <td><a href="../terms/ICON_0005113.html">monitors</a></td>
+          <td>relation</td>
+          <td><code>ICON:0005113</code></td>
+          <td>The sensor or array was set up to watch the taxon, as a camera trap study of fishers monitors the fisher. It says nothing about whether the taxon was found.</td>
+        </tr>
+      
+        <tr id="ICON_0005114">
+          <td><a href="../terms/ICON_0005114.html">monitored by</a></td>
+          <td>relation</td>
+          <td><code>ICON:0005114</code></td>
+          <td>The taxon is watched by a sensor or array set up for it: the reverse of monitors.</td>
+        </tr>
+      
+        <tr id="ICON_0005115">
+          <td><a href="../terms/ICON_0005115.html">detected</a></td>
+          <td>relation</td>
+          <td><code>ICON:0005115</code></td>
+          <td>The sensor or array recorded the taxon, as a camera trap photographs a bobcat. Unlike is habitat for, it says only that the taxon passed the sensor.</td>
+        </tr>
+      
+        <tr id="ICON_0005116">
+          <td><a href="../terms/ICON_0005116.html">detected by</a></td>
+          <td>relation</td>
+          <td><code>ICON:0005116</code></td>
+          <td>The taxon was recorded by a sensor or array: the reverse of detected.</td>
+        </tr>
+      
+        <tr id="ICON_0005119">
+          <td><a href="../terms/ICON_0005119.html">exchanges water with</a></td>
+          <td>relation</td>
+          <td><code>ICON:0005119</code></td>
+          <td>Water flows between the two places in either direction, as through an intertie that pumps both ways: the Cross Valley Canal exchanges water with the California Aqueduct. Unlike is upstream of it does not chain, so what lies upstream of one is not taken to lie upstream of the other.</td>
+        </tr>
+      
+        <tr id="ICON_0005120">
+          <td><a href="../terms/ICON_0005120.html">spills into</a></td>
+          <td>relation</td>
+          <td><code>ICON:0005120</code></td>
+          <td>Some of this place&#39;s water leaves for the other at one point, as a river spills over a weir into a flood bypass, while the place as a whole may lie downstream of the other too: the Sacramento River spills into the Yolo Bypass, which rejoins it lower down. Unlike is upstream of it does not chain, so the river&#39;s tributaries are not taken to lie upstream of the bypass.</td>
+        </tr>
+      
+        <tr id="ICON_0005121">
+          <td><a href="../terms/ICON_0005121.html">receives spill from</a></td>
+          <td>relation</td>
+          <td><code>ICON:0005121</code></td>
+          <td>The reverse of spills into.</td>
+        </tr>
+      
+        <tr id="ICON_0005122">
+          <td><a href="../terms/ICON_0005122.html">has GAP status</a></td>
+          <td>relation</td>
+          <td><code>ICON:0005122</code></td>
+          <td>The GAP status of the place&#39;s lands, as the 30x30 Conserved Areas rate them; a place with lands at both levels has both.</td>
+        </tr>
+      
+        <tr id="ICON_0005123">
+          <td><a href="../terms/ICON_0005123.html">is GAP status of</a></td>
+          <td>relation</td>
+          <td><code>ICON:0005123</code></td>
+          <td>The reverse of has GAP status.</td>
+        </tr>
+      
+        <tr id="ICON_0005200">
+          <td><a href="../terms/ICON_0005200.html">capacity</a></td>
+          <td>attribute</td>
+          <td><code>ICON:0005200</code></td>
+          <td>How much the place holds or delivers, written with its unit: a reservoir&#39;s storage in acre-feet, a plant&#39;s output in megawatts.</td>
+        </tr>
+      
+        <tr id="ICON_0005047">
+          <td><a href="../terms/ICON_0005047.html">GAP 1</a></td>
+          <td>value</td>
+          <td><code>ICON:0005047</code></td>
+          <td>Permanently protected and managed for biodiversity, with natural disturbance such as fire or flooding allowed to run its course.</td>
+        </tr>
+      
+        <tr id="ICON_0005048">
+          <td><a href="../terms/ICON_0005048.html">GAP 2</a></td>
+          <td>value</td>
+          <td><code>ICON:0005048</code></td>
+          <td>Permanently protected and managed for biodiversity, with natural disturbance suppressed.</td>
+        </tr>
+      
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <footer>
+    <p>ICON ontologies, version 2026-11-21. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: attribute as "Internet of Conservation, Information for the Conservation of Nature (ICON), CC BY 4.0". The ICON names and logos are not covered by that license.</p>
+  </footer>
+</div>
+</body>
+</html>

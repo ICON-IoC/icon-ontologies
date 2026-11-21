@@ -1,0 +1,506 @@
+# ICON Organizations ontology, as a LinkML schema.
+# Built by `ioc-ontologies` from ontology/src/organizations.terms; edit that, not this file.
+id: https://w3id.org/icon/linkml/icon-organizations
+name: icon-organizations
+prefixes:
+  linkml: https://w3id.org/linkml/
+  ICON: https://w3id.org/icon/ICON_
+  OBI: http://purl.obolibrary.org/obo/OBI_
+  dcterms: http://purl.org/dc/terms/
+  org: http://www.w3.org/ns/org#
+  schema: https://schema.org/
+title: ICON Organizations ontology
+description: 'Organizations in conservation: agencies, non-profits, tribes, companies, universities and
+  partnerships, their types and activities, how they nest and join one another, and the links by which
+  they publish, host, fund or partner in other work.'
+version: '2026-11-21'
+license: https://creativecommons.org/licenses/by/4.0/
+default_prefix: ICON
+default_range: string
+see_also:
+- https://w3id.org/icon/organizations.owl
+imports:
+- linkml:types
+- icon-external
+- icon-core
+- icon-places
+classes:
+  AcademicOrganization:
+    class_uri: ICON:0001001
+    title: academic organization
+    description: A university, college or research institute, or a department of one.
+    close_mappings:
+    - schema:CollegeOrUniversity
+    annotations:
+      runtime: term OrgType "Academic"
+    is_a: Organization
+  CommercialOrganization:
+    class_uri: ICON:0001002
+    title: commercial organization
+    description: A business run for profit, such as a consultancy, a utility company, a farm business
+      or a developer.
+    close_mappings:
+    - schema:Corporation
+    annotations:
+      runtime: term OrgType "Commercial"
+    is_a: Organization
+  FederalGovernmentOrganization:
+    class_uri: ICON:0001003
+    title: federal government organization
+    description: An agency or office of the United States government, such as the Fish and Wildlife Service
+      or the Bureau of Reclamation.
+    close_mappings:
+    - schema:GovernmentOrganization
+    annotations:
+      runtime: term OrgType "Federal Government"
+    is_a: GovernmentalOrganization
+  StateGovernmentOrganization:
+    class_uri: ICON:0001004
+    title: state government organization
+    description: An agency, department, board or commission of the State of California, such as the Department
+      of Fish and Wildlife.
+    close_mappings:
+    - schema:GovernmentOrganization
+    annotations:
+      runtime: term OrgType "State Government"
+    is_a: GovernmentalOrganization
+  LocalGovernmentOrganization:
+    class_uri: ICON:0001005
+    title: local government organization
+    description: A county, city, special district (water, resource conservation, flood control) or one
+      of their departments.
+    close_mappings:
+    - schema:GovernmentOrganization
+    annotations:
+      runtime: term OrgType "Local Government"
+    is_a: GovernmentalOrganization
+  JointPowersAuthority:
+    class_uri: ICON:0001006
+    title: joint powers authority
+    description: A public agency formed by two or more public agencies under California's Joint Exercise
+      of Powers Act to carry out a shared purpose, such as a regional water or habitat authority.
+    annotations:
+      runtime: term OrgType "Joint Powers Authority"
+    is_a: GovernmentalOrganization
+  TribalOrganization:
+    class_uri: ICON:0001007
+    title: tribal organization
+    description: A tribal government or an organization of one or more tribes or tribal members.
+    annotations:
+      runtime: term OrgType "Tribal"
+    is_a: Organization
+  NonProfitOrganization:
+    class_uri: ICON:0001008
+    title: non-profit organization
+    description: A private organization that does not distribute profit, such as a land trust, a watershed
+      group or a conservation society.
+    close_mappings:
+    - schema:NGO
+    annotations:
+      runtime: term OrgType "Non-profit"
+    is_a: NongovernmentalOrganization
+  Foundation:
+    class_uri: ICON:0001009
+    title: foundation
+    description: A private organization, usually endowed, that makes grants to others' work.
+    close_mappings:
+    - OBI:0001942
+    annotations:
+      runtime: term OrgType "Foundation"
+    is_a: Organization
+  Partnership:
+    class_uri: ICON:0001010
+    title: partnership
+    description: A standing collaboration of several organizations with a name of its own, such as a regional
+      conservation partnership or a working group.
+    close_mappings:
+    - org:OrganizationalCollaboration
+    annotations:
+      runtime: term OrgType "Partnership"
+    is_a: Organization
+  Team:
+    class_uri: ICON:0001011
+    title: team
+    description: A unit inside an organization with a name of its own, such as a program office or a field
+      crew.
+    close_mappings:
+    - org:OrganizationalUnit
+    annotations:
+      runtime: term OrgType "Team"
+    is_a: Organization
+  InternationalOrganization:
+    class_uri: ICON:0001012
+    title: international organization
+    description: An organization whose members are national governments, set up by a treaty or convention,
+      such as a regional fisheries management commission.
+    annotations:
+      runtime: term OrgType "International"
+    is_a: Organization
+  CityGovernmentOrganization:
+    class_uri: ICON:0001013
+    title: city government organization
+    description: An incorporated city or town of California, or one of its departments, boards or commissions.
+    annotations:
+      runtime: term OrgType "City Government"
+    is_a: LocalGovernmentOrganization
+  CountyGovernmentOrganization:
+    class_uri: ICON:0001014
+    title: county government organization
+    description: A county of California, or one of its departments, boards or commissions, such as a county
+      parks department or fish and game commission.
+    annotations:
+      runtime: term OrgType "County Government"
+    is_a: LocalGovernmentOrganization
+  SpecialDistrict:
+    class_uri: ICON:0001015
+    title: special district
+    description: A local agency formed under state law to provide one or a few services within set boundaries,
+      such as a water, irrigation, resource conservation, park, flood control or sanitation district.
+    annotations:
+      runtime: term OrgType "Special District"
+    is_a: LocalGovernmentOrganization
+  RegionalAgency:
+    class_uri: ICON:0001016
+    title: regional agency
+    description: A local agency that serves several cities or counties together, such as a council of
+      governments or a regional transportation commission.
+    annotations:
+      runtime: term OrgType "Regional Agency"
+    is_a: LocalGovernmentOrganization
+  OrganizationalActivity:
+    class_uri: ICON:0001020
+    title: organizational activity
+    description: A kind of work an organization carries out, from the Terms sheet's organization activities.
+      An organization is linked to the kinds it is capable of.
+    annotations:
+      runtime: vocab OrgActivity
+    is_a: PlannedProcess
+  AcquisitionActivity:
+    class_uri: ICON:0001021
+    title: acquisition activity
+    description: Buying land, water or easements, or rights in them, for conservation.
+    annotations:
+      runtime: term OrgActivity "Acquisition"
+    is_a: OrganizationalActivity
+  AdvisingActivity:
+    class_uri: ICON:0001022
+    title: advising activity
+    description: Giving expert advice to landowners, agencies or other organizations.
+    annotations:
+      runtime: term OrgActivity "Advising"
+    is_a: OrganizationalActivity
+  AdvocacyActivity:
+    class_uri: ICON:0001023
+    title: advocacy activity
+    description: Arguing for a cause or a policy before the public or decision makers.
+    annotations:
+      runtime: term OrgActivity "Advocacy"
+    is_a: OrganizationalActivity
+  AgriculturalProductionActivity:
+    class_uri: ICON:0001024
+    title: agricultural production activity
+    description: Growing crops or raising livestock.
+    annotations:
+      runtime: term OrgActivity "Agricultural Production"
+    is_a: OrganizationalActivity
+  CertificationActivity:
+    class_uri: ICON:0001025
+    title: certification activity
+    description: Checking that land, products or practices meet a standard and certifying them.
+    annotations:
+      runtime: term OrgActivity "Certification"
+    is_a: OrganizationalActivity
+  ConstructionActivity:
+    class_uri: ICON:0001026
+    title: construction activity
+    description: Building or rebuilding structures, such as fish passage, levees or crossings.
+    annotations:
+      runtime: term OrgActivity "Construction"
+    is_a: OrganizationalActivity
+  CoordinatingActivity:
+    class_uri: ICON:0001027
+    title: coordinating activity
+    description: Bringing organizations together and keeping their work aligned.
+    annotations:
+      runtime: term OrgActivity "Coordinating"
+    is_a: OrganizationalActivity
+  EducationActivity:
+    class_uri: ICON:0001028
+    title: education activity
+    description: Teaching the public, students or practitioners.
+    annotations:
+      runtime: term OrgActivity "Education"
+    is_a: OrganizationalActivity
+  FundingActivity:
+    class_uri: ICON:0001029
+    title: funding activity
+    description: Paying for other organizations' work, as through grants or contracts.
+    annotations:
+      runtime: term OrgActivity "Funding"
+    is_a: OrganizationalActivity
+  GoverningActivity:
+    class_uri: ICON:0001030
+    title: governing activity
+    description: Exercising public authority over a jurisdiction.
+    annotations:
+      runtime: term OrgActivity "Governing"
+    is_a: OrganizationalActivity
+  HabitatEnhancementActivity:
+    class_uri: ICON:0001031
+    title: habitat enhancement activity
+    description: Restoring or improving habitat, such as replanting, removing invasive plants or reconnecting
+      floodplains.
+    aliases:
+    - restoration
+    - habitat restoration
+    annotations:
+      runtime: term OrgActivity "Habitat Enhancement"
+    is_a: OrganizationalActivity
+  ManagementActivity:
+    class_uri: ICON:0001032
+    title: management activity
+    description: Managing land, water or wildlife over time.
+    annotations:
+      runtime: term OrgActivity "Management"
+    is_a: OrganizationalActivity
+  PlanningActivity:
+    class_uri: ICON:0001033
+    title: planning activity
+    description: Preparing plans for conservation, land use or resources.
+    annotations:
+      runtime: term OrgActivity "Planning"
+    is_a: OrganizationalActivity
+  PolicyActivity:
+    class_uri: ICON:0001034
+    title: policy activity
+    description: Making or shaping policy.
+    annotations:
+      runtime: term OrgActivity "Policy"
+    is_a: OrganizationalActivity
+  ProductionActivity:
+    class_uri: ICON:0001035
+    title: production activity
+    description: Producing goods or energy other than crops and livestock.
+    annotations:
+      runtime: term OrgActivity "Production"
+    is_a: OrganizationalActivity
+  RegulatingActivity:
+    class_uri: ICON:0001036
+    title: regulating activity
+    description: Issuing and enforcing permits and rules.
+    annotations:
+      runtime: term OrgActivity "Regulating"
+    is_a: OrganizationalActivity
+  ResearchActivity:
+    class_uri: ICON:0001037
+    title: research activity
+    description: Studying nature or conservation.
+    close_mappings:
+    - OBI:0000066
+    annotations:
+      runtime: term OrgActivity "Research"
+    is_a: OrganizationalActivity
+  ServicesActivity:
+    class_uri: ICON:0001038
+    title: services activity
+    description: Providing services to others, such as technical, legal or financial services.
+    annotations:
+      runtime: term OrgActivity "Services"
+    is_a: OrganizationalActivity
+  MonitoringActivity:
+    class_uri: ICON:0001039
+    title: monitoring activity
+    description: Repeating surveys or measurements over years to track the status of species, habitats,
+      water or fisheries.
+    annotations:
+      runtime: term OrgActivity "Monitoring"
+    is_a: OrganizationalActivity
+slots:
+  has_org_type:
+    slot_uri: ICON:0001100
+    title: has org type
+    description: Links an organization to one of the organization type classes it belongs to. The explorer's
+      way of stating the organization's class.
+    annotations:
+      runtime: phrase "has org type"
+    domain: Organization
+    domain_of:
+    - Organization
+    range: uriorcurie
+    inverse: is_org_type_of
+    multivalued: true
+  is_org_type_of:
+    slot_uri: ICON:0001101
+    title: is org type of
+    description: The reverse of has org type.
+    annotations:
+      runtime: phrase "is org type of"
+    range: Organization
+    inverse: has_org_type
+    multivalued: true
+  is_activity_of:
+    slot_uri: ICON:0001102
+    title: is activity of
+    description: 'A kind of activity an organization carries out: the reverse of capable of.'
+    annotations:
+      runtime: phrase "is activity of"
+    range: uriorcurie
+    inverse: capable_of
+    multivalued: true
+  is_member_of:
+    slot_uri: ICON:0001103
+    title: is member of
+    description: An organization belongs to a coalition, association or partnership as a member while
+      keeping its own identity. A kind of part of in the explorer.
+    close_mappings:
+    - org:memberOf
+    - schema:memberOf
+    annotations:
+      runtime: phrase "is member of"
+    is_a: is_member_of_organization
+    mixins:
+    - part_of
+    domain: Organization
+    domain_of:
+    - Organization
+    range: Organization
+    inverse: has_member
+    multivalued: true
+  has_member:
+    slot_uri: ICON:0001104
+    title: has member
+    description: The reverse of is member of.
+    close_mappings:
+    - org:hasMember
+    annotations:
+      runtime: phrase "has member"
+    is_a: has_organization_member
+    mixins:
+    - has_part
+    domain: Organization
+    domain_of:
+    - Organization
+    range: Organization
+    inverse: is_member_of
+    multivalued: true
+  has_partner:
+    slot_uri: ICON:0001105
+    title: has partner
+    description: An organization that works on a project or program alongside its lead, without leading
+      or funding it.
+    annotations:
+      runtime: phrase "has partner"
+    is_a: is_involved_with
+    range: uriorcurie
+    inverse: is_partner_of
+    symmetric: true
+    multivalued: true
+  is_partner_of:
+    slot_uri: ICON:0001106
+    title: is partner of
+    description: The reverse of has partner.
+    annotations:
+      runtime: phrase "is partner of"
+    is_a: is_involved_with
+    range: uriorcurie
+    inverse: has_partner
+    symmetric: true
+    multivalued: true
+  is_published_by:
+    slot_uri: ICON:0001107
+    title: is published by
+    description: The organization responsible for making data or a publication available, when it is not
+      the creator.
+    close_mappings:
+    - dcterms:publisher
+    - schema:publisher
+    annotations:
+      crosswalk: 'DataCite 4.5: publisher; EML 2.2: dataset/publisher; ISO 19115-1: CI_RoleCode publisher'
+      runtime: phrase "is published by"
+    range: Organization
+    inverse: published
+    multivalued: true
+  published:
+    slot_uri: ICON:0001108
+    title: published
+    description: The reverse of is published by.
+    annotations:
+      runtime: phrase "published"
+    domain: Organization
+    domain_of:
+    - Organization
+    range: uriorcurie
+    inverse: is_published_by
+    multivalued: true
+  located_in_county:
+    slot_uri: ICON:0001109
+    title: located in county
+    description: The county that holds the organization's headquarters, main office or seat. An organization
+      is located in at most one county, and may operate in many (#949).
+    comments:
+    - Every local government is located in one county. A city's is the county the city lies in, a county
+      government's is its own county, and a special district's or regional agency's is the county of its
+      main office. Located in county is a kind of located in area, so the organization also operates in
+      the county.
+    close_mappings:
+    - schema:location
+    - org:hasPrimarySite
+    annotations:
+      xref: Wikidata:P159
+      runtime: phrase "located in county"
+    is_a: located_in_area
+    domain: Organization
+    domain_of:
+    - Organization
+    range: County
+    inverse: is_county_location_of
+    multivalued: false
+  is_county_location_of:
+    slot_uri: ICON:0001110
+    title: is county location of
+    description: 'The reverse of located in county: the county holds the organization''s headquarters.'
+    annotations:
+      runtime: phrase "is county location of"
+    domain: County
+    domain_of:
+    - County
+    range: Organization
+    inverse: located_in_county
+    multivalued: true
+  located_in_ecoregion:
+    slot_uri: ICON:0001111
+    title: located in ecoregion
+    description: The ecoregion section that holds the organization's headquarters, main office or seat.
+      An organization is located in at most one ecoregion section, and may work in many (#949).
+    comments:
+    - Every local government is located in one ecoregion section, the one its headquarters point lies
+      in. Located in ecoregion is a kind of in ecoregion, so a question about the local governments in
+      an ecoregion finds it.
+    close_mappings:
+    - schema:location
+    - org:hasPrimarySite
+    annotations:
+      xref: Wikidata:P159
+      runtime: phrase "located in ecoregion"
+    is_a: in_ecoregion
+    mixins:
+    - located_in
+    domain: Organization
+    domain_of:
+    - Organization
+    range: Ecoregion
+    inverse: is_ecoregion_location_of
+    multivalued: false
+  is_ecoregion_location_of:
+    slot_uri: ICON:0001112
+    title: is ecoregion location of
+    description: 'The reverse of located in ecoregion: the ecoregion section holds the organization''s
+      headquarters.'
+    annotations:
+      runtime: phrase "is ecoregion location of"
+    domain: Ecoregion
+    domain_of:
+    - Ecoregion
+    range: Organization
+    inverse: located_in_ecoregion
+    multivalued: true

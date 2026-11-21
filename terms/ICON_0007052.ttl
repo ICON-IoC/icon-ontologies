@@ -1,0 +1,13 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0007052 a owl:Class ;
+    rdfs:label "species conservation plan"@en ;
+    IAO:0000115 "A conservation plan for one species that a state law directs the state wildlife agency to prepare across the species' range in the state, setting conservation targets and the actions to meet them, such as avoiding and minimizing impacts, conserving and managing land, tribal co-management, research and public education. Example: CDFW's Western Joshua Tree Conservation Plan, required by the Western Joshua Tree Conservation Act and approved by the Fish and Game Commission in 2025."@en ;
+    rdfs:comment "Added for the Western Joshua Tree Conservation Plan (#1362)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+

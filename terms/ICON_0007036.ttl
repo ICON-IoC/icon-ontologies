@@ -1,0 +1,12 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0007036 a owl:Class ;
+    rdfs:label "storm water resource plan"@en ;
+    IAO:0000115 "A conservation plan for one watershed, written under California's Storm Water Resource Planning Act (Senate Bill 985, 2014) and the State Water Resources Control Board's guidelines by the cities, counties and special districts that manage storm water there, that identifies and ranks multi-benefit projects using storm water and dry weather runoff as a resource, to improve water quality, recharge groundwater, reduce flooding and restore habitat. Incorporated into the region's integrated regional water management plan, it makes its projects eligible for state storm water implementation grants, and it binds no agency to build them. Example: the Russian River Storm Water Resource Plan (2018)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+

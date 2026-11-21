@@ -1,0 +1,12 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0006006 a owl:Class ;
+    rdfs:label "regulation"@en ;
+    IAO:0000115 "A guideline or mandate that an agency adopts under authority a statute gives it, with the force of law, as in the California Code of Regulations."@en ;
+    rdfs:isDefinedBy iconbase:mandates.owl ;
+    rdfs:subClassOf icon:0006000 .
+

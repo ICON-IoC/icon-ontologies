@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0007021">
+    <obo:IAO_0000115 xml:lang="en">A conservation plan that a non-federal landowner or agency prepares under Section 10(a)(1)(B) of the federal Endangered Species Act to obtain an incidental take permit from the U.S. Fish and Wildlife Service or NOAA Fisheries, that names the covered species and covered activities, sets biological goals and objectives, and commits the permittee to measures that avoid, minimize and mitigate the take, with monitoring, adaptive management, funding assurances and a fixed permit term. It binds the permittee through the permit and its implementing agreement.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/plans.owl"/>
+    <rdfs:label xml:lang="en">habitat conservation plan</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0007001"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,852 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:iconbase="https://w3id.org/icon/"
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="cb1136871cb2a9f229c4f3f99b4b19d6fe10fee7cb67e26e7a480abc17fc96dc600">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0004000"/>
+    <rdf:rest rdf:nodeID="cb25c8712a7e4828e63eb0768ea3b117073d9dd0dc5adff4b93b5be6af824a652e2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb1146547bcecc86356efa817845a15a39961c54267795cfda9ec13ad597600c6a9">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0006000"/>
+    <rdf:rest rdf:nodeID="cb1b53e685126eacf9795f7c215a297ec956d3c043e52cacc823a6d2fde1ef8c756"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb1172aa52f2025823c6aa98a3c31a53274e9f975a43aa8a7e3ba437f6f535ceecc">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="cb86feb1752edc8838444ebae1514b302384841d650bfd474a7e5180998ae606e5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb117c0523191fe7fc0c221531cc83eebdab7ef748c359cd4b3b3f3b8b5e65bf01b">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="cb13549041ed4a12079a9d8811beb6a0340b90b981cf5a682a556df4a281af813d4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb13549041ed4a12079a9d8811beb6a0340b90b981cf5a682a556df4a281af813d4">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0003000"/>
+    <rdf:rest rdf:nodeID="cb169581578987ee848748e6e6489218acc338b7da607fb796583f9840be5a399ab"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb13f91aa0f74ead7dad6ad439455e7dc2a94d9979bf19b8861b2de9a8f47d4340d">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="cb2054ace47d7dbe394909bfd5c025f6846cae5408d14aca2b7b7802692abdfb5a5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb15527a5c2023613ef93d3e72af8d8f007cfdc5753345ff48c15a698205d89ea3b">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0004000"/>
+    <rdf:rest rdf:nodeID="cb237f5e214d429b0f828b69a8d664d73a52642195a927cc77fb2aaea79cc4f3b08"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb15b1ebb23ad8e8a1b8f889d13a5e3dd7ffce46c73a7b6efb0f8a13a614b6db946">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="cb15f5ae3ee6d4bcb68d9ca0ec0adb35202fe2ed1e45d6ab92e4b1f1fb4b07b1606"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb15f5ae3ee6d4bcb68d9ca0ec0adb35202fe2ed1e45d6ab92e4b1f1fb4b07b1606">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0003000"/>
+    <rdf:rest rdf:nodeID="cb15527a5c2023613ef93d3e72af8d8f007cfdc5753345ff48c15a698205d89ea3b"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb169581578987ee848748e6e6489218acc338b7da607fb796583f9840be5a399ab">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0004000"/>
+    <rdf:rest rdf:nodeID="cb1ccf46777b02a3b231bb1e1d260a08515cabeddf4677708d900f026480358fe99"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb16ac15bb3a6672524bb3960bcc26729f35358c1840863a512f98183d4dd426fae">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="cb242a573300f96089522d9408cf8e1f34ac9d18ff32027c7aef5c85179539ccbb6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb16c074d366fd5912162b57a3a097c6b76a3397832cd70000d595e0e9d2ef24456">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="cb20184d8e38f8892ae3da1b6d6de4bd8d317de6cb61cb28c622b78e4575259b693"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb178e82e14c25b9203df50c52649425b26b9af1011b9cb81e83c4d36b99e892e87">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="cbbe9bff8ecfdea0ed017313076ac93354a7a99f7efcd5a6812b06d401d0aba6ac"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb17f3a30399ccd49876b7455b51c49ac7e5644380d48b9073dbc11e2f8612a1b5e">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0007001"/>
+    <rdf:rest rdf:nodeID="cb25f71a7abceca97bc56b2a308e0a8f3547d534b0fbe16fd1f4cc62159b37d55fd"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb18c23d242bff867b723e97f2560608d819f9cadc4eba97c675f897e5f912be85e">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0006000"/>
+    <rdf:rest rdf:nodeID="cb2653c2988e96a353c9683dc7f031b2aa1b046ca0b2043d03e74d9b6b35e556df1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb18c6a16a29710906d1f2dc690a4ac0e1912ad822aa891e498f679562fb381c427">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="cbdacfe379aca20da271ee7f7b84d9bac998581d06a37799b72f3315c9dbf0c604"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb18e357a1d0dc23f85c272dbf5fa50698896259b93ed71500ed9c85a212f6ae591">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0007002"/>
+    <rdf:rest rdf:nodeID="cb2b93fd965487f7a88add2aaa31c4f02f1021e967d56eae3727ad766ebfcaedf19"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb1948846dd14870ff83b2ac3b0c606a15e8c836685dda4a356ae6fc295cc3a3f25">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="cb1ad5d252417327b1c2ff1857e8921119fcad918a51b516cb6ddf29ef4e16d56bd"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb1976ebaeeab506de18bc9aea2fa0391f0bba5392f2e4f9445313a020c449612c3">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0007001"/>
+    <rdf:rest rdf:nodeID="cb1f8464b438d7c3e9404eeda4a33e6fc97feac863a62cb2c089f332a6fa776b069"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb1a10076f7ed0a2276d244540b56e79c2e75be16994dcc93810f18e3fa23debf5a">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0006000"/>
+    <rdf:rest rdf:nodeID="cb2aa9134ab66fba946059d2ab19205c323354141e88890a8901802fe122840e45e"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb1a4d047c0e914d1ca3ea5edb0a1933643cb301609769550fea2172dbd141e2293">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0004000"/>
+    <rdf:rest rdf:nodeID="cb1c5edfbd6aaa3aedacc783527f3f95051a1d0f5b965aa14a9313d050f06f1bbcd"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb1ad5d252417327b1c2ff1857e8921119fcad918a51b516cb6ddf29ef4e16d56bd">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0004000"/>
+    <rdf:rest rdf:nodeID="cb1146547bcecc86356efa817845a15a39961c54267795cfda9ec13ad597600c6a9"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb1b1dd42fa248f4012873fef49430e6fa367a9a9434001e005f0d5acffe2e89b57">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0004000"/>
+    <rdf:rest rdf:nodeID="cb1cb5aa30aa157cd3ffdd1c52d002edde4eb1cd7042be464fbd2b4743dd4c4933b"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb1b53e685126eacf9795f7c215a297ec956d3c043e52cacc823a6d2fde1ef8c756">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0007001"/>
+    <rdf:rest rdf:nodeID="cb1d74d22472cd38c6b2d44829264e0e8c72d5bf5953e9a1e718e3770313f17bed2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb1bad69c6ddab6ef7ed80071650ddb59cf7987926444a3bc63c1af3e29d3be59c4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="cbc7fc77586e75f045f972d696f727a66a793b15667c4479b47f35050247039455"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb1c5edfbd6aaa3aedacc783527f3f95051a1d0f5b965aa14a9313d050f06f1bbcd">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005000"/>
+    <rdf:rest rdf:nodeID="cb205464f5abd8cdc2be523e1545377315db416d32b629849fd63c8d25de9b5671a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb1cb5aa30aa157cd3ffdd1c52d002edde4eb1cd7042be464fbd2b4743dd4c4933b">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005000"/>
+    <rdf:rest rdf:nodeID="cb18c23d242bff867b723e97f2560608d819f9cadc4eba97c675f897e5f912be85e"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb1ccf46777b02a3b231bb1e1d260a08515cabeddf4677708d900f026480358fe99">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005000"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb1cffcffff6ee6c0e809c1eabdb8540404e2995804ee29ad8b58b11cc867f7388c">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0007002"/>
+    <rdf:rest rdf:nodeID="cb366c5145f5e8a2fb29acbfbf6d13b0e0cb2c4bf60c6bb0a387bb7a53ab7607935"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb1d74d22472cd38c6b2d44829264e0e8c72d5bf5953e9a1e718e3770313f17bed2">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0007002"/>
+    <rdf:rest rdf:nodeID="cb2d0eb4df081fd01566c811733600d049c76ae664408f690435499f96b83520505"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb1f8464b438d7c3e9404eeda4a33e6fc97feac863a62cb2c089f332a6fa776b069">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0007002"/>
+    <rdf:rest rdf:nodeID="cb28396552b93c280c6887ee24e20c4e35ca20455d64b54e360047b599159dfe850"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb20184d8e38f8892ae3da1b6d6de4bd8d317de6cb61cb28c622b78e4575259b693">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0004000"/>
+    <rdf:rest rdf:nodeID="cbf44c93ec868e177f6da89de1d6ba3edb6f9cff067669754197eca52d459b9bd2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb205464f5abd8cdc2be523e1545377315db416d32b629849fd63c8d25de9b5671a">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0006000"/>
+    <rdf:rest rdf:nodeID="cb1976ebaeeab506de18bc9aea2fa0391f0bba5392f2e4f9445313a020c449612c3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb2054ace47d7dbe394909bfd5c025f6846cae5408d14aca2b7b7802692abdfb5a5">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0004000"/>
+    <rdf:rest rdf:nodeID="cb73b679d1e222e7d99201d7b9d46e66e27d62ae0f100801ad7536857418d5bd7f"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb21586b16d7f91fab0e1a967b5216eb5b1e530e0dbcb8dc7933a7912af868f8570">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0007001"/>
+    <rdf:rest rdf:nodeID="cb18e357a1d0dc23f85c272dbf5fa50698896259b93ed71500ed9c85a212f6ae591"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb237f5e214d429b0f828b69a8d664d73a52642195a927cc77fb2aaea79cc4f3b08">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005000"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb242a573300f96089522d9408cf8e1f34ac9d18ff32027c7aef5c85179539ccbb6">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0004000"/>
+    <rdf:rest rdf:nodeID="cb1a10076f7ed0a2276d244540b56e79c2e75be16994dcc93810f18e3fa23debf5a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb25c8712a7e4828e63eb0768ea3b117073d9dd0dc5adff4b93b5be6af824a652e2">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005000"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb25f71a7abceca97bc56b2a308e0a8f3547d534b0fbe16fd1f4cc62159b37d55fd">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0007002"/>
+    <rdf:rest rdf:nodeID="cb2fd34213ec79dde70b67ab55b4e494d0a915c35091f6a408cadd74a41af83c293"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb25f9599afb369d36a446049ebc8cd0c9411abf33c297efaa80d6bf9b109b2fd90">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0007002"/>
+    <rdf:rest rdf:nodeID="cb298d728d155fb29d941c60c976512c9cb1d0703f53312bcdc1017a0339e3a8cb4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb2653c2988e96a353c9683dc7f031b2aa1b046ca0b2043d03e74d9b6b35e556df1">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0007001"/>
+    <rdf:rest rdf:nodeID="cb1cffcffff6ee6c0e809c1eabdb8540404e2995804ee29ad8b58b11cc867f7388c"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb274704a084eb781593df54b3f0166f8a2adae694416bb5ae3bb7e0c384a412db9">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0004000"/>
+    <rdf:rest rdf:nodeID="cb296866907e98e4a72cb8f533d3d2919c51110497623fdec688c55b85e7a6de99e"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb28396552b93c280c6887ee24e20c4e35ca20455d64b54e360047b599159dfe850">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0007003"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb296866907e98e4a72cb8f533d3d2919c51110497623fdec688c55b85e7a6de99e">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005000"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb298d728d155fb29d941c60c976512c9cb1d0703f53312bcdc1017a0339e3a8cb4">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0007003"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb2aa9134ab66fba946059d2ab19205c323354141e88890a8901802fe122840e45e">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0007001"/>
+    <rdf:rest rdf:nodeID="cb25f9599afb369d36a446049ebc8cd0c9411abf33c297efaa80d6bf9b109b2fd90"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb2b93fd965487f7a88add2aaa31c4f02f1021e967d56eae3727ad766ebfcaedf19">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0007003"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb2d0eb4df081fd01566c811733600d049c76ae664408f690435499f96b83520505">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0007003"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb2fd34213ec79dde70b67ab55b4e494d0a915c35091f6a408cadd74a41af83c293">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0007003"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb366c5145f5e8a2fb29acbfbf6d13b0e0cb2c4bf60c6bb0a387bb7a53ab7607935">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0007003"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb73b679d1e222e7d99201d7b9d46e66e27d62ae0f100801ad7536857418d5bd7f">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0006000"/>
+    <rdf:rest rdf:nodeID="cb21586b16d7f91fab0e1a967b5216eb5b1e530e0dbcb8dc7933a7912af868f8570"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb86feb1752edc8838444ebae1514b302384841d650bfd474a7e5180998ae606e5">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0003000"/>
+    <rdf:rest rdf:nodeID="cb1a4d047c0e914d1ca3ea5edb0a1933643cb301609769550fea2172dbd141e2293"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cbbe9bff8ecfdea0ed017313076ac93354a7a99f7efcd5a6812b06d401d0aba6ac">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0003000"/>
+    <rdf:rest rdf:nodeID="cb1b1dd42fa248f4012873fef49430e6fa367a9a9434001e005f0d5acffe2e89b57"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cbc7fc77586e75f045f972d696f727a66a793b15667c4479b47f35050247039455">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0003000"/>
+    <rdf:rest rdf:nodeID="cb1136871cb2a9f229c4f3f99b4b19d6fe10fee7cb67e26e7a480abc17fc96dc600"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cbdacfe379aca20da271ee7f7b84d9bac998581d06a37799b72f3315c9dbf0c604">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0003000"/>
+    <rdf:rest rdf:nodeID="cb274704a084eb781593df54b3f0166f8a2adae694416bb5ae3bb7e0c384a412db9"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cbf44c93ec868e177f6da89de1d6ba3edb6f9cff067669754197eca52d459b9bd2">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0006000"/>
+    <rdf:rest rdf:nodeID="cb17f3a30399ccd49876b7455b51c49ac7e5644380d48b9073dbc11e2f8612a1b5e"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000001">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">entity</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000002">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">continuant</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000004">
+    <obo:IAO_0000115 xml:lang="en">b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">independent continuant</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">process</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000031">
+    <obo:IAO_0000115 xml:lang="en">b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">generically dependent continuant</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000082">
+    <obo:IAO_0000115 xml:lang="en">A process that is initiated by an agent who intends to carry out a plan to achieve an objective through one or more actions as described in a plan specification.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">planned process</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000005">
+    <obo:IAO_0000115 xml:lang="en">A directive information entity that describes an intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">objective specification</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000007">
+    <obo:IAO_0000115 xml:lang="en">A directive information entity that describes an action the bearer will take.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">action specification</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000027">
+    <obo:IAO_0000115 xml:lang="en">An information content entity that is intended to be one or more truthful statement(s) about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">data entity</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
+    <obo:IAO_0000115 xml:lang="en">A generically dependent continuant that is about some thing.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">information content entity</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000033">
+    <obo:IAO_0000115 xml:lang="en">An information content entity whose concretizations indicate to their bearer how to realize them in a process.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">directive information entity</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000104">
+    <obo:IAO_0000115 xml:lang="en">A directive information entity with action specifications and objective specifications as parts, and that may be concretized as a realizable entity that, if realized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">plan specification</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000109">
+    <obo:IAO_0000115 xml:lang="en">A measurement datum is an information content entity that is a recording of the output of a measurement such as produced by a device.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">measurement datum</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:label>definition</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/description">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/license">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/references">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/title">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:label>database_cross_reference</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:label>has_exact_synonym</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#broadMatch">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#narrowMatch">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000001">
+    <obo:IAO_0000115 xml:lang="en">The matching field in a metadata standard that is not published as RDF, written as the standard's name, a colon and the field's path, such as "EML 2.2: dataset/title".</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:label xml:lang="en">crosswalk</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000002">
+    <obo:IAO_0000115 xml:lang="en">A property the records of this class are expected to carry, such as a title or a year. Records the attributes a class uses without adding domain axioms to terms borrowed from other vocabularies.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:label xml:lang="en">expected attribute</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000011">
+    <obo:IAO_0000115 xml:lang="en">A planned process carried out to achieve conservation ends over a span of time: a project or a program.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:label xml:lang="en">endeavor</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000012">
+    <obo:IAO_0000115 xml:lang="en">A part of the landscape or a structure in it that records can be located at, worked on or bounded by: a river, a reserve, a dam, a crossing structure.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:label xml:lang="en">place</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000014">
+    <obo:IAO_0000115 xml:lang="en">A directive information entity that sets out what conservation work should achieve or do: a plan, one of its objectives, or one of its actions.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:label xml:lang="en">planning element</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0003000">
+    <obo:IAO_0000115 xml:lang="en">A bounded effort with a lead and usually partners and funders that restores, protects, acquires, studies, plans or manages something in a place, and ends when its work is done.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/projects.owl"/>
+    <rdfs:label xml:lang="en">conservation project</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0000011"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0004000">
+    <obo:IAO_0000115 xml:lang="en">An ongoing arrangement, usually run by an agency, that funds, regulates, certifies, plans or carries out conservation work through many projects or participants, with no set end.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/programs.owl"/>
+    <rdfs:label xml:lang="en">conservation program</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0000011"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005000">
+    <obo:IAO_0000115 xml:lang="en">A place or structure on the landscape that conservation works on or around: a water body, a conservation area, a water or energy work, a farm, a sensor, a road or trail. Called infrastructure in the PPOD model whether built or natural.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:label xml:lang="en">infrastructure</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0000012"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0006000">
+    <obo:IAO_0000115 xml:lang="en">A directive that requires, allows, funds or shapes conservation work: a law, regulation, executive order, agreement, certification standard or guideline. Some bind; others only advise.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/mandates.owl"/>
+    <rdfs:label xml:lang="en">guideline or mandate</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0007001">
+    <obo:IAO_0000115 xml:lang="en">A plan specification issued by an agency or organization that sets conservation objectives and the actions to meet them, such as a species recovery plan.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/plans.owl"/>
+    <rdfs:label xml:lang="en">conservation plan</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0000014"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0007002">
+    <obo:IAO_0000115 xml:lang="en">An objective specification within a conservation plan: a condition the plan aims to reach, often with measurable criteria, such as a population target for a recovery unit.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/plans.owl"/>
+    <rdfs:label xml:lang="en">plan objective</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0000014"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0007003">
+    <obo:IAO_0000115 xml:lang="en">An action specification within a conservation plan: a task the plan calls for, with its priority, cost, lead and cooperators. Actions nest: a sub-action is part of its action.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/plans.owl"/>
+    <rdfs:label xml:lang="en">plan action</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000007"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0000014"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014000">
+    <obo:IAO_0000115 xml:lang="en">Something measurable that shows progress toward a conservation goal, with the unit it is counted in, such as acres of habitat restored or miles of stream opened to fish passage. Targets and outcomes on the same indicator can be added up and compared.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">indicator</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    <iconbase:ICON_0000001>Conservation Standards 4.0: indicator</iconbase:ICON_0000001>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014001">
+    <obo:IAO_0000115 xml:lang="en">The amount of an indicator that an objective, plan, program or guideline or mandate sets out to reach, by a year where it gives one: restore 5,000 to 7,000 acres of tidal marsh within 30 years. A range keeps its low and high values; a milestone is another target on the same indicator with an earlier year.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">target</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+    <iconbase:ICON_0000001>Conservation Standards 4.0: objective</iconbase:ICON_0000001>
+    <iconbase:ICON_0000002 rdf:resource="https://w3id.org/icon/ICON_0014200"/>
+    <iconbase:ICON_0000002 rdf:resource="https://w3id.org/icon/ICON_0014201"/>
+    <iconbase:ICON_0000002 rdf:resource="https://w3id.org/icon/ICON_0014202"/>
+    <iconbase:ICON_0000002 rdf:resource="https://w3id.org/icon/ICON_0014203"/>
+    <iconbase:ICON_0000002 rdf:resource="https://w3id.org/icon/ICON_0014204"/>
+    <iconbase:ICON_0000002 rdf:resource="https://w3id.org/icon/ICON_0014208"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014002">
+    <obo:IAO_0000115 xml:lang="en">An amount of an indicator that a project, program or place delivers: expected, as a grant award or project plan states it, or measured, as a report or an inventory such as CPAD records it.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">outcome</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    <iconbase:ICON_0000001>Conservation Standards 4.0: result</iconbase:ICON_0000001>
+    <iconbase:ICON_0000002 rdf:resource="https://w3id.org/icon/ICON_0014205"/>
+    <iconbase:ICON_0000002 rdf:resource="https://w3id.org/icon/ICON_0014206"/>
+    <iconbase:ICON_0000002 rdf:resource="https://w3id.org/icon/ICON_0014207"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014003">
+    <obo:IAO_0000115 xml:lang="en">An outcome a project or program sets out to deliver and has not yet been shown to: the acres a grant award or a project plan states, or the planned and in-progress work a project tracker lists.</obo:IAO_0000115>
+    <oboInOwl:hasExactSynonym xml:lang="en">planned outcome</oboInOwl:hasExactSynonym>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">expected outcome</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0014002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014004">
+    <obo:IAO_0000115 xml:lang="en">An outcome recorded as delivered, by a report, a monitoring survey or an inventory such as CPAD, or by a project tracker that lists the work as completed.</obo:IAO_0000115>
+    <oboInOwl:hasExactSynonym xml:lang="en">achieved outcome</oboInOwl:hasExactSynonym>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">measured outcome</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0014002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014010">
+    <obo:IAO_0000115 xml:lang="en">Acres of land or water protected for conservation in fee title or by easement.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0014000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">area conserved</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014011">
+    <obo:IAO_0000115 xml:lang="en">Acres where a habitat lost or degraded was re-established, such as tidal marsh restored from diked land.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0014000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">habitat restored</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014012">
+    <obo:IAO_0000115 xml:lang="en">Acres of existing habitat whose condition was improved without changing its type.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0014000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">habitat enhanced</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014013">
+    <obo:IAO_0000115 xml:lang="en">Acres managed under a plan that benefits habitat or species, such as managed wetlands or grazing under a conservation plan.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0014000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">area under conservation management</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014014">
+    <obo:IAO_0000115 xml:lang="en">Acres of floodplain reconnected to its river, so that it floods again.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0014000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">floodplain reconnected</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014015">
+    <obo:IAO_0000115 xml:lang="en">Acres where invasive plants or animals were removed or controlled.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0014000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">area treated for invasive species</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014016">
+    <obo:IAO_0000115 xml:lang="en">Acres of fuel reduction, prescribed fire or forest thinning.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0014000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">area treated for wildfire resilience</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014017">
+    <obo:IAO_0000115 xml:lang="en">Acres newly opened to the public for recreation or access to nature.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0014000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">area opened to public access</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014018">
+    <obo:IAO_0000115 xml:lang="en">Miles of stream channel or bank restored.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0014000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">stream habitat restored</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014019">
+    <obo:IAO_0000115 xml:lang="en">Miles of stream made reachable by migratory fish by removing or fixing barriers.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0014000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">stream opened to fish passage</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014020">
+    <obo:IAO_0000115 xml:lang="en">Miles of levee repaired, raised or set back.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0014000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">levee improved</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014021">
+    <obo:IAO_0000115 xml:lang="en">Miles of trail built or opened to the public.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0014000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">trail built or opened</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014022">
+    <obo:IAO_0000115 xml:lang="en">Acre-feet a year of water dedicated to streams, wetlands or habitat.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0014000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">water for the environment</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014023">
+    <obo:IAO_0000115 xml:lang="en">Acre-feet a year of water added to groundwater by recharge projects.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0014000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">groundwater recharged</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014024">
+    <obo:IAO_0000115 xml:lang="en">The number of dams, culverts or other barriers to fish removed or fitted with passage.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0014000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">fish passage barriers remediated</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014025">
+    <obo:IAO_0000115 xml:lang="en">The number of wildlife crossing structures built or retrofitted.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0014000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">wildlife crossings built</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014026">
+    <obo:IAO_0000115 xml:lang="en">The number of populations of a species that meet a plan's test of being secure, such as protected and self-sustaining.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0014000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">populations secured</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014027">
+    <obo:IAO_0000115 xml:lang="en">The number of individuals of a species counted or estimated, such as adult fish returning to spawn.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0014000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">population size</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014028">
+    <obo:IAO_0000115 xml:lang="en">The number of projects of a kind carried out to completion.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0014000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">projects completed</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014029">
+    <obo:IAO_0000115 xml:lang="en">The number of partnerships or agreements formed among organizations.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0014000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">partnerships formed</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014030">
+    <obo:IAO_0000115 xml:lang="en">Dollars spent or awarded on the work.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0014000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">funding invested</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014031">
+    <obo:IAO_0000115 xml:lang="en">Metric tons of carbon dioxide equivalent stored or kept from release.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0014000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">carbon stored</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014032">
+    <obo:IAO_0000115 xml:lang="en">The number of projects of a kind a funder approves a grant or acquisition for, counted when the award is made, whether or not the work is done yet.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0014000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">projects funded</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014033">
+    <obo:IAO_0000115 xml:lang="en">The number of completed projects checked in a year for whether they are operated, used and maintained as their grant agreements require.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0014000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">projects monitored</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014034">
+    <obo:IAO_0000115 xml:lang="en">The number of meetings, workshops or conferences held or sponsored to reach the public, partners or prospective grantees.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0014000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">outreach events held</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014035">
+    <obo:IAO_0000115 xml:lang="en">The number of changes put in place to make an organization's processes, such as grant applications, reporting or payment, simpler or faster.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0014000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">process improvements made</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014036">
+    <obo:IAO_0000115 xml:lang="en">Acres of land durably protected and managed for biodiversity, as California counts its 30x30 Conservation Areas on land. Narrower than area conserved, which takes in water and any protection by fee or easement.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0014000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">land conserved</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014037">
+    <obo:IAO_0000115 xml:lang="en">Acres of coastal waters durably protected and managed for biodiversity, as California counts its 30x30 Conservation Areas in its coastal state waters.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0014000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">coastal waters conserved</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014038">
+    <obo:IAO_0000115 xml:lang="en">Acres where a habitat was established where it did not exist before, such as a wetland built on upland. Habitat restored is where it once was.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0014000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">habitat created</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014100">
+    <obo:IAO_0000115 xml:lang="en">A record sets a target on the indicator, or reports an outcome on it.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:nodeID="cb178e82e14c25b9203df50c52649425b26b9af1011b9cb81e83c4d36b99e892e87"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">is measured by</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0014000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0014101"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014101">
+    <obo:IAO_0000115 xml:lang="en">The reverse of is measured by.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0014000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">measures</rdfs:label>
+    <rdfs:range rdf:nodeID="cb1172aa52f2025823c6aa98a3c31a53274e9f975a43aa8a7e3ba437f6f535ceecc"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0014100"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014102">
+    <obo:IAO_0000115 xml:lang="en">A project, program or place advances an objective, action, plan, program or guideline or mandate, so its outcomes count toward that record's targets.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:nodeID="cb18c6a16a29710906d1f2dc690a4ac0e1912ad822aa891e498f679562fb381c427"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">contributes to</rdfs:label>
+    <rdfs:range rdf:nodeID="cb13f91aa0f74ead7dad6ad439455e7dc2a94d9979bf19b8861b2de9a8f47d4340d"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0014103"/>
+    <iconbase:ICON_0000001>Conservation Standards 4.0: results chain</iconbase:ICON_0000001>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014103">
+    <obo:IAO_0000115 xml:lang="en">The reverse of contributes to.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:nodeID="cb16c074d366fd5912162b57a3a097c6b76a3397832cd70000d595e0e9d2ef24456"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">is advanced by</rdfs:label>
+    <rdfs:range rdf:nodeID="cb15b1ebb23ad8e8a1b8f889d13a5e3dd7ffce46c73a7b6efb0f8a13a614b6db946"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0014102"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014104">
+    <obo:IAO_0000115 xml:lang="en">A project, program or place delivers the outcome, expected or measured (#959). The explorer shows a record's outcomes in its panel rather than as links.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:nodeID="cb117c0523191fe7fc0c221531cc83eebdab7ef748c359cd4b3b3f3b8b5e65bf01b"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">has outcome</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0014002"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0014105"/>
+    <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+    <iconbase:ICON_0000001>Conservation Standards 4.0: result</iconbase:ICON_0000001>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014105">
+    <obo:IAO_0000115 xml:lang="en">The reverse of has outcome.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0014002"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">is outcome of</rdfs:label>
+    <rdfs:range rdf:nodeID="cb1bad69c6ddab6ef7ed80071650ddb59cf7987926444a3bc63c1af3e29d3be59c4"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0014104"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014106">
+    <obo:IAO_0000115 xml:lang="en">An objective, action, plan, program or guideline or mandate sets the target (#959). The explorer shows a record's targets, with progress toward them, in its panel rather than as links.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:nodeID="cb16ac15bb3a6672524bb3960bcc26729f35358c1840863a512f98183d4dd426fae"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">has target</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0014001"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0014107"/>
+    <iconbase:ICON_0000001>Conservation Standards 4.0: objective</iconbase:ICON_0000001>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014107">
+    <obo:IAO_0000115 xml:lang="en">The reverse of has target.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0014001"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">is target of</rdfs:label>
+    <rdfs:range rdf:nodeID="cb1948846dd14870ff83b2ac3b0c606a15e8c836685dda4a356ae6fc295cc3a3f25"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0014106"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014200">
+    <obo:IAO_0000115 xml:lang="en">The target's amount in its indicator's unit, or the low end when the target is a range.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0014001"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">target low value</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014201">
+    <obo:IAO_0000115 xml:lang="en">The high end of a target given as a range.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0014001"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">target high value</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014202">
+    <obo:IAO_0000115 xml:lang="en">The amount of the indicator before the target was set. Progress counts up from it: the baseline plus the outcomes achieved since.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0014001"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">baseline value</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014203">
+    <obo:IAO_0000115 xml:lang="en">The year of the baseline value.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0014001"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">baseline year</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014204">
+    <obo:IAO_0000115 xml:lang="en">The year by which the target is to be met.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0014001"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">target year</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014205">
+    <obo:IAO_0000115 xml:lang="en">The outcome's amount in its indicator's unit.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0014002"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">outcome value</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014206">
+    <obo:IAO_0000115 xml:lang="en">The year the outcome was measured, or is expected to be delivered.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0014002"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">outcome year</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014207">
+    <obo:IAO_0000115 xml:lang="en">Expected (an expected outcome, as a grant award or proposal states it) or measured (a measured outcome, as a report or inventory records it).</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0014002"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">outcome status</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014208">
+    <obo:IAO_0000115 xml:lang="en">The whole a target's percentages are of, in its indicator's unit, such as California's land area for a goal of conserving 30 percent of its lands. A target with a total is shown in both amounts and percentages.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0014001"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">target total</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/outcomes.owl">
+    <dcterms:creator>Internet of Conservation (ICON)</dcterms:creator>
+    <dcterms:description xml:lang="en">What conservation work is measured by: indicators with their units, the targets that objectives, plans, programs and guidelines or mandates set on them, and the outcomes projects and places deliver, linked by the results chain (contributes to) so progress toward a target can be added up.</dcterms:description>
+    <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dcterms:references rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    <dcterms:references rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    <dcterms:title xml:lang="en">ICON Indicators, targets and outcomes ontology</dcterms:title>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:comment xml:lang="en">Existing ontologies used. Built on: Information Artifact Ontology. Mapped to: Ontology for Biomedical Investigations.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:seeAlso rdf:resource="https://w3id.org/icon/mandates.owl"/>
+    <rdfs:seeAlso rdf:resource="https://w3id.org/icon/plans.owl"/>
+    <rdfs:seeAlso rdf:resource="https://w3id.org/icon/programs.owl"/>
+    <rdfs:seeAlso rdf:resource="https://w3id.org/icon/projects.owl"/>
+    <owl:versionIRI rdf:resource="https://w3id.org/icon/releases/2026-11-21/outcomes.owl"/>
+    <owl:versionInfo>2026-11-21</owl:versionInfo>
+  </rdf:Description>
+</rdf:RDF>

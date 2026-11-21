@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:iconbase="https://w3id.org/icon/"
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="cb126cfa61123c1f35b2c355d036a66e4911cb066eadde562da0f4da2d2ca7c0149">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0000104"/>
+    <rdf:rest rdf:nodeID="cb1de48e15823de26da2c09927b59677b2c5737db7c7c4178e543ec4c8b080d8c39"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb13771886438a4601ef7e0fee71a2df7a9beda41375ac47b7ee903bcef71d1d4b0">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005103"/>
+    <rdf:rest rdf:nodeID="cb22f485dea02c493d892848c485ee23470b945553b6d6c36285f862d3f60a6d66a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb1405ab92174a6f9c228e02cb78d3974887e892d22337eb6ac3ea0c2059abb9b21">
+    <rdf:first rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb175f6cc696cce9b89b4a302f67ab924469ec44e414d31030ef4b6be513d9c509b">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0010104"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb184519ef9781e0aa6371d2947975f18a02c9a06cda0c36b589af5ee409317cf38">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005105"/>
+    <rdf:rest rdf:nodeID="cb21fca497e6ab60f9d6d3b8d2ecfb45491b7f870021fd48cdb2cc168f6b6b60547"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb18e67846e51c96fec966be3f638670df7a8672541876dd8855e234c989429de39">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0007111"/>
+    <rdf:rest rdf:nodeID="cb175f6cc696cce9b89b4a302f67ab924469ec44e414d31030ef4b6be513d9c509b"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb1bf67a4ed04bbcc9bc540f59f451d779a094caba5867cc70012b3519bcd7dcdd5">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0010100"/>
+    <rdf:rest rdf:nodeID="cb1405ab92174a6f9c228e02cb78d3974887e892d22337eb6ac3ea0c2059abb9b21"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb1de48e15823de26da2c09927b59677b2c5737db7c7c4178e543ec4c8b080d8c39">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0010104"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb21fca497e6ab60f9d6d3b8d2ecfb45491b7f870021fd48cdb2cc168f6b6b60547">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0010104"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb22f485dea02c493d892848c485ee23470b945553b6d6c36285f862d3f60a6d66a">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0010104"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000001">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">entity</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000002">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">continuant</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000004">
+    <obo:IAO_0000115 xml:lang="en">b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">independent continuant</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000024">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">fiat object part</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000031">
+    <obo:IAO_0000115 xml:lang="en">b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">generically dependent continuant</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">material entity</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ENVO_00000004">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">administrative region</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01003020"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ENVO_00000191">
+    <obo:IAO_0000115 xml:lang="en">A part of an astronomical body which is primarily composed of solid material.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">solid astronomical body part</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001784"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ENVO_00000291">
+    <obo:IAO_0000115 xml:lang="en">An extent or area of land where surface water from rain and melting snow or ice converges to a single point at lower elevation, usually the exit of the basin, where the waters join another waterbody.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">drainage basin</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000309"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001884"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ENVO_00000309">
+    <obo:IAO_0000115 xml:lang="en">A landform sunken or depressed below the surrounding area.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">depressed landform</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001886"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ENVO_01000254">
+    <obo:IAO_0000115 xml:lang="en">A system which has the disposition to environ one or more material entities.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">environmental system</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002577"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ENVO_01000276">
+    <obo:IAO_0000115 xml:lang="en">A large unit of land or water containing a geographically distinct assemblage of species, natural communities, and environmental conditions.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">ecoregion</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000813"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001110"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ENVO_01000813">
+    <obo:IAO_0000115 xml:lang="en">A material part of an astronomical body.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">astronomical body part</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ENVO_01001110">
+    <obo:IAO_0000115 xml:lang="en">An environmental system which includes both living and non-living components.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">ecosystem</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000254"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ENVO_01001784">
+    <obo:IAO_0000115 xml:lang="en">A part of an astronomical body which is composed of a continuous medium bearing liquid, gaseous, and solid material in variable quantities.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">compound astronomical body part</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000813"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ENVO_01001884">
+    <obo:IAO_0000115 xml:lang="en">A landform which occurs on the surface of an astronomical body.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">surface landform</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001886"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ENVO_01001886">
+    <obo:IAO_0000115 xml:lang="en">A solid astronomical body part which has been formed from and is composed primarily of the matter of that astronomical body.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">landform</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000191"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/ENVO_01003020">
+    <obo:IAO_0000115 xml:lang="en">A part of an environmental system whose boundaries are determined by fiat.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">fiat part of an astronomical object</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000024"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
+    <obo:IAO_0000115 xml:lang="en">A generically dependent continuant that is about some thing.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">information content entity</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:label>definition</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0001025">
+    <obo:IAO_0000115 xml:lang="en">a relation between two independent continuants, the target and the location, in which the target is entirely within the location</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <rdfs:label xml:lang="en">located in</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002577">
+    <obo:IAO_0000115 xml:lang="en">A material entity consisting of multiple components that are causally integrated.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">system</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/description">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/license">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/references">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/title">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:label>database_cross_reference</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:label>has_exact_synonym</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#broadMatch">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#narrowMatch">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000001">
+    <obo:IAO_0000115 xml:lang="en">The matching field in a metadata standard that is not published as RDF, written as the standard's name, a colon and the field's path, such as "EML 2.2: dataset/title".</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:label xml:lang="en">crosswalk</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000100">
+    <obo:IAO_0000115 xml:lang="en">A link between two records that work together or affect one another. Every more specific involvement link (leads, funds, manages, uses, is partner of and others) implies it.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:label xml:lang="en">is involved with</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000104">
+    <obo:IAO_0000115 xml:lang="en">The record relies on this place or data in its work: the reverse of used by.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:label xml:lang="en">uses</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ICON_0000100"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005103">
+    <obo:IAO_0000115 xml:lang="en">The reverse of owned by.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:label xml:lang="en">owns</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ICON_0000100"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005105">
+    <obo:IAO_0000115 xml:lang="en">The reverse of managed by.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:label xml:lang="en">manages</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ICON_0000100"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0007111">
+    <obo:IAO_0000115 xml:lang="en">A place where the action is to be carried out.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/plans.owl"/>
+    <rdfs:label xml:lang="en">at site</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0010000">
+    <obo:IAO_0000115 xml:lang="en">One of California's 58 counties, as an administrative region rather than as its government.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/places.owl"/>
+    <rdfs:label xml:lang="en">county</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000004"/>
+    <skos:closeMatch rdf:resource="https://schema.org/AdministrativeArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0010001">
+    <obo:IAO_0000115 xml:lang="en">A drainage basin at the subbasin level (eight-digit hydrologic unit code) of the USGS Watershed Boundary Dataset.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/places.owl"/>
+    <rdfs:label xml:lang="en">HUC8 subbasin</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000291"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0010002">
+    <obo:IAO_0000115 xml:lang="en">A drainage basin at the watershed level (ten-digit hydrologic unit code) of the USGS Watershed Boundary Dataset. Each lies within one HUC8 subbasin.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/places.owl"/>
+    <rdfs:label xml:lang="en">HUC10 watershed</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000291"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0010003">
+    <obo:IAO_0000115 xml:lang="en">An extent a record can claim in place of a list of areas.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/places.owl"/>
+    <rdfs:label xml:lang="en">geographic scope</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0010004">
+    <obo:IAO_0000115 xml:lang="en">The whole of California. A record that operates, applies or lies statewide is linked to this value rather than to every county, ecoregion, subbasin and watershed (#281).</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0010003"/>
+    <rdfs:comment xml:lang="en">The explorer's statewide rule derives the record's links to every county and ecoregion when a question needs them. OWL cannot state it, since it turns one link into many by the category of the target.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/places.owl"/>
+    <rdfs:label xml:lang="en">statewide</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0010005">
+    <obo:IAO_0000115 xml:lang="en">An area whose voters elect an official to a legislature or a county board: a California State Assembly, State Senate, congressional or county supervisorial district (#1432).</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">A district is linked to the counties, ecoregion sections, subbasins, watersheds and other districts it overlaps, and to the places it holds part of, by intersects.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/places.owl"/>
+    <rdfs:label xml:lang="en">electoral district</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000004"/>
+    <skos:closeMatch rdf:resource="https://schema.org/AdministrativeArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0010006">
+    <obo:IAO_0000115 xml:lang="en">One of the 80 districts that each elect a member of the California State Assembly, as the Citizens Redistricting Commission drew them in 2021.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/places.owl"/>
+    <rdfs:label xml:lang="en">State Assembly district</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0010005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0010007">
+    <obo:IAO_0000115 xml:lang="en">One of the 40 districts that each elect a California State Senator, as the Citizens Redistricting Commission drew them in 2021.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/places.owl"/>
+    <rdfs:label xml:lang="en">State Senate district</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0010005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0010008">
+    <obo:IAO_0000115 xml:lang="en">One of California's 52 districts that each elect a member of the U.S. House of Representatives, as the map in force draws them: the 2021 Citizens Redistricting Commission map until January 3, 2027, then the Proposition 50 (AB 604) map.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/places.owl"/>
+    <rdfs:label xml:lang="en">congressional district</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0010005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0010009">
+    <obo:IAO_0000115 xml:lang="en">A district of a California county that elects one member of the county's board of supervisors, as the county's own current map draws it.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/places.owl"/>
+    <rdfs:label xml:lang="en">supervisorial district</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0010005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0010100">
+    <obo:IAO_0000115 xml:lang="en">The record works in, covers or is about the area. A county cell of All in a workbook links the record to statewide instead.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">The chains are two of the explorer's rules. Place roll-up: working on a place located in an area means operating in that area. Place containment: operating in an area means operating in every area that contains it.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/places.owl"/>
+    <rdfs:label xml:lang="en">operates in</rdfs:label>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0010101"/>
+    <owl:propertyChainAxiom rdf:nodeID="cb126cfa61123c1f35b2c355d036a66e4911cb066eadde562da0f4da2d2ca7c0149"/>
+    <owl:propertyChainAxiom rdf:nodeID="cb13771886438a4601ef7e0fee71a2df7a9beda41375ac47b7ee903bcef71d1d4b0"/>
+    <owl:propertyChainAxiom rdf:nodeID="cb184519ef9781e0aa6371d2947975f18a02c9a06cda0c36b589af5ee409317cf38"/>
+    <owl:propertyChainAxiom rdf:nodeID="cb18e67846e51c96fec966be3f638670df7a8672541876dd8855e234c989429de39"/>
+    <owl:propertyChainAxiom rdf:nodeID="cb1bf67a4ed04bbcc9bc540f59f451d779a094caba5867cc70012b3519bcd7dcdd5"/>
+    <skos:closeMatch rdf:resource="http://purl.org/dc/terms/spatial"/>
+    <skos:closeMatch rdf:resource="https://schema.org/areaServed"/>
+    <iconbase:ICON_0000001>DataCite 4.5: geoLocation/geoLocationPlace</iconbase:ICON_0000001>
+    <iconbase:ICON_0000001>EML 2.2: coverage/geographicCoverage</iconbase:ICON_0000001>
+    <iconbase:ICON_0000001>ISO 19115-1: EX_Extent/geographicElement</iconbase:ICON_0000001>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0010101">
+    <obo:IAO_0000115 xml:lang="en">The reverse of operates in.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/places.owl"/>
+    <rdfs:label xml:lang="en">is place of work of</rdfs:label>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0010100"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0010102">
+    <obo:IAO_0000115 xml:lang="en">A guideline, mandate or plan has force or scope in the area.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/places.owl"/>
+    <rdfs:label xml:lang="en">applies in</rdfs:label>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0010103"/>
+    <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/GEO_000000336"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0010103">
+    <obo:IAO_0000115 xml:lang="en">The reverse of applies in.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/places.owl"/>
+    <rdfs:label xml:lang="en">is jurisdiction of</rdfs:label>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0010102"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0010104">
+    <obo:IAO_0000115 xml:lang="en">A place, objective or action lies in the area. A kind of operates in, and a kind of the Relation Ontology's located in.</obo:IAO_0000115>
+    <oboInOwl:hasExactSynonym xml:lang="en">located in</oboInOwl:hasExactSynonym>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/places.owl"/>
+    <rdfs:label xml:lang="en">located in area</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ICON_0010100"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0010105"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0010105">
+    <obo:IAO_0000115 xml:lang="en">The reverse of located in area.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/places.owl"/>
+    <rdfs:label xml:lang="en">is location of</rdfs:label>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0010104"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0010106">
+    <obo:IAO_0000115 xml:lang="en">The record's area takes in the area. Listed with the place links since the explorer's phrase table began (#35); no link uses it at present.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/places.owl"/>
+    <rdfs:label xml:lang="en">covers</rdfs:label>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0010107"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0010107">
+    <obo:IAO_0000115 xml:lang="en">The reverse of covers.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/places.owl"/>
+    <rdfs:label xml:lang="en">is covered by</rdfs:label>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0010106"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0010108">
+    <obo:IAO_0000115 xml:lang="en">The record works in, covers or lies in the ecoregion section.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/places.owl"/>
+    <rdfs:label xml:lang="en">in ecoregion</rdfs:label>
+    <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000276"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0010109"/>
+    <skos:closeMatch rdf:resource="http://purl.org/dc/terms/spatial"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0010109">
+    <obo:IAO_0000115 xml:lang="en">The reverse of in ecoregion.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000276"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/places.owl"/>
+    <rdfs:label xml:lang="en">is ecoregion of</rdfs:label>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0010108"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0010110">
+    <obo:IAO_0000115 xml:lang="en">The record works in, covers or lies in the HUC8 subbasin.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/places.owl"/>
+    <rdfs:label xml:lang="en">in subbasin</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0010001"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0010111"/>
+    <skos:closeMatch rdf:resource="http://purl.org/dc/terms/spatial"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0010111">
+    <obo:IAO_0000115 xml:lang="en">The reverse of in subbasin.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0010001"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/places.owl"/>
+    <rdfs:label xml:lang="en">is subbasin of</rdfs:label>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0010110"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0010112">
+    <obo:IAO_0000115 xml:lang="en">The record works in, covers or lies in the HUC10 watershed.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/places.owl"/>
+    <rdfs:label xml:lang="en">in watershed</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0010002"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0010113"/>
+    <skos:closeMatch rdf:resource="http://purl.org/dc/terms/spatial"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0010113">
+    <obo:IAO_0000115 xml:lang="en">The reverse of in watershed.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0010002"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/places.owl"/>
+    <rdfs:label xml:lang="en">is watershed of</rdfs:label>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0010112"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/places.owl">
+    <dcterms:creator>Internet of Conservation (ICON)</dcterms:creator>
+    <dcterms:description xml:lang="en">The areas records are placed in: California counties, USDA ecoregion sections, the HUC8 subbasins and HUC10 watersheds of the USGS Watershed Boundary Dataset, and the State Assembly, State Senate, congressional, and county supervisorial districts that elected officials represent, with statewide scope, and the links that say a record operates, applies or lies in one of them.</dcterms:description>
+    <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dcterms:references rdf:resource="http://purl.obolibrary.org/obo/envo.owl"/>
+    <dcterms:references rdf:resource="http://purl.obolibrary.org/obo/geo.owl"/>
+    <dcterms:references rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    <dcterms:references rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
+    <dcterms:references rdf:resource="http://purl.org/dc/terms/"/>
+    <dcterms:references rdf:resource="https://schema.org/"/>
+    <dcterms:title xml:lang="en">ICON Places ontology</dcterms:title>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:comment xml:lang="en">Existing ontologies used. Reused: Environment Ontology. Built on: Environment Ontology, Information Artifact Ontology, Relation Ontology. Mapped to: Dublin Core terms, Geographical Entity Ontology, schema.org.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:seeAlso rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:seeAlso rdf:resource="https://w3id.org/icon/plans.owl"/>
+    <owl:versionIRI rdf:resource="https://w3id.org/icon/releases/2026-11-21/places.owl"/>
+    <owl:versionInfo>2026-11-21</owl:versionInfo>
+  </rdf:Description>
+</rdf:RDF>

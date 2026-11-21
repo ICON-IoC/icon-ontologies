@@ -1,0 +1,12 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0007024 a owl:Class ;
+    rdfs:label "climate adaptation plan"@en ;
+    IAO:0000115 "A conservation plan that a public body adopts to prepare a region for climate change, that builds on an assessment of its vulnerability to hazards such as flooding, sea level rise, extreme heat and drought, and that sets adaptation strategies with implementing actions and recommended lead and partner agencies across sectors such as flood management, ecosystems, agriculture and water supply. Example: the Delta Stewardship Council's Delta Adapts Adaptation Plan (2025)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+

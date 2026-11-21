@@ -1,0 +1,287 @@
+# ICON People ontology, as a LinkML schema.
+# Built by `ioc-ontologies` from ontology/src/people.terms; edit that, not this file.
+id: https://w3id.org/icon/linkml/icon-people
+name: icon-people
+prefixes:
+  linkml: https://w3id.org/linkml/
+  ICON: https://w3id.org/icon/ICON_
+  dcat: http://www.w3.org/ns/dcat#
+  foaf: http://xmlns.com/foaf/0.1/
+  org: http://www.w3.org/ns/org#
+  schema: https://schema.org/
+title: ICON People ontology
+description: 'People named in the graph: whom they are affiliated with, whom they are the contact for,
+  and the leadership roles they hold. Names are public; contact details are kept out of the graph''s public
+  face and out of this ontology.'
+version: '2026-11-21'
+license: https://creativecommons.org/licenses/by/4.0/
+default_prefix: ICON
+default_range: string
+see_also:
+- https://w3id.org/icon/people.owl
+imports:
+- linkml:types
+- icon-external
+- icon-biodiversity
+- icon-core
+- icon-issues
+- icon-places
+classes:
+  LeadershipRole:
+    class_uri: ICON:0002001
+    title: leadership role
+    description: A role in human social processes that a person holds when an organization, project or
+      program puts them in charge of some part of it.
+    close_mappings:
+    - org:Role
+    is_a: RoleInHumanSocialProcesses
+  ChiefExecutiveRole:
+    class_uri: ICON:0002002
+    title: chief executive role
+    description: 'Heads the record''s staff or operations: executive director, CEO, staff president, general
+      manager, agency director or secretary, city manager, and the manager of a field office, region,
+      refuge or preserve that is itself the record.'
+    annotations:
+      runtime: roletype "Chief executive"
+    is_a: LeadershipRole
+  DeputyExecutiveRole:
+    class_uri: ICON:0002003
+    title: deputy executive role
+    description: 'Second in the staff line: deputy, associate or assistant director, chief operating officer,
+      undersecretary or deputy secretary, assistant or associate field manager.'
+    annotations:
+      runtime: roletype "Deputy executive"
+    is_a: LeadershipRole
+  BoardChairRole:
+    class_uri: ICON:0002004
+    title: board chair role
+    description: 'Chairs the governing board, council or commission: chair, chairman, board president,
+      tribal chair.'
+    annotations:
+      runtime: roletype "Board chair"
+    is_a: LeadershipRole
+  BoardOfficerRole:
+    class_uri: ICON:0002005
+    title: board officer role
+    description: 'An officer of the governing board other than its chair: vice chair, vice president of
+      the board, secretary, treasurer.'
+    annotations:
+      runtime: roletype "Board officer"
+    is_a: LeadershipRole
+  ProgramLeaderRole:
+    class_uri: ICON:0002006
+    title: program leader role
+    description: 'Leads a program, division or department within the record: program director, manager
+      or coordinator, branch chief, program area chair.'
+    annotations:
+      runtime: roletype "Program leader"
+    is_a: LeadershipRole
+  ProjectLeaderRole:
+    class_uri: ICON:0002007
+    title: project leader role
+    description: 'Leads a particular project: project manager, project coordinator, project lead.'
+    annotations:
+      runtime: roletype "Project leader"
+    is_a: LeadershipRole
+  ScienceLeaderRole:
+    class_uri: ICON:0002008
+    title: science leader role
+    description: 'Leads the record''s science: principal investigator, lead or chief scientist, science
+      director.'
+    annotations:
+      runtime: roletype "Science leader"
+    is_a: LeadershipRole
+  ElectedOfficialRole:
+    class_uri: ICON:0002009
+    title: elected official role
+    description: 'Holds an office the voters of a district or the state elect to: Assemblymember, State
+      Senator, U.S. Representative, U.S. Senator, county supervisor.'
+    annotations:
+      runtime: roletype "Elected official"
+    is_a: RoleInHumanSocialProcesses
+slots:
+  is_affiliated_with:
+    slot_uri: ICON:0002100
+    title: is affiliated with
+    description: A person works for, serves on the board of, or is otherwise attached to an organization.
+      The link may carry the person's title and its role type.
+    close_mappings:
+    - schema:affiliation
+    annotations:
+      runtime: phrase "is affiliated with"
+    is_a: is_involved_with
+    domain: HomoSapiens
+    domain_of:
+    - HomoSapiens
+    range: Organization
+    inverse: has_affiliate
+    multivalued: true
+  has_affiliate:
+    slot_uri: ICON:0002101
+    title: has affiliate
+    description: The reverse of is affiliated with.
+    annotations:
+      runtime: phrase "has affiliate"
+    is_a: is_involved_with
+    domain: Organization
+    domain_of:
+    - Organization
+    range: HomoSapiens
+    inverse: is_affiliated_with
+    multivalued: true
+  has_contact:
+    slot_uri: ICON:0002102
+    title: has contact
+    description: The person to ask about an organization, project, place or data resource. The person's
+      contact details are private.
+    close_mappings:
+    - dcat:contactPoint
+    annotations:
+      crosswalk: 'DataCite 4.5: contributorType ContactPerson; EML 2.2: dataset/contact; ISO 19115-1:
+        CI_RoleCode pointOfContact'
+      runtime: phrase "has contact"
+    is_a: is_involved_with
+    range: HomoSapiens
+    inverse: is_contact_for
+    multivalued: true
+  is_contact_for:
+    slot_uri: ICON:0002103
+    title: is contact for
+    description: The reverse of has contact.
+    annotations:
+      runtime: phrase "is contact for"
+    is_a: is_involved_with
+    domain: HomoSapiens
+    domain_of:
+    - HomoSapiens
+    range: uriorcurie
+    inverse: has_contact
+    multivalued: true
+  has_expertise_in:
+    slot_uri: ICON:0002104
+    title: has expertise in
+    description: 'A person knows an issue, a place, a taxon or a habitat type through their work: the
+      projects, programs and plans they lead and the papers and reports they wrote address it, or the
+      source records say so. Expertise is never passed down from the organizations a person belongs to.'
+    comments:
+    - 'The explorer entails it from the issues, counties, ecoregions, taxa and habitat types a person''s
+      led or authored record states itself. A statewide record gives no place expertise, and a record
+      that names more than 10 of one kind gives none of that kind (#1130). Expertise in a component issue
+      is expertise in its integrated issues too, and expertise in a vegetation or CMECS type is expertise
+      in its broader types (#1409, #1410).'
+    close_mappings:
+    - schema:knowsAbout
+    annotations:
+      runtime: phrase "has expertise in"
+      holds_over_chain: has_expertise_in | has_broader_issue; has_expertise_in | has_broader_habitat_type
+    domain: HomoSapiens
+    domain_of:
+    - HomoSapiens
+    any_of:
+    - range: ConservationIssue
+    - range: County
+    - range: Ecoregion
+    - range: Taxon
+    - range: CWHRHabitatType
+    - range: VegetationType
+    - range: CoastalAndMarineHabitatType
+    range: uriorcurie
+    inverse: is_expertise_of
+    multivalued: true
+  is_expertise_of:
+    slot_uri: ICON:0002105
+    title: is expertise of
+    description: The reverse of has expertise in.
+    annotations:
+      runtime: phrase "is expertise of"
+    domain_of:
+    - ConservationIssue
+    - County
+    - Ecoregion
+    - Taxon
+    - CWHRHabitatType
+    - VegetationType
+    - CoastalAndMarineHabitatType
+    range: HomoSapiens
+    inverse: has_expertise_in
+    multivalued: true
+  represents:
+    slot_uri: ICON:0002106
+    title: represents
+    description: 'An elected official holds the seat of the district: a member of the State Assembly or
+      State Senate, a member of Congress, or a county supervisor. A U.S. senator represents the whole
+      state (#1432).'
+    comments:
+    - The office and party are the link's role title, and the year the person took the seat is the link's
+      start.
+    annotations:
+      runtime: phrase "represents"
+    domain: HomoSapiens
+    domain_of:
+    - HomoSapiens
+    any_of:
+    - range: ElectoralDistrict
+    - range: GeographicScopeEnum
+    range: uriorcurie
+    inverse: is_represented_by
+    multivalued: true
+  is_represented_by:
+    slot_uri: ICON:0002107
+    title: is represented by
+    description: The reverse of represents.
+    annotations:
+      runtime: phrase "is represented by"
+    domain_of:
+    - ElectoralDistrict
+    - GeographicScope
+    range: HomoSapiens
+    inverse: represents
+    multivalued: true
+  role_title:
+    slot_uri: ICON:0002200
+    title: role title
+    description: 'A person''s title in the role a link records, as the organization or project writes
+      it: Executive Director, Principal Investigator.'
+    close_mappings:
+    - org:role
+    annotations:
+      runtime: field relation.role
+    range: string
+    multivalued: true
+  role_type:
+    slot_uri: ICON:0002201
+    title: role type
+    description: The uniform kind of a role a link records, one of the leadership roles below, so titles
+      that differ in wording can be compared.
+    annotations:
+      runtime: field relation.role_type
+    range: string
+    multivalued: true
+  linkedin_profile:
+    slot_uri: ICON:0002300
+    title: LinkedIn profile
+    description: 'The address of the person''s public LinkedIn profile: https://www.linkedin.com/in/name.'
+    close_mappings:
+    - foaf:account
+    annotations:
+      runtime: field person.linkedin
+    domain: HomoSapiens
+    domain_of:
+    - HomoSapiens
+    range: uri
+    multivalued: true
+  orcid_id:
+    slot_uri: ICON:0002301
+    title: ORCID iD
+    description: 'The person''s ORCID identifier, the persistent researcher id used by journals and funders:
+      0000-0002-1825-0097.'
+    close_mappings:
+    - schema:identifier
+    annotations:
+      crosswalk: 'DataCite 4.5: creator/nameIdentifier (nameIdentifierScheme ORCID)'
+      runtime: field person.orcid
+    domain: HomoSapiens
+    domain_of:
+    - HomoSapiens
+    range: string
+    multivalued: true

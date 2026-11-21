@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:iconbase="https://w3id.org/icon/"
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000001">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">entity</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000002">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">continuant</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000031">
+    <obo:IAO_0000115 xml:lang="en">b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">generically dependent continuant</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000010">
+    <obo:IAO_0000115 xml:lang="en">Software is a plan specification composed of a series of instructions that can be 
+interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">software</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
+    <obo:IAO_0000115 xml:lang="en">A generically dependent continuant that is about some thing.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">information content entity</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000033">
+    <obo:IAO_0000115 xml:lang="en">An information content entity whose concretizations indicate to their bearer how to realize them in a process.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">directive information entity</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000104">
+    <obo:IAO_0000115 xml:lang="en">A directive information entity with action specifications and objective specifications as parts, and that may be concretized as a realizable entity that, if realized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">plan specification</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:label>definition</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000594">
+    <obo:IAO_0000115 xml:lang="en">A software application is software that can be directly executed by some processing unit.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">software application</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/description">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:label xml:lang="en">Description</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/license">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/references">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/title">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:label>database_cross_reference</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:label>has_exact_synonym</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#broadMatch">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#narrowMatch">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000001">
+    <obo:IAO_0000115 xml:lang="en">The matching field in a metadata standard that is not published as RDF, written as the standard's name, a colon and the field's path, such as "EML 2.2: dataset/title".</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:label xml:lang="en">crosswalk</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000002">
+    <obo:IAO_0000115 xml:lang="en">A property the records of this class are expected to carry, such as a title or a year. Records the attributes a class uses without adding domain axioms to terms borrowed from other vocabularies.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:label xml:lang="en">expected attribute</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000013">
+    <obo:IAO_0000115 xml:lang="en">An information content entity that records or publishes information: a data resource, a paper or a report.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:label xml:lang="en">information resource</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008000">
+    <obo:IAO_0000115 xml:lang="en">Data at any of three levels: a dataset, a database or a data repository. Replaced the PPOD Dataset class.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdfs:label xml:lang="en">data resource</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0000013"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008080">
+    <obo:IAO_0000115 xml:lang="en">The kind of data, or the form it comes in. One list holds both, so a Data record and a tool's input or output are described in the same terms and a dataset can be matched to the tools that take it: Land cover or vegetation map and Raster describe both the Cropland Data Layer and an input InVEST takes.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdfs:label xml:lang="en">data type</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0013000">
+    <obo:IAO_0000115 xml:lang="en">Software people use to plan, assess or track conservation work: a decision-support tool, a map viewer, a dashboard, a calculator or model, a software package or an identification key. A site whose main job is holding and serving data is a data repository, not a tool; a tool that works with such data links to it. Read from the master PPOD workbook's Tools sheet.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/tools.owl"/>
+    <rdfs:label xml:lang="en">tool</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0000013"/>
+    <skos:closeMatch rdf:resource="https://schema.org/SoftwareApplication"/>
+    <iconbase:ICON_0000002 rdf:resource="http://purl.org/dc/terms/description"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0013001">
+    <obo:IAO_0000115 xml:lang="en">A tool that helps choose where or how to act: it ranks or prioritizes sites, compares scenarios, or screens a proposal against conservation values. Example: Ecosystem Management Decision Support System.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/tools.owl"/>
+    <rdfs:label xml:lang="en">decision-support tool</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0013000"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0013002">
+    <obo:IAO_0000115 xml:lang="en">A web application for browsing and querying map layers. Example: Wetlands Mapper.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/tools.owl"/>
+    <rdfs:label xml:lang="en">map viewer</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000594"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0013000"/>
+    <skos:closeMatch rdf:resource="https://schema.org/WebApplication"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0013003">
+    <obo:IAO_0000115 xml:lang="en">A web page that tracks a set of indicators in charts and maps, often over time. Example: California Carbon Dashboard.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/tools.owl"/>
+    <rdfs:label xml:lang="en">dashboard</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000594"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0013000"/>
+    <skos:closeMatch rdf:resource="https://schema.org/WebApplication"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0013004">
+    <obo:IAO_0000115 xml:lang="en">A tool that computes an estimate from its user's inputs or runs a model, such as the carbon a riparian planting stores or the habitat a site provides. Example: Carbon in Riparian Ecosystems Estimator for California.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/tools.owl"/>
+    <rdfs:label xml:lang="en">calculator or model</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0013000"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0013006">
+    <obo:IAO_0000115 xml:lang="en">Software its users install and run themselves, such as an R package, a desktop program or a trained model, rather than use on the web. Example: InVEST.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/tools.owl"/>
+    <rdfs:label xml:lang="en">software package</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0013000"/>
+    <skos:closeMatch rdf:resource="https://schema.org/SoftwareApplication"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0013007">
+    <obo:IAO_0000115 xml:lang="en">A guide that leads its user, step by step or by comparing pictures, to the name of a plant or animal they have found. Example: Berkeley BioKeys.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/tools.owl"/>
+    <rdfs:label xml:lang="en">identification key</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0013000"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0013010">
+    <obo:IAO_0000115 xml:lang="en">What a tool does for its user, such as prioritizing places or estimating carbon. A tool can have several.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/tools.owl"/>
+    <rdfs:label xml:lang="en">tool function</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    <skos:closeMatch rdf:resource="https://schema.org/featureList"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0013011">
+    <obo:IAO_0000115 xml:lang="en">Ranks or scores places, sites or projects so the best ones can be chosen first.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0013010"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/tools.owl"/>
+    <rdfs:label xml:lang="en">prioritizing function</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0013012">
+    <obo:IAO_0000115 xml:lang="en">Checks a proposed project against rules, sensitive resources or eligibility criteria before it goes ahead.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0013010"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/tools.owl"/>
+    <rdfs:label xml:lang="en">screening function</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0013013">
+    <obo:IAO_0000115 xml:lang="en">Calculates carbon stored or greenhouse gases emitted or avoided.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0013010"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/tools.owl"/>
+    <rdfs:label xml:lang="en">carbon estimating function</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0013014">
+    <obo:IAO_0000115 xml:lang="en">Shows how conditions may change under future climate, sea level rise or land use.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0013010"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/tools.owl"/>
+    <rdfs:label xml:lang="en">projecting function</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0013015">
+    <obo:IAO_0000115 xml:lang="en">Measures how much habitat there is and how good it is.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0013010"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/tools.owl"/>
+    <rdfs:label xml:lang="en">habitat quantifying function</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0013016">
+    <obo:IAO_0000115 xml:lang="en">Shows where resources, conditions or hazards are, for browsing and querying.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0013010"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/tools.owl"/>
+    <rdfs:label xml:lang="en">mapping function</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0013017">
+    <obo:IAO_0000115 xml:lang="en">Judges how exposed and sensitive people, places or species are to a threat.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0013010"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/tools.owl"/>
+    <rdfs:label xml:lang="en">vulnerability assessing function</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0013018">
+    <obo:IAO_0000115 xml:lang="en">Runs alternative management or development choices side by side to weigh their effects.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0013010"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/tools.owl"/>
+    <rdfs:label xml:lang="en">scenario comparing function</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0013019">
+    <obo:IAO_0000115 xml:lang="en">Suggests what to do or plant, such as fertilizer rates, seedlots or meadow species.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0013010"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/tools.owl"/>
+    <rdfs:label xml:lang="en">recommending function</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0013020">
+    <obo:IAO_0000115 xml:lang="en">Records projects, prices or indicators over time and reports on them.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0013010"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/tools.owl"/>
+    <rdfs:label xml:lang="en">tracking function</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0013021">
+    <obo:IAO_0000115 xml:lang="en">Finds and counts animals or plants, as in images.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0013010"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/tools.owl"/>
+    <rdfs:label xml:lang="en">species detecting function</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0013022">
+    <obo:IAO_0000115 xml:lang="en">Helps applicants build a proposal or meet the requirements of a grant program.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0013010"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/tools.owl"/>
+    <rdfs:label xml:lang="en">funding application function</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0013100">
+    <obo:IAO_0000115 xml:lang="en">Links a tool to a kind of tool it is. A tool can be of several kinds, as a map viewer that also prioritizes sites.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0013000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/tools.owl"/>
+    <rdfs:label xml:lang="en">has tool type</rdfs:label>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0013101"/>
+    <skos:closeMatch rdf:resource="https://schema.org/applicationCategory"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0013101">
+    <obo:IAO_0000115 xml:lang="en">The reverse of has tool type.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/tools.owl"/>
+    <rdfs:label xml:lang="en">is tool type of</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0013000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0013100"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0013102">
+    <obo:IAO_0000115 xml:lang="en">The tool creates or serves this data: the layers a map viewer publishes, the estimates a calculator outputs. The workbook's outDataset column.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0013000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/tools.owl"/>
+    <rdfs:label xml:lang="en">produces</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0008000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0013103"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0013103">
+    <obo:IAO_0000115 xml:lang="en">The reverse of produces.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0008000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/tools.owl"/>
+    <rdfs:label xml:lang="en">is produced by</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0013000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0013102"/>
+    <skos:closeMatch rdf:resource="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0013104">
+    <obo:IAO_0000115 xml:lang="en">Links a tool to something it does for its user.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0013000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/tools.owl"/>
+    <rdfs:label xml:lang="en">has tool function</rdfs:label>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0013105"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0013105">
+    <obo:IAO_0000115 xml:lang="en">The reverse of has tool function.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/tools.owl"/>
+    <rdfs:label xml:lang="en">is tool function of</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0013000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0013104"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0013106">
+    <obo:IAO_0000115 xml:lang="en">A kind of data, or a format, the tool takes in, from the Data type list that also describes Data records, so data can be matched to the tools that take it. A specific Data record the tool uses is a uses data from link instead.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0013000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/tools.owl"/>
+    <rdfs:label xml:lang="en">takes input</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0008080"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0013107"/>
+    <iconbase:ICON_0000001>EDAM: has_input</iconbase:ICON_0000001>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0013107">
+    <obo:IAO_0000115 xml:lang="en">The reverse of takes input.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0008080"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/tools.owl"/>
+    <rdfs:label xml:lang="en">is input to</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0013000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0013106"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0013108">
+    <obo:IAO_0000115 xml:lang="en">A kind of data, or a format, the tool gives back, from the Data type list. A specific Data record the tool creates is a produces link instead.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0013000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/tools.owl"/>
+    <rdfs:label xml:lang="en">gives output</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0008080"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0013109"/>
+    <iconbase:ICON_0000001>EDAM: has_output</iconbase:ICON_0000001>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0013109">
+    <obo:IAO_0000115 xml:lang="en">The reverse of gives output.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0008080"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/tools.owl"/>
+    <rdfs:label xml:lang="en">is output from</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0013000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0013108"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/tools.owl">
+    <dcterms:creator>Internet of Conservation (ICON)</dcterms:creator>
+    <dcterms:description xml:lang="en">Software people use to plan, assess and track conservation work: decision-support tools, map viewers, dashboards, calculators and models, and software packages. Covers who builds and uses them, the issues they address, and the data they take in and produce.</dcterms:description>
+    <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dcterms:references rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    <dcterms:references rdf:resource="http://purl.org/dc/terms/"/>
+    <dcterms:references rdf:resource="http://www.w3.org/ns/prov-o"/>
+    <dcterms:references rdf:resource="https://schema.org/"/>
+    <dcterms:title xml:lang="en">ICON Tools ontology</dcterms:title>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:comment xml:lang="en">Existing ontologies used. Built on: Dublin Core terms, Information Artifact Ontology. Mapped to: PROV-O (W3C provenance), schema.org.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:seeAlso rdf:resource="https://w3id.org/icon/data.owl"/>
+    <owl:versionIRI rdf:resource="https://w3id.org/icon/releases/2026-11-21/tools.owl"/>
+    <owl:versionInfo>2026-11-21</owl:versionInfo>
+  </rdf:Description>
+</rdf:RDF>

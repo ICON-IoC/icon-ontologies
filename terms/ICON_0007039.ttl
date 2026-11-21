@@ -1,0 +1,13 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0007039 a owl:Class ;
+    rdfs:label "rangeland management plan"@en ;
+    IAO:0000115 "A plan for livestock grazing on land a public agency owns, that sets stocking rates, residual dry matter targets, grazing seasons and the fencing and water developments that keep cattle out of streams and reservoirs, so that grazing reduces wildland fuel and serves water quality and native habitat, and that the agency carries out through its grazing leases. Example: the San Francisco Public Utilities Commission's Alameda Creek Watershed Rangeland Management Plan (2026), which updates the 1997 Grazing Resources Management Plan of its Alameda Watershed Management Plan."@en ;
+    rdfs:comment "Added for the SFPUC Alameda Creek Watershed Rangeland Management Plan (#1115)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+

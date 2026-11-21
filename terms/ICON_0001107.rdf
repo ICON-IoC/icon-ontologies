@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:iconbase="https://w3id.org/icon/"
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001107">
+    <obo:IAO_0000115 xml:lang="en">The organization responsible for making data or a publication available, when it is not the creator.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:label xml:lang="en">is published by</rdfs:label>
+    <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0001108"/>
+    <skos:closeMatch rdf:resource="http://purl.org/dc/terms/publisher"/>
+    <skos:closeMatch rdf:resource="https://schema.org/publisher"/>
+    <iconbase:ICON_0000001>DataCite 4.5: publisher</iconbase:ICON_0000001>
+    <iconbase:ICON_0000001>EML 2.2: dataset/publisher</iconbase:ICON_0000001>
+    <iconbase:ICON_0000001>ISO 19115-1: CI_RoleCode publisher</iconbase:ICON_0000001>
+  </rdf:Description>
+</rdf:RDF>

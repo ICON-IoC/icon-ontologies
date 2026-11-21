@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0007024">
+    <obo:IAO_0000115 xml:lang="en">A conservation plan that a public body adopts to prepare a region for climate change, that builds on an assessment of its vulnerability to hazards such as flooding, sea level rise, extreme heat and drought, and that sets adaptation strategies with implementing actions and recommended lead and partner agencies across sectors such as flood management, ecosystems, agriculture and water supply. Example: the Delta Stewardship Council's Delta Adapts Adaptation Plan (2025).</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/plans.owl"/>
+    <rdfs:label xml:lang="en">climate adaptation plan</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0007001"/>
+  </rdf:Description>
+</rdf:RDF>

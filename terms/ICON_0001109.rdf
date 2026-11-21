@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001109">
+    <obo:IAO_0000115 xml:lang="en">The county that holds the organization's headquarters, main office or seat. An organization is located in at most one county, and may operate in many (#949).</obo:IAO_0000115>
+    <oboInOwl:hasDbXref>Wikidata:P159</oboInOwl:hasDbXref>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">Every local government is located in one county. A city's is the county the city lies in, a county government's is its own county, and a special district's or regional agency's is the county of its main office. Located in county is a kind of located in area, so the organization also operates in the county.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:label xml:lang="en">located in county</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0010000"/>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ICON_0010104"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0001110"/>
+    <skos:closeMatch rdf:resource="http://www.w3.org/ns/org#hasPrimarySite"/>
+    <skos:closeMatch rdf:resource="https://schema.org/location"/>
+  </rdf:Description>
+</rdf:RDF>

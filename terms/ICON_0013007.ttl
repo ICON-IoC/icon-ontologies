@@ -1,0 +1,12 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0013007 a owl:Class ;
+    rdfs:label "identification key"@en ;
+    IAO:0000115 "A guide that leads its user, step by step or by comparing pictures, to the name of a plant or animal they have found. Example: Berkeley BioKeys."@en ;
+    rdfs:isDefinedBy iconbase:tools.owl ;
+    rdfs:subClassOf icon:0013000 .
+

@@ -1,0 +1,738 @@
+# Terms the ICON ontologies reuse, as a LinkML schema.
+# Built by `ioc-ontologies` from the reused terms in ontology/src; edit that, not this file.
+id: https://w3id.org/icon/linkml/icon-external
+name: icon-external
+prefixes:
+  linkml: https://w3id.org/linkml/
+  BFO: http://purl.obolibrary.org/obo/BFO_
+  COB: http://purl.obolibrary.org/obo/COB_
+  ENVO: http://purl.obolibrary.org/obo/ENVO_
+  GEO: http://purl.obolibrary.org/obo/GEO_
+  IAO: http://purl.obolibrary.org/obo/IAO_
+  ICON: https://w3id.org/icon/ICON_
+  NCBITaxon: http://purl.obolibrary.org/obo/NCBITaxon_
+  OBI: http://purl.obolibrary.org/obo/OBI_
+  OMRSE: http://purl.obolibrary.org/obo/OMRSE_
+  PCO: http://purl.obolibrary.org/obo/PCO_
+  RO: http://purl.obolibrary.org/obo/RO_
+  bibo: http://purl.org/ontology/bibo/
+  dcat: http://www.w3.org/ns/dcat#
+  dcterms: http://purl.org/dc/terms/
+  dwc: http://rs.tdwg.org/dwc/terms/
+  foaf: http://xmlns.com/foaf/0.1/
+  freq: http://publications.europa.eu/resource/authority/frequency/
+  org: http://www.w3.org/ns/org#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  schema: https://schema.org/
+  skos: http://www.w3.org/2004/02/skos/core#
+title: Terms the ICON ontologies reuse
+description: The classes, properties and values the ICON modules reuse from existing ontologies and vocabularies,
+  each under its own URI.
+version: '2026-11-21'
+license: https://creativecommons.org/licenses/by/4.0/
+default_prefix: ICON
+default_range: string
+imports:
+- linkml:types
+classes:
+  Entity:
+    class_uri: BFO:0000001
+    title: entity
+    comments:
+    - The explorer's top class Resource, which every record belongs to.
+    annotations:
+      runtime: close class Resource
+  IndependentContinuant:
+    class_uri: BFO:0000004
+    title: independent continuant
+    description: 'b is an independent continuant = Def. b is a continuant which is such that there is
+      no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])'
+  MaterialEntity:
+    class_uri: BFO:0000040
+    title: material entity
+  PlannedProcess:
+    class_uri: COB:0000082
+    title: planned process
+    description: A process that is initiated by an agent who intends to carry out a plan to achieve an
+      objective through one or more actions as described in a plan specification.
+  Device:
+    class_uri: COB:0001300
+    title: device
+    description: A processed material entity which is designed to be capable of a process.
+  AdministrativeRegion:
+    class_uri: ENVO:00000004
+    title: administrative region
+  Canal:
+    class_uri: ENVO:00000014
+    title: canal
+    annotations:
+      runtime: term InfrastructureType "Water - Canal"
+    description: Artificial watercourse with no flow or a controlled flow used for navigation, drainage
+      or irrigation.
+  Stream:
+    class_uri: ENVO:00000023
+    title: stream
+    comments:
+    - ENVO's river is a kind of stream.
+    annotations:
+      runtime: term InfrastructureType "Blue - River/Stream"
+    description: A watercourse which is linear and flows across the solid portion of a planetary surface.
+  Reservoir:
+    class_uri: ENVO:00000025
+    title: reservoir
+    annotations:
+      runtime: term InfrastructureType "Water - Reservoir"
+    description: An artificial body of water, often contained by a dam, constructed for the purpose of
+      water storage.
+  WetlandArea:
+    class_uri: ENVO:00000043
+    title: wetland area
+    annotations:
+      runtime: term InfrastructureType "Blue - Wetland"
+    description: An vegetated area which overlaps a wetland ecosystem.
+  Estuary:
+    class_uri: ENVO:00000045
+    title: estuary
+    annotations:
+      runtime: term InfrastructureType "Blue - Estuary"
+    description: A semi-enclosed coastal body of water with one or more rivers or streams flowing into
+      it, and with a free connection to the open sea.
+  HumanConstruction:
+    class_uri: ENVO:00000070
+    title: human construction
+    description: A construction that has been assembled by deliberate human effort.
+  Levee:
+    class_uri: ENVO:00000178
+    title: levee
+    annotations:
+      runtime: term InfrastructureType "Water - Levee"
+    description: An artificial slope or wall, usually earthen, which parallels the course of a river,
+      built for the purpose of containing the river.
+  Floodway:
+    class_uri: ENVO:00000256
+    title: floodway
+    annotations:
+      runtime: term InfrastructureType "Water - Floodway"
+    description: The stream channel and adjacent areas that carry flood flows in a flood plain.
+  DryLake:
+    class_uri: ENVO:00000277
+    title: dry lake
+    comments:
+    - 'The terminal basins that inland streams drain toward and fill only in wet years: Tulare Lake, Kern
+      Lake, Rosamond Lake, Badwater Basin. Added so every stream has a downstream water (#1282).'
+    annotations:
+      runtime: term InfrastructureType "Blue - Dry Lake/Playa"
+    description: A lake that has either permanently or temporally lost its water.
+  DrainageBasin:
+    class_uri: ENVO:00000291
+    title: drainage basin
+    description: An extent or area of land where surface water from rain and melting snow or ice converges
+      to a single point at lower elevation, usually the exit of the basin, where the waters join another
+      waterbody.
+  Weir:
+    class_uri: ENVO:00000535
+    title: weir
+    annotations:
+      runtime: term InfrastructureType "Water - Weir"
+    description: A low obstruction built across the path of s stream to raise its level.
+  MarineWaterBody:
+    class_uri: ENVO:00001999
+    title: marine water body
+    comments:
+    - The ocean and its bays.
+    annotations:
+      runtime: term InfrastructureType "Blue - Ocean"
+    description: A lentic water body which is composed primarily of marine water.
+  PowerPlant:
+    class_uri: ENVO:00002214
+    title: power plant
+    comments:
+    - The explorer's other electric power generation, and the parent of the more specific kinds of power
+      plant here.
+    annotations:
+      runtime: term InfrastructureType "Energy - Other Electric Power Generation"
+    description: A power plant is a building which contains one or more generators which convert mechanical
+      energy into electrical energy through the relative motion between a magnetic field and a conductor.
+      The energy source harnessed to turn the generator varies widely.
+  GeothermalPowerPlant:
+    class_uri: ENVO:00002215
+    title: geothermal power plant
+    annotations:
+      runtime: term InfrastructureType "Energy - Geothermal"
+    description: A geothermal power plant is a power plant which uses heat generated by the decay of radioactive
+      isotopes in the Earth's mantle and crust as well as primordial heat left over from the formation
+      of the Earth to drive its generators.
+  Ecoregion:
+    class_uri: ENVO:01000276
+    title: ecoregion
+    comments:
+    - Reused from ENVO. The values are the USDA Forest Service ECOMAP ecological sections in California
+      (#38).
+    annotations:
+      runtime: vocab Ecoregion
+    description: A large unit of land or water containing a geographically distinct assemblage of species,
+      natural communities, and environmental conditions.
+  LenticWaterBody:
+    class_uri: ENVO:01000617
+    title: lentic water body
+    comments:
+    - 'Lakes and ponds: still water.'
+    annotations:
+      runtime: term InfrastructureType "Blue - Lake/Pond"
+    description: A lentic water body is a water body in which the accumulated water, in its totality,
+      has very little to no directed flow.
+  Habitat:
+    class_uri: ENVO:01000739
+    title: habitat
+    description: An environmental system which can sustain and allow the growth of an ecological population.
+  EcologicalCorridor:
+    class_uri: ENVO:01000930
+    title: ecological corridor
+    annotations:
+      runtime: term InfrastructureType "Green - Wildlife Corridor"
+    description: An ecosystem which bridges two or more adjoining ecosystems and through which organisms
+      may move or propagate.
+  ProtectedArea:
+    class_uri: ENVO:01001567
+    title: protected area
+    description: An environmental zone which 1) contains ecosystems, constructed features, or other entities
+      deemed to be of natural, historical, cultural, or other significance and 2) has been afforded legal
+      protections restricting one or more forms of use by a competent authority.
+  Landform:
+    class_uri: ENVO:01001886
+    title: landform
+    description: A solid astronomical body part which has been formed from and is composed primarily of
+      the matter of that astronomical body.
+  NongovernmentalOrganization:
+    class_uri: GEO:000000393
+    title: nongovernmental organization
+    description: a geopolitical organization that is voluntary and private, whose members are individual
+      persons or organizations that come together to acheive a common purpose.
+  GovernmentalOrganization:
+    class_uri: GEO:000000400
+    title: governmental organization
+    description: 'An organization that governs the people living in a particular geographical region or
+      aggregate of geographical regions. The geographical region it governs can change over time (such
+      as the westward expansion of the United States and the addition of Hawaii). Note: this definition
+      was taken over from "geopolitical organization".'
+  ObjectiveSpecification:
+    class_uri: IAO:0000005
+    title: objective specification
+    description: A directive information entity that describes an intended process endpoint. When part
+      of a plan specification the concretization is realized in a planned process in which the bearer
+      tries to effect the world so that the process endpoint is achieved.
+  ActionSpecification:
+    class_uri: IAO:0000007
+    title: action specification
+    description: A directive information entity that describes an action the bearer will take.
+  Software:
+    class_uri: IAO:0000010
+    title: software
+    description: Software is a plan specification composed of a series of instructions that can be interpreted
+      by or directly executed by a processing unit.
+  JournalArticle:
+    class_uri: IAO:0000013
+    title: journal article
+    description: A report that is published in a journal.
+  InformationContentEntity:
+    class_uri: IAO:0000030
+    title: information content entity
+    description: A generically dependent continuant that is about some thing.
+  DirectiveInformationEntity:
+    class_uri: IAO:0000033
+    title: directive information entity
+    description: An information content entity whose concretizations indicate to their bearer how to realize
+      them in a process.
+  Report:
+    class_uri: IAO:0000088
+    title: report
+    description: A document assembled by an author for the purpose of providing information for the audience.
+      A report is the output of a documenting process and has the objective to be consumed by a specific
+      audience. Topic of the report is on something that has completed. A report is not a single figure.
+      Examples of reports are journal article, patent application, grant progress report, case report
+      (not patient record).
+  PlanSpecification:
+    class_uri: IAO:0000104
+    title: plan specification
+    description: A directive information entity with action specifications and objective specifications
+      as parts, and that may be concretized as a realizable entity that, if realized, is realized in a
+      process in which the bearer tries to achieve the objectives by taking the actions specified.
+  MeasurementDatum:
+    class_uri: IAO:0000109
+    title: measurement datum
+    description: A measurement datum is an information content entity that is a recording of the output
+      of a measurement such as produced by a device.
+  Document:
+    class_uri: IAO:0000310
+    title: document
+    description: A collection of information content entities intended to be understood together as a
+      whole
+  SoftwareApplication:
+    class_uri: IAO:0000594
+    title: software application
+    description: A software application is software that can be directly executed by some processing unit.
+  DataCollection:
+    class_uri: IAO:0001000
+    title: data collection
+    description: A data entity that consists of multiple data entities.
+  HomoSapiens:
+    class_uri: NCBITaxon:9606
+    title: Homo sapiens
+    comments:
+    - 'Reused from the NCBI taxonomy, as OBO ontologies do for a person: the explorer''s Person class.
+      Only names are public; email and phone are never served.'
+    close_mappings:
+    - foaf:Person
+    - schema:Person
+    annotations:
+      runtime: class Person
+  Organization:
+    class_uri: OBI:0000245
+    title: organization
+    comments:
+    - Reused from OBI as the explorer's Organization class. Its subclasses below are the Terms sheet's
+      organization types.
+    close_mappings:
+    - org:Organization
+    - foaf:Organization
+    - schema:Organization
+    annotations:
+      runtime: class Organization; vocab OrgType
+    description: An organization is a continuant entity which can play roles, has members, and has a set
+      of organization rules. Members of organizations are either organizations themselves or individual
+      people. Members can bear specific organization member roles that are determined in the organization
+      rules. The organization rules also determine how decisions are made on behalf of the organization
+      by the organization members.
+  RoleInHumanSocialProcesses:
+    class_uri: OMRSE:00002072
+    title: role in human social processes
+    description: A role that inheres in some entity that is realized in a social act.
+  TaxonAsCollectionOfOrganisms:
+    class_uri: PCO:0000059
+    title: taxon as collection of organisms
+    description: A collection of organisms that has as members every organism of a taxon and no organisms
+      of any other equal or higher ranked taxon. The taxon may be at any level. If the taxon is species,
+      then this is the same as the class species as a collection of organisms. When defining a taxon,
+      it is generally understood that members include both living organisms and dead organisms that are
+      known through specimens or observations.
+  Frequency:
+    class_uri: dcterms:Frequency
+    title: Frequency
+  Concept:
+    class_uri: skos:Concept
+    title: Concept
+    comments:
+    - 'A value of a controlled vocabulary in the explorer (a Term node): a county, an issue, a taxon,
+      an organization type.'
+    annotations:
+      runtime: class Term; class Concept
+    description: An idea or notion; a unit of thought.
+slots:
+  part_of:
+    slot_uri: BFO:0000050
+    title: part of
+    comments:
+    - 'A record belongs to a larger one of the same kind: an agency to its department, a dataset to its
+      database, a sub-action to its action. Transitive.'
+    annotations:
+      runtime: phrase "is part of"
+    description: a core relation that holds between a part and its whole
+    range: uriorcurie
+    multivalued: true
+  has_part:
+    slot_uri: BFO:0000051
+    title: has part
+    comments:
+    - The reverse of part of.
+    annotations:
+      runtime: phrase "has part"
+    description: a core relation that holds between a whole and its part
+    range: uriorcurie
+    multivalued: true
+  is_about:
+    slot_uri: IAO:0000136
+    title: is about
+    description: A (currently) primitive relation that relates an information artifact to an entity.
+    range: uriorcurie
+    multivalued: true
+  has_specified_output:
+    slot_uri: OBI:0000299
+    title: has specified output
+    comments:
+    - 'The reverse of is specified output of: the project or program produced this.'
+    annotations:
+      runtime: phrase "has output"
+    description: The inverse property of is specified output of
+    range: uriorcurie
+    multivalued: true
+  is_specified_output_of:
+    slot_uri: OBI:0000312
+    title: is specified output of
+    comments:
+    - Data, a publication or a plan produced by a project's or program's work.
+    annotations:
+      runtime: phrase "is output of"
+    description: A relation between a completely executed planned process and a continuant participating
+      in that process. The presence of the continuant at the end of the process is explicitly specified
+      in the objective specification which the process realizes the concretization of.
+    range: uriorcurie
+    multivalued: true
+  is_member_of_organization:
+    slot_uri: OBI:0000846
+    title: is member of organization
+    description: Relating a legal person or organization to an organization in the case where the legal
+      person or organization has a role as member of the organization.
+    range: uriorcurie
+    multivalued: true
+  has_organization_member:
+    slot_uri: OBI:0001688
+    title: has organization member
+    description: Relating an organization to a legal person or organization.
+    range: uriorcurie
+    multivalued: true
+  location_of:
+    slot_uri: RO:0001015
+    title: location of
+    comments:
+    - 'The reverse of located in: a place contains another.'
+    annotations:
+      runtime: phrase "contains"
+    description: a relation between two independent continuants, the location and the target, in which
+      the target is entirely within the location
+    range: uriorcurie
+    multivalued: true
+  located_in:
+    slot_uri: RO:0001025
+    title: located in
+    comments:
+    - Spatial containment between places, as a HUC10 watershed within its HUC8 subbasin or a project area
+      within a reserve. Transitive.
+    annotations:
+      runtime: phrase "is contained within"
+    description: a relation between two independent continuants, the target and the location, in which
+      the target is entirely within the location
+    range: uriorcurie
+    multivalued: true
+  overlaps:
+    slot_uri: RO:0002131
+    title: overlaps
+    comments:
+    - Two places share some area without either containing the other, as a creek crossing a county line.
+      Symmetric.
+    annotations:
+      runtime: phrase "intersects"
+    description: x overlaps y if and only if there exists some z such that x has part z and z part of
+      y
+    range: uriorcurie
+    multivalued: true
+  capable_of:
+    slot_uri: RO:0002215
+    title: capable of
+    comments:
+    - An organization is capable of a kind of organizational activity. The explorer's does.
+    annotations:
+      runtime: phrase "does"
+    description: A relation between a material entity (such as a cell) and a process, in which the material
+      entity has the ability to carry out the process.
+    range: uriorcurie
+    multivalued: true
+  adjacent_to:
+    slot_uri: RO:0002220
+    title: adjacent to
+    description: x adjacent to y if and only if x and y share a boundary.
+    range: uriorcurie
+    multivalued: true
+  doi:
+    slot_uri: bibo:doi
+    title: doi
+    comments:
+    - Written without the https://doi.org/ prefix.
+    annotations:
+      runtime: field publication.doi
+    range: string
+    multivalued: true
+  issue:
+    slot_uri: bibo:issue
+    title: issue
+    annotations:
+      runtime: field publication.issue
+    range: string
+    multivalued: true
+  pages:
+    slot_uri: bibo:pages
+    title: pages
+    annotations:
+      runtime: field publication.pages
+    range: string
+    multivalued: true
+  volume:
+    slot_uri: bibo:volume
+    title: volume
+    annotations:
+      runtime: field publication.volume
+    range: string
+    multivalued: true
+  keyword:
+    slot_uri: dcat:keyword
+    title: keyword
+    comments:
+    - Free words for search, beside the issues the data addresses.
+    annotations:
+      runtime: field data.keywords
+    description: A keyword or tag describing a resource.
+    range: string
+    multivalued: true
+  temporal_resolution:
+    slot_uri: dcat:temporalResolution
+    title: temporal resolution
+    comments:
+    - How far apart in time the values are, as a temporal resolution value above.
+    annotations:
+      runtime: field data.temporal_resolution
+    description: minimum time period resolvable in a dataset.
+    range: string
+    multivalued: true
+  version:
+    slot_uri: dcat:version
+    title: version
+    annotations:
+      runtime: field data.version
+    description: The version indicator (name or identifier) of a resource.
+    range: string
+    multivalued: true
+  abstract:
+    slot_uri: dcterms:abstract
+    title: Abstract
+    annotations:
+      runtime: field publication.abstract
+    range: string
+    multivalued: true
+  access_rights:
+    slot_uri: dcterms:accessRights
+    title: Access Rights
+    comments:
+    - Who can get the data or read the publication; values from the Data and Papers and reports modules'
+      access lists.
+    annotations:
+      runtime: field data.availability; field publication.availability
+    range: string
+    multivalued: true
+  accrual_periodicity:
+    slot_uri: dcterms:accrualPeriodicity
+    title: Accrual Periodicity
+    comments:
+    - How often the data is updated, as a value of the EU frequency list above.
+    annotations:
+      runtime: field data.update_frequency
+    range: FrequencyEnum
+    multivalued: true
+  description:
+    slot_uri: dcterms:description
+    title: Description
+    comments:
+    - What data contains, or what a tool does.
+    annotations:
+      runtime: field data.description; field tool.description
+    range: string
+    multivalued: true
+  identifier:
+    slot_uri: dcterms:identifier
+    title: Identifier
+    comments:
+    - A DOI or the repository's own accession number.
+    annotations:
+      runtime: field data.identifier
+    range: string
+    multivalued: true
+  date_issued:
+    slot_uri: dcterms:issued
+    title: Date Issued
+    comments:
+    - The year a mandate was enacted, data released, a paper published or a plan issued.
+    annotations:
+      runtime: field guideline_mandate.year; field data.year; field publication.year; field plan.year
+    range: string
+    multivalued: true
+  license:
+    slot_uri: dcterms:license
+    title: License
+    comments:
+    - The license data or a publication is released under.
+    annotations:
+      runtime: field data.license; field publication.license
+    range: string
+    multivalued: true
+  scientific_name:
+    slot_uri: dwc:scientificName
+    title: Scientific Name
+    annotations:
+      runtime: field taxon.scientific_name; field vegetation_type.scientific_name
+    description: The full scientific name, with authorship and date information if known. When forming
+      part of a dwc:Identification, this should be the name in lowest level taxonomic rank that can be
+      determined.
+    range: string
+    multivalued: true
+  taxon_id:
+    slot_uri: dwc:taxonID
+    title: Taxon ID
+    comments:
+    - The NatureServe element global ID.
+    annotations:
+      runtime: field taxon.natureserve_id
+    description: An identifier for a dwc:Taxon.
+    range: string
+    multivalued: true
+  vernacular_name:
+    slot_uri: dwc:vernacularName
+    title: Vernacular Name
+    comments:
+    - The common name.
+    annotations:
+      runtime: field taxon.common_name
+    description: A common or vernacular name.
+    range: string
+    multivalued: true
+  label:
+    slot_uri: rdfs:label
+    title: label
+    comments:
+    - Every record's name.
+    annotations:
+      runtime: field node.name
+    range: string
+    multivalued: true
+  enddate:
+    slot_uri: schema:endDate
+    title: endDate
+    comments:
+    - The year a record or link ended (#98).
+    annotations:
+      runtime: close field node.end_year; close field relation.end_year
+    range: string
+    multivalued: true
+  keywords:
+    slot_uri: schema:keywords
+    title: keywords
+    annotations:
+      runtime: field publication.keywords
+    range: string
+    multivalued: true
+  startdate:
+    slot_uri: schema:startDate
+    title: startDate
+    comments:
+    - The year a record or link began (#98). The explorer keeps a year, not a full date.
+    annotations:
+      runtime: close field node.start_year; close field relation.start_year
+    range: string
+    multivalued: true
+  url:
+    slot_uri: schema:url
+    title: url
+    comments:
+    - The record's web page.
+    annotations:
+      runtime: field node.url
+    range: string
+    multivalued: true
+  alternative_label:
+    slot_uri: skos:altLabel
+    title: alternative label
+    comments:
+    - Other names a record goes by.
+    annotations:
+      runtime: field node.alias
+    description: An alternative lexical label for a resource.
+    range: string
+    multivalued: true
+  definition:
+    slot_uri: skos:definition
+    title: definition
+    comments:
+    - A CMECS unit's definition in the CMECS Catalog, or an IUCN GET unit's description in its profile.
+    annotations:
+      runtime: field cmecs_unit.definition; field get_unit.definition
+    description: A statement or formal explanation of the meaning of a concept.
+    range: string
+    multivalued: true
+  history_note:
+    slot_uri: skos:historyNote
+    title: history note
+    comments:
+    - The plan's revisions and amendments, as text.
+    annotations:
+      runtime: field plan.history
+    description: A note about the past state/use/meaning of a concept.
+    range: string
+    multivalued: true
+  notation:
+    slot_uri: skos:notation
+    title: notation
+    comments:
+    - The action's number in its plan, such as 2.1.3.
+    annotations:
+      runtime: field action.number
+    description: A notation, also known as classification code, is a string of characters such as "T58.5"
+      or "303.4833" used to uniquely identify a concept within the scope of a given concept scheme.
+    range: string
+    multivalued: true
+  note:
+    slot_uri: skos:note
+    title: note
+    comments:
+    - Free notes on an organization, a place or a taxon, and where an IUCN GET unit occurs.
+    annotations:
+      runtime: field organization.notes; field infrastructure.notes; field taxon.note; field get_unit.distribution
+    description: A general note, for any purpose.
+    range: string
+    multivalued: true
+enums:
+  FrequencyEnum:
+    enum_uri: dcterms:Frequency
+    description: The values of Frequency.
+    permissible_values:
+      continuous:
+        meaning: freq:CONT
+        comments:
+        - Updated continuously.
+        annotations:
+          runtime: choice data.update_frequency "Continuous"
+      daily:
+        meaning: freq:DAILY
+        annotations:
+          runtime: choice data.update_frequency "Daily"
+      weekly:
+        meaning: freq:WEEKLY
+        annotations:
+          runtime: choice data.update_frequency "Weekly"
+      monthly:
+        meaning: freq:MONTHLY
+        annotations:
+          runtime: choice data.update_frequency "Monthly"
+      quarterly:
+        meaning: freq:QUARTERLY
+        annotations:
+          runtime: choice data.update_frequency "Quarterly"
+      annual:
+        meaning: freq:ANNUAL
+        annotations:
+          runtime: choice data.update_frequency "Annual"
+      biennial:
+        meaning: freq:BIENNIAL
+        annotations:
+          runtime: choice data.update_frequency "Every two years"
+      quinquennial:
+        meaning: freq:QUINQUENNIAL
+        annotations:
+          runtime: choice data.update_frequency "Every five years"
+      irregular:
+        meaning: freq:IRREG
+        annotations:
+          runtime: choice data.update_frequency "Irregular"
+      never:
+        meaning: freq:NEVER
+        comments:
+        - Finished data, which most PPOD datasets are. Dublin Core's own frequency list has no such value,
+          which is why the EU list is used.
+        annotations:
+          runtime: choice data.update_frequency "Never (finished)"

@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ICON Taxa and habitats ontology</title>
+<link rel="icon" href="../brand/icon-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+:root {
+  --ground: #f1f4ef; --surface: #ffffff; --ink: #17221d; --muted: #5a6a62; --rule: #d3dbd3;
+  --accent: #2e6a4e; --accent-soft: #e3eee7;
+  --display: "Newsreader", Georgia, serif;
+  --body: "Instrument Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground: #0f1512; --surface: #17201b; --ink: #e3ebe6; --muted: #93a39a; --rule: #2b3730;
+    --accent: #74c39b; --accent-soft: #1d3127; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --ground: #0f1512; --surface: #17201b; --ink: #e3ebe6; --muted: #93a39a; --rule: #2b3730;
+  --accent: #74c39b; --accent-soft: #1d3127; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--ground); color: var(--ink); font: 15px/1.6 var(--body); }
+.page { max-width: 1040px; margin: 0 auto; padding: 24px 16px 56px; display: grid; gap: 24px; }
+header.top { display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 13px; }
+header.top nav { display: flex; gap: 16px; flex-wrap: wrap; }
+.logo { height: 34px; width: auto; }
+.logo.dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .logo.light { display: none; }
+  :root:not([data-theme="light"]) .logo.dark { display: block; }
+}
+:root[data-theme="dark"] .logo.light { display: none; }
+:root[data-theme="dark"] .logo.dark { display: block; }
+h1 { font: 600 clamp(28px, 4vw, 40px)/1.15 var(--display); margin: 0; text-wrap: balance; }
+h2 { font: 600 22px/1.25 var(--display); margin: 0 0 8px; }
+p { margin: 0 0 10px; max-width: 75ch; }
+a { color: var(--accent); }
+code { font: 0.88em var(--mono); overflow-wrap: anywhere; }
+.muted { color: var(--muted); }
+.kicker { font: 600 11px var(--body); letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+section.card { background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; padding: 18px 20px; min-width: 0; }
+.facts { display: flex; flex-wrap: wrap; gap: 8px 28px; font-variant-numeric: tabular-nums; }
+.facts div { display: grid; }
+.facts b { font: 600 22px/1.1 var(--display); }
+.facts span { font-size: 12px; color: var(--muted); }
+.scroll { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { text-align: left; vertical-align: top; padding: 8px 10px 8px 0; border-bottom: 1px solid var(--rule); }
+th { font-weight: 600; font-size: 12px; color: var(--muted); }
+td.files { white-space: nowrap; }
+td.files a + a { margin-left: 8px; }
+dl.facts-list { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 6px 16px; margin: 0; }
+dl.facts-list dt { color: var(--muted); font-size: 13px; padding-top: 1px; }
+dl.facts-list dd { margin: 0; }
+.button { display: inline-block; padding: 8px 14px; border-radius: 8px; background: var(--accent); color: var(--surface); text-decoration: none; font-weight: 600; }
+pre { background: var(--accent-soft); padding: 12px 14px; border-radius: 8px; overflow-x: auto; font: 13px/1.5 var(--mono); margin: 0 0 10px; white-space: pre-wrap; }
+footer { font-size: 13px; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="top">
+    <nav><a href=".././">ICON ontologies</a><a href="../map.html">Map</a><a href="https://github.com/ICON-IoC/icon-ontologies">Source files</a></nav>
+    <a href="https://icon-ioc.com" aria-label="ICON">
+      <img class="logo light" alt="ICON" src="../brand/icon-lockup.png">
+      <img class="logo dark" alt="ICON" src="../brand/icon-wordmark-reversed-cropped.png">
+    </a>
+  </header>
+
+  <section>
+    <div class="kicker">vocabulary module</div>
+    <h1>ICON Taxa and habitats ontology</h1>
+    <p>The living things and habitats records concern: taxa (species and groups, identified by NatureServe) habitat types (California Wildlife Habitat Relationships), vegetation types (Manual of California Vegetation alliances under the US National Vegetation Classification) coastal and marine habitat types (CMECS) and the IUCN Global Ecosystem Typology, the links between those classifications, and the links that say a record concerns a taxon or a habitat type, or that a place is habitat for a taxon.</p>
+    <dl class="facts-list">
+      <dt>Ontology IRI</dt><dd><code>https://w3id.org/icon/biodiversity.owl</code></dd>
+      <dt>This release</dt><dd><code>https://w3id.org/icon/releases/2026-11-21/biodiversity.owl</code></dd>
+      <dt>Own term IDs</dt><dd>ICON:0011000 to ICON:0011999</dd>
+      <dt>Files</dt><dd><a href="../icon-biodiversity.ttl">Turtle</a>, <a href="../icon-biodiversity.owl">RDF/XML</a>, <a href="../linkml/icon-biodiversity.yaml">LinkML</a>, <a href="../guides/biodiversity.md">guide (Markdown)</a></dd>
+      
+      <dt>Reused</dt><dd>dwc, skos</dd>
+      
+      <dt>Built on</dt><dd>ENVO, IAO, PCO, skos</dd>
+      
+      <dt>Mapped to</dt><dd>dcterms, dwc, skos</dd>
+      
+    </dl>
+  </section>
+
+  <section class="card">
+    <h2>Terms</h2>
+    <p class="muted">Reused terms keep their own IDs and link to their source ontology.</p>
+    <div class="scroll">
+    <table>
+      <thead><tr><th>Term</th><th>Kind</th><th>ID</th><th>Definition</th></tr></thead>
+      <tbody>
+      
+        <tr id="ICON_0011000">
+          <td><a href="../terms/ICON_0011000.html">taxon</a></td>
+          <td>class</td>
+          <td><code>ICON:0011000</code></td>
+          <td>A species or a group of species that records concern, identified by its NatureServe element where it has one. Groups (salmonids, bats) are taxa at a higher rank or informal groupings of them.</td>
+        </tr>
+      
+        <tr id="ICON_0011001">
+          <td><a href="../terms/ICON_0011001.html">CWHR habitat type</a></td>
+          <td>class</td>
+          <td><code>ICON:0011001</code></td>
+          <td>A habitat type of the California Wildlife Habitat Relationships system, the state&#39;s standard classification of wildlife habitats (59 types, such as Valley Foothill Riparian or Blue Oak Woodland), identified by its CWHR code.</td>
+        </tr>
+      
+        <tr id="ICON_0011004">
+          <td><a href="../terms/ICON_0011004.html">vegetation type</a></td>
+          <td>class</td>
+          <td><code>ICON:0011004</code></td>
+          <td>A unit of vegetation: an alliance of the Manual of California Vegetation, as CDFW&#39;s California Natural Communities List names it (such as Valley oak woodland and forest, or Fremont&#39;s goldfields - Downingia vernal pools), or a group, macrogroup or division of the US National Vegetation Classification above it (#1409).</td>
+        </tr>
+      
+        <tr id="ICON_0011005">
+          <td><a href="../terms/ICON_0011005.html">coastal and marine habitat type</a></td>
+          <td>class</td>
+          <td><code>ICON:0011005</code></td>
+          <td>A unit of the Coastal and Marine Ecological Classification Standard (CMECS, FGDC-STD-018-2012): a system, subsystem or tidal zone of its Aquatic Setting (such as Estuarine Coastal Intertidal Tidal Zone), or a biotic setting, class, subclass or group of its Biotic Component (such as Seagrass Bed), identified by its CMECS ID (#1410).</td>
+        </tr>
+      
+        <tr id="ICON_0011006">
+          <td><a href="../terms/ICON_0011006.html">IUCN ecosystem type</a></td>
+          <td>class</td>
+          <td><code>ICON:0011006</code></td>
+          <td>A unit of the IUCN Global Ecosystem Typology 2.0 (Keith et al. 2022), the global classification of ecosystems by how they function: one of its 11 realms (such as Terrestrial), 25 biomes (such as Savannas and grasslands biome) or 110 ecosystem functional groups (such as T4.4 Temperate woodlands), identified by its GET code and IRI (#1411).</td>
+        </tr>
+      
+        <tr id="ICON_0011002">
+          <td><a href="../terms/ICON_0011002.html">invasive rating</a></td>
+          <td>class</td>
+          <td><code>ICON:0011002</code></td>
+          <td>How invasive a non-native species is in California: for plants, the California Invasive Plant Council (Cal-IPC) rating in its Inventory, High, Moderate, Limited, or Watch for a plant at high risk of becoming invasive (#410); for animals, listing by the California Department of Fish and Wildlife (CDFW), which does not rate them (#435).</td>
+        </tr>
+      
+        <tr id="ICON_0011003">
+          <td><a href="../terms/ICON_0011003.html">California Rare Plant Rank</a></td>
+          <td>class</td>
+          <td><code>ICON:0011003</code></td>
+          <td>The California Native Plant Society&#39;s rank of how rare a plant, bryophyte, or lichen is in California, from 1A (presumed extirpated or extinct) to 4 (a watch list of limited distribution), assigned with CDFW&#39;s California Natural Diversity Database and printed in its Special Vascular Plants, Bryophytes, and Lichens List. The decimal threat rank that follows it (.1 seriously, .2 moderately, .3 not very threatened) is kept as the link&#39;s source note (#1210).</td>
+        </tr>
+      
+        <tr id="ICON_0011100">
+          <td><a href="../terms/ICON_0011100.html">concerns taxon</a></td>
+          <td>relation</td>
+          <td><code>ICON:0011100</code></td>
+          <td>The record is about, works for or affects the species or group.</td>
+        </tr>
+      
+        <tr id="ICON_0011101">
+          <td><a href="../terms/ICON_0011101.html">is taxon of</a></td>
+          <td>relation</td>
+          <td><code>ICON:0011101</code></td>
+          <td>The reverse of concerns taxon.</td>
+        </tr>
+      
+        <tr id="ICON_0011102">
+          <td><a href="../terms/ICON_0011102.html">has habitat type</a></td>
+          <td>relation</td>
+          <td><code>ICON:0011102</code></td>
+          <td>A CWHR habitat type (#169), vegetation type (#1409) or coastal and marine habitat type (#1410) the record covers, works in or affects.</td>
+        </tr>
+      
+        <tr id="ICON_0011103">
+          <td><a href="../terms/ICON_0011103.html">is habitat type of</a></td>
+          <td>relation</td>
+          <td><code>ICON:0011103</code></td>
+          <td>The reverse of has habitat type.</td>
+        </tr>
+      
+        <tr id="ICON_0011108">
+          <td><a href="../terms/ICON_0011108.html">has broader habitat type</a></td>
+          <td>relation</td>
+          <td><code>ICON:0011108</code></td>
+          <td>Links a habitat or vegetation type to a broader one that contains it: an MCV alliance to its USNVC group, a group to its macrogroup, a CMECS unit to the unit above it, a GET functional group to its biome and a biome to its realm, and an alliance or CMECS unit to the one CWHR habitat type it falls in. A record that has the narrower type has the broader one too (#1409, #1410, #1411).</td>
+        </tr>
+      
+        <tr id="ICON_0011109">
+          <td><a href="../terms/ICON_0011109.html">has narrower habitat type</a></td>
+          <td>relation</td>
+          <td><code>ICON:0011109</code></td>
+          <td>The reverse of has broader habitat type.</td>
+        </tr>
+      
+        <tr id="ICON_0011110">
+          <td><a href="../terms/ICON_0011110.html">is related to habitat type</a></td>
+          <td>relation</td>
+          <td><code>ICON:0011110</code></td>
+          <td>Links an MCV alliance or CMECS unit to each CWHR habitat type it may fall in, when there is more than one: a stand of it falls within one of them, but not always the same one. Nothing passes along it (#1409, #1410).</td>
+        </tr>
+      
+        <tr id="ICON_0011111">
+          <td><a href="../terms/ICON_0011111.html">has IUCN ecosystem group</a></td>
+          <td>relation</td>
+          <td><code>ICON:0011111</code></td>
+          <td>Links a CWHR, MCV or CMECS habitat type to the IUCN GET ecosystem functional groups it falls in, or to the biome or realm when it spans several of their groups. Mapped by hand in reference/get-crosswalk.csv at the broadest unit where the match holds and stated on every unit below it. Nothing passes along it: records are not tagged with GET (#1411).</td>
+        </tr>
+      
+        <tr id="ICON_0011112">
+          <td><a href="../terms/ICON_0011112.html">is IUCN ecosystem group of</a></td>
+          <td>relation</td>
+          <td><code>ICON:0011112</code></td>
+          <td>The reverse of has IUCN ecosystem group.</td>
+        </tr>
+      
+        <tr id="ICON_0011104">
+          <td><a href="../terms/ICON_0011104.html">has invasive rating</a></td>
+          <td>relation</td>
+          <td><code>ICON:0011104</code></td>
+          <td>The taxon is invasive in California, or at risk of becoming so, with this Cal-IPC rating (#410) or CDFW listing (#435).</td>
+        </tr>
+      
+        <tr id="ICON_0011105">
+          <td><a href="../terms/ICON_0011105.html">is invasive rating of</a></td>
+          <td>relation</td>
+          <td><code>ICON:0011105</code></td>
+          <td>The reverse of has invasive rating.</td>
+        </tr>
+      
+        <tr id="ICON_0011106">
+          <td><a href="../terms/ICON_0011106.html">has rare plant rank</a></td>
+          <td>relation</td>
+          <td><code>ICON:0011106</code></td>
+          <td>The plant, bryophyte, or lichen has this California Rare Plant Rank in CDFW&#39;s Special Vascular Plants, Bryophytes, and Lichens List (#1210).</td>
+        </tr>
+      
+        <tr id="ICON_0011107">
+          <td><a href="../terms/ICON_0011107.html">is rare plant rank of</a></td>
+          <td>relation</td>
+          <td><code>ICON:0011107</code></td>
+          <td>The reverse of has rare plant rank.</td>
+        </tr>
+      
+        <tr id="dwc_scientificName">
+          <td><a href="http://rs.tdwg.org/dwc/terms/scientificName">Scientific Name</a></td>
+          <td>attribute</td>
+          <td><code>dwc:scientificName</code></td>
+          <td>The full scientific name, with authorship and date information if known. When forming part of a dwc:Identification, this should be the name in lowest level taxonomic rank that can be determined.</td>
+        </tr>
+      
+        <tr id="dwc_vernacularName">
+          <td><a href="http://rs.tdwg.org/dwc/terms/vernacularName">Vernacular Name</a></td>
+          <td>attribute</td>
+          <td><code>dwc:vernacularName</code></td>
+          <td>A common or vernacular name.</td>
+        </tr>
+      
+        <tr id="dwc_taxonID">
+          <td><a href="http://rs.tdwg.org/dwc/terms/taxonID">Taxon ID</a></td>
+          <td>attribute</td>
+          <td><code>dwc:taxonID</code></td>
+          <td>An identifier for a dwc:Taxon.</td>
+        </tr>
+      
+        <tr id="ICON_0011200">
+          <td><a href="../terms/ICON_0011200.html">NatureServe global rank</a></td>
+          <td>attribute</td>
+          <td><code>ICON:0011200</code></td>
+          <td>The taxon&#39;s NatureServe conservation status across its whole range, G1 (critically imperiled) to G5 (secure), with T ranks for subspecies.</td>
+        </tr>
+      
+        <tr id="ICON_0011201">
+          <td><a href="../terms/ICON_0011201.html">taxon kind</a></td>
+          <td>attribute</td>
+          <td><code>ICON:0011201</code></td>
+          <td>Whether the term is a single NatureServe taxon (taxon), a group of taxa (group), or matched nothing in NatureServe (none).</td>
+        </tr>
+      
+        <tr id="ICON_0011202">
+          <td><a href="../terms/ICON_0011202.html">informal group</a></td>
+          <td>attribute</td>
+          <td><code>ICON:0011202</code></td>
+          <td>NatureServe&#39;s informal taxonomy path for the taxon, such as Animals | Vertebrates | Birds.</td>
+        </tr>
+      
+        <tr id="ICON_0011203">
+          <td><a href="../terms/ICON_0011203.html">group level</a></td>
+          <td>attribute</td>
+          <td><code>ICON:0011203</code></td>
+          <td>For a group, what defines it: NatureServe&#39;s informal taxonomy, or a rank of its scientific taxonomy (kingdom, phylum, class, order, family, subfamily, genus).</td>
+        </tr>
+      
+        <tr id="ICON_0011204">
+          <td><a href="../terms/ICON_0011204.html">group value</a></td>
+          <td>attribute</td>
+          <td><code>ICON:0011204</code></td>
+          <td>For a group, the name at its group level, such as Salmoninae for a subfamily group.</td>
+        </tr>
+      
+        <tr id="ICON_0011205">
+          <td><a href="../terms/ICON_0011205.html">genera</a></td>
+          <td>attribute</td>
+          <td><code>ICON:0011205</code></td>
+          <td>For a subfamily group, which NatureServe cannot search by rank, the genera it spans, separated by semicolons: Oncorhynchus; Salmo; Salvelinus.</td>
+        </tr>
+      
+        <tr id="ICON_0011210">
+          <td><a href="../terms/ICON_0011210.html">vegetation classification level</a></td>
+          <td>attribute</td>
+          <td><code>ICON:0011210</code></td>
+          <td>Where the vegetation type sits: an MCV Alliance, Semi-Natural Alliance (dominated by non-native plants) or Special Stands, or a USNVC Group, Macrogroup or Division.</td>
+        </tr>
+      
+        <tr id="ICON_0011211">
+          <td><a href="../terms/ICON_0011211.html">CDFW CaCode</a></td>
+          <td>attribute</td>
+          <td><code>ICON:0011211</code></td>
+          <td>The alliance&#39;s code on CDFW&#39;s California Natural Communities List, such as 71.035.00 for Valley oak woodland and forest.</td>
+        </tr>
+      
+        <tr id="ICON_0011212">
+          <td><a href="../terms/ICON_0011212.html">life form</a></td>
+          <td>attribute</td>
+          <td><code>ICON:0011212</code></td>
+          <td>The alliance&#39;s primary life form on the Natural Communities List: Tree, Shrub, Herb or Non-vascular.</td>
+        </tr>
+      
+        <tr id="ICON_0011213">
+          <td><a href="../terms/ICON_0011213.html">natural community global rank</a></td>
+          <td>attribute</td>
+          <td><code>ICON:0011213</code></td>
+          <td>How rare and threatened the alliance is across its whole range, G1 (very rare and threatened) to G5 (secure), from NatureServe&#39;s method as CDFW applies it.</td>
+        </tr>
+      
+        <tr id="ICON_0011214">
+          <td><a href="../terms/ICON_0011214.html">natural community state rank</a></td>
+          <td>attribute</td>
+          <td><code>ICON:0011214</code></td>
+          <td>How rare and threatened the alliance is in California, S1 to S5; SNA for a semi-natural alliance, which is not ranked.</td>
+        </tr>
+      
+        <tr id="ICON_0011215">
+          <td><a href="../terms/ICON_0011215.html">sensitive natural community</a></td>
+          <td>attribute</td>
+          <td><code>ICON:0011215</code></td>
+          <td>Yes for an alliance with a state rank of S1 to S3, which CDFW counts as a sensitive natural community for environmental review under CEQA.</td>
+        </tr>
+      
+        <tr id="ICON_0011220">
+          <td><a href="../terms/ICON_0011220.html">CMECS classification level</a></td>
+          <td>attribute</td>
+          <td><code>ICON:0011220</code></td>
+          <td>Where the CMECS unit sits: a System, Subsystem or Tidal Zone of the Aquatic Setting, or a Biotic Setting, Biotic Class, Biotic Subclass or Biotic Group of the Biotic Component.</td>
+        </tr>
+      
+        <tr id="ICON_0011221">
+          <td><a href="../terms/ICON_0011221.html">CMECS code</a></td>
+          <td>attribute</td>
+          <td><code>ICON:0011221</code></td>
+          <td>The unit&#39;s code in the CMECS Catalog, its component&#39;s letter (A for the Aquatic Setting, B for the Biotic Component) followed by its unit code, such as B2.5.2.1 for Seagrass Bed.</td>
+        </tr>
+      
+        <tr id="ICON_0011222">
+          <td><a href="../terms/ICON_0011222.html">CMECS ID</a></td>
+          <td>attribute</td>
+          <td><code>ICON:0011222</code></td>
+          <td>The unit&#39;s permanent identifier in the CMECS Catalog, such as CMECS_00000721; https://w3id.org/CMECS/ followed by it is the unit&#39;s IRI.</td>
+        </tr>
+      
+        <tr id="ICON_0011230">
+          <td><a href="../terms/ICON_0011230.html">GET classification level</a></td>
+          <td>attribute</td>
+          <td><code>ICON:0011230</code></td>
+          <td>Where the IUCN GET unit sits: a Realm, a Biome or a Functional group (an ecosystem functional group).</td>
+        </tr>
+      
+        <tr id="ICON_0011231">
+          <td><a href="../terms/ICON_0011231.html">GET code</a></td>
+          <td>attribute</td>
+          <td><code>ICON:0011231</code></td>
+          <td>The unit&#39;s code in the IUCN Global Ecosystem Typology: a realm&#39;s letters (T, or MT for a transitional realm), a biome&#39;s (T4) or a functional group&#39;s (T4.4).</td>
+        </tr>
+      
+        <tr id="ICON_0011232">
+          <td><a href="../terms/ICON_0011232.html">GET IRI</a></td>
+          <td>attribute</td>
+          <td><code>ICON:0011232</code></td>
+          <td>The unit&#39;s permanent identifier in the IUCN GET SKOS vocabulary, such as https://w3id.org/iucn-get/EFG_T4_4.</td>
+        </tr>
+      
+        <tr id="skos_definition">
+          <td><a href="http://www.w3.org/2004/02/skos/core#definition">definition</a></td>
+          <td>attribute</td>
+          <td><code>skos:definition</code></td>
+          <td>A statement or formal explanation of the meaning of a concept.</td>
+        </tr>
+      
+        <tr id="ICON_0011010">
+          <td><a href="../terms/ICON_0011010.html">high invasive rating</a></td>
+          <td>value</td>
+          <td><code>ICON:0011010</code></td>
+          <td>Cal-IPC: severe ecological impacts on physical processes, plant and animal communities and vegetation structure, with rates of dispersal and establishment that are moderate to high; most are widely distributed.</td>
+        </tr>
+      
+        <tr id="ICON_0011011">
+          <td><a href="../terms/ICON_0011011.html">moderate invasive rating</a></td>
+          <td>value</td>
+          <td><code>ICON:0011011</code></td>
+          <td>Cal-IPC: substantial and apparent, but generally not severe, ecological impacts, with moderate to high rates of dispersal, though establishment generally depends on disturbance.</td>
+        </tr>
+      
+        <tr id="ICON_0011012">
+          <td><a href="../terms/ICON_0011012.html">limited invasive rating</a></td>
+          <td>value</td>
+          <td><code>ICON:0011012</code></td>
+          <td>Cal-IPC: invasive, but with ecological impacts that are minor statewide, or too little information to rate it higher; often locally persistent and problematic.</td>
+        </tr>
+      
+        <tr id="ICON_0011013">
+          <td><a href="../terms/ICON_0011013.html">watch invasive rating</a></td>
+          <td>value</td>
+          <td><code>ICON:0011013</code></td>
+          <td>Cal-IPC: not yet invasive in California&#39;s wildlands, but assessed as at high risk of becoming invasive here.</td>
+        </tr>
+      
+        <tr id="ICON_0011014">
+          <td><a href="../terms/ICON_0011014.html">CDFW listed invasive rating</a></td>
+          <td>value</td>
+          <td><code>ICON:0011014</code></td>
+          <td>CDFW: an animal on the Invasive Species Program&#39;s list California&#39;s Invaders, as invasive in California or a threat to the state; CDFW does not rate how invasive it is (#435).</td>
+        </tr>
+      
+        <tr id="ICON_0011020">
+          <td><a href="../terms/ICON_0011020.html">California Rare Plant Rank 1A</a></td>
+          <td>value</td>
+          <td><code>ICON:0011020</code></td>
+          <td>CNPS: Plants presumed extirpated in California and either rare or extinct elsewhere: not seen or collected in the wild in California for many years.</td>
+        </tr>
+      
+        <tr id="ICON_0011021">
+          <td><a href="../terms/ICON_0011021.html">California Rare Plant Rank 1B</a></td>
+          <td>value</td>
+          <td><code>ICON:0011021</code></td>
+          <td>CNPS: Plants rare, threatened, or endangered in California and elsewhere; most are endemic to California and have declined significantly over the last century.</td>
+        </tr>
+      
+        <tr id="ICON_0011022">
+          <td><a href="../terms/ICON_0011022.html">California Rare Plant Rank 2A</a></td>
+          <td>value</td>
+          <td><code>ICON:0011022</code></td>
+          <td>CNPS: Plants presumed extirpated in California but common elsewhere.</td>
+        </tr>
+      
+        <tr id="ICON_0011023">
+          <td><a href="../terms/ICON_0011023.html">California Rare Plant Rank 2B</a></td>
+          <td>value</td>
+          <td><code>ICON:0011023</code></td>
+          <td>CNPS: Plants rare, threatened, or endangered in California but more common elsewhere.</td>
+        </tr>
+      
+        <tr id="ICON_0011024">
+          <td><a href="../terms/ICON_0011024.html">California Rare Plant Rank 3</a></td>
+          <td>value</td>
+          <td><code>ICON:0011024</code></td>
+          <td>CNPS: Review list: plants about which more information is needed, nearly all taxonomically problematic.</td>
+        </tr>
+      
+        <tr id="ICON_0011025">
+          <td><a href="../terms/ICON_0011025.html">California Rare Plant Rank 4</a></td>
+          <td>value</td>
+          <td><code>ICON:0011025</code></td>
+          <td>CNPS: Watch list: plants of limited distribution or infrequent throughout a broader area of California, whose status should be monitored.</td>
+        </tr>
+      
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <footer>
+    <p>ICON ontologies, version 2026-11-21. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: attribute as "Internet of Conservation, Information for the Conservation of Nature (ICON), CC BY 4.0". The ICON names and logos are not covered by that license.</p>
+  </footer>
+</div>
+</body>
+</html>

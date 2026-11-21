@@ -1,0 +1,237 @@
+# ICON Core ontology, as a LinkML schema.
+# Built by `ioc-ontologies` from ontology/src/core.terms; edit that, not this file.
+id: https://w3id.org/icon/linkml/icon-core
+name: icon-core
+prefixes:
+  linkml: https://w3id.org/linkml/
+  ICON: https://w3id.org/icon/ICON_
+  dcat: http://www.w3.org/ns/dcat#
+  dcterms: http://purl.org/dc/terms/
+  foaf: http://xmlns.com/foaf/0.1/
+  frapo: http://purl.org/cerif/frapo/
+  prov: http://www.w3.org/ns/prov#
+  schema: https://schema.org/
+title: ICON Core ontology
+description: 'The shared top of the ICON ontologies: the broad kinds of record (agent, endeavor, place,
+  information resource, planning element), the involvement and funding links every kind of record uses,
+  and the annotation properties the other modules share. Every other module builds on it.'
+version: '2026-11-21'
+license: https://creativecommons.org/licenses/by/4.0/
+default_prefix: ICON
+default_range: string
+see_also:
+- https://w3id.org/icon/core.owl
+imports:
+- linkml:types
+- icon-external
+classes:
+  Agent:
+    class_uri: ICON:0000010
+    title: agent
+    description: 'An organization or a person: something that can lead, fund, own, manage or take part
+      in conservation work.'
+    close_mappings:
+    - prov:Agent
+    - foaf:Agent
+    annotations:
+      runtime: class Agent
+    is_a: MaterialEntity
+    any_of:
+    - is_a: Organization
+    - is_a: HomoSapiens
+  Endeavor:
+    class_uri: ICON:0000011
+    title: endeavor
+    description: 'A planned process carried out to achieve conservation ends over a span of time: a project
+      or a program.'
+    close_mappings:
+    - frapo:Endeavour
+    annotations:
+      runtime: class Endeavor
+    is_a: PlannedProcess
+  Place:
+    class_uri: ICON:0000012
+    title: place
+    description: 'A part of the landscape or a structure in it that records can be located at, worked
+      on or bounded by: a river, a reserve, a dam, a crossing structure.'
+    close_mappings:
+    - schema:Place
+    annotations:
+      runtime: class Place
+    is_a: IndependentContinuant
+  InformationResource:
+    class_uri: ICON:0000013
+    title: information resource
+    description: 'An information content entity that records or publishes information: a data resource,
+      a paper or a report.'
+    close_mappings:
+    - dcat:Resource
+    - schema:CreativeWork
+    annotations:
+      runtime: class InformationResource
+    is_a: InformationContentEntity
+  PlanningElement:
+    class_uri: ICON:0000014
+    title: planning element
+    description: 'A directive information entity that sets out what conservation work should achieve or
+      do: a plan, one of its objectives, or one of its actions.'
+    annotations:
+      runtime: class Strategy
+    is_a: DirectiveInformationEntity
+slots:
+  crosswalk:
+    slot_uri: ICON:0000001
+    title: crosswalk
+    description: 'The matching field in a metadata standard that is not published as RDF, written as the
+      standard''s name, a colon and the field''s path, such as "EML 2.2: dataset/title".'
+    range: string
+    multivalued: true
+  expected_attribute:
+    slot_uri: ICON:0000002
+    title: expected attribute
+    description: A property the records of this class are expected to carry, such as a title or a year.
+      Records the attributes a class uses without adding domain axioms to terms borrowed from other vocabularies.
+    range: string
+    multivalued: true
+  is_involved_with:
+    slot_uri: ICON:0000100
+    title: is involved with
+    description: A link between two records that work together or affect one another. Every more specific
+      involvement link (leads, funds, manages, uses, is partner of and others) implies it.
+    broad_mappings:
+    - dcterms:relation
+    annotations:
+      runtime: phrase "is involved with"
+    range: uriorcurie
+    symmetric: true
+    multivalued: true
+  led_by:
+    slot_uri: ICON:0000101
+    title: led by
+    description: An organization or person that directs the work and answers for it.
+    annotations:
+      runtime: phrase "led by"
+    is_a: is_involved_with
+    range: Agent
+    inverse: leads
+    multivalued: true
+  leads:
+    slot_uri: ICON:0000102
+    title: leads
+    description: 'An organization or person directs this work: the reverse of led by.'
+    annotations:
+      runtime: phrase "leads"
+    is_a: is_involved_with
+    domain: Agent
+    domain_of:
+    - Agent
+    range: uriorcurie
+    inverse: led_by
+    multivalued: true
+  used_by:
+    slot_uri: ICON:0000103
+    title: used by
+    description: An organization, project or program relies on this place, data or tool in its work.
+    annotations:
+      crosswalk: 'ISO 19115-1: CI_RoleCode user'
+      runtime: phrase "used by"
+    is_a: is_involved_with
+    range: uriorcurie
+    inverse: uses
+    multivalued: true
+  uses:
+    slot_uri: ICON:0000104
+    title: uses
+    description: 'The record relies on this place or data in its work: the reverse of used by.'
+    annotations:
+      runtime: phrase "uses"
+    is_a: is_involved_with
+    range: uriorcurie
+    inverse: used_by
+    multivalued: true
+  funded_by:
+    slot_uri: ICON:0000105
+    title: funded by
+    description: An organization or funding source that paid for the work, the data or the publication.
+    close_mappings:
+    - frapo:isFundedBy
+    - schema:funder
+    annotations:
+      crosswalk: 'DataCite 4.5: fundingReference/funderName; EML 2.2: project/award/funderName; ISO 19115-1:
+        CI_RoleCode funder'
+      runtime: phrase "funded by"
+    is_a: is_involved_with
+    range: uriorcurie
+    inverse: funds
+    multivalued: true
+  funds:
+    slot_uri: ICON:0000106
+    title: funds
+    description: 'The organization or funding source pays for this work, data or publication: the reverse
+      of funded by and of funded through.'
+    close_mappings:
+    - frapo:funds
+    annotations:
+      runtime: phrase "funds"
+    is_a: is_involved_with
+    range: uriorcurie
+    inverse: funded_by
+    multivalued: true
+  funded_through:
+    slot_uri: ICON:0000107
+    title: funded through
+    description: A program or a guideline or mandate whose money paid for the work, such as a grant program
+      or a bond measure. A kind of funded by, naming the channel the money came through.
+    annotations:
+      crosswalk: 'DataCite 4.5: fundingReference/awardTitle; EML 2.2: project/award/title'
+      runtime: phrase "funded through"
+    is_a: funded_by
+    range: uriorcurie
+    multivalued: true
+  was_created_by:
+    slot_uri: ICON:0000108
+    title: was created by
+    description: The organization or person that produced the record's subject, or the guideline or mandate
+      that brought an organization into being.
+    close_mappings:
+    - dcterms:creator
+    - schema:creator
+    annotations:
+      crosswalk: 'DataCite 4.5: creator; EML 2.2: dataset/creator; ISO 19115-1: CI_RoleCode originator'
+      runtime: phrase "was created by"
+    is_a: is_involved_with
+    range: uriorcurie
+    inverse: created
+    multivalued: true
+  created:
+    slot_uri: ICON:0000109
+    title: created
+    description: 'The organization, person or mandate produced this: the reverse of was created by.'
+    annotations:
+      runtime: phrase "created"
+    is_a: is_involved_with
+    range: uriorcurie
+    inverse: was_created_by
+    multivalued: true
+  informs:
+    slot_uri: ICON:0000110
+    title: informs
+    description: The data or publication is drawn on by a plan, an objective, an action or a guideline
+      or mandate, as survey counts inform a recovery objective.
+    broad_mappings:
+    - dcterms:relation
+    annotations:
+      runtime: phrase "informs"
+    range: uriorcurie
+    inverse: is_informed_by
+    multivalued: true
+  is_informed_by:
+    slot_uri: ICON:0000111
+    title: is informed by
+    description: 'The plan, objective, action or mandate draws on this data or publication: the reverse
+      of informs.'
+    annotations:
+      runtime: phrase "is informed by"
+    range: uriorcurie
+    inverse: informs
+    multivalued: true

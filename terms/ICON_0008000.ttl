@@ -1,0 +1,32 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+icon:0008000 a owl:Class ;
+    rdfs:label "data resource"@en ;
+    IAO:0000115 "Data at any of three levels: a dataset, a database or a data repository. Replaced the PPOD Dataset class."@en ;
+    rdfs:isDefinedBy iconbase:data.owl ;
+    rdfs:subClassOf icon:0000013 ;
+    skos:closeMatch dcat:Resource,
+        schema:CreativeWork ;
+    icon:0000002 dcterms:accessRights,
+        dcterms:accrualPeriodicity,
+        dcterms:description,
+        dcterms:identifier,
+        dcterms:issued,
+        dcterms:license,
+        dcat:keyword,
+        dcat:temporalResolution,
+        dcat:version,
+        icon:0008200,
+        icon:0008201,
+        icon:0008202,
+        icon:0008203,
+        icon:0008204 .
+

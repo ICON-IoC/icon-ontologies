@@ -1,0 +1,414 @@
+# ICON Guidelines and mandates ontology, as a LinkML schema.
+# Built by `ioc-ontologies` from ontology/src/mandates.terms; edit that, not this file.
+id: https://w3id.org/icon/linkml/icon-mandates
+name: icon-mandates
+prefixes:
+  linkml: https://w3id.org/linkml/
+  ICON: https://w3id.org/icon/ICON_
+  OMRSE: http://purl.obolibrary.org/obo/OMRSE_
+  eli: http://data.europa.eu/eli/ontology#
+  schema: https://schema.org/
+title: ICON Guidelines and mandates ontology
+description: 'Laws, regulations, executive orders, agreements, certifications and guidelines that require,
+  allow, fund or shape conservation work, and the ways organizations stand toward them: bound by, implementing,
+  enforcing, issuing, certified by.'
+version: '2026-11-21'
+license: https://creativecommons.org/licenses/by/4.0/
+default_prefix: ICON
+default_range: string
+see_also:
+- https://w3id.org/icon/mandates.owl
+imports:
+- linkml:types
+- icon-external
+- icon-core
+- icon-projects
+classes:
+  GuidelineOrMandate:
+    class_uri: ICON:0006000
+    title: guideline or mandate
+    description: 'A directive that requires, allows, funds or shapes conservation work: a law, regulation,
+      executive order, agreement, certification standard or guideline. Some bind; others only advise.'
+    close_mappings:
+    - eli:LegalResource
+    - schema:Legislation
+    annotations:
+      runtime: class GuidelineMandate; class Rule; vocab GMType
+    is_a: DirectiveInformationEntity
+  Agreement:
+    class_uri: ICON:0006001
+    title: agreement
+    description: A guideline or mandate that two or more parties sign, such as a memorandum of understanding,
+      a settlement or a habitat conservation plan's implementing agreement.
+    close_mappings:
+    - OMRSE:00000089
+    annotations:
+      runtime: term GMType "Agreement"
+    is_a: GuidelineOrMandate
+  CertificationStandard:
+    class_uri: ICON:0006002
+    title: certification standard
+    description: A guideline or mandate that sets the practices land, products or operations must meet
+      to be certified, such as a sustainable farming or forestry standard.
+    annotations:
+      runtime: term GMType "Certification"
+    is_a: GuidelineOrMandate
+  ExecutiveOrder:
+    class_uri: ICON:0006003
+    title: executive order
+    description: A guideline or mandate that a president or governor issues to direct government agencies.
+    annotations:
+      runtime: term GMType "Executive Order"
+    is_a: GuidelineOrMandate
+  Guideline:
+    class_uri: ICON:0006004
+    title: guideline
+    description: A guideline or mandate that recommends how something should be done without binding anyone.
+    annotations:
+      runtime: term GMType "Guidelines"
+    is_a: GuidelineOrMandate
+  Legislation:
+    class_uri: ICON:0006005
+    title: legislation
+    description: 'A guideline or mandate that a legislature or the voters enact: a statute, an act, a
+      ballot measure.'
+    close_mappings:
+    - schema:Legislation
+    annotations:
+      runtime: term GMType "Legislation"
+    is_a: GuidelineOrMandate
+  Regulation:
+    class_uri: ICON:0006006
+    title: regulation
+    description: A guideline or mandate that an agency adopts under authority a statute gives it, with
+      the force of law, as in the California Code of Regulations.
+    annotations:
+      runtime: term GMType "Regulation"
+    is_a: GuidelineOrMandate
+  AgencyRule:
+    class_uri: ICON:0006007
+    title: agency rule
+    description: A guideline or mandate that a body adopts to govern its own lands, programs or members,
+      short of a codified regulation.
+    annotations:
+      runtime: term GMType "Rule"
+    is_a: GuidelineOrMandate
+  CourtOrder:
+    class_uri: ICON:0006008
+    title: court order
+    description: 'A guideline or mandate that a court issues in a case, such as a writ of mandate or an
+      injunction, directing a party, often a government agency, to act or to stop acting. It binds the
+      parties named in it. Example: the 2025 writ of mandate in California Chaparral Institute v. Board
+      of Forestry and Fire Protection, which limits the California Vegetation Treatment Program in chaparral
+      and coastal sage scrub.'
+    annotations:
+      runtime: term GMType "Court order"
+    is_a: GuidelineOrMandate
+  GovernmentLevel:
+    class_uri: ICON:0006010
+    title: government level
+    description: The level of government a guideline or mandate comes from or applies at.
+    annotations:
+      runtime: vocab GovLevel
+    is_a: InformationContentEntity
+slots:
+  has_instrument_type:
+    slot_uri: ICON:0006100
+    title: has instrument type
+    description: Links a guideline or mandate to one of the instrument type classes it belongs to. The
+      explorer's way of stating its class.
+    annotations:
+      runtime: phrase "has instrument type"
+    domain: GuidelineOrMandate
+    domain_of:
+    - GuidelineOrMandate
+    range: uriorcurie
+    inverse: is_instrument_type_of
+    multivalued: true
+  is_instrument_type_of:
+    slot_uri: ICON:0006101
+    title: is instrument type of
+    description: The reverse of has instrument type.
+    annotations:
+      runtime: phrase "is instrument type of"
+    range: GuidelineOrMandate
+    inverse: has_instrument_type
+    multivalued: true
+  at_government_level:
+    slot_uri: ICON:0006102
+    title: at government level
+    description: The level of government a guideline or mandate comes from.
+    annotations:
+      runtime: phrase "at government level"
+    domain: GuidelineOrMandate
+    domain_of:
+    - GuidelineOrMandate
+    range: GovernmentLevelEnum
+    inverse: is_government_level_of
+    multivalued: true
+  is_government_level_of:
+    slot_uri: ICON:0006103
+    title: is government level of
+    description: The reverse of at government level.
+    annotations:
+      runtime: phrase "is government level of"
+    domain: GovernmentLevel
+    domain_of:
+    - GovernmentLevel
+    range: GuidelineOrMandate
+    inverse: at_government_level
+    multivalued: true
+  is_required_by:
+    slot_uri: ICON:0006104
+    title: is required by
+    description: A guideline or mandate requires this data, publication or plan to be produced, as the
+      Endangered Species Act requires recovery plans.
+    annotations:
+      runtime: phrase "is required by"
+    range: GuidelineOrMandate
+    inverse: requires
+    multivalued: true
+  requires:
+    slot_uri: ICON:0006105
+    title: requires
+    description: The reverse of is required by.
+    annotations:
+      runtime: phrase "requires"
+    domain: GuidelineOrMandate
+    domain_of:
+    - GuidelineOrMandate
+    range: uriorcurie
+    inverse: is_required_by
+    multivalued: true
+  is_bound_by:
+    slot_uri: ICON:0006106
+    title: is bound by
+    description: 'A guideline or mandate binds the organization: it must comply with it. A project, program
+      or other record is bound by a mandate only when a source says so for that record.'
+    comments:
+    - 'Mandates do not pass from an organization to its units or to work carried out under it (#429, #466).'
+    annotations:
+      runtime: phrase "is bound by"
+    range: GuidelineOrMandate
+    inverse: binds
+    multivalued: true
+  binds:
+    slot_uri: ICON:0006107
+    title: binds
+    description: The reverse of is bound by.
+    annotations:
+      runtime: phrase "binds"
+    domain: GuidelineOrMandate
+    domain_of:
+    - GuidelineOrMandate
+    range: uriorcurie
+    inverse: is_bound_by
+    multivalued: true
+  implements:
+    slot_uri: ICON:0006108
+    title: implements
+    description: An organization, project, program or guideline or mandate carries out a guideline or
+      mandate or a plan, as a program carries out the statute that authorizes it or the certification
+      it runs, or a regulation carries out the statute that requires it.
+    annotations:
+      runtime: phrase "implements"
+    is_a: is_involved_with
+    range: uriorcurie
+    inverse: is_implemented_by
+    multivalued: true
+  is_implemented_by:
+    slot_uri: ICON:0006109
+    title: is implemented by
+    description: The reverse of implements.
+    annotations:
+      runtime: phrase "is implemented by"
+    is_a: is_involved_with
+    range: uriorcurie
+    inverse: implements
+    multivalued: true
+  enforces:
+    slot_uri: ICON:0006110
+    title: enforces
+    description: An organization holds the authority to enforce a guideline or mandate.
+    annotations:
+      runtime: phrase "enforces"
+    range: uriorcurie
+    inverse: is_enforced_by
+    multivalued: true
+  is_enforced_by:
+    slot_uri: ICON:0006111
+    title: is enforced by
+    description: The reverse of enforces.
+    annotations:
+      runtime: phrase "is enforced by"
+    range: uriorcurie
+    inverse: enforces
+    multivalued: true
+  issued:
+    slot_uri: ICON:0006112
+    title: issued
+    description: 'An organization issued a guideline, mandate or plan: adopted, signed or published it.'
+    annotations:
+      runtime: phrase "issued"
+    range: uriorcurie
+    inverse: was_issued_by
+    multivalued: true
+  was_issued_by:
+    slot_uri: ICON:0006113
+    title: was issued by
+    description: The reverse of issued.
+    close_mappings:
+    - eli:passed_by
+    annotations:
+      runtime: phrase "was issued by"
+    range: uriorcurie
+    inverse: issued
+    multivalued: true
+  is_supported_by:
+    slot_uri: ICON:0006114
+    title: is supported by
+    description: An organization's work rests on a guideline or mandate, as a program on the statute that
+      authorizes it.
+    annotations:
+      runtime: phrase "is supported by"
+    range: uriorcurie
+    inverse: supports
+    multivalued: true
+  supports:
+    slot_uri: ICON:0006115
+    title: supports
+    description: The reverse of is supported by.
+    annotations:
+      runtime: phrase "supports"
+    range: uriorcurie
+    inverse: is_supported_by
+    multivalued: true
+  advises_about:
+    slot_uri: ICON:0006116
+    title: advises about
+    description: An organization gives advice on how to meet or apply a guideline or mandate.
+    annotations:
+      runtime: phrase "advises about"
+    range: uriorcurie
+    inverse: is_advised_about_by
+    multivalued: true
+  is_advised_about_by:
+    slot_uri: ICON:0006117
+    title: is advised about by
+    description: The reverse of advises about.
+    annotations:
+      runtime: phrase "is advised about by"
+    range: uriorcurie
+    inverse: advises_about
+    multivalued: true
+  is_certified_by:
+    slot_uri: ICON:0006118
+    title: is certified by
+    description: An organization, or a place such as a ranch or preserve, holds certification under a
+      certification standard.
+    annotations:
+      runtime: phrase "is certified by"
+    range: uriorcurie
+    inverse: certifies
+    multivalued: true
+  certifies:
+    slot_uri: ICON:0006119
+    title: certifies
+    description: The reverse of is certified by.
+    annotations:
+      runtime: phrase "certifies"
+    range: uriorcurie
+    inverse: is_certified_by
+    multivalued: true
+  funds_established_by:
+    slot_uri: ICON:0006120
+    title: funds established by
+    description: An organization pays out money a guideline or mandate set up, as a board awarding bond-measure
+      grants.
+    annotations:
+      runtime: phrase "funds established by"
+    range: GuidelineOrMandate
+    multivalued: true
+  sponsored:
+    slot_uri: ICON:0006121
+    title: sponsored
+    description: 'An organization sponsored a bill or ballot measure: it brought the proposal to the legislator
+      who carried it, or campaigned for the measure, and backed it to passage.'
+    annotations:
+      runtime: phrase "sponsored"
+    domain: Organization
+    domain_of:
+    - Organization
+    range: GuidelineOrMandate
+    inverse: was_sponsored_by
+    multivalued: true
+  was_sponsored_by:
+    slot_uri: ICON:0006122
+    title: was sponsored by
+    description: The reverse of sponsored.
+    annotations:
+      runtime: phrase "was sponsored by"
+    domain: GuidelineOrMandate
+    domain_of:
+    - GuidelineOrMandate
+    range: Organization
+    inverse: sponsored
+    multivalued: true
+  is_authorized_under:
+    slot_uri: ICON:0006123
+    title: is authorized under
+    description: A project went ahead under a permit, order, biological opinion or exemption that approved
+      its work, such as a restoration project covered by a programmatic biological opinion or a nationwide
+      permit.
+    annotations:
+      runtime: phrase "is authorized under"
+    domain: ConservationProject
+    domain_of:
+    - ConservationProject
+    range: GuidelineOrMandate
+    inverse: authorizes
+    multivalued: true
+  authorizes:
+    slot_uri: ICON:0006124
+    title: authorizes
+    description: The reverse of is authorized under.
+    annotations:
+      runtime: phrase "authorizes"
+    domain: GuidelineOrMandate
+    domain_of:
+    - GuidelineOrMandate
+    range: ConservationProject
+    inverse: is_authorized_under
+    multivalued: true
+enums:
+  GovernmentLevelEnum:
+    enum_uri: ICON:0006010
+    description: The values of government level.
+    permissible_values:
+      federal level:
+        meaning: ICON:0006011
+        description: The United States government.
+        annotations:
+          runtime: term GovLevel "Federal"
+      state level:
+        meaning: ICON:0006012
+        description: The State of California.
+        annotations:
+          runtime: term GovLevel "State"
+      local level:
+        meaning: ICON:0006013
+        description: Counties, cities and special districts.
+        annotations:
+          runtime: term GovLevel "Local"
+      private level:
+        meaning: ICON:0006014
+        description: 'No government: a standard or agreement set by private parties.'
+        annotations:
+          runtime: term GovLevel "Private"
+      international level:
+        meaning: ICON:0006015
+        description: 'An agreement among national governments, such as a treaty or a decision of the parties
+          to a convention. Example: the Kunming-Montreal Global Biodiversity Framework (2022), adopted
+          under the Convention on Biological Diversity.'
+        annotations:
+          runtime: term GovLevel "International"

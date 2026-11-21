@@ -1,0 +1,16 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix access: <http://publications.europa.eu/resource/authority/access-right/> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+icon:0008024 a owl:NamedIndividual,
+        icon:0008020 ;
+    rdfs:label "access by request or license"@en ;
+    IAO:0000115 "The data is available only through an agreement, a subscription or a fee."@en ;
+    rdfs:isDefinedBy iconbase:data.owl ;
+    skos:closeMatch access:RESTRICTED ;
+    icon:0000001 "DCAT-US 1.1: accessLevel restricted public" .
+

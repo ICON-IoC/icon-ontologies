@@ -1,0 +1,16 @@
+@prefix ENVO: <http://purl.obolibrary.org/obo/ENVO_> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+icon:0005024 a owl:Class ;
+    rdfs:label "water retention structure"@en ;
+    IAO:0000115 "A structure that holds water back, such as a dam, a check dam or a detention basin."@en ;
+    rdfs:isDefinedBy iconbase:infrastructure.owl ;
+    rdfs:subClassOf ENVO:00000070,
+        icon:0005003 ;
+    skos:closeMatch ENVO:00000074 .
+

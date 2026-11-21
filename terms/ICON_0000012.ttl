@@ -1,0 +1,16 @@
+@prefix BFO: <http://purl.obolibrary.org/obo/BFO_> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+icon:0000012 a owl:Class ;
+    rdfs:label "place"@en ;
+    IAO:0000115 "A part of the landscape or a structure in it that records can be located at, worked on or bounded by: a river, a reserve, a dam, a crossing structure."@en ;
+    rdfs:isDefinedBy iconbase:core.owl ;
+    rdfs:subClassOf BFO:0000004 ;
+    skos:closeMatch schema:Place .
+

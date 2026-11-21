@@ -1,0 +1,13 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0005051 a owl:Class ;
+    rdfs:label "marine conservation priority area"@en ;
+    IAO:0000115 "An area of ocean, estuary or shoreline that a conservation plan marks as a priority for protecting marine biodiversity, without itself being protected, such as a portfolio conservation area of a marine ecoregional assessment."@en ;
+    rdfs:comment "Added for the 55 portfolio conservation areas of The Nature Conservancy's 2006 Northern California Marine Ecoregional Assessment (#919)."@en ;
+    rdfs:isDefinedBy iconbase:infrastructure.owl ;
+    rdfs:subClassOf icon:0005002 .
+

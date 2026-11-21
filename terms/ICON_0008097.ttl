@@ -1,0 +1,12 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0008097 a owl:NamedIndividual,
+        icon:0008080 ;
+    rdfs:label "funding opportunities"@en ;
+    IAO:0000115 "Listings of grants, loans and other funding that people can apply for: the funder, what it pays for, award size and deadline."@en ;
+    rdfs:isDefinedBy iconbase:data.owl .
+

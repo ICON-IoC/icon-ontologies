@@ -1,0 +1,18 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+icon:0009201 a owl:DatatypeProperty ;
+    rdfs:label "published in"@en ;
+    IAO:0000115 "The journal a paper appeared in, or the series a report belongs to, by name: Conservation Biology, USGS Open-File Report. Kept as text: journals are not records in the graph."@en ;
+    rdfs:domain icon:0009000 ;
+    rdfs:isDefinedBy iconbase:publications.owl ;
+    rdfs:range xsd:string ;
+    skos:closeMatch schema:isPartOf ;
+    icon:0000001 "Crossref: journal_metadata/full_title" .
+

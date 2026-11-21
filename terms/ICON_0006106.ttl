@@ -1,0 +1,14 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0006106 a owl:ObjectProperty ;
+    rdfs:label "is bound by"@en ;
+    IAO:0000115 "A guideline or mandate binds the organization: it must comply with it. A project, program or other record is bound by a mandate only when a source says so for that record."@en ;
+    rdfs:comment "Mandates do not pass from an organization to its units or to work carried out under it (#429, #466)."@en ;
+    rdfs:isDefinedBy iconbase:mandates.owl ;
+    rdfs:range icon:0006000 ;
+    owl:inverseOf icon:0006107 .
+

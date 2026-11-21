@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:iconbase="https://w3id.org/icon/"
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="cb180f37256ef3f7d14fe4cc4d6c646ceb8584764b502914272f957d2712e8578f">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0003000"/>
+    <rdf:rest rdf:nodeID="cbc58438f9f2b2cd73f05128b2bb486ea5c6320eea9df78ccac363a89c95c1419e"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb1adf6eba2b5994637349f298e9a731a391be94277f192df4155c5833e6fc42f84">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005000"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb1c65bb9b71b4db57b70ad8e89ceab541f4ca69cc8f7bed8669ee3088b520eedb3">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0007003"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb2777e0b5bfc9dfedbeb6a74541a81db396f7d031c62ed1fcf9e88452c3ae606e">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0007001"/>
+    <rdf:rest rdf:nodeID="cb87239a321b0bac6f63e9f3743f21525d5724ff0756e2bc24d228e485c02cb0bd"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb3d80f0a0795a51b36c4046727790b33c26d86919bfbb58a24ff27af3c852cf32">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0006000"/>
+    <rdf:rest rdf:nodeID="cb2777e0b5bfc9dfedbeb6a74541a81db396f7d031c62ed1fcf9e88452c3ae606e"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb87239a321b0bac6f63e9f3743f21525d5724ff0756e2bc24d228e485c02cb0bd">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0007002"/>
+    <rdf:rest rdf:nodeID="cb1c65bb9b71b4db57b70ad8e89ceab541f4ca69cc8f7bed8669ee3088b520eedb3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cba7fca07b2a6572ddd791e9b2af510776c48d0cbeb8ab24810b5d3ea48c9b9b05">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="cb180f37256ef3f7d14fe4cc4d6c646ceb8584764b502914272f957d2712e8578f"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cbbd9cfb80263461bbcb958924b49e43360962ca1c54232441aff323fdaf03a8be">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0004000"/>
+    <rdf:rest rdf:nodeID="cb3d80f0a0795a51b36c4046727790b33c26d86919bfbb58a24ff27af3c852cf32"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cbc58438f9f2b2cd73f05128b2bb486ea5c6320eea9df78ccac363a89c95c1419e">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0004000"/>
+    <rdf:rest rdf:nodeID="cb1adf6eba2b5994637349f298e9a731a391be94277f192df4155c5833e6fc42f84"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cbfdb20c157b4f98088295e6bee3a3e857145837a568b038856d6b9c9a40498fc4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="cbbd9cfb80263461bbcb958924b49e43360962ca1c54232441aff323fdaf03a8be"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014102">
+    <obo:IAO_0000115 xml:lang="en">A project, program or place advances an objective, action, plan, program or guideline or mandate, so its outcomes count toward that record's targets.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:nodeID="cba7fca07b2a6572ddd791e9b2af510776c48d0cbeb8ab24810b5d3ea48c9b9b05"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">contributes to</rdfs:label>
+    <rdfs:range rdf:nodeID="cbfdb20c157b4f98088295e6bee3a3e857145837a568b038856d6b9c9a40498fc4"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0014103"/>
+    <iconbase:ICON_0000001>Conservation Standards 4.0: results chain</iconbase:ICON_0000001>
+  </rdf:Description>
+</rdf:RDF>

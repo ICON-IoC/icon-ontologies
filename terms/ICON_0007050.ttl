@@ -1,0 +1,13 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0007050 a owl:Class ;
+    rdfs:label "restoration feasibility plan"@en ;
+    IAO:0000115 "A plan that reviews the condition of a degraded lake, wetland or landscape and the restoration alternatives tried or proposed before, develops conceptual projects with cost estimates, and matches them to realistic funding sources, to recommend a restoration that is feasible and affordable rather than adopting a binding program. Example: the Salton Sea Funding and Feasibility Action Plan (2016)."@en ;
+    rdfs:comment "Added for the Salton Sea Authority's Funding and Feasibility Action Plan (#1243)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  <uri name="https://w3id.org/icon/core.owl" uri="icon-core.owl"/>
+  <uri name="https://w3id.org/icon/organizations.owl" uri="icon-organizations.owl"/>
+  <uri name="https://w3id.org/icon/people.owl" uri="icon-people.owl"/>
+  <uri name="https://w3id.org/icon/projects.owl" uri="icon-projects.owl"/>
+  <uri name="https://w3id.org/icon/programs.owl" uri="icon-programs.owl"/>
+  <uri name="https://w3id.org/icon/infrastructure.owl" uri="icon-infrastructure.owl"/>
+  <uri name="https://w3id.org/icon/mandates.owl" uri="icon-mandates.owl"/>
+  <uri name="https://w3id.org/icon/plans.owl" uri="icon-plans.owl"/>
+  <uri name="https://w3id.org/icon/data.owl" uri="icon-data.owl"/>
+  <uri name="https://w3id.org/icon/publications.owl" uri="icon-publications.owl"/>
+  <uri name="https://w3id.org/icon/tools.owl" uri="icon-tools.owl"/>
+  <uri name="https://w3id.org/icon/places.owl" uri="icon-places.owl"/>
+  <uri name="https://w3id.org/icon/biodiversity.owl" uri="icon-biodiversity.owl"/>
+  <uri name="https://w3id.org/icon/issues.owl" uri="icon-issues.owl"/>
+  <uri name="https://w3id.org/icon/outcomes.owl" uri="icon-outcomes.owl"/>
+</catalog>

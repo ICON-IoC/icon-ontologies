@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use the ICON ontologies, please cite them as below."
+title: "ICON ontologies"
+version: "2026-11-21"
+date-released: "2026-11-21"
+license: CC-BY-4.0
+url: "https://w3id.org/icon/"
+repository-code: "https://github.com/ICON-IoC/icon-ontologies"
+authors:
+  - name: "Information for the Conservation of Nature (ICON)"
+abstract: "The Internet of Conservation ontologies: one module per kind of record in the conservation knowledge graph, each usable on its own."
+keywords:
+  - ontology
+  - conservation
+  - OWL
+  - LinkML

@@ -1,0 +1,555 @@
+# ICON Indicators, targets and outcomes ontology
+# Built by `ioc-ontologies` from ontology/src/outcomes.terms; edit that file, not this one.
+# Guide: ontology/guides/outcomes.md
+@prefix BFO: <http://purl.obolibrary.org/obo/BFO_> .
+@prefix COB: <http://purl.obolibrary.org/obo/COB_> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix OBI: <http://purl.obolibrary.org/obo/OBI_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+IAO:0000115 a owl:AnnotationProperty ;
+    rdfs:label "definition" .
+
+dcterms:creator a owl:AnnotationProperty .
+
+dcterms:description a owl:AnnotationProperty .
+
+dcterms:license a owl:AnnotationProperty .
+
+dcterms:references a owl:AnnotationProperty .
+
+dcterms:title a owl:AnnotationProperty .
+
+oboInOwl:hasDbXref a owl:AnnotationProperty ;
+    rdfs:label "database_cross_reference" .
+
+oboInOwl:hasExactSynonym a owl:AnnotationProperty ;
+    rdfs:label "has_exact_synonym" .
+
+skos:broadMatch a owl:AnnotationProperty .
+
+skos:closeMatch a owl:AnnotationProperty .
+
+skos:exactMatch a owl:AnnotationProperty .
+
+skos:narrowMatch a owl:AnnotationProperty .
+
+icon:0000001 a owl:AnnotationProperty ;
+    rdfs:label "crosswalk"@en ;
+    IAO:0000115 "The matching field in a metadata standard that is not published as RDF, written as the standard's name, a colon and the field's path, such as \"EML 2.2: dataset/title\"."@en ;
+    rdfs:isDefinedBy iconbase:core.owl .
+
+icon:0000002 a owl:AnnotationProperty ;
+    rdfs:label "expected attribute"@en ;
+    IAO:0000115 "A property the records of this class are expected to carry, such as a title or a year. Records the attributes a class uses without adding domain axioms to terms borrowed from other vocabularies."@en ;
+    rdfs:isDefinedBy iconbase:core.owl .
+
+icon:0014003 a owl:Class ;
+    rdfs:label "expected outcome"@en ;
+    IAO:0000115 "An outcome a project or program sets out to deliver and has not yet been shown to: the acres a grant award or a project plan states, or the planned and in-progress work a project tracker lists."@en ;
+    oboInOwl:hasExactSynonym "planned outcome"@en ;
+    rdfs:isDefinedBy iconbase:outcomes.owl ;
+    rdfs:subClassOf IAO:0000005,
+        icon:0014002 .
+
+icon:0014004 a owl:Class ;
+    rdfs:label "measured outcome"@en ;
+    IAO:0000115 "An outcome recorded as delivered, by a report, a monitoring survey or an inventory such as CPAD, or by a project tracker that lists the work as completed."@en ;
+    oboInOwl:hasExactSynonym "achieved outcome"@en ;
+    rdfs:isDefinedBy iconbase:outcomes.owl ;
+    rdfs:subClassOf IAO:0000109,
+        icon:0014002 .
+
+icon:0014010 a owl:NamedIndividual,
+        icon:0014000 ;
+    rdfs:label "area conserved"@en ;
+    IAO:0000115 "Acres of land or water protected for conservation in fee title or by easement."@en ;
+    rdfs:isDefinedBy iconbase:outcomes.owl .
+
+icon:0014011 a owl:NamedIndividual,
+        icon:0014000 ;
+    rdfs:label "habitat restored"@en ;
+    IAO:0000115 "Acres where a habitat lost or degraded was re-established, such as tidal marsh restored from diked land."@en ;
+    rdfs:isDefinedBy iconbase:outcomes.owl .
+
+icon:0014012 a owl:NamedIndividual,
+        icon:0014000 ;
+    rdfs:label "habitat enhanced"@en ;
+    IAO:0000115 "Acres of existing habitat whose condition was improved without changing its type."@en ;
+    rdfs:isDefinedBy iconbase:outcomes.owl .
+
+icon:0014013 a owl:NamedIndividual,
+        icon:0014000 ;
+    rdfs:label "area under conservation management"@en ;
+    IAO:0000115 "Acres managed under a plan that benefits habitat or species, such as managed wetlands or grazing under a conservation plan."@en ;
+    rdfs:isDefinedBy iconbase:outcomes.owl .
+
+icon:0014014 a owl:NamedIndividual,
+        icon:0014000 ;
+    rdfs:label "floodplain reconnected"@en ;
+    IAO:0000115 "Acres of floodplain reconnected to its river, so that it floods again."@en ;
+    rdfs:isDefinedBy iconbase:outcomes.owl .
+
+icon:0014015 a owl:NamedIndividual,
+        icon:0014000 ;
+    rdfs:label "area treated for invasive species"@en ;
+    IAO:0000115 "Acres where invasive plants or animals were removed or controlled."@en ;
+    rdfs:isDefinedBy iconbase:outcomes.owl .
+
+icon:0014016 a owl:NamedIndividual,
+        icon:0014000 ;
+    rdfs:label "area treated for wildfire resilience"@en ;
+    IAO:0000115 "Acres of fuel reduction, prescribed fire or forest thinning."@en ;
+    rdfs:isDefinedBy iconbase:outcomes.owl .
+
+icon:0014017 a owl:NamedIndividual,
+        icon:0014000 ;
+    rdfs:label "area opened to public access"@en ;
+    IAO:0000115 "Acres newly opened to the public for recreation or access to nature."@en ;
+    rdfs:isDefinedBy iconbase:outcomes.owl .
+
+icon:0014018 a owl:NamedIndividual,
+        icon:0014000 ;
+    rdfs:label "stream habitat restored"@en ;
+    IAO:0000115 "Miles of stream channel or bank restored."@en ;
+    rdfs:isDefinedBy iconbase:outcomes.owl .
+
+icon:0014019 a owl:NamedIndividual,
+        icon:0014000 ;
+    rdfs:label "stream opened to fish passage"@en ;
+    IAO:0000115 "Miles of stream made reachable by migratory fish by removing or fixing barriers."@en ;
+    rdfs:isDefinedBy iconbase:outcomes.owl .
+
+icon:0014020 a owl:NamedIndividual,
+        icon:0014000 ;
+    rdfs:label "levee improved"@en ;
+    IAO:0000115 "Miles of levee repaired, raised or set back."@en ;
+    rdfs:isDefinedBy iconbase:outcomes.owl .
+
+icon:0014021 a owl:NamedIndividual,
+        icon:0014000 ;
+    rdfs:label "trail built or opened"@en ;
+    IAO:0000115 "Miles of trail built or opened to the public."@en ;
+    rdfs:isDefinedBy iconbase:outcomes.owl .
+
+icon:0014022 a owl:NamedIndividual,
+        icon:0014000 ;
+    rdfs:label "water for the environment"@en ;
+    IAO:0000115 "Acre-feet a year of water dedicated to streams, wetlands or habitat."@en ;
+    rdfs:isDefinedBy iconbase:outcomes.owl .
+
+icon:0014023 a owl:NamedIndividual,
+        icon:0014000 ;
+    rdfs:label "groundwater recharged"@en ;
+    IAO:0000115 "Acre-feet a year of water added to groundwater by recharge projects."@en ;
+    rdfs:isDefinedBy iconbase:outcomes.owl .
+
+icon:0014024 a owl:NamedIndividual,
+        icon:0014000 ;
+    rdfs:label "fish passage barriers remediated"@en ;
+    IAO:0000115 "The number of dams, culverts or other barriers to fish removed or fitted with passage."@en ;
+    rdfs:isDefinedBy iconbase:outcomes.owl .
+
+icon:0014025 a owl:NamedIndividual,
+        icon:0014000 ;
+    rdfs:label "wildlife crossings built"@en ;
+    IAO:0000115 "The number of wildlife crossing structures built or retrofitted."@en ;
+    rdfs:isDefinedBy iconbase:outcomes.owl .
+
+icon:0014026 a owl:NamedIndividual,
+        icon:0014000 ;
+    rdfs:label "populations secured"@en ;
+    IAO:0000115 "The number of populations of a species that meet a plan's test of being secure, such as protected and self-sustaining."@en ;
+    rdfs:isDefinedBy iconbase:outcomes.owl .
+
+icon:0014027 a owl:NamedIndividual,
+        icon:0014000 ;
+    rdfs:label "population size"@en ;
+    IAO:0000115 "The number of individuals of a species counted or estimated, such as adult fish returning to spawn."@en ;
+    rdfs:isDefinedBy iconbase:outcomes.owl .
+
+icon:0014028 a owl:NamedIndividual,
+        icon:0014000 ;
+    rdfs:label "projects completed"@en ;
+    IAO:0000115 "The number of projects of a kind carried out to completion."@en ;
+    rdfs:isDefinedBy iconbase:outcomes.owl .
+
+icon:0014029 a owl:NamedIndividual,
+        icon:0014000 ;
+    rdfs:label "partnerships formed"@en ;
+    IAO:0000115 "The number of partnerships or agreements formed among organizations."@en ;
+    rdfs:isDefinedBy iconbase:outcomes.owl .
+
+icon:0014030 a owl:NamedIndividual,
+        icon:0014000 ;
+    rdfs:label "funding invested"@en ;
+    IAO:0000115 "Dollars spent or awarded on the work."@en ;
+    rdfs:isDefinedBy iconbase:outcomes.owl .
+
+icon:0014031 a owl:NamedIndividual,
+        icon:0014000 ;
+    rdfs:label "carbon stored"@en ;
+    IAO:0000115 "Metric tons of carbon dioxide equivalent stored or kept from release."@en ;
+    rdfs:isDefinedBy iconbase:outcomes.owl .
+
+icon:0014032 a owl:NamedIndividual,
+        icon:0014000 ;
+    rdfs:label "projects funded"@en ;
+    IAO:0000115 "The number of projects of a kind a funder approves a grant or acquisition for, counted when the award is made, whether or not the work is done yet."@en ;
+    rdfs:isDefinedBy iconbase:outcomes.owl .
+
+icon:0014033 a owl:NamedIndividual,
+        icon:0014000 ;
+    rdfs:label "projects monitored"@en ;
+    IAO:0000115 "The number of completed projects checked in a year for whether they are operated, used and maintained as their grant agreements require."@en ;
+    rdfs:isDefinedBy iconbase:outcomes.owl .
+
+icon:0014034 a owl:NamedIndividual,
+        icon:0014000 ;
+    rdfs:label "outreach events held"@en ;
+    IAO:0000115 "The number of meetings, workshops or conferences held or sponsored to reach the public, partners or prospective grantees."@en ;
+    rdfs:isDefinedBy iconbase:outcomes.owl .
+
+icon:0014035 a owl:NamedIndividual,
+        icon:0014000 ;
+    rdfs:label "process improvements made"@en ;
+    IAO:0000115 "The number of changes put in place to make an organization's processes, such as grant applications, reporting or payment, simpler or faster."@en ;
+    rdfs:isDefinedBy iconbase:outcomes.owl .
+
+icon:0014036 a owl:NamedIndividual,
+        icon:0014000 ;
+    rdfs:label "land conserved"@en ;
+    IAO:0000115 "Acres of land durably protected and managed for biodiversity, as California counts its 30x30 Conservation Areas on land. Narrower than area conserved, which takes in water and any protection by fee or easement."@en ;
+    rdfs:isDefinedBy iconbase:outcomes.owl .
+
+icon:0014037 a owl:NamedIndividual,
+        icon:0014000 ;
+    rdfs:label "coastal waters conserved"@en ;
+    IAO:0000115 "Acres of coastal waters durably protected and managed for biodiversity, as California counts its 30x30 Conservation Areas in its coastal state waters."@en ;
+    rdfs:isDefinedBy iconbase:outcomes.owl .
+
+icon:0014038 a owl:NamedIndividual,
+        icon:0014000 ;
+    rdfs:label "habitat created"@en ;
+    IAO:0000115 "Acres where a habitat was established where it did not exist before, such as a wetland built on upland. Habitat restored is where it once was."@en ;
+    rdfs:isDefinedBy iconbase:outcomes.owl .
+
+BFO:0000001 a owl:Class ;
+    rdfs:label "entity"@en .
+
+BFO:0000004 a owl:Class ;
+    rdfs:label "independent continuant"@en ;
+    IAO:0000115 "b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])"@en ;
+    rdfs:subClassOf BFO:0000002 .
+
+BFO:0000015 a owl:Class ;
+    rdfs:label "process"@en .
+
+BFO:0000031 a owl:Class ;
+    rdfs:label "generically dependent continuant"@en ;
+    IAO:0000115 "b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])"@en ;
+    rdfs:subClassOf BFO:0000002 .
+
+COB:0000082 a owl:Class ;
+    rdfs:label "planned process"@en ;
+    IAO:0000115 "A process that is initiated by an agent who intends to carry out a plan to achieve an objective through one or more actions as described in a plan specification."@en ;
+    rdfs:subClassOf BFO:0000015 .
+
+IAO:0000007 a owl:Class ;
+    rdfs:label "action specification"@en ;
+    IAO:0000115 "A directive information entity that describes an action the bearer will take."@en ;
+    rdfs:subClassOf IAO:0000033 .
+
+IAO:0000027 a owl:Class ;
+    rdfs:label "data entity"@en ;
+    IAO:0000115 "An information content entity that is intended to be one or more truthful statement(s) about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements."@en ;
+    rdfs:subClassOf IAO:0000030 .
+
+IAO:0000104 a owl:Class ;
+    rdfs:label "plan specification"@en ;
+    IAO:0000115 "A directive information entity with action specifications and objective specifications as parts, and that may be concretized as a realizable entity that, if realized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified."@en ;
+    rdfs:subClassOf IAO:0000033 .
+
+IAO:0000109 a owl:Class ;
+    rdfs:label "measurement datum"@en ;
+    IAO:0000115 "A measurement datum is an information content entity that is a recording of the output of a measurement such as produced by a device."@en ;
+    rdfs:subClassOf IAO:0000027 .
+
+icon:0000012 a owl:Class ;
+    rdfs:label "place"@en ;
+    IAO:0000115 "A part of the landscape or a structure in it that records can be located at, worked on or bounded by: a river, a reserve, a dam, a crossing structure."@en ;
+    rdfs:isDefinedBy iconbase:core.owl ;
+    rdfs:subClassOf BFO:0000004 .
+
+icon:0014100 a owl:ObjectProperty ;
+    rdfs:label "is measured by"@en ;
+    IAO:0000115 "A record sets a target on the indicator, or reports an outcome on it."@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( icon:0003000 icon:0004000 icon:0005000 icon:0006000 icon:0007001 icon:0007002 icon:0007003 ) ] ;
+    rdfs:isDefinedBy iconbase:outcomes.owl ;
+    rdfs:range icon:0014000 ;
+    owl:inverseOf icon:0014101 .
+
+icon:0014101 a owl:ObjectProperty ;
+    rdfs:label "measures"@en ;
+    IAO:0000115 "The reverse of is measured by."@en ;
+    rdfs:domain icon:0014000 ;
+    rdfs:isDefinedBy iconbase:outcomes.owl ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( icon:0003000 icon:0004000 icon:0005000 icon:0006000 icon:0007001 icon:0007002 icon:0007003 ) ] ;
+    owl:inverseOf icon:0014100 .
+
+icon:0014102 a owl:ObjectProperty ;
+    rdfs:label "contributes to"@en ;
+    IAO:0000115 "A project, program or place advances an objective, action, plan, program or guideline or mandate, so its outcomes count toward that record's targets."@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( icon:0003000 icon:0004000 icon:0005000 ) ] ;
+    rdfs:isDefinedBy iconbase:outcomes.owl ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( icon:0004000 icon:0006000 icon:0007001 icon:0007002 icon:0007003 ) ] ;
+    owl:inverseOf icon:0014103 ;
+    icon:0000001 "Conservation Standards 4.0: results chain" .
+
+icon:0014103 a owl:ObjectProperty ;
+    rdfs:label "is advanced by"@en ;
+    IAO:0000115 "The reverse of contributes to."@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( icon:0004000 icon:0006000 icon:0007001 icon:0007002 icon:0007003 ) ] ;
+    rdfs:isDefinedBy iconbase:outcomes.owl ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( icon:0003000 icon:0004000 icon:0005000 ) ] ;
+    owl:inverseOf icon:0014102 .
+
+icon:0014104 a owl:ObjectProperty ;
+    rdfs:label "has outcome"@en ;
+    IAO:0000115 "A project, program or place delivers the outcome, expected or measured (#959). The explorer shows a record's outcomes in its panel rather than as links."@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( icon:0003000 icon:0004000 icon:0005000 ) ] ;
+    rdfs:isDefinedBy iconbase:outcomes.owl ;
+    rdfs:range icon:0014002 ;
+    owl:inverseOf icon:0014105 ;
+    skos:closeMatch OBI:0000299 ;
+    icon:0000001 "Conservation Standards 4.0: result" .
+
+icon:0014105 a owl:ObjectProperty ;
+    rdfs:label "is outcome of"@en ;
+    IAO:0000115 "The reverse of has outcome."@en ;
+    rdfs:domain icon:0014002 ;
+    rdfs:isDefinedBy iconbase:outcomes.owl ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( icon:0003000 icon:0004000 icon:0005000 ) ] ;
+    owl:inverseOf icon:0014104 .
+
+icon:0014106 a owl:ObjectProperty ;
+    rdfs:label "has target"@en ;
+    IAO:0000115 "An objective, action, plan, program or guideline or mandate sets the target (#959). The explorer shows a record's targets, with progress toward them, in its panel rather than as links."@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( icon:0004000 icon:0006000 icon:0007001 icon:0007002 icon:0007003 ) ] ;
+    rdfs:isDefinedBy iconbase:outcomes.owl ;
+    rdfs:range icon:0014001 ;
+    owl:inverseOf icon:0014107 ;
+    icon:0000001 "Conservation Standards 4.0: objective" .
+
+icon:0014107 a owl:ObjectProperty ;
+    rdfs:label "is target of"@en ;
+    IAO:0000115 "The reverse of has target."@en ;
+    rdfs:domain icon:0014001 ;
+    rdfs:isDefinedBy iconbase:outcomes.owl ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( icon:0004000 icon:0006000 icon:0007001 icon:0007002 icon:0007003 ) ] ;
+    owl:inverseOf icon:0014106 .
+
+icon:0014200 a owl:DatatypeProperty ;
+    rdfs:label "target low value"@en ;
+    IAO:0000115 "The target's amount in its indicator's unit, or the low end when the target is a range."@en ;
+    rdfs:domain icon:0014001 ;
+    rdfs:isDefinedBy iconbase:outcomes.owl ;
+    rdfs:range xsd:decimal .
+
+icon:0014201 a owl:DatatypeProperty ;
+    rdfs:label "target high value"@en ;
+    IAO:0000115 "The high end of a target given as a range."@en ;
+    rdfs:domain icon:0014001 ;
+    rdfs:isDefinedBy iconbase:outcomes.owl ;
+    rdfs:range xsd:decimal .
+
+icon:0014202 a owl:DatatypeProperty ;
+    rdfs:label "baseline value"@en ;
+    IAO:0000115 "The amount of the indicator before the target was set. Progress counts up from it: the baseline plus the outcomes achieved since."@en ;
+    rdfs:domain icon:0014001 ;
+    rdfs:isDefinedBy iconbase:outcomes.owl ;
+    rdfs:range xsd:decimal .
+
+icon:0014203 a owl:DatatypeProperty ;
+    rdfs:label "baseline year"@en ;
+    IAO:0000115 "The year of the baseline value."@en ;
+    rdfs:domain icon:0014001 ;
+    rdfs:isDefinedBy iconbase:outcomes.owl ;
+    rdfs:range xsd:integer .
+
+icon:0014204 a owl:DatatypeProperty ;
+    rdfs:label "target year"@en ;
+    IAO:0000115 "The year by which the target is to be met."@en ;
+    rdfs:domain icon:0014001 ;
+    rdfs:isDefinedBy iconbase:outcomes.owl ;
+    rdfs:range xsd:integer .
+
+icon:0014205 a owl:DatatypeProperty ;
+    rdfs:label "outcome value"@en ;
+    IAO:0000115 "The outcome's amount in its indicator's unit."@en ;
+    rdfs:domain icon:0014002 ;
+    rdfs:isDefinedBy iconbase:outcomes.owl ;
+    rdfs:range xsd:decimal .
+
+icon:0014206 a owl:DatatypeProperty ;
+    rdfs:label "outcome year"@en ;
+    IAO:0000115 "The year the outcome was measured, or is expected to be delivered."@en ;
+    rdfs:domain icon:0014002 ;
+    rdfs:isDefinedBy iconbase:outcomes.owl ;
+    rdfs:range xsd:integer .
+
+icon:0014207 a owl:DatatypeProperty ;
+    rdfs:label "outcome status"@en ;
+    IAO:0000115 "Expected (an expected outcome, as a grant award or proposal states it) or measured (a measured outcome, as a report or inventory records it)."@en ;
+    rdfs:domain icon:0014002 ;
+    rdfs:isDefinedBy iconbase:outcomes.owl ;
+    rdfs:range xsd:string .
+
+icon:0014208 a owl:DatatypeProperty ;
+    rdfs:label "target total"@en ;
+    IAO:0000115 "The whole a target's percentages are of, in its indicator's unit, such as California's land area for a goal of conserving 30 percent of its lands. A target with a total is shown in both amounts and percentages."@en ;
+    rdfs:domain icon:0014001 ;
+    rdfs:isDefinedBy iconbase:outcomes.owl ;
+    rdfs:range xsd:decimal .
+
+BFO:0000002 a owl:Class ;
+    rdfs:label "continuant"@en ;
+    rdfs:subClassOf BFO:0000001 .
+
+IAO:0000005 a owl:Class ;
+    rdfs:label "objective specification"@en ;
+    IAO:0000115 "A directive information entity that describes an intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved."@en ;
+    rdfs:subClassOf IAO:0000033 .
+
+icon:0000011 a owl:Class ;
+    rdfs:label "endeavor"@en ;
+    IAO:0000115 "A planned process carried out to achieve conservation ends over a span of time: a project or a program."@en ;
+    rdfs:isDefinedBy iconbase:core.owl ;
+    rdfs:subClassOf COB:0000082 .
+
+icon:0000014 a owl:Class ;
+    rdfs:label "planning element"@en ;
+    IAO:0000115 "A directive information entity that sets out what conservation work should achieve or do: a plan, one of its objectives, or one of its actions."@en ;
+    rdfs:isDefinedBy iconbase:core.owl ;
+    rdfs:subClassOf IAO:0000033 .
+
+IAO:0000030 a owl:Class ;
+    rdfs:label "information content entity"@en ;
+    IAO:0000115 "A generically dependent continuant that is about some thing."@en ;
+    rdfs:subClassOf BFO:0000031 .
+
+IAO:0000033 a owl:Class ;
+    rdfs:label "directive information entity"@en ;
+    IAO:0000115 "An information content entity whose concretizations indicate to their bearer how to realize them in a process."@en ;
+    rdfs:subClassOf IAO:0000030 .
+
+icon:0003000 a owl:Class ;
+    rdfs:label "conservation project"@en ;
+    IAO:0000115 "A bounded effort with a lead and usually partners and funders that restores, protects, acquires, studies, plans or manages something in a place, and ends when its work is done."@en ;
+    rdfs:isDefinedBy iconbase:projects.owl ;
+    rdfs:subClassOf icon:0000011 .
+
+icon:0005000 a owl:Class ;
+    rdfs:label "infrastructure"@en ;
+    IAO:0000115 "A place or structure on the landscape that conservation works on or around: a water body, a conservation area, a water or energy work, a farm, a sensor, a road or trail. Called infrastructure in the PPOD model whether built or natural."@en ;
+    rdfs:isDefinedBy iconbase:infrastructure.owl ;
+    rdfs:subClassOf icon:0000012 .
+
+icon:0006000 a owl:Class ;
+    rdfs:label "guideline or mandate"@en ;
+    IAO:0000115 "A directive that requires, allows, funds or shapes conservation work: a law, regulation, executive order, agreement, certification standard or guideline. Some bind; others only advise."@en ;
+    rdfs:isDefinedBy iconbase:mandates.owl ;
+    rdfs:subClassOf IAO:0000033 .
+
+icon:0007001 a owl:Class ;
+    rdfs:label "conservation plan"@en ;
+    IAO:0000115 "A plan specification issued by an agency or organization that sets conservation objectives and the actions to meet them, such as a species recovery plan."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf IAO:0000104,
+        icon:0000014 .
+
+icon:0007002 a owl:Class ;
+    rdfs:label "plan objective"@en ;
+    IAO:0000115 "An objective specification within a conservation plan: a condition the plan aims to reach, often with measurable criteria, such as a population target for a recovery unit."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf IAO:0000005,
+        icon:0000014 .
+
+icon:0007003 a owl:Class ;
+    rdfs:label "plan action"@en ;
+    IAO:0000115 "An action specification within a conservation plan: a task the plan calls for, with its priority, cost, lead and cooperators. Actions nest: a sub-action is part of its action."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf IAO:0000007,
+        icon:0000014 .
+
+icon:0014002 a owl:Class ;
+    rdfs:label "outcome"@en ;
+    IAO:0000115 "An amount of an indicator that a project, program or place delivers: expected, as a grant award or project plan states it, or measured, as a report or an inventory such as CPAD records it."@en ;
+    rdfs:isDefinedBy iconbase:outcomes.owl ;
+    rdfs:subClassOf IAO:0000030 ;
+    icon:0000001 "Conservation Standards 4.0: result" ;
+    icon:0000002 icon:0014205,
+        icon:0014206,
+        icon:0014207 .
+
+icon:0014001 a owl:Class ;
+    rdfs:label "target"@en ;
+    IAO:0000115 "The amount of an indicator that an objective, plan, program or guideline or mandate sets out to reach, by a year where it gives one: restore 5,000 to 7,000 acres of tidal marsh within 30 years. A range keeps its low and high values; a milestone is another target on the same indicator with an earlier year."@en ;
+    rdfs:isDefinedBy iconbase:outcomes.owl ;
+    rdfs:subClassOf IAO:0000033 ;
+    icon:0000001 "Conservation Standards 4.0: objective" ;
+    icon:0000002 icon:0014200,
+        icon:0014201,
+        icon:0014202,
+        icon:0014203,
+        icon:0014204,
+        icon:0014208 .
+
+icon:0004000 a owl:Class ;
+    rdfs:label "conservation program"@en ;
+    IAO:0000115 "An ongoing arrangement, usually run by an agency, that funds, regulates, certifies, plans or carries out conservation work through many projects or participants, with no set end."@en ;
+    rdfs:isDefinedBy iconbase:programs.owl ;
+    rdfs:subClassOf icon:0000011 .
+
+icon:0014000 a owl:Class ;
+    rdfs:label "indicator"@en ;
+    IAO:0000115 "Something measurable that shows progress toward a conservation goal, with the unit it is counted in, such as acres of habitat restored or miles of stream opened to fish passage. Targets and outcomes on the same indicator can be added up and compared."@en ;
+    rdfs:isDefinedBy iconbase:outcomes.owl ;
+    rdfs:subClassOf IAO:0000030 ;
+    icon:0000001 "Conservation Standards 4.0: indicator" .
+
+iconbase:outcomes.owl a owl:Ontology ;
+    dcterms:creator "Internet of Conservation (ICON)" ;
+    dcterms:description "What conservation work is measured by: indicators with their units, the targets that objectives, plans, programs and guidelines or mandates set on them, and the outcomes projects and places deliver, linked by the results chain (contributes to) so progress toward a target can be added up."@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references obo:iao.owl,
+        obo:obi.owl ;
+    dcterms:title "ICON Indicators, targets and outcomes ontology"@en ;
+    rdfs:comment "Existing ontologies used. Built on: Information Artifact Ontology. Mapped to: Ontology for Biomedical Investigations."@en ;
+    rdfs:seeAlso iconbase:infrastructure.owl,
+        iconbase:mandates.owl,
+        iconbase:plans.owl,
+        iconbase:programs.owl,
+        iconbase:projects.owl ;
+    owl:versionIRI <https://w3id.org/icon/releases/2026-11-21/outcomes.owl> ;
+    owl:versionInfo "2026-11-21" .
+

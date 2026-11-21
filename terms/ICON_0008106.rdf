@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:iconbase="https://w3id.org/icon/"
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008106">
+    <obo:IAO_0000115 xml:lang="en">The organization that runs the systems the data is served from. The Dataset Dictionary's Host role.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0008000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdfs:label xml:lang="en">is hosted by</rdfs:label>
+    <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0008107"/>
+    <skos:closeMatch rdf:resource="https://schema.org/provider"/>
+    <iconbase:ICON_0000001>DataCite 4.5: contributorType HostingInstitution</iconbase:ICON_0000001>
+    <iconbase:ICON_0000001>ISO 19115-1: CI_RoleCode custodian</iconbase:ICON_0000001>
+  </rdf:Description>
+</rdf:RDF>

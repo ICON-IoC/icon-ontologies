@@ -1,0 +1,14 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0000103 a owl:ObjectProperty ;
+    rdfs:label "used by"@en ;
+    IAO:0000115 "An organization, project or program relies on this place, data or tool in its work."@en ;
+    rdfs:isDefinedBy iconbase:core.owl ;
+    rdfs:subPropertyOf icon:0000100 ;
+    owl:inverseOf icon:0000104 ;
+    icon:0000001 "ISO 19115-1: CI_RoleCode user" .
+

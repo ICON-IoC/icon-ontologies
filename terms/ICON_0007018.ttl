@@ -1,0 +1,12 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0007018 a owl:Class ;
+    rdfs:label "agency strategic plan"@en ;
+    IAO:0000115 "A conservation plan in which a public agency or board sets its own goals, objectives and numerical targets for a fixed period, usually five years, to steer the grants, acquisitions and programs it funds, aligned with statewide strategies and shaped by public workshops and tribal consultation. It commits the agency itself, not other parties, and is carried out through the projects it chooses to fund."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+

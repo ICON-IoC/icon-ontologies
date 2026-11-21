@@ -1,0 +1,370 @@
+# ICON Places ontology
+# Built by `ioc-ontologies` from ontology/src/places.terms; edit that file, not this one.
+# Guide: ontology/guides/places.md
+@prefix BFO: <http://purl.obolibrary.org/obo/BFO_> .
+@prefix ENVO: <http://purl.obolibrary.org/obo/ENVO_> .
+@prefix GEO: <http://purl.obolibrary.org/obo/GEO_> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix RO: <http://purl.obolibrary.org/obo/RO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+IAO:0000115 a owl:AnnotationProperty ;
+    rdfs:label "definition" .
+
+dcterms:creator a owl:AnnotationProperty .
+
+dcterms:description a owl:AnnotationProperty .
+
+dcterms:license a owl:AnnotationProperty .
+
+dcterms:references a owl:AnnotationProperty .
+
+dcterms:title a owl:AnnotationProperty .
+
+oboInOwl:hasDbXref a owl:AnnotationProperty ;
+    rdfs:label "database_cross_reference" .
+
+oboInOwl:hasExactSynonym a owl:AnnotationProperty ;
+    rdfs:label "has_exact_synonym" .
+
+skos:broadMatch a owl:AnnotationProperty .
+
+skos:closeMatch a owl:AnnotationProperty .
+
+skos:exactMatch a owl:AnnotationProperty .
+
+skos:narrowMatch a owl:AnnotationProperty .
+
+icon:0000001 a owl:AnnotationProperty ;
+    rdfs:label "crosswalk"@en ;
+    IAO:0000115 "The matching field in a metadata standard that is not published as RDF, written as the standard's name, a colon and the field's path, such as \"EML 2.2: dataset/title\"."@en ;
+    rdfs:isDefinedBy iconbase:core.owl .
+
+icon:0010000 a owl:Class ;
+    rdfs:label "county"@en ;
+    IAO:0000115 "One of California's 58 counties, as an administrative region rather than as its government."@en ;
+    rdfs:isDefinedBy iconbase:places.owl ;
+    rdfs:subClassOf ENVO:00000004 ;
+    skos:closeMatch schema:AdministrativeArea .
+
+icon:0010004 a owl:NamedIndividual,
+        icon:0010003 ;
+    rdfs:label "statewide"@en ;
+    IAO:0000115 "The whole of California. A record that operates, applies or lies statewide is linked to this value rather than to every county, ecoregion, subbasin and watershed (#281)."@en ;
+    rdfs:comment "The explorer's statewide rule derives the record's links to every county and ecoregion when a question needs them. OWL cannot state it, since it turns one link into many by the category of the target."@en ;
+    rdfs:isDefinedBy iconbase:places.owl .
+
+icon:0010006 a owl:Class ;
+    rdfs:label "State Assembly district"@en ;
+    IAO:0000115 "One of the 80 districts that each elect a member of the California State Assembly, as the Citizens Redistricting Commission drew them in 2021."@en ;
+    rdfs:isDefinedBy iconbase:places.owl ;
+    rdfs:subClassOf icon:0010005 .
+
+icon:0010007 a owl:Class ;
+    rdfs:label "State Senate district"@en ;
+    IAO:0000115 "One of the 40 districts that each elect a California State Senator, as the Citizens Redistricting Commission drew them in 2021."@en ;
+    rdfs:isDefinedBy iconbase:places.owl ;
+    rdfs:subClassOf icon:0010005 .
+
+icon:0010008 a owl:Class ;
+    rdfs:label "congressional district"@en ;
+    IAO:0000115 "One of California's 52 districts that each elect a member of the U.S. House of Representatives, as the map in force draws them: the 2021 Citizens Redistricting Commission map until January 3, 2027, then the Proposition 50 (AB 604) map."@en ;
+    rdfs:isDefinedBy iconbase:places.owl ;
+    rdfs:subClassOf icon:0010005 .
+
+icon:0010009 a owl:Class ;
+    rdfs:label "supervisorial district"@en ;
+    IAO:0000115 "A district of a California county that elects one member of the county's board of supervisors, as the county's own current map draws it."@en ;
+    rdfs:isDefinedBy iconbase:places.owl ;
+    rdfs:subClassOf icon:0010005 .
+
+BFO:0000001 a owl:Class ;
+    rdfs:label "entity"@en .
+
+BFO:0000004 a owl:Class ;
+    rdfs:label "independent continuant"@en ;
+    IAO:0000115 "b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])"@en ;
+    rdfs:subClassOf BFO:0000002 .
+
+BFO:0000024 a owl:Class ;
+    rdfs:label "fiat object part"@en ;
+    rdfs:subClassOf BFO:0000040 .
+
+BFO:0000031 a owl:Class ;
+    rdfs:label "generically dependent continuant"@en ;
+    IAO:0000115 "b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])"@en ;
+    rdfs:subClassOf BFO:0000002 .
+
+ENVO:00000191 a owl:Class ;
+    rdfs:label "solid astronomical body part"@en ;
+    IAO:0000115 "A part of an astronomical body which is primarily composed of solid material."@en ;
+    rdfs:subClassOf ENVO:01001784 .
+
+ENVO:00000309 a owl:Class ;
+    rdfs:label "depressed landform"@en ;
+    IAO:0000115 "A landform sunken or depressed below the surrounding area."@en ;
+    rdfs:subClassOf ENVO:01001886 .
+
+ENVO:01000254 a owl:Class ;
+    rdfs:label "environmental system"@en ;
+    IAO:0000115 "A system which has the disposition to environ one or more material entities."@en ;
+    rdfs:subClassOf RO:0002577 .
+
+ENVO:01001110 a owl:Class ;
+    rdfs:label "ecosystem"@en ;
+    IAO:0000115 "An environmental system which includes both living and non-living components."@en ;
+    rdfs:subClassOf ENVO:01000254 .
+
+ENVO:01001784 a owl:Class ;
+    rdfs:label "compound astronomical body part"@en ;
+    IAO:0000115 "A part of an astronomical body which is composed of a continuous medium bearing liquid, gaseous, and solid material in variable quantities."@en ;
+    rdfs:subClassOf ENVO:01000813 .
+
+ENVO:01001884 a owl:Class ;
+    rdfs:label "surface landform"@en ;
+    IAO:0000115 "A landform which occurs on the surface of an astronomical body."@en ;
+    rdfs:subClassOf ENVO:01001886 .
+
+ENVO:01003020 a owl:Class ;
+    rdfs:label "fiat part of an astronomical object"@en ;
+    IAO:0000115 "A part of an environmental system whose boundaries are determined by fiat."@en ;
+    rdfs:subClassOf BFO:0000024 .
+
+IAO:0000030 a owl:Class ;
+    rdfs:label "information content entity"@en ;
+    IAO:0000115 "A generically dependent continuant that is about some thing."@en ;
+    rdfs:subClassOf BFO:0000031 .
+
+RO:0002577 a owl:Class ;
+    rdfs:label "system"@en ;
+    IAO:0000115 "A material entity consisting of multiple components that are causally integrated."@en ;
+    rdfs:subClassOf BFO:0000040 .
+
+icon:0000104 a owl:ObjectProperty ;
+    rdfs:label "uses"@en ;
+    IAO:0000115 "The record relies on this place or data in its work: the reverse of used by."@en ;
+    rdfs:isDefinedBy iconbase:core.owl ;
+    rdfs:subPropertyOf icon:0000100 .
+
+icon:0005103 a owl:ObjectProperty ;
+    rdfs:label "owns"@en ;
+    IAO:0000115 "The reverse of owned by."@en ;
+    rdfs:isDefinedBy iconbase:infrastructure.owl ;
+    rdfs:subPropertyOf icon:0000100 .
+
+icon:0005105 a owl:ObjectProperty ;
+    rdfs:label "manages"@en ;
+    IAO:0000115 "The reverse of managed by."@en ;
+    rdfs:isDefinedBy iconbase:infrastructure.owl ;
+    rdfs:subPropertyOf icon:0000100 .
+
+icon:0007111 a owl:ObjectProperty ;
+    rdfs:label "at site"@en ;
+    IAO:0000115 "A place where the action is to be carried out."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl .
+
+icon:0010003 a owl:Class ;
+    rdfs:label "geographic scope"@en ;
+    IAO:0000115 "An extent a record can claim in place of a list of areas."@en ;
+    rdfs:isDefinedBy iconbase:places.owl ;
+    rdfs:subClassOf IAO:0000030 .
+
+icon:0010101 a owl:ObjectProperty ;
+    rdfs:label "is place of work of"@en ;
+    IAO:0000115 "The reverse of operates in."@en ;
+    rdfs:isDefinedBy iconbase:places.owl ;
+    owl:inverseOf icon:0010100 .
+
+icon:0010102 a owl:ObjectProperty ;
+    rdfs:label "applies in"@en ;
+    IAO:0000115 "A guideline, mandate or plan has force or scope in the area."@en ;
+    rdfs:isDefinedBy iconbase:places.owl ;
+    owl:inverseOf icon:0010103 ;
+    skos:closeMatch GEO:000000336 .
+
+icon:0010103 a owl:ObjectProperty ;
+    rdfs:label "is jurisdiction of"@en ;
+    IAO:0000115 "The reverse of applies in."@en ;
+    rdfs:isDefinedBy iconbase:places.owl ;
+    owl:inverseOf icon:0010102 .
+
+icon:0010105 a owl:ObjectProperty ;
+    rdfs:label "is location of"@en ;
+    IAO:0000115 "The reverse of located in area."@en ;
+    rdfs:isDefinedBy iconbase:places.owl ;
+    owl:inverseOf icon:0010104 .
+
+icon:0010106 a owl:ObjectProperty ;
+    rdfs:label "covers"@en ;
+    IAO:0000115 "The record's area takes in the area. Listed with the place links since the explorer's phrase table began (#35); no link uses it at present."@en ;
+    rdfs:isDefinedBy iconbase:places.owl ;
+    owl:inverseOf icon:0010107 .
+
+icon:0010107 a owl:ObjectProperty ;
+    rdfs:label "is covered by"@en ;
+    IAO:0000115 "The reverse of covers."@en ;
+    rdfs:isDefinedBy iconbase:places.owl ;
+    owl:inverseOf icon:0010106 .
+
+icon:0010108 a owl:ObjectProperty ;
+    rdfs:label "in ecoregion"@en ;
+    IAO:0000115 "The record works in, covers or lies in the ecoregion section."@en ;
+    rdfs:isDefinedBy iconbase:places.owl ;
+    rdfs:range ENVO:01000276 ;
+    owl:inverseOf icon:0010109 ;
+    skos:closeMatch dcterms:spatial .
+
+icon:0010109 a owl:ObjectProperty ;
+    rdfs:label "is ecoregion of"@en ;
+    IAO:0000115 "The reverse of in ecoregion."@en ;
+    rdfs:domain ENVO:01000276 ;
+    rdfs:isDefinedBy iconbase:places.owl ;
+    owl:inverseOf icon:0010108 .
+
+icon:0010110 a owl:ObjectProperty ;
+    rdfs:label "in subbasin"@en ;
+    IAO:0000115 "The record works in, covers or lies in the HUC8 subbasin."@en ;
+    rdfs:isDefinedBy iconbase:places.owl ;
+    rdfs:range icon:0010001 ;
+    owl:inverseOf icon:0010111 ;
+    skos:closeMatch dcterms:spatial .
+
+icon:0010111 a owl:ObjectProperty ;
+    rdfs:label "is subbasin of"@en ;
+    IAO:0000115 "The reverse of in subbasin."@en ;
+    rdfs:domain icon:0010001 ;
+    rdfs:isDefinedBy iconbase:places.owl ;
+    owl:inverseOf icon:0010110 .
+
+icon:0010112 a owl:ObjectProperty ;
+    rdfs:label "in watershed"@en ;
+    IAO:0000115 "The record works in, covers or lies in the HUC10 watershed."@en ;
+    rdfs:isDefinedBy iconbase:places.owl ;
+    rdfs:range icon:0010002 ;
+    owl:inverseOf icon:0010113 ;
+    skos:closeMatch dcterms:spatial .
+
+icon:0010113 a owl:ObjectProperty ;
+    rdfs:label "is watershed of"@en ;
+    IAO:0000115 "The reverse of in watershed."@en ;
+    rdfs:domain icon:0010002 ;
+    rdfs:isDefinedBy iconbase:places.owl ;
+    owl:inverseOf icon:0010112 .
+
+BFO:0000002 a owl:Class ;
+    rdfs:label "continuant"@en ;
+    rdfs:subClassOf BFO:0000001 .
+
+ENVO:00000004 a owl:Class ;
+    rdfs:label "administrative region"@en ;
+    rdfs:subClassOf ENVO:01003020 .
+
+ENVO:00000291 a owl:Class ;
+    rdfs:label "drainage basin"@en ;
+    IAO:0000115 "An extent or area of land where surface water from rain and melting snow or ice converges to a single point at lower elevation, usually the exit of the basin, where the waters join another waterbody."@en ;
+    rdfs:subClassOf ENVO:00000309,
+        ENVO:01001884 .
+
+ENVO:01000276 a owl:Class ;
+    rdfs:label "ecoregion"@en ;
+    IAO:0000115 "A large unit of land or water containing a geographically distinct assemblage of species, natural communities, and environmental conditions."@en ;
+    rdfs:subClassOf ENVO:01000813,
+        ENVO:01001110 .
+
+ENVO:01000813 a owl:Class ;
+    rdfs:label "astronomical body part"@en ;
+    IAO:0000115 "A material part of an astronomical body."@en ;
+    rdfs:subClassOf BFO:0000040 .
+
+ENVO:01001886 a owl:Class ;
+    rdfs:label "landform"@en ;
+    IAO:0000115 "A solid astronomical body part which has been formed from and is composed primarily of the matter of that astronomical body."@en ;
+    rdfs:subClassOf ENVO:00000191 .
+
+RO:0001025 a owl:ObjectProperty,
+        owl:TransitiveProperty ;
+    rdfs:label "located in"@en ;
+    IAO:0000115 "a relation between two independent continuants, the target and the location, in which the target is entirely within the location"@en .
+
+icon:0010001 a owl:Class ;
+    rdfs:label "HUC8 subbasin"@en ;
+    IAO:0000115 "A drainage basin at the subbasin level (eight-digit hydrologic unit code) of the USGS Watershed Boundary Dataset."@en ;
+    rdfs:isDefinedBy iconbase:places.owl ;
+    rdfs:subClassOf ENVO:00000291 .
+
+icon:0010002 a owl:Class ;
+    rdfs:label "HUC10 watershed"@en ;
+    IAO:0000115 "A drainage basin at the watershed level (ten-digit hydrologic unit code) of the USGS Watershed Boundary Dataset. Each lies within one HUC8 subbasin."@en ;
+    rdfs:isDefinedBy iconbase:places.owl ;
+    rdfs:subClassOf ENVO:00000291 .
+
+BFO:0000040 a owl:Class ;
+    rdfs:label "material entity"@en ;
+    rdfs:subClassOf BFO:0000004 .
+
+icon:0000100 a owl:ObjectProperty ;
+    rdfs:label "is involved with"@en ;
+    IAO:0000115 "A link between two records that work together or affect one another. Every more specific involvement link (leads, funds, manages, uses, is partner of and others) implies it."@en ;
+    rdfs:isDefinedBy iconbase:core.owl .
+
+icon:0010100 a owl:ObjectProperty ;
+    rdfs:label "operates in"@en ;
+    IAO:0000115 "The record works in, covers or is about the area. A county cell of All in a workbook links the record to statewide instead."@en ;
+    rdfs:comment "The chains are two of the explorer's rules. Place roll-up: working on a place located in an area means operating in that area. Place containment: operating in an area means operating in every area that contains it."@en ;
+    rdfs:isDefinedBy iconbase:places.owl ;
+    owl:inverseOf icon:0010101 ;
+    owl:propertyChainAxiom ( icon:0000104 icon:0010104 ),
+        ( icon:0005103 icon:0010104 ),
+        ( icon:0005105 icon:0010104 ),
+        ( icon:0007111 icon:0010104 ),
+        ( icon:0010100 RO:0001025 ) ;
+    skos:closeMatch dcterms:spatial,
+        schema:areaServed ;
+    icon:0000001 "DataCite 4.5: geoLocation/geoLocationPlace",
+        "EML 2.2: coverage/geographicCoverage",
+        "ISO 19115-1: EX_Extent/geographicElement" .
+
+icon:0010005 a owl:Class ;
+    rdfs:label "electoral district"@en ;
+    IAO:0000115 "An area whose voters elect an official to a legislature or a county board: a California State Assembly, State Senate, congressional or county supervisorial district (#1432)."@en ;
+    rdfs:comment "A district is linked to the counties, ecoregion sections, subbasins, watersheds and other districts it overlaps, and to the places it holds part of, by intersects."@en ;
+    rdfs:isDefinedBy iconbase:places.owl ;
+    rdfs:subClassOf ENVO:00000004 ;
+    skos:closeMatch schema:AdministrativeArea .
+
+icon:0010104 a owl:ObjectProperty ;
+    rdfs:label "located in area"@en ;
+    IAO:0000115 "A place, objective or action lies in the area. A kind of operates in, and a kind of the Relation Ontology's located in."@en ;
+    oboInOwl:hasExactSynonym "located in"@en ;
+    rdfs:isDefinedBy iconbase:places.owl ;
+    rdfs:subPropertyOf RO:0001025,
+        icon:0010100 ;
+    owl:inverseOf icon:0010105 .
+
+iconbase:places.owl a owl:Ontology ;
+    dcterms:creator "Internet of Conservation (ICON)" ;
+    dcterms:description "The areas records are placed in: California counties, USDA ecoregion sections, the HUC8 subbasins and HUC10 watersheds of the USGS Watershed Boundary Dataset, and the State Assembly, State Senate, congressional, and county supervisorial districts that elected officials represent, with statewide scope, and the links that say a record operates, applies or lies in one of them."@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references obo:envo.owl,
+        obo:geo.owl,
+        obo:iao.owl,
+        obo:ro.owl,
+        dcterms:,
+        schema: ;
+    dcterms:title "ICON Places ontology"@en ;
+    rdfs:comment "Existing ontologies used. Reused: Environment Ontology. Built on: Environment Ontology, Information Artifact Ontology, Relation Ontology. Mapped to: Dublin Core terms, Geographical Entity Ontology, schema.org."@en ;
+    rdfs:seeAlso iconbase:core.owl,
+        iconbase:infrastructure.owl,
+        iconbase:plans.owl ;
+    owl:versionIRI <https://w3id.org/icon/releases/2026-11-21/places.owl> ;
+    owl:versionInfo "2026-11-21" .
+

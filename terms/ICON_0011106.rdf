@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0011106">
+    <obo:IAO_0000115 xml:lang="en">The plant, bryophyte, or lichen has this California Rare Plant Rank in CDFW's Special Vascular Plants, Bryophytes, and Lichens List (#1210).</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0011000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/biodiversity.owl"/>
+    <rdfs:label xml:lang="en">has rare plant rank</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0011003"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0011107"/>
+  </rdf:Description>
+</rdf:RDF>

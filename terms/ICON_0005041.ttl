@@ -1,0 +1,14 @@
+@prefix COB: <http://purl.obolibrary.org/obo/COB_> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0005041 a owl:Class ;
+    rdfs:label "camera trap"@en ;
+    IAO:0000115 "A camera set off by motion or heat that photographs animals passing."@en ;
+    rdfs:isDefinedBy iconbase:infrastructure.owl ;
+    rdfs:subClassOf COB:0001300,
+        icon:0005006 .
+

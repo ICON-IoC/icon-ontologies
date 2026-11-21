@@ -1,0 +1,12 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0007009 a owl:Class ;
+    rdfs:label "wetland management plan"@en ;
+    IAO:0000115 "A conservation plan for a marsh or other wetland complex, written by the agencies and landowners that manage it, that sets acreage targets for restoring and managing its wetlands and the activities, permits and monitoring to reach them."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+

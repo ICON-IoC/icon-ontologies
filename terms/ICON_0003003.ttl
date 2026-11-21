@@ -1,0 +1,14 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0003003 a owl:Class ;
+    rdfs:label "habitat enhancement project"@en ;
+    IAO:0000115 "A project that restores or improves habitat."@en ;
+    oboInOwl:hasExactSynonym "restoration project"@en ;
+    rdfs:isDefinedBy iconbase:projects.owl ;
+    rdfs:subClassOf icon:0003000 .
+

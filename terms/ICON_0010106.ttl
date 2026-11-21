@@ -1,0 +1,12 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0010106 a owl:ObjectProperty ;
+    rdfs:label "covers"@en ;
+    IAO:0000115 "The record's area takes in the area. Listed with the place links since the explorer's phrase table began (#35); no link uses it at present."@en ;
+    rdfs:isDefinedBy iconbase:places.owl ;
+    owl:inverseOf icon:0010107 .
+

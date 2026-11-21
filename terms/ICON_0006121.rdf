@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0006121">
+    <obo:IAO_0000115 xml:lang="en">An organization sponsored a bill or ballot measure: it brought the proposal to the legislator who carried it, or campaigned for the measure, and backed it to passage.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/mandates.owl"/>
+    <rdfs:label xml:lang="en">sponsored</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0006000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0006122"/>
+  </rdf:Description>
+</rdf:RDF>

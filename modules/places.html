@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ICON Places ontology</title>
+<link rel="icon" href="../brand/icon-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+:root {
+  --ground: #f1f4ef; --surface: #ffffff; --ink: #17221d; --muted: #5a6a62; --rule: #d3dbd3;
+  --accent: #2e6a4e; --accent-soft: #e3eee7;
+  --display: "Newsreader", Georgia, serif;
+  --body: "Instrument Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground: #0f1512; --surface: #17201b; --ink: #e3ebe6; --muted: #93a39a; --rule: #2b3730;
+    --accent: #74c39b; --accent-soft: #1d3127; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --ground: #0f1512; --surface: #17201b; --ink: #e3ebe6; --muted: #93a39a; --rule: #2b3730;
+  --accent: #74c39b; --accent-soft: #1d3127; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--ground); color: var(--ink); font: 15px/1.6 var(--body); }
+.page { max-width: 1040px; margin: 0 auto; padding: 24px 16px 56px; display: grid; gap: 24px; }
+header.top { display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 13px; }
+header.top nav { display: flex; gap: 16px; flex-wrap: wrap; }
+.logo { height: 34px; width: auto; }
+.logo.dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .logo.light { display: none; }
+  :root:not([data-theme="light"]) .logo.dark { display: block; }
+}
+:root[data-theme="dark"] .logo.light { display: none; }
+:root[data-theme="dark"] .logo.dark { display: block; }
+h1 { font: 600 clamp(28px, 4vw, 40px)/1.15 var(--display); margin: 0; text-wrap: balance; }
+h2 { font: 600 22px/1.25 var(--display); margin: 0 0 8px; }
+p { margin: 0 0 10px; max-width: 75ch; }
+a { color: var(--accent); }
+code { font: 0.88em var(--mono); overflow-wrap: anywhere; }
+.muted { color: var(--muted); }
+.kicker { font: 600 11px var(--body); letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+section.card { background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; padding: 18px 20px; min-width: 0; }
+.facts { display: flex; flex-wrap: wrap; gap: 8px 28px; font-variant-numeric: tabular-nums; }
+.facts div { display: grid; }
+.facts b { font: 600 22px/1.1 var(--display); }
+.facts span { font-size: 12px; color: var(--muted); }
+.scroll { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { text-align: left; vertical-align: top; padding: 8px 10px 8px 0; border-bottom: 1px solid var(--rule); }
+th { font-weight: 600; font-size: 12px; color: var(--muted); }
+td.files { white-space: nowrap; }
+td.files a + a { margin-left: 8px; }
+dl.facts-list { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 6px 16px; margin: 0; }
+dl.facts-list dt { color: var(--muted); font-size: 13px; padding-top: 1px; }
+dl.facts-list dd { margin: 0; }
+.button { display: inline-block; padding: 8px 14px; border-radius: 8px; background: var(--accent); color: var(--surface); text-decoration: none; font-weight: 600; }
+pre { background: var(--accent-soft); padding: 12px 14px; border-radius: 8px; overflow-x: auto; font: 13px/1.5 var(--mono); margin: 0 0 10px; white-space: pre-wrap; }
+footer { font-size: 13px; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="top">
+    <nav><a href=".././">ICON ontologies</a><a href="../map.html">Map</a><a href="https://github.com/ICON-IoC/icon-ontologies">Source files</a></nav>
+    <a href="https://icon-ioc.com" aria-label="ICON">
+      <img class="logo light" alt="ICON" src="../brand/icon-lockup.png">
+      <img class="logo dark" alt="ICON" src="../brand/icon-wordmark-reversed-cropped.png">
+    </a>
+  </header>
+
+  <section>
+    <div class="kicker">vocabulary module</div>
+    <h1>ICON Places ontology</h1>
+    <p>The areas records are placed in: California counties, USDA ecoregion sections, the HUC8 subbasins and HUC10 watersheds of the USGS Watershed Boundary Dataset, and the State Assembly, State Senate, congressional, and county supervisorial districts that elected officials represent, with statewide scope, and the links that say a record operates, applies or lies in one of them.</p>
+    <dl class="facts-list">
+      <dt>Ontology IRI</dt><dd><code>https://w3id.org/icon/places.owl</code></dd>
+      <dt>This release</dt><dd><code>https://w3id.org/icon/releases/2026-11-21/places.owl</code></dd>
+      <dt>Own term IDs</dt><dd>ICON:0010000 to ICON:0010999</dd>
+      <dt>Files</dt><dd><a href="../icon-places.ttl">Turtle</a>, <a href="../icon-places.owl">RDF/XML</a>, <a href="../linkml/icon-places.yaml">LinkML</a>, <a href="../guides/places.md">guide (Markdown)</a></dd>
+      
+      <dt>Reused</dt><dd>ENVO</dd>
+      
+      <dt>Built on</dt><dd>ENVO, IAO, RO</dd>
+      
+      <dt>Mapped to</dt><dd>GEO, dcterms, schema</dd>
+      
+    </dl>
+  </section>
+
+  <section class="card">
+    <h2>Terms</h2>
+    <p class="muted">Reused terms keep their own IDs and link to their source ontology.</p>
+    <div class="scroll">
+    <table>
+      <thead><tr><th>Term</th><th>Kind</th><th>ID</th><th>Definition</th></tr></thead>
+      <tbody>
+      
+        <tr id="ICON_0010000">
+          <td><a href="../terms/ICON_0010000.html">county</a></td>
+          <td>class</td>
+          <td><code>ICON:0010000</code></td>
+          <td>One of California&#39;s 58 counties, as an administrative region rather than as its government.</td>
+        </tr>
+      
+        <tr id="ENVO_01000276">
+          <td><a href="http://purl.obolibrary.org/obo/ENVO_01000276">ecoregion</a></td>
+          <td>class</td>
+          <td><code>ENVO:01000276</code></td>
+          <td>A large unit of land or water containing a geographically distinct assemblage of species, natural communities, and environmental conditions.</td>
+        </tr>
+      
+        <tr id="ICON_0010001">
+          <td><a href="../terms/ICON_0010001.html">HUC8 subbasin</a></td>
+          <td>class</td>
+          <td><code>ICON:0010001</code></td>
+          <td>A drainage basin at the subbasin level (eight-digit hydrologic unit code) of the USGS Watershed Boundary Dataset.</td>
+        </tr>
+      
+        <tr id="ICON_0010002">
+          <td><a href="../terms/ICON_0010002.html">HUC10 watershed</a></td>
+          <td>class</td>
+          <td><code>ICON:0010002</code></td>
+          <td>A drainage basin at the watershed level (ten-digit hydrologic unit code) of the USGS Watershed Boundary Dataset. Each lies within one HUC8 subbasin.</td>
+        </tr>
+      
+        <tr id="ICON_0010005">
+          <td><a href="../terms/ICON_0010005.html">electoral district</a></td>
+          <td>class</td>
+          <td><code>ICON:0010005</code></td>
+          <td>An area whose voters elect an official to a legislature or a county board: a California State Assembly, State Senate, congressional or county supervisorial district (#1432).</td>
+        </tr>
+      
+        <tr id="ICON_0010006">
+          <td><a href="../terms/ICON_0010006.html">State Assembly district</a></td>
+          <td>class</td>
+          <td><code>ICON:0010006</code></td>
+          <td>One of the 80 districts that each elect a member of the California State Assembly, as the Citizens Redistricting Commission drew them in 2021.</td>
+        </tr>
+      
+        <tr id="ICON_0010007">
+          <td><a href="../terms/ICON_0010007.html">State Senate district</a></td>
+          <td>class</td>
+          <td><code>ICON:0010007</code></td>
+          <td>One of the 40 districts that each elect a California State Senator, as the Citizens Redistricting Commission drew them in 2021.</td>
+        </tr>
+      
+        <tr id="ICON_0010008">
+          <td><a href="../terms/ICON_0010008.html">congressional district</a></td>
+          <td>class</td>
+          <td><code>ICON:0010008</code></td>
+          <td>One of California&#39;s 52 districts that each elect a member of the U.S. House of Representatives, as the map in force draws them: the 2021 Citizens Redistricting Commission map until January 3, 2027, then the Proposition 50 (AB 604) map.</td>
+        </tr>
+      
+        <tr id="ICON_0010009">
+          <td><a href="../terms/ICON_0010009.html">supervisorial district</a></td>
+          <td>class</td>
+          <td><code>ICON:0010009</code></td>
+          <td>A district of a California county that elects one member of the county&#39;s board of supervisors, as the county&#39;s own current map draws it.</td>
+        </tr>
+      
+        <tr id="ICON_0010003">
+          <td><a href="../terms/ICON_0010003.html">geographic scope</a></td>
+          <td>class</td>
+          <td><code>ICON:0010003</code></td>
+          <td>An extent a record can claim in place of a list of areas.</td>
+        </tr>
+      
+        <tr id="ICON_0010100">
+          <td><a href="../terms/ICON_0010100.html">operates in</a></td>
+          <td>relation</td>
+          <td><code>ICON:0010100</code></td>
+          <td>The record works in, covers or is about the area. A county cell of All in a workbook links the record to statewide instead.</td>
+        </tr>
+      
+        <tr id="ICON_0010101">
+          <td><a href="../terms/ICON_0010101.html">is place of work of</a></td>
+          <td>relation</td>
+          <td><code>ICON:0010101</code></td>
+          <td>The reverse of operates in.</td>
+        </tr>
+      
+        <tr id="ICON_0010102">
+          <td><a href="../terms/ICON_0010102.html">applies in</a></td>
+          <td>relation</td>
+          <td><code>ICON:0010102</code></td>
+          <td>A guideline, mandate or plan has force or scope in the area.</td>
+        </tr>
+      
+        <tr id="ICON_0010103">
+          <td><a href="../terms/ICON_0010103.html">is jurisdiction of</a></td>
+          <td>relation</td>
+          <td><code>ICON:0010103</code></td>
+          <td>The reverse of applies in.</td>
+        </tr>
+      
+        <tr id="ICON_0010104">
+          <td><a href="../terms/ICON_0010104.html">located in area</a></td>
+          <td>relation</td>
+          <td><code>ICON:0010104</code></td>
+          <td>A place, objective or action lies in the area. A kind of operates in, and a kind of the Relation Ontology&#39;s located in.</td>
+        </tr>
+      
+        <tr id="ICON_0010105">
+          <td><a href="../terms/ICON_0010105.html">is location of</a></td>
+          <td>relation</td>
+          <td><code>ICON:0010105</code></td>
+          <td>The reverse of located in area.</td>
+        </tr>
+      
+        <tr id="ICON_0010106">
+          <td><a href="../terms/ICON_0010106.html">covers</a></td>
+          <td>relation</td>
+          <td><code>ICON:0010106</code></td>
+          <td>The record&#39;s area takes in the area. Listed with the place links since the explorer&#39;s phrase table began (#35); no link uses it at present.</td>
+        </tr>
+      
+        <tr id="ICON_0010107">
+          <td><a href="../terms/ICON_0010107.html">is covered by</a></td>
+          <td>relation</td>
+          <td><code>ICON:0010107</code></td>
+          <td>The reverse of covers.</td>
+        </tr>
+      
+        <tr id="ICON_0010108">
+          <td><a href="../terms/ICON_0010108.html">in ecoregion</a></td>
+          <td>relation</td>
+          <td><code>ICON:0010108</code></td>
+          <td>The record works in, covers or lies in the ecoregion section.</td>
+        </tr>
+      
+        <tr id="ICON_0010109">
+          <td><a href="../terms/ICON_0010109.html">is ecoregion of</a></td>
+          <td>relation</td>
+          <td><code>ICON:0010109</code></td>
+          <td>The reverse of in ecoregion.</td>
+        </tr>
+      
+        <tr id="ICON_0010110">
+          <td><a href="../terms/ICON_0010110.html">in subbasin</a></td>
+          <td>relation</td>
+          <td><code>ICON:0010110</code></td>
+          <td>The record works in, covers or lies in the HUC8 subbasin.</td>
+        </tr>
+      
+        <tr id="ICON_0010111">
+          <td><a href="../terms/ICON_0010111.html">is subbasin of</a></td>
+          <td>relation</td>
+          <td><code>ICON:0010111</code></td>
+          <td>The reverse of in subbasin.</td>
+        </tr>
+      
+        <tr id="ICON_0010112">
+          <td><a href="../terms/ICON_0010112.html">in watershed</a></td>
+          <td>relation</td>
+          <td><code>ICON:0010112</code></td>
+          <td>The record works in, covers or lies in the HUC10 watershed.</td>
+        </tr>
+      
+        <tr id="ICON_0010113">
+          <td><a href="../terms/ICON_0010113.html">is watershed of</a></td>
+          <td>relation</td>
+          <td><code>ICON:0010113</code></td>
+          <td>The reverse of in watershed.</td>
+        </tr>
+      
+        <tr id="ICON_0010004">
+          <td><a href="../terms/ICON_0010004.html">statewide</a></td>
+          <td>value</td>
+          <td><code>ICON:0010004</code></td>
+          <td>The whole of California. A record that operates, applies or lies statewide is linked to this value rather than to every county, ecoregion, subbasin and watershed (#281).</td>
+        </tr>
+      
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <footer>
+    <p>ICON ontologies, version 2026-11-21. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: attribute as "Internet of Conservation, Information for the Conservation of Nature (ICON), CC BY 4.0". The ICON names and logos are not covered by that license.</p>
+  </footer>
+</div>
+</body>
+</html>

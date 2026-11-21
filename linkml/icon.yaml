@@ -1,0 +1,31 @@
+# ICON ontologies, as a LinkML schema.
+# Built by `ioc-ontologies` from ontology/src/modules.tsv; edit that, not this file.
+id: https://w3id.org/icon/linkml/icon
+name: icon
+prefixes:
+  linkml: https://w3id.org/linkml/
+  ICON: https://w3id.org/icon/ICON_
+title: ICON ontologies
+description: 'The Internet of Conservation ontologies: one module per kind of record in the conservation
+  knowledge graph, each usable on its own.'
+version: '2026-11-21'
+license: https://creativecommons.org/licenses/by/4.0/
+default_prefix: ICON
+default_range: string
+imports:
+- linkml:types
+- icon-core
+- icon-organizations
+- icon-people
+- icon-projects
+- icon-programs
+- icon-infrastructure
+- icon-mandates
+- icon-plans
+- icon-data
+- icon-publications
+- icon-tools
+- icon-places
+- icon-biodiversity
+- icon-issues
+- icon-outcomes

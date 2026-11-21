@@ -1,0 +1,12 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0007030 a owl:Class ;
+    rdfs:label "state wildlife action plan"@en ;
+    IAO:0000115 "A state fish and wildlife agency's comprehensive wildlife conservation strategy, required every ten years for the state to receive federal State Wildlife Grant funds, that lists the Species of Greatest Conservation Need, describes their key habitats and the pressures on them, and sets conservation strategies by region and habitat, with monitoring and partner coordination. It is a guide for the agency and its partners, not a regulation. Example: California's State Wildlife Action Plan 2025 (CDFW)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+

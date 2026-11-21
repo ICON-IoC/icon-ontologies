@@ -1,0 +1,302 @@
+# ICON Tools ontology, as a LinkML schema.
+# Built by `ioc-ontologies` from ontology/src/tools.terms; edit that, not this file.
+id: https://w3id.org/icon/linkml/icon-tools
+name: icon-tools
+prefixes:
+  linkml: https://w3id.org/linkml/
+  ICON: https://w3id.org/icon/ICON_
+  prov: http://www.w3.org/ns/prov#
+  schema: https://schema.org/
+title: ICON Tools ontology
+description: 'Software people use to plan, assess and track conservation work: decision-support tools,
+  map viewers, dashboards, calculators and models, and software packages. Covers who builds and uses them,
+  the issues they address, and the data they take in and produce.'
+version: '2026-11-21'
+license: https://creativecommons.org/licenses/by/4.0/
+default_prefix: ICON
+default_range: string
+see_also:
+- https://w3id.org/icon/tools.owl
+imports:
+- linkml:types
+- icon-external
+- icon-core
+- icon-data
+classes:
+  Tool:
+    class_uri: ICON:0013000
+    title: tool
+    description: 'Software people use to plan, assess or track conservation work: a decision-support tool,
+      a map viewer, a dashboard, a calculator or model, a software package or an identification key. A
+      site whose main job is holding and serving data is a data repository, not a tool; a tool that works
+      with such data links to it. Read from the master PPOD workbook''s Tools sheet.'
+    close_mappings:
+    - schema:SoftwareApplication
+    annotations:
+      runtime: class Tool; vocab ToolType
+    is_a: InformationResource
+    mixins:
+    - Software
+    slots:
+    - description
+  DecisionSupportTool:
+    class_uri: ICON:0013001
+    title: decision-support tool
+    description: 'A tool that helps choose where or how to act: it ranks or prioritizes sites, compares
+      scenarios, or screens a proposal against conservation values. Example: Ecosystem Management Decision
+      Support System.'
+    annotations:
+      runtime: term ToolType "Decision-support tool"
+    is_a: Tool
+  MapViewer:
+    class_uri: ICON:0013002
+    title: map viewer
+    description: 'A web application for browsing and querying map layers. Example: Wetlands Mapper.'
+    close_mappings:
+    - schema:WebApplication
+    annotations:
+      runtime: term ToolType "Map viewer"
+    is_a: Tool
+    mixins:
+    - SoftwareApplication
+  Dashboard:
+    class_uri: ICON:0013003
+    title: dashboard
+    description: 'A web page that tracks a set of indicators in charts and maps, often over time. Example:
+      California Carbon Dashboard.'
+    close_mappings:
+    - schema:WebApplication
+    annotations:
+      runtime: term ToolType "Dashboard"
+    is_a: Tool
+    mixins:
+    - SoftwareApplication
+  CalculatorOrModel:
+    class_uri: ICON:0013004
+    title: calculator or model
+    description: 'A tool that computes an estimate from its user''s inputs or runs a model, such as the
+      carbon a riparian planting stores or the habitat a site provides. Example: Carbon in Riparian Ecosystems
+      Estimator for California.'
+    annotations:
+      runtime: term ToolType "Calculator or model"
+    is_a: Tool
+  SoftwarePackage:
+    class_uri: ICON:0013006
+    title: software package
+    description: 'Software its users install and run themselves, such as an R package, a desktop program
+      or a trained model, rather than use on the web. Example: InVEST.'
+    close_mappings:
+    - schema:SoftwareApplication
+    annotations:
+      runtime: term ToolType "Software package"
+    is_a: Tool
+  IdentificationKey:
+    class_uri: ICON:0013007
+    title: identification key
+    description: 'A guide that leads its user, step by step or by comparing pictures, to the name of a
+      plant or animal they have found. Example: Berkeley BioKeys.'
+    annotations:
+      runtime: term ToolType "Identification key"
+    is_a: Tool
+  ToolFunction:
+    class_uri: ICON:0013010
+    title: tool function
+    description: What a tool does for its user, such as prioritizing places or estimating carbon. A tool
+      can have several.
+    close_mappings:
+    - schema:featureList
+    annotations:
+      runtime: vocab ToolFunction
+    is_a: InformationContentEntity
+slots:
+  has_tool_type:
+    slot_uri: ICON:0013100
+    title: has tool type
+    description: Links a tool to a kind of tool it is. A tool can be of several kinds, as a map viewer
+      that also prioritizes sites.
+    close_mappings:
+    - schema:applicationCategory
+    annotations:
+      runtime: phrase "has tool type"
+    domain: Tool
+    domain_of:
+    - Tool
+    range: uriorcurie
+    inverse: is_tool_type_of
+    multivalued: true
+  is_tool_type_of:
+    slot_uri: ICON:0013101
+    title: is tool type of
+    description: The reverse of has tool type.
+    annotations:
+      runtime: phrase "is tool type of"
+    range: Tool
+    inverse: has_tool_type
+    multivalued: true
+  produces:
+    slot_uri: ICON:0013102
+    title: produces
+    description: 'The tool creates or serves this data: the layers a map viewer publishes, the estimates
+      a calculator outputs. The workbook''s outDataset column.'
+    annotations:
+      runtime: phrase "produces"
+    domain: Tool
+    domain_of:
+    - Tool
+    range: DataResource
+    inverse: is_produced_by
+    multivalued: true
+  is_produced_by:
+    slot_uri: ICON:0013103
+    title: is produced by
+    description: The reverse of produces.
+    close_mappings:
+    - prov:wasGeneratedBy
+    annotations:
+      runtime: phrase "is produced by"
+    domain: DataResource
+    domain_of:
+    - DataResource
+    range: Tool
+    inverse: produces
+    multivalued: true
+  has_tool_function:
+    slot_uri: ICON:0013104
+    title: has tool function
+    description: Links a tool to something it does for its user.
+    annotations:
+      runtime: phrase "has tool function"
+    domain: Tool
+    domain_of:
+    - Tool
+    range: uriorcurie
+    inverse: is_tool_function_of
+    multivalued: true
+  is_tool_function_of:
+    slot_uri: ICON:0013105
+    title: is tool function of
+    description: The reverse of has tool function.
+    annotations:
+      runtime: phrase "is tool function of"
+    range: Tool
+    inverse: has_tool_function
+    multivalued: true
+  takes_input:
+    slot_uri: ICON:0013106
+    title: takes input
+    description: A kind of data, or a format, the tool takes in, from the Data type list that also describes
+      Data records, so data can be matched to the tools that take it. A specific Data record the tool
+      uses is a uses data from link instead.
+    annotations:
+      crosswalk: 'EDAM: has_input'
+      runtime: phrase "takes input"
+    domain: Tool
+    domain_of:
+    - Tool
+    range: DataTypeEnum
+    inverse: is_input_to
+    multivalued: true
+  is_input_to:
+    slot_uri: ICON:0013107
+    title: is input to
+    description: The reverse of takes input.
+    annotations:
+      runtime: phrase "is input to"
+    domain: DataType
+    domain_of:
+    - DataType
+    range: Tool
+    inverse: takes_input
+    multivalued: true
+  gives_output:
+    slot_uri: ICON:0013108
+    title: gives output
+    description: A kind of data, or a format, the tool gives back, from the Data type list. A specific
+      Data record the tool creates is a produces link instead.
+    annotations:
+      crosswalk: 'EDAM: has_output'
+      runtime: phrase "gives output"
+    domain: Tool
+    domain_of:
+    - Tool
+    range: DataTypeEnum
+    inverse: is_output_from
+    multivalued: true
+  is_output_from:
+    slot_uri: ICON:0013109
+    title: is output from
+    description: The reverse of gives output.
+    annotations:
+      runtime: phrase "is output from"
+    domain: DataType
+    domain_of:
+    - DataType
+    range: Tool
+    inverse: gives_output
+    multivalued: true
+enums:
+  ToolFunctionEnum:
+    enum_uri: ICON:0013010
+    description: The values of tool function.
+    permissible_values:
+      prioritizing function:
+        meaning: ICON:0013011
+        description: Ranks or scores places, sites or projects so the best ones can be chosen first.
+        annotations:
+          runtime: term ToolFunction "Prioritize places or projects"
+      screening function:
+        meaning: ICON:0013012
+        description: Checks a proposed project against rules, sensitive resources or eligibility criteria
+          before it goes ahead.
+        annotations:
+          runtime: term ToolFunction "Screen a project"
+      carbon estimating function:
+        meaning: ICON:0013013
+        description: Calculates carbon stored or greenhouse gases emitted or avoided.
+        annotations:
+          runtime: term ToolFunction "Estimate carbon or greenhouse gases"
+      projecting function:
+        meaning: ICON:0013014
+        description: Shows how conditions may change under future climate, sea level rise or land use.
+        annotations:
+          runtime: term ToolFunction "Project future conditions"
+      habitat quantifying function:
+        meaning: ICON:0013015
+        description: Measures how much habitat there is and how good it is.
+        annotations:
+          runtime: term ToolFunction "Quantify habitat"
+      mapping function:
+        meaning: ICON:0013016
+        description: Shows where resources, conditions or hazards are, for browsing and querying.
+        annotations:
+          runtime: term ToolFunction "Map resources or hazards"
+      vulnerability assessing function:
+        meaning: ICON:0013017
+        description: Judges how exposed and sensitive people, places or species are to a threat.
+        annotations:
+          runtime: term ToolFunction "Assess vulnerability or risk"
+      scenario comparing function:
+        meaning: ICON:0013018
+        description: Runs alternative management or development choices side by side to weigh their effects.
+        annotations:
+          runtime: term ToolFunction "Compare scenarios"
+      recommending function:
+        meaning: ICON:0013019
+        description: Suggests what to do or plant, such as fertilizer rates, seedlots or meadow species.
+        annotations:
+          runtime: term ToolFunction "Recommend practices or species"
+      tracking function:
+        meaning: ICON:0013020
+        description: Records projects, prices or indicators over time and reports on them.
+        annotations:
+          runtime: term ToolFunction "Track projects or indicators"
+      species detecting function:
+        meaning: ICON:0013021
+        description: Finds and counts animals or plants, as in images.
+        annotations:
+          runtime: term ToolFunction "Detect or count species"
+      funding application function:
+        meaning: ICON:0013022
+        description: Helps applicants build a proposal or meet the requirements of a grant program.
+        annotations:
+          runtime: term ToolFunction "Prepare a funding application"

@@ -1,0 +1,15 @@
+@prefix ENVO: <http://purl.obolibrary.org/obo/ENVO_> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0005054 a owl:Class ;
+    rdfs:label "named landform"@en ;
+    IAO:0000115 "A named natural feature of the land surface, such as a range of hills, a ridge or a valley, that a conservation plan treats as an area to protect or work in, without itself being protected. Example: the Dunnigan Hills of Yolo County, where the Yolo HCP/NCCP protects grassland for California tiger salamander."@en ;
+    rdfs:comment "Added for the Dunnigan Hills, named by the Yolo HCP/NCCP (#1067)."@en ;
+    rdfs:isDefinedBy iconbase:infrastructure.owl ;
+    rdfs:subClassOf ENVO:01001886,
+        icon:0005002 .
+

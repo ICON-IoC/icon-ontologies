@@ -1,0 +1,12 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0007033 a owl:Class ;
+    rdfs:label "park management plan"@en ;
+    IAO:0000115 "A plan for one park or preserve, adopted by the public body that owns it and often required by a regional habitat conservation plan whose reserve the park belongs to, that sets for decades how its natural, cultural and paleontological resources are protected, restored and monitored (a resource management plan) or where trails, staging areas and facilities may go (a general development plan), and guides the agency's later land use and management decisions for that park. Examples: the Laguna Coast Wilderness Park General Development and Resource Management Plans (1998) and the Aliso and Wood Canyons Wilderness Park Resource Management Plan (2009) in Orange County."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+

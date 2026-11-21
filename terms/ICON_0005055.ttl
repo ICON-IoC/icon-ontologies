@@ -1,0 +1,15 @@
+@prefix ENVO: <http://purl.obolibrary.org/obo/ENVO_> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0005055 a owl:Class ;
+    rdfs:label "water treatment plant"@en ;
+    IAO:0000115 "A facility that treats raw water from reservoirs, rivers or wells to drinking water standards before it enters a distribution system. Example: the San Francisco Public Utilities Commission's Sunol Valley Water Treatment Plant, which treats water from San Antonio and Calaveras reservoirs."@en ;
+    rdfs:comment "Added for the Sunol Valley Water Treatment Plant, named by the Alameda Watershed Management Plan (#1115)."@en ;
+    rdfs:isDefinedBy iconbase:infrastructure.owl ;
+    rdfs:subClassOf ENVO:00000070,
+        icon:0005003 .
+

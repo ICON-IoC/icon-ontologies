@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0006108">
+    <obo:IAO_0000115 xml:lang="en">An organization, project, program or guideline or mandate carries out a guideline or mandate or a plan, as a program carries out the statute that authorizes it or the certification it runs, or a regulation carries out the statute that requires it.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/mandates.owl"/>
+    <rdfs:label xml:lang="en">implements</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ICON_0000100"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0006109"/>
+  </rdf:Description>
+</rdf:RDF>

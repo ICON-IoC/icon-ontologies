@@ -1,0 +1,18 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+icon:0013000 a owl:Class ;
+    rdfs:label "tool"@en ;
+    IAO:0000115 "Software people use to plan, assess or track conservation work: a decision-support tool, a map viewer, a dashboard, a calculator or model, a software package or an identification key. A site whose main job is holding and serving data is a data repository, not a tool; a tool that works with such data links to it. Read from the master PPOD workbook's Tools sheet."@en ;
+    rdfs:isDefinedBy iconbase:tools.owl ;
+    rdfs:subClassOf IAO:0000010,
+        icon:0000013 ;
+    skos:closeMatch schema:SoftwareApplication ;
+    icon:0000002 dcterms:description .
+

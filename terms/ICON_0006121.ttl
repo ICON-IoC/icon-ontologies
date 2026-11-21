@@ -1,0 +1,15 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix OBI: <http://purl.obolibrary.org/obo/OBI_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0006121 a owl:ObjectProperty ;
+    rdfs:label "sponsored"@en ;
+    IAO:0000115 "An organization sponsored a bill or ballot measure: it brought the proposal to the legislator who carried it, or campaigned for the measure, and backed it to passage."@en ;
+    rdfs:domain OBI:0000245 ;
+    rdfs:isDefinedBy iconbase:mandates.owl ;
+    rdfs:range icon:0006000 ;
+    owl:inverseOf icon:0006122 .
+

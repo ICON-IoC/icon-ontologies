@@ -1,0 +1,231 @@
+# ICON Projects ontology, as a LinkML schema.
+# Built by `ioc-ontologies` from ontology/src/projects.terms; edit that, not this file.
+id: https://w3id.org/icon/linkml/icon-projects
+name: icon-projects
+prefixes:
+  linkml: https://w3id.org/linkml/
+  ICON: https://w3id.org/icon/ICON_
+  OBI: http://purl.obolibrary.org/obo/OBI_
+  foaf: http://xmlns.com/foaf/0.1/
+  schema: https://schema.org/
+title: ICON Projects ontology
+description: 'Conservation projects: bounded efforts with a lead, partners and funders that restore, protect,
+  acquire, study or manage something in a place. Covers project types and the links of a project to programs
+  and to the places it works on.'
+version: '2026-11-21'
+license: https://creativecommons.org/licenses/by/4.0/
+default_prefix: ICON
+default_range: string
+see_also:
+- https://w3id.org/icon/projects.owl
+imports:
+- linkml:types
+- icon-external
+- icon-core
+- icon-infrastructure
+- icon-plans
+- icon-programs
+classes:
+  ConservationProject:
+    class_uri: ICON:0003000
+    title: conservation project
+    description: A bounded effort with a lead and usually partners and funders that restores, protects,
+      acquires, studies, plans or manages something in a place, and ends when its work is done.
+    close_mappings:
+    - schema:Project
+    - foaf:Project
+    annotations:
+      runtime: class Project; vocab ProjType
+    is_a: Endeavor
+  AcquisitionProject:
+    class_uri: ICON:0003001
+    title: acquisition project
+    description: A project that buys land, water or easements for conservation.
+    annotations:
+      runtime: term ProjType "Acquisition"
+    is_a: ConservationProject
+  EducationProject:
+    class_uri: ICON:0003002
+    title: education project
+    description: A project that teaches the public, students or practitioners.
+    annotations:
+      runtime: term ProjType "Education"
+    is_a: ConservationProject
+  HabitatEnhancementProject:
+    class_uri: ICON:0003003
+    title: habitat enhancement project
+    description: A project that restores or improves habitat.
+    aliases:
+    - restoration project
+    annotations:
+      runtime: term ProjType "Habitat Enhancement"
+    is_a: ConservationProject
+  InfrastructureProject:
+    class_uri: ICON:0003004
+    title: infrastructure project
+    description: A project that builds, removes or rebuilds a structure, such as a fish ladder, a levee
+      setback or a wildlife crossing.
+    annotations:
+      runtime: term ProjType "Infrastructure"
+    is_a: ConservationProject
+  LandProtectionProject:
+    class_uri: ICON:0003005
+    title: land protection project
+    description: A project that secures land against conversion by easement, designation or agreement
+      rather than purchase.
+    annotations:
+      runtime: term ProjType "Land Protection"
+    is_a: ConservationProject
+  ManagementProject:
+    class_uri: ICON:0003006
+    title: management project
+    description: A project that manages land, water or wildlife, such as grazing, burning or invasive
+      species control.
+    annotations:
+      runtime: term ProjType "Management"
+    is_a: ConservationProject
+  PlanningProject:
+    class_uri: ICON:0003007
+    title: planning project
+    description: A project that produces a plan.
+    annotations:
+      runtime: term ProjType "Planning"
+    is_a: ConservationProject
+  RemediationProject:
+    class_uri: ICON:0003008
+    title: remediation project
+    description: A project that cleans up contamination or reverses damage, such as mine waste or polluted
+      runoff.
+    annotations:
+      runtime: term ProjType "Remediation"
+    is_a: ConservationProject
+  ResearchProject:
+    class_uri: ICON:0003009
+    title: research project
+    description: A project that studies or monitors nature or conservation.
+    close_mappings:
+    - OBI:0000066
+    annotations:
+      runtime: term ProjType "Research"
+    is_a: ConservationProject
+  CompensatoryMitigationProject:
+    class_uri: ICON:0003010
+    title: compensatory mitigation project
+    description: A project that restores, creates or preserves habitat to make up for habitat a permitted
+      development destroys elsewhere.
+    annotations:
+      runtime: term ProjType "Compensatory Mitigation"
+    is_a: ConservationProject
+  WildlifeCrossingProject:
+    class_uri: ICON:0003011
+    title: wildlife crossing project
+    description: A project that plans, builds, improves or studies a structure that lets wildlife cross
+      a road or railway, or that restores or secures the land leading to one.
+    annotations:
+      runtime: term ProjType "Wildlife Crossing"
+    is_a: ConservationProject
+slots:
+  has_project_type:
+    slot_uri: ICON:0003100
+    title: has project type
+    description: Links a project to one of the project type classes it belongs to. The explorer's way
+      of stating the project's class.
+    annotations:
+      runtime: phrase "has project type"
+    domain: ConservationProject
+    domain_of:
+    - ConservationProject
+    range: uriorcurie
+    inverse: is_project_type_of
+    multivalued: true
+  is_project_type_of:
+    slot_uri: ICON:0003101
+    title: is project type of
+    description: The reverse of has project type.
+    annotations:
+      runtime: phrase "is project type of"
+    range: ConservationProject
+    inverse: has_project_type
+    multivalued: true
+  is_part_of_program:
+    slot_uri: ICON:0003102
+    title: is part of program
+    description: A project carried out within a program, as one grant within a grant program.
+    annotations:
+      runtime: phrase "is part of program"
+    is_a: part_of
+    domain: ConservationProject
+    domain_of:
+    - ConservationProject
+    range: ConservationProgram
+    inverse: has_project
+    multivalued: true
+  has_project:
+    slot_uri: ICON:0003103
+    title: has project
+    description: The reverse of is part of program.
+    annotations:
+      runtime: phrase "has project"
+    is_a: has_part
+    domain: ConservationProgram
+    domain_of:
+    - ConservationProgram
+    range: ConservationProject
+    inverse: is_part_of_program
+    multivalued: true
+  tracked_by:
+    slot_uri: ICON:0003104
+    title: tracked by
+    description: The organization that keeps a project's or plan's record in a project tracker such as
+      EcoAtlas, often the agency that permitted or funded it, without necessarily leading it. Keeping
+      the record is not taking part in the work, so this is not a kind of is involved with.
+    annotations:
+      runtime: phrase "tracked by"
+    domain_of:
+    - ConservationProject
+    - ConservationPlan
+    range: Organization
+    inverse: tracks
+    multivalued: true
+  tracks:
+    slot_uri: ICON:0003105
+    title: tracks
+    description: The reverse of tracked by.
+    annotations:
+      runtime: phrase "tracks"
+    domain: Organization
+    domain_of:
+    - Organization
+    any_of:
+    - range: ConservationProject
+    - range: ConservationPlan
+    range: uriorcurie
+    inverse: tracked_by
+    multivalued: true
+  works_on:
+    slot_uri: ICON:0003106
+    title: works on
+    description: 'The project acts on the place itself: it restores, manages, builds, repairs, widens
+      or studies it, or mitigates for work on it. A fuel reduction project works on the national forest
+      it thins, a coho habitat project works on its creek, and a Caltrans culvert replacement works on
+      the highway it runs under. A project that only uses the place to say where it is intersects it instead.'
+    annotations:
+      runtime: phrase "works on"
+    domain: ConservationProject
+    domain_of:
+    - ConservationProject
+    range: Infrastructure
+    inverse: worked_on_by
+    multivalued: true
+  worked_on_by:
+    slot_uri: ICON:0003107
+    title: worked on by
+    description: The reverse of works on.
+    annotations:
+      runtime: phrase "worked on by"
+    domain: Infrastructure
+    domain_of:
+    - Infrastructure
+    range: ConservationProject
+    inverse: works_on
+    multivalued: true

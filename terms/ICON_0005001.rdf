@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="cb0">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="cb943b2b74bb7d613d9d6d0e3cf92a0a2fee101c92b3a39ead71fdd9ba378c2c1e"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb55931639f8c14c1122926c0722d0da1897f5a5bc6d9405eb0cf95549a9068fa1">
+    <rdf:first rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000043"/>
+    <rdf:rest rdf:nodeID="cb7eef38bce01a1cfadf824bb11e1ff206fea8dde463b4a1d2842f11e73dcb4f8a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb7eef38bce01a1cfadf824bb11e1ff206fea8dde463b4a1d2842f11e73dcb4f8a">
+    <rdf:first rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000045"/>
+    <rdf:rest rdf:nodeID="cbfddde4be85db89c1dbbb364e08ba47c2d1005c647415b09a7b19b6fb9678402f"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb943b2b74bb7d613d9d6d0e3cf92a0a2fee101c92b3a39ead71fdd9ba378c2c1e">
+    <rdf:first rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000023"/>
+    <rdf:rest rdf:nodeID="cbfa3ab5427ac3b0afbaeaa08ce5f989a6a6ff0afac3a3da420b03949e302d985"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cbea46ac019365fb0c1c8e0ed7ef36d8a78a1a619c8fa71bdc7873b4984436ff5e">
+    <rdf:first rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000277"/>
+    <rdf:rest rdf:nodeID="cb55931639f8c14c1122926c0722d0da1897f5a5bc6d9405eb0cf95549a9068fa1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cbfa3ab5427ac3b0afbaeaa08ce5f989a6a6ff0afac3a3da420b03949e302d985">
+    <rdf:first rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000617"/>
+    <rdf:rest rdf:nodeID="cbea46ac019365fb0c1c8e0ed7ef36d8a78a1a619c8fa71bdc7873b4984436ff5e"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cbfddde4be85db89c1dbbb364e08ba47c2d1005c647415b09a7b19b6fb9678402f">
+    <rdf:first rdf:resource="http://purl.obolibrary.org/obo/ENVO_00001999"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005001">
+    <obo:IAO_0000115 xml:lang="en">A body of water: a river or stream, a lake or pond, a dry lake or playa, a wetland, an estuary or the ocean.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:label xml:lang="en">blue infrastructure</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005000"/>
+    <owl:equivalentClass rdf:nodeID="cb0"/>
+  </rdf:Description>
+</rdf:RDF>

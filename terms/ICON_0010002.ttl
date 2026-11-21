@@ -1,0 +1,13 @@
+@prefix ENVO: <http://purl.obolibrary.org/obo/ENVO_> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0010002 a owl:Class ;
+    rdfs:label "HUC10 watershed"@en ;
+    IAO:0000115 "A drainage basin at the watershed level (ten-digit hydrologic unit code) of the USGS Watershed Boundary Dataset. Each lies within one HUC8 subbasin."@en ;
+    rdfs:isDefinedBy iconbase:places.owl ;
+    rdfs:subClassOf ENVO:00000291 .
+

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="cb0">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005052"/>
+    <rdf:rest rdf:nodeID="cbd7c96744b860be374134b6eeace4a6009e3d5947219e59b3c009836ad1012775"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb38440579ac13e767956bcda03041b2c77034b1ba5ffee00ba47e837f959a98cd">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005035"/>
+    <rdf:rest rdf:nodeID="cb3cae2e13c83864bf4ff1cfa8ad7016c1726ff74a2cc890f8c0e9715116b5763a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb3cae2e13c83864bf4ff1cfa8ad7016c1726ff74a2cc890f8c0e9715116b5763a">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005036"/>
+    <rdf:rest rdf:nodeID="cba962e3fb05199969a8b6672749d69e96d1486c14118addca502ac05f590f5ffe"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb404b9f507afe6363bafacf8f4c7d12b9935242247d79c1ab12f1b75e376fe3a4">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005039"/>
+    <rdf:rest rdf:nodeID="cbdf32aeb20bdf4abe0e1a288740e2e13f3c68ca7d43c380ccf649caa05f1782d4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb4fb24383cf485eeb7ac2ba4b65b28b771f9de46228440291468aa644186a15f">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005051"/>
+    <rdf:rest rdf:nodeID="cb0"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb5401709e09a041dce4a8094c0ebbfb158072baba4a3c5106f6363515e2d927e1">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005040"/>
+    <rdf:rest rdf:nodeID="cb4fb24383cf485eeb7ac2ba4b65b28b771f9de46228440291468aa644186a15f"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb790d41880c70330826807ac2742bfba8655f7be9bb14d81b0c692d2585bd5736">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005034"/>
+    <rdf:rest rdf:nodeID="cb38440579ac13e767956bcda03041b2c77034b1ba5ffee00ba47e837f959a98cd"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cba962e3fb05199969a8b6672749d69e96d1486c14118addca502ac05f590f5ffe">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005037"/>
+    <rdf:rest rdf:nodeID="cbdb074367f168bd9d4fe9a4d170ef79911e3cf585891d763ab82e2815e0cbc02e"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cbb63a4fd662b3707dddc8d29eabf3431d65b8dd1489d8cd52b8f0dcdb9bc6a176">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="cb790d41880c70330826807ac2742bfba8655f7be9bb14d81b0c692d2585bd5736"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cbd7c96744b860be374134b6eeace4a6009e3d5947219e59b3c009836ad1012775">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005124"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cbdb074367f168bd9d4fe9a4d170ef79911e3cf585891d763ab82e2815e0cbc02e">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005038"/>
+    <rdf:rest rdf:nodeID="cb404b9f507afe6363bafacf8f4c7d12b9935242247d79c1ab12f1b75e376fe3a4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cbdf32aeb20bdf4abe0e1a288740e2e13f3c68ca7d43c380ccf649caa05f1782d4">
+    <rdf:first rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000930"/>
+    <rdf:rest rdf:nodeID="cb5401709e09a041dce4a8094c0ebbfb158072baba4a3c5106f6363515e2d927e1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005002">
+    <obo:IAO_0000115 xml:lang="en">Land or water held or designed for wildlife and habitat: conservation areas, mitigation banks, greenbelts, corridors and crossing structures.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:label xml:lang="en">green infrastructure</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005000"/>
+    <owl:equivalentClass rdf:nodeID="cbb63a4fd662b3707dddc8d29eabf3431d65b8dd1489d8cd52b8f0dcdb9bc6a176"/>
+  </rdf:Description>
+</rdf:RDF>

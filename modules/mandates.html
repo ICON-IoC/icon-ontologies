@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ICON Guidelines and mandates ontology</title>
+<link rel="icon" href="../brand/icon-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+:root {
+  --ground: #f1f4ef; --surface: #ffffff; --ink: #17221d; --muted: #5a6a62; --rule: #d3dbd3;
+  --accent: #2e6a4e; --accent-soft: #e3eee7;
+  --display: "Newsreader", Georgia, serif;
+  --body: "Instrument Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground: #0f1512; --surface: #17201b; --ink: #e3ebe6; --muted: #93a39a; --rule: #2b3730;
+    --accent: #74c39b; --accent-soft: #1d3127; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --ground: #0f1512; --surface: #17201b; --ink: #e3ebe6; --muted: #93a39a; --rule: #2b3730;
+  --accent: #74c39b; --accent-soft: #1d3127; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--ground); color: var(--ink); font: 15px/1.6 var(--body); }
+.page { max-width: 1040px; margin: 0 auto; padding: 24px 16px 56px; display: grid; gap: 24px; }
+header.top { display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 13px; }
+header.top nav { display: flex; gap: 16px; flex-wrap: wrap; }
+.logo { height: 34px; width: auto; }
+.logo.dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .logo.light { display: none; }
+  :root:not([data-theme="light"]) .logo.dark { display: block; }
+}
+:root[data-theme="dark"] .logo.light { display: none; }
+:root[data-theme="dark"] .logo.dark { display: block; }
+h1 { font: 600 clamp(28px, 4vw, 40px)/1.15 var(--display); margin: 0; text-wrap: balance; }
+h2 { font: 600 22px/1.25 var(--display); margin: 0 0 8px; }
+p { margin: 0 0 10px; max-width: 75ch; }
+a { color: var(--accent); }
+code { font: 0.88em var(--mono); overflow-wrap: anywhere; }
+.muted { color: var(--muted); }
+.kicker { font: 600 11px var(--body); letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+section.card { background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; padding: 18px 20px; min-width: 0; }
+.facts { display: flex; flex-wrap: wrap; gap: 8px 28px; font-variant-numeric: tabular-nums; }
+.facts div { display: grid; }
+.facts b { font: 600 22px/1.1 var(--display); }
+.facts span { font-size: 12px; color: var(--muted); }
+.scroll { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { text-align: left; vertical-align: top; padding: 8px 10px 8px 0; border-bottom: 1px solid var(--rule); }
+th { font-weight: 600; font-size: 12px; color: var(--muted); }
+td.files { white-space: nowrap; }
+td.files a + a { margin-left: 8px; }
+dl.facts-list { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 6px 16px; margin: 0; }
+dl.facts-list dt { color: var(--muted); font-size: 13px; padding-top: 1px; }
+dl.facts-list dd { margin: 0; }
+.button { display: inline-block; padding: 8px 14px; border-radius: 8px; background: var(--accent); color: var(--surface); text-decoration: none; font-weight: 600; }
+pre { background: var(--accent-soft); padding: 12px 14px; border-radius: 8px; overflow-x: auto; font: 13px/1.5 var(--mono); margin: 0 0 10px; white-space: pre-wrap; }
+footer { font-size: 13px; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="top">
+    <nav><a href=".././">ICON ontologies</a><a href="../map.html">Map</a><a href="https://github.com/ICON-IoC/icon-ontologies">Source files</a></nav>
+    <a href="https://icon-ioc.com" aria-label="ICON">
+      <img class="logo light" alt="ICON" src="../brand/icon-lockup.png">
+      <img class="logo dark" alt="ICON" src="../brand/icon-wordmark-reversed-cropped.png">
+    </a>
+  </header>
+
+  <section>
+    <div class="kicker">record module</div>
+    <h1>ICON Guidelines and mandates ontology</h1>
+    <p>Laws, regulations, executive orders, agreements, certifications and guidelines that require, allow, fund or shape conservation work, and the ways organizations stand toward them: bound by, implementing, enforcing, issuing, certified by.</p>
+    <dl class="facts-list">
+      <dt>Ontology IRI</dt><dd><code>https://w3id.org/icon/mandates.owl</code></dd>
+      <dt>This release</dt><dd><code>https://w3id.org/icon/releases/2026-11-21/mandates.owl</code></dd>
+      <dt>Own term IDs</dt><dd>ICON:0006000 to ICON:0006999</dd>
+      <dt>Files</dt><dd><a href="../icon-mandates.ttl">Turtle</a>, <a href="../icon-mandates.owl">RDF/XML</a>, <a href="../linkml/icon-mandates.yaml">LinkML</a>, <a href="../guides/mandates.md">guide (Markdown)</a></dd>
+      
+      <dt>Built on</dt><dd>IAO, OBI</dd>
+      
+      <dt>Mapped to</dt><dd>OMRSE, eli, schema</dd>
+      
+    </dl>
+  </section>
+
+  <section class="card">
+    <h2>Terms</h2>
+    <p class="muted">Reused terms keep their own IDs and link to their source ontology.</p>
+    <div class="scroll">
+    <table>
+      <thead><tr><th>Term</th><th>Kind</th><th>ID</th><th>Definition</th></tr></thead>
+      <tbody>
+      
+        <tr id="ICON_0006000">
+          <td><a href="../terms/ICON_0006000.html">guideline or mandate</a></td>
+          <td>class</td>
+          <td><code>ICON:0006000</code></td>
+          <td>A directive that requires, allows, funds or shapes conservation work: a law, regulation, executive order, agreement, certification standard or guideline. Some bind; others only advise.</td>
+        </tr>
+      
+        <tr id="ICON_0006001">
+          <td><a href="../terms/ICON_0006001.html">agreement</a></td>
+          <td>class</td>
+          <td><code>ICON:0006001</code></td>
+          <td>A guideline or mandate that two or more parties sign, such as a memorandum of understanding, a settlement or a habitat conservation plan&#39;s implementing agreement.</td>
+        </tr>
+      
+        <tr id="ICON_0006002">
+          <td><a href="../terms/ICON_0006002.html">certification standard</a></td>
+          <td>class</td>
+          <td><code>ICON:0006002</code></td>
+          <td>A guideline or mandate that sets the practices land, products or operations must meet to be certified, such as a sustainable farming or forestry standard.</td>
+        </tr>
+      
+        <tr id="ICON_0006003">
+          <td><a href="../terms/ICON_0006003.html">executive order</a></td>
+          <td>class</td>
+          <td><code>ICON:0006003</code></td>
+          <td>A guideline or mandate that a president or governor issues to direct government agencies.</td>
+        </tr>
+      
+        <tr id="ICON_0006004">
+          <td><a href="../terms/ICON_0006004.html">guideline</a></td>
+          <td>class</td>
+          <td><code>ICON:0006004</code></td>
+          <td>A guideline or mandate that recommends how something should be done without binding anyone.</td>
+        </tr>
+      
+        <tr id="ICON_0006005">
+          <td><a href="../terms/ICON_0006005.html">legislation</a></td>
+          <td>class</td>
+          <td><code>ICON:0006005</code></td>
+          <td>A guideline or mandate that a legislature or the voters enact: a statute, an act, a ballot measure.</td>
+        </tr>
+      
+        <tr id="ICON_0006006">
+          <td><a href="../terms/ICON_0006006.html">regulation</a></td>
+          <td>class</td>
+          <td><code>ICON:0006006</code></td>
+          <td>A guideline or mandate that an agency adopts under authority a statute gives it, with the force of law, as in the California Code of Regulations.</td>
+        </tr>
+      
+        <tr id="ICON_0006007">
+          <td><a href="../terms/ICON_0006007.html">agency rule</a></td>
+          <td>class</td>
+          <td><code>ICON:0006007</code></td>
+          <td>A guideline or mandate that a body adopts to govern its own lands, programs or members, short of a codified regulation.</td>
+        </tr>
+      
+        <tr id="ICON_0006008">
+          <td><a href="../terms/ICON_0006008.html">court order</a></td>
+          <td>class</td>
+          <td><code>ICON:0006008</code></td>
+          <td>A guideline or mandate that a court issues in a case, such as a writ of mandate or an injunction, directing a party, often a government agency, to act or to stop acting. It binds the parties named in it. Example: the 2025 writ of mandate in California Chaparral Institute v. Board of Forestry and Fire Protection, which limits the California Vegetation Treatment Program in chaparral and coastal sage scrub.</td>
+        </tr>
+      
+        <tr id="ICON_0006010">
+          <td><a href="../terms/ICON_0006010.html">government level</a></td>
+          <td>class</td>
+          <td><code>ICON:0006010</code></td>
+          <td>The level of government a guideline or mandate comes from or applies at.</td>
+        </tr>
+      
+        <tr id="ICON_0006100">
+          <td><a href="../terms/ICON_0006100.html">has instrument type</a></td>
+          <td>relation</td>
+          <td><code>ICON:0006100</code></td>
+          <td>Links a guideline or mandate to one of the instrument type classes it belongs to. The explorer&#39;s way of stating its class.</td>
+        </tr>
+      
+        <tr id="ICON_0006101">
+          <td><a href="../terms/ICON_0006101.html">is instrument type of</a></td>
+          <td>relation</td>
+          <td><code>ICON:0006101</code></td>
+          <td>The reverse of has instrument type.</td>
+        </tr>
+      
+        <tr id="ICON_0006102">
+          <td><a href="../terms/ICON_0006102.html">at government level</a></td>
+          <td>relation</td>
+          <td><code>ICON:0006102</code></td>
+          <td>The level of government a guideline or mandate comes from.</td>
+        </tr>
+      
+        <tr id="ICON_0006103">
+          <td><a href="../terms/ICON_0006103.html">is government level of</a></td>
+          <td>relation</td>
+          <td><code>ICON:0006103</code></td>
+          <td>The reverse of at government level.</td>
+        </tr>
+      
+        <tr id="ICON_0006104">
+          <td><a href="../terms/ICON_0006104.html">is required by</a></td>
+          <td>relation</td>
+          <td><code>ICON:0006104</code></td>
+          <td>A guideline or mandate requires this data, publication or plan to be produced, as the Endangered Species Act requires recovery plans.</td>
+        </tr>
+      
+        <tr id="ICON_0006105">
+          <td><a href="../terms/ICON_0006105.html">requires</a></td>
+          <td>relation</td>
+          <td><code>ICON:0006105</code></td>
+          <td>The reverse of is required by.</td>
+        </tr>
+      
+        <tr id="ICON_0006106">
+          <td><a href="../terms/ICON_0006106.html">is bound by</a></td>
+          <td>relation</td>
+          <td><code>ICON:0006106</code></td>
+          <td>A guideline or mandate binds the organization: it must comply with it. A project, program or other record is bound by a mandate only when a source says so for that record.</td>
+        </tr>
+      
+        <tr id="ICON_0006107">
+          <td><a href="../terms/ICON_0006107.html">binds</a></td>
+          <td>relation</td>
+          <td><code>ICON:0006107</code></td>
+          <td>The reverse of is bound by.</td>
+        </tr>
+      
+        <tr id="ICON_0006108">
+          <td><a href="../terms/ICON_0006108.html">implements</a></td>
+          <td>relation</td>
+          <td><code>ICON:0006108</code></td>
+          <td>An organization, project, program or guideline or mandate carries out a guideline or mandate or a plan, as a program carries out the statute that authorizes it or the certification it runs, or a regulation carries out the statute that requires it.</td>
+        </tr>
+      
+        <tr id="ICON_0006109">
+          <td><a href="../terms/ICON_0006109.html">is implemented by</a></td>
+          <td>relation</td>
+          <td><code>ICON:0006109</code></td>
+          <td>The reverse of implements.</td>
+        </tr>
+      
+        <tr id="ICON_0006110">
+          <td><a href="../terms/ICON_0006110.html">enforces</a></td>
+          <td>relation</td>
+          <td><code>ICON:0006110</code></td>
+          <td>An organization holds the authority to enforce a guideline or mandate.</td>
+        </tr>
+      
+        <tr id="ICON_0006111">
+          <td><a href="../terms/ICON_0006111.html">is enforced by</a></td>
+          <td>relation</td>
+          <td><code>ICON:0006111</code></td>
+          <td>The reverse of enforces.</td>
+        </tr>
+      
+        <tr id="ICON_0006112">
+          <td><a href="../terms/ICON_0006112.html">issued</a></td>
+          <td>relation</td>
+          <td><code>ICON:0006112</code></td>
+          <td>An organization issued a guideline, mandate or plan: adopted, signed or published it.</td>
+        </tr>
+      
+        <tr id="ICON_0006113">
+          <td><a href="../terms/ICON_0006113.html">was issued by</a></td>
+          <td>relation</td>
+          <td><code>ICON:0006113</code></td>
+          <td>The reverse of issued.</td>
+        </tr>
+      
+        <tr id="ICON_0006114">
+          <td><a href="../terms/ICON_0006114.html">is supported by</a></td>
+          <td>relation</td>
+          <td><code>ICON:0006114</code></td>
+          <td>An organization&#39;s work rests on a guideline or mandate, as a program on the statute that authorizes it.</td>
+        </tr>
+      
+        <tr id="ICON_0006115">
+          <td><a href="../terms/ICON_0006115.html">supports</a></td>
+          <td>relation</td>
+          <td><code>ICON:0006115</code></td>
+          <td>The reverse of is supported by.</td>
+        </tr>
+      
+        <tr id="ICON_0006116">
+          <td><a href="../terms/ICON_0006116.html">advises about</a></td>
+          <td>relation</td>
+          <td><code>ICON:0006116</code></td>
+          <td>An organization gives advice on how to meet or apply a guideline or mandate.</td>
+        </tr>
+      
+        <tr id="ICON_0006117">
+          <td><a href="../terms/ICON_0006117.html">is advised about by</a></td>
+          <td>relation</td>
+          <td><code>ICON:0006117</code></td>
+          <td>The reverse of advises about.</td>
+        </tr>
+      
+        <tr id="ICON_0006118">
+          <td><a href="../terms/ICON_0006118.html">is certified by</a></td>
+          <td>relation</td>
+          <td><code>ICON:0006118</code></td>
+          <td>An organization, or a place such as a ranch or preserve, holds certification under a certification standard.</td>
+        </tr>
+      
+        <tr id="ICON_0006119">
+          <td><a href="../terms/ICON_0006119.html">certifies</a></td>
+          <td>relation</td>
+          <td><code>ICON:0006119</code></td>
+          <td>The reverse of is certified by.</td>
+        </tr>
+      
+        <tr id="ICON_0006120">
+          <td><a href="../terms/ICON_0006120.html">funds established by</a></td>
+          <td>relation</td>
+          <td><code>ICON:0006120</code></td>
+          <td>An organization pays out money a guideline or mandate set up, as a board awarding bond-measure grants.</td>
+        </tr>
+      
+        <tr id="ICON_0006121">
+          <td><a href="../terms/ICON_0006121.html">sponsored</a></td>
+          <td>relation</td>
+          <td><code>ICON:0006121</code></td>
+          <td>An organization sponsored a bill or ballot measure: it brought the proposal to the legislator who carried it, or campaigned for the measure, and backed it to passage.</td>
+        </tr>
+      
+        <tr id="ICON_0006122">
+          <td><a href="../terms/ICON_0006122.html">was sponsored by</a></td>
+          <td>relation</td>
+          <td><code>ICON:0006122</code></td>
+          <td>The reverse of sponsored.</td>
+        </tr>
+      
+        <tr id="ICON_0006123">
+          <td><a href="../terms/ICON_0006123.html">is authorized under</a></td>
+          <td>relation</td>
+          <td><code>ICON:0006123</code></td>
+          <td>A project went ahead under a permit, order, biological opinion or exemption that approved its work, such as a restoration project covered by a programmatic biological opinion or a nationwide permit.</td>
+        </tr>
+      
+        <tr id="ICON_0006124">
+          <td><a href="../terms/ICON_0006124.html">authorizes</a></td>
+          <td>relation</td>
+          <td><code>ICON:0006124</code></td>
+          <td>The reverse of is authorized under.</td>
+        </tr>
+      
+        <tr id="ICON_0006011">
+          <td><a href="../terms/ICON_0006011.html">federal level</a></td>
+          <td>value</td>
+          <td><code>ICON:0006011</code></td>
+          <td>The United States government.</td>
+        </tr>
+      
+        <tr id="ICON_0006012">
+          <td><a href="../terms/ICON_0006012.html">state level</a></td>
+          <td>value</td>
+          <td><code>ICON:0006012</code></td>
+          <td>The State of California.</td>
+        </tr>
+      
+        <tr id="ICON_0006013">
+          <td><a href="../terms/ICON_0006013.html">local level</a></td>
+          <td>value</td>
+          <td><code>ICON:0006013</code></td>
+          <td>Counties, cities and special districts.</td>
+        </tr>
+      
+        <tr id="ICON_0006014">
+          <td><a href="../terms/ICON_0006014.html">private level</a></td>
+          <td>value</td>
+          <td><code>ICON:0006014</code></td>
+          <td>No government: a standard or agreement set by private parties.</td>
+        </tr>
+      
+        <tr id="ICON_0006015">
+          <td><a href="../terms/ICON_0006015.html">international level</a></td>
+          <td>value</td>
+          <td><code>ICON:0006015</code></td>
+          <td>An agreement among national governments, such as a treaty or a decision of the parties to a convention. Example: the Kunming-Montreal Global Biodiversity Framework (2022), adopted under the Convention on Biological Diversity.</td>
+        </tr>
+      
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <footer>
+    <p>ICON ontologies, version 2026-11-21. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: attribute as "Internet of Conservation, Information for the Conservation of Nature (ICON), CC BY 4.0". The ICON names and logos are not covered by that license.</p>
+  </footer>
+</div>
+</body>
+</html>

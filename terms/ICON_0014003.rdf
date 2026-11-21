@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014003">
+    <obo:IAO_0000115 xml:lang="en">An outcome a project or program sets out to deliver and has not yet been shown to: the acres a grant award or a project plan states, or the planned and in-progress work a project tracker lists.</obo:IAO_0000115>
+    <oboInOwl:hasExactSynonym xml:lang="en">planned outcome</oboInOwl:hasExactSynonym>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:label xml:lang="en">expected outcome</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0014002"/>
+  </rdf:Description>
+</rdf:RDF>

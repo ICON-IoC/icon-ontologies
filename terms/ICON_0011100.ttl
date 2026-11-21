@@ -1,0 +1,17 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+icon:0011100 a owl:ObjectProperty ;
+    rdfs:label "concerns taxon"@en ;
+    IAO:0000115 "The record is about, works for or affects the species or group."@en ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:range icon:0011000 ;
+    owl:inverseOf icon:0011101 ;
+    skos:closeMatch dcterms:subject ;
+    icon:0000001 "EML 2.2: coverage/taxonomicCoverage" .
+

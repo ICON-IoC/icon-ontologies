@@ -1,0 +1,17 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+icon:0008104 a owl:ObjectProperty ;
+    rdfs:label "is held in"@en ;
+    IAO:0000115 "A dataset, database or smaller repository is held and published by a repository. One resource can be held in several."@en ;
+    rdfs:domain icon:0008000 ;
+    rdfs:isDefinedBy iconbase:data.owl ;
+    rdfs:range icon:0008003 ;
+    owl:inverseOf icon:0008105 ;
+    skos:closeMatch schema:includedInDataCatalog .
+

@@ -1,0 +1,12 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0001015 a owl:Class ;
+    rdfs:label "special district"@en ;
+    IAO:0000115 "A local agency formed under state law to provide one or a few services within set boundaries, such as a water, irrigation, resource conservation, park, flood control or sanitation district."@en ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:subClassOf icon:0001005 .
+

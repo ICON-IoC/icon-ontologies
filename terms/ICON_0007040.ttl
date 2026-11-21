@@ -1,0 +1,12 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0007040 a owl:Class ;
+    rdfs:label "conservation proposal"@en ;
+    IAO:0000115 "A conservation plan written by an organization that neither owns nor manages the lands it covers, proposing new designations, legislation or management direction for those lands, usually public ones, to the agencies and lawmakers who could adopt it. It binds no one until they act on it. Example: the California Chaparral Institute's California Chaparral Preservation Plan (2021), which asks that the four southern California national forests become National Chaparral Recreation Areas."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+

@@ -1,0 +1,13 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0007124 a owl:Class ;
+    rdfs:label "community action plan"@en ;
+    IAO:0000115 "A plan for one small community, prepared with its residents and its local government, that names improvements to quality of life, economic development, historic preservation, transportation, and public safety, and the steps and partners to carry them out. Example: the Walnut Grove Community Action Plan (2016), prepared with support from the Delta Protection Commission."@en ;
+    rdfs:comment "Added for the community action plans of four Sacramento River Delta towns (#1677)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+

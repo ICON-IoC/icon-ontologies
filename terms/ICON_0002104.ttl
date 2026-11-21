@@ -1,0 +1,24 @@
+@prefix ENVO: <http://purl.obolibrary.org/obo/ENVO_> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix NCBITaxon: <http://purl.obolibrary.org/obo/NCBITaxon_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+icon:0002104 a owl:ObjectProperty ;
+    rdfs:label "has expertise in"@en ;
+    IAO:0000115 "A person knows an issue, a place, a taxon or a habitat type through their work: the projects, programs and plans they lead and the papers and reports they wrote address it, or the source records say so. Expertise is never passed down from the organizations a person belongs to."@en ;
+    rdfs:comment "The explorer entails it from the issues, counties, ecoregions, taxa and habitat types a person's led or authored record states itself. A statewide record gives no place expertise, and a record that names more than 10 of one kind gives none of that kind (#1130). Expertise in a component issue is expertise in its integrated issues too, and expertise in a vegetation or CMECS type is expertise in its broader types (#1409, #1410)."@en ;
+    rdfs:domain NCBITaxon:9606 ;
+    rdfs:isDefinedBy iconbase:people.owl ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( icon:0012000 icon:0010000 ENVO:01000276 icon:0011000 icon:0011001 icon:0011004 icon:0011005 ) ] ;
+    owl:inverseOf icon:0002105 ;
+    owl:propertyChainAxiom ( icon:0002104 icon:0012102 ),
+        ( icon:0002104 icon:0011108 ) ;
+    skos:closeMatch schema:knowsAbout .
+

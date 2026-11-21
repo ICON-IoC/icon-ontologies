@@ -1,0 +1,14 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0005117 a owl:ObjectProperty ;
+    rdfs:label "crosses"@en ;
+    IAO:0000115 "The structure carries animals under or over the road or railway, as a wildlife crossing structure crosses the highway it passes beneath."@en ;
+    rdfs:domain icon:0005000 ;
+    rdfs:isDefinedBy iconbase:infrastructure.owl ;
+    rdfs:range icon:0005007 ;
+    owl:inverseOf icon:0005118 .
+

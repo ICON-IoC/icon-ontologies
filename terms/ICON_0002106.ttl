@@ -1,0 +1,18 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix NCBITaxon: <http://purl.obolibrary.org/obo/NCBITaxon_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0002106 a owl:ObjectProperty ;
+    rdfs:label "represents"@en ;
+    IAO:0000115 "An elected official holds the seat of the district: a member of the State Assembly or State Senate, a member of Congress, or a county supervisor. A U.S. senator represents the whole state (#1432)."@en ;
+    rdfs:comment "The office and party are the link's role title, and the year the person took the seat is the link's start."@en ;
+    rdfs:domain NCBITaxon:9606 ;
+    rdfs:isDefinedBy iconbase:people.owl ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( icon:0010005 icon:0010003 ) ] ;
+    owl:inverseOf icon:0002107 .
+

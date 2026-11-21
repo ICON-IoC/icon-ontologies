@@ -1,0 +1,17 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix NCBITaxon: <http://purl.obolibrary.org/obo/NCBITaxon_> .
+@prefix OBI: <http://purl.obolibrary.org/obo/OBI_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0002101 a owl:ObjectProperty ;
+    rdfs:label "has affiliate"@en ;
+    IAO:0000115 "The reverse of is affiliated with."@en ;
+    rdfs:domain OBI:0000245 ;
+    rdfs:isDefinedBy iconbase:people.owl ;
+    rdfs:range NCBITaxon:9606 ;
+    rdfs:subPropertyOf icon:0000100 ;
+    owl:inverseOf icon:0002100 .
+

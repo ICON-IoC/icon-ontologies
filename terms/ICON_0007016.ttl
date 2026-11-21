@@ -1,0 +1,12 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0007016 a owl:Class ;
+    rdfs:label "habitat conservation and management plan"@en ;
+    IAO:0000115 "A conservation plan for one rare habitat type across its whole range, such as an endemic sand or serpentine community, written by scientists with the land trusts, agencies and landowners working there, that maps and ranks the remaining habitat sites, synthesizes the biology of its sensitive species and the threats to them, and recommends which lands to preserve and how to manage them (fire, invasive plants, recreation, restoration), with research and education. It is advisory and binds no owner, unlike a habitat conservation plan under the Endangered Species Act."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+

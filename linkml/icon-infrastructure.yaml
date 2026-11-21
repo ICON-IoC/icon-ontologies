@@ -1,0 +1,899 @@
+# ICON Infrastructure ontology, as a LinkML schema.
+# Built by `ioc-ontologies` from ontology/src/infrastructure.terms; edit that, not this file.
+id: https://w3id.org/icon/linkml/icon-infrastructure
+name: icon-infrastructure
+prefixes:
+  linkml: https://w3id.org/linkml/
+  ENVO: http://purl.obolibrary.org/obo/ENVO_
+  ICON: https://w3id.org/icon/ICON_
+  RO: http://purl.obolibrary.org/obo/RO_
+  gsp: http://www.opengis.net/ont/geosparql#
+title: ICON Infrastructure ontology
+description: 'Places and structures on the landscape that conservation works on or around: waters (blue),
+  conservation lands (green), water works, energy, food production and sensors. Covers their types, ownership
+  and management, and how they lie relative to one another (upstream, adjacent, intersecting).'
+version: '2026-11-21'
+license: https://creativecommons.org/licenses/by/4.0/
+default_prefix: ICON
+default_range: string
+see_also:
+- https://w3id.org/icon/infrastructure.owl
+imports:
+- linkml:types
+- icon-external
+- icon-biodiversity
+- icon-core
+classes:
+  Infrastructure:
+    class_uri: ICON:0005000
+    title: infrastructure
+    description: 'A place or structure on the landscape that conservation works on or around: a water
+      body, a conservation area, a water or energy work, a farm, a sensor, a road or trail. Called infrastructure
+      in the PPOD model whether built or natural.'
+    close_mappings:
+    - gsp:Feature
+    annotations:
+      runtime: class Infrastructure; vocab InfrastructureType
+    is_a: Place
+  BlueInfrastructure:
+    class_uri: ICON:0005001
+    title: blue infrastructure
+    description: 'A body of water: a river or stream, a lake or pond, a dry lake or playa, a wetland,
+      an estuary or the ocean.'
+    is_a: Infrastructure
+    any_of:
+    - is_a: Stream
+    - is_a: LenticWaterBody
+    - is_a: DryLake
+    - is_a: WetlandArea
+    - is_a: Estuary
+    - is_a: MarineWaterBody
+  GreenInfrastructure:
+    class_uri: ICON:0005002
+    title: green infrastructure
+    description: 'Land or water held or designed for wildlife and habitat: conservation areas, mitigation
+      banks, greenbelts, corridors and crossing structures.'
+    is_a: Infrastructure
+    any_of:
+    - is_a: ConservationEasementArea
+    - is_a: FeeTitleConservationArea
+    - is_a: MarineConservationArea
+    - is_a: ConservationAreaUnderSeveralProtections
+    - is_a: Greenbelt
+    - is_a: MitigationBank
+    - is_a: EcologicalCorridor
+    - is_a: WildlifeCrossingStructure
+    - is_a: MarineConservationPriorityArea
+    - is_a: ImportantBirdArea
+    - is_a: ImportantPlantArea
+  WaterInfrastructure:
+    class_uri: ICON:0005003
+    title: water infrastructure
+    description: A work that stores, moves, controls or recharges water.
+    is_a: Infrastructure
+    any_of:
+    - is_a: Canal
+    - is_a: Floodway
+    - is_a: GroundwaterBasin
+    - is_a: Levee
+    - is_a: PumpingStation
+    - is_a: GroundwaterRechargeFacility
+    - is_a: Reservoir
+    - is_a: WaterPipeline
+    - is_a: WaterRetentionStructure
+    - is_a: WaterTreatmentPlant
+    - is_a: Weir
+  EnergyInfrastructure:
+    class_uri: ICON:0005004
+    title: energy infrastructure
+    description: A work that generates or carries electric power.
+    is_a: Infrastructure
+    any_of:
+    - is_a: PowerPlant
+    - is_a: ElectricTransmissionLine
+    - is_a: ElectricalSubstation
+  FoodProductionInfrastructure:
+    class_uri: ICON:0005005
+    title: food production infrastructure
+    description: Land or facilities used to grow crops or raise animals.
+    is_a: Infrastructure
+    any_of:
+    - is_a: AnimalProductionSite
+    - is_a: CropProductionSite
+  SensorInfrastructure:
+    class_uri: ICON:0005006
+    title: sensor infrastructure
+    description: A device placed in the landscape to record what passes or happens there.
+    is_a: Infrastructure
+  TransportInfrastructure:
+    class_uri: ICON:0005007
+    title: transport infrastructure
+    description: 'A route that carries people, vehicles or goods across the landscape: a trail, a highway,
+      a local road, a railway or a bridge.'
+    is_a: Infrastructure
+    any_of:
+    - is_a: Trail
+    - is_a: Highway
+    - is_a: LocalRoad
+    - is_a: Railway
+    - is_a: Bridge
+  WasteInfrastructure:
+    class_uri: ICON:0005009
+    title: waste infrastructure
+    description: A facility that receives, stores or disposes of solid waste, such as a landfill.
+    is_a: Infrastructure
+  GroundwaterBasin:
+    class_uri: ICON:0005020
+    title: groundwater basin
+    description: An aquifer or group of aquifers managed as a unit, such as a basin or subbasin of California's
+      Bulletin 118.
+    close_mappings:
+    - ENVO:00012408
+    annotations:
+      runtime: term InfrastructureType "Water - Ground Water"
+    is_a: WaterInfrastructure
+  WaterPipeline:
+    class_uri: ICON:0005021
+    title: water pipeline
+    description: A pipe or aqueduct that carries water over a distance.
+    annotations:
+      runtime: term InfrastructureType "Water - Water Pipeline"
+    is_a: WaterInfrastructure
+    mixins:
+    - HumanConstruction
+  PumpingStation:
+    class_uri: ICON:0005022
+    title: pumping station
+    description: A facility that lifts or moves water with pumps.
+    annotations:
+      runtime: term InfrastructureType "Water - Pumping Station"
+    is_a: WaterInfrastructure
+    mixins:
+    - HumanConstruction
+  GroundwaterRechargeFacility:
+    class_uri: ICON:0005023
+    title: groundwater recharge facility
+    description: Basins or works that put surface water into the ground to refill an aquifer.
+    annotations:
+      runtime: term InfrastructureType "Water - Recharge Facility"
+    is_a: WaterInfrastructure
+    mixins:
+    - HumanConstruction
+  WaterRetentionStructure:
+    class_uri: ICON:0005024
+    title: water retention structure
+    description: A structure that holds water back, such as a dam, a check dam or a detention basin.
+    close_mappings:
+    - ENVO:00000074
+    annotations:
+      runtime: term InfrastructureType "Water - Water Retention Structure"
+    is_a: WaterInfrastructure
+    mixins:
+    - HumanConstruction
+  NaturalGasFiredPowerPlant:
+    class_uri: ICON:0005025
+    title: natural gas-fired power plant
+    description: A power plant that burns natural gas.
+    annotations:
+      runtime: term InfrastructureType "Energy - Natural Gas-fired Generator"
+    is_a: EnergyInfrastructure
+    mixins:
+    - PowerPlant
+  HydroelectricPowerhouse:
+    class_uri: ICON:0005026
+    title: hydroelectric powerhouse
+    description: The building at a dam or penstock that holds the turbines and generators.
+    annotations:
+      runtime: term InfrastructureType "Energy - Powerhouse"
+    is_a: EnergyInfrastructure
+    mixins:
+    - PowerPlant
+  PumpedStorageFacility:
+    class_uri: ICON:0005027
+    title: pumped storage facility
+    description: A hydroelectric plant that pumps water uphill when power is cheap and releases it through
+      turbines when power is needed.
+    annotations:
+      runtime: term InfrastructureType "Energy - Pumped Storage Facility"
+    is_a: EnergyInfrastructure
+    mixins:
+    - PowerPlant
+  SolarPowerPlant:
+    class_uri: ICON:0005028
+    title: solar power plant
+    description: A power plant that makes electricity from sunlight.
+    close_mappings:
+    - ENVO:01000867
+    annotations:
+      runtime: term InfrastructureType "Energy - Solar"
+    is_a: EnergyInfrastructure
+    mixins:
+    - PowerPlant
+  WindPowerPlant:
+    class_uri: ICON:0005029
+    title: wind power plant
+    description: A group of wind turbines that makes electricity.
+    annotations:
+      runtime: term InfrastructureType "Energy - Wind"
+    is_a: EnergyInfrastructure
+    mixins:
+    - PowerPlant
+  ElectricTransmissionLine:
+    class_uri: ICON:0005030
+    title: electric transmission line
+    description: A high-voltage power line carrying electricity from plants to substations.
+    close_mappings:
+    - ENVO:01000865
+    annotations:
+      runtime: term InfrastructureType "Energy - Transmission Line"
+    is_a: EnergyInfrastructure
+    mixins:
+    - HumanConstruction
+  ElectricalSubstation:
+    class_uri: ICON:0005031
+    title: electrical substation
+    description: A facility where transmission lines meet and voltage is changed.
+    annotations:
+      runtime: term InfrastructureType "Energy - Transmission Substation"
+    is_a: EnergyInfrastructure
+    mixins:
+    - HumanConstruction
+  NaturalGasCompressorStation:
+    class_uri: ICON:0005053
+    title: natural gas compressor station
+    description: 'A facility on a natural gas transmission pipeline that raises the gas pressure to keep
+      it moving along the line. Example: San Diego Gas & Electric''s Moreno Compressor Station in Moreno
+      Valley, which boosts the gas supply into San Diego County.'
+    annotations:
+      runtime: term InfrastructureType "Energy - Natural Gas Compressor Station"
+    is_a: EnergyInfrastructure
+    mixins:
+    - HumanConstruction
+  AnimalProductionSite:
+    class_uri: ICON:0005032
+    title: animal production site
+    description: A ranch, dairy, feedlot or other place where animals are raised.
+    close_mappings:
+    - ENVO:00000078
+    - ENVO:01000627
+    annotations:
+      runtime: term InfrastructureType "Food - Animal Production"
+    is_a: FoodProductionInfrastructure
+  CropProductionSite:
+    class_uri: ICON:0005033
+    title: crop production site
+    description: A farm, orchard, vineyard or field where crops are grown.
+    close_mappings:
+    - ENVO:00000114
+    annotations:
+      runtime: term InfrastructureType "Food - Crop Production"
+    is_a: FoodProductionInfrastructure
+  ConservationEasementArea:
+    class_uri: ICON:0005034
+    title: conservation easement area
+    description: Land protected by a conservation easement while its owner keeps title.
+    annotations:
+      runtime: term InfrastructureType "Green - Conservation Area (Easement)"
+    is_a: GreenInfrastructure
+    mixins:
+    - ProtectedArea
+  FeeTitleConservationArea:
+    class_uri: ICON:0005035
+    title: fee-title conservation area
+    description: Land owned outright by an agency or organization for conservation, such as a reserve,
+      refuge, park or wildlife area.
+    close_mappings:
+    - ENVO:00000358
+    annotations:
+      runtime: term InfrastructureType "Green - Conservation Area (Fee Title)"
+    is_a: GreenInfrastructure
+    mixins:
+    - ProtectedArea
+  MarineConservationArea:
+    class_uri: ICON:0005036
+    title: marine conservation area
+    description: Ocean or bay waters protected for conservation, such as a marine protected area or sanctuary.
+    close_mappings:
+    - ENVO:00000362
+    annotations:
+      runtime: term InfrastructureType "Green - Conservation Area (Marine)"
+    is_a: GreenInfrastructure
+    mixins:
+    - ProtectedArea
+  ConservationAreaUnderSeveralProtections:
+    class_uri: ICON:0005037
+    title: conservation area under several protections
+    description: A conservation area made of parts held by fee title, easement or other protections together.
+    comments:
+    - The explorer's label carries the source spelling "Multple".
+    annotations:
+      runtime: term InfrastructureType "Green - Conservation Area (Multple)"
+    is_a: GreenInfrastructure
+    mixins:
+    - ProtectedArea
+  Greenbelt:
+    class_uri: ICON:0005038
+    title: greenbelt
+    description: Open land kept undeveloped around or between towns.
+    annotations:
+      runtime: term InfrastructureType "Green - Greenbelt"
+    is_a: GreenInfrastructure
+  MitigationBank:
+    class_uri: ICON:0005039
+    title: mitigation bank
+    description: Land restored or protected so that credits can be sold to offset habitat loss elsewhere.
+    annotations:
+      runtime: term InfrastructureType "Green - Mitigation Bank"
+    is_a: GreenInfrastructure
+    mixins:
+    - ProtectedArea
+  WildlifeCrossingStructure:
+    class_uri: ICON:0005040
+    title: wildlife crossing structure
+    description: An overpass, underpass, culvert or bridge built or adapted so that animals can cross
+      a road or railway.
+    annotations:
+      runtime: term InfrastructureType "Green - Wildlife Crossing Structure"
+    is_a: GreenInfrastructure
+    mixins:
+    - HumanConstruction
+  CameraTrap:
+    class_uri: ICON:0005041
+    title: camera trap
+    description: A camera set off by motion or heat that photographs animals passing.
+    annotations:
+      runtime: term InfrastructureType "Sensor - Camera Trap"
+    is_a: SensorInfrastructure
+    mixins:
+    - Device
+  FieldStation:
+    class_uri: ICON:0005042
+    title: field station
+    description: A research station or reserve that a university or agency runs for research and teaching,
+      often with housing and labs, giving access to protected lands it may not own.
+    comments:
+    - Added for UC Nature's field stations in national parks and forests and its reserves on private or
+      leased land (#369).
+    annotations:
+      runtime: term InfrastructureType "Green - Field Station"
+    is_a: GreenInfrastructure
+  Trail:
+    class_uri: ICON:0005043
+    title: trail
+    description: A path for walking, cycling or riding, such as a regional trail like the Bay Area Ridge
+      Trail or a preserve's trail network.
+    comments:
+    - Added for the regional trails the Midpen Vision Plan extends (#395).
+    annotations:
+      runtime: term InfrastructureType "Transport - Trail"
+    is_a: TransportInfrastructure
+    mixins:
+    - HumanConstruction
+  Highway:
+    class_uri: ICON:0005044
+    title: highway
+    description: 'A road in the state or federal highway system: an Interstate, a U.S. route or a California
+      state route.'
+    annotations:
+      runtime: term InfrastructureType "Transport - Highway"
+    is_a: TransportInfrastructure
+    mixins:
+    - HumanConstruction
+  LocalRoad:
+    class_uri: ICON:0005045
+    title: local road
+    description: A road a county or city owns and maintains, outside the state and federal highway systems.
+    annotations:
+      runtime: term InfrastructureType "Transport - Local Road"
+    is_a: TransportInfrastructure
+    mixins:
+    - HumanConstruction
+  Railway:
+    class_uri: ICON:0005046
+    title: railway
+    description: A rail line for freight or passenger trains.
+    annotations:
+      runtime: term InfrastructureType "Transport - Railway"
+    is_a: TransportInfrastructure
+    mixins:
+    - HumanConstruction
+  Bridge:
+    class_uri: ICON:0005057
+    title: bridge
+    description: 'A structure that carries a road, trail or railway over a creek, river or other obstacle.
+      Example: the Pope-Chaucer Bridge over San Francisquito Creek between Menlo Park and Palo Alto.'
+    comments:
+    - Added for the two San Francisquito Creek bridges whose replacement is part of the SFCJPA's Reach
+      2 project (#1276).
+    annotations:
+      runtime: term InfrastructureType "Transport - Bridge"
+    is_a: TransportInfrastructure
+    mixins:
+    - HumanConstruction
+  GAPStatus:
+    class_uri: ICON:0005008
+    title: GAP status
+    description: How a protected place is managed for biodiversity on the USGS Gap Analysis Project scale,
+      as California's 30x30 Conserved Areas rate it; only GAP 1 and 2 count toward 30x30 (#427).
+    annotations:
+      runtime: vocab GAPStatus
+    is_a: InformationContentEntity
+  FishHatchery:
+    class_uri: ICON:0005049
+    title: fish hatchery
+    description: A facility that spawns and rears fish, mostly salmon and trout, for release into rivers
+      and lakes to supply fisheries or to make up for spawning habitat a dam has blocked.
+    comments:
+    - 'Added for the CDFW hatcheries CalFish reports on: Feather River, Nimbus and Mokelumne River (#781).'
+    annotations:
+      runtime: term InfrastructureType "Food - Fish Hatchery"
+    is_a: AnimalProductionSite
+  NativePlantNursery:
+    class_uri: ICON:0005050
+    title: native plant nursery
+    description: A farm or nursery that grows native plants and their seed from local wild sources for
+      habitat restoration, rather than for sale or food.
+    comments:
+    - Added for Irvine Ranch Conservancy's Native Seed Farm in Irvine (#793).
+    annotations:
+      runtime: term InfrastructureType "Green - Native Plant Nursery"
+    is_a: GreenInfrastructure
+  MarineConservationPriorityArea:
+    class_uri: ICON:0005051
+    title: marine conservation priority area
+    description: An area of ocean, estuary or shoreline that a conservation plan marks as a priority for
+      protecting marine biodiversity, without itself being protected, such as a portfolio conservation
+      area of a marine ecoregional assessment.
+    comments:
+    - Added for the 55 portfolio conservation areas of The Nature Conservancy's 2006 Northern California
+      Marine Ecoregional Assessment (#919).
+    annotations:
+      runtime: term InfrastructureType "Green - Marine Conservation Priority Area"
+    is_a: GreenInfrastructure
+  ImportantBirdArea:
+    class_uri: ICON:0005052
+    title: important bird area
+    description: A site that BirdLife International's Important Bird Areas program, run in the United
+      States by the National Audubon Society, identifies as essential for birds because it holds species
+      of conservation concern, range-restricted species or large concentrations of birds, without itself
+      being protected.
+    comments:
+    - Added for the grassland Important Bird Areas of California Partners in Flight's Grassland Bird Conservation
+      Plan (#976).
+    annotations:
+      runtime: term InfrastructureType "Green - Important Bird Area"
+    is_a: GreenInfrastructure
+  ImportantPlantArea:
+    class_uri: ICON:0005124
+    title: important plant area
+    description: 'An area that the California Native Plant Society''s Important Plant Areas Initiative
+      identifies as among the most important places in the state for rare plants and rare vegetation types,
+      without itself being protected. Example: a Tier 1 area of the Northwestern California ecoregion
+      around the Mendocino pygmy forest, home to 37 California Rare Plant Rank 1B species.'
+    comments:
+    - Added for the statewide draft Important Plant Areas that CNPS published for review in 2026 (#1210).
+    annotations:
+      runtime: term InfrastructureType "Green - Important Plant Area"
+    is_a: GreenInfrastructure
+  NamedLandform:
+    class_uri: ICON:0005054
+    title: named landform
+    description: 'A named natural feature of the land surface, such as a range of hills, a ridge or a
+      valley, that a conservation plan treats as an area to protect or work in, without itself being protected.
+      Example: the Dunnigan Hills of Yolo County, where the Yolo HCP/NCCP protects grassland for California
+      tiger salamander.'
+    comments:
+    - Added for the Dunnigan Hills, named by the Yolo HCP/NCCP (#1067).
+    annotations:
+      runtime: term InfrastructureType "Green - Landform"
+    is_a: GreenInfrastructure
+    mixins:
+    - Landform
+  WaterTreatmentPlant:
+    class_uri: ICON:0005055
+    title: water treatment plant
+    description: 'A facility that treats raw water from reservoirs, rivers or wells to drinking water
+      standards before it enters a distribution system. Example: the San Francisco Public Utilities Commission''s
+      Sunol Valley Water Treatment Plant, which treats water from San Antonio and Calaveras reservoirs.'
+    comments:
+    - Added for the Sunol Valley Water Treatment Plant, named by the Alameda Watershed Management Plan
+      (#1115).
+    annotations:
+      runtime: term InfrastructureType "Water - Water Treatment Plant"
+    is_a: WaterInfrastructure
+    mixins:
+    - HumanConstruction
+  WastewaterTreatmentPlant:
+    class_uri: ICON:0005059
+    title: wastewater treatment plant
+    description: 'A facility that treats sewage and other wastewater before it is discharged or reused,
+      for example as recycled water for irrigation. Example: the City of Santa Rosa''s Laguna Treatment
+      Plant, on the floodplain of the Laguna de Santa Rosa.'
+    comments:
+    - Added for the Laguna Treatment Plant, beside two restoration concepts of the Restoration Plan for
+      the Laguna de Santa Rosa (#1643).
+    annotations:
+      runtime: term InfrastructureType "Water - Wastewater Treatment Plant"
+    is_a: WaterInfrastructure
+    mixins:
+    - HumanConstruction
+  Landfill:
+    class_uri: ICON:0005056
+    title: landfill
+    description: 'A site where solid waste is buried in the ground, usually in lined cells that are covered
+      and capped when full. Example: the Sanitation Districts of Los Angeles County''s Puente Hills Landfill,
+      which closed in 2013.'
+    comments:
+    - Added for the Puente Hills Landfill, whose conditional use permit created the Puente Hills Habitat
+      Preservation Authority (#1191).
+    annotations:
+      runtime: term InfrastructureType "Waste - Landfill"
+    is_a: WasteInfrastructure
+    mixins:
+    - HumanConstruction
+  SpeciesRecoveryArea:
+    class_uri: ICON:0005058
+    title: species recovery area
+    description: 'An area that a federal or state recovery plan designates as essential to the recovery
+      of listed species, such as a core area whose habitat the plan says to protect, without itself being
+      protected. Example: the Mather Core Recovery Area of the 2005 Recovery Plan for Vernal Pool Ecosystems
+      of California and Southern Oregon, where the South Sacramento HCP must mitigate vernal pool losses.'
+    comments:
+    - Added for the vernal pool core recovery areas named by the South Sacramento HCP (#1390).
+    annotations:
+      runtime: term InfrastructureType "Green - Recovery Area"
+    is_a: GreenInfrastructure
+  NationalHeritageArea:
+    class_uri: ICON:0005125
+    title: national heritage area
+    description: 'A region that the United States Congress designates for its nationally important natural,
+      cultural, and historic resources, managed through partnerships led by a local coordinating entity
+      under a management plan approved by the Secretary of the Interior, without federal ownership or
+      land use regulation. Example: the Sacramento-San Joaquin Delta National Heritage Area, designated
+      in 2019, whose local coordinating entity is the Delta Protection Commission.'
+    comments:
+    - Added for the Sacramento-San Joaquin Delta National Heritage Area (#1677).
+    annotations:
+      runtime: term InfrastructureType "Green - National Heritage Area"
+    is_a: GreenInfrastructure
+slots:
+  has_infrastructure_type:
+    slot_uri: ICON:0005100
+    title: has infrastructure type
+    description: Links a place to one of the infrastructure type classes it belongs to. The explorer's
+      way of stating the place's class.
+    annotations:
+      runtime: phrase "has infrastructure type"
+    domain: Infrastructure
+    domain_of:
+    - Infrastructure
+    range: uriorcurie
+    inverse: is_infrastructure_type_of
+    multivalued: true
+  is_infrastructure_type_of:
+    slot_uri: ICON:0005101
+    title: is infrastructure type of
+    description: The reverse of has infrastructure type.
+    annotations:
+      runtime: phrase "is infrastructure type of"
+    range: Infrastructure
+    inverse: has_infrastructure_type
+    multivalued: true
+  owned_by:
+    slot_uri: ICON:0005102
+    title: owned by
+    description: The organization holding legal title to the place.
+    annotations:
+      crosswalk: 'ISO 19115-1: CI_RoleCode owner'
+      runtime: phrase "owned by"
+    is_a: is_involved_with
+    domain: Infrastructure
+    domain_of:
+    - Infrastructure
+    range: Organization
+    inverse: owns
+    multivalued: true
+  owns:
+    slot_uri: ICON:0005103
+    title: owns
+    description: The reverse of owned by.
+    annotations:
+      runtime: phrase "owns"
+    is_a: is_involved_with
+    domain: Organization
+    domain_of:
+    - Organization
+    range: Infrastructure
+    inverse: owned_by
+    multivalued: true
+  managed_by:
+    slot_uri: ICON:0005104
+    title: managed by
+    description: The organization that operates or manages the place, whether or not it owns it.
+    annotations:
+      runtime: phrase "managed by"
+    is_a: is_involved_with
+    domain: Infrastructure
+    domain_of:
+    - Infrastructure
+    range: Organization
+    inverse: manages
+    multivalued: true
+  manages:
+    slot_uri: ICON:0005105
+    title: manages
+    description: The reverse of managed by.
+    annotations:
+      runtime: phrase "manages"
+    is_a: is_involved_with
+    domain: Organization
+    domain_of:
+    - Organization
+    range: Infrastructure
+    inverse: managed_by
+    multivalued: true
+  is_upstream_of:
+    slot_uri: ICON:0005106
+    title: is upstream of
+    description: 'Water flows from this place to the other, directly or through places between: Lake Berryessa
+      is upstream of Monticello Dam.'
+    annotations:
+      runtime: phrase "is upstream of"
+    domain: Infrastructure
+    domain_of:
+    - Infrastructure
+    range: Infrastructure
+    inverse: is_downstream_of
+    transitive: true
+    multivalued: true
+  is_downstream_of:
+    slot_uri: ICON:0005107
+    title: is downstream of
+    description: The reverse of is upstream of.
+    annotations:
+      runtime: phrase "is downstream of"
+    domain: Infrastructure
+    domain_of:
+    - Infrastructure
+    range: Infrastructure
+    inverse: is_upstream_of
+    transitive: true
+    multivalued: true
+  is_adjacent_to:
+    slot_uri: ICON:0005108
+    title: is adjacent to
+    description: Two places share a boundary. Symmetric, unlike the Relation Ontology's adjacent to, which
+      it narrows.
+    annotations:
+      runtime: phrase "is adjacent to"
+    is_a: adjacent_to
+    domain: Infrastructure
+    domain_of:
+    - Infrastructure
+    range: Infrastructure
+    symmetric: true
+    multivalued: true
+  is_habitat_for:
+    slot_uri: ICON:0005109
+    title: is habitat for
+    description: The place supports a population of the taxon.
+    annotations:
+      runtime: phrase "is habitat for"
+    domain: Infrastructure
+    domain_of:
+    - Infrastructure
+    range: Taxon
+    inverse: is_found_in
+    multivalued: true
+  is_found_in:
+    slot_uri: ICON:0005110
+    title: is found in
+    description: 'The taxon lives in or uses the place: the reverse of is habitat for.'
+    close_mappings:
+    - RO:0002303
+    annotations:
+      runtime: phrase "is found in"
+    domain: Taxon
+    domain_of:
+    - Taxon
+    range: Infrastructure
+    inverse: is_habitat_for
+    multivalued: true
+  built_for:
+    slot_uri: ICON:0005111
+    title: built for
+    description: The structure was built or adapted so that the taxon can get past a barrier, as a wildlife
+      crossing is built for the animals it lets cross a road. Unlike is habitat for, it says nothing about
+      the taxon living there.
+    annotations:
+      runtime: phrase "built for"
+    domain: Infrastructure
+    domain_of:
+    - Infrastructure
+    range: Taxon
+    inverse: has_crossing
+    multivalued: true
+  has_crossing:
+    slot_uri: ICON:0005112
+    title: has crossing
+    description: 'The taxon has a structure built or adapted to let it get past a barrier: the reverse
+      of built for.'
+    annotations:
+      runtime: phrase "has crossing"
+    domain: Taxon
+    domain_of:
+    - Taxon
+    range: Infrastructure
+    inverse: built_for
+    multivalued: true
+  crosses:
+    slot_uri: ICON:0005117
+    title: crosses
+    description: The structure carries animals under or over the road or railway, as a wildlife crossing
+      structure crosses the highway it passes beneath.
+    annotations:
+      runtime: phrase "crosses"
+    domain: Infrastructure
+    domain_of:
+    - Infrastructure
+    range: TransportInfrastructure
+    inverse: crossed_by
+    multivalued: true
+  crossed_by:
+    slot_uri: ICON:0005118
+    title: crossed by
+    description: 'The road or railway has a structure that carries animals under or over it: the reverse
+      of crosses.'
+    annotations:
+      runtime: phrase "crossed by"
+    domain: TransportInfrastructure
+    domain_of:
+    - TransportInfrastructure
+    range: Infrastructure
+    inverse: crosses
+    multivalued: true
+  monitors:
+    slot_uri: ICON:0005113
+    title: monitors
+    description: The sensor or array was set up to watch the taxon, as a camera trap study of fishers
+      monitors the fisher. It says nothing about whether the taxon was found.
+    annotations:
+      runtime: phrase "monitors"
+    domain: Infrastructure
+    domain_of:
+    - Infrastructure
+    range: Taxon
+    inverse: monitored_by
+    multivalued: true
+  monitored_by:
+    slot_uri: ICON:0005114
+    title: monitored by
+    description: 'The taxon is watched by a sensor or array set up for it: the reverse of monitors.'
+    annotations:
+      runtime: phrase "monitored by"
+    domain: Taxon
+    domain_of:
+    - Taxon
+    range: Infrastructure
+    inverse: monitors
+    multivalued: true
+  detected:
+    slot_uri: ICON:0005115
+    title: detected
+    description: The sensor or array recorded the taxon, as a camera trap photographs a bobcat. Unlike
+      is habitat for, it says only that the taxon passed the sensor.
+    annotations:
+      runtime: phrase "detected"
+    domain: Infrastructure
+    domain_of:
+    - Infrastructure
+    range: Taxon
+    inverse: detected_by
+    multivalued: true
+  detected_by:
+    slot_uri: ICON:0005116
+    title: detected by
+    description: 'The taxon was recorded by a sensor or array: the reverse of detected.'
+    annotations:
+      runtime: phrase "detected by"
+    domain: Taxon
+    domain_of:
+    - Taxon
+    range: Infrastructure
+    inverse: detected
+    multivalued: true
+  exchanges_water_with:
+    slot_uri: ICON:0005119
+    title: exchanges water with
+    description: 'Water flows between the two places in either direction, as through an intertie that
+      pumps both ways: the Cross Valley Canal exchanges water with the California Aqueduct. Unlike is
+      upstream of it does not chain, so what lies upstream of one is not taken to lie upstream of the
+      other.'
+    annotations:
+      runtime: phrase "exchanges water with"
+    domain: Infrastructure
+    domain_of:
+    - Infrastructure
+    range: Infrastructure
+    symmetric: true
+    multivalued: true
+  spills_into:
+    slot_uri: ICON:0005120
+    title: spills into
+    description: 'Some of this place''s water leaves for the other at one point, as a river spills over
+      a weir into a flood bypass, while the place as a whole may lie downstream of the other too: the
+      Sacramento River spills into the Yolo Bypass, which rejoins it lower down. Unlike is upstream of
+      it does not chain, so the river''s tributaries are not taken to lie upstream of the bypass.'
+    annotations:
+      runtime: phrase "spills into"
+    domain: Infrastructure
+    domain_of:
+    - Infrastructure
+    range: Infrastructure
+    inverse: receives_spill_from
+    multivalued: true
+  receives_spill_from:
+    slot_uri: ICON:0005121
+    title: receives spill from
+    description: The reverse of spills into.
+    annotations:
+      runtime: phrase "receives spill from"
+    domain: Infrastructure
+    domain_of:
+    - Infrastructure
+    range: Infrastructure
+    inverse: spills_into
+    multivalued: true
+  has_gap_status:
+    slot_uri: ICON:0005122
+    title: has GAP status
+    description: The GAP status of the place's lands, as the 30x30 Conserved Areas rate them; a place
+      with lands at both levels has both.
+    annotations:
+      runtime: phrase "has GAP status"
+    domain: Infrastructure
+    domain_of:
+    - Infrastructure
+    range: GAPStatusEnum
+    inverse: is_gap_status_of
+    multivalued: true
+  is_gap_status_of:
+    slot_uri: ICON:0005123
+    title: is GAP status of
+    description: The reverse of has GAP status.
+    annotations:
+      runtime: phrase "is GAP status of"
+    domain: GAPStatus
+    domain_of:
+    - GAPStatus
+    range: Infrastructure
+    inverse: has_gap_status
+    multivalued: true
+  capacity:
+    slot_uri: ICON:0005200
+    title: capacity
+    description: 'How much the place holds or delivers, written with its unit: a reservoir''s storage
+      in acre-feet, a plant''s output in megawatts.'
+    annotations:
+      runtime: field infrastructure.capacity
+    domain: Infrastructure
+    domain_of:
+    - Infrastructure
+    range: string
+    multivalued: true
+enums:
+  GAPStatusEnum:
+    enum_uri: ICON:0005008
+    description: The values of GAP status.
+    permissible_values:
+      GAP 1:
+        meaning: ICON:0005047
+        description: Permanently protected and managed for biodiversity, with natural disturbance such
+          as fire or flooding allowed to run its course.
+        annotations:
+          runtime: term GAPStatus "GAP 1"
+      GAP 2:
+        meaning: ICON:0005048
+        description: Permanently protected and managed for biodiversity, with natural disturbance suppressed.
+        annotations:
+          runtime: term GAPStatus "GAP 2"

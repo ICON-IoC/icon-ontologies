@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0007045">
+    <obo:IAO_0000115 xml:lang="en">A plan for one forest property, adopted by the owner that manages it, that sets the forest's objectives (such as research, demonstration, education, or timber production) and how it is administered, and divides the forest into compartments or stands assigned to management regimes such as even-aged, uneven-aged, or reserve, so that harvests, treatments, and research can be planned and compared over decades while soil, water, and other resources are conserved. Example: the Policy for Use of Blodgett Forest Research Station (2012), UC Berkeley's management plan for its 4,356-acre research forest in El Dorado County.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment xml:lang="en">Added for Berkeley Forests' Policy for Use of Blodgett Forest Research Station (#1187).</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/plans.owl"/>
+    <rdfs:label xml:lang="en">forest management plan</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0007001"/>
+  </rdf:Description>
+</rdf:RDF>

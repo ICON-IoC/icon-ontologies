@@ -1,0 +1,16 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+icon:0011221 a owl:DatatypeProperty ;
+    rdfs:label "CMECS code"@en ;
+    IAO:0000115 "The unit's code in the CMECS Catalog, its component's letter (A for the Aquatic Setting, B for the Biotic Component) followed by its unit code, such as B2.5.2.1 for Seagrass Bed."@en ;
+    rdfs:domain icon:0011005 ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:range xsd:string ;
+    skos:exactMatch skos:notation .
+

@@ -1,0 +1,12 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0007025 a owl:Class ;
+    rdfs:label "regional priority plan"@en ;
+    IAO:0000115 "A conservation plan that a regional grantee of California's Regional Forest and Fire Capacity Program prepares for its planning area, that assesses wildfire risk and forest and landscape health, names landscapes of interest, strategies and near-term projects, and builds the region's capacity to carry them out. Example: the San Bernardino Mountains Regional Priority Plan."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+

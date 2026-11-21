@@ -1,0 +1,12 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0008030 a owl:Class ;
+    rdfs:label "temporal resolution value"@en ;
+    IAO:0000115 "How far apart in time the data's values are. Each value carries, as a cross-reference, the ISO 8601 duration that dcat:temporalResolution takes on export."@en ;
+    rdfs:isDefinedBy iconbase:data.owl ;
+    rdfs:subClassOf IAO:0000030 .
+

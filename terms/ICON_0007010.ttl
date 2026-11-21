@@ -1,0 +1,12 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0007010 a owl:Class ;
+    rdfs:label "comprehensive conservation and management plan"@en ;
+    IAO:0000115 "A conservation plan for an estuary of national significance, written under Clean Water Act Section 320 by the management conference of a National Estuary Program (agencies, scientists, local governments and the public) and approved by the Environmental Protection Agency, that sets goals and long-term actions for the estuary and its watershed and is revised every few years."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+

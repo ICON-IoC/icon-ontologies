@@ -1,0 +1,20 @@
+@prefix ENVO: <http://purl.obolibrary.org/obo/ENVO_> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+icon:0011006 a owl:Class ;
+    rdfs:label "IUCN ecosystem type"@en ;
+    IAO:0000115 "A unit of the IUCN Global Ecosystem Typology 2.0 (Keith et al. 2022), the global classification of ecosystems by how they function: one of its 11 realms (such as Terrestrial), 25 biomes (such as Savannas and grasslands biome) or 110 ecosystem functional groups (such as T4.4 Temperate woodlands), identified by its GET code and IRI (#1411)."@en ;
+    rdfs:comment "Records are not tagged with GET. Every CWHR, MCV and CMECS term has the GET units it falls in as IUCN ecosystem groups, so a record's habitat types lead to them. Within GET, a functional group has its biome, and a biome its realm, as broader habitat types."@en ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:subClassOf ENVO:01000739 ;
+    icon:0000002 skos:definition,
+        skos:note,
+        icon:0011230,
+        icon:0011231,
+        icon:0011232 .
+

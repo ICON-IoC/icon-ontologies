@@ -1,0 +1,15 @@
+@prefix ENVO: <http://purl.obolibrary.org/obo/ENVO_> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+icon:0005020 a owl:Class ;
+    rdfs:label "groundwater basin"@en ;
+    IAO:0000115 "An aquifer or group of aquifers managed as a unit, such as a basin or subbasin of California's Bulletin 118."@en ;
+    rdfs:isDefinedBy iconbase:infrastructure.owl ;
+    rdfs:subClassOf icon:0005003 ;
+    skos:closeMatch ENVO:00012408 .
+

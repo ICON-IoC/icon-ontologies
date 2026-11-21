@@ -1,0 +1,14 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0003106 a owl:ObjectProperty ;
+    rdfs:label "works on"@en ;
+    IAO:0000115 "The project acts on the place itself: it restores, manages, builds, repairs, widens or studies it, or mitigates for work on it. A fuel reduction project works on the national forest it thins, a coho habitat project works on its creek, and a Caltrans culvert replacement works on the highway it runs under. A project that only uses the place to say where it is intersects it instead."@en ;
+    rdfs:domain icon:0003000 ;
+    rdfs:isDefinedBy iconbase:projects.owl ;
+    rdfs:range icon:0005000 ;
+    owl:inverseOf icon:0003107 .
+

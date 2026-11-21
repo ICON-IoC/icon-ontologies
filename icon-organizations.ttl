@@ -1,0 +1,611 @@
+# ICON Organizations ontology
+# Built by `ioc-ontologies` from ontology/src/organizations.terms; edit that file, not this one.
+# Guide: ontology/guides/organizations.md
+@prefix BFO: <http://purl.obolibrary.org/obo/BFO_> .
+@prefix COB: <http://purl.obolibrary.org/obo/COB_> .
+@prefix ENVO: <http://purl.obolibrary.org/obo/ENVO_> .
+@prefix GEO: <http://purl.obolibrary.org/obo/GEO_> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix OBI: <http://purl.obolibrary.org/obo/OBI_> .
+@prefix RO: <http://purl.obolibrary.org/obo/RO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+IAO:0000115 a owl:AnnotationProperty ;
+    rdfs:label "definition" .
+
+dcterms:creator a owl:AnnotationProperty .
+
+dcterms:description a owl:AnnotationProperty .
+
+dcterms:license a owl:AnnotationProperty .
+
+dcterms:references a owl:AnnotationProperty .
+
+dcterms:title a owl:AnnotationProperty .
+
+oboInOwl:hasDbXref a owl:AnnotationProperty ;
+    rdfs:label "database_cross_reference" .
+
+oboInOwl:hasExactSynonym a owl:AnnotationProperty ;
+    rdfs:label "has_exact_synonym" .
+
+skos:broadMatch a owl:AnnotationProperty .
+
+skos:closeMatch a owl:AnnotationProperty .
+
+skos:exactMatch a owl:AnnotationProperty .
+
+skos:narrowMatch a owl:AnnotationProperty .
+
+icon:0000001 a owl:AnnotationProperty ;
+    rdfs:label "crosswalk"@en ;
+    IAO:0000115 "The matching field in a metadata standard that is not published as RDF, written as the standard's name, a colon and the field's path, such as \"EML 2.2: dataset/title\"."@en ;
+    rdfs:isDefinedBy iconbase:core.owl .
+
+icon:0001001 a owl:Class ;
+    rdfs:label "academic organization"@en ;
+    IAO:0000115 "A university, college or research institute, or a department of one."@en ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:subClassOf OBI:0000245 ;
+    skos:closeMatch schema:CollegeOrUniversity .
+
+icon:0001002 a owl:Class ;
+    rdfs:label "commercial organization"@en ;
+    IAO:0000115 "A business run for profit, such as a consultancy, a utility company, a farm business or a developer."@en ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:subClassOf OBI:0000245 ;
+    skos:closeMatch schema:Corporation .
+
+icon:0001003 a owl:Class ;
+    rdfs:label "federal government organization"@en ;
+    IAO:0000115 "An agency or office of the United States government, such as the Fish and Wildlife Service or the Bureau of Reclamation."@en ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:subClassOf GEO:000000400 ;
+    skos:closeMatch schema:GovernmentOrganization .
+
+icon:0001004 a owl:Class ;
+    rdfs:label "state government organization"@en ;
+    IAO:0000115 "An agency, department, board or commission of the State of California, such as the Department of Fish and Wildlife."@en ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:subClassOf GEO:000000400 ;
+    skos:closeMatch schema:GovernmentOrganization .
+
+icon:0001006 a owl:Class ;
+    rdfs:label "joint powers authority"@en ;
+    IAO:0000115 "A public agency formed by two or more public agencies under California's Joint Exercise of Powers Act to carry out a shared purpose, such as a regional water or habitat authority."@en ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:subClassOf GEO:000000400 .
+
+icon:0001007 a owl:Class ;
+    rdfs:label "tribal organization"@en ;
+    IAO:0000115 "A tribal government or an organization of one or more tribes or tribal members."@en ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:subClassOf OBI:0000245 .
+
+icon:0001008 a owl:Class ;
+    rdfs:label "non-profit organization"@en ;
+    IAO:0000115 "A private organization that does not distribute profit, such as a land trust, a watershed group or a conservation society."@en ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:subClassOf GEO:000000393 ;
+    skos:closeMatch schema:NGO .
+
+icon:0001009 a owl:Class ;
+    rdfs:label "foundation"@en ;
+    IAO:0000115 "A private organization, usually endowed, that makes grants to others' work."@en ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:subClassOf OBI:0000245 ;
+    skos:closeMatch OBI:0001942 .
+
+icon:0001010 a owl:Class ;
+    rdfs:label "partnership"@en ;
+    IAO:0000115 "A standing collaboration of several organizations with a name of its own, such as a regional conservation partnership or a working group."@en ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:subClassOf OBI:0000245 ;
+    skos:closeMatch org:OrganizationalCollaboration .
+
+icon:0001011 a owl:Class ;
+    rdfs:label "team"@en ;
+    IAO:0000115 "A unit inside an organization with a name of its own, such as a program office or a field crew."@en ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:subClassOf OBI:0000245 ;
+    skos:closeMatch org:OrganizationalUnit .
+
+icon:0001012 a owl:Class ;
+    rdfs:label "international organization"@en ;
+    IAO:0000115 "An organization whose members are national governments, set up by a treaty or convention, such as a regional fisheries management commission."@en ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:subClassOf OBI:0000245 .
+
+icon:0001013 a owl:Class ;
+    rdfs:label "city government organization"@en ;
+    IAO:0000115 "An incorporated city or town of California, or one of its departments, boards or commissions."@en ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:subClassOf icon:0001005 .
+
+icon:0001014 a owl:Class ;
+    rdfs:label "county government organization"@en ;
+    IAO:0000115 "A county of California, or one of its departments, boards or commissions, such as a county parks department or fish and game commission."@en ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:subClassOf icon:0001005 .
+
+icon:0001015 a owl:Class ;
+    rdfs:label "special district"@en ;
+    IAO:0000115 "A local agency formed under state law to provide one or a few services within set boundaries, such as a water, irrigation, resource conservation, park, flood control or sanitation district."@en ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:subClassOf icon:0001005 .
+
+icon:0001016 a owl:Class ;
+    rdfs:label "regional agency"@en ;
+    IAO:0000115 "A local agency that serves several cities or counties together, such as a council of governments or a regional transportation commission."@en ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:subClassOf icon:0001005 .
+
+icon:0001021 a owl:Class ;
+    rdfs:label "acquisition activity"@en ;
+    IAO:0000115 "Buying land, water or easements, or rights in them, for conservation."@en ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:subClassOf icon:0001020 .
+
+icon:0001022 a owl:Class ;
+    rdfs:label "advising activity"@en ;
+    IAO:0000115 "Giving expert advice to landowners, agencies or other organizations."@en ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:subClassOf icon:0001020 .
+
+icon:0001023 a owl:Class ;
+    rdfs:label "advocacy activity"@en ;
+    IAO:0000115 "Arguing for a cause or a policy before the public or decision makers."@en ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:subClassOf icon:0001020 .
+
+icon:0001024 a owl:Class ;
+    rdfs:label "agricultural production activity"@en ;
+    IAO:0000115 "Growing crops or raising livestock."@en ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:subClassOf icon:0001020 .
+
+icon:0001025 a owl:Class ;
+    rdfs:label "certification activity"@en ;
+    IAO:0000115 "Checking that land, products or practices meet a standard and certifying them."@en ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:subClassOf icon:0001020 .
+
+icon:0001026 a owl:Class ;
+    rdfs:label "construction activity"@en ;
+    IAO:0000115 "Building or rebuilding structures, such as fish passage, levees or crossings."@en ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:subClassOf icon:0001020 .
+
+icon:0001027 a owl:Class ;
+    rdfs:label "coordinating activity"@en ;
+    IAO:0000115 "Bringing organizations together and keeping their work aligned."@en ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:subClassOf icon:0001020 .
+
+icon:0001028 a owl:Class ;
+    rdfs:label "education activity"@en ;
+    IAO:0000115 "Teaching the public, students or practitioners."@en ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:subClassOf icon:0001020 .
+
+icon:0001029 a owl:Class ;
+    rdfs:label "funding activity"@en ;
+    IAO:0000115 "Paying for other organizations' work, as through grants or contracts."@en ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:subClassOf icon:0001020 .
+
+icon:0001030 a owl:Class ;
+    rdfs:label "governing activity"@en ;
+    IAO:0000115 "Exercising public authority over a jurisdiction."@en ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:subClassOf icon:0001020 .
+
+icon:0001031 a owl:Class ;
+    rdfs:label "habitat enhancement activity"@en ;
+    IAO:0000115 "Restoring or improving habitat, such as replanting, removing invasive plants or reconnecting floodplains."@en ;
+    oboInOwl:hasExactSynonym "habitat restoration"@en,
+        "restoration"@en ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:subClassOf icon:0001020 .
+
+icon:0001032 a owl:Class ;
+    rdfs:label "management activity"@en ;
+    IAO:0000115 "Managing land, water or wildlife over time."@en ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:subClassOf icon:0001020 .
+
+icon:0001033 a owl:Class ;
+    rdfs:label "planning activity"@en ;
+    IAO:0000115 "Preparing plans for conservation, land use or resources."@en ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:subClassOf icon:0001020 .
+
+icon:0001034 a owl:Class ;
+    rdfs:label "policy activity"@en ;
+    IAO:0000115 "Making or shaping policy."@en ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:subClassOf icon:0001020 .
+
+icon:0001035 a owl:Class ;
+    rdfs:label "production activity"@en ;
+    IAO:0000115 "Producing goods or energy other than crops and livestock."@en ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:subClassOf icon:0001020 .
+
+icon:0001036 a owl:Class ;
+    rdfs:label "regulating activity"@en ;
+    IAO:0000115 "Issuing and enforcing permits and rules."@en ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:subClassOf icon:0001020 .
+
+icon:0001037 a owl:Class ;
+    rdfs:label "research activity"@en ;
+    IAO:0000115 "Studying nature or conservation."@en ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:subClassOf icon:0001020 ;
+    skos:closeMatch OBI:0000066 .
+
+icon:0001038 a owl:Class ;
+    rdfs:label "services activity"@en ;
+    IAO:0000115 "Providing services to others, such as technical, legal or financial services."@en ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:subClassOf icon:0001020 .
+
+icon:0001039 a owl:Class ;
+    rdfs:label "monitoring activity"@en ;
+    IAO:0000115 "Repeating surveys or measurements over years to track the status of species, habitats, water or fisheries."@en ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:subClassOf icon:0001020 .
+
+icon:0001102 a owl:ObjectProperty ;
+    rdfs:label "is activity of"@en ;
+    IAO:0000115 "A kind of activity an organization carries out: the reverse of capable of."@en ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    owl:inverseOf RO:0002215 .
+
+BFO:0000001 a owl:Class ;
+    rdfs:label "entity"@en .
+
+BFO:0000002 a owl:Class ;
+    rdfs:label "continuant"@en ;
+    rdfs:subClassOf BFO:0000001 .
+
+BFO:0000015 a owl:Class ;
+    rdfs:label "process"@en .
+
+BFO:0000024 a owl:Class ;
+    rdfs:label "fiat object part"@en ;
+    rdfs:subClassOf BFO:0000040 .
+
+BFO:0000050 a owl:ObjectProperty,
+        owl:TransitiveProperty ;
+    rdfs:label "part of"@en ;
+    IAO:0000115 "a core relation that holds between a part and its whole"@en ;
+    rdfs:subPropertyOf RO:0002131 ;
+    owl:inverseOf BFO:0000051 .
+
+COB:0000082 a owl:Class ;
+    rdfs:label "planned process"@en ;
+    IAO:0000115 "A process that is initiated by an agent who intends to carry out a plan to achieve an objective through one or more actions as described in a plan specification."@en ;
+    rdfs:subClassOf BFO:0000015 .
+
+ENVO:00000004 a owl:Class ;
+    rdfs:label "administrative region"@en ;
+    rdfs:subClassOf ENVO:01003020 .
+
+ENVO:01000254 a owl:Class ;
+    rdfs:label "environmental system"@en ;
+    IAO:0000115 "A system which has the disposition to environ one or more material entities."@en ;
+    rdfs:subClassOf RO:0002577 .
+
+ENVO:01000813 a owl:Class ;
+    rdfs:label "astronomical body part"@en ;
+    IAO:0000115 "A material part of an astronomical body."@en ;
+    rdfs:subClassOf BFO:0000040 .
+
+ENVO:01001110 a owl:Class ;
+    rdfs:label "ecosystem"@en ;
+    IAO:0000115 "An environmental system which includes both living and non-living components."@en ;
+    rdfs:subClassOf ENVO:01000254 .
+
+ENVO:01003020 a owl:Class ;
+    rdfs:label "fiat part of an astronomical object"@en ;
+    IAO:0000115 "A part of an environmental system whose boundaries are determined by fiat."@en ;
+    rdfs:subClassOf BFO:0000024 .
+
+GEO:000000393 a owl:Class ;
+    rdfs:label "nongovernmental organization"@en ;
+    IAO:0000115 "a geopolitical organization that is voluntary and private, whose members are individual persons or organizations that come together to acheive a common purpose."@en ;
+    rdfs:subClassOf OBI:0000245 .
+
+GEO:000083916 a owl:Class ;
+    rdfs:label "governance organization"@en ;
+    IAO:0000115 "An organization consisting of private entities (people or organizations) who engage in goal-oriented decision-making; creating rules, norms, or laws; and encouraging or incentivizing adherence to them that are directed at a population of people, and whose actions are not enforced by state entities."@en ;
+    rdfs:subClassOf OBI:0000245 .
+
+OBI:0000846 a owl:ObjectProperty ;
+    rdfs:label "is member of organization"@en ;
+    IAO:0000115 "Relating a legal person or organization to an organization in the case where the legal person or organization has a role as member of the organization."@en ;
+    owl:inverseOf OBI:0001688 .
+
+RO:0002215 a owl:ObjectProperty ;
+    rdfs:label "capable of"@en ;
+    IAO:0000115 "A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. "@en ;
+    rdfs:subPropertyOf RO:0002216 .
+
+RO:0002216 a owl:ObjectProperty ;
+    rdfs:label "capable of part of"@en ;
+    IAO:0000115 "c stands in this relationship to p if and only if there exists some p' such that c is capable_of p', and p' is part_of p."@en ;
+    rdfs:subPropertyOf RO:0002328,
+        RO:0002500 .
+
+RO:0002323 a owl:ObjectProperty ;
+    rdfs:label "mereotopologically related to"@en ;
+    IAO:0000115 "A mereological relationship or a topological relationship"@en .
+
+RO:0002328 a owl:ObjectProperty ;
+    rdfs:label "functionally related to"@en ;
+    IAO:0000115 "A grouping relationship for any relationship directly involving a function, or that holds because of a function of one of the related entities."@en .
+
+RO:0002500 a owl:ObjectProperty ;
+    rdfs:label "causal agent in process"@en ;
+    IAO:0000115 "A relationship between a material entity and a process where the material entity has some causal role that influences the process"@en ;
+    rdfs:subPropertyOf RO:0002595 ;
+    owl:inverseOf RO:0002608 .
+
+RO:0002577 a owl:Class ;
+    rdfs:label "system"@en ;
+    IAO:0000115 "A material entity consisting of multiple components that are causally integrated."@en ;
+    rdfs:subClassOf BFO:0000040 .
+
+RO:0002595 a owl:ObjectProperty ;
+    rdfs:label "causal relation between material entity and a process"@en ;
+    IAO:0000115 "A relationship that holds between a material entity and a process in which causality is involved, with either the material entity or some part of the material entity exerting some influence over the process, or the process influencing some aspect of the material entity."@en ;
+    rdfs:subPropertyOf RO:0002410 .
+
+RO:0002608 a owl:ObjectProperty ;
+    rdfs:label "process has causal agent"@en ;
+    IAO:0000115 "Inverse of 'causal agent in process'"@en ;
+    rdfs:subPropertyOf RO:0002410 .
+
+icon:0001100 a owl:ObjectProperty ;
+    rdfs:label "has org type"@en ;
+    IAO:0000115 "Links an organization to one of the organization type classes it belongs to. The explorer's way of stating the organization's class."@en ;
+    rdfs:domain OBI:0000245 ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    owl:inverseOf icon:0001101 .
+
+icon:0001101 a owl:ObjectProperty ;
+    rdfs:label "is org type of"@en ;
+    IAO:0000115 "The reverse of has org type."@en ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:range OBI:0000245 ;
+    owl:inverseOf icon:0001100 .
+
+icon:0001103 a owl:ObjectProperty ;
+    rdfs:label "is member of"@en ;
+    IAO:0000115 "An organization belongs to a coalition, association or partnership as a member while keeping its own identity. A kind of part of in the explorer."@en ;
+    rdfs:domain OBI:0000245 ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:range OBI:0000245 ;
+    rdfs:subPropertyOf BFO:0000050,
+        OBI:0000846 ;
+    owl:inverseOf icon:0001104 ;
+    skos:closeMatch org:memberOf,
+        schema:memberOf .
+
+icon:0001104 a owl:ObjectProperty ;
+    rdfs:label "has member"@en ;
+    IAO:0000115 "The reverse of is member of."@en ;
+    rdfs:domain OBI:0000245 ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:range OBI:0000245 ;
+    rdfs:subPropertyOf BFO:0000051,
+        OBI:0001688 ;
+    owl:inverseOf icon:0001103 ;
+    skos:closeMatch org:hasMember .
+
+icon:0001105 a owl:ObjectProperty,
+        owl:SymmetricProperty ;
+    rdfs:label "has partner"@en ;
+    IAO:0000115 "An organization that works on a project or program alongside its lead, without leading or funding it."@en ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:subPropertyOf icon:0000100 ;
+    owl:inverseOf icon:0001106 .
+
+icon:0001106 a owl:ObjectProperty,
+        owl:SymmetricProperty ;
+    rdfs:label "is partner of"@en ;
+    IAO:0000115 "The reverse of has partner."@en ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:subPropertyOf icon:0000100 ;
+    owl:inverseOf icon:0001105 .
+
+icon:0001107 a owl:ObjectProperty ;
+    rdfs:label "is published by"@en ;
+    IAO:0000115 "The organization responsible for making data or a publication available, when it is not the creator."@en ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:range OBI:0000245 ;
+    owl:inverseOf icon:0001108 ;
+    skos:closeMatch dcterms:publisher,
+        schema:publisher ;
+    icon:0000001 "DataCite 4.5: publisher",
+        "EML 2.2: dataset/publisher",
+        "ISO 19115-1: CI_RoleCode publisher" .
+
+icon:0001108 a owl:ObjectProperty ;
+    rdfs:label "published"@en ;
+    IAO:0000115 "The reverse of is published by."@en ;
+    rdfs:domain OBI:0000245 ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    owl:inverseOf icon:0001107 .
+
+icon:0001109 a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "located in county"@en ;
+    IAO:0000115 "The county that holds the organization's headquarters, main office or seat. An organization is located in at most one county, and may operate in many (#949)."@en ;
+    oboInOwl:hasDbXref "Wikidata:P159" ;
+    rdfs:comment "Every local government is located in one county. A city's is the county the city lies in, a county government's is its own county, and a special district's or regional agency's is the county of its main office. Located in county is a kind of located in area, so the organization also operates in the county."@en ;
+    rdfs:domain OBI:0000245 ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:range icon:0010000 ;
+    rdfs:subPropertyOf icon:0010104 ;
+    owl:inverseOf icon:0001110 ;
+    skos:closeMatch org:hasPrimarySite,
+        schema:location .
+
+icon:0001110 a owl:ObjectProperty ;
+    rdfs:label "is county location of"@en ;
+    IAO:0000115 "The reverse of located in county: the county holds the organization's headquarters."@en ;
+    rdfs:domain icon:0010000 ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:range OBI:0000245 ;
+    owl:inverseOf icon:0001109 .
+
+icon:0001111 a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "located in ecoregion"@en ;
+    IAO:0000115 "The ecoregion section that holds the organization's headquarters, main office or seat. An organization is located in at most one ecoregion section, and may work in many (#949)."@en ;
+    oboInOwl:hasDbXref "Wikidata:P159" ;
+    rdfs:comment "Every local government is located in one ecoregion section, the one its headquarters point lies in. Located in ecoregion is a kind of in ecoregion, so a question about the local governments in an ecoregion finds it."@en ;
+    rdfs:domain OBI:0000245 ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:range ENVO:01000276 ;
+    rdfs:subPropertyOf RO:0001025,
+        icon:0010108 ;
+    owl:inverseOf icon:0001112 ;
+    skos:closeMatch org:hasPrimarySite,
+        schema:location .
+
+icon:0001112 a owl:ObjectProperty ;
+    rdfs:label "is ecoregion location of"@en ;
+    IAO:0000115 "The reverse of located in ecoregion: the ecoregion section holds the organization's headquarters."@en ;
+    rdfs:domain ENVO:01000276 ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:range OBI:0000245 ;
+    owl:inverseOf icon:0001111 .
+
+icon:0010100 a owl:ObjectProperty ;
+    rdfs:label "operates in"@en ;
+    IAO:0000115 "The record works in, covers or is about the area. A county cell of All in a workbook links the record to statewide instead."@en ;
+    rdfs:isDefinedBy iconbase:places.owl .
+
+icon:0010104 a owl:ObjectProperty ;
+    rdfs:label "located in area"@en ;
+    IAO:0000115 "A place, objective or action lies in the area. A kind of operates in, and a kind of the Relation Ontology's located in."@en ;
+    rdfs:isDefinedBy iconbase:places.owl ;
+    rdfs:subPropertyOf RO:0001025,
+        icon:0010100 .
+
+icon:0010108 a owl:ObjectProperty ;
+    rdfs:label "in ecoregion"@en ;
+    IAO:0000115 "The record works in, covers or lies in the ecoregion section."@en ;
+    rdfs:isDefinedBy iconbase:places.owl .
+
+BFO:0000004 a owl:Class ;
+    rdfs:label "independent continuant"@en ;
+    IAO:0000115 "b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])"@en ;
+    rdfs:subClassOf BFO:0000002 .
+
+BFO:0000051 a owl:ObjectProperty,
+        owl:TransitiveProperty ;
+    rdfs:label "has part"@en ;
+    IAO:0000115 "a core relation that holds between a whole and its part"@en ;
+    rdfs:subPropertyOf RO:0002131 .
+
+ENVO:01000276 a owl:Class ;
+    rdfs:label "ecoregion"@en ;
+    IAO:0000115 "A large unit of land or water containing a geographically distinct assemblage of species, natural communities, and environmental conditions."@en ;
+    rdfs:subClassOf ENVO:01000813,
+        ENVO:01001110 .
+
+OBI:0001688 a owl:ObjectProperty ;
+    rdfs:label "has organization member"@en ;
+    IAO:0000115 "Relating an organization to a legal person or organization."@en .
+
+RO:0001025 a owl:ObjectProperty,
+        owl:TransitiveProperty ;
+    rdfs:label "located in"@en ;
+    IAO:0000115 "a relation between two independent continuants, the target and the location, in which the target is entirely within the location"@en .
+
+RO:0002131 a owl:ObjectProperty,
+        owl:SymmetricProperty ;
+    rdfs:label "overlaps"@en ;
+    IAO:0000115 "x overlaps y if and only if there exists some z such that x has part z and z part of y"@en ;
+    rdfs:subPropertyOf RO:0002323 .
+
+RO:0002410 a owl:ObjectProperty ;
+    rdfs:label "causally related to"@en ;
+    IAO:0000115 "relation that links two events, processes, states, or objects such that one event, process, state, or object (a cause) contributes to the production of another event, process, state, or object (an effect) where the cause is partly or wholly responsible for the effect, and the effect is partly or wholly dependent on the cause."@en .
+
+icon:0000100 a owl:ObjectProperty ;
+    rdfs:label "is involved with"@en ;
+    IAO:0000115 "A link between two records that work together or affect one another. Every more specific involvement link (leads, funds, manages, uses, is partner of and others) implies it."@en ;
+    rdfs:isDefinedBy iconbase:core.owl .
+
+icon:0010000 a owl:Class ;
+    rdfs:label "county"@en ;
+    IAO:0000115 "One of California's 58 counties, as an administrative region rather than as its government."@en ;
+    rdfs:isDefinedBy iconbase:places.owl ;
+    rdfs:subClassOf ENVO:00000004 .
+
+BFO:0000040 a owl:Class ;
+    rdfs:label "material entity"@en ;
+    rdfs:subClassOf BFO:0000004 .
+
+GEO:000000400 a owl:Class ;
+    rdfs:label "governmental organization"@en ;
+    IAO:0000115 """An organization that governs the people living in a particular geographical region or aggregate of geographical regions.  The geographical region it governs can change over time (such as the westward expansion of the United States and the addition of Hawaii). 
+
+Note: this definition was taken over from "geopolitical organization"."""@en ;
+    rdfs:subClassOf GEO:000083916 .
+
+icon:0001005 a owl:Class ;
+    rdfs:label "local government organization"@en ;
+    IAO:0000115 "A county, city, special district (water, resource conservation, flood control) or one of their departments."@en ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:subClassOf GEO:000000400 ;
+    skos:closeMatch schema:GovernmentOrganization .
+
+icon:0001020 a owl:Class ;
+    rdfs:label "organizational activity"@en ;
+    IAO:0000115 "A kind of work an organization carries out, from the Terms sheet's organization activities. An organization is linked to the kinds it is capable of."@en ;
+    rdfs:isDefinedBy iconbase:organizations.owl ;
+    rdfs:subClassOf COB:0000082 .
+
+OBI:0000245 a owl:Class ;
+    rdfs:label "organization"@en ;
+    IAO:0000115 "An organization is a continuant entity which can play roles,  has members, and has a set of organization rules.  Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members."@en ;
+    rdfs:subClassOf BFO:0000004 .
+
+iconbase:organizations.owl a owl:Ontology ;
+    dcterms:creator "Internet of Conservation (ICON)" ;
+    dcterms:description "Organizations in conservation: agencies, non-profits, tribes, companies, universities and partnerships, their types and activities, how they nest and join one another, and the links by which they publish, host, fund or partner in other work."@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references obo:bfo.owl,
+        obo:cob.owl,
+        obo:envo.owl,
+        obo:geo.owl,
+        obo:obi.owl,
+        obo:ro.owl,
+        dcterms:,
+        <http://www.w3.org/ns/org>,
+        foaf:,
+        schema: ;
+    dcterms:title "ICON Organizations ontology"@en ;
+    rdfs:comment "Existing ontologies used. Reused: Ontology for Biomedical Investigations, Relation Ontology. Built on: Basic Formal Ontology, Core Ontology for Biology and Biomedicine, Environment Ontology, Geographical Entity Ontology, Ontology for Biomedical Investigations, Relation Ontology. Mapped to: Dublin Core terms, FOAF, Ontology for Biomedical Investigations, W3C Organization Ontology, schema.org."@en ;
+    rdfs:seeAlso iconbase:core.owl,
+        iconbase:places.owl ;
+    owl:versionIRI <https://w3id.org/icon/releases/2026-11-21/organizations.owl> ;
+    owl:versionInfo "2026-11-21" .
+

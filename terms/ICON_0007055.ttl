@@ -1,0 +1,13 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0007055 a owl:Class ;
+    rdfs:label "ecosystem-based management plan"@en ;
+    IAO:0000115 "A state plan for a marine ecosystem built on foundation species, such as California's kelp forests, that the state wildlife agency develops with its partners, the tribes, and a community working group, and the Fish and Game Commission adopts. It combines a harvest framework, which sets how and where the foundation species may be taken, with a restoration framework, which tracks the ecosystem's condition against a baseline and sets the permit pathways for restoration projects, and it is managed adaptively as monitoring reports change. Example: CDFW's statewide Kelp Restoration and Management Plan for giant kelp and bull kelp, in development with the Ocean Protection Council."@en ;
+    rdfs:comment "Added for CDFW's Kelp Restoration and Management Plan (#1495)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:iconbase="https://w3id.org/icon/"
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="cb126cfa61123c1f35b2c355d036a66e4911cb066eadde562da0f4da2d2ca7c0149">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0000104"/>
+    <rdf:rest rdf:nodeID="cb1de48e15823de26da2c09927b59677b2c5737db7c7c4178e543ec4c8b080d8c39"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb13771886438a4601ef7e0fee71a2df7a9beda41375ac47b7ee903bcef71d1d4b0">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005103"/>
+    <rdf:rest rdf:nodeID="cb22f485dea02c493d892848c485ee23470b945553b6d6c36285f862d3f60a6d66a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb1405ab92174a6f9c228e02cb78d3974887e892d22337eb6ac3ea0c2059abb9b21">
+    <rdf:first rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb175f6cc696cce9b89b4a302f67ab924469ec44e414d31030ef4b6be513d9c509b">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0010104"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb184519ef9781e0aa6371d2947975f18a02c9a06cda0c36b589af5ee409317cf38">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005105"/>
+    <rdf:rest rdf:nodeID="cb21fca497e6ab60f9d6d3b8d2ecfb45491b7f870021fd48cdb2cc168f6b6b60547"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb18e67846e51c96fec966be3f638670df7a8672541876dd8855e234c989429de39">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0007111"/>
+    <rdf:rest rdf:nodeID="cb175f6cc696cce9b89b4a302f67ab924469ec44e414d31030ef4b6be513d9c509b"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb1bf67a4ed04bbcc9bc540f59f451d779a094caba5867cc70012b3519bcd7dcdd5">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0010100"/>
+    <rdf:rest rdf:nodeID="cb1405ab92174a6f9c228e02cb78d3974887e892d22337eb6ac3ea0c2059abb9b21"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb1de48e15823de26da2c09927b59677b2c5737db7c7c4178e543ec4c8b080d8c39">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0010104"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb21fca497e6ab60f9d6d3b8d2ecfb45491b7f870021fd48cdb2cc168f6b6b60547">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0010104"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb22f485dea02c493d892848c485ee23470b945553b6d6c36285f862d3f60a6d66a">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0010104"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0010100">
+    <obo:IAO_0000115 xml:lang="en">The record works in, covers or is about the area. A county cell of All in a workbook links the record to statewide instead.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment xml:lang="en">The chains are two of the explorer's rules. Place roll-up: working on a place located in an area means operating in that area. Place containment: operating in an area means operating in every area that contains it.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/places.owl"/>
+    <rdfs:label xml:lang="en">operates in</rdfs:label>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0010101"/>
+    <owl:propertyChainAxiom rdf:nodeID="cb126cfa61123c1f35b2c355d036a66e4911cb066eadde562da0f4da2d2ca7c0149"/>
+    <owl:propertyChainAxiom rdf:nodeID="cb13771886438a4601ef7e0fee71a2df7a9beda41375ac47b7ee903bcef71d1d4b0"/>
+    <owl:propertyChainAxiom rdf:nodeID="cb184519ef9781e0aa6371d2947975f18a02c9a06cda0c36b589af5ee409317cf38"/>
+    <owl:propertyChainAxiom rdf:nodeID="cb18e67846e51c96fec966be3f638670df7a8672541876dd8855e234c989429de39"/>
+    <owl:propertyChainAxiom rdf:nodeID="cb1bf67a4ed04bbcc9bc540f59f451d779a094caba5867cc70012b3519bcd7dcdd5"/>
+    <skos:closeMatch rdf:resource="http://purl.org/dc/terms/spatial"/>
+    <skos:closeMatch rdf:resource="https://schema.org/areaServed"/>
+    <iconbase:ICON_0000001>DataCite 4.5: geoLocation/geoLocationPlace</iconbase:ICON_0000001>
+    <iconbase:ICON_0000001>EML 2.2: coverage/geographicCoverage</iconbase:ICON_0000001>
+    <iconbase:ICON_0000001>ISO 19115-1: EX_Extent/geographicElement</iconbase:ICON_0000001>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,16 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0014002 a owl:Class ;
+    rdfs:label "outcome"@en ;
+    IAO:0000115 "An amount of an indicator that a project, program or place delivers: expected, as a grant award or project plan states it, or measured, as a report or an inventory such as CPAD records it."@en ;
+    rdfs:isDefinedBy iconbase:outcomes.owl ;
+    rdfs:subClassOf IAO:0000030 ;
+    icon:0000001 "Conservation Standards 4.0: result" ;
+    icon:0000002 icon:0014205,
+        icon:0014206,
+        icon:0014207 .
+

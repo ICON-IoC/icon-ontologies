@@ -1,0 +1,17 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+icon:0008110 a owl:ObjectProperty ;
+    rdfs:label "conforms to"@en ;
+    IAO:0000115 "A standard or guideline a data resource, tool, plan or plan action follows, recorded as a guideline: a data standard such as Darwin Core or the FGDC metadata standard, the policy whose required analyses a tool carries out, the agency guide a plan was written to, or the guidelines an action says to follow."@en ;
+    rdfs:isDefinedBy iconbase:data.owl ;
+    rdfs:range icon:0006000 ;
+    owl:inverseOf icon:0008111 ;
+    skos:closeMatch dcterms:conformsTo ;
+    icon:0000001 "ISO 19115-1: DQ_DomainConsistency/result/specification" .
+

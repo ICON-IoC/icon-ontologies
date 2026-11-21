@@ -1,0 +1,27 @@
+# ICON ontologies (Information for the Conservation of Nature)
+# Homepage: https://icon-ioc.github.io/icon-ontologies/
+# Source: https://github.com/ICON-IoC/icon-ontologies
+# Maintainer: https://github.com/ICON-IoC
+
+Options +FollowSymLinks
+RewriteEngine on
+
+# A term: Turtle or RDF/XML for clients that ask for it, its page for everyone else.
+RewriteCond %{HTTP_ACCEPT} text/turtle
+RewriteRule ^(ICON_[0-9]{7})$ https://icon-ioc.github.io/icon-ontologies/terms/$1.ttl [R=303,L]
+RewriteCond %{HTTP_ACCEPT} application/rdf\+xml
+RewriteRule ^(ICON_[0-9]{7})$ https://icon-ioc.github.io/icon-ontologies/terms/$1.rdf [R=303,L]
+RewriteRule ^(ICON_[0-9]{7})$ https://icon-ioc.github.io/icon-ontologies/terms/$1.html [R=303,L]
+
+# The whole set, and one module (files are named icon-<module>).
+RewriteRule ^icon\.owl$ https://icon-ioc.github.io/icon-ontologies/icon.owl [R=302,L]
+RewriteRule ^([a-z]+)\.(owl|ttl)$ https://icon-ioc.github.io/icon-ontologies/icon-$1.$2 [R=302,L]
+RewriteRule ^releases/([0-9-]+)/icon\.owl$ https://icon-ioc.github.io/icon-ontologies/releases/$1/icon.owl [R=302,L]
+RewriteRule ^releases/([0-9-]+)/([a-z]+)\.(owl|ttl)$ https://icon-ioc.github.io/icon-ontologies/releases/$1/icon-$2.$3 [R=302,L]
+
+# LinkML schemas and SSSOM mapping sets.
+RewriteRule ^linkml/([a-z-]+)$ https://icon-ioc.github.io/icon-ontologies/linkml/$1.yaml [R=302,L]
+RewriteRule ^mappings/(.+)$ https://icon-ioc.github.io/icon-ontologies/mappings/$1 [R=302,L]
+
+# Anything else, including the bare address, goes to the same path on the site.
+RewriteRule ^(.*)$ https://icon-ioc.github.io/icon-ontologies/$1 [R=302,L]

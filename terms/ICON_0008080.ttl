@@ -1,0 +1,16 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+icon:0008080 a owl:Class ;
+    rdfs:label "data type"@en ;
+    IAO:0000115 "The kind of data, or the form it comes in. One list holds both, so a Data record and a tool's input or output are described in the same terms and a dataset can be matched to the tools that take it: Land cover or vegetation map and Raster describe both the Cropland Data Layer and an input InVEST takes."@en ;
+    rdfs:isDefinedBy iconbase:data.owl ;
+    rdfs:subClassOf IAO:0000030 ;
+    skos:closeMatch dcterms:type ;
+    icon:0000001 "DataCite 4.5: resourceType" .
+

@@ -1,0 +1,35 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+icon:0009000 a owl:Class ;
+    rdfs:label "paper or report"@en ;
+    IAO:0000115 "A written work that reports research, monitoring or assessment: a peer-reviewed paper or a technical report. Shown in the explorer as Papers & reports."@en ;
+    rdfs:isDefinedBy iconbase:publications.owl ;
+    rdfs:subClassOf IAO:0000310,
+        icon:0000013 ;
+    skos:closeMatch bibo:Document,
+        fabio:Work,
+        schema:CreativeWork ;
+    icon:0000001 "Crossref: work",
+        "DataCite 4.5: resourceTypeGeneral Text" ;
+    icon:0000002 dcterms:abstract,
+        dcterms:accessRights,
+        dcterms:issued,
+        dcterms:license,
+        bibo:doi,
+        bibo:issue,
+        bibo:pages,
+        bibo:volume,
+        schema:keywords,
+        icon:0009200,
+        icon:0009201,
+        icon:0009202 .
+

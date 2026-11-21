@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ICON Indicators, targets and outcomes ontology</title>
+<link rel="icon" href="../brand/icon-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+:root {
+  --ground: #f1f4ef; --surface: #ffffff; --ink: #17221d; --muted: #5a6a62; --rule: #d3dbd3;
+  --accent: #2e6a4e; --accent-soft: #e3eee7;
+  --display: "Newsreader", Georgia, serif;
+  --body: "Instrument Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground: #0f1512; --surface: #17201b; --ink: #e3ebe6; --muted: #93a39a; --rule: #2b3730;
+    --accent: #74c39b; --accent-soft: #1d3127; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --ground: #0f1512; --surface: #17201b; --ink: #e3ebe6; --muted: #93a39a; --rule: #2b3730;
+  --accent: #74c39b; --accent-soft: #1d3127; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--ground); color: var(--ink); font: 15px/1.6 var(--body); }
+.page { max-width: 1040px; margin: 0 auto; padding: 24px 16px 56px; display: grid; gap: 24px; }
+header.top { display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 13px; }
+header.top nav { display: flex; gap: 16px; flex-wrap: wrap; }
+.logo { height: 34px; width: auto; }
+.logo.dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .logo.light { display: none; }
+  :root:not([data-theme="light"]) .logo.dark { display: block; }
+}
+:root[data-theme="dark"] .logo.light { display: none; }
+:root[data-theme="dark"] .logo.dark { display: block; }
+h1 { font: 600 clamp(28px, 4vw, 40px)/1.15 var(--display); margin: 0; text-wrap: balance; }
+h2 { font: 600 22px/1.25 var(--display); margin: 0 0 8px; }
+p { margin: 0 0 10px; max-width: 75ch; }
+a { color: var(--accent); }
+code { font: 0.88em var(--mono); overflow-wrap: anywhere; }
+.muted { color: var(--muted); }
+.kicker { font: 600 11px var(--body); letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+section.card { background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; padding: 18px 20px; min-width: 0; }
+.facts { display: flex; flex-wrap: wrap; gap: 8px 28px; font-variant-numeric: tabular-nums; }
+.facts div { display: grid; }
+.facts b { font: 600 22px/1.1 var(--display); }
+.facts span { font-size: 12px; color: var(--muted); }
+.scroll { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { text-align: left; vertical-align: top; padding: 8px 10px 8px 0; border-bottom: 1px solid var(--rule); }
+th { font-weight: 600; font-size: 12px; color: var(--muted); }
+td.files { white-space: nowrap; }
+td.files a + a { margin-left: 8px; }
+dl.facts-list { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 6px 16px; margin: 0; }
+dl.facts-list dt { color: var(--muted); font-size: 13px; padding-top: 1px; }
+dl.facts-list dd { margin: 0; }
+.button { display: inline-block; padding: 8px 14px; border-radius: 8px; background: var(--accent); color: var(--surface); text-decoration: none; font-weight: 600; }
+pre { background: var(--accent-soft); padding: 12px 14px; border-radius: 8px; overflow-x: auto; font: 13px/1.5 var(--mono); margin: 0 0 10px; white-space: pre-wrap; }
+footer { font-size: 13px; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="top">
+    <nav><a href=".././">ICON ontologies</a><a href="../map.html">Map</a><a href="https://github.com/ICON-IoC/icon-ontologies">Source files</a></nav>
+    <a href="https://icon-ioc.com" aria-label="ICON">
+      <img class="logo light" alt="ICON" src="../brand/icon-lockup.png">
+      <img class="logo dark" alt="ICON" src="../brand/icon-wordmark-reversed-cropped.png">
+    </a>
+  </header>
+
+  <section>
+    <div class="kicker">vocabulary module</div>
+    <h1>ICON Indicators, targets and outcomes ontology</h1>
+    <p>What conservation work is measured by: indicators with their units, the targets that objectives, plans, programs and guidelines or mandates set on them, and the outcomes projects and places deliver, linked by the results chain (contributes to) so progress toward a target can be added up.</p>
+    <dl class="facts-list">
+      <dt>Ontology IRI</dt><dd><code>https://w3id.org/icon/outcomes.owl</code></dd>
+      <dt>This release</dt><dd><code>https://w3id.org/icon/releases/2026-11-21/outcomes.owl</code></dd>
+      <dt>Own term IDs</dt><dd>ICON:0014000 to ICON:0014999</dd>
+      <dt>Files</dt><dd><a href="../icon-outcomes.ttl">Turtle</a>, <a href="../icon-outcomes.owl">RDF/XML</a>, <a href="../linkml/icon-outcomes.yaml">LinkML</a>, <a href="../guides/outcomes.md">guide (Markdown)</a></dd>
+      
+      <dt>Built on</dt><dd>IAO</dd>
+      
+      <dt>Mapped to</dt><dd>OBI</dd>
+      
+    </dl>
+  </section>
+
+  <section class="card">
+    <h2>Terms</h2>
+    <p class="muted">Reused terms keep their own IDs and link to their source ontology.</p>
+    <div class="scroll">
+    <table>
+      <thead><tr><th>Term</th><th>Kind</th><th>ID</th><th>Definition</th></tr></thead>
+      <tbody>
+      
+        <tr id="ICON_0014000">
+          <td><a href="../terms/ICON_0014000.html">indicator</a></td>
+          <td>class</td>
+          <td><code>ICON:0014000</code></td>
+          <td>Something measurable that shows progress toward a conservation goal, with the unit it is counted in, such as acres of habitat restored or miles of stream opened to fish passage. Targets and outcomes on the same indicator can be added up and compared.</td>
+        </tr>
+      
+        <tr id="ICON_0014001">
+          <td><a href="../terms/ICON_0014001.html">target</a></td>
+          <td>class</td>
+          <td><code>ICON:0014001</code></td>
+          <td>The amount of an indicator that an objective, plan, program or guideline or mandate sets out to reach, by a year where it gives one: restore 5,000 to 7,000 acres of tidal marsh within 30 years. A range keeps its low and high values; a milestone is another target on the same indicator with an earlier year.</td>
+        </tr>
+      
+        <tr id="ICON_0014002">
+          <td><a href="../terms/ICON_0014002.html">outcome</a></td>
+          <td>class</td>
+          <td><code>ICON:0014002</code></td>
+          <td>An amount of an indicator that a project, program or place delivers: expected, as a grant award or project plan states it, or measured, as a report or an inventory such as CPAD records it.</td>
+        </tr>
+      
+        <tr id="ICON_0014003">
+          <td><a href="../terms/ICON_0014003.html">expected outcome</a></td>
+          <td>class</td>
+          <td><code>ICON:0014003</code></td>
+          <td>An outcome a project or program sets out to deliver and has not yet been shown to: the acres a grant award or a project plan states, or the planned and in-progress work a project tracker lists.</td>
+        </tr>
+      
+        <tr id="ICON_0014004">
+          <td><a href="../terms/ICON_0014004.html">measured outcome</a></td>
+          <td>class</td>
+          <td><code>ICON:0014004</code></td>
+          <td>An outcome recorded as delivered, by a report, a monitoring survey or an inventory such as CPAD, or by a project tracker that lists the work as completed.</td>
+        </tr>
+      
+        <tr id="ICON_0014100">
+          <td><a href="../terms/ICON_0014100.html">is measured by</a></td>
+          <td>relation</td>
+          <td><code>ICON:0014100</code></td>
+          <td>A record sets a target on the indicator, or reports an outcome on it.</td>
+        </tr>
+      
+        <tr id="ICON_0014101">
+          <td><a href="../terms/ICON_0014101.html">measures</a></td>
+          <td>relation</td>
+          <td><code>ICON:0014101</code></td>
+          <td>The reverse of is measured by.</td>
+        </tr>
+      
+        <tr id="ICON_0014102">
+          <td><a href="../terms/ICON_0014102.html">contributes to</a></td>
+          <td>relation</td>
+          <td><code>ICON:0014102</code></td>
+          <td>A project, program or place advances an objective, action, plan, program or guideline or mandate, so its outcomes count toward that record&#39;s targets.</td>
+        </tr>
+      
+        <tr id="ICON_0014103">
+          <td><a href="../terms/ICON_0014103.html">is advanced by</a></td>
+          <td>relation</td>
+          <td><code>ICON:0014103</code></td>
+          <td>The reverse of contributes to.</td>
+        </tr>
+      
+        <tr id="ICON_0014104">
+          <td><a href="../terms/ICON_0014104.html">has outcome</a></td>
+          <td>relation</td>
+          <td><code>ICON:0014104</code></td>
+          <td>A project, program or place delivers the outcome, expected or measured (#959). The explorer shows a record&#39;s outcomes in its panel rather than as links.</td>
+        </tr>
+      
+        <tr id="ICON_0014105">
+          <td><a href="../terms/ICON_0014105.html">is outcome of</a></td>
+          <td>relation</td>
+          <td><code>ICON:0014105</code></td>
+          <td>The reverse of has outcome.</td>
+        </tr>
+      
+        <tr id="ICON_0014106">
+          <td><a href="../terms/ICON_0014106.html">has target</a></td>
+          <td>relation</td>
+          <td><code>ICON:0014106</code></td>
+          <td>An objective, action, plan, program or guideline or mandate sets the target (#959). The explorer shows a record&#39;s targets, with progress toward them, in its panel rather than as links.</td>
+        </tr>
+      
+        <tr id="ICON_0014107">
+          <td><a href="../terms/ICON_0014107.html">is target of</a></td>
+          <td>relation</td>
+          <td><code>ICON:0014107</code></td>
+          <td>The reverse of has target.</td>
+        </tr>
+      
+        <tr id="ICON_0014200">
+          <td><a href="../terms/ICON_0014200.html">target low value</a></td>
+          <td>attribute</td>
+          <td><code>ICON:0014200</code></td>
+          <td>The target&#39;s amount in its indicator&#39;s unit, or the low end when the target is a range.</td>
+        </tr>
+      
+        <tr id="ICON_0014201">
+          <td><a href="../terms/ICON_0014201.html">target high value</a></td>
+          <td>attribute</td>
+          <td><code>ICON:0014201</code></td>
+          <td>The high end of a target given as a range.</td>
+        </tr>
+      
+        <tr id="ICON_0014202">
+          <td><a href="../terms/ICON_0014202.html">baseline value</a></td>
+          <td>attribute</td>
+          <td><code>ICON:0014202</code></td>
+          <td>The amount of the indicator before the target was set. Progress counts up from it: the baseline plus the outcomes achieved since.</td>
+        </tr>
+      
+        <tr id="ICON_0014203">
+          <td><a href="../terms/ICON_0014203.html">baseline year</a></td>
+          <td>attribute</td>
+          <td><code>ICON:0014203</code></td>
+          <td>The year of the baseline value.</td>
+        </tr>
+      
+        <tr id="ICON_0014204">
+          <td><a href="../terms/ICON_0014204.html">target year</a></td>
+          <td>attribute</td>
+          <td><code>ICON:0014204</code></td>
+          <td>The year by which the target is to be met.</td>
+        </tr>
+      
+        <tr id="ICON_0014205">
+          <td><a href="../terms/ICON_0014205.html">outcome value</a></td>
+          <td>attribute</td>
+          <td><code>ICON:0014205</code></td>
+          <td>The outcome&#39;s amount in its indicator&#39;s unit.</td>
+        </tr>
+      
+        <tr id="ICON_0014206">
+          <td><a href="../terms/ICON_0014206.html">outcome year</a></td>
+          <td>attribute</td>
+          <td><code>ICON:0014206</code></td>
+          <td>The year the outcome was measured, or is expected to be delivered.</td>
+        </tr>
+      
+        <tr id="ICON_0014208">
+          <td><a href="../terms/ICON_0014208.html">target total</a></td>
+          <td>attribute</td>
+          <td><code>ICON:0014208</code></td>
+          <td>The whole a target&#39;s percentages are of, in its indicator&#39;s unit, such as California&#39;s land area for a goal of conserving 30 percent of its lands. A target with a total is shown in both amounts and percentages.</td>
+        </tr>
+      
+        <tr id="ICON_0014207">
+          <td><a href="../terms/ICON_0014207.html">outcome status</a></td>
+          <td>attribute</td>
+          <td><code>ICON:0014207</code></td>
+          <td>Expected (an expected outcome, as a grant award or proposal states it) or measured (a measured outcome, as a report or inventory records it).</td>
+        </tr>
+      
+        <tr id="ICON_0014010">
+          <td><a href="../terms/ICON_0014010.html">area conserved</a></td>
+          <td>value</td>
+          <td><code>ICON:0014010</code></td>
+          <td>Acres of land or water protected for conservation in fee title or by easement.</td>
+        </tr>
+      
+        <tr id="ICON_0014011">
+          <td><a href="../terms/ICON_0014011.html">habitat restored</a></td>
+          <td>value</td>
+          <td><code>ICON:0014011</code></td>
+          <td>Acres where a habitat lost or degraded was re-established, such as tidal marsh restored from diked land.</td>
+        </tr>
+      
+        <tr id="ICON_0014012">
+          <td><a href="../terms/ICON_0014012.html">habitat enhanced</a></td>
+          <td>value</td>
+          <td><code>ICON:0014012</code></td>
+          <td>Acres of existing habitat whose condition was improved without changing its type.</td>
+        </tr>
+      
+        <tr id="ICON_0014013">
+          <td><a href="../terms/ICON_0014013.html">area under conservation management</a></td>
+          <td>value</td>
+          <td><code>ICON:0014013</code></td>
+          <td>Acres managed under a plan that benefits habitat or species, such as managed wetlands or grazing under a conservation plan.</td>
+        </tr>
+      
+        <tr id="ICON_0014014">
+          <td><a href="../terms/ICON_0014014.html">floodplain reconnected</a></td>
+          <td>value</td>
+          <td><code>ICON:0014014</code></td>
+          <td>Acres of floodplain reconnected to its river, so that it floods again.</td>
+        </tr>
+      
+        <tr id="ICON_0014015">
+          <td><a href="../terms/ICON_0014015.html">area treated for invasive species</a></td>
+          <td>value</td>
+          <td><code>ICON:0014015</code></td>
+          <td>Acres where invasive plants or animals were removed or controlled.</td>
+        </tr>
+      
+        <tr id="ICON_0014016">
+          <td><a href="../terms/ICON_0014016.html">area treated for wildfire resilience</a></td>
+          <td>value</td>
+          <td><code>ICON:0014016</code></td>
+          <td>Acres of fuel reduction, prescribed fire or forest thinning.</td>
+        </tr>
+      
+        <tr id="ICON_0014017">
+          <td><a href="../terms/ICON_0014017.html">area opened to public access</a></td>
+          <td>value</td>
+          <td><code>ICON:0014017</code></td>
+          <td>Acres newly opened to the public for recreation or access to nature.</td>
+        </tr>
+      
+        <tr id="ICON_0014018">
+          <td><a href="../terms/ICON_0014018.html">stream habitat restored</a></td>
+          <td>value</td>
+          <td><code>ICON:0014018</code></td>
+          <td>Miles of stream channel or bank restored.</td>
+        </tr>
+      
+        <tr id="ICON_0014019">
+          <td><a href="../terms/ICON_0014019.html">stream opened to fish passage</a></td>
+          <td>value</td>
+          <td><code>ICON:0014019</code></td>
+          <td>Miles of stream made reachable by migratory fish by removing or fixing barriers.</td>
+        </tr>
+      
+        <tr id="ICON_0014020">
+          <td><a href="../terms/ICON_0014020.html">levee improved</a></td>
+          <td>value</td>
+          <td><code>ICON:0014020</code></td>
+          <td>Miles of levee repaired, raised or set back.</td>
+        </tr>
+      
+        <tr id="ICON_0014021">
+          <td><a href="../terms/ICON_0014021.html">trail built or opened</a></td>
+          <td>value</td>
+          <td><code>ICON:0014021</code></td>
+          <td>Miles of trail built or opened to the public.</td>
+        </tr>
+      
+        <tr id="ICON_0014022">
+          <td><a href="../terms/ICON_0014022.html">water for the environment</a></td>
+          <td>value</td>
+          <td><code>ICON:0014022</code></td>
+          <td>Acre-feet a year of water dedicated to streams, wetlands or habitat.</td>
+        </tr>
+      
+        <tr id="ICON_0014023">
+          <td><a href="../terms/ICON_0014023.html">groundwater recharged</a></td>
+          <td>value</td>
+          <td><code>ICON:0014023</code></td>
+          <td>Acre-feet a year of water added to groundwater by recharge projects.</td>
+        </tr>
+      
+        <tr id="ICON_0014024">
+          <td><a href="../terms/ICON_0014024.html">fish passage barriers remediated</a></td>
+          <td>value</td>
+          <td><code>ICON:0014024</code></td>
+          <td>The number of dams, culverts or other barriers to fish removed or fitted with passage.</td>
+        </tr>
+      
+        <tr id="ICON_0014025">
+          <td><a href="../terms/ICON_0014025.html">wildlife crossings built</a></td>
+          <td>value</td>
+          <td><code>ICON:0014025</code></td>
+          <td>The number of wildlife crossing structures built or retrofitted.</td>
+        </tr>
+      
+        <tr id="ICON_0014026">
+          <td><a href="../terms/ICON_0014026.html">populations secured</a></td>
+          <td>value</td>
+          <td><code>ICON:0014026</code></td>
+          <td>The number of populations of a species that meet a plan&#39;s test of being secure, such as protected and self-sustaining.</td>
+        </tr>
+      
+        <tr id="ICON_0014027">
+          <td><a href="../terms/ICON_0014027.html">population size</a></td>
+          <td>value</td>
+          <td><code>ICON:0014027</code></td>
+          <td>The number of individuals of a species counted or estimated, such as adult fish returning to spawn.</td>
+        </tr>
+      
+        <tr id="ICON_0014028">
+          <td><a href="../terms/ICON_0014028.html">projects completed</a></td>
+          <td>value</td>
+          <td><code>ICON:0014028</code></td>
+          <td>The number of projects of a kind carried out to completion.</td>
+        </tr>
+      
+        <tr id="ICON_0014029">
+          <td><a href="../terms/ICON_0014029.html">partnerships formed</a></td>
+          <td>value</td>
+          <td><code>ICON:0014029</code></td>
+          <td>The number of partnerships or agreements formed among organizations.</td>
+        </tr>
+      
+        <tr id="ICON_0014030">
+          <td><a href="../terms/ICON_0014030.html">funding invested</a></td>
+          <td>value</td>
+          <td><code>ICON:0014030</code></td>
+          <td>Dollars spent or awarded on the work.</td>
+        </tr>
+      
+        <tr id="ICON_0014031">
+          <td><a href="../terms/ICON_0014031.html">carbon stored</a></td>
+          <td>value</td>
+          <td><code>ICON:0014031</code></td>
+          <td>Metric tons of carbon dioxide equivalent stored or kept from release.</td>
+        </tr>
+      
+        <tr id="ICON_0014032">
+          <td><a href="../terms/ICON_0014032.html">projects funded</a></td>
+          <td>value</td>
+          <td><code>ICON:0014032</code></td>
+          <td>The number of projects of a kind a funder approves a grant or acquisition for, counted when the award is made, whether or not the work is done yet.</td>
+        </tr>
+      
+        <tr id="ICON_0014033">
+          <td><a href="../terms/ICON_0014033.html">projects monitored</a></td>
+          <td>value</td>
+          <td><code>ICON:0014033</code></td>
+          <td>The number of completed projects checked in a year for whether they are operated, used and maintained as their grant agreements require.</td>
+        </tr>
+      
+        <tr id="ICON_0014034">
+          <td><a href="../terms/ICON_0014034.html">outreach events held</a></td>
+          <td>value</td>
+          <td><code>ICON:0014034</code></td>
+          <td>The number of meetings, workshops or conferences held or sponsored to reach the public, partners or prospective grantees.</td>
+        </tr>
+      
+        <tr id="ICON_0014035">
+          <td><a href="../terms/ICON_0014035.html">process improvements made</a></td>
+          <td>value</td>
+          <td><code>ICON:0014035</code></td>
+          <td>The number of changes put in place to make an organization&#39;s processes, such as grant applications, reporting or payment, simpler or faster.</td>
+        </tr>
+      
+        <tr id="ICON_0014036">
+          <td><a href="../terms/ICON_0014036.html">land conserved</a></td>
+          <td>value</td>
+          <td><code>ICON:0014036</code></td>
+          <td>Acres of land durably protected and managed for biodiversity, as California counts its 30x30 Conservation Areas on land. Narrower than area conserved, which takes in water and any protection by fee or easement.</td>
+        </tr>
+      
+        <tr id="ICON_0014037">
+          <td><a href="../terms/ICON_0014037.html">coastal waters conserved</a></td>
+          <td>value</td>
+          <td><code>ICON:0014037</code></td>
+          <td>Acres of coastal waters durably protected and managed for biodiversity, as California counts its 30x30 Conservation Areas in its coastal state waters.</td>
+        </tr>
+      
+        <tr id="ICON_0014038">
+          <td><a href="../terms/ICON_0014038.html">habitat created</a></td>
+          <td>value</td>
+          <td><code>ICON:0014038</code></td>
+          <td>Acres where a habitat was established where it did not exist before, such as a wetland built on upland. Habitat restored is where it once was.</td>
+        </tr>
+      
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <footer>
+    <p>ICON ontologies, version 2026-11-21. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: attribute as "Internet of Conservation, Information for the Conservation of Nature (ICON), CC BY 4.0". The ICON names and logos are not covered by that license.</p>
+  </footer>
+</div>
+</body>
+</html>

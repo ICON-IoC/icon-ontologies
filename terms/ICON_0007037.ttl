@@ -1,0 +1,12 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0007037 a owl:Class ;
+    rdfs:label "regional management plan"@en ;
+    IAO:0000115 "A comprehensive, long-term plan for one region that a state agency must adopt under a statute naming the region's goals, that sets regulatory policies binding the state and local agencies whose projects there are covered by the plan, together with nonregulatory recommendations to other agencies and the Legislature, and is amended as conditions and science change. Agencies certify their covered projects as consistent with the plan, and the adopting agency hears appeals of those certifications. Example: the Delta Plan, which the Delta Stewardship Council adopted in 2013 under the Sacramento-San Joaquin Delta Reform Act of 2009 to achieve the coequal goals of water supply reliability and a healthy Delta ecosystem."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+

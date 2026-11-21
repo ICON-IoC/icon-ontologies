@@ -1,0 +1,12 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0007013 a owl:Class ;
+    rdfs:label "biodiversity action plan"@en ;
+    IAO:0000115 "A conservation plan for the biodiversity of a county, region or nation, written with the experts, agencies and organizations working there, that describes its habitats and species of concern, the threats to them, and recommended, usually voluntary, actions for science, land protection and stewardship, and education. Local plans follow the model of national biodiversity strategies and action plans under the Convention on Biological Diversity."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+

@@ -1,0 +1,13 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0007053 a owl:Class ;
+    rdfs:label "groundwater sustainability plan"@en ;
+    IAO:0000115 "A plan that the groundwater sustainability agencies of a medium or high priority basin adopt under California's Sustainable Groundwater Management Act of 2014 (Water Code Section 10720 and following) and submit to the Department of Water Resources, which reviews it and approves it, finds it incomplete, or finds it inadequate. It sets a sustainability goal to be reached within 20 years, defines undesirable results for the six sustainability indicators (chronic lowering of groundwater levels, reduction of storage, seawater intrusion, degraded water quality, land subsidence, and depletion of interconnected surface water), sets minimum thresholds and measurable objectives at representative monitoring sites, and lists the projects and management actions that keep the basin sustainable. It is reviewed every five years. Example: the Tule Lake Subbasin Groundwater Sustainability Plan (2021)."@en ;
+    rdfs:comment "Added for the Tule Lake Subbasin Groundwater Sustainability Plan (#1453)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+

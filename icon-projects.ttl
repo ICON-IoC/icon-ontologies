@@ -1,0 +1,311 @@
+# ICON Projects ontology
+# Built by `ioc-ontologies` from ontology/src/projects.terms; edit that file, not this one.
+# Guide: ontology/guides/projects.md
+@prefix BFO: <http://purl.obolibrary.org/obo/BFO_> .
+@prefix COB: <http://purl.obolibrary.org/obo/COB_> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix OBI: <http://purl.obolibrary.org/obo/OBI_> .
+@prefix RO: <http://purl.obolibrary.org/obo/RO_> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+IAO:0000115 a owl:AnnotationProperty ;
+    rdfs:label "definition" .
+
+dcterms:creator a owl:AnnotationProperty .
+
+dcterms:description a owl:AnnotationProperty .
+
+dcterms:license a owl:AnnotationProperty .
+
+dcterms:references a owl:AnnotationProperty .
+
+dcterms:title a owl:AnnotationProperty .
+
+oboInOwl:hasDbXref a owl:AnnotationProperty ;
+    rdfs:label "database_cross_reference" .
+
+oboInOwl:hasExactSynonym a owl:AnnotationProperty ;
+    rdfs:label "has_exact_synonym" .
+
+skos:broadMatch a owl:AnnotationProperty .
+
+skos:closeMatch a owl:AnnotationProperty .
+
+skos:exactMatch a owl:AnnotationProperty .
+
+skos:narrowMatch a owl:AnnotationProperty .
+
+icon:0003001 a owl:Class ;
+    rdfs:label "acquisition project"@en ;
+    IAO:0000115 "A project that buys land, water or easements for conservation."@en ;
+    rdfs:isDefinedBy iconbase:projects.owl ;
+    rdfs:subClassOf icon:0003000 .
+
+icon:0003002 a owl:Class ;
+    rdfs:label "education project"@en ;
+    IAO:0000115 "A project that teaches the public, students or practitioners."@en ;
+    rdfs:isDefinedBy iconbase:projects.owl ;
+    rdfs:subClassOf icon:0003000 .
+
+icon:0003003 a owl:Class ;
+    rdfs:label "habitat enhancement project"@en ;
+    IAO:0000115 "A project that restores or improves habitat."@en ;
+    oboInOwl:hasExactSynonym "restoration project"@en ;
+    rdfs:isDefinedBy iconbase:projects.owl ;
+    rdfs:subClassOf icon:0003000 .
+
+icon:0003004 a owl:Class ;
+    rdfs:label "infrastructure project"@en ;
+    IAO:0000115 "A project that builds, removes or rebuilds a structure, such as a fish ladder, a levee setback or a wildlife crossing."@en ;
+    rdfs:isDefinedBy iconbase:projects.owl ;
+    rdfs:subClassOf icon:0003000 .
+
+icon:0003005 a owl:Class ;
+    rdfs:label "land protection project"@en ;
+    IAO:0000115 "A project that secures land against conversion by easement, designation or agreement rather than purchase."@en ;
+    rdfs:isDefinedBy iconbase:projects.owl ;
+    rdfs:subClassOf icon:0003000 .
+
+icon:0003006 a owl:Class ;
+    rdfs:label "management project"@en ;
+    IAO:0000115 "A project that manages land, water or wildlife, such as grazing, burning or invasive species control."@en ;
+    rdfs:isDefinedBy iconbase:projects.owl ;
+    rdfs:subClassOf icon:0003000 .
+
+icon:0003007 a owl:Class ;
+    rdfs:label "planning project"@en ;
+    IAO:0000115 "A project that produces a plan."@en ;
+    rdfs:isDefinedBy iconbase:projects.owl ;
+    rdfs:subClassOf icon:0003000 .
+
+icon:0003008 a owl:Class ;
+    rdfs:label "remediation project"@en ;
+    IAO:0000115 "A project that cleans up contamination or reverses damage, such as mine waste or polluted runoff."@en ;
+    rdfs:isDefinedBy iconbase:projects.owl ;
+    rdfs:subClassOf icon:0003000 .
+
+icon:0003009 a owl:Class ;
+    rdfs:label "research project"@en ;
+    IAO:0000115 "A project that studies or monitors nature or conservation."@en ;
+    rdfs:isDefinedBy iconbase:projects.owl ;
+    rdfs:subClassOf icon:0003000 ;
+    skos:closeMatch OBI:0000066 .
+
+icon:0003010 a owl:Class ;
+    rdfs:label "compensatory mitigation project"@en ;
+    IAO:0000115 "A project that restores, creates or preserves habitat to make up for habitat a permitted development destroys elsewhere."@en ;
+    rdfs:isDefinedBy iconbase:projects.owl ;
+    rdfs:subClassOf icon:0003000 .
+
+icon:0003011 a owl:Class ;
+    rdfs:label "wildlife crossing project"@en ;
+    IAO:0000115 "A project that plans, builds, improves or studies a structure that lets wildlife cross a road or railway, or that restores or secures the land leading to one."@en ;
+    rdfs:isDefinedBy iconbase:projects.owl ;
+    rdfs:subClassOf icon:0003000 .
+
+BFO:0000001 a owl:Class ;
+    rdfs:label "entity"@en .
+
+BFO:0000015 a owl:Class ;
+    rdfs:label "process"@en .
+
+BFO:0000031 a owl:Class ;
+    rdfs:label "generically dependent continuant"@en ;
+    IAO:0000115 "b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])"@en ;
+    rdfs:subClassOf BFO:0000002 .
+
+BFO:0000050 a owl:ObjectProperty,
+        owl:TransitiveProperty ;
+    rdfs:label "part of"@en ;
+    IAO:0000115 "a core relation that holds between a part and its whole"@en ;
+    rdfs:subPropertyOf RO:0002131 ;
+    owl:inverseOf BFO:0000051 .
+
+COB:0000082 a owl:Class ;
+    rdfs:label "planned process"@en ;
+    IAO:0000115 "A process that is initiated by an agent who intends to carry out a plan to achieve an objective through one or more actions as described in a plan specification."@en ;
+    rdfs:subClassOf BFO:0000015 .
+
+IAO:0000030 a owl:Class ;
+    rdfs:label "information content entity"@en ;
+    IAO:0000115 "A generically dependent continuant that is about some thing."@en ;
+    rdfs:subClassOf BFO:0000031 .
+
+IAO:0000104 a owl:Class ;
+    rdfs:label "plan specification"@en ;
+    IAO:0000115 "A directive information entity with action specifications and objective specifications as parts, and that may be concretized as a realizable entity that, if realized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified."@en ;
+    rdfs:subClassOf IAO:0000033 .
+
+RO:0002323 a owl:ObjectProperty ;
+    rdfs:label "mereotopologically related to"@en ;
+    IAO:0000115 "A mereological relationship or a topological relationship"@en .
+
+icon:0000012 a owl:Class ;
+    rdfs:label "place"@en ;
+    IAO:0000115 "A part of the landscape or a structure in it that records can be located at, worked on or bounded by: a river, a reserve, a dam, a crossing structure."@en ;
+    rdfs:isDefinedBy iconbase:core.owl ;
+    rdfs:subClassOf BFO:0000004 .
+
+icon:0000014 a owl:Class ;
+    rdfs:label "planning element"@en ;
+    IAO:0000115 "A directive information entity that sets out what conservation work should achieve or do: a plan, one of its objectives, or one of its actions."@en ;
+    rdfs:isDefinedBy iconbase:core.owl ;
+    rdfs:subClassOf IAO:0000033 .
+
+icon:0003100 a owl:ObjectProperty ;
+    rdfs:label "has project type"@en ;
+    IAO:0000115 "Links a project to one of the project type classes it belongs to. The explorer's way of stating the project's class."@en ;
+    rdfs:domain icon:0003000 ;
+    rdfs:isDefinedBy iconbase:projects.owl ;
+    owl:inverseOf icon:0003101 .
+
+icon:0003101 a owl:ObjectProperty ;
+    rdfs:label "is project type of"@en ;
+    IAO:0000115 "The reverse of has project type."@en ;
+    rdfs:isDefinedBy iconbase:projects.owl ;
+    rdfs:range icon:0003000 ;
+    owl:inverseOf icon:0003100 .
+
+icon:0003102 a owl:ObjectProperty ;
+    rdfs:label "is part of program"@en ;
+    IAO:0000115 "A project carried out within a program, as one grant within a grant program."@en ;
+    rdfs:domain icon:0003000 ;
+    rdfs:isDefinedBy iconbase:projects.owl ;
+    rdfs:range icon:0004000 ;
+    rdfs:subPropertyOf BFO:0000050 ;
+    owl:inverseOf icon:0003103 .
+
+icon:0003103 a owl:ObjectProperty ;
+    rdfs:label "has project"@en ;
+    IAO:0000115 "The reverse of is part of program."@en ;
+    rdfs:domain icon:0004000 ;
+    rdfs:isDefinedBy iconbase:projects.owl ;
+    rdfs:range icon:0003000 ;
+    rdfs:subPropertyOf BFO:0000051 ;
+    owl:inverseOf icon:0003102 .
+
+icon:0003104 a owl:ObjectProperty ;
+    rdfs:label "tracked by"@en ;
+    IAO:0000115 "The organization that keeps a project's or plan's record in a project tracker such as EcoAtlas, often the agency that permitted or funded it, without necessarily leading it. Keeping the record is not taking part in the work, so this is not a kind of is involved with."@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( icon:0003000 icon:0007001 ) ] ;
+    rdfs:isDefinedBy iconbase:projects.owl ;
+    rdfs:range OBI:0000245 ;
+    owl:inverseOf icon:0003105 .
+
+icon:0003105 a owl:ObjectProperty ;
+    rdfs:label "tracks"@en ;
+    IAO:0000115 "The reverse of tracked by."@en ;
+    rdfs:domain OBI:0000245 ;
+    rdfs:isDefinedBy iconbase:projects.owl ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( icon:0003000 icon:0007001 ) ] ;
+    owl:inverseOf icon:0003104 .
+
+icon:0003106 a owl:ObjectProperty ;
+    rdfs:label "works on"@en ;
+    IAO:0000115 "The project acts on the place itself: it restores, manages, builds, repairs, widens or studies it, or mitigates for work on it. A fuel reduction project works on the national forest it thins, a coho habitat project works on its creek, and a Caltrans culvert replacement works on the highway it runs under. A project that only uses the place to say where it is intersects it instead."@en ;
+    rdfs:domain icon:0003000 ;
+    rdfs:isDefinedBy iconbase:projects.owl ;
+    rdfs:range icon:0005000 ;
+    owl:inverseOf icon:0003107 .
+
+icon:0003107 a owl:ObjectProperty ;
+    rdfs:label "worked on by"@en ;
+    IAO:0000115 "The reverse of works on."@en ;
+    rdfs:domain icon:0005000 ;
+    rdfs:isDefinedBy iconbase:projects.owl ;
+    rdfs:range icon:0003000 ;
+    owl:inverseOf icon:0003106 .
+
+BFO:0000002 a owl:Class ;
+    rdfs:label "continuant"@en ;
+    rdfs:subClassOf BFO:0000001 .
+
+BFO:0000004 a owl:Class ;
+    rdfs:label "independent continuant"@en ;
+    IAO:0000115 "b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])"@en ;
+    rdfs:subClassOf BFO:0000002 .
+
+BFO:0000051 a owl:ObjectProperty,
+        owl:TransitiveProperty ;
+    rdfs:label "has part"@en ;
+    IAO:0000115 "a core relation that holds between a whole and its part"@en ;
+    rdfs:subPropertyOf RO:0002131 .
+
+IAO:0000033 a owl:Class ;
+    rdfs:label "directive information entity"@en ;
+    IAO:0000115 "An information content entity whose concretizations indicate to their bearer how to realize them in a process."@en ;
+    rdfs:subClassOf IAO:0000030 .
+
+OBI:0000245 a owl:Class ;
+    rdfs:label "organization"@en ;
+    IAO:0000115 "An organization is a continuant entity which can play roles,  has members, and has a set of organization rules.  Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members."@en ;
+    rdfs:subClassOf BFO:0000004 .
+
+RO:0002131 a owl:ObjectProperty,
+        owl:SymmetricProperty ;
+    rdfs:label "overlaps"@en ;
+    IAO:0000115 "x overlaps y if and only if there exists some z such that x has part z and z part of y"@en ;
+    rdfs:subPropertyOf RO:0002323 .
+
+icon:0000011 a owl:Class ;
+    rdfs:label "endeavor"@en ;
+    IAO:0000115 "A planned process carried out to achieve conservation ends over a span of time: a project or a program."@en ;
+    rdfs:isDefinedBy iconbase:core.owl ;
+    rdfs:subClassOf COB:0000082 .
+
+icon:0004000 a owl:Class ;
+    rdfs:label "conservation program"@en ;
+    IAO:0000115 "An ongoing arrangement, usually run by an agency, that funds, regulates, certifies, plans or carries out conservation work through many projects or participants, with no set end."@en ;
+    rdfs:isDefinedBy iconbase:programs.owl ;
+    rdfs:subClassOf icon:0000011 .
+
+icon:0005000 a owl:Class ;
+    rdfs:label "infrastructure"@en ;
+    IAO:0000115 "A place or structure on the landscape that conservation works on or around: a water body, a conservation area, a water or energy work, a farm, a sensor, a road or trail. Called infrastructure in the PPOD model whether built or natural."@en ;
+    rdfs:isDefinedBy iconbase:infrastructure.owl ;
+    rdfs:subClassOf icon:0000012 .
+
+icon:0007001 a owl:Class ;
+    rdfs:label "conservation plan"@en ;
+    IAO:0000115 "A plan specification issued by an agency or organization that sets conservation objectives and the actions to meet them, such as a species recovery plan."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf IAO:0000104,
+        icon:0000014 .
+
+icon:0003000 a owl:Class ;
+    rdfs:label "conservation project"@en ;
+    IAO:0000115 "A bounded effort with a lead and usually partners and funders that restores, protects, acquires, studies, plans or manages something in a place, and ends when its work is done."@en ;
+    rdfs:isDefinedBy iconbase:projects.owl ;
+    rdfs:subClassOf icon:0000011 ;
+    skos:closeMatch foaf:Project,
+        schema:Project .
+
+iconbase:projects.owl a owl:Ontology ;
+    dcterms:creator "Internet of Conservation (ICON)" ;
+    dcterms:description "Conservation projects: bounded efforts with a lead, partners and funders that restore, protect, acquire, study or manage something in a place. Covers project types and the links of a project to programs and to the places it works on."@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references obo:bfo.owl,
+        obo:obi.owl,
+        foaf:,
+        schema: ;
+    dcterms:title "ICON Projects ontology"@en ;
+    rdfs:comment "Existing ontologies used. Built on: Basic Formal Ontology, Ontology for Biomedical Investigations. Mapped to: FOAF, Ontology for Biomedical Investigations, schema.org."@en ;
+    rdfs:seeAlso iconbase:core.owl,
+        iconbase:infrastructure.owl,
+        iconbase:plans.owl,
+        iconbase:programs.owl ;
+    owl:versionIRI <https://w3id.org/icon/releases/2026-11-21/projects.owl> ;
+    owl:versionInfo "2026-11-21" .
+

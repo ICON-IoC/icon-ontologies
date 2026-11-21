@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="cb0">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0011004"/>
+    <rdf:rest rdf:nodeID="cbd7c96744b860be374134b6eeace4a6009e3d5947219e59b3c009836ad1012775"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb68067f2b743e19efb21ee5d853c3161b0666d622a2f0455c63f429b69f182231">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="cbc52389ef49e1a29fb4e6feac406be1b00e169728b2657e7ed1a61e428b758494"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cbc52389ef49e1a29fb4e6feac406be1b00e169728b2657e7ed1a61e428b758494">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0011001"/>
+    <rdf:rest rdf:nodeID="cb0"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cbd7c96744b860be374134b6eeace4a6009e3d5947219e59b3c009836ad1012775">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0011005"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0011112">
+    <obo:IAO_0000115 xml:lang="en">The reverse of has IUCN ecosystem group.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0011006"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/biodiversity.owl"/>
+    <rdfs:label xml:lang="en">is IUCN ecosystem group of</rdfs:label>
+    <rdfs:range rdf:nodeID="cb68067f2b743e19efb21ee5d853c3161b0666d622a2f0455c63f429b69f182231"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0011111"/>
+    <skos:exactMatch rdf:resource="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
+  </rdf:Description>
+</rdf:RDF>

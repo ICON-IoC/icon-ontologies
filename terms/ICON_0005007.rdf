@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="cb0">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005046"/>
+    <rdf:rest rdf:nodeID="cbd7c96744b860be374134b6eeace4a6009e3d5947219e59b3c009836ad1012775"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb11b335a01cf7d552b396517524f6df370f2013755abc7348fa953648c12ab40fb">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="cbc9874e1087ff37043c595204683443584aafce4be5df3da99b609d4277f146b2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb5c9f4954e2e25d345f4b51a0387351af8f7d2d83bd6ad34da92f6540a2bbf317">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005045"/>
+    <rdf:rest rdf:nodeID="cb0"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cbaa94697e87d969ac39959ba7ceb758c2012ef4578bc1794c25153af69115836d">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005044"/>
+    <rdf:rest rdf:nodeID="cb5c9f4954e2e25d345f4b51a0387351af8f7d2d83bd6ad34da92f6540a2bbf317"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cbc9874e1087ff37043c595204683443584aafce4be5df3da99b609d4277f146b2">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005043"/>
+    <rdf:rest rdf:nodeID="cbaa94697e87d969ac39959ba7ceb758c2012ef4578bc1794c25153af69115836d"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cbd7c96744b860be374134b6eeace4a6009e3d5947219e59b3c009836ad1012775">
+    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005057"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005007">
+    <obo:IAO_0000115 xml:lang="en">A route that carries people, vehicles or goods across the landscape: a trail, a highway, a local road, a railway or a bridge.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:label xml:lang="en">transport infrastructure</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005000"/>
+    <owl:equivalentClass rdf:nodeID="cb11b335a01cf7d552b396517524f6df370f2013755abc7348fa953648c12ab40fb"/>
+  </rdf:Description>
+</rdf:RDF>

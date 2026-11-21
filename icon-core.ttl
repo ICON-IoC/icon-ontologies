@@ -1,0 +1,403 @@
+# ICON Core ontology
+# Built by `ioc-ontologies` from ontology/src/core.terms; edit that file, not this one.
+# Guide: ontology/guides/core.md
+@prefix BFO: <http://purl.obolibrary.org/obo/BFO_> .
+@prefix COB: <http://purl.obolibrary.org/obo/COB_> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix NCBITaxon: <http://purl.obolibrary.org/obo/NCBITaxon_> .
+@prefix OBI: <http://purl.obolibrary.org/obo/OBI_> .
+@prefix RO: <http://purl.obolibrary.org/obo/RO_> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+BFO:0000050 a owl:ObjectProperty,
+        owl:TransitiveProperty ;
+    rdfs:label "part of"@en ;
+    IAO:0000115 "a core relation that holds between a part and its whole"@en ;
+    rdfs:subPropertyOf RO:0002131 ;
+    owl:inverseOf BFO:0000051 .
+
+IAO:0000115 a owl:AnnotationProperty ;
+    rdfs:label "definition" .
+
+OBI:0000299 a owl:ObjectProperty ;
+    rdfs:label "has specified output"@en ;
+    IAO:0000115 "The inverse property of is specified output of"@en ;
+    rdfs:subPropertyOf RO:0000057 ;
+    owl:inverseOf OBI:0000312 .
+
+RO:0001015 a owl:ObjectProperty,
+        owl:TransitiveProperty ;
+    rdfs:label "location of"@en ;
+    IAO:0000115 "a relation between two independent continuants, the location and the target, in which the target is entirely within the location"@en ;
+    owl:inverseOf RO:0001025 .
+
+dcterms:accessRights a owl:AnnotationProperty ;
+    rdfs:label "Access Rights"@en ;
+    rdfs:subPropertyOf dcterms:rights .
+
+dcterms:description a owl:AnnotationProperty ;
+    rdfs:label "Description"@en .
+
+dcterms:issued a owl:AnnotationProperty ;
+    rdfs:label "Date Issued"@en ;
+    rdfs:subPropertyOf dcterms:date .
+
+dcterms:license a owl:AnnotationProperty ;
+    rdfs:label "License"@en ;
+    rdfs:subPropertyOf dcterms:rights .
+
+dcterms:references a owl:AnnotationProperty .
+
+dcterms:title a owl:AnnotationProperty .
+
+oboInOwl:hasDbXref a owl:AnnotationProperty ;
+    rdfs:label "database_cross_reference" .
+
+oboInOwl:hasExactSynonym a owl:AnnotationProperty ;
+    rdfs:label "has_exact_synonym" .
+
+skos:Concept a owl:Class ;
+    rdfs:label "Concept"@en ;
+    IAO:0000115 "An idea or notion; a unit of thought."@en .
+
+skos:altLabel a owl:AnnotationProperty ;
+    rdfs:label "alternative label"@en ;
+    IAO:0000115 "An alternative lexical label for a resource."@en ;
+    rdfs:subPropertyOf rdfs:label .
+
+skos:broadMatch a owl:AnnotationProperty .
+
+skos:closeMatch a owl:AnnotationProperty .
+
+skos:exactMatch a owl:AnnotationProperty .
+
+skos:narrowMatch a owl:AnnotationProperty .
+
+skos:note a owl:AnnotationProperty ;
+    rdfs:label "note"@en ;
+    IAO:0000115 "A general note, for any purpose."@en .
+
+schema:endDate a owl:AnnotationProperty ;
+    rdfs:label "endDate"@en .
+
+schema:startDate a owl:AnnotationProperty ;
+    rdfs:label "startDate"@en .
+
+schema:url a owl:AnnotationProperty ;
+    rdfs:label "url"@en .
+
+icon:0000001 a owl:AnnotationProperty ;
+    rdfs:label "crosswalk"@en ;
+    IAO:0000115 "The matching field in a metadata standard that is not published as RDF, written as the standard's name, a colon and the field's path, such as \"EML 2.2: dataset/title\"."@en ;
+    rdfs:isDefinedBy iconbase:core.owl .
+
+icon:0000002 a owl:AnnotationProperty ;
+    rdfs:label "expected attribute"@en ;
+    IAO:0000115 "A property the records of this class are expected to carry, such as a title or a year. Records the attributes a class uses without adding domain axioms to terms borrowed from other vocabularies."@en ;
+    rdfs:isDefinedBy iconbase:core.owl .
+
+icon:0000011 a owl:Class ;
+    rdfs:label "endeavor"@en ;
+    IAO:0000115 "A planned process carried out to achieve conservation ends over a span of time: a project or a program."@en ;
+    rdfs:isDefinedBy iconbase:core.owl ;
+    rdfs:subClassOf COB:0000082 ;
+    skos:closeMatch frapo:Endeavour .
+
+icon:0000012 a owl:Class ;
+    rdfs:label "place"@en ;
+    IAO:0000115 "A part of the landscape or a structure in it that records can be located at, worked on or bounded by: a river, a reserve, a dam, a crossing structure."@en ;
+    rdfs:isDefinedBy iconbase:core.owl ;
+    rdfs:subClassOf BFO:0000004 ;
+    skos:closeMatch schema:Place .
+
+icon:0000013 a owl:Class ;
+    rdfs:label "information resource"@en ;
+    IAO:0000115 "An information content entity that records or publishes information: a data resource, a paper or a report."@en ;
+    rdfs:isDefinedBy iconbase:core.owl ;
+    rdfs:subClassOf IAO:0000030 ;
+    skos:closeMatch dcat:Resource,
+        schema:CreativeWork .
+
+icon:0000014 a owl:Class ;
+    rdfs:label "planning element"@en ;
+    IAO:0000115 "A directive information entity that sets out what conservation work should achieve or do: a plan, one of its objectives, or one of its actions."@en ;
+    rdfs:isDefinedBy iconbase:core.owl ;
+    rdfs:subClassOf IAO:0000033 .
+
+icon:0000107 a owl:ObjectProperty ;
+    rdfs:label "funded through"@en ;
+    IAO:0000115 "A program or a guideline or mandate whose money paid for the work, such as a grant program or a bond measure. A kind of funded by, naming the channel the money came through."@en ;
+    rdfs:isDefinedBy iconbase:core.owl ;
+    rdfs:subPropertyOf icon:0000105 ;
+    icon:0000001 "DataCite 4.5: fundingReference/awardTitle",
+        "EML 2.2: project/award/title" .
+
+BFO:0000001 a owl:Class ;
+    rdfs:label "entity"@en .
+
+BFO:0000015 a owl:Class ;
+    rdfs:label "process"@en .
+
+BFO:0000031 a owl:Class ;
+    rdfs:label "generically dependent continuant"@en ;
+    IAO:0000115 "b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])"@en ;
+    rdfs:subClassOf BFO:0000002 .
+
+BFO:0000040 a owl:Class ;
+    rdfs:label "material entity"@en ;
+    rdfs:subClassOf BFO:0000004 .
+
+BFO:0000051 a owl:ObjectProperty,
+        owl:TransitiveProperty ;
+    rdfs:label "has part"@en ;
+    IAO:0000115 "a core relation that holds between a whole and its part"@en ;
+    rdfs:subPropertyOf RO:0002131 .
+
+COB:0000022 a owl:Class ;
+    rdfs:label "organism"@en ;
+    IAO:0000115 "A material entity that is a maximal functionally integrated unit that develops from a program encoded in a genome"@en .
+
+COB:0000082 a owl:Class ;
+    rdfs:label "planned process"@en ;
+    IAO:0000115 "A process that is initiated by an agent who intends to carry out a plan to achieve an objective through one or more actions as described in a plan specification."@en ;
+    rdfs:subClassOf BFO:0000015 .
+
+IAO:0000033 a owl:Class ;
+    rdfs:label "directive information entity"@en ;
+    IAO:0000115 "An information content entity whose concretizations indicate to their bearer how to realize them in a process."@en ;
+    rdfs:subClassOf IAO:0000030 .
+
+NCBITaxon:117571 a owl:Class ;
+    rdfs:label "Euteleostomi"@en ;
+    rdfs:subClassOf NCBITaxon:7742 .
+
+NCBITaxon:2759 a owl:Class ;
+    rdfs:label "Eukaryota"@en ;
+    rdfs:subClassOf COB:0000022 .
+
+NCBITaxon:314146 a owl:Class ;
+    rdfs:label "Euarchontoglires"@en ;
+    rdfs:subClassOf NCBITaxon:40674 .
+
+NCBITaxon:32523 a owl:Class ;
+    rdfs:label "Tetrapoda"@en ;
+    rdfs:subClassOf NCBITaxon:117571 .
+
+NCBITaxon:32524 a owl:Class ;
+    rdfs:label "Amniota"@en ;
+    rdfs:subClassOf NCBITaxon:32523 .
+
+NCBITaxon:33154 a owl:Class ;
+    rdfs:label "Opisthokonta"@en ;
+    rdfs:subClassOf NCBITaxon:2759 .
+
+NCBITaxon:33208 a owl:Class ;
+    rdfs:label "Metazoa"@en ;
+    rdfs:subClassOf NCBITaxon:33154 .
+
+NCBITaxon:33213 a owl:Class ;
+    rdfs:label "Bilateria"@en ;
+    rdfs:subClassOf NCBITaxon:33208 .
+
+NCBITaxon:40674 a owl:Class ;
+    rdfs:label "Mammalia"@en ;
+    rdfs:subClassOf NCBITaxon:32524 .
+
+NCBITaxon:7742 a owl:Class ;
+    rdfs:label "Vertebrata <vertebrates>"@en ;
+    rdfs:subClassOf NCBITaxon:33213 .
+
+NCBITaxon:9606 a owl:Class ;
+    rdfs:label "Homo sapiens"@en ;
+    rdfs:subClassOf NCBITaxon:314146 .
+
+OBI:0000245 a owl:Class ;
+    rdfs:label "organization"@en ;
+    IAO:0000115 "An organization is a continuant entity which can play roles,  has members, and has a set of organization rules.  Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members."@en ;
+    rdfs:subClassOf BFO:0000004 .
+
+OBI:0000312 a owl:ObjectProperty ;
+    rdfs:label "is specified output of"@en ;
+    IAO:0000115 "A relation between a completely executed planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of."@en ;
+    rdfs:subPropertyOf RO:0000056 .
+
+RO:0000056 a owl:ObjectProperty ;
+    rdfs:label "participates in"@en ;
+    IAO:0000115 "a relation between a continuant and a process, in which the continuant is somehow involved in the process"@en .
+
+RO:0000057 a owl:ObjectProperty ;
+    rdfs:label "has participant"@en ;
+    IAO:0000115 "a relation between a process and a continuant, in which the continuant is somehow involved in the process"@en .
+
+RO:0001025 a owl:ObjectProperty,
+        owl:TransitiveProperty ;
+    rdfs:label "located in"@en ;
+    IAO:0000115 "a relation between two independent continuants, the target and the location, in which the target is entirely within the location"@en .
+
+RO:0002323 a owl:ObjectProperty ;
+    rdfs:label "mereotopologically related to"@en ;
+    IAO:0000115 "A mereological relationship or a topological relationship"@en .
+
+dcterms:creator a owl:AnnotationProperty .
+
+dcterms:date a owl:AnnotationProperty ;
+    rdfs:label "Date"@en .
+
+icon:0000101 a owl:ObjectProperty ;
+    rdfs:label "led by"@en ;
+    IAO:0000115 "An organization or person that directs the work and answers for it."@en ;
+    rdfs:isDefinedBy iconbase:core.owl ;
+    rdfs:range icon:0000010 ;
+    rdfs:subPropertyOf icon:0000100 ;
+    owl:inverseOf icon:0000102 .
+
+icon:0000102 a owl:ObjectProperty ;
+    rdfs:label "leads"@en ;
+    IAO:0000115 "An organization or person directs this work: the reverse of led by."@en ;
+    rdfs:domain icon:0000010 ;
+    rdfs:isDefinedBy iconbase:core.owl ;
+    rdfs:subPropertyOf icon:0000100 ;
+    owl:inverseOf icon:0000101 .
+
+icon:0000103 a owl:ObjectProperty ;
+    rdfs:label "used by"@en ;
+    IAO:0000115 "An organization, project or program relies on this place, data or tool in its work."@en ;
+    rdfs:isDefinedBy iconbase:core.owl ;
+    rdfs:subPropertyOf icon:0000100 ;
+    owl:inverseOf icon:0000104 ;
+    icon:0000001 "ISO 19115-1: CI_RoleCode user" .
+
+icon:0000104 a owl:ObjectProperty ;
+    rdfs:label "uses"@en ;
+    IAO:0000115 "The record relies on this place or data in its work: the reverse of used by."@en ;
+    rdfs:isDefinedBy iconbase:core.owl ;
+    rdfs:subPropertyOf icon:0000100 ;
+    owl:inverseOf icon:0000103 .
+
+icon:0000106 a owl:ObjectProperty ;
+    rdfs:label "funds"@en ;
+    IAO:0000115 "The organization or funding source pays for this work, data or publication: the reverse of funded by and of funded through."@en ;
+    rdfs:isDefinedBy iconbase:core.owl ;
+    rdfs:subPropertyOf icon:0000100 ;
+    owl:inverseOf icon:0000105 ;
+    skos:closeMatch frapo:funds .
+
+icon:0000108 a owl:ObjectProperty ;
+    rdfs:label "was created by"@en ;
+    IAO:0000115 "The organization or person that produced the record's subject, or the guideline or mandate that brought an organization into being."@en ;
+    rdfs:isDefinedBy iconbase:core.owl ;
+    rdfs:subPropertyOf icon:0000100 ;
+    owl:inverseOf icon:0000109 ;
+    skos:closeMatch dcterms:creator,
+        schema:creator ;
+    icon:0000001 "DataCite 4.5: creator",
+        "EML 2.2: dataset/creator",
+        "ISO 19115-1: CI_RoleCode originator" .
+
+icon:0000109 a owl:ObjectProperty ;
+    rdfs:label "created"@en ;
+    IAO:0000115 "The organization, person or mandate produced this: the reverse of was created by."@en ;
+    rdfs:isDefinedBy iconbase:core.owl ;
+    rdfs:subPropertyOf icon:0000100 ;
+    owl:inverseOf icon:0000108 .
+
+icon:0000110 a owl:ObjectProperty ;
+    rdfs:label "informs"@en ;
+    IAO:0000115 "The data or publication is drawn on by a plan, an objective, an action or a guideline or mandate, as survey counts inform a recovery objective."@en ;
+    rdfs:isDefinedBy iconbase:core.owl ;
+    owl:inverseOf icon:0000111 ;
+    skos:broadMatch dcterms:relation .
+
+icon:0000111 a owl:ObjectProperty ;
+    rdfs:label "is informed by"@en ;
+    IAO:0000115 "The plan, objective, action or mandate draws on this data or publication: the reverse of informs."@en ;
+    rdfs:isDefinedBy iconbase:core.owl ;
+    owl:inverseOf icon:0000110 .
+
+BFO:0000002 a owl:Class ;
+    rdfs:label "continuant"@en ;
+    rdfs:subClassOf BFO:0000001 .
+
+IAO:0000030 a owl:Class ;
+    rdfs:label "information content entity"@en ;
+    IAO:0000115 "A generically dependent continuant that is about some thing."@en ;
+    rdfs:subClassOf BFO:0000031 .
+
+RO:0002131 a owl:ObjectProperty,
+        owl:SymmetricProperty ;
+    rdfs:label "overlaps"@en ;
+    IAO:0000115 "x overlaps y if and only if there exists some z such that x has part z and z part of y"@en ;
+    rdfs:subPropertyOf RO:0002323 .
+
+dcterms:rights a owl:AnnotationProperty ;
+    rdfs:label "Rights"@en .
+
+icon:0000010 a owl:Class ;
+    rdfs:label "agent"@en ;
+    IAO:0000115 "An organization or a person: something that can lead, fund, own, manage or take part in conservation work."@en ;
+    rdfs:isDefinedBy iconbase:core.owl ;
+    rdfs:subClassOf BFO:0000040 ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf ( OBI:0000245 NCBITaxon:9606 ) ] ;
+    skos:closeMatch prov:Agent,
+        foaf:Agent .
+
+icon:0000105 a owl:ObjectProperty ;
+    rdfs:label "funded by"@en ;
+    IAO:0000115 "An organization or funding source that paid for the work, the data or the publication."@en ;
+    rdfs:isDefinedBy iconbase:core.owl ;
+    rdfs:subPropertyOf icon:0000100 ;
+    owl:inverseOf icon:0000106 ;
+    skos:closeMatch frapo:isFundedBy,
+        schema:funder ;
+    icon:0000001 "DataCite 4.5: fundingReference/funderName",
+        "EML 2.2: project/award/funderName",
+        "ISO 19115-1: CI_RoleCode funder" .
+
+BFO:0000004 a owl:Class ;
+    rdfs:label "independent continuant"@en ;
+    IAO:0000115 "b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])"@en ;
+    rdfs:subClassOf BFO:0000002 .
+
+icon:0000100 a owl:ObjectProperty,
+        owl:SymmetricProperty ;
+    rdfs:label "is involved with"@en ;
+    IAO:0000115 "A link between two records that work together or affect one another. Every more specific involvement link (leads, funds, manages, uses, is partner of and others) implies it."@en ;
+    rdfs:isDefinedBy iconbase:core.owl ;
+    skos:broadMatch dcterms:relation .
+
+iconbase:core.owl a owl:Ontology ;
+    dcterms:creator "Internet of Conservation (ICON)" ;
+    dcterms:description "The shared top of the ICON ontologies: the broad kinds of record (agent, endeavor, place, information resource, planning element), the involvement and funding links every kind of record uses, and the annotation properties the other modules share. Every other module builds on it."@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references obo:bfo.owl,
+        obo:cob.owl,
+        obo:iao.owl,
+        obo:ncbitaxon.owl,
+        obo:obi.owl,
+        obo:ro.owl,
+        <http://purl.org/cerif/frapo>,
+        dcterms:,
+        <http://www.w3.org/2004/02/skos/core>,
+        <http://www.w3.org/ns/dcat>,
+        <http://www.w3.org/ns/prov-o>,
+        foaf:,
+        schema: ;
+    dcterms:title "ICON Core ontology"@en ;
+    rdfs:comment "Existing ontologies used. Reused: Basic Formal Ontology, Dublin Core terms, Ontology for Biomedical Investigations, Relation Ontology, SKOS, schema.org. Built on: Basic Formal Ontology, Core Ontology for Biology and Biomedicine, Information Artifact Ontology, NCBI organismal classification, Ontology for Biomedical Investigations. Mapped to: DCAT 3 (W3C Data Catalog Vocabulary), Dublin Core terms, FOAF, Funding, Research Administration and Projects Ontology (FRAPO), PROV-O (W3C provenance), schema.org."@en ;
+    owl:versionIRI <https://w3id.org/icon/releases/2026-11-21/core.owl> ;
+    owl:versionInfo "2026-11-21" .
+

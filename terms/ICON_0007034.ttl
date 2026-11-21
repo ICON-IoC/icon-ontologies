@@ -1,0 +1,12 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0007034 a owl:Class ;
+    rdfs:label "joint venture implementation plan"@en ;
+    IAO:0000115 "A conservation plan for the region of one Migratory Bird Joint Venture, the voluntary, non-regulatory partnerships of agencies, organizations and landowners set up under the North American Waterfowl Management Plan and administered by the U.S. Fish and Wildlife Service, that steps continental bird population objectives down to the region, sets habitat goals in acres to protect, restore and enhance, and names the partnership's priorities and strategies for reaching them. The partners carry out the projects; the plan binds no one. Example: the San Francisco Bay Joint Venture's 2022 Implementation Strategy, Restoring the Estuary."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+

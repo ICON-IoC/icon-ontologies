@@ -1,0 +1,19 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+icon:0011108 a owl:ObjectProperty ;
+    rdfs:label "has broader habitat type"@en ;
+    IAO:0000115 "Links a habitat or vegetation type to a broader one that contains it: an MCV alliance to its USNVC group, a group to its macrogroup, a CMECS unit to the unit above it, a GET functional group to its biome and a biome to its realm, and an alliance or CMECS unit to the one CWHR habitat type it falls in. A record that has the narrower type has the broader one too (#1409, #1410, #1411)."@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( icon:0011001 icon:0011004 icon:0011005 icon:0011006 ) ] ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( icon:0011001 icon:0011004 icon:0011005 icon:0011006 ) ] ;
+    owl:inverseOf icon:0011109 ;
+    skos:exactMatch skos:broader .
+

@@ -1,0 +1,15 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0005007 a owl:Class ;
+    rdfs:label "transport infrastructure"@en ;
+    IAO:0000115 "A route that carries people, vehicles or goods across the landscape: a trail, a highway, a local road, a railway or a bridge."@en ;
+    rdfs:isDefinedBy iconbase:infrastructure.owl ;
+    rdfs:subClassOf icon:0005000 ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf ( icon:0005043 icon:0005044 icon:0005045 icon:0005046 icon:0005057 ) ] .
+

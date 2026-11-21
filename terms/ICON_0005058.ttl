@@ -1,0 +1,13 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0005058 a owl:Class ;
+    rdfs:label "species recovery area"@en ;
+    IAO:0000115 "An area that a federal or state recovery plan designates as essential to the recovery of listed species, such as a core area whose habitat the plan says to protect, without itself being protected. Example: the Mather Core Recovery Area of the 2005 Recovery Plan for Vernal Pool Ecosystems of California and Southern Oregon, where the South Sacramento HCP must mitigate vernal pool losses."@en ;
+    rdfs:comment "Added for the vernal pool core recovery areas named by the South Sacramento HCP (#1390)."@en ;
+    rdfs:isDefinedBy iconbase:infrastructure.owl ;
+    rdfs:subClassOf icon:0005002 .
+

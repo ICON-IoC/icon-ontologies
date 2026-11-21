@@ -1,0 +1,13 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0005050 a owl:Class ;
+    rdfs:label "native plant nursery"@en ;
+    IAO:0000115 "A farm or nursery that grows native plants and their seed from local wild sources for habitat restoration, rather than for sale or food."@en ;
+    rdfs:comment "Added for Irvine Ranch Conservancy's Native Seed Farm in Irvine (#793)."@en ;
+    rdfs:isDefinedBy iconbase:infrastructure.owl ;
+    rdfs:subClassOf icon:0005002 .
+

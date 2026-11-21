@@ -1,0 +1,772 @@
+# ICON Data ontology
+# Built by `ioc-ontologies` from ontology/src/data.terms; edit that file, not this one.
+# Guide: ontology/guides/data.md
+@prefix BFO: <http://purl.obolibrary.org/obo/BFO_> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix OBI: <http://purl.obolibrary.org/obo/OBI_> .
+@prefix access: <http://publications.europa.eu/resource/authority/access-right/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix freq: <http://publications.europa.eu/resource/authority/frequency/> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+freq:ANNUAL a owl:NamedIndividual ;
+    rdfs:label "annual"@en ;
+    IAO:0000115 "The event occurs once a year."@en .
+
+freq:BIENNIAL a owl:NamedIndividual ;
+    rdfs:label "biennial"@en ;
+    IAO:0000115 "The event occurs every two years."@en .
+
+freq:CONT a owl:NamedIndividual ;
+    rdfs:label "continuous"@en ;
+    IAO:0000115 "The item is updated more frequent than daily."@en .
+
+freq:DAILY a owl:NamedIndividual ;
+    rdfs:label "daily"@en ;
+    IAO:0000115 "The event occurs once a day."@en .
+
+freq:IRREG a owl:NamedIndividual ;
+    rdfs:label "irregular"@en ;
+    IAO:0000115 "The event occurs at uneven intervals."@en .
+
+freq:MONTHLY a owl:NamedIndividual ;
+    rdfs:label "monthly"@en ;
+    IAO:0000115 "The event occurs once a month."@en .
+
+freq:NEVER a owl:NamedIndividual ;
+    rdfs:label "never"@en ;
+    IAO:0000115 "The item is never updated."@en .
+
+freq:QUARTERLY a owl:NamedIndividual ;
+    rdfs:label "quarterly"@en ;
+    IAO:0000115 "The event occurs every three months."@en .
+
+freq:QUINQUENNIAL a owl:NamedIndividual ;
+    rdfs:label "quinquennial"@en ;
+    IAO:0000115 "The event occurs every five years."@en .
+
+freq:WEEKLY a owl:NamedIndividual ;
+    rdfs:label "weekly"@en ;
+    IAO:0000115 "The event occurs once a week."@en .
+
+IAO:0000115 a owl:AnnotationProperty ;
+    rdfs:label "definition" .
+
+dcterms:Frequency a owl:Class ;
+    rdfs:label "Frequency"@en .
+
+dcterms:creator a owl:AnnotationProperty .
+
+dcterms:references a owl:AnnotationProperty .
+
+dcterms:title a owl:AnnotationProperty .
+
+oboInOwl:hasDbXref a owl:AnnotationProperty ;
+    rdfs:label "database_cross_reference" .
+
+oboInOwl:hasExactSynonym a owl:AnnotationProperty ;
+    rdfs:label "has_exact_synonym" .
+
+skos:broadMatch a owl:AnnotationProperty .
+
+skos:closeMatch a owl:AnnotationProperty .
+
+skos:exactMatch a owl:AnnotationProperty .
+
+skos:narrowMatch a owl:AnnotationProperty .
+
+icon:0000001 a owl:AnnotationProperty ;
+    rdfs:label "crosswalk"@en ;
+    IAO:0000115 "The matching field in a metadata standard that is not published as RDF, written as the standard's name, a colon and the field's path, such as \"EML 2.2: dataset/title\"."@en ;
+    rdfs:isDefinedBy iconbase:core.owl .
+
+icon:0000002 a owl:AnnotationProperty ;
+    rdfs:label "expected attribute"@en ;
+    IAO:0000115 "A property the records of this class are expected to carry, such as a title or a year. Records the attributes a class uses without adding domain axioms to terms borrowed from other vocabularies."@en ;
+    rdfs:isDefinedBy iconbase:core.owl .
+
+icon:0008011 a owl:NamedIndividual,
+        icon:0008010 ;
+    rdfs:label "image data format"@en ;
+    IAO:0000115 "Photographs or scanned images."@en ;
+    rdfs:isDefinedBy iconbase:data.owl .
+
+icon:0008012 a owl:NamedIndividual,
+        icon:0008010 ;
+    rdfs:label "raster data format"@en ;
+    IAO:0000115 "A grid of cells, each with a value, such as a land cover map or a climate surface."@en ;
+    rdfs:isDefinedBy iconbase:data.owl .
+
+icon:0008013 a owl:NamedIndividual,
+        icon:0008010 ;
+    rdfs:label "shapefile data format"@en ;
+    IAO:0000115 "Points, lines or polygons with attributes, in the Esri shapefile or a similar vector format."@en ;
+    rdfs:isDefinedBy iconbase:data.owl .
+
+icon:0008014 a owl:NamedIndividual,
+        icon:0008010 ;
+    rdfs:label "tabular data format"@en ;
+    IAO:0000115 "Rows and columns, as a spreadsheet or a database table."@en ;
+    rdfs:isDefinedBy iconbase:data.owl .
+
+icon:0008015 a owl:NamedIndividual,
+        icon:0008010 ;
+    rdfs:label "map data format"@en ;
+    IAO:0000115 "A finished map, interactive on the web or printed, made for people to read rather than as data to analyse. Mostly a tool's output."@en ;
+    rdfs:isDefinedBy iconbase:data.owl .
+
+icon:0008016 a owl:NamedIndividual,
+        icon:0008010 ;
+    rdfs:label "report data format"@en ;
+    IAO:0000115 "A written document, such as a PDF report or a site summary. Mostly a tool's output."@en ;
+    rdfs:isDefinedBy iconbase:data.owl .
+
+icon:0008021 a owl:NamedIndividual,
+        icon:0008020 ;
+    rdfs:label "open data access"@en ;
+    IAO:0000115 "Anyone can download the data without signing in."@en ;
+    rdfs:isDefinedBy iconbase:data.owl ;
+    skos:closeMatch access:PUBLIC ;
+    icon:0000001 "DCAT-US 1.1: accessLevel public" .
+
+icon:0008022 a owl:NamedIndividual,
+        icon:0008020 ;
+    rdfs:label "open access with registration"@en ;
+    IAO:0000115 "The data is free after creating an account or accepting terms."@en ;
+    rdfs:isDefinedBy iconbase:data.owl ;
+    skos:broadMatch access:PUBLIC ;
+    icon:0000001 "DCAT-US 1.1: accessLevel public" .
+
+icon:0008023 a owl:NamedIndividual,
+        icon:0008020 ;
+    rdfs:label "sensitive locations withheld"@en ;
+    IAO:0000115 "The data is published with sensitive detail, such as rare species locations, generalized or held back unless a request is approved."@en ;
+    rdfs:isDefinedBy iconbase:data.owl ;
+    skos:broadMatch access:RESTRICTED ;
+    icon:0000001 "DCAT-US 1.1: accessLevel restricted public" .
+
+icon:0008024 a owl:NamedIndividual,
+        icon:0008020 ;
+    rdfs:label "access by request or license"@en ;
+    IAO:0000115 "The data is available only through an agreement, a subscription or a fee."@en ;
+    rdfs:isDefinedBy iconbase:data.owl ;
+    skos:closeMatch access:RESTRICTED ;
+    icon:0000001 "DCAT-US 1.1: accessLevel restricted public" .
+
+icon:0008025 a owl:NamedIndividual,
+        icon:0008020 ;
+    rdfs:label "data not public"@en ;
+    IAO:0000115 "The data is held for its creator's own use."@en ;
+    rdfs:isDefinedBy iconbase:data.owl ;
+    skos:closeMatch access:NON_PUBLIC ;
+    icon:0000001 "DCAT-US 1.1: accessLevel non-public" .
+
+icon:0008031 a owl:NamedIndividual,
+        icon:0008030 ;
+    rdfs:label "hourly resolution"@en ;
+    IAO:0000115 "A value every hour."@en ;
+    oboInOwl:hasDbXref "ISO8601:PT1H" ;
+    rdfs:isDefinedBy iconbase:data.owl .
+
+icon:0008032 a owl:NamedIndividual,
+        icon:0008030 ;
+    rdfs:label "daily resolution"@en ;
+    IAO:0000115 "A value every day."@en ;
+    oboInOwl:hasDbXref "ISO8601:P1D" ;
+    rdfs:isDefinedBy iconbase:data.owl .
+
+icon:0008033 a owl:NamedIndividual,
+        icon:0008030 ;
+    rdfs:label "weekly resolution"@en ;
+    IAO:0000115 "A value every week."@en ;
+    oboInOwl:hasDbXref "ISO8601:P1W" ;
+    rdfs:isDefinedBy iconbase:data.owl .
+
+icon:0008034 a owl:NamedIndividual,
+        icon:0008030 ;
+    rdfs:label "monthly resolution"@en ;
+    IAO:0000115 "A value every month."@en ;
+    oboInOwl:hasDbXref "ISO8601:P1M" ;
+    rdfs:isDefinedBy iconbase:data.owl .
+
+icon:0008035 a owl:NamedIndividual,
+        icon:0008030 ;
+    rdfs:label "annual resolution"@en ;
+    IAO:0000115 "A value every year."@en ;
+    oboInOwl:hasDbXref "ISO8601:P1Y" ;
+    rdfs:isDefinedBy iconbase:data.owl .
+
+icon:0008036 a owl:NamedIndividual,
+        icon:0008030 ;
+    rdfs:label "multi-year resolution"@en ;
+    IAO:0000115 "Values for periods longer than a year, such as decades."@en ;
+    rdfs:isDefinedBy iconbase:data.owl .
+
+icon:0008037 a owl:NamedIndividual,
+        icon:0008030 ;
+    rdfs:label "single snapshot"@en ;
+    IAO:0000115 "One point or period in time."@en ;
+    rdfs:isDefinedBy iconbase:data.owl .
+
+icon:0008041 a owl:NamedIndividual,
+        icon:0008040 ;
+    rdfs:label "individual person unit"@en ;
+    IAO:0000115 "Data recorded person by person."@en ;
+    rdfs:isDefinedBy iconbase:data.owl .
+
+icon:0008042 a owl:NamedIndividual,
+        icon:0008040 ;
+    rdfs:label "household unit"@en ;
+    IAO:0000115 "Data recorded household by household."@en ;
+    rdfs:isDefinedBy iconbase:data.owl .
+
+icon:0008043 a owl:NamedIndividual,
+        icon:0008040 ;
+    rdfs:label "parcel or landowner unit"@en ;
+    IAO:0000115 "Data recorded by land parcel or landowner."@en ;
+    rdfs:isDefinedBy iconbase:data.owl .
+
+icon:0008044 a owl:NamedIndividual,
+        icon:0008040 ;
+    rdfs:label "organization unit"@en ;
+    IAO:0000115 "Data recorded organization by organization."@en ;
+    rdfs:isDefinedBy iconbase:data.owl .
+
+icon:0008045 a owl:NamedIndividual,
+        icon:0008040 ;
+    rdfs:label "census block group unit"@en ;
+    IAO:0000115 "Data recorded by Census block group."@en ;
+    rdfs:isDefinedBy iconbase:data.owl .
+
+icon:0008046 a owl:NamedIndividual,
+        icon:0008040 ;
+    rdfs:label "census tract unit"@en ;
+    IAO:0000115 "Data recorded by Census tract."@en ;
+    rdfs:isDefinedBy iconbase:data.owl .
+
+icon:0008047 a owl:NamedIndividual,
+        icon:0008040 ;
+    rdfs:label "city or town unit"@en ;
+    IAO:0000115 "Data recorded by city or town."@en ;
+    rdfs:isDefinedBy iconbase:data.owl .
+
+icon:0008048 a owl:NamedIndividual,
+        icon:0008040 ;
+    rdfs:label "county unit"@en ;
+    IAO:0000115 "Data recorded by county."@en ;
+    rdfs:isDefinedBy iconbase:data.owl .
+
+icon:0008081 a owl:NamedIndividual,
+        icon:0008080 ;
+    rdfs:label "observation records"@en ;
+    IAO:0000115 "Individual sightings or detections of a species or feature, each with a place and a date, such as CNDDB occurrences or camera trap detections."@en ;
+    rdfs:isDefinedBy iconbase:data.owl .
+
+icon:0008082 a owl:NamedIndividual,
+        icon:0008080 ;
+    rdfs:label "survey and monitoring data"@en ;
+    IAO:0000115 "Measurements taken by a protocol across sites or over time: counts, plots, catch, water samples."@en ;
+    rdfs:isDefinedBy iconbase:data.owl .
+
+icon:0008083 a owl:NamedIndividual,
+        icon:0008080 ;
+    rdfs:label "species range or distribution"@en ;
+    IAO:0000115 "Where a species lives or is known to occur, mapped as a range or distribution."@en ;
+    rdfs:isDefinedBy iconbase:data.owl .
+
+icon:0008084 a owl:NamedIndividual,
+        icon:0008080 ;
+    rdfs:label "habitat suitability model"@en ;
+    IAO:0000115 "Modelled predictions of where habitat is suitable for a species or community."@en ;
+    rdfs:isDefinedBy iconbase:data.owl .
+
+icon:0008085 a owl:NamedIndividual,
+        icon:0008080 ;
+    rdfs:label "land cover or vegetation map"@en ;
+    IAO:0000115 "A map of what covers the land: vegetation types, crops, forest structure, developed and bare ground."@en ;
+    rdfs:isDefinedBy iconbase:data.owl .
+
+icon:0008086 a owl:NamedIndividual,
+        icon:0008080 ;
+    rdfs:label "satellite and aerial imagery"@en ;
+    IAO:0000115 "Images of the ground taken from satellites, aircraft or drones, and products derived directly from them."@en ;
+    rdfs:isDefinedBy iconbase:data.owl .
+
+icon:0008087 a owl:NamedIndividual,
+        icon:0008080 ;
+    rdfs:label "elevation model"@en ;
+    IAO:0000115 "A surface of ground elevation, slope or water depth (bathymetry)."@en ;
+    rdfs:isDefinedBy iconbase:data.owl .
+
+icon:0008088 a owl:NamedIndividual,
+        icon:0008080 ;
+    rdfs:label "climate grids and projections"@en ;
+    IAO:0000115 "Gridded climate variables, observed or projected, such as temperature, precipitation or evapotranspiration."@en ;
+    rdfs:isDefinedBy iconbase:data.owl .
+
+icon:0008089 a owl:NamedIndividual,
+        icon:0008080 ;
+    rdfs:label "stream and water network"@en ;
+    IAO:0000115 "Mapped streams, rivers, lakes, wetlands and the barriers, diversions and conveyances on them."@en ;
+    rdfs:isDefinedBy iconbase:data.owl .
+
+icon:0008090 a owl:NamedIndividual,
+        icon:0008080 ;
+    rdfs:label "sensor time series"@en ;
+    IAO:0000115 "Readings over time from gauges, weather stations or other sensors."@en ;
+    rdfs:isDefinedBy iconbase:data.owl .
+
+icon:0008091 a owl:NamedIndividual,
+        icon:0008080 ;
+    rdfs:label "boundaries and areas"@en ;
+    IAO:0000115 "Administrative, planning, regulatory and survey boundaries, and the areas a user draws or picks."@en ;
+    rdfs:isDefinedBy iconbase:data.owl .
+
+icon:0008092 a owl:NamedIndividual,
+        icon:0008080 ;
+    rdfs:label "parcels and ownership"@en ;
+    IAO:0000115 "Land parcels and records of who owns or holds rights in them, such as easements."@en ;
+    rdfs:isDefinedBy iconbase:data.owl .
+
+icon:0008093 a owl:NamedIndividual,
+        icon:0008080 ;
+    rdfs:label "infrastructure locations"@en ;
+    IAO:0000115 "Mapped locations of built structures and facilities: roads, ports, crossings, stations, platforms."@en ;
+    rdfs:isDefinedBy iconbase:data.owl .
+
+icon:0008094 a owl:NamedIndividual,
+        icon:0008080 ;
+    rdfs:label "scenarios and settings"@en ;
+    IAO:0000115 "Choices a user enters: practices, targets, parameters, costs, management or development scenarios."@en ;
+    rdfs:isDefinedBy iconbase:data.owl .
+
+icon:0008095 a owl:NamedIndividual,
+        icon:0008080 ;
+    rdfs:label "estimates and indices"@en ;
+    IAO:0000115 "Computed values: estimates of carbon, cost or yield, and scores, ranks or indices that compare places or options."@en ;
+    rdfs:isDefinedBy iconbase:data.owl .
+
+icon:0008096 a owl:NamedIndividual,
+        icon:0008080 ;
+    rdfs:label "project records"@en ;
+    IAO:0000115 "Records of conservation projects: where they are, what they do, their funding and status."@en ;
+    rdfs:isDefinedBy iconbase:data.owl .
+
+icon:0008097 a owl:NamedIndividual,
+        icon:0008080 ;
+    rdfs:label "funding opportunities"@en ;
+    IAO:0000115 "Listings of grants, loans and other funding that people can apply for: the funder, what it pays for, award size and deadline."@en ;
+    rdfs:isDefinedBy iconbase:data.owl .
+
+BFO:0000001 a owl:Class ;
+    rdfs:label "entity"@en .
+
+BFO:0000031 a owl:Class ;
+    rdfs:label "generically dependent continuant"@en ;
+    IAO:0000115 "b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])"@en ;
+    rdfs:subClassOf BFO:0000002 .
+
+IAO:0000027 a owl:Class ;
+    rdfs:label "data entity"@en ;
+    IAO:0000115 "An information content entity that is intended to be one or more truthful statement(s) about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements."@en ;
+    rdfs:subClassOf IAO:0000030 .
+
+IAO:0000033 a owl:Class ;
+    rdfs:label "directive information entity"@en ;
+    IAO:0000115 "An information content entity whose concretizations indicate to their bearer how to realize them in a process."@en ;
+    rdfs:subClassOf IAO:0000030 .
+
+dcterms:accessRights a owl:AnnotationProperty ;
+    rdfs:label "Access Rights"@en ;
+    rdfs:subPropertyOf dcterms:rights .
+
+dcterms:accrualPeriodicity a owl:AnnotationProperty ;
+    rdfs:label "Accrual Periodicity"@en .
+
+dcterms:date a owl:AnnotationProperty ;
+    rdfs:label "Date"@en .
+
+dcterms:description a owl:AnnotationProperty ;
+    rdfs:label "Description"@en .
+
+dcterms:identifier a owl:AnnotationProperty ;
+    rdfs:label "Identifier"@en .
+
+dcterms:issued a owl:AnnotationProperty ;
+    rdfs:label "Date Issued"@en ;
+    rdfs:subPropertyOf dcterms:date .
+
+dcterms:license a owl:AnnotationProperty ;
+    rdfs:label "License"@en ;
+    rdfs:subPropertyOf dcterms:rights .
+
+dcat:keyword a owl:AnnotationProperty ;
+    rdfs:label "keyword"@en ;
+    IAO:0000115 "A keyword or tag describing a resource."@en .
+
+dcat:temporalResolution a owl:AnnotationProperty ;
+    rdfs:label "temporal resolution"@en ;
+    IAO:0000115 "minimum time period resolvable in a dataset."@en .
+
+dcat:version a owl:AnnotationProperty ;
+    rdfs:label "version"@en ;
+    IAO:0000115 "The version indicator (name or identifier) of a resource."@en .
+
+icon:0000012 a owl:Class ;
+    rdfs:label "place"@en ;
+    IAO:0000115 "A part of the landscape or a structure in it that records can be located at, worked on or bounded by: a river, a reserve, a dam, a crossing structure."@en ;
+    rdfs:isDefinedBy iconbase:core.owl ;
+    rdfs:subClassOf BFO:0000004 .
+
+icon:0000013 a owl:Class ;
+    rdfs:label "information resource"@en ;
+    IAO:0000115 "An information content entity that records or publishes information: a data resource, a paper or a report."@en ;
+    rdfs:isDefinedBy iconbase:core.owl ;
+    rdfs:subClassOf IAO:0000030 .
+
+icon:0008001 a owl:Class ;
+    rdfs:label "dataset"@en ;
+    IAO:0000115 "One collection of data published as a unit by its creator, such as a map layer, a table or a time series. Example: Cropland Data Layer."@en ;
+    rdfs:isDefinedBy iconbase:data.owl ;
+    rdfs:subClassOf IAO:0001000,
+        icon:0008000 ;
+    skos:closeMatch dcat:Dataset,
+        schema:Dataset ;
+    icon:0000001 "DataCite 4.5: resourceTypeGeneral Dataset",
+        "EML 2.2: dataset",
+        "ISO 19115-1: MD_ScopeCode dataset" .
+
+icon:0008002 a owl:Class ;
+    rdfs:label "database"@en ;
+    IAO:0000115 "A maintained collection of related datasets kept together under one design, usually by one organization and usually queryable. Its datasets are part of it. Example: California Natural Diversity Database."@en ;
+    rdfs:isDefinedBy iconbase:data.owl ;
+    rdfs:subClassOf IAO:0001000,
+        icon:0008000 ;
+    skos:closeMatch dcat:Dataset,
+        schema:Dataset ;
+    icon:0000001 "DataCite 4.5: resourceTypeGeneral Dataset" .
+
+icon:0008100 a owl:ObjectProperty ;
+    rdfs:label "has data level"@en ;
+    IAO:0000115 "Links a data resource to the level class it belongs to: dataset, database or data repository. The explorer's way of stating its class, so it can filter and colour by level."@en ;
+    rdfs:domain icon:0008000 ;
+    rdfs:isDefinedBy iconbase:data.owl ;
+    owl:inverseOf icon:0008101 .
+
+icon:0008101 a owl:ObjectProperty ;
+    rdfs:label "is data level of"@en ;
+    IAO:0000115 "The reverse of has data level."@en ;
+    rdfs:isDefinedBy iconbase:data.owl ;
+    rdfs:range icon:0008000 ;
+    owl:inverseOf icon:0008100 .
+
+icon:0008102 a owl:ObjectProperty ;
+    rdfs:label "has data type"@en ;
+    IAO:0000115 "A kind of data the record is, or the form it comes in, from the Data type list."@en ;
+    rdfs:domain icon:0008000 ;
+    rdfs:isDefinedBy iconbase:data.owl ;
+    rdfs:range icon:0008080 ;
+    owl:inverseOf icon:0008103 ;
+    skos:closeMatch dcterms:format,
+        dcterms:type .
+
+icon:0008103 a owl:ObjectProperty ;
+    rdfs:label "is data type of"@en ;
+    IAO:0000115 "The reverse of has data type."@en ;
+    rdfs:domain icon:0008080 ;
+    rdfs:isDefinedBy iconbase:data.owl ;
+    rdfs:range icon:0008000 ;
+    owl:inverseOf icon:0008102 .
+
+icon:0008104 a owl:ObjectProperty ;
+    rdfs:label "is held in"@en ;
+    IAO:0000115 "A dataset, database or smaller repository is held and published by a repository. One resource can be held in several."@en ;
+    rdfs:domain icon:0008000 ;
+    rdfs:isDefinedBy iconbase:data.owl ;
+    rdfs:range icon:0008003 ;
+    owl:inverseOf icon:0008105 ;
+    skos:closeMatch schema:includedInDataCatalog .
+
+icon:0008105 a owl:ObjectProperty ;
+    rdfs:label "holds"@en ;
+    IAO:0000115 "The reverse of is held in."@en ;
+    rdfs:domain icon:0008003 ;
+    rdfs:isDefinedBy iconbase:data.owl ;
+    rdfs:range icon:0008000 ;
+    owl:inverseOf icon:0008104 ;
+    skos:closeMatch dcat:dataset .
+
+icon:0008106 a owl:ObjectProperty ;
+    rdfs:label "is hosted by"@en ;
+    IAO:0000115 "The organization that runs the systems the data is served from. The Dataset Dictionary's Host role."@en ;
+    rdfs:domain icon:0008000 ;
+    rdfs:isDefinedBy iconbase:data.owl ;
+    rdfs:range OBI:0000245 ;
+    owl:inverseOf icon:0008107 ;
+    skos:closeMatch schema:provider ;
+    icon:0000001 "DataCite 4.5: contributorType HostingInstitution",
+        "ISO 19115-1: CI_RoleCode custodian" .
+
+icon:0008107 a owl:ObjectProperty ;
+    rdfs:label "hosts"@en ;
+    IAO:0000115 "The reverse of is hosted by."@en ;
+    rdfs:domain OBI:0000245 ;
+    rdfs:isDefinedBy iconbase:data.owl ;
+    rdfs:range icon:0008000 ;
+    owl:inverseOf icon:0008106 .
+
+icon:0008108 a owl:ObjectProperty ;
+    rdfs:label "is derived from"@en ;
+    IAO:0000115 "Data built from other data, such as a connectivity map made from land cover and roads."@en ;
+    rdfs:domain icon:0008000 ;
+    rdfs:isDefinedBy iconbase:data.owl ;
+    rdfs:range icon:0008000 ;
+    owl:inverseOf icon:0008109 ;
+    skos:closeMatch prov:wasDerivedFrom,
+        schema:isBasedOn ;
+    icon:0000001 "DataCite 4.5: relatedIdentifier relationType IsDerivedFrom",
+        "EML 2.2: methods/methodStep/dataSource",
+        "ISO 19115-1: LI_Lineage/source" .
+
+icon:0008109 a owl:ObjectProperty ;
+    rdfs:label "is source of"@en ;
+    IAO:0000115 "The reverse of is derived from."@en ;
+    rdfs:domain icon:0008000 ;
+    rdfs:isDefinedBy iconbase:data.owl ;
+    rdfs:range icon:0008000 ;
+    owl:inverseOf icon:0008108 .
+
+icon:0008110 a owl:ObjectProperty ;
+    rdfs:label "conforms to"@en ;
+    IAO:0000115 "A standard or guideline a data resource, tool, plan or plan action follows, recorded as a guideline: a data standard such as Darwin Core or the FGDC metadata standard, the policy whose required analyses a tool carries out, the agency guide a plan was written to, or the guidelines an action says to follow."@en ;
+    rdfs:isDefinedBy iconbase:data.owl ;
+    rdfs:range icon:0006000 ;
+    owl:inverseOf icon:0008111 ;
+    skos:closeMatch dcterms:conformsTo ;
+    icon:0000001 "ISO 19115-1: DQ_DomainConsistency/result/specification" .
+
+icon:0008111 a owl:ObjectProperty ;
+    rdfs:label "is followed by"@en ;
+    IAO:0000115 "The reverse of conforms to."@en ;
+    rdfs:domain icon:0006000 ;
+    rdfs:isDefinedBy iconbase:data.owl ;
+    owl:inverseOf icon:0008110 .
+
+icon:0008112 a owl:ObjectProperty ;
+    rdfs:label "has extent"@en ;
+    IAO:0000115 "A place whose boundary is the data's extent, such as a watershed or a preserve."@en ;
+    rdfs:domain icon:0008000 ;
+    rdfs:isDefinedBy iconbase:data.owl ;
+    rdfs:range icon:0005000 ;
+    owl:inverseOf icon:0008113 ;
+    skos:closeMatch dcterms:spatial .
+
+icon:0008113 a owl:ObjectProperty ;
+    rdfs:label "is extent of"@en ;
+    IAO:0000115 "The reverse of has extent."@en ;
+    rdfs:domain icon:0005000 ;
+    rdfs:isDefinedBy iconbase:data.owl ;
+    rdfs:range icon:0008000 ;
+    owl:inverseOf icon:0008112 .
+
+icon:0008114 a owl:ObjectProperty ;
+    rdfs:label "collected at"@en ;
+    IAO:0000115 "A place where the data was gathered, such as a monitoring station."@en ;
+    rdfs:domain icon:0008000 ;
+    rdfs:isDefinedBy iconbase:data.owl ;
+    rdfs:range icon:0005000 ;
+    owl:inverseOf icon:0008115 ;
+    icon:0000001 "EML 2.2: methods/sampling/studyExtent" .
+
+icon:0008115 a owl:ObjectProperty ;
+    rdfs:label "is collection site of"@en ;
+    IAO:0000115 "The reverse of collected at."@en ;
+    rdfs:domain icon:0005000 ;
+    rdfs:isDefinedBy iconbase:data.owl ;
+    rdfs:range icon:0008000 ;
+    owl:inverseOf icon:0008114 .
+
+icon:0008200 a owl:DatatypeProperty ;
+    rdfs:label "purpose"@en ;
+    IAO:0000115 "Why the data was made."@en ;
+    rdfs:domain icon:0008000 ;
+    rdfs:isDefinedBy iconbase:data.owl ;
+    rdfs:range xsd:string ;
+    icon:0000001 "EML 2.2: dataset/purpose",
+        "ISO 19115-1: MD_DataIdentification/purpose" .
+
+icon:0008201 a owl:DatatypeProperty ;
+    rdfs:label "coverage start"@en ;
+    IAO:0000115 "The first year the data describes. With coverage end, the Dataset Dictionary's Time Period; exported as dcterms:temporal with a dcat:startDate."@en ;
+    rdfs:domain icon:0008000 ;
+    rdfs:isDefinedBy iconbase:data.owl ;
+    rdfs:range xsd:integer ;
+    skos:closeMatch dcat:startDate ;
+    icon:0000001 "DataCite 4.5: date dateType Coverage",
+        "EML 2.2: coverage/temporalCoverage/rangeOfDates/beginDate" .
+
+icon:0008202 a owl:DatatypeProperty ;
+    rdfs:label "coverage end"@en ;
+    IAO:0000115 "The last year the data describes; blank while it is still being added to."@en ;
+    rdfs:domain icon:0008000 ;
+    rdfs:isDefinedBy iconbase:data.owl ;
+    rdfs:range xsd:integer ;
+    skos:closeMatch dcat:endDate ;
+    icon:0000001 "EML 2.2: coverage/temporalCoverage/rangeOfDates/endDate" .
+
+icon:0008203 a owl:DatatypeProperty ;
+    rdfs:label "spatial resolution"@en ;
+    IAO:0000115 "Grid cell size, mapping unit or positional accuracy, written with its unit: 30 m for C-CAP, 4 km for gridMET. Converted to dcat:spatialResolutionInMeters on export when the unit is a length."@en ;
+    rdfs:domain icon:0008000 ;
+    rdfs:isDefinedBy iconbase:data.owl ;
+    rdfs:range xsd:string ;
+    skos:closeMatch dcat:spatialResolutionInMeters ;
+    icon:0000001 "EML 2.2: spatialRaster/cellSizeXDirection",
+        "ISO 19115-1: MD_Resolution/distance" .
+
+icon:0008204 a owl:ObjectProperty ;
+    rdfs:label "social resolution"@en ;
+    IAO:0000115 "The smallest social unit the data describes or can be broken down to, such as household or census tract."@en ;
+    rdfs:domain icon:0008000 ;
+    rdfs:isDefinedBy iconbase:data.owl ;
+    rdfs:range icon:0008040 .
+
+BFO:0000002 a owl:Class ;
+    rdfs:label "continuant"@en ;
+    rdfs:subClassOf BFO:0000001 .
+
+BFO:0000004 a owl:Class ;
+    rdfs:label "independent continuant"@en ;
+    IAO:0000115 "b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])"@en ;
+    rdfs:subClassOf BFO:0000002 .
+
+IAO:0001000 a owl:Class ;
+    rdfs:label "data collection"@en ;
+    IAO:0000115 "A data entity that consists of multiple data entities."@en ;
+    rdfs:subClassOf IAO:0000027 .
+
+OBI:0000245 a owl:Class ;
+    rdfs:label "organization"@en ;
+    IAO:0000115 "An organization is a continuant entity which can play roles,  has members, and has a set of organization rules.  Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members."@en ;
+    rdfs:subClassOf BFO:0000004 .
+
+dcterms:rights a owl:AnnotationProperty ;
+    rdfs:label "Rights"@en .
+
+icon:0006000 a owl:Class ;
+    rdfs:label "guideline or mandate"@en ;
+    IAO:0000115 "A directive that requires, allows, funds or shapes conservation work: a law, regulation, executive order, agreement, certification standard or guideline. Some bind; others only advise."@en ;
+    rdfs:isDefinedBy iconbase:mandates.owl ;
+    rdfs:subClassOf IAO:0000033 .
+
+icon:0008003 a owl:Class ;
+    rdfs:label "data repository"@en ;
+    IAO:0000115 "A platform that holds and publishes datasets and databases, often from many creators. Example: CDFW BIOS."@en ;
+    rdfs:isDefinedBy iconbase:data.owl ;
+    rdfs:subClassOf icon:0008000 ;
+    skos:closeMatch dcat:Catalog,
+        schema:DataCatalog ;
+    icon:0000001 "re3data 4.0: repository" .
+
+icon:0005000 a owl:Class ;
+    rdfs:label "infrastructure"@en ;
+    IAO:0000115 "A place or structure on the landscape that conservation works on or around: a water body, a conservation area, a water or energy work, a farm, a sensor, a road or trail. Called infrastructure in the PPOD model whether built or natural."@en ;
+    rdfs:isDefinedBy iconbase:infrastructure.owl ;
+    rdfs:subClassOf icon:0000012 .
+
+icon:0008020 a owl:Class ;
+    rdfs:label "data access level"@en ;
+    IAO:0000115 "Who can get the data. The Dataset Dictionary's Availability. Each value maps to the EU access-right list and to the DCAT-US access levels data.gov uses."@en ;
+    rdfs:isDefinedBy iconbase:data.owl ;
+    rdfs:subClassOf IAO:0000030 .
+
+icon:0008010 a owl:Class ;
+    rdfs:label "data format"@en ;
+    IAO:0000115 "The form data comes in, from the Terms sheet's dataset types; formats are data types, listed with the kinds of data (#304). DCAT records format on each downloadable distribution; the graph keeps it on the data until a resource has more than one form worth recording."@en ;
+    rdfs:isDefinedBy iconbase:data.owl ;
+    rdfs:subClassOf icon:0008080 ;
+    icon:0000001 "DataCite 4.5: format",
+        "EML 2.2: physical/dataFormat",
+        "ISO 19115-1: MD_Format" .
+
+IAO:0000030 a owl:Class ;
+    rdfs:label "information content entity"@en ;
+    IAO:0000115 "A generically dependent continuant that is about some thing."@en ;
+    rdfs:subClassOf BFO:0000031 .
+
+icon:0008030 a owl:Class ;
+    rdfs:label "temporal resolution value"@en ;
+    IAO:0000115 "How far apart in time the data's values are. Each value carries, as a cross-reference, the ISO 8601 duration that dcat:temporalResolution takes on export."@en ;
+    rdfs:isDefinedBy iconbase:data.owl ;
+    rdfs:subClassOf IAO:0000030 .
+
+icon:0008040 a owl:Class ;
+    rdfs:label "social unit"@en ;
+    IAO:0000115 "A unit of people or property that social data is recorded for. The analysis unit of DDI Discovery."@en ;
+    rdfs:isDefinedBy iconbase:data.owl ;
+    rdfs:subClassOf IAO:0000030 .
+
+icon:0008080 a owl:Class ;
+    rdfs:label "data type"@en ;
+    IAO:0000115 "The kind of data, or the form it comes in. One list holds both, so a Data record and a tool's input or output are described in the same terms and a dataset can be matched to the tools that take it: Land cover or vegetation map and Raster describe both the Cropland Data Layer and an input InVEST takes."@en ;
+    rdfs:isDefinedBy iconbase:data.owl ;
+    rdfs:subClassOf IAO:0000030 ;
+    skos:closeMatch dcterms:type ;
+    icon:0000001 "DataCite 4.5: resourceType" .
+
+icon:0008000 a owl:Class ;
+    rdfs:label "data resource"@en ;
+    IAO:0000115 "Data at any of three levels: a dataset, a database or a data repository. Replaced the PPOD Dataset class."@en ;
+    rdfs:isDefinedBy iconbase:data.owl ;
+    rdfs:subClassOf icon:0000013 ;
+    skos:closeMatch dcat:Resource,
+        schema:CreativeWork ;
+    icon:0000002 dcterms:accessRights,
+        dcterms:accrualPeriodicity,
+        dcterms:description,
+        dcterms:identifier,
+        dcterms:issued,
+        dcterms:license,
+        dcat:keyword,
+        dcat:temporalResolution,
+        dcat:version,
+        icon:0008200,
+        icon:0008201,
+        icon:0008202,
+        icon:0008203,
+        icon:0008204 .
+
+iconbase:data.owl a owl:Ontology ;
+    dcterms:creator "Internet of Conservation (ICON)" ;
+    dcterms:description "Data resources at three levels (dataset, database, data repository): who creates, publishes, hosts, funds and uses them, what they cover in time, space and subject, and how they derive from and hold one another."@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references <http://publications.europa.eu/resource/authority/access-right>,
+        <http://publications.europa.eu/resource/authority/frequency>,
+        obo:iao.owl,
+        obo:obi.owl,
+        dcterms:,
+        <http://www.w3.org/ns/dcat>,
+        <http://www.w3.org/ns/prov-o>,
+        schema: ;
+    dcterms:title "ICON Data ontology"@en ;
+    rdfs:comment "Existing ontologies used. Reused: DCAT 3 (W3C Data Catalog Vocabulary), Dublin Core terms, EU frequency authority list. Built on: Dublin Core terms, Information Artifact Ontology, Ontology for Biomedical Investigations. Mapped to: DCAT 3 (W3C Data Catalog Vocabulary), Dublin Core terms, EU access-right authority list, PROV-O (W3C provenance), schema.org."@en ;
+    rdfs:seeAlso iconbase:core.owl,
+        iconbase:infrastructure.owl,
+        iconbase:mandates.owl ;
+    owl:versionIRI <https://w3id.org/icon/releases/2026-11-21/data.owl> ;
+    owl:versionInfo "2026-11-21" .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( icon:0008001 icon:0008002 icon:0008003 ) .
+

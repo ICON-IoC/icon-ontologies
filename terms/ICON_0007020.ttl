@@ -1,0 +1,12 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0007020 a owl:Class ;
+    rdfs:label "integrated regional water management plan"@en ;
+    IAO:0000115 "A plan for all aspects of water management in a region approved by the California Department of Water Resources, written under the Integrated Regional Water Management Planning Act by a Regional Water Management Group of local water, wastewater, flood control and watershed agencies, that sets regional objectives for water supply, water quality, flood management and ecosystem protection, ranks a living list of projects its members sponsor, and makes those projects eligible for state IRWM grants. Each member agency adopts it, and it binds none of them to carry out a project."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+

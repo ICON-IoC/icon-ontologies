@@ -1,0 +1,20 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix cito: <http://purl.org/spar/cito/> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+icon:0009106 a owl:ObjectProperty ;
+    rdfs:label "describes"@en ;
+    IAO:0000115 "The work is about this project, program, organization or data resource: it reports, evaluates or documents it. A data paper describes its dataset."@en ;
+    rdfs:domain icon:0009000 ;
+    rdfs:isDefinedBy iconbase:publications.owl ;
+    rdfs:subPropertyOf IAO:0000136 ;
+    owl:inverseOf icon:0009107 ;
+    skos:closeMatch cito:describes,
+        schema:about ;
+    icon:0000001 "DataCite 4.5: relatedIdentifier relationType Describes" .
+

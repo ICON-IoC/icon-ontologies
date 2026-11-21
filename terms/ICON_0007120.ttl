@@ -1,0 +1,14 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0007120 a owl:ObjectProperty ;
+    rdfs:label "counts toward"@en ;
+    IAO:0000115 "A protected place the state counts toward the plan's area-based conservation goal, such as a GAP 1 or 2 land in California's 30x30 Conserved Areas, which count toward Pathways to 30x30 California."@en ;
+    rdfs:domain icon:0005000 ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:range icon:0007001 ;
+    owl:inverseOf icon:0007121 .
+

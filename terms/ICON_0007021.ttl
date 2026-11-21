@@ -1,0 +1,12 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0007021 a owl:Class ;
+    rdfs:label "habitat conservation plan"@en ;
+    IAO:0000115 "A conservation plan that a non-federal landowner or agency prepares under Section 10(a)(1)(B) of the federal Endangered Species Act to obtain an incidental take permit from the U.S. Fish and Wildlife Service or NOAA Fisheries, that names the covered species and covered activities, sets biological goals and objectives, and commits the permittee to measures that avoid, minimize and mitigate the take, with monitoring, adaptive management, funding assurances and a fixed permit term. It binds the permittee through the permit and its implementing agreement."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+

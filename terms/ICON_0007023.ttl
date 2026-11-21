@@ -1,0 +1,12 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0007023 a owl:Class ;
+    rdfs:label "fishery ecosystem plan"@en ;
+    IAO:0000115 "A conservation plan that a regional fishery management council adopts to bring ecosystem science and policy into its fishery management plans, that describes the marine ecosystem its fisheries depend on, sets ecosystem goals and objectives across those plans, and identifies research needs and cross-plan initiatives. It informs the council's decisions and binds no one."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+

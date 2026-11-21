@@ -1,0 +1,13 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0007043 a owl:Class ;
+    rdfs:label "hazard mitigation plan"@en ;
+    IAO:0000115 "A plan, usually written to FEMA's local hazard mitigation planning rules, that identifies the natural hazards such as wildfire, flood, earthquake and landslide that could damage an agency's or community's facilities and lands, assesses its vulnerability to them, and lists actions to reduce their impacts before a disaster. Example: the Mountains Recreation and Conservation Authority's Draft Hazard Mitigation Plan (2021), limited to the park facilities MRCA owns and maintains."@en ;
+    rdfs:comment "Added for the Mountains Recreation and Conservation Authority's Hazard Mitigation Plan (#1177)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+

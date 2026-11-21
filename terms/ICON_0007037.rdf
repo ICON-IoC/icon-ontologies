@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0007037">
+    <obo:IAO_0000115 xml:lang="en">A comprehensive, long-term plan for one region that a state agency must adopt under a statute naming the region's goals, that sets regulatory policies binding the state and local agencies whose projects there are covered by the plan, together with nonregulatory recommendations to other agencies and the Legislature, and is amended as conditions and science change. Agencies certify their covered projects as consistent with the plan, and the adopting agency hears appeals of those certifications. Example: the Delta Plan, which the Delta Stewardship Council adopted in 2013 under the Sacramento-San Joaquin Delta Reform Act of 2009 to achieve the coequal goals of water supply reliability and a healthy Delta ecosystem.</obo:IAO_0000115>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/plans.owl"/>
+    <rdfs:label xml:lang="en">regional management plan</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0007001"/>
+  </rdf:Description>
+</rdf:RDF>

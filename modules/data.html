@@ -1,0 +1,732 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ICON Data ontology</title>
+<link rel="icon" href="../brand/icon-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+:root {
+  --ground: #f1f4ef; --surface: #ffffff; --ink: #17221d; --muted: #5a6a62; --rule: #d3dbd3;
+  --accent: #2e6a4e; --accent-soft: #e3eee7;
+  --display: "Newsreader", Georgia, serif;
+  --body: "Instrument Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground: #0f1512; --surface: #17201b; --ink: #e3ebe6; --muted: #93a39a; --rule: #2b3730;
+    --accent: #74c39b; --accent-soft: #1d3127; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --ground: #0f1512; --surface: #17201b; --ink: #e3ebe6; --muted: #93a39a; --rule: #2b3730;
+  --accent: #74c39b; --accent-soft: #1d3127; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--ground); color: var(--ink); font: 15px/1.6 var(--body); }
+.page { max-width: 1040px; margin: 0 auto; padding: 24px 16px 56px; display: grid; gap: 24px; }
+header.top { display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 13px; }
+header.top nav { display: flex; gap: 16px; flex-wrap: wrap; }
+.logo { height: 34px; width: auto; }
+.logo.dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .logo.light { display: none; }
+  :root:not([data-theme="light"]) .logo.dark { display: block; }
+}
+:root[data-theme="dark"] .logo.light { display: none; }
+:root[data-theme="dark"] .logo.dark { display: block; }
+h1 { font: 600 clamp(28px, 4vw, 40px)/1.15 var(--display); margin: 0; text-wrap: balance; }
+h2 { font: 600 22px/1.25 var(--display); margin: 0 0 8px; }
+p { margin: 0 0 10px; max-width: 75ch; }
+a { color: var(--accent); }
+code { font: 0.88em var(--mono); overflow-wrap: anywhere; }
+.muted { color: var(--muted); }
+.kicker { font: 600 11px var(--body); letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+section.card { background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; padding: 18px 20px; min-width: 0; }
+.facts { display: flex; flex-wrap: wrap; gap: 8px 28px; font-variant-numeric: tabular-nums; }
+.facts div { display: grid; }
+.facts b { font: 600 22px/1.1 var(--display); }
+.facts span { font-size: 12px; color: var(--muted); }
+.scroll { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { text-align: left; vertical-align: top; padding: 8px 10px 8px 0; border-bottom: 1px solid var(--rule); }
+th { font-weight: 600; font-size: 12px; color: var(--muted); }
+td.files { white-space: nowrap; }
+td.files a + a { margin-left: 8px; }
+dl.facts-list { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 6px 16px; margin: 0; }
+dl.facts-list dt { color: var(--muted); font-size: 13px; padding-top: 1px; }
+dl.facts-list dd { margin: 0; }
+.button { display: inline-block; padding: 8px 14px; border-radius: 8px; background: var(--accent); color: var(--surface); text-decoration: none; font-weight: 600; }
+pre { background: var(--accent-soft); padding: 12px 14px; border-radius: 8px; overflow-x: auto; font: 13px/1.5 var(--mono); margin: 0 0 10px; white-space: pre-wrap; }
+footer { font-size: 13px; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="top">
+    <nav><a href=".././">ICON ontologies</a><a href="../map.html">Map</a><a href="https://github.com/ICON-IoC/icon-ontologies">Source files</a></nav>
+    <a href="https://icon-ioc.com" aria-label="ICON">
+      <img class="logo light" alt="ICON" src="../brand/icon-lockup.png">
+      <img class="logo dark" alt="ICON" src="../brand/icon-wordmark-reversed-cropped.png">
+    </a>
+  </header>
+
+  <section>
+    <div class="kicker">record module</div>
+    <h1>ICON Data ontology</h1>
+    <p>Data resources at three levels (dataset, database, data repository): who creates, publishes, hosts, funds and uses them, what they cover in time, space and subject, and how they derive from and hold one another.</p>
+    <dl class="facts-list">
+      <dt>Ontology IRI</dt><dd><code>https://w3id.org/icon/data.owl</code></dd>
+      <dt>This release</dt><dd><code>https://w3id.org/icon/releases/2026-11-21/data.owl</code></dd>
+      <dt>Own term IDs</dt><dd>ICON:0008000 to ICON:0008999</dd>
+      <dt>Files</dt><dd><a href="../icon-data.ttl">Turtle</a>, <a href="../icon-data.owl">RDF/XML</a>, <a href="../linkml/icon-data.yaml">LinkML</a>, <a href="../guides/data.md">guide (Markdown)</a></dd>
+      
+      <dt>Reused</dt><dd>dcat, dcterms, freq</dd>
+      
+      <dt>Built on</dt><dd>IAO, OBI, dcterms</dd>
+      
+      <dt>Mapped to</dt><dd>access, dcat, dcterms, prov, schema</dd>
+      
+    </dl>
+  </section>
+
+  <section class="card">
+    <h2>Terms</h2>
+    <p class="muted">Reused terms keep their own IDs and link to their source ontology.</p>
+    <div class="scroll">
+    <table>
+      <thead><tr><th>Term</th><th>Kind</th><th>ID</th><th>Definition</th></tr></thead>
+      <tbody>
+      
+        <tr id="ICON_0008000">
+          <td><a href="../terms/ICON_0008000.html">data resource</a></td>
+          <td>class</td>
+          <td><code>ICON:0008000</code></td>
+          <td>Data at any of three levels: a dataset, a database or a data repository. Replaced the PPOD Dataset class.</td>
+        </tr>
+      
+        <tr id="ICON_0008001">
+          <td><a href="../terms/ICON_0008001.html">dataset</a></td>
+          <td>class</td>
+          <td><code>ICON:0008001</code></td>
+          <td>One collection of data published as a unit by its creator, such as a map layer, a table or a time series. Example: Cropland Data Layer.</td>
+        </tr>
+      
+        <tr id="ICON_0008002">
+          <td><a href="../terms/ICON_0008002.html">database</a></td>
+          <td>class</td>
+          <td><code>ICON:0008002</code></td>
+          <td>A maintained collection of related datasets kept together under one design, usually by one organization and usually queryable. Its datasets are part of it. Example: California Natural Diversity Database.</td>
+        </tr>
+      
+        <tr id="ICON_0008003">
+          <td><a href="../terms/ICON_0008003.html">data repository</a></td>
+          <td>class</td>
+          <td><code>ICON:0008003</code></td>
+          <td>A platform that holds and publishes datasets and databases, often from many creators. Example: CDFW BIOS.</td>
+        </tr>
+      
+        <tr id="ICON_0008080">
+          <td><a href="../terms/ICON_0008080.html">data type</a></td>
+          <td>class</td>
+          <td><code>ICON:0008080</code></td>
+          <td>The kind of data, or the form it comes in. One list holds both, so a Data record and a tool&#39;s input or output are described in the same terms and a dataset can be matched to the tools that take it: Land cover or vegetation map and Raster describe both the Cropland Data Layer and an input InVEST takes.</td>
+        </tr>
+      
+        <tr id="ICON_0008010">
+          <td><a href="../terms/ICON_0008010.html">data format</a></td>
+          <td>class</td>
+          <td><code>ICON:0008010</code></td>
+          <td>The form data comes in, from the Terms sheet&#39;s dataset types; formats are data types, listed with the kinds of data (#304). DCAT records format on each downloadable distribution; the graph keeps it on the data until a resource has more than one form worth recording.</td>
+        </tr>
+      
+        <tr id="ICON_0008020">
+          <td><a href="../terms/ICON_0008020.html">data access level</a></td>
+          <td>class</td>
+          <td><code>ICON:0008020</code></td>
+          <td>Who can get the data. The Dataset Dictionary&#39;s Availability. Each value maps to the EU access-right list and to the DCAT-US access levels data.gov uses.</td>
+        </tr>
+      
+        <tr id="ICON_0008030">
+          <td><a href="../terms/ICON_0008030.html">temporal resolution value</a></td>
+          <td>class</td>
+          <td><code>ICON:0008030</code></td>
+          <td>How far apart in time the data&#39;s values are. Each value carries, as a cross-reference, the ISO 8601 duration that dcat:temporalResolution takes on export.</td>
+        </tr>
+      
+        <tr id="ICON_0008040">
+          <td><a href="../terms/ICON_0008040.html">social unit</a></td>
+          <td>class</td>
+          <td><code>ICON:0008040</code></td>
+          <td>A unit of people or property that social data is recorded for. The analysis unit of DDI Discovery.</td>
+        </tr>
+      
+        <tr id="ICON_0008100">
+          <td><a href="../terms/ICON_0008100.html">has data level</a></td>
+          <td>relation</td>
+          <td><code>ICON:0008100</code></td>
+          <td>Links a data resource to the level class it belongs to: dataset, database or data repository. The explorer&#39;s way of stating its class, so it can filter and colour by level.</td>
+        </tr>
+      
+        <tr id="ICON_0008101">
+          <td><a href="../terms/ICON_0008101.html">is data level of</a></td>
+          <td>relation</td>
+          <td><code>ICON:0008101</code></td>
+          <td>The reverse of has data level.</td>
+        </tr>
+      
+        <tr id="ICON_0008102">
+          <td><a href="../terms/ICON_0008102.html">has data type</a></td>
+          <td>relation</td>
+          <td><code>ICON:0008102</code></td>
+          <td>A kind of data the record is, or the form it comes in, from the Data type list.</td>
+        </tr>
+      
+        <tr id="ICON_0008103">
+          <td><a href="../terms/ICON_0008103.html">is data type of</a></td>
+          <td>relation</td>
+          <td><code>ICON:0008103</code></td>
+          <td>The reverse of has data type.</td>
+        </tr>
+      
+        <tr id="ICON_0008104">
+          <td><a href="../terms/ICON_0008104.html">is held in</a></td>
+          <td>relation</td>
+          <td><code>ICON:0008104</code></td>
+          <td>A dataset, database or smaller repository is held and published by a repository. One resource can be held in several.</td>
+        </tr>
+      
+        <tr id="ICON_0008105">
+          <td><a href="../terms/ICON_0008105.html">holds</a></td>
+          <td>relation</td>
+          <td><code>ICON:0008105</code></td>
+          <td>The reverse of is held in.</td>
+        </tr>
+      
+        <tr id="ICON_0008106">
+          <td><a href="../terms/ICON_0008106.html">is hosted by</a></td>
+          <td>relation</td>
+          <td><code>ICON:0008106</code></td>
+          <td>The organization that runs the systems the data is served from. The Dataset Dictionary&#39;s Host role.</td>
+        </tr>
+      
+        <tr id="ICON_0008107">
+          <td><a href="../terms/ICON_0008107.html">hosts</a></td>
+          <td>relation</td>
+          <td><code>ICON:0008107</code></td>
+          <td>The reverse of is hosted by.</td>
+        </tr>
+      
+        <tr id="ICON_0008108">
+          <td><a href="../terms/ICON_0008108.html">is derived from</a></td>
+          <td>relation</td>
+          <td><code>ICON:0008108</code></td>
+          <td>Data built from other data, such as a connectivity map made from land cover and roads.</td>
+        </tr>
+      
+        <tr id="ICON_0008109">
+          <td><a href="../terms/ICON_0008109.html">is source of</a></td>
+          <td>relation</td>
+          <td><code>ICON:0008109</code></td>
+          <td>The reverse of is derived from.</td>
+        </tr>
+      
+        <tr id="ICON_0008110">
+          <td><a href="../terms/ICON_0008110.html">conforms to</a></td>
+          <td>relation</td>
+          <td><code>ICON:0008110</code></td>
+          <td>A standard or guideline a data resource, tool, plan or plan action follows, recorded as a guideline: a data standard such as Darwin Core or the FGDC metadata standard, the policy whose required analyses a tool carries out, the agency guide a plan was written to, or the guidelines an action says to follow.</td>
+        </tr>
+      
+        <tr id="ICON_0008111">
+          <td><a href="../terms/ICON_0008111.html">is followed by</a></td>
+          <td>relation</td>
+          <td><code>ICON:0008111</code></td>
+          <td>The reverse of conforms to.</td>
+        </tr>
+      
+        <tr id="ICON_0008112">
+          <td><a href="../terms/ICON_0008112.html">has extent</a></td>
+          <td>relation</td>
+          <td><code>ICON:0008112</code></td>
+          <td>A place whose boundary is the data&#39;s extent, such as a watershed or a preserve.</td>
+        </tr>
+      
+        <tr id="ICON_0008113">
+          <td><a href="../terms/ICON_0008113.html">is extent of</a></td>
+          <td>relation</td>
+          <td><code>ICON:0008113</code></td>
+          <td>The reverse of has extent.</td>
+        </tr>
+      
+        <tr id="ICON_0008114">
+          <td><a href="../terms/ICON_0008114.html">collected at</a></td>
+          <td>relation</td>
+          <td><code>ICON:0008114</code></td>
+          <td>A place where the data was gathered, such as a monitoring station.</td>
+        </tr>
+      
+        <tr id="ICON_0008115">
+          <td><a href="../terms/ICON_0008115.html">is collection site of</a></td>
+          <td>relation</td>
+          <td><code>ICON:0008115</code></td>
+          <td>The reverse of collected at.</td>
+        </tr>
+      
+        <tr id="ICON_0008204">
+          <td><a href="../terms/ICON_0008204.html">social resolution</a></td>
+          <td>relation</td>
+          <td><code>ICON:0008204</code></td>
+          <td>The smallest social unit the data describes or can be broken down to, such as household or census tract.</td>
+        </tr>
+      
+        <tr id="ICON_0008200">
+          <td><a href="../terms/ICON_0008200.html">purpose</a></td>
+          <td>attribute</td>
+          <td><code>ICON:0008200</code></td>
+          <td>Why the data was made.</td>
+        </tr>
+      
+        <tr id="ICON_0008201">
+          <td><a href="../terms/ICON_0008201.html">coverage start</a></td>
+          <td>attribute</td>
+          <td><code>ICON:0008201</code></td>
+          <td>The first year the data describes. With coverage end, the Dataset Dictionary&#39;s Time Period; exported as dcterms:temporal with a dcat:startDate.</td>
+        </tr>
+      
+        <tr id="ICON_0008202">
+          <td><a href="../terms/ICON_0008202.html">coverage end</a></td>
+          <td>attribute</td>
+          <td><code>ICON:0008202</code></td>
+          <td>The last year the data describes; blank while it is still being added to.</td>
+        </tr>
+      
+        <tr id="ICON_0008203">
+          <td><a href="../terms/ICON_0008203.html">spatial resolution</a></td>
+          <td>attribute</td>
+          <td><code>ICON:0008203</code></td>
+          <td>Grid cell size, mapping unit or positional accuracy, written with its unit: 30 m for C-CAP, 4 km for gridMET. Converted to dcat:spatialResolutionInMeters on export when the unit is a length.</td>
+        </tr>
+      
+        <tr id="dcterms_identifier">
+          <td><a href="http://purl.org/dc/terms/identifier">Identifier</a></td>
+          <td>attribute</td>
+          <td><code>dcterms:identifier</code></td>
+          <td>A DOI or the repository&#39;s own accession number.</td>
+        </tr>
+      
+        <tr id="dcat_version">
+          <td><a href="http://www.w3.org/ns/dcat#version">version</a></td>
+          <td>attribute</td>
+          <td><code>dcat:version</code></td>
+          <td>The version indicator (name or identifier) of a resource.</td>
+        </tr>
+      
+        <tr id="dcterms_accrualPeriodicity">
+          <td><a href="http://purl.org/dc/terms/accrualPeriodicity">Accrual Periodicity</a></td>
+          <td>attribute</td>
+          <td><code>dcterms:accrualPeriodicity</code></td>
+          <td>How often the data is updated, as a value of the EU frequency list above.</td>
+        </tr>
+      
+        <tr id="dcat_temporalResolution">
+          <td><a href="http://www.w3.org/ns/dcat#temporalResolution">temporal resolution</a></td>
+          <td>attribute</td>
+          <td><code>dcat:temporalResolution</code></td>
+          <td>minimum time period resolvable in a dataset.</td>
+        </tr>
+      
+        <tr id="dcat_keyword">
+          <td><a href="http://www.w3.org/ns/dcat#keyword">keyword</a></td>
+          <td>attribute</td>
+          <td><code>dcat:keyword</code></td>
+          <td>A keyword or tag describing a resource.</td>
+        </tr>
+      
+        <tr id="ICON_0008081">
+          <td><a href="../terms/ICON_0008081.html">observation records</a></td>
+          <td>value</td>
+          <td><code>ICON:0008081</code></td>
+          <td>Individual sightings or detections of a species or feature, each with a place and a date, such as CNDDB occurrences or camera trap detections.</td>
+        </tr>
+      
+        <tr id="ICON_0008082">
+          <td><a href="../terms/ICON_0008082.html">survey and monitoring data</a></td>
+          <td>value</td>
+          <td><code>ICON:0008082</code></td>
+          <td>Measurements taken by a protocol across sites or over time: counts, plots, catch, water samples.</td>
+        </tr>
+      
+        <tr id="ICON_0008083">
+          <td><a href="../terms/ICON_0008083.html">species range or distribution</a></td>
+          <td>value</td>
+          <td><code>ICON:0008083</code></td>
+          <td>Where a species lives or is known to occur, mapped as a range or distribution.</td>
+        </tr>
+      
+        <tr id="ICON_0008084">
+          <td><a href="../terms/ICON_0008084.html">habitat suitability model</a></td>
+          <td>value</td>
+          <td><code>ICON:0008084</code></td>
+          <td>Modelled predictions of where habitat is suitable for a species or community.</td>
+        </tr>
+      
+        <tr id="ICON_0008085">
+          <td><a href="../terms/ICON_0008085.html">land cover or vegetation map</a></td>
+          <td>value</td>
+          <td><code>ICON:0008085</code></td>
+          <td>A map of what covers the land: vegetation types, crops, forest structure, developed and bare ground.</td>
+        </tr>
+      
+        <tr id="ICON_0008086">
+          <td><a href="../terms/ICON_0008086.html">satellite and aerial imagery</a></td>
+          <td>value</td>
+          <td><code>ICON:0008086</code></td>
+          <td>Images of the ground taken from satellites, aircraft or drones, and products derived directly from them.</td>
+        </tr>
+      
+        <tr id="ICON_0008087">
+          <td><a href="../terms/ICON_0008087.html">elevation model</a></td>
+          <td>value</td>
+          <td><code>ICON:0008087</code></td>
+          <td>A surface of ground elevation, slope or water depth (bathymetry).</td>
+        </tr>
+      
+        <tr id="ICON_0008088">
+          <td><a href="../terms/ICON_0008088.html">climate grids and projections</a></td>
+          <td>value</td>
+          <td><code>ICON:0008088</code></td>
+          <td>Gridded climate variables, observed or projected, such as temperature, precipitation or evapotranspiration.</td>
+        </tr>
+      
+        <tr id="ICON_0008089">
+          <td><a href="../terms/ICON_0008089.html">stream and water network</a></td>
+          <td>value</td>
+          <td><code>ICON:0008089</code></td>
+          <td>Mapped streams, rivers, lakes, wetlands and the barriers, diversions and conveyances on them.</td>
+        </tr>
+      
+        <tr id="ICON_0008090">
+          <td><a href="../terms/ICON_0008090.html">sensor time series</a></td>
+          <td>value</td>
+          <td><code>ICON:0008090</code></td>
+          <td>Readings over time from gauges, weather stations or other sensors.</td>
+        </tr>
+      
+        <tr id="ICON_0008091">
+          <td><a href="../terms/ICON_0008091.html">boundaries and areas</a></td>
+          <td>value</td>
+          <td><code>ICON:0008091</code></td>
+          <td>Administrative, planning, regulatory and survey boundaries, and the areas a user draws or picks.</td>
+        </tr>
+      
+        <tr id="ICON_0008092">
+          <td><a href="../terms/ICON_0008092.html">parcels and ownership</a></td>
+          <td>value</td>
+          <td><code>ICON:0008092</code></td>
+          <td>Land parcels and records of who owns or holds rights in them, such as easements.</td>
+        </tr>
+      
+        <tr id="ICON_0008093">
+          <td><a href="../terms/ICON_0008093.html">infrastructure locations</a></td>
+          <td>value</td>
+          <td><code>ICON:0008093</code></td>
+          <td>Mapped locations of built structures and facilities: roads, ports, crossings, stations, platforms.</td>
+        </tr>
+      
+        <tr id="ICON_0008094">
+          <td><a href="../terms/ICON_0008094.html">scenarios and settings</a></td>
+          <td>value</td>
+          <td><code>ICON:0008094</code></td>
+          <td>Choices a user enters: practices, targets, parameters, costs, management or development scenarios.</td>
+        </tr>
+      
+        <tr id="ICON_0008095">
+          <td><a href="../terms/ICON_0008095.html">estimates and indices</a></td>
+          <td>value</td>
+          <td><code>ICON:0008095</code></td>
+          <td>Computed values: estimates of carbon, cost or yield, and scores, ranks or indices that compare places or options.</td>
+        </tr>
+      
+        <tr id="ICON_0008096">
+          <td><a href="../terms/ICON_0008096.html">project records</a></td>
+          <td>value</td>
+          <td><code>ICON:0008096</code></td>
+          <td>Records of conservation projects: where they are, what they do, their funding and status.</td>
+        </tr>
+      
+        <tr id="ICON_0008097">
+          <td><a href="../terms/ICON_0008097.html">funding opportunities</a></td>
+          <td>value</td>
+          <td><code>ICON:0008097</code></td>
+          <td>Listings of grants, loans and other funding that people can apply for: the funder, what it pays for, award size and deadline.</td>
+        </tr>
+      
+        <tr id="ICON_0008011">
+          <td><a href="../terms/ICON_0008011.html">image data format</a></td>
+          <td>value</td>
+          <td><code>ICON:0008011</code></td>
+          <td>Photographs or scanned images.</td>
+        </tr>
+      
+        <tr id="ICON_0008012">
+          <td><a href="../terms/ICON_0008012.html">raster data format</a></td>
+          <td>value</td>
+          <td><code>ICON:0008012</code></td>
+          <td>A grid of cells, each with a value, such as a land cover map or a climate surface.</td>
+        </tr>
+      
+        <tr id="ICON_0008013">
+          <td><a href="../terms/ICON_0008013.html">shapefile data format</a></td>
+          <td>value</td>
+          <td><code>ICON:0008013</code></td>
+          <td>Points, lines or polygons with attributes, in the Esri shapefile or a similar vector format.</td>
+        </tr>
+      
+        <tr id="ICON_0008014">
+          <td><a href="../terms/ICON_0008014.html">tabular data format</a></td>
+          <td>value</td>
+          <td><code>ICON:0008014</code></td>
+          <td>Rows and columns, as a spreadsheet or a database table.</td>
+        </tr>
+      
+        <tr id="ICON_0008015">
+          <td><a href="../terms/ICON_0008015.html">map data format</a></td>
+          <td>value</td>
+          <td><code>ICON:0008015</code></td>
+          <td>A finished map, interactive on the web or printed, made for people to read rather than as data to analyse. Mostly a tool&#39;s output.</td>
+        </tr>
+      
+        <tr id="ICON_0008016">
+          <td><a href="../terms/ICON_0008016.html">report data format</a></td>
+          <td>value</td>
+          <td><code>ICON:0008016</code></td>
+          <td>A written document, such as a PDF report or a site summary. Mostly a tool&#39;s output.</td>
+        </tr>
+      
+        <tr id="ICON_0008021">
+          <td><a href="../terms/ICON_0008021.html">open data access</a></td>
+          <td>value</td>
+          <td><code>ICON:0008021</code></td>
+          <td>Anyone can download the data without signing in.</td>
+        </tr>
+      
+        <tr id="ICON_0008022">
+          <td><a href="../terms/ICON_0008022.html">open access with registration</a></td>
+          <td>value</td>
+          <td><code>ICON:0008022</code></td>
+          <td>The data is free after creating an account or accepting terms.</td>
+        </tr>
+      
+        <tr id="ICON_0008023">
+          <td><a href="../terms/ICON_0008023.html">sensitive locations withheld</a></td>
+          <td>value</td>
+          <td><code>ICON:0008023</code></td>
+          <td>The data is published with sensitive detail, such as rare species locations, generalized or held back unless a request is approved.</td>
+        </tr>
+      
+        <tr id="ICON_0008024">
+          <td><a href="../terms/ICON_0008024.html">access by request or license</a></td>
+          <td>value</td>
+          <td><code>ICON:0008024</code></td>
+          <td>The data is available only through an agreement, a subscription or a fee.</td>
+        </tr>
+      
+        <tr id="ICON_0008025">
+          <td><a href="../terms/ICON_0008025.html">data not public</a></td>
+          <td>value</td>
+          <td><code>ICON:0008025</code></td>
+          <td>The data is held for its creator&#39;s own use.</td>
+        </tr>
+      
+        <tr id="ICON_0008031">
+          <td><a href="../terms/ICON_0008031.html">hourly resolution</a></td>
+          <td>value</td>
+          <td><code>ICON:0008031</code></td>
+          <td>A value every hour.</td>
+        </tr>
+      
+        <tr id="ICON_0008032">
+          <td><a href="../terms/ICON_0008032.html">daily resolution</a></td>
+          <td>value</td>
+          <td><code>ICON:0008032</code></td>
+          <td>A value every day.</td>
+        </tr>
+      
+        <tr id="ICON_0008033">
+          <td><a href="../terms/ICON_0008033.html">weekly resolution</a></td>
+          <td>value</td>
+          <td><code>ICON:0008033</code></td>
+          <td>A value every week.</td>
+        </tr>
+      
+        <tr id="ICON_0008034">
+          <td><a href="../terms/ICON_0008034.html">monthly resolution</a></td>
+          <td>value</td>
+          <td><code>ICON:0008034</code></td>
+          <td>A value every month.</td>
+        </tr>
+      
+        <tr id="ICON_0008035">
+          <td><a href="../terms/ICON_0008035.html">annual resolution</a></td>
+          <td>value</td>
+          <td><code>ICON:0008035</code></td>
+          <td>A value every year.</td>
+        </tr>
+      
+        <tr id="ICON_0008036">
+          <td><a href="../terms/ICON_0008036.html">multi-year resolution</a></td>
+          <td>value</td>
+          <td><code>ICON:0008036</code></td>
+          <td>Values for periods longer than a year, such as decades.</td>
+        </tr>
+      
+        <tr id="ICON_0008037">
+          <td><a href="../terms/ICON_0008037.html">single snapshot</a></td>
+          <td>value</td>
+          <td><code>ICON:0008037</code></td>
+          <td>One point or period in time.</td>
+        </tr>
+      
+        <tr id="freq_CONT">
+          <td><a href="http://publications.europa.eu/resource/authority/frequency/CONT">continuous</a></td>
+          <td>value</td>
+          <td><code>freq:CONT</code></td>
+          <td>The item is updated more frequent than daily.</td>
+        </tr>
+      
+        <tr id="freq_DAILY">
+          <td><a href="http://publications.europa.eu/resource/authority/frequency/DAILY">daily</a></td>
+          <td>value</td>
+          <td><code>freq:DAILY</code></td>
+          <td>The event occurs once a day.</td>
+        </tr>
+      
+        <tr id="freq_WEEKLY">
+          <td><a href="http://publications.europa.eu/resource/authority/frequency/WEEKLY">weekly</a></td>
+          <td>value</td>
+          <td><code>freq:WEEKLY</code></td>
+          <td>The event occurs once a week.</td>
+        </tr>
+      
+        <tr id="freq_MONTHLY">
+          <td><a href="http://publications.europa.eu/resource/authority/frequency/MONTHLY">monthly</a></td>
+          <td>value</td>
+          <td><code>freq:MONTHLY</code></td>
+          <td>The event occurs once a month.</td>
+        </tr>
+      
+        <tr id="freq_QUARTERLY">
+          <td><a href="http://publications.europa.eu/resource/authority/frequency/QUARTERLY">quarterly</a></td>
+          <td>value</td>
+          <td><code>freq:QUARTERLY</code></td>
+          <td>The event occurs every three months.</td>
+        </tr>
+      
+        <tr id="freq_ANNUAL">
+          <td><a href="http://publications.europa.eu/resource/authority/frequency/ANNUAL">annual</a></td>
+          <td>value</td>
+          <td><code>freq:ANNUAL</code></td>
+          <td>The event occurs once a year.</td>
+        </tr>
+      
+        <tr id="freq_BIENNIAL">
+          <td><a href="http://publications.europa.eu/resource/authority/frequency/BIENNIAL">biennial</a></td>
+          <td>value</td>
+          <td><code>freq:BIENNIAL</code></td>
+          <td>The event occurs every two years.</td>
+        </tr>
+      
+        <tr id="freq_QUINQUENNIAL">
+          <td><a href="http://publications.europa.eu/resource/authority/frequency/QUINQUENNIAL">quinquennial</a></td>
+          <td>value</td>
+          <td><code>freq:QUINQUENNIAL</code></td>
+          <td>The event occurs every five years.</td>
+        </tr>
+      
+        <tr id="freq_IRREG">
+          <td><a href="http://publications.europa.eu/resource/authority/frequency/IRREG">irregular</a></td>
+          <td>value</td>
+          <td><code>freq:IRREG</code></td>
+          <td>The event occurs at uneven intervals.</td>
+        </tr>
+      
+        <tr id="freq_NEVER">
+          <td><a href="http://publications.europa.eu/resource/authority/frequency/NEVER">never</a></td>
+          <td>value</td>
+          <td><code>freq:NEVER</code></td>
+          <td>The item is never updated.</td>
+        </tr>
+      
+        <tr id="ICON_0008041">
+          <td><a href="../terms/ICON_0008041.html">individual person unit</a></td>
+          <td>value</td>
+          <td><code>ICON:0008041</code></td>
+          <td>Data recorded person by person.</td>
+        </tr>
+      
+        <tr id="ICON_0008042">
+          <td><a href="../terms/ICON_0008042.html">household unit</a></td>
+          <td>value</td>
+          <td><code>ICON:0008042</code></td>
+          <td>Data recorded household by household.</td>
+        </tr>
+      
+        <tr id="ICON_0008043">
+          <td><a href="../terms/ICON_0008043.html">parcel or landowner unit</a></td>
+          <td>value</td>
+          <td><code>ICON:0008043</code></td>
+          <td>Data recorded by land parcel or landowner.</td>
+        </tr>
+      
+        <tr id="ICON_0008044">
+          <td><a href="../terms/ICON_0008044.html">organization unit</a></td>
+          <td>value</td>
+          <td><code>ICON:0008044</code></td>
+          <td>Data recorded organization by organization.</td>
+        </tr>
+      
+        <tr id="ICON_0008045">
+          <td><a href="../terms/ICON_0008045.html">census block group unit</a></td>
+          <td>value</td>
+          <td><code>ICON:0008045</code></td>
+          <td>Data recorded by Census block group.</td>
+        </tr>
+      
+        <tr id="ICON_0008046">
+          <td><a href="../terms/ICON_0008046.html">census tract unit</a></td>
+          <td>value</td>
+          <td><code>ICON:0008046</code></td>
+          <td>Data recorded by Census tract.</td>
+        </tr>
+      
+        <tr id="ICON_0008047">
+          <td><a href="../terms/ICON_0008047.html">city or town unit</a></td>
+          <td>value</td>
+          <td><code>ICON:0008047</code></td>
+          <td>Data recorded by city or town.</td>
+        </tr>
+      
+        <tr id="ICON_0008048">
+          <td><a href="../terms/ICON_0008048.html">county unit</a></td>
+          <td>value</td>
+          <td><code>ICON:0008048</code></td>
+          <td>Data recorded by county.</td>
+        </tr>
+      
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <footer>
+    <p>ICON ontologies, version 2026-11-21. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: attribute as "Internet of Conservation, Information for the Conservation of Nature (ICON), CC BY 4.0". The ICON names and logos are not covered by that license.</p>
+  </footer>
+</div>
+</body>
+</html>

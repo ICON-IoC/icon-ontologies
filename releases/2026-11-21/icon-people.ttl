@@ -1,0 +1,470 @@
+# ICON People ontology
+# Built by `ioc-ontologies` from ontology/src/people.terms; edit that file, not this one.
+# Guide: ontology/guides/people.md
+@prefix BFO: <http://purl.obolibrary.org/obo/BFO_> .
+@prefix COB: <http://purl.obolibrary.org/obo/COB_> .
+@prefix ENVO: <http://purl.obolibrary.org/obo/ENVO_> .
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix NCBITaxon: <http://purl.obolibrary.org/obo/NCBITaxon_> .
+@prefix OBI: <http://purl.obolibrary.org/obo/OBI_> .
+@prefix OMRSE: <http://purl.obolibrary.org/obo/OMRSE_> .
+@prefix PCO: <http://purl.obolibrary.org/obo/PCO_> .
+@prefix RO: <http://purl.obolibrary.org/obo/RO_> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+IAO:0000115 a owl:AnnotationProperty ;
+    rdfs:label "definition" .
+
+dcterms:creator a owl:AnnotationProperty .
+
+dcterms:description a owl:AnnotationProperty .
+
+dcterms:license a owl:AnnotationProperty .
+
+dcterms:references a owl:AnnotationProperty .
+
+dcterms:title a owl:AnnotationProperty .
+
+oboInOwl:hasDbXref a owl:AnnotationProperty ;
+    rdfs:label "database_cross_reference" .
+
+oboInOwl:hasExactSynonym a owl:AnnotationProperty ;
+    rdfs:label "has_exact_synonym" .
+
+skos:broadMatch a owl:AnnotationProperty .
+
+skos:closeMatch a owl:AnnotationProperty .
+
+skos:exactMatch a owl:AnnotationProperty .
+
+skos:narrowMatch a owl:AnnotationProperty .
+
+icon:0000001 a owl:AnnotationProperty ;
+    rdfs:label "crosswalk"@en ;
+    IAO:0000115 "The matching field in a metadata standard that is not published as RDF, written as the standard's name, a colon and the field's path, such as \"EML 2.2: dataset/title\"."@en ;
+    rdfs:isDefinedBy iconbase:core.owl .
+
+icon:0002002 a owl:Class ;
+    rdfs:label "chief executive role"@en ;
+    IAO:0000115 "Heads the record's staff or operations: executive director, CEO, staff president, general manager, agency director or secretary, city manager, and the manager of a field office, region, refuge or preserve that is itself the record."@en ;
+    rdfs:isDefinedBy iconbase:people.owl ;
+    rdfs:subClassOf icon:0002001 .
+
+icon:0002003 a owl:Class ;
+    rdfs:label "deputy executive role"@en ;
+    IAO:0000115 "Second in the staff line: deputy, associate or assistant director, chief operating officer, undersecretary or deputy secretary, assistant or associate field manager."@en ;
+    rdfs:isDefinedBy iconbase:people.owl ;
+    rdfs:subClassOf icon:0002001 .
+
+icon:0002004 a owl:Class ;
+    rdfs:label "board chair role"@en ;
+    IAO:0000115 "Chairs the governing board, council or commission: chair, chairman, board president, tribal chair."@en ;
+    rdfs:isDefinedBy iconbase:people.owl ;
+    rdfs:subClassOf icon:0002001 .
+
+icon:0002005 a owl:Class ;
+    rdfs:label "board officer role"@en ;
+    IAO:0000115 "An officer of the governing board other than its chair: vice chair, vice president of the board, secretary, treasurer."@en ;
+    rdfs:isDefinedBy iconbase:people.owl ;
+    rdfs:subClassOf icon:0002001 .
+
+icon:0002006 a owl:Class ;
+    rdfs:label "program leader role"@en ;
+    IAO:0000115 "Leads a program, division or department within the record: program director, manager or coordinator, branch chief, program area chair."@en ;
+    rdfs:isDefinedBy iconbase:people.owl ;
+    rdfs:subClassOf icon:0002001 .
+
+icon:0002007 a owl:Class ;
+    rdfs:label "project leader role"@en ;
+    IAO:0000115 "Leads a particular project: project manager, project coordinator, project lead."@en ;
+    rdfs:isDefinedBy iconbase:people.owl ;
+    rdfs:subClassOf icon:0002001 .
+
+icon:0002008 a owl:Class ;
+    rdfs:label "science leader role"@en ;
+    IAO:0000115 "Leads the record's science: principal investigator, lead or chief scientist, science director."@en ;
+    rdfs:isDefinedBy iconbase:people.owl ;
+    rdfs:subClassOf icon:0002001 .
+
+icon:0002009 a owl:Class ;
+    rdfs:label "elected official role"@en ;
+    IAO:0000115 "Holds an office the voters of a district or the state elect to: Assemblymember, State Senator, U.S. Representative, U.S. Senator, county supervisor."@en ;
+    rdfs:isDefinedBy iconbase:people.owl ;
+    rdfs:subClassOf OMRSE:00002072 .
+
+icon:0002200 a owl:AnnotationProperty ;
+    rdfs:label "role title"@en ;
+    IAO:0000115 "A person's title in the role a link records, as the organization or project writes it: Executive Director, Principal Investigator."@en ;
+    rdfs:isDefinedBy iconbase:people.owl ;
+    skos:closeMatch org:role .
+
+icon:0002201 a owl:AnnotationProperty ;
+    rdfs:label "role type"@en ;
+    IAO:0000115 "The uniform kind of a role a link records, one of the leadership roles below, so titles that differ in wording can be compared."@en ;
+    rdfs:isDefinedBy iconbase:people.owl .
+
+icon:0002300 a owl:DatatypeProperty ;
+    rdfs:label "LinkedIn profile"@en ;
+    IAO:0000115 "The address of the person's public LinkedIn profile: https://www.linkedin.com/in/name."@en ;
+    rdfs:domain NCBITaxon:9606 ;
+    rdfs:isDefinedBy iconbase:people.owl ;
+    rdfs:range xsd:anyURI ;
+    skos:closeMatch foaf:account .
+
+icon:0002301 a owl:DatatypeProperty ;
+    rdfs:label "ORCID iD"@en ;
+    IAO:0000115 "The person's ORCID identifier, the persistent researcher id used by journals and funders: 0000-0002-1825-0097."@en ;
+    rdfs:domain NCBITaxon:9606 ;
+    rdfs:isDefinedBy iconbase:people.owl ;
+    rdfs:range xsd:string ;
+    skos:closeMatch schema:identifier ;
+    icon:0000001 "DataCite 4.5: creator/nameIdentifier (nameIdentifierScheme ORCID)" .
+
+BFO:0000017 a owl:Class ;
+    rdfs:label "realizable entity"@en ;
+    IAO:0000115 "A specifically dependent continuant  that inheres in continuant  entities and are not exhibited in full at every time in which it inheres in an entity or group of entities. The exhibition or actualization of a realizable entity is a particular manifestation, functioning or process that occurs under certain circumstances."@en ;
+    rdfs:subClassOf BFO:0000020 .
+
+BFO:0000020 a owl:Class ;
+    rdfs:label "specifically dependent continuant"@en ;
+    IAO:0000115 "A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same."@en ;
+    rdfs:subClassOf BFO:0000002 .
+
+BFO:0000023 a owl:Class ;
+    rdfs:label "role"@en ;
+    IAO:0000115 "A realizable entity  the manifestation of which brings about some result or end that is not essential to a continuant  in virtue of the kind of thing that it is but that can be served or participated in by that kind of continuant  in some kinds of natural, social or institutional contexts."@en ;
+    rdfs:subClassOf BFO:0000017 .
+
+BFO:0000024 a owl:Class ;
+    rdfs:label "fiat object part"@en ;
+    rdfs:subClassOf BFO:0000040 .
+
+BFO:0000027 a owl:Class ;
+    rdfs:label "object aggregate"@en ;
+    rdfs:subClassOf BFO:0000040 .
+
+BFO:0000031 a owl:Class ;
+    rdfs:label "generically dependent continuant"@en ;
+    IAO:0000115 "b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])"@en ;
+    rdfs:subClassOf BFO:0000002 .
+
+COB:0000022 a owl:Class ;
+    rdfs:label "organism"@en ;
+    IAO:0000115 "A material entity that is a maximal functionally integrated unit that develops from a program encoded in a genome"@en .
+
+ENVO:01000254 a owl:Class ;
+    rdfs:label "environmental system"@en ;
+    IAO:0000115 "A system which has the disposition to environ one or more material entities."@en ;
+    rdfs:subClassOf RO:0002577 .
+
+ENVO:01003020 a owl:Class ;
+    rdfs:label "fiat part of an astronomical object"@en ;
+    IAO:0000115 "A part of an environmental system whose boundaries are determined by fiat."@en ;
+    rdfs:subClassOf BFO:0000024 .
+
+IAO:0000030 a owl:Class ;
+    rdfs:label "information content entity"@en ;
+    IAO:0000115 "A generically dependent continuant that is about some thing."@en ;
+    rdfs:subClassOf BFO:0000031 .
+
+NCBITaxon:117571 a owl:Class ;
+    rdfs:label "Euteleostomi"@en ;
+    rdfs:subClassOf NCBITaxon:7742 .
+
+NCBITaxon:2759 a owl:Class ;
+    rdfs:label "Eukaryota"@en ;
+    rdfs:subClassOf COB:0000022 .
+
+NCBITaxon:314146 a owl:Class ;
+    rdfs:label "Euarchontoglires"@en ;
+    rdfs:subClassOf NCBITaxon:40674 .
+
+NCBITaxon:32523 a owl:Class ;
+    rdfs:label "Tetrapoda"@en ;
+    rdfs:subClassOf NCBITaxon:117571 .
+
+NCBITaxon:32524 a owl:Class ;
+    rdfs:label "Amniota"@en ;
+    rdfs:subClassOf NCBITaxon:32523 .
+
+NCBITaxon:33154 a owl:Class ;
+    rdfs:label "Opisthokonta"@en ;
+    rdfs:subClassOf NCBITaxon:2759 .
+
+NCBITaxon:33208 a owl:Class ;
+    rdfs:label "Metazoa"@en ;
+    rdfs:subClassOf NCBITaxon:33154 .
+
+NCBITaxon:33213 a owl:Class ;
+    rdfs:label "Bilateria"@en ;
+    rdfs:subClassOf NCBITaxon:33208 .
+
+NCBITaxon:40674 a owl:Class ;
+    rdfs:label "Mammalia"@en ;
+    rdfs:subClassOf NCBITaxon:32524 .
+
+NCBITaxon:7742 a owl:Class ;
+    rdfs:label "Vertebrata <vertebrates>"@en ;
+    rdfs:subClassOf NCBITaxon:33213 .
+
+PCO:0000000 a owl:Class ;
+    rdfs:label "collection of organisms"@en ;
+    IAO:0000115 "A material entity that consists of two or more organisms, viruses, or viroids."@en ;
+    rdfs:subClassOf BFO:0000027,
+        PCO:0000031 .
+
+PCO:0000031 a owl:Class ;
+    rdfs:label "organismal entity"@en ;
+    IAO:0000115 "A material entity that is one or more organisms, viruses or viroids."@en ;
+    rdfs:subClassOf BFO:0000040 .
+
+PCO:0000059 a owl:Class ;
+    rdfs:label "taxon as collection of organisms"@en ;
+    IAO:0000115 "A collection of organisms that has as members every organism of a taxon and no organisms of any other equal or higher ranked taxon. The taxon may be at any level. If the taxon is species, then this is the same as the class species as a collection of organisms. When defining a taxon, it is generally understood that members include both living organisms and dead organisms that are known through specimens or observations."@en ;
+    rdfs:subClassOf PCO:0000000 .
+
+RO:0002577 a owl:Class ;
+    rdfs:label "system"@en ;
+    IAO:0000115 "A material entity consisting of multiple components that are causally integrated."@en ;
+    rdfs:subClassOf BFO:0000040 .
+
+icon:0002100 a owl:ObjectProperty ;
+    rdfs:label "is affiliated with"@en ;
+    IAO:0000115 "A person works for, serves on the board of, or is otherwise attached to an organization. The link may carry the person's title and its role type."@en ;
+    rdfs:domain NCBITaxon:9606 ;
+    rdfs:isDefinedBy iconbase:people.owl ;
+    rdfs:range OBI:0000245 ;
+    rdfs:subPropertyOf icon:0000100 ;
+    owl:inverseOf icon:0002101 ;
+    skos:closeMatch schema:affiliation .
+
+icon:0002101 a owl:ObjectProperty ;
+    rdfs:label "has affiliate"@en ;
+    IAO:0000115 "The reverse of is affiliated with."@en ;
+    rdfs:domain OBI:0000245 ;
+    rdfs:isDefinedBy iconbase:people.owl ;
+    rdfs:range NCBITaxon:9606 ;
+    rdfs:subPropertyOf icon:0000100 ;
+    owl:inverseOf icon:0002100 .
+
+icon:0002102 a owl:ObjectProperty ;
+    rdfs:label "has contact"@en ;
+    IAO:0000115 "The person to ask about an organization, project, place or data resource. The person's contact details are private."@en ;
+    rdfs:isDefinedBy iconbase:people.owl ;
+    rdfs:range NCBITaxon:9606 ;
+    rdfs:subPropertyOf icon:0000100 ;
+    owl:inverseOf icon:0002103 ;
+    skos:closeMatch dcat:contactPoint ;
+    icon:0000001 "DataCite 4.5: contributorType ContactPerson",
+        "EML 2.2: dataset/contact",
+        "ISO 19115-1: CI_RoleCode pointOfContact" .
+
+icon:0002103 a owl:ObjectProperty ;
+    rdfs:label "is contact for"@en ;
+    IAO:0000115 "The reverse of has contact."@en ;
+    rdfs:domain NCBITaxon:9606 ;
+    rdfs:isDefinedBy iconbase:people.owl ;
+    rdfs:subPropertyOf icon:0000100 ;
+    owl:inverseOf icon:0002102 .
+
+icon:0002105 a owl:ObjectProperty ;
+    rdfs:label "is expertise of"@en ;
+    IAO:0000115 "The reverse of has expertise in."@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( icon:0012000 icon:0010000 ENVO:01000276 icon:0011000 icon:0011001 icon:0011004 icon:0011005 ) ] ;
+    rdfs:isDefinedBy iconbase:people.owl ;
+    rdfs:range NCBITaxon:9606 ;
+    owl:inverseOf icon:0002104 .
+
+icon:0002106 a owl:ObjectProperty ;
+    rdfs:label "represents"@en ;
+    IAO:0000115 "An elected official holds the seat of the district: a member of the State Assembly or State Senate, a member of Congress, or a county supervisor. A U.S. senator represents the whole state (#1432)."@en ;
+    rdfs:comment "The office and party are the link's role title, and the year the person took the seat is the link's start."@en ;
+    rdfs:domain NCBITaxon:9606 ;
+    rdfs:isDefinedBy iconbase:people.owl ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( icon:0010005 icon:0010003 ) ] ;
+    owl:inverseOf icon:0002107 .
+
+icon:0002107 a owl:ObjectProperty ;
+    rdfs:label "is represented by"@en ;
+    IAO:0000115 "The reverse of represents."@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( icon:0010005 icon:0010003 ) ] ;
+    rdfs:isDefinedBy iconbase:people.owl ;
+    rdfs:range NCBITaxon:9606 ;
+    owl:inverseOf icon:0002106 .
+
+icon:0011108 a owl:ObjectProperty ;
+    rdfs:label "has broader habitat type"@en ;
+    IAO:0000115 "Links a habitat or vegetation type to a broader one that contains it: an MCV alliance to its USNVC group, a group to its macrogroup, a CMECS unit to the unit above it, a GET functional group to its biome and a biome to its realm, and an alliance or CMECS unit to the one CWHR habitat type it falls in. A record that has the narrower type has the broader one too (#1409, #1410, #1411)."@en ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl .
+
+icon:0012102 a owl:ObjectProperty ;
+    rdfs:label "has broader issue"@en ;
+    IAO:0000115 "Links a component issue to an integrated issue it is primarily part of, as the issue list of Springer et al. (2022) records: Floods has broader issues Water and Disasters. A record that addresses the component issue addresses the integrated one too."@en ;
+    rdfs:isDefinedBy iconbase:issues.owl .
+
+BFO:0000001 a owl:Class ;
+    rdfs:label "entity"@en .
+
+BFO:0000004 a owl:Class ;
+    rdfs:label "independent continuant"@en ;
+    IAO:0000115 "b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])"@en ;
+    rdfs:subClassOf BFO:0000002 .
+
+ENVO:00000004 a owl:Class ;
+    rdfs:label "administrative region"@en ;
+    rdfs:subClassOf ENVO:01003020 .
+
+ENVO:01000276 a owl:Class ;
+    rdfs:label "ecoregion"@en ;
+    IAO:0000115 "A large unit of land or water containing a geographically distinct assemblage of species, natural communities, and environmental conditions."@en ;
+    rdfs:subClassOf ENVO:01000813,
+        ENVO:01001110 .
+
+ENVO:01000813 a owl:Class ;
+    rdfs:label "astronomical body part"@en ;
+    IAO:0000115 "A material part of an astronomical body."@en ;
+    rdfs:subClassOf BFO:0000040 .
+
+ENVO:01001110 a owl:Class ;
+    rdfs:label "ecosystem"@en ;
+    IAO:0000115 "An environmental system which includes both living and non-living components."@en ;
+    rdfs:subClassOf ENVO:01000254 .
+
+OBI:0000245 a owl:Class ;
+    rdfs:label "organization"@en ;
+    IAO:0000115 "An organization is a continuant entity which can play roles,  has members, and has a set of organization rules.  Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members."@en ;
+    rdfs:subClassOf BFO:0000004 .
+
+OMRSE:00002072 a owl:Class ;
+    rdfs:label "role in human social processes"@en ;
+    IAO:0000115 "A role that inheres in some entity that is realized in a social act."@en ;
+    rdfs:subClassOf BFO:0000023 .
+
+icon:0010000 a owl:Class ;
+    rdfs:label "county"@en ;
+    IAO:0000115 "One of California's 58 counties, as an administrative region rather than as its government."@en ;
+    rdfs:isDefinedBy iconbase:places.owl ;
+    rdfs:subClassOf ENVO:00000004 .
+
+icon:0010003 a owl:Class ;
+    rdfs:label "geographic scope"@en ;
+    IAO:0000115 "An extent a record can claim in place of a list of areas."@en ;
+    rdfs:isDefinedBy iconbase:places.owl ;
+    rdfs:subClassOf IAO:0000030 .
+
+icon:0010005 a owl:Class ;
+    rdfs:label "electoral district"@en ;
+    IAO:0000115 "An area whose voters elect an official to a legislature or a county board: a California State Assembly, State Senate, congressional or county supervisorial district (#1432)."@en ;
+    rdfs:isDefinedBy iconbase:places.owl ;
+    rdfs:subClassOf ENVO:00000004 .
+
+icon:0011000 a owl:Class ;
+    rdfs:label "taxon"@en ;
+    IAO:0000115 "A species or a group of species that records concern, identified by its NatureServe element where it has one. Groups (salmonids, bats) are taxa at a higher rank or informal groupings of them."@en ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:subClassOf PCO:0000059 .
+
+icon:0011001 a owl:Class ;
+    rdfs:label "CWHR habitat type"@en ;
+    IAO:0000115 "A habitat type of the California Wildlife Habitat Relationships system, the state's standard classification of wildlife habitats (59 types, such as Valley Foothill Riparian or Blue Oak Woodland), identified by its CWHR code."@en ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:subClassOf ENVO:01000739 .
+
+icon:0011004 a owl:Class ;
+    rdfs:label "vegetation type"@en ;
+    IAO:0000115 "A unit of vegetation: an alliance of the Manual of California Vegetation, as CDFW's California Natural Communities List names it (such as Valley oak woodland and forest, or Fremont's goldfields - Downingia vernal pools), or a group, macrogroup or division of the US National Vegetation Classification above it (#1409)."@en ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:subClassOf ENVO:01000739 .
+
+icon:0011005 a owl:Class ;
+    rdfs:label "coastal and marine habitat type"@en ;
+    IAO:0000115 "A unit of the Coastal and Marine Ecological Classification Standard (CMECS, FGDC-STD-018-2012): a system, subsystem or tidal zone of its Aquatic Setting (such as Estuarine Coastal Intertidal Tidal Zone), or a biotic setting, class, subclass or group of its Biotic Component (such as Seagrass Bed), identified by its CMECS ID (#1410)."@en ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:subClassOf ENVO:01000739 .
+
+icon:0012000 a owl:Class ;
+    rdfs:label "conservation issue"@en ;
+    IAO:0000115 "A problem, pressure or concern conservation work responds to, such as water quality, wildfire, habitat loss or a declining species. Issues are of many kinds (processes, qualities, entities), so the class sits directly under entity."@en ;
+    rdfs:isDefinedBy iconbase:issues.owl ;
+    rdfs:subClassOf BFO:0000001 .
+
+BFO:0000002 a owl:Class ;
+    rdfs:label "continuant"@en ;
+    rdfs:subClassOf BFO:0000001 .
+
+ENVO:01000739 a owl:Class ;
+    rdfs:label "habitat"@en ;
+    IAO:0000115 "An environmental system which can sustain and allow the growth of an ecological population."@en ;
+    rdfs:subClassOf ENVO:01000813,
+        ENVO:01001110 .
+
+icon:0002104 a owl:ObjectProperty ;
+    rdfs:label "has expertise in"@en ;
+    IAO:0000115 "A person knows an issue, a place, a taxon or a habitat type through their work: the projects, programs and plans they lead and the papers and reports they wrote address it, or the source records say so. Expertise is never passed down from the organizations a person belongs to."@en ;
+    rdfs:comment "The explorer entails it from the issues, counties, ecoregions, taxa and habitat types a person's led or authored record states itself. A statewide record gives no place expertise, and a record that names more than 10 of one kind gives none of that kind (#1130). Expertise in a component issue is expertise in its integrated issues too, and expertise in a vegetation or CMECS type is expertise in its broader types (#1409, #1410)."@en ;
+    rdfs:domain NCBITaxon:9606 ;
+    rdfs:isDefinedBy iconbase:people.owl ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( icon:0012000 icon:0010000 ENVO:01000276 icon:0011000 icon:0011001 icon:0011004 icon:0011005 ) ] ;
+    owl:inverseOf icon:0002105 ;
+    owl:propertyChainAxiom ( icon:0002104 icon:0012102 ),
+        ( icon:0002104 icon:0011108 ) ;
+    skos:closeMatch schema:knowsAbout .
+
+icon:0000100 a owl:ObjectProperty ;
+    rdfs:label "is involved with"@en ;
+    IAO:0000115 "A link between two records that work together or affect one another. Every more specific involvement link (leads, funds, manages, uses, is partner of and others) implies it."@en ;
+    rdfs:isDefinedBy iconbase:core.owl .
+
+BFO:0000040 a owl:Class ;
+    rdfs:label "material entity"@en ;
+    rdfs:subClassOf BFO:0000004 .
+
+icon:0002001 a owl:Class ;
+    rdfs:label "leadership role"@en ;
+    IAO:0000115 "A role in human social processes that a person holds when an organization, project or program puts them in charge of some part of it."@en ;
+    rdfs:isDefinedBy iconbase:people.owl ;
+    rdfs:subClassOf OMRSE:00002072 ;
+    skos:closeMatch org:Role .
+
+NCBITaxon:9606 a owl:Class ;
+    rdfs:label "Homo sapiens"@en ;
+    rdfs:subClassOf NCBITaxon:314146 .
+
+iconbase:people.owl a owl:Ontology ;
+    dcterms:creator "Internet of Conservation (ICON)" ;
+    dcterms:description "People named in the graph: whom they are affiliated with, whom they are the contact for, and the leadership roles they hold. Names are public; contact details are kept out of the graph's public face and out of this ontology."@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:references obo:envo.owl,
+        obo:ncbitaxon.owl,
+        obo:obi.owl,
+        obo:omrse.owl,
+        <http://www.w3.org/ns/dcat>,
+        <http://www.w3.org/ns/org>,
+        foaf:,
+        schema: ;
+    dcterms:title "ICON People ontology"@en ;
+    rdfs:comment "Existing ontologies used. Reused: NCBI organismal classification. Built on: Environment Ontology, Ontology for Biomedical Investigations, Ontology of Medically Related Social Entities. Mapped to: DCAT 3 (W3C Data Catalog Vocabulary), FOAF, W3C Organization Ontology, schema.org."@en ;
+    rdfs:seeAlso iconbase:biodiversity.owl,
+        iconbase:core.owl,
+        iconbase:issues.owl,
+        iconbase:places.owl ;
+    owl:versionIRI <https://w3id.org/icon/releases/2026-11-21/people.owl> ;
+    owl:versionInfo "2026-11-21" .
+

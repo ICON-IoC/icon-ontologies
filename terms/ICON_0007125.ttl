@@ -1,0 +1,13 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0007125 a owl:Class ;
+    rdfs:label "trail master plan"@en ;
+    IAO:0000115 "A plan for a regional trail system that sets its alignment, the standards and process for designating segments, and how the segments are funded, built, operated, and maintained by the agencies along it. Example: the Great California Delta Trail Master Plan, by the Delta Protection Commission."@en ;
+    rdfs:comment "Added for the Great California Delta Trail Master Plan (#1677)."@en ;
+    rdfs:isDefinedBy iconbase:plans.owl ;
+    rdfs:subClassOf icon:0007001 .
+

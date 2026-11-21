@@ -1,0 +1,16 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+icon:0011231 a owl:DatatypeProperty ;
+    rdfs:label "GET code"@en ;
+    IAO:0000115 "The unit's code in the IUCN Global Ecosystem Typology: a realm's letters (T, or MT for a transitional realm), a biome's (T4) or a functional group's (T4.4)."@en ;
+    rdfs:domain icon:0011006 ;
+    rdfs:isDefinedBy iconbase:biodiversity.owl ;
+    rdfs:range xsd:string ;
+    skos:exactMatch skos:notation .
+

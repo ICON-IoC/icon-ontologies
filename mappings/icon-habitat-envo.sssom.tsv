@@ -1,0 +1,1057 @@
+#curie_map:
+#  CMECS: https://w3id.org/CMECS/
+#  ENVO: http://purl.obolibrary.org/obo/ENVO_
+#  cnpsveg: https://vegetation.cnps.org/alliance/
+#  ioc: https://putahcreek.org/ns/ioc/
+#  iucnget: https://w3id.org/iucn-get/
+#  semapv: https://w3id.org/semapv/vocab/
+#  skos: http://www.w3.org/2004/02/skos/core#
+#license: https://creativecommons.org/licenses/by/4.0/
+#mapping_set_id: https://w3id.org/icon/mappings/icon-habitat-envo.sssom.tsv
+#mapping_set_description: The California and global habitat classifications the Internet of Conservation explorer uses (CWHR, MCV and USNVC, CMECS, IUCN GET), matched to the Environment Ontology (ENVO 2026-10-23). A term with no match of its own has the matches of the term above it in its classification, as broad matches.
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification
+CMECS:CMECS_00000007	Algal Particles	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000008	Algal Rafts	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000012	Amphipod Aggregation	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000035	Aquatic Vascular Vegetation	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000036	Aquatic Vegetation Bed	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000047	Attached Anemones	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000048	Attached Basket Stars	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000050	Attached Brachiopods	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000051	Attached Bryozoans	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000052	Attached Corals	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000053	Attached Crinoids	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000054	Attached Fauna	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000057	Attached Holothurians	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000058	Attached Hydroids	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000059	Attached Mussels	skos:closeMatch	ENVO:01001382	area of attached mussel assemblages	semapv:ManualMappingCuration
+CMECS:CMECS_00000060	Attached Oysters	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000063	Attached Sea Urchins	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000065	Attached Sponges	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000066	Attached Starfish	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000067	Attached Tube-Building Fauna	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000068	Attached Tunicates	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000074	Bacterial Decay	skos:broadMatch	ENVO:01000008	microbial mat	semapv:ManualMappingCuration
+CMECS:CMECS_00000078	Barnacles	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000097	Benthic Macroalgae	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000113	Brachiopod Bed	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000115	Brackish Marsh	skos:broadMatch	ENVO:00000054	saline marsh	semapv:ManualMappingCuration
+CMECS:CMECS_00000116	Brackish Tidal Scrub-Shrub	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+CMECS:CMECS_00000117	Branching Coral Reef	skos:broadMatch	ENVO:00000150	coral reef	semapv:ManualMappingCuration
+CMECS:CMECS_00000119	Brittle Stars on Hard or Mixed Substrates	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000123	Burrowing Anemones	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000124	Burrowing Urchins	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000127	Calcareous Algal Bed	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000129	Canopy-Forming Algal Bed	skos:closeMatch	ENVO:01000058	kelp forest	semapv:ManualMappingCuration
+CMECS:CMECS_00000140	Cephalochordates	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000141	Chaetognath Aggregation	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000143	Chitons	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000146	Chlorophyte Aggregation	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000147	Chlorophyte Bloom	skos:broadMatch	ENVO:2000004	algal bloom	semapv:ManualMappingCuration
+CMECS:CMECS_00000148	Chlorophyte Maximum Layer	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000149	Chlorophyte Phytoplankton	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000150	Chrysophyte Aggregation	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000151	Chrysophyte Bloom	skos:broadMatch	ENVO:2000004	algal bloom	semapv:ManualMappingCuration
+CMECS:CMECS_00000152	Chrysophyte Maximum Layer	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000153	Chrysophyte Phytoplankton	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000156	Clam Bed	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000172	Coccolithophore Aggregation	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000173	Coccolithophore Bloom	skos:broadMatch	ENVO:01000057	marine algal bloom	semapv:ManualMappingCuration
+CMECS:CMECS_00000174	Coccolithophore Maximum Layer	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000176	Coccolithophore Phytoplankton	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000181	Massive Coral Reef	skos:broadMatch	ENVO:00000150	coral reef	semapv:ManualMappingCuration
+CMECS:CMECS_00000191	Copepod Aggregation	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000194	Coral Larval Aggregation	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000195	Coral Meroplankton	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000202	Coral Spawning and Larval Aggregation	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000205	Crustacean Holoplankton	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000206	Crustacean Meroplankton	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000208	Cryptophyte Aggregation	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000209	Cryptophyte Bloom	skos:broadMatch	ENVO:2000004	algal bloom	semapv:ManualMappingCuration
+CMECS:CMECS_00000210	Cryptophyte Maximum Layer	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000211	Cryptophyte Phytoplankton	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000212	Ctenophore Aggregation	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000215	Cyanophyte Aggregation	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000216	Cyanophyte Bloom	skos:closeMatch	ENVO:03600071	cyanobacterial bloom	semapv:ManualMappingCuration
+CMECS:CMECS_00000217	Cyanophyte Maximum Layer	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000218	Cyanophyte Phytoplankton	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000223	Decapod Larval Aggregation	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000237	Diatom Aggregation	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000238	Diatom Bloom	skos:broadMatch	ENVO:2000004	algal bloom	semapv:ManualMappingCuration
+CMECS:CMECS_00000240	Diatom Maximum Layer	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000241	Diatom Phytoplankton	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000244	Dinoflagellate Aggregation	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000245	Dinoflagellate Bloom	skos:broadMatch	ENVO:01000057	marine algal bloom	semapv:ManualMappingCuration
+CMECS:CMECS_00000246	Dinoflagellate Maximum Layer	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000247	Dinoflagellate Phytoplankton	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000251	Diverse Colonizers	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000252	Diverse Soft Sediment Epifauna	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000275	Echinoderm Meroplankton	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000276	Echiurid Bed	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000278	Egg Masses	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000284	Emergent Tidal Marsh	skos:broadMatch	ENVO:00000230	coastal wetland ecosystem	semapv:ManualMappingCuration
+CMECS:CMECS_00000285	Emergent Wetland	skos:broadMatch	ENVO:01000894	area of emergent herbaceous wetland	semapv:ManualMappingCuration
+CMECS:CMECS_00000297	Estuarine Coastal Intertidal Tidal Zone	skos:broadMatch	ENVO:00000316	intertidal zone	semapv:ManualMappingCuration
+CMECS:CMECS_00000300	Estuarine Coastal Subsystem	skos:broadMatch	ENVO:00000045	estuary	semapv:ManualMappingCuration
+CMECS:CMECS_00000301	Estuarine Coastal Subtidal Tidal Zone	skos:broadMatch	ENVO:00000045	estuary	semapv:ManualMappingCuration
+CMECS:CMECS_00000302	Estuarine Coastal Supratidal Tidal Zone	skos:broadMatch	ENVO:01000124	marine supra-littoral zone	semapv:ManualMappingCuration
+CMECS:CMECS_00000307	Estuarine Open Water Subsystem	skos:broadMatch	ENVO:00000045	estuary	semapv:ManualMappingCuration
+CMECS:CMECS_00000308	Estuarine Open Water Subtidal Tidal Zone	skos:broadMatch	ENVO:00000045	estuary	semapv:ManualMappingCuration
+CMECS:CMECS_00000311	Estuarine System	skos:closeMatch	ENVO:00000045	estuary	semapv:ManualMappingCuration
+CMECS:CMECS_00000312	Estuarine Tidal Riverine Coastal Intertidal Tidal Zone	skos:broadMatch	ENVO:00000316	intertidal zone	semapv:ManualMappingCuration
+CMECS:CMECS_00000315	Estuarine Tidal Riverine Coastal Subsystem	skos:broadMatch	ENVO:00000045	estuary	semapv:ManualMappingCuration
+CMECS:CMECS_00000316	Estuarine Tidal Riverine Coastal Subtidal Tidal Zone	skos:broadMatch	ENVO:00000045	estuary	semapv:ManualMappingCuration
+CMECS:CMECS_00000321	Estuarine Tidal Riverine Open Water Subsystem	skos:broadMatch	ENVO:00000045	estuary	semapv:ManualMappingCuration
+CMECS:CMECS_00000322	Estuarine Tidal Riverine Open Water Subtidal Tidal Zone	skos:broadMatch	ENVO:00000045	estuary	semapv:ManualMappingCuration
+CMECS:CMECS_00000336	Faunal Bed	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000337	Fecal Mounds	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000338	Filamentous Algal Bed	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000341	Films and Strands	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000346	Fish Larval Aggregation	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000347	Fish Meroplankton	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000349	Fish Spawning and Larval Aggregation	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000363	Foraminiferan Aggregation	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000366	Forested Wetland	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+CMECS:CMECS_00000371	Freshwater and Brackish Tidal Aquatic Vegetation	skos:broadMatch	ENVO:01001789	freshwater ecosystem	semapv:ManualMappingCuration
+CMECS:CMECS_00000372	Freshwater Irregularly Flooded Tidal Lichen Zone	skos:broadMatch	ENVO:01000889	area of lichen-dominated vegetation	semapv:ManualMappingCuration
+CMECS:CMECS_00000373	Freshwater Submerged and Regularly Flooded Tidal Lichen Zone	skos:broadMatch	ENVO:01000889	area of lichen-dominated vegetation	semapv:ManualMappingCuration
+CMECS:CMECS_00000374	Freshwater Tidal Lichens	skos:broadMatch	ENVO:01000889	area of lichen-dominated vegetation	semapv:ManualMappingCuration
+CMECS:CMECS_00000375	Freshwater Tidal Marsh	skos:broadMatch	ENVO:00000053	freshwater marsh	semapv:ManualMappingCuration
+CMECS:CMECS_00000376	Freshwater Tidal Moss	skos:broadMatch	ENVO:01000890	area of moss-dominated vegetation	semapv:ManualMappingCuration
+CMECS:CMECS_00000377	Freshwater Tidal Scrub-Shrub	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+CMECS:CMECS_00000382	Gastropod Reef	skos:broadMatch	ENVO:01001899	reef	semapv:ManualMappingCuration
+CMECS:CMECS_00000385	Gelatinous Zooplankton	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000390	Glass Sponge Reef	skos:broadMatch	ENVO:01000161	marine sponge reef	semapv:ManualMappingCuration
+CMECS:CMECS_00000391	Glass Sponge Reef Biota	skos:closeMatch	ENVO:01000161	marine sponge reef	semapv:ManualMappingCuration
+CMECS:CMECS_00000415	High Salt Marsh	skos:closeMatch	ENVO:00000054	saline marsh	semapv:ManualMappingCuration
+CMECS:CMECS_00000417	Holothurian Bed	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000424	Hydroid Bed	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000434	Inferred Fauna	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000443	Jellyfish Aggregation	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000450	Krill Aggregation	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000451	Lacustrine Limnetic Subsystem	skos:broadMatch	ENVO:01001907	freshwater lake ecosystem	semapv:ManualMappingCuration
+CMECS:CMECS_00000452	Lacustrine Littoral Subsystem	skos:broadMatch	ENVO:01000409	freshwater littoral zone	semapv:ManualMappingCuration
+CMECS:CMECS_00000453	Lacustrine System	skos:closeMatch	ENVO:01001907	freshwater lake ecosystem	semapv:ManualMappingCuration
+CMECS:CMECS_00000460	Larger Deep-Burrowing Fauna	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000461	Larger Tube-Building Fauna	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000462	Larval Worm Aggregation	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000463	Larval Worm Spawning Aggregation	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000480	Low and Intermediate Salt Marsh	skos:closeMatch	ENVO:00000054	saline marsh	semapv:ManualMappingCuration
+CMECS:CMECS_00000492	Marine Intertidal Lichen Zone	skos:broadMatch	ENVO:01000889	area of lichen-dominated vegetation	semapv:ManualMappingCuration
+CMECS:CMECS_00000494	Marine Lichens	skos:broadMatch	ENVO:01000889	area of lichen-dominated vegetation	semapv:ManualMappingCuration
+CMECS:CMECS_00000495	Marine Nearshore Intertidal Tidal Zone	skos:closeMatch	ENVO:00000316	intertidal zone	semapv:ManualMappingCuration
+CMECS:CMECS_00000498	Marine Nearshore Subsystem	skos:broadMatch	ENVO:00000206	marine neritic zone	semapv:ManualMappingCuration
+CMECS:CMECS_00000499	Marine Nearshore Subtidal Tidal Zone	skos:broadMatch	ENVO:00000206	marine neritic zone	semapv:ManualMappingCuration
+CMECS:CMECS_00000500	Marine Nearshore Supratidal Tidal Zone	skos:closeMatch	ENVO:01000124	marine supra-littoral zone	semapv:ManualMappingCuration
+CMECS:CMECS_00000510	Marine Oceanic Subtidal Tidal Zone	skos:broadMatch	ENVO:00000207	oceanic zone	semapv:ManualMappingCuration
+CMECS:CMECS_00000514	Marine Offshore Subsystem	skos:broadMatch	ENVO:00000206	marine neritic zone	semapv:ManualMappingCuration
+CMECS:CMECS_00000515	Marine Offshore Subtidal Tidal Zone	skos:broadMatch	ENVO:00000206	marine neritic zone	semapv:ManualMappingCuration
+CMECS:CMECS_00000519	Marine Supratidal Lichen Zone	skos:broadMatch	ENVO:01000889	area of lichen-dominated vegetation	semapv:ManualMappingCuration
+CMECS:CMECS_00000520	Marine System	skos:closeMatch	ENVO:01001788	marine ecosystem	semapv:ManualMappingCuration
+CMECS:CMECS_00000541	Microbial Aggregation	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000542	Microbial Communities	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000543	Microbial Foam	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000546	Microphytobenthos	skos:broadMatch	ENVO:01000008	microbial mat	semapv:ManualMappingCuration
+CMECS:CMECS_00000549	Mineral Boring Fauna	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000551	Mixed Crustacean Larvae	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000552	Mixed Echinoderm Larval Aggregation	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000556	Mixed Zooplankton	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000557	Mixed Zooplankton Aggregation	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000558	Mobile Crustaceans on Hard or Mixed Substrates	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000559	Mobile Crustaceans on Soft Sediments	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000560	Mobile Mollusks on Hard or Mixed Substrates	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000561	Mobile Mollusks on Soft Sediments	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000566	Molluscan Holoplankton	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000567	Molluscan Meroplankton	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000569	Mollusk Reef Biota	skos:broadMatch	ENVO:01001899	reef	semapv:ManualMappingCuration
+CMECS:CMECS_00000575	Moss and Lichen Communities	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000581	Mussel Bed	skos:closeMatch	ENVO:01001379	mussel bed	semapv:ManualMappingCuration
+CMECS:CMECS_00000583	Mussel Reef	skos:closeMatch	ENVO:01001386	mussel reef	semapv:ManualMappingCuration
+CMECS:CMECS_00000603	Marine Oceanic Subsystem	skos:broadMatch	ENVO:00000207	oceanic zone	semapv:ManualMappingCuration
+CMECS:CMECS_00000606	Oligozoic Biota	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000617	Oyster Bed	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000619	Oyster Reef	skos:broadMatch	ENVO:01001899	reef	semapv:ManualMappingCuration
+CMECS:CMECS_00000635	Pennatulid Bed	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000642	Phytoplankton	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000648	Planktonic Biota	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000649	Colonized Shallow/Mesophotic Reef	skos:broadMatch	ENVO:00000150	coral reef	semapv:ManualMappingCuration
+CMECS:CMECS_00000656	Polychaete Aggregation	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000661	Protozoan Holoplankton	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000662	Pteropod Aggregation	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000664	Radiolarian Aggregation	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000667	Reef Biota	skos:closeMatch	ENVO:01001899	reef	semapv:ManualMappingCuration
+CMECS:CMECS_00000689	Sabellariid Reef	skos:broadMatch	ENVO:01001899	reef	semapv:ManualMappingCuration
+CMECS:CMECS_00000694	Salp Aggregation	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000699	Saltwater Tidal Scrub-Shrub	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+CMECS:CMECS_00000703	Sand Dollar Bed	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000709	Scallop Bed	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000717	Scrub-Shrub Wetland	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+CMECS:CMECS_00000719	Sea Urchin Bed	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000721	Seagrass Bed	skos:closeMatch	ENVO:01000059	sea grass bed	semapv:ManualMappingCuration
+CMECS:CMECS_00000731	Serpulid Reef	skos:broadMatch	ENVO:01001899	reef	semapv:ManualMappingCuration
+CMECS:CMECS_00000736	Sessile Gastropods	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000738	Sheet Algal Bed	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000759	Siphonophore Aggregation	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000771	Small Surface-Burrowing Fauna	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000772	Small Tube-Building Fauna	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000773	Soft Sediment Basket Stars	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000774	Soft Sediment Brittle Stars	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000775	Soft Sediment Bryozoans	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000776	Soft Sediment Crinoids	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000777	Soft Sediment Fauna	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000784	Sponge Bed	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000793	Starfish Bed	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000797	Stromatolites	skos:closeMatch	ENVO:00002157	stromatolite mat	semapv:ManualMappingCuration
+CMECS:CMECS_00000798	Structure Forming Microbes	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000802	Submerged Freshwater Tidal Moss	skos:broadMatch	ENVO:01000890	area of moss-dominated vegetation	semapv:ManualMappingCuration
+CMECS:CMECS_00000834	Tidal Mangrove Forest	skos:closeMatch	ENVO:00000057	mangrove swamp	semapv:ManualMappingCuration
+CMECS:CMECS_00000835	Tidal Mangrove Shrubland	skos:exactMatch	ENVO:01001369	tidal mangrove shrubland	semapv:ManualMappingCuration
+CMECS:CMECS_00000836	Tidal Scrub-Shrub Wetland	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+CMECS:CMECS_00000844	Tracks and Trails	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000857	Tunicate Bed	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000858	Tunneling Megafauna	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000865	Turf Algal Bed	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000872	Vegetated Freshwater Tidal Mudflat	skos:broadMatch	ENVO:00000192	mudflat	semapv:ManualMappingCuration
+CMECS:CMECS_00000873	Vegetated Salt Flat and Panne	skos:broadMatch	ENVO:00000279	saline pan	semapv:ManualMappingCuration
+CMECS:CMECS_00000874	Vegetated Tidal Flats	skos:broadMatch	ENVO:00000192	mudflat	semapv:ManualMappingCuration
+CMECS:CMECS_00000875	Veliger Aggregation	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000876	Vent Microbes	skos:broadMatch	ENVO:00000215	hydrothermal vent	semapv:ManualMappingCuration
+CMECS:CMECS_00000913	Wood Boring Fauna	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000915	Worm Holoplankton	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000916	Worm Meroplankton	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000918	Worm Reef Biota	skos:broadMatch	ENVO:01001899	reef	semapv:ManualMappingCuration
+CMECS:CMECS_00000921	Xenophyophores	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00000923	Zooplankton	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00001381	Bacterial Mat/Film	skos:broadMatch	ENVO:01000008	microbial mat	semapv:ManualMappingCuration
+CMECS:CMECS_00001385	Benthic/Attached Biota	skos:closeMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00001395	Brackish Tidal Forest/Woodland	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+CMECS:CMECS_00001403	Encrusting Coral Reef	skos:broadMatch	ENVO:00000150	coral reef	semapv:ManualMappingCuration
+CMECS:CMECS_00001411	Colonized Deep-Water/Cold-Water Reef	skos:broadMatch	ENVO:00000150	coral reef	semapv:ManualMappingCuration
+CMECS:CMECS_00001412	Columnar Coral Reef	skos:broadMatch	ENVO:00000150	coral reef	semapv:ManualMappingCuration
+CMECS:CMECS_00001423	Coralline/Crustose Algal Bed	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00001428	Deep-Water/Cold-Water Coral Reef Biota	skos:broadMatch	ENVO:00000150	coral reef	semapv:ManualMappingCuration
+CMECS:CMECS_00001429	Deep-Water/Cold-Water Stony Coral Reef	skos:broadMatch	ENVO:00000150	coral reef	semapv:ManualMappingCuration
+CMECS:CMECS_00001430	Deep-Water/Cold-Water Stylasterid Coral Reef	skos:broadMatch	ENVO:00000150	coral reef	semapv:ManualMappingCuration
+CMECS:CMECS_00001444	Plate Coral Reef	skos:broadMatch	ENVO:00000150	coral reef	semapv:ManualMappingCuration
+CMECS:CMECS_00001450	Floating/Suspended Freshwater and Brackish Vegetation	skos:broadMatch	ENVO:01001789	freshwater ecosystem	semapv:ManualMappingCuration
+CMECS:CMECS_00001451	Floating/Suspended Macroalgae	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00001452	Floating/Suspended Microbes	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00001453	Floating/Suspended Plants and Macroalgae	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00001454	Floating/Suspended Vascular Vegetation	skos:broadMatch	ENVO:01001789	freshwater ecosystem	semapv:ManualMappingCuration
+CMECS:CMECS_00001459	Table Coral Reef	skos:broadMatch	ENVO:00000150	coral reef	semapv:ManualMappingCuration
+CMECS:CMECS_00001461	Freshwater Tidal Forest/Woodland	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+CMECS:CMECS_00001469	Foliose Coral Reef	skos:broadMatch	ENVO:00000150	coral reef	semapv:ManualMappingCuration
+CMECS:CMECS_00001491	Leathery/Leafy Algal Bed	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00001501	Turbinate Coral Reef	skos:broadMatch	ENVO:00000150	coral reef	semapv:ManualMappingCuration
+CMECS:CMECS_00001503	Mixed Shallow/Mesophotic Coral Reef	skos:broadMatch	ENVO:00000150	coral reef	semapv:ManualMappingCuration
+CMECS:CMECS_00001504	Mat/Film Forming Microbes	skos:broadMatch	ENVO:01000008	microbial mat	semapv:ManualMappingCuration
+CMECS:CMECS_00001507	Mesh/Bubble Algal Bed	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00001546	Pelletized, Fluid Surface Layer	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+CMECS:CMECS_00001572	Shallow/Mesophotic Coral Reef Biota	skos:closeMatch	ENVO:00000150	coral reef	semapv:ManualMappingCuration
+CMECS:CMECS_00001596	Tidal Forest/Woodland	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+CMECS:CMECS_00001604	Vent/Seep Communities	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+cnpsveg:1	Pacific silver fir forest	skos:broadMatch	ENVO:01000383	temperate evergreen needleleaf forest	semapv:ManualMappingCuration
+cnpsveg:1	Pacific silver fir forest	skos:broadMatch	ENVO:01001940	subalpine ecosystem	semapv:ManualMappingCuration
+cnpsveg:10	Bigleaf maple forest and woodland	skos:broadMatch	ENVO:01001796	temperate mixed forest	semapv:ManualMappingCuration
+cnpsveg:101	Rocky Mountain maple thickets	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+cnpsveg:102	Chamise chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+cnpsveg:105	Mission manzanita chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+cnpsveg:106	Redshank chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+cnpsveg:107	Desert agave scrub	skos:broadMatch	ENVO:01000242	desert scrubland	semapv:ManualMappingCuration
+cnpsveg:108	Iodine bush scrub	skos:broadMatch	ENVO:00000240	saline wetland	semapv:ManualMappingCuration
+cnpsveg:109	Mountain alder thicket	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+cnpsveg:11	Box-elder forest and woodland	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+cnpsveg:110	Sitka alder thickets	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+cnpsveg:111	White bursage scrub	skos:broadMatch	ENVO:01000242	desert scrubland	semapv:ManualMappingCuration
+cnpsveg:112	Cheesebush – sweetbush scrub	skos:broadMatch	ENVO:00000278	dry stream	semapv:ManualMappingCuration
+cnpsveg:115	Brittle leaf – woolly leaf manzanita chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+cnpsveg:116	Eastwood manzanita chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+cnpsveg:117	Bigberry manzanita chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+cnpsveg:118	Hooker’s manzanita chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+cnpsveg:119	Hoover’s manzanita chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+cnpsveg:12	California buckeye groves	skos:broadMatch	ENVO:01001916	mediterranean woodland ecosystem	semapv:ManualMappingCuration
+cnpsveg:122	Monterey manzanita chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+cnpsveg:123	Morro manzanita chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+cnpsveg:124	Ione manzanita chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+cnpsveg:127	Green leaf manzanita – Pinemat manzanita chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+cnpsveg:128	Pointleaf manzanita – pink-bract manzanita chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+cnpsveg:129	Sandmat manzanita chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+cnpsveg:13	White alder groves	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+cnpsveg:130	Burton Mesa chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+cnpsveg:133	Whiteleaf manzanita chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+cnpsveg:134	Little sagebrush scrub	skos:broadMatch	ENVO:01000861	area of dwarf scrub	semapv:ManualMappingCuration
+cnpsveg:139	Silver sagebrush wet shrubland	skos:broadMatch	ENVO:00000300	scrubland area	semapv:ManualMappingCuration
+cnpsveg:14	Red alder forest	skos:broadMatch	ENVO:01001796	temperate mixed forest	semapv:ManualMappingCuration
+cnpsveg:140	Black sagebrush scrub	skos:broadMatch	ENVO:01000861	area of dwarf scrub	semapv:ManualMappingCuration
+cnpsveg:141	Rothrock’s sagebrush	skos:broadMatch	ENVO:00000262	steppe	semapv:ManualMappingCuration
+cnpsveg:142	Big sagebrush	skos:broadMatch	ENVO:00000262	steppe	semapv:ManualMappingCuration
+cnpsveg:143	Mountain big sagebrush	skos:broadMatch	ENVO:00000262	steppe	semapv:ManualMappingCuration
+cnpsveg:144	Fourwing saltbush scrub	skos:broadMatch	ENVO:00000196	alkaline flat	semapv:ManualMappingCuration
+cnpsveg:145	Shadscale scrub	skos:broadMatch	ENVO:00000196	alkaline flat	semapv:ManualMappingCuration
+cnpsveg:146	Desert holly scrub	skos:broadMatch	ENVO:00000089	inland cliff	semapv:ManualMappingCuration
+cnpsveg:147	Quailbush scrub	skos:broadMatch	ENVO:00000240	saline wetland	semapv:ManualMappingCuration
+cnpsveg:148	Allscale scrub	skos:broadMatch	ENVO:01000242	desert scrubland	semapv:ManualMappingCuration
+cnpsveg:149	Spinescale scrub	skos:broadMatch	ENVO:00000240	saline wetland	semapv:ManualMappingCuration
+cnpsveg:15	Madrone forest	skos:broadMatch	ENVO:01001796	temperate mixed forest	semapv:ManualMappingCuration
+cnpsveg:151	Coyote brush scrub	skos:broadMatch	ENVO:01000237	coastal scrubland	semapv:ManualMappingCuration
+cnpsveg:152	Mulefat thickets	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+cnpsveg:154	Resin birch thickets	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+cnpsveg:155	Water birch thicket	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+cnpsveg:156	Broom patches	skos:broadMatch	ENVO:01000237	coastal scrubland	semapv:ManualMappingCuration
+cnpsveg:157	White mountain heather heath	skos:broadMatch	ENVO:01001371	alpine tundra ecosystem	semapv:ManualMappingCuration
+cnpsveg:158	Crucifixion thorn stands	skos:broadMatch	ENVO:00000278	dry stream	semapv:ManualMappingCuration
+cnpsveg:16	Elephant tree stands	skos:broadMatch	ENVO:01000242	desert scrubland	semapv:ManualMappingCuration
+cnpsveg:160	Hoary leaf ceanothus chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+cnpsveg:161	Wedge leaf ceanothus chaparral, Buck brush chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+cnpsveg:162	Cup leaf ceanothus – California flannelbush chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+cnpsveg:164	Chaparral whitethorn chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+cnpsveg:165	Bigpod ceanothus chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+cnpsveg:166	Hairy leaf - woolly leaf ceanothus chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+cnpsveg:167	Wart leaf ceanothus chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+cnpsveg:169	Blue blossom chaparral	skos:broadMatch	ENVO:01000237	coastal scrubland	semapv:ManualMappingCuration
+cnpsveg:170	Tobacco brush or snow bush chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+cnpsveg:171	Wart-stemmed ceanothus chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+cnpsveg:173	Utah serviceberry – birch leaf mountain mahogany – small leaf mountain mahogany scrub	skos:broadMatch	ENVO:01001902	temperate desert ecosystem	semapv:ManualMappingCuration
+cnpsveg:174	Curlleaf mountain mahogany scrub	skos:broadMatch	ENVO:01001902	temperate desert ecosystem	semapv:ManualMappingCuration
+cnpsveg:175	Birch leaf mountain mahogany chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+cnpsveg:178	Black brush scrub	skos:broadMatch	ENVO:01001902	temperate desert ecosystem	semapv:ManualMappingCuration
+cnpsveg:179	Giant coreopsis scrub	skos:broadMatch	ENVO:01000242	desert scrubland	semapv:ManualMappingCuration
+cnpsveg:18	Baker cypress stands	skos:broadMatch	ENVO:01000240	conifer woodland	semapv:ManualMappingCuration
+cnpsveg:180	Red osier thickets	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+cnpsveg:181	Hazelnut scrub	skos:broadMatch	ENVO:01000237	coastal scrubland	semapv:ManualMappingCuration
+cnpsveg:182	Teddy bear cholla patches	skos:broadMatch	ENVO:01000242	desert scrubland	semapv:ManualMappingCuration
+cnpsveg:183	Shrubby cinquefoil scrub	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+cnpsveg:184	Island tar plant – Saint Catherine's lace scrub	skos:broadMatch	ENVO:01000242	desert scrubland	semapv:ManualMappingCuration
+cnpsveg:186	Bush monkeyflower scrub	skos:broadMatch	ENVO:01000237	coastal scrubland	semapv:ManualMappingCuration
+cnpsveg:188	Brittle bush scrub	skos:broadMatch	ENVO:01000242	desert scrubland	semapv:ManualMappingCuration
+cnpsveg:190	California joint fir – longleaf joint-fir scrub	skos:broadMatch	ENVO:00000278	dry stream	semapv:ManualMappingCuration
+cnpsveg:191	Death Valley joint fir scrub	skos:broadMatch	ENVO:01000242	desert scrubland	semapv:ManualMappingCuration
+cnpsveg:193	Mormon tea scrub	skos:broadMatch	ENVO:01001902	temperate desert ecosystem	semapv:ManualMappingCuration
+cnpsveg:194	Narrowleaf goldenbush – bladderpod scrub	skos:broadMatch	ENVO:01000237	coastal scrubland	semapv:ManualMappingCuration
+cnpsveg:195	Rubber rabbitbrush scrub	skos:broadMatch	ENVO:01001902	temperate desert ecosystem	semapv:ManualMappingCuration
+cnpsveg:196	Palmer’s goldenbush scrub	skos:broadMatch	ENVO:01000237	coastal scrubland	semapv:ManualMappingCuration
+cnpsveg:197	Black-stem rabbitbrush scrub	skos:broadMatch	ENVO:00000278	dry stream	semapv:ManualMappingCuration
+cnpsveg:198	Parry’s rabbitbrush scrub	skos:broadMatch	ENVO:01001902	temperate desert ecosystem	semapv:ManualMappingCuration
+cnpsveg:199	Needleleaf rabbitbrush scrub	skos:broadMatch	ENVO:01001902	temperate desert ecosystem	semapv:ManualMappingCuration
+cnpsveg:2	Santa Lucia fir groves	skos:broadMatch	ENVO:01000383	temperate evergreen needleleaf forest	semapv:ManualMappingCuration
+cnpsveg:203	California buckwheat scrub	skos:broadMatch	ENVO:01000237	coastal scrubland	semapv:ManualMappingCuration
+cnpsveg:204	California buckwheat – white sage scrub	skos:broadMatch	ENVO:01000237	coastal scrubland	semapv:ManualMappingCuration
+cnpsveg:207	Basket bush – river hawthorn – desert olive patches	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+cnpsveg:212	Snakeweed scrub	skos:broadMatch	ENVO:01001902	temperate desert ecosystem	semapv:ManualMappingCuration
+cnpsveg:213	Sawtooth golden bush scrub	skos:broadMatch	ENVO:01000237	coastal scrubland	semapv:ManualMappingCuration
+cnpsveg:217	Menzies’s golden bush scrub	skos:broadMatch	ENVO:01000237	coastal scrubland	semapv:ManualMappingCuration
+cnpsveg:219	Alpine laurel heath	skos:broadMatch	ENVO:01001371	alpine tundra ecosystem	semapv:ManualMappingCuration
+cnpsveg:220	Bush penstemon scrub	skos:broadMatch	ENVO:01000237	coastal scrubland	semapv:ManualMappingCuration
+cnpsveg:221	Crown-of-thorns stands	skos:broadMatch	ENVO:00000278	dry stream	semapv:ManualMappingCuration
+cnpsveg:222	Winterfat scrubland	skos:broadMatch	ENVO:01001902	temperate desert ecosystem	semapv:ManualMappingCuration
+cnpsveg:223	Creosote bush scrub	skos:broadMatch	ENVO:01000242	desert scrubland	semapv:ManualMappingCuration
+cnpsveg:224	Creosote bush – white bursage scrub	skos:broadMatch	ENVO:01000242	desert scrubland	semapv:ManualMappingCuration
+cnpsveg:225	Creosote bush – brittle bush scrub	skos:broadMatch	ENVO:01000242	desert scrubland	semapv:ManualMappingCuration
+cnpsveg:226	Scale broom scrub	skos:broadMatch	ENVO:00000278	dry stream	semapv:ManualMappingCuration
+cnpsveg:227	Shrub tanoak chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+cnpsveg:230	Yellow bush lupine scrub	skos:broadMatch	ENVO:01000237	coastal scrubland	semapv:ManualMappingCuration
+cnpsveg:231	Silver dune lupine – mock heather scrub	skos:broadMatch	ENVO:01000237	coastal scrubland	semapv:ManualMappingCuration
+cnpsveg:233	California desert-thorn scrub	skos:broadMatch	ENVO:01000242	desert scrubland	semapv:ManualMappingCuration
+cnpsveg:234	Bushmallow scrub	skos:broadMatch	ENVO:01000237	coastal scrubland	semapv:ManualMappingCuration
+cnpsveg:235	Laurel sumac scrub	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+cnpsveg:236	Spiny menodora scrub	skos:broadMatch	ENVO:01000242	desert scrubland	semapv:ManualMappingCuration
+cnpsveg:238	Nolina scrub	skos:broadMatch	ENVO:01001902	temperate desert ecosystem	semapv:ManualMappingCuration
+cnpsveg:239	Coast prickly pear scrub	skos:broadMatch	ENVO:01000242	desert scrubland	semapv:ManualMappingCuration
+cnpsveg:24	Alaska yellow-cedar stands	skos:broadMatch	ENVO:01000383	temperate evergreen needleleaf forest	semapv:ManualMappingCuration
+cnpsveg:24	Alaska yellow-cedar stands	skos:broadMatch	ENVO:01001940	subalpine ecosystem	semapv:ManualMappingCuration
+cnpsveg:240	Saguaro – foothill palo verde – velvet mesquite desert scrub	skos:broadMatch	ENVO:01000242	desert scrubland	semapv:ManualMappingCuration
+cnpsveg:241	Purple mountain-heath mats	skos:broadMatch	ENVO:01000302	outcrop	semapv:ManualMappingCuration
+cnpsveg:242	Pink mountain-heath mats	skos:broadMatch	ENVO:01001371	alpine tundra ecosystem	semapv:ManualMappingCuration
+cnpsveg:243	Arrow weed thickets	skos:broadMatch	ENVO:00000278	dry stream	semapv:ManualMappingCuration
+cnpsveg:246	Desert apricot scrub	skos:broadMatch	ENVO:01000242	desert scrubland	semapv:ManualMappingCuration
+cnpsveg:248	Choke cherry thickets	skos:broadMatch	ENVO:00000300	scrubland area	semapv:ManualMappingCuration
+cnpsveg:249	Stansbury cliff rose scrub	skos:broadMatch	ENVO:01001902	temperate desert ecosystem	semapv:ManualMappingCuration
+cnpsveg:250	Antelope bitterbrush – Big sagebrush scrub	skos:broadMatch	ENVO:01001902	temperate desert ecosystem	semapv:ManualMappingCuration
+cnpsveg:251	Scrub oak chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+cnpsveg:254	Muller oak chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+cnpsveg:255	Leather oak chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+cnpsveg:256	Brewer oak scrub	skos:broadMatch	ENVO:00000300	scrubland area	semapv:ManualMappingCuration
+cnpsveg:257	Tucker oak chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+cnpsveg:258	Coastal sage and Island scrub oak chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+cnpsveg:259	Palmer oak chaparral	skos:broadMatch	ENVO:01001916	mediterranean woodland ecosystem	semapv:ManualMappingCuration
+cnpsveg:260	Sadler oak or deer oak brush fields	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+cnpsveg:261	Sonoran live oak scrub	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+cnpsveg:264	Western Labrador-tea thickets	skos:broadMatch	ENVO:00000232	fen	semapv:ManualMappingCuration
+cnpsveg:266	Lemonade berry scrub	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+cnpsveg:267	Sugarbush chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+cnpsveg:27	Cuyamaca cypress stands	skos:broadMatch	ENVO:01000240	conifer woodland	semapv:ManualMappingCuration
+cnpsveg:271	Red-osier dogwood - Interior rose - Currant thickets	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+cnpsveg:272	Himalayan blackberry – rattlebox – edible fig riparian scrub	skos:broadMatch	ENVO:00000300	scrubland area	semapv:ManualMappingCuration
+cnpsveg:278	Sandbar willow thickets	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+cnpsveg:28	Incense cedar forest and woodland	skos:broadMatch	ENVO:01000383	temperate evergreen needleleaf forest	semapv:ManualMappingCuration
+cnpsveg:281	Jepson willow thickets	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+cnpsveg:282	Arroyo willow thickets	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+cnpsveg:285	Snow willow mats	skos:broadMatch	ENVO:01001371	alpine tundra ecosystem	semapv:ManualMappingCuration
+cnpsveg:286	Sierra gray willow thickets	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+cnpsveg:287	Alpine willow turf	skos:broadMatch	ENVO:01001371	alpine tundra ecosystem	semapv:ManualMappingCuration
+cnpsveg:288	Tea-leaved willow thickets	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+cnpsveg:29	Port Orford cedar forest and woodland	skos:broadMatch	ENVO:01001952	temperate rainforest	semapv:ManualMappingCuration
+cnpsveg:290	White sage scrub	skos:broadMatch	ENVO:01000237	coastal scrubland	semapv:ManualMappingCuration
+cnpsveg:294	Greasewood scrub	skos:broadMatch	ENVO:00000240	saline wetland	semapv:ManualMappingCuration
+cnpsveg:295	Bush seepweed scrub	skos:broadMatch	ENVO:00000240	saline wetland	semapv:ManualMappingCuration
+cnpsveg:296	Jojoba scrub	skos:broadMatch	ENVO:01000242	desert scrubland	semapv:ManualMappingCuration
+cnpsveg:298	Tamarisk thickets	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+cnpsveg:299	Hall’s shrubby-spurge patches	skos:broadMatch	ENVO:00000278	dry stream	semapv:ManualMappingCuration
+cnpsveg:3	White fir forest and woodland	skos:broadMatch	ENVO:01000383	temperate evergreen needleleaf forest	semapv:ManualMappingCuration
+cnpsveg:301	Poison oak scrub	skos:broadMatch	ENVO:01000237	coastal scrubland	semapv:ManualMappingCuration
+cnpsveg:302	Dwarf bilberry meadows and mats	skos:broadMatch	ENVO:01001371	alpine tundra ecosystem	semapv:ManualMappingCuration
+cnpsveg:303	Bog blueberry wet meadows	skos:broadMatch	ENVO:00000232	fen	semapv:ManualMappingCuration
+cnpsveg:304	Canyon sunflower scrub	skos:broadMatch	ENVO:01000237	coastal scrubland	semapv:ManualMappingCuration
+cnpsveg:305	California buckwheat – Parish’s goldeneye scrub	skos:broadMatch	ENVO:01000242	desert scrubland	semapv:ManualMappingCuration
+cnpsveg:307	Mojave yucca scrub	skos:broadMatch	ENVO:01000242	desert scrubland	semapv:ManualMappingCuration
+cnpsveg:308	Graythorn patches	skos:broadMatch	ENVO:01000242	desert scrubland	semapv:ManualMappingCuration
+cnpsveg:309	Dune mat	skos:broadMatch	ENVO:00000416	coastal dune	semapv:ManualMappingCuration
+cnpsveg:31	Eucalyptus – tree of heaven – black locust groves	skos:broadMatch	ENVO:00000119	planted forest	semapv:ManualMappingCuration
+cnpsveg:310	Indian rice grass grassland	skos:broadMatch	ENVO:01001902	temperate desert ecosystem	semapv:ManualMappingCuration
+cnpsveg:311	Desert needlegrass grassland	skos:broadMatch	ENVO:01001902	temperate desert ecosystem	semapv:ManualMappingCuration
+cnpsveg:312	Barbed goatgrass patches	skos:broadMatch	ENVO:01001810	mediterranean grassland	semapv:ManualMappingCuration
+cnpsveg:313	Crested wheatgrass rangelands	skos:broadMatch	ENVO:01001811	temperate grassland	semapv:ManualMappingCuration
+cnpsveg:315	Water foxtail meadows	skos:broadMatch	ENVO:01000449	wet meadow ecosystem	semapv:ManualMappingCuration
+cnpsveg:317	European beach grass swards	skos:broadMatch	ENVO:00000416	coastal dune	semapv:ManualMappingCuration
+cnpsveg:318	Fiddleneck - Phacelia Fields	skos:broadMatch	ENVO:01001810	mediterranean grassland	semapv:ManualMappingCuration
+cnpsveg:319	Yerba mansa – Nuttall's sunflower – Nevada goldenrod alkaline wet meadows	skos:broadMatch	ENVO:00000054	saline marsh	semapv:ManualMappingCuration
+cnpsveg:32	Oregon ash groves	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+cnpsveg:322	Wild tarragon patches	skos:broadMatch	ENVO:01001810	mediterranean grassland	semapv:ManualMappingCuration
+cnpsveg:323	Parish’s glasswort patches	skos:broadMatch	ENVO:00000240	saline wetland	semapv:ManualMappingCuration
+cnpsveg:325	Fields of fat hen and brass buttons	skos:broadMatch	ENVO:00000054	saline marsh	semapv:ManualMappingCuration
+cnpsveg:327	Mosquito fern mats	skos:broadMatch	ENVO:01001789	freshwater ecosystem	semapv:ManualMappingCuration
+cnpsveg:329	Salt marsh bulrush marshes	skos:broadMatch	ENVO:00000054	saline marsh	semapv:ManualMappingCuration
+cnpsveg:33	California walnut groves	skos:broadMatch	ENVO:01001916	mediterranean woodland ecosystem	semapv:ManualMappingCuration
+cnpsveg:332	Red brome or Mediterranean grass grasslands	skos:broadMatch	ENVO:01001810	mediterranean grassland	semapv:ManualMappingCuration
+cnpsveg:333	Cheatgrass – medusahead grassland	skos:broadMatch	ENVO:01001811	temperate grassland	semapv:ManualMappingCuration
+cnpsveg:334	Sea rocket sands	skos:broadMatch	ENVO:00000416	coastal dune	semapv:ManualMappingCuration
+cnpsveg:336	Shorthair reed grass meadows	skos:broadMatch	ENVO:01001371	alpine tundra ecosystem	semapv:ManualMappingCuration
+cnpsveg:337	Pacific reed grass meadows	skos:broadMatch	ENVO:01001811	temperate grassland	semapv:ManualMappingCuration
+cnpsveg:34	Hinds’s walnut and related stands	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+cnpsveg:341	White-root beds	skos:broadMatch	ENVO:01000449	wet meadow ecosystem	semapv:ManualMappingCuration
+cnpsveg:342	Brewer sedge mats	skos:broadMatch	ENVO:01001371	alpine tundra ecosystem	semapv:ManualMappingCuration
+cnpsveg:343	Congdon’s sedge talus	skos:broadMatch	ENVO:00000194	scree	semapv:ManualMappingCuration
+cnpsveg:346	Shorthair sedge turf	skos:broadMatch	ENVO:01001371	alpine tundra ecosystem	semapv:ManualMappingCuration
+cnpsveg:347	Heller’s sedge fell-fields	skos:broadMatch	ENVO:01001371	alpine tundra ecosystem	semapv:ManualMappingCuration
+cnpsveg:348	Different-nerve sedge patches	skos:broadMatch	ENVO:01001371	alpine tundra ecosystem	semapv:ManualMappingCuration
+cnpsveg:35	California juniper woodland	skos:broadMatch	ENVO:01000240	conifer woodland	semapv:ManualMappingCuration
+cnpsveg:350	Jones’s sedge turf	skos:broadMatch	ENVO:01000449	wet meadow ecosystem	semapv:ManualMappingCuration
+cnpsveg:351	Slender sedge meadows	skos:broadMatch	ENVO:00000232	fen	semapv:ManualMappingCuration
+cnpsveg:356	Black alpine sedge meadows	skos:broadMatch	ENVO:01001371	alpine tundra ecosystem	semapv:ManualMappingCuration
+cnpsveg:357	Torrent sedge patches	skos:broadMatch	ENVO:01000449	wet meadow ecosystem	semapv:ManualMappingCuration
+cnpsveg:36	Mountain juniper woodland	skos:broadMatch	ENVO:01000244	pinyon juniper woodland	semapv:ManualMappingCuration
+cnpsveg:363	Showy sedge sod	skos:broadMatch	ENVO:01001371	alpine tundra ecosystem	semapv:ManualMappingCuration
+cnpsveg:364	Mount Shasta sedge meadows	skos:broadMatch	ENVO:01001371	alpine tundra ecosystem	semapv:ManualMappingCuration
+cnpsveg:365	Dark alpine sedge turf	skos:broadMatch	ENVO:01000449	wet meadow ecosystem	semapv:ManualMappingCuration
+cnpsveg:367	Ice plant mats	skos:broadMatch	ENVO:00000416	coastal dune	semapv:ManualMappingCuration
+cnpsveg:369	Knapweed and purple-flowered star-thistle fields	skos:broadMatch	ENVO:01001810	mediterranean grassland	semapv:ManualMappingCuration
+cnpsveg:37	Western juniper woodland	skos:broadMatch	ENVO:01000244	pinyon juniper woodland	semapv:ManualMappingCuration
+cnpsveg:370	Tar plant fields	skos:broadMatch	ENVO:00000389	intermittent wetland	semapv:ManualMappingCuration
+cnpsveg:372	Pussypaws – groundsmoke openings	skos:broadMatch	ENVO:00000108	meadow ecosystem	semapv:ManualMappingCuration
+cnpsveg:373	Poison hemlock or fennel patches	skos:broadMatch	ENVO:01001810	mediterranean grassland	semapv:ManualMappingCuration
+cnpsveg:374	Pampas grass patches	skos:broadMatch	ENVO:01001810	mediterranean grassland	semapv:ManualMappingCuration
+cnpsveg:375	Alkali weed – salt grass playas and sinks	skos:broadMatch	ENVO:00000389	intermittent wetland	semapv:ManualMappingCuration
+cnpsveg:376	Annual dogtail and tall oatgrass grasslands	skos:broadMatch	ENVO:01001810	mediterranean grassland	semapv:ManualMappingCuration
+cnpsveg:378	Wild mountain oat grass meadows	skos:broadMatch	ENVO:00000108	meadow ecosystem	semapv:ManualMappingCuration
+cnpsveg:379	California pitcher plant fens	skos:broadMatch	ENVO:00000232	fen	semapv:ManualMappingCuration
+cnpsveg:38	Utah juniper woodland and forest	skos:broadMatch	ENVO:01000244	pinyon juniper woodland	semapv:ManualMappingCuration
+cnpsveg:380	Clustered tarweed fields	skos:broadMatch	ENVO:00000389	intermittent wetland	semapv:ManualMappingCuration
+cnpsveg:384	Three-way sedge meadows	skos:broadMatch	ENVO:00000053	freshwater marsh	semapv:ManualMappingCuration
+cnpsveg:388	Blue wild rye montane meadows	skos:broadMatch	ENVO:01000449	wet meadow ecosystem	semapv:ManualMappingCuration
+cnpsveg:39	Tanoak forest	skos:broadMatch	ENVO:01001796	temperate mixed forest	semapv:ManualMappingCuration
+cnpsveg:391	California button-celery patches	skos:broadMatch	ENVO:00000389	intermittent wetland	semapv:ManualMappingCuration
+cnpsveg:392	California poppy – lupine fields	skos:broadMatch	ENVO:01001810	mediterranean grassland	semapv:ManualMappingCuration
+cnpsveg:393	Alpine fescue fell-fields	skos:broadMatch	ENVO:01001371	alpine tundra ecosystem	semapv:ManualMappingCuration
+cnpsveg:4	White fir – sugar pine forest and woodland	skos:broadMatch	ENVO:01000383	temperate evergreen needleleaf forest	semapv:ManualMappingCuration
+cnpsveg:400	Common velvet grass – sweet vernal grass meadows	skos:broadMatch	ENVO:01001811	temperate grassland	semapv:ManualMappingCuration
+cnpsveg:402	Mats of floating pennywort	skos:broadMatch	ENVO:01001789	freshwater ecosystem	semapv:ManualMappingCuration
+cnpsveg:403	Western blue flag patches	skos:broadMatch	ENVO:01000449	wet meadow ecosystem	semapv:ManualMappingCuration
+cnpsveg:404	Quillwort beds	skos:broadMatch	ENVO:01001907	freshwater lake ecosystem	semapv:ManualMappingCuration
+cnpsveg:405	Baltic and Mexican rush marshes	skos:broadMatch	ENVO:01000449	wet meadow ecosystem	semapv:ManualMappingCuration
+cnpsveg:41	Blue palo verde – ironwood woodland	skos:broadMatch	ENVO:00000278	dry stream	semapv:ManualMappingCuration
+cnpsveg:411	Parry’s rush outcrops	skos:broadMatch	ENVO:01000302	outcrop	semapv:ManualMappingCuration
+cnpsveg:413	Pacific bog sedge meadows	skos:broadMatch	ENVO:01001371	alpine tundra ecosystem	semapv:ManualMappingCuration
+cnpsveg:414	California goldfields – dwarf plantain – small fescue flower fields	skos:broadMatch	ENVO:01001810	mediterranean grassland	semapv:ManualMappingCuration
+cnpsveg:415	Fremont’s goldfields – salt grass alkaline vernal pools	skos:broadMatch	ENVO:00000389	intermittent wetland	semapv:ManualMappingCuration
+cnpsveg:416	Fremont’s goldfields – Downingia vernal pools	skos:broadMatch	ENVO:00000389	intermittent wetland	semapv:ManualMappingCuration
+cnpsveg:417	Smooth goldfields – pale spike rush vernal pool bottoms	skos:broadMatch	ENVO:00000389	intermittent wetland	semapv:ManualMappingCuration
+cnpsveg:418	Fremont’s tidy-tips – blow wives vernal pools	skos:broadMatch	ENVO:00000389	intermittent wetland	semapv:ManualMappingCuration
+cnpsveg:419	Duckweed blooms	skos:broadMatch	ENVO:01001907	freshwater lake ecosystem	semapv:ManualMappingCuration
+cnpsveg:42	Brewer spruce forest and woodland	skos:broadMatch	ENVO:01000383	temperate evergreen needleleaf forest	semapv:ManualMappingCuration
+cnpsveg:420	Perennial pepper weed – Prickly lettuce patches	skos:broadMatch	ENVO:01000449	wet meadow ecosystem	semapv:ManualMappingCuration
+cnpsveg:422	Giant wild rye grassland	skos:broadMatch	ENVO:01001810	mediterranean grassland	semapv:ManualMappingCuration
+cnpsveg:423	Sea lyme grass patches	skos:broadMatch	ENVO:00000416	coastal dune	semapv:ManualMappingCuration
+cnpsveg:425	Perennial rye grass fields	skos:broadMatch	ENVO:01001810	mediterranean grassland	semapv:ManualMappingCuration
+cnpsveg:426	Spanish clover fields	skos:broadMatch	ENVO:01001810	mediterranean grassland	semapv:ManualMappingCuration
+cnpsveg:427	Water primrose – Water hyacinth wetlands	skos:broadMatch	ENVO:01001789	freshwater ecosystem	semapv:ManualMappingCuration
+cnpsveg:43	Engelmann spruce forest	skos:broadMatch	ENVO:01000383	temperate evergreen needleleaf forest	semapv:ManualMappingCuration
+cnpsveg:43	Engelmann spruce forest	skos:broadMatch	ENVO:01001940	subalpine ecosystem	semapv:ManualMappingCuration
+cnpsveg:430	Water blinks – annual checkerbloom vernal pools	skos:broadMatch	ENVO:00000389	intermittent wetland	semapv:ManualMappingCuration
+cnpsveg:433	Deer grass beds	skos:broadMatch	ENVO:01000449	wet meadow ecosystem	semapv:ManualMappingCuration
+cnpsveg:437	Yellow pond-lily mats	skos:broadMatch	ENVO:01001907	freshwater lake ecosystem	semapv:ManualMappingCuration
+cnpsveg:439	Western cowbane meadows	skos:broadMatch	ENVO:01000449	wet meadow ecosystem	semapv:ManualMappingCuration
+cnpsveg:44	Sitka spruce forest and woodland	skos:broadMatch	ENVO:01001952	temperate rainforest	semapv:ManualMappingCuration
+cnpsveg:440	Mountain sorrel patches	skos:broadMatch	ENVO:00000194	scree	semapv:ManualMappingCuration
+cnpsveg:442	Fountain grass swards	skos:broadMatch	ENVO:01001810	mediterranean grassland	semapv:ManualMappingCuration
+cnpsveg:443	Heretic penstemon patches	skos:broadMatch	ENVO:01001371	alpine tundra ecosystem	semapv:ManualMappingCuration
+cnpsveg:444	Mountain pride patches	skos:broadMatch	ENVO:01000302	outcrop	semapv:ManualMappingCuration
+cnpsveg:445	Smartweed – cocklebur patches	skos:broadMatch	ENVO:01000449	wet meadow ecosystem	semapv:ManualMappingCuration
+cnpsveg:446	Harding grass – Reed Canary grass swards	skos:broadMatch	ENVO:01001811	temperate grassland	semapv:ManualMappingCuration
+cnpsveg:448	Cushion phlox fell-fields	skos:broadMatch	ENVO:01001371	alpine tundra ecosystem	semapv:ManualMappingCuration
+cnpsveg:45	Whitebark pine forest and woodland	skos:broadMatch	ENVO:01000383	temperate evergreen needleleaf forest	semapv:ManualMappingCuration
+cnpsveg:45	Whitebark pine forest and woodland	skos:broadMatch	ENVO:01001940	subalpine ecosystem	semapv:ManualMappingCuration
+cnpsveg:450	Popcorn flower fields	skos:broadMatch	ENVO:01001810	mediterranean grassland	semapv:ManualMappingCuration
+cnpsveg:451	James’ galleta shrub-steppe	skos:broadMatch	ENVO:01001902	temperate desert ecosystem	semapv:ManualMappingCuration
+cnpsveg:452	Big galleta shrub-steppe	skos:broadMatch	ENVO:01000242	desert scrubland	semapv:ManualMappingCuration
+cnpsveg:455	Idaho fescue – bluebunch wheat grass – pine bluegrass grassland	skos:broadMatch	ENVO:01001902	temperate desert ecosystem	semapv:ManualMappingCuration
+cnpsveg:456	King’s needle grass meadows	skos:broadMatch	ENVO:00000108	meadow ecosystem	semapv:ManualMappingCuration
+cnpsveg:457	Ditch-grass or widgeon-grass mats	skos:broadMatch	ENVO:00000241	tidal mudflat	semapv:ManualMappingCuration
+cnpsveg:458	Pickleweed mats	skos:broadMatch	ENVO:00000054	saline marsh	semapv:ManualMappingCuration
+cnpsveg:459	Pink saxifrage patches	skos:broadMatch	ENVO:01001371	alpine tundra ecosystem	semapv:ManualMappingCuration
+cnpsveg:46	Knobcone pine forest and woodland	skos:broadMatch	ENVO:01000240	conifer woodland	semapv:ManualMappingCuration
+cnpsveg:460	Patches of Tolmie’s alpine saxifrage	skos:broadMatch	ENVO:01001371	alpine tundra ecosystem	semapv:ManualMappingCuration
+cnpsveg:462	Common Three-square marsh	skos:broadMatch	ENVO:00000054	saline marsh	semapv:ManualMappingCuration
+cnpsveg:465	Coast Range stonecrop draperies	skos:broadMatch	ENVO:00000088	sea cliff	semapv:ManualMappingCuration
+cnpsveg:466	Bushy spikemoss mats	skos:broadMatch	ENVO:01000752	area of barren land	semapv:ManualMappingCuration
+cnpsveg:468	Western sea-purslane marshes	skos:broadMatch	ENVO:00000054	saline marsh	semapv:ManualMappingCuration
+cnpsveg:469	Canada goldenrod patches	skos:broadMatch	ENVO:01000449	wet meadow ecosystem	semapv:ManualMappingCuration
+cnpsveg:47	Foxtail pine woodland	skos:broadMatch	ENVO:01000383	temperate evergreen needleleaf forest	semapv:ManualMappingCuration
+cnpsveg:47	Foxtail pine woodland	skos:broadMatch	ENVO:01001940	subalpine ecosystem	semapv:ManualMappingCuration
+cnpsveg:470	Mats of bur-reed leaves	skos:broadMatch	ENVO:01001789	freshwater ecosystem	semapv:ManualMappingCuration
+cnpsveg:471	Smooth or Chilean cordgrass marshes	skos:broadMatch	ENVO:00000054	saline marsh	semapv:ManualMappingCuration
+cnpsveg:472	California cordgrass marsh	skos:broadMatch	ENVO:00000054	saline marsh	semapv:ManualMappingCuration
+cnpsveg:475	Pondweed mats	skos:broadMatch	ENVO:00000241	tidal mudflat	semapv:ManualMappingCuration
+cnpsveg:478	Western false asphodel – California bog asphodel fens	skos:broadMatch	ENVO:00000232	fen	semapv:ManualMappingCuration
+cnpsveg:48	Beach pine forest and woodland	skos:broadMatch	ENVO:01001952	temperate rainforest	semapv:ManualMappingCuration
+cnpsveg:480	White-tip clover swales	skos:broadMatch	ENVO:00000389	intermittent wetland	semapv:ManualMappingCuration
+cnpsveg:481	Cattail marshes	skos:broadMatch	ENVO:00000053	freshwater marsh	semapv:ManualMappingCuration
+cnpsveg:49	Lodgepole pine forest and woodland	skos:broadMatch	ENVO:01000383	temperate evergreen needleleaf forest	semapv:ManualMappingCuration
+cnpsveg:49	Lodgepole pine forest and woodland	skos:broadMatch	ENVO:01001940	subalpine ecosystem	semapv:ManualMappingCuration
+cnpsveg:490	Apache plume scrub	skos:broadMatch	ENVO:01000242	desert scrubland	semapv:ManualMappingCuration
+cnpsveg:492	Utah mortonia scrub	skos:broadMatch	ENVO:01001902	temperate desert ecosystem	semapv:ManualMappingCuration
+cnpsveg:494	California sawgrass alkaline seep	skos:broadMatch	ENVO:00000054	saline marsh	semapv:ManualMappingCuration
+cnpsveg:497	Common spikerush and beaked spikerush marshes	skos:broadMatch	ENVO:00000054	saline marsh	semapv:ManualMappingCuration
+cnpsveg:498	Goldenaster patches	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+cnpsveg:499	California brome – blue wildrye prairie	skos:broadMatch	ENVO:01001811	temperate grassland	semapv:ManualMappingCuration
+cnpsveg:5	White fir – Douglas fir forest and woodland	skos:broadMatch	ENVO:01001796	temperate mixed forest	semapv:ManualMappingCuration
+cnpsveg:50	Coulter pine woodland and forest	skos:broadMatch	ENVO:01000240	conifer woodland	semapv:ManualMappingCuration
+cnpsveg:500	Fremont's smokebush – Nevada smokebush scrub	skos:broadMatch	ENVO:01000242	desert scrubland	semapv:ManualMappingCuration
+cnpsveg:501	Fremont's chaffbush – woolly sage scrub	skos:broadMatch	ENVO:01001902	temperate desert ecosystem	semapv:ManualMappingCuration
+cnpsveg:503	Booth's Willow – Geyer's Willow – Yellow Willow thickets	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+cnpsveg:504	Onion – twistflower – dwarf-flax serpentinite rock outcrop	skos:broadMatch	ENVO:01000752	area of barren land	semapv:ManualMappingCuration
+cnpsveg:505	Sand-aster and perennial buckwheat fields	skos:broadMatch	ENVO:01001810	mediterranean grassland	semapv:ManualMappingCuration
+cnpsveg:506	Onesided bluegrass – mat muhly – Douglas' sedge moist meadow	skos:broadMatch	ENVO:00000108	meadow ecosystem	semapv:ManualMappingCuration
+cnpsveg:507	Ditch reedgrass – bushy bluestem saturated hanging garden	skos:broadMatch	ENVO:00000054	saline marsh	semapv:ManualMappingCuration
+cnpsveg:508	Buckhorn cholla / big galleta grass scrub	skos:broadMatch	ENVO:01000242	desert scrubland	semapv:ManualMappingCuration
+cnpsveg:509	Bishop pine – Monterey pine forest and woodland	skos:broadMatch	ENVO:01000240	conifer woodland	semapv:ManualMappingCuration
+cnpsveg:51	Two-needle pinyon stands	skos:broadMatch	ENVO:01000244	pinyon juniper woodland	semapv:ManualMappingCuration
+cnpsveg:510	Dry White fir forest and woodland	skos:broadMatch	ENVO:01000244	pinyon juniper woodland	semapv:ManualMappingCuration
+cnpsveg:511	Wright's beebrush – mountain tail-leaf – Nevada joint-fir	skos:broadMatch	ENVO:01000242	desert scrubland	semapv:ManualMappingCuration
+cnpsveg:512	Sugarberry – skunkbush sumac scrub	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+cnpsveg:513	Rigid spineflower – hairy desert sunflower	skos:broadMatch	ENVO:00000089	inland cliff	semapv:ManualMappingCuration
+cnpsveg:514	Monolopia – leafy-stemmed tickseed fields	skos:broadMatch	ENVO:01001810	mediterranean grassland	semapv:ManualMappingCuration
+cnpsveg:516	Date palm – California fan palm groves	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+cnpsveg:517	Desert globemallow herbaceous scrub	skos:broadMatch	ENVO:01001902	temperate desert ecosystem	semapv:ManualMappingCuration
+cnpsveg:518	Wild grape shrubland	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+cnpsveg:519	Live-forever – lichen/moss sparse herbaceous rock outcrop	skos:broadMatch	ENVO:01000752	area of barren land	semapv:ManualMappingCuration
+cnpsveg:52	Limber pine woodland	skos:broadMatch	ENVO:01000383	temperate evergreen needleleaf forest	semapv:ManualMappingCuration
+cnpsveg:52	Limber pine woodland	skos:broadMatch	ENVO:01001940	subalpine ecosystem	semapv:ManualMappingCuration
+cnpsveg:520	Goodding's willow – red willow riparian woodland and forest	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+cnpsveg:521	Common and giant reed marshes	skos:broadMatch	ENVO:01000449	wet meadow ecosystem	semapv:ManualMappingCuration
+cnpsveg:522	Greene's live-forever – live-forever species succulent scrub	skos:broadMatch	ENVO:01000242	desert scrubland	semapv:ManualMappingCuration
+cnpsveg:523	Island live oak – Catalina ironwood woodland and forest	skos:broadMatch	ENVO:01001916	mediterranean woodland ecosystem	semapv:ManualMappingCuration
+cnpsveg:524	Island Buckwheat scrub	skos:broadMatch	ENVO:01000237	coastal scrubland	semapv:ManualMappingCuration
+cnpsveg:525	Holly leaf cherry – toyon – greenbark ceanothus chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+cnpsveg:527	Emory's and Broom baccharis scrub	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+cnpsveg:528	Wright's buckwheat – Heermann's buckwheat – Utah butterfly-bush scrub	skos:broadMatch	ENVO:01000242	desert scrubland	semapv:ManualMappingCuration
+cnpsveg:529	Tarweed fields	skos:broadMatch	ENVO:01001810	mediterranean grassland	semapv:ManualMappingCuration
+cnpsveg:53	Jeffrey pine forest and woodland	skos:broadMatch	ENVO:01000383	temperate evergreen needleleaf forest	semapv:ManualMappingCuration
+cnpsveg:530	Catclaw acacia – desert lavender – chuparosa scrub	skos:broadMatch	ENVO:00000278	dry stream	semapv:ManualMappingCuration
+cnpsveg:531	Hoary, common, and Stanford manzanita chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+cnpsveg:532	Soft and western rush – Sedge marshes	skos:broadMatch	ENVO:00000053	freshwater marsh	semapv:ManualMappingCuration
+cnpsveg:535	Wild oats and annual brome grasslands	skos:broadMatch	ENVO:01001810	mediterranean grassland	semapv:ManualMappingCuration
+cnpsveg:536	Needle grass - Melic grass grassland	skos:broadMatch	ENVO:01001810	mediterranean grassland	semapv:ManualMappingCuration
+cnpsveg:537	Baker's, Mt. Tamalpais, or Bishop manzanita chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+cnpsveg:538	Bermudagrass – prickle grass – crowngrass turfs	skos:broadMatch	ENVO:01000449	wet meadow ecosystem	semapv:ManualMappingCuration
+cnpsveg:539	Salal – berry brambles	skos:broadMatch	ENVO:01000237	coastal scrubland	semapv:ManualMappingCuration
+cnpsveg:54	Sugar pine forest and woodland	skos:broadMatch	ENVO:01000383	temperate evergreen needleleaf forest	semapv:ManualMappingCuration
+cnpsveg:540	Salmonberry – Wax myrtle scrub	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+cnpsveg:542	Raccoon's tail mats	skos:broadMatch	ENVO:01001907	freshwater lake ecosystem	semapv:ManualMappingCuration
+cnpsveg:543	Ashy ryegrass – Creeping wildrye turfs	skos:broadMatch	ENVO:00000054	saline marsh	semapv:ManualMappingCuration
+cnpsveg:544	California brittle bush – Ashy buckwheat scrub	skos:broadMatch	ENVO:01000237	coastal scrubland	semapv:ManualMappingCuration
+cnpsveg:547	California coffeeberry – western azalea – Brewer's willow scrub	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+cnpsveg:548	Mesquite thickets	skos:broadMatch	ENVO:00000278	dry stream	semapv:ManualMappingCuration
+cnpsveg:549	Desert-willow – smoketree wash woodland	skos:broadMatch	ENVO:00000278	dry stream	semapv:ManualMappingCuration
+cnpsveg:55	Bristlecone pine woodland	skos:broadMatch	ENVO:01000383	temperate evergreen needleleaf forest	semapv:ManualMappingCuration
+cnpsveg:55	Bristlecone pine woodland	skos:broadMatch	ENVO:01001940	subalpine ecosystem	semapv:ManualMappingCuration
+cnpsveg:550	Desert almond – Mexican bladdersage scrub	skos:broadMatch	ENVO:00000278	dry stream	semapv:ManualMappingCuration
+cnpsveg:551	Yellow rabbitbrush shrubland	skos:broadMatch	ENVO:01001902	temperate desert ecosystem	semapv:ManualMappingCuration
+cnpsveg:552	Tournefort's mustard and other ruderal desert forb patches	skos:broadMatch	ENVO:01001905	subtropical desert ecosystem	semapv:ManualMappingCuration
+cnpsveg:553	Mojave-Sonoran desert dunes	skos:broadMatch	ENVO:00000170	dune	semapv:ManualMappingCuration
+cnpsveg:555	Alkali sacaton – scratchgrass – alkali cordgrass alkaline wet meadow	skos:broadMatch	ENVO:00000054	saline marsh	semapv:ManualMappingCuration
+cnpsveg:556	Nevada joint fir – Anderson’s boxthorn – spiny hop sage scrub	skos:broadMatch	ENVO:01001902	temperate desert ecosystem	semapv:ManualMappingCuration
+cnpsveg:557	Field horsetail – scouringrush horsetail – variegated scouringrush wet meadow	skos:broadMatch	ENVO:01000449	wet meadow ecosystem	semapv:ManualMappingCuration
+cnpsveg:558	Nodding beggarticks – western goldentop – marsh seedbox mudflats	skos:broadMatch	ENVO:01000449	wet meadow ecosystem	semapv:ManualMappingCuration
+cnpsveg:559	Acton's and Virgin River brittle brush – net-veined goldeneye scrub	skos:broadMatch	ENVO:00000278	dry stream	semapv:ManualMappingCuration
+cnpsveg:56	Singleleaf pinyon – Utah juniper woodlands	skos:broadMatch	ENVO:01000244	pinyon juniper woodland	semapv:ManualMappingCuration
+cnpsveg:560	Ruderal water-thyme – Eurasian water-milfoil aquatic	skos:broadMatch	ENVO:01001789	freshwater ecosystem	semapv:ManualMappingCuration
+cnpsveg:561	Hardstem and California bulrush marshes	skos:broadMatch	ENVO:00000053	freshwater marsh	semapv:ManualMappingCuration
+cnpsveg:564	Upland mustards or star-thistle fields	skos:broadMatch	ENVO:01001810	mediterranean grassland	semapv:ManualMappingCuration
+cnpsveg:565	Black sage – California sagebrush scrub	skos:broadMatch	ENVO:01000237	coastal scrubland	semapv:ManualMappingCuration
+cnpsveg:566	California sagebrush – (purple sage) scrub	skos:broadMatch	ENVO:01000237	coastal scrubland	semapv:ManualMappingCuration
+cnpsveg:567	Deerweed – silver lupine – yerba santa scrub	skos:broadMatch	ENVO:01000237	coastal scrubland	semapv:ManualMappingCuration
+cnpsveg:568	Purple three-awn – squirreltail – curly blue grass patches	skos:broadMatch	ENVO:01001811	temperate grassland	semapv:ManualMappingCuration
+cnpsveg:57	Western white pine forest and woodland	skos:broadMatch	ENVO:01000383	temperate evergreen needleleaf forest	semapv:ManualMappingCuration
+cnpsveg:57	Western white pine forest and woodland	skos:broadMatch	ENVO:01001940	subalpine ecosystem	semapv:ManualMappingCuration
+cnpsveg:570	Bitter Cherry - Ocean Spray Brush	skos:broadMatch	ENVO:00000300	scrubland area	semapv:ManualMappingCuration
+cnpsveg:571	Valley oak riparian forest and woodland	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+cnpsveg:572	Monterey cypress – Monterey pine Woodland stands	skos:broadMatch	ENVO:00000119	planted forest	semapv:ManualMappingCuration
+cnpsveg:573	Coastal dune willow – Sitka willow – Douglas spiraea thickets	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+cnpsveg:574	Buckwheat / pine bluegrass dwarf-shrubland	skos:broadMatch	ENVO:01000861	area of dwarf scrub	semapv:ManualMappingCuration
+cnpsveg:575	Little white navarretia - Cusick's popcorn flower vernal pools	skos:broadMatch	ENVO:00000389	intermittent wetland	semapv:ManualMappingCuration
+cnpsveg:576	Oatgrass - Tufted Hairgrass - Camas wet meadow	skos:broadMatch	ENVO:01000449	wet meadow ecosystem	semapv:ManualMappingCuration
+cnpsveg:577	Eelgrass beds	skos:broadMatch	ENVO:01000059	sea grass bed	semapv:ManualMappingCuration
+cnpsveg:578	Ponderosa pine / shrub understory woodland	skos:broadMatch	ENVO:01000244	pinyon juniper woodland	semapv:ManualMappingCuration
+cnpsveg:579	Kentucky bluegrass – Redtop – Creeping bentgrass meadows	skos:broadMatch	ENVO:01001811	temperate grassland	semapv:ManualMappingCuration
+cnpsveg:580	Idaho fescue - California oatgrass grassland	skos:broadMatch	ENVO:01001811	temperate grassland	semapv:ManualMappingCuration
+cnpsveg:581	Canyon live oak - Interior live oak chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+cnpsveg:583	Seaside woolly-sunflower - seaside daisy - buckwheat patches	skos:broadMatch	ENVO:01000237	coastal scrubland	semapv:ManualMappingCuration
+cnpsveg:585	Ponderosa pine – Incense Cedar – Douglas fir forest and woodland	skos:broadMatch	ENVO:01000383	temperate evergreen needleleaf forest	semapv:ManualMappingCuration
+cnpsveg:586	Chamise – Sage chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+cnpsveg:587	Coastal tufted hair grass – Meadow barley – California oatgrass meadow	skos:broadMatch	ENVO:00000053	freshwater marsh	semapv:ManualMappingCuration
+cnpsveg:588	Glossy leaf manzanita - Golden chinquapin chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+cnpsveg:589	Australian wattle - Grevillea - Tea tree ruderal patches	skos:broadMatch	ENVO:01000237	coastal scrubland	semapv:ManualMappingCuration
+cnpsveg:59	Ponderosa pine forest and woodland	skos:broadMatch	ENVO:01000383	temperate evergreen needleleaf forest	semapv:ManualMappingCuration
+cnpsveg:590	California coastal cypress woodland	skos:broadMatch	ENVO:01000240	conifer woodland	semapv:ManualMappingCuration
+cnpsveg:591	Ultramafic cypress woodland	skos:broadMatch	ENVO:01000240	conifer woodland	semapv:ManualMappingCuration
+cnpsveg:594	Nettleleaf Giant Hyssop – Sticky Geranium – Bracken Fern meadow	skos:broadMatch	ENVO:00000108	meadow ecosystem	semapv:ManualMappingCuration
+cnpsveg:595	Tecate cypress – Piute cypress woodland	skos:broadMatch	ENVO:01000240	conifer woodland	semapv:ManualMappingCuration
+cnpsveg:596	Huckleberry oak chaparral - Bush chinquapin chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+cnpsveg:597	Californian montane whitethorn - deerbrush chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+cnpsveg:598	Lyngbye's sedge swathes	skos:broadMatch	ENVO:00000054	saline marsh	semapv:ManualMappingCuration
+cnpsveg:6	Grand fir forest	skos:broadMatch	ENVO:01001952	temperate rainforest	semapv:ManualMappingCuration
+cnpsveg:600	Douglas fir – tanoak forest – madrone forest and woodland	skos:broadMatch	ENVO:01001796	temperate mixed forest	semapv:ManualMappingCuration
+cnpsveg:601	Mountain Willow - Lemmon's Willow Wet Shrubland	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+cnpsveg:603	Slough sedge – Water-parsley – Small-fruited bulrush marsh	skos:broadMatch	ENVO:00000053	freshwater marsh	semapv:ManualMappingCuration
+cnpsveg:604	Tufted hairgrass - Red fescue brackish salt marsh	skos:broadMatch	ENVO:00000054	saline marsh	semapv:ManualMappingCuration
+cnpsveg:605	Mud Sedge - Short Beaked Sedge - Seaside Arrow-grass Fen Alliance	skos:broadMatch	ENVO:00000232	fen	semapv:ManualMappingCuration
+cnpsveg:606	Northwest Territory sedge – Bluejoint Graminoid Wet Meadow & Marsh	skos:broadMatch	ENVO:01000449	wet meadow ecosystem	semapv:ManualMappingCuration
+cnpsveg:607	Coville's phlox - goldenbush alpine fell-field	skos:broadMatch	ENVO:01001371	alpine tundra ecosystem	semapv:ManualMappingCuration
+cnpsveg:609	Arrowleaf ragwort – white corn lily – monkeyflower mesic meadow	skos:broadMatch	ENVO:01000449	wet meadow ecosystem	semapv:ManualMappingCuration
+cnpsveg:613	Common monkey flower – thistle – hedgenettle seeps	skos:broadMatch	ENVO:01000449	wet meadow ecosystem	semapv:ManualMappingCuration
+cnpsveg:614	Oak gooseberry – basket bush – coffeeberry thickets	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+cnpsveg:615	Button willow – California rose thickets	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+cnpsveg:616	White water butter cup - Vernal water-starwort - Varied leaved water starwort	skos:broadMatch	ENVO:00000389	intermittent wetland	semapv:ManualMappingCuration
+cnpsveg:617	Saltgrass - Cooper's rush - Alkali heath Interior	skos:broadMatch	ENVO:00000196	alkaline flat	semapv:ManualMappingCuration
+cnpsveg:618	Saltgrass - Alkali heath Coastal	skos:broadMatch	ENVO:00000054	saline marsh	semapv:ManualMappingCuration
+cnpsveg:62	Parry pinyon woodland	skos:broadMatch	ENVO:01000240	conifer woodland	semapv:ManualMappingCuration
+cnpsveg:631	Long-stalk clover meadows	skos:broadMatch	ENVO:01000449	wet meadow ecosystem	semapv:ManualMappingCuration
+cnpsveg:64	Foothill pine woodland	skos:broadMatch	ENVO:01000240	conifer woodland	semapv:ManualMappingCuration
+cnpsveg:65	Torrey pine woodland	skos:broadMatch	ENVO:01000240	conifer woodland	semapv:ManualMappingCuration
+cnpsveg:67	California sycamore – coast live oak riparian woodlands	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+cnpsveg:68	Fremont cottonwood forest and woodland	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+cnpsveg:69	Aspen groves	skos:broadMatch	ENVO:01000383	temperate evergreen needleleaf forest	semapv:ManualMappingCuration
+cnpsveg:69	Aspen groves	skos:broadMatch	ENVO:01001940	subalpine ecosystem	semapv:ManualMappingCuration
+cnpsveg:7	Subalpine fir forest and woodland	skos:broadMatch	ENVO:01000383	temperate evergreen needleleaf forest	semapv:ManualMappingCuration
+cnpsveg:7	Subalpine fir forest and woodland	skos:broadMatch	ENVO:01001940	subalpine ecosystem	semapv:ManualMappingCuration
+cnpsveg:70	Black cottonwood forest and woodland	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+cnpsveg:73	Bigcone Douglas fir forest	skos:broadMatch	ENVO:01000383	temperate evergreen needleleaf forest	semapv:ManualMappingCuration
+cnpsveg:75	Douglas fir – incense cedar forest and woodland	skos:broadMatch	ENVO:01001796	temperate mixed forest	semapv:ManualMappingCuration
+cnpsveg:78	Coast live oak woodland and forest	skos:broadMatch	ENVO:01001916	mediterranean woodland ecosystem	semapv:ManualMappingCuration
+cnpsveg:79	Canyon live oak forest and woodland	skos:broadMatch	ENVO:01001916	mediterranean woodland ecosystem	semapv:ManualMappingCuration
+cnpsveg:8	Red fir forest and woodland	skos:broadMatch	ENVO:01000383	temperate evergreen needleleaf forest	semapv:ManualMappingCuration
+cnpsveg:8	Red fir forest and woodland	skos:broadMatch	ENVO:01001940	subalpine ecosystem	semapv:ManualMappingCuration
+cnpsveg:80	Blue oak woodland and forest	skos:broadMatch	ENVO:01001916	mediterranean woodland ecosystem	semapv:ManualMappingCuration
+cnpsveg:81	Engelmann oak woodland and forest	skos:broadMatch	ENVO:01001916	mediterranean woodland ecosystem	semapv:ManualMappingCuration
+cnpsveg:82	Oregon white oak woodland and forest	skos:broadMatch	ENVO:01001796	temperate mixed forest	semapv:ManualMappingCuration
+cnpsveg:83	California black oak forest and woodland	skos:broadMatch	ENVO:01001916	mediterranean woodland ecosystem	semapv:ManualMappingCuration
+cnpsveg:84	Valley oak woodland and forest	skos:broadMatch	ENVO:01001916	mediterranean woodland ecosystem	semapv:ManualMappingCuration
+cnpsveg:86	Mixed oak forest and woodland	skos:broadMatch	ENVO:01001916	mediterranean woodland ecosystem	semapv:ManualMappingCuration
+cnpsveg:88	Interior live oak – shreve oak woodland and forest	skos:broadMatch	ENVO:01001916	mediterranean woodland ecosystem	semapv:ManualMappingCuration
+cnpsveg:91	Shining willow groves	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+cnpsveg:92	Pepper tree or Myoporum groves	skos:broadMatch	ENVO:00000119	planted forest	semapv:ManualMappingCuration
+cnpsveg:93	Redwood forest and woodland	skos:broadMatch	ENVO:01001952	temperate rainforest	semapv:ManualMappingCuration
+cnpsveg:94	Giant sequoia forest and woodland	skos:broadMatch	ENVO:01000383	temperate evergreen needleleaf forest	semapv:ManualMappingCuration
+cnpsveg:95	Western hemlock forest	skos:broadMatch	ENVO:01001952	temperate rainforest	semapv:ManualMappingCuration
+cnpsveg:96	Mountain hemlock forest and woodland	skos:broadMatch	ENVO:01000383	temperate evergreen needleleaf forest	semapv:ManualMappingCuration
+cnpsveg:96	Mountain hemlock forest and woodland	skos:broadMatch	ENVO:01001940	subalpine ecosystem	semapv:ManualMappingCuration
+cnpsveg:97	California bay forest and woodland	skos:broadMatch	ENVO:01001916	mediterranean woodland ecosystem	semapv:ManualMappingCuration
+cnpsveg:98	California fan palm oasis	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+cnpsveg:99	Joshua tree woodland	skos:broadMatch	ENVO:01000242	desert scrubland	semapv:ManualMappingCuration
+ioc:habitat/cwhr/ADS	Alpine Dwarf-Shrub	skos:closeMatch	ENVO:01001371	alpine tundra ecosystem	semapv:ManualMappingCuration
+ioc:habitat/cwhr/AGS	Annual Grassland	skos:broadMatch	ENVO:01001810	mediterranean grassland	semapv:ManualMappingCuration
+ioc:habitat/cwhr/ASC	Alkali Desert Scrub	skos:broadMatch	ENVO:00000196	alkaline flat	semapv:ManualMappingCuration
+ioc:habitat/cwhr/ASC	Alkali Desert Scrub	skos:broadMatch	ENVO:01000242	desert scrubland	semapv:ManualMappingCuration
+ioc:habitat/cwhr/ASP	Aspen	skos:broadMatch	ENVO:01000385	temperate deciduous broadleaf forest	semapv:ManualMappingCuration
+ioc:habitat/cwhr/BAR	Barren	skos:closeMatch	ENVO:01000752	area of barren land	semapv:ManualMappingCuration
+ioc:habitat/cwhr/BBR	Bitterbrush	skos:broadMatch	ENVO:00000300	scrubland area	semapv:ManualMappingCuration
+ioc:habitat/cwhr/BBR	Bitterbrush	skos:broadMatch	ENVO:01001902	temperate desert ecosystem	semapv:ManualMappingCuration
+ioc:habitat/cwhr/BOP	Blue Oak-Foothill Pine	skos:broadMatch	ENVO:01000239	oak woodland	semapv:ManualMappingCuration
+ioc:habitat/cwhr/BOP	Blue Oak-Foothill Pine	skos:broadMatch	ENVO:01001916	mediterranean woodland ecosystem	semapv:ManualMappingCuration
+ioc:habitat/cwhr/BOW	Blue Oak Woodland	skos:broadMatch	ENVO:01000239	oak woodland	semapv:ManualMappingCuration
+ioc:habitat/cwhr/BOW	Blue Oak Woodland	skos:broadMatch	ENVO:01001916	mediterranean woodland ecosystem	semapv:ManualMappingCuration
+ioc:habitat/cwhr/COW	Coastal Oak Woodland	skos:broadMatch	ENVO:01000239	oak woodland	semapv:ManualMappingCuration
+ioc:habitat/cwhr/COW	Coastal Oak Woodland	skos:broadMatch	ENVO:01001916	mediterranean woodland ecosystem	semapv:ManualMappingCuration
+ioc:habitat/cwhr/CPC	Closed-Cone Pine-Cypress	skos:broadMatch	ENVO:01000383	temperate evergreen needleleaf forest	semapv:ManualMappingCuration
+ioc:habitat/cwhr/CRC	Chamise-Redshank Chaparral	skos:closeMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+ioc:habitat/cwhr/CSC	Coastal Scrub	skos:closeMatch	ENVO:01000237	coastal scrubland	semapv:ManualMappingCuration
+ioc:habitat/cwhr/DFR	Douglas Fir	skos:broadMatch	ENVO:01000383	temperate evergreen needleleaf forest	semapv:ManualMappingCuration
+ioc:habitat/cwhr/DGR	Dryland Grain Crops	skos:broadMatch	ENVO:01001244	cropland ecosystem	semapv:ManualMappingCuration
+ioc:habitat/cwhr/DOR	Deciduous Orchard	skos:broadMatch	ENVO:00000115	orchard	semapv:ManualMappingCuration
+ioc:habitat/cwhr/DRI	Desert Riparian	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+ioc:habitat/cwhr/DSC	Desert Scrub	skos:closeMatch	ENVO:01000242	desert scrubland	semapv:ManualMappingCuration
+ioc:habitat/cwhr/DSS	Desert Succulent Shrub	skos:broadMatch	ENVO:01000242	desert scrubland	semapv:ManualMappingCuration
+ioc:habitat/cwhr/DSW	Desert Wash	skos:broadMatch	ENVO:00000278	dry stream	semapv:ManualMappingCuration
+ioc:habitat/cwhr/EOR	Evergreen Orchard	skos:broadMatch	ENVO:00000115	orchard	semapv:ManualMappingCuration
+ioc:habitat/cwhr/EPN	Eastside Pine	skos:broadMatch	ENVO:01000383	temperate evergreen needleleaf forest	semapv:ManualMappingCuration
+ioc:habitat/cwhr/EST	Estuarine	skos:closeMatch	ENVO:00000045	estuary	semapv:ManualMappingCuration
+ioc:habitat/cwhr/EUC	Eucalyptus	skos:broadMatch	ENVO:00000119	planted forest	semapv:ManualMappingCuration
+ioc:habitat/cwhr/FEW	Fresh Emergent Wetland	skos:closeMatch	ENVO:00000053	freshwater marsh	semapv:ManualMappingCuration
+ioc:habitat/cwhr/IGR	Irrigated Grain Crops	skos:broadMatch	ENVO:01001244	cropland ecosystem	semapv:ManualMappingCuration
+ioc:habitat/cwhr/IRF	Irrigated Row and Field Crops	skos:broadMatch	ENVO:01001244	cropland ecosystem	semapv:ManualMappingCuration
+ioc:habitat/cwhr/IRH	Irrigated Hayfield	skos:broadMatch	ENVO:01000891	area of pastureland or hayfields	semapv:ManualMappingCuration
+ioc:habitat/cwhr/JPN	Jeffrey Pine	skos:broadMatch	ENVO:01000383	temperate evergreen needleleaf forest	semapv:ManualMappingCuration
+ioc:habitat/cwhr/JST	Joshua Tree	skos:broadMatch	ENVO:01001905	subtropical desert ecosystem	semapv:ManualMappingCuration
+ioc:habitat/cwhr/JUN	Juniper	skos:exactMatch	ENVO:01000241	juniper woodland	semapv:ManualMappingCuration
+ioc:habitat/cwhr/KMC	Klamath Mixed Conifer	skos:broadMatch	ENVO:01000383	temperate evergreen needleleaf forest	semapv:ManualMappingCuration
+ioc:habitat/cwhr/LAC	Lacustrine	skos:closeMatch	ENVO:01001907	freshwater lake ecosystem	semapv:ManualMappingCuration
+ioc:habitat/cwhr/LPN	Lodgepole Pine	skos:broadMatch	ENVO:01000383	temperate evergreen needleleaf forest	semapv:ManualMappingCuration
+ioc:habitat/cwhr/LSG	Low Sage	skos:broadMatch	ENVO:01000861	area of dwarf scrub	semapv:ManualMappingCuration
+ioc:habitat/cwhr/LSG	Low Sage	skos:broadMatch	ENVO:01001902	temperate desert ecosystem	semapv:ManualMappingCuration
+ioc:habitat/cwhr/MAR	Marine	skos:closeMatch	ENVO:01001788	marine ecosystem	semapv:ManualMappingCuration
+ioc:habitat/cwhr/MCH	Mixed Chaparral	skos:closeMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+ioc:habitat/cwhr/MCP	Montane Chaparral	skos:closeMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+ioc:habitat/cwhr/MHC	Montane Hardwood-Conifer	skos:broadMatch	ENVO:01001796	temperate mixed forest	semapv:ManualMappingCuration
+ioc:habitat/cwhr/MHW	Montane Hardwood	skos:broadMatch	ENVO:01001794	temperate broadleaf forest	semapv:ManualMappingCuration
+ioc:habitat/cwhr/MRI	Montane Riparian	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+ioc:habitat/cwhr/PAS	Pasture	skos:closeMatch	ENVO:01000891	area of pastureland or hayfields	semapv:ManualMappingCuration
+ioc:habitat/cwhr/PGS	Perennial Grassland	skos:broadMatch	ENVO:01001811	temperate grassland	semapv:ManualMappingCuration
+ioc:habitat/cwhr/PJN	Pinyon-Juniper	skos:exactMatch	ENVO:01000244	pinyon juniper woodland	semapv:ManualMappingCuration
+ioc:habitat/cwhr/POS	Palm Oasis	skos:closeMatch	ENVO:00000156	desert oasis	semapv:ManualMappingCuration
+ioc:habitat/cwhr/PPN	Ponderosa Pine	skos:broadMatch	ENVO:01000383	temperate evergreen needleleaf forest	semapv:ManualMappingCuration
+ioc:habitat/cwhr/RDW	Redwood	skos:broadMatch	ENVO:01000383	temperate evergreen needleleaf forest	semapv:ManualMappingCuration
+ioc:habitat/cwhr/RDW	Redwood	skos:broadMatch	ENVO:01001952	temperate rainforest	semapv:ManualMappingCuration
+ioc:habitat/cwhr/RFR	Red Fir	skos:broadMatch	ENVO:01000383	temperate evergreen needleleaf forest	semapv:ManualMappingCuration
+ioc:habitat/cwhr/RIC	Rice	skos:exactMatch	ENVO:00000296	rice field	semapv:ManualMappingCuration
+ioc:habitat/cwhr/RIV	Riverine	skos:closeMatch	ENVO:03605009	freshwater stream ecosystem	semapv:ManualMappingCuration
+ioc:habitat/cwhr/SCN	Subalpine Conifer	skos:broadMatch	ENVO:01000383	temperate evergreen needleleaf forest	semapv:ManualMappingCuration
+ioc:habitat/cwhr/SCN	Subalpine Conifer	skos:broadMatch	ENVO:01001940	subalpine ecosystem	semapv:ManualMappingCuration
+ioc:habitat/cwhr/SEW	Saline Emergent Wetland	skos:closeMatch	ENVO:00000054	saline marsh	semapv:ManualMappingCuration
+ioc:habitat/cwhr/SGB	Sagebrush	skos:broadMatch	ENVO:00000262	steppe	semapv:ManualMappingCuration
+ioc:habitat/cwhr/SGB	Sagebrush	skos:broadMatch	ENVO:01001902	temperate desert ecosystem	semapv:ManualMappingCuration
+ioc:habitat/cwhr/SMC	Sierran Mixed Conifer	skos:broadMatch	ENVO:01000383	temperate evergreen needleleaf forest	semapv:ManualMappingCuration
+ioc:habitat/cwhr/URB	Urban	skos:closeMatch	ENVO:01000249	urban biome	semapv:ManualMappingCuration
+ioc:habitat/cwhr/VIN	Vineyard	skos:exactMatch	ENVO:00000116	vineyard	semapv:ManualMappingCuration
+ioc:habitat/cwhr/VOW	Valley Oak Woodland	skos:broadMatch	ENVO:01000239	oak woodland	semapv:ManualMappingCuration
+ioc:habitat/cwhr/VOW	Valley Oak Woodland	skos:broadMatch	ENVO:01001916	mediterranean woodland ecosystem	semapv:ManualMappingCuration
+ioc:habitat/cwhr/VRI	Valley Foothill Riparian	skos:broadMatch	ENVO:00000255	flood plain	semapv:ManualMappingCuration
+ioc:habitat/cwhr/VRI	Valley Foothill Riparian	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+ioc:habitat/cwhr/WFR	White Fir	skos:broadMatch	ENVO:01000383	temperate evergreen needleleaf forest	semapv:ManualMappingCuration
+ioc:habitat/cwhr/WTM	Wet Meadow	skos:closeMatch	ENVO:01000449	wet meadow ecosystem	semapv:ManualMappingCuration
+ioc:habitat/usnvc/arid-west-freshwater-emergent-marsh	Arid West freshwater emergent marsh	skos:broadMatch	ENVO:00000053	freshwater marsh	semapv:ManualMappingCuration
+ioc:habitat/usnvc/arizonan-upland-sonoran-desert-scrub	Arizonan upland Sonoran desert scrub	skos:broadMatch	ENVO:01000242	desert scrubland	semapv:ManualMappingCuration
+ioc:habitat/usnvc/baja-california-del-norte-gulf-coast-ocotillo-limberbush-creosote-bush-desert-scrub	Baja California del Norte Gulf Coast-ocotillo-limberbush—creosote bush desert scrub	skos:broadMatch	ENVO:01000242	desert scrubland	semapv:ManualMappingCuration
+ioc:habitat/usnvc/california-annual-and-perennial-grassland	California Annual and Perennial Grassland	skos:closeMatch	ENVO:01001810	mediterranean grassland	semapv:ManualMappingCuration
+ioc:habitat/usnvc/california-annual-herb-grass	California annual herb/grass	skos:broadMatch	ENVO:01001810	mediterranean grassland	semapv:ManualMappingCuration
+ioc:habitat/usnvc/california-chaparral	California Chaparral	skos:closeMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+ioc:habitat/usnvc/california-cliff-scree-and-other-rock-vegetation	California Cliff, Scree, and Other Rock Vegetation	skos:broadMatch	ENVO:01000752	area of barren land	semapv:ManualMappingCuration
+ioc:habitat/usnvc/california-coastal-evergreen-bluff-and-dune-scrub	California Coastal evergreen bluff and dune scrub	skos:broadMatch	ENVO:01000237	coastal scrubland	semapv:ManualMappingCuration
+ioc:habitat/usnvc/california-coastal-scrub	California Coastal Scrub	skos:closeMatch	ENVO:01000237	coastal scrubland	semapv:ManualMappingCuration
+ioc:habitat/usnvc/california-forest-and-woodland	California Forest and Woodland	skos:broadMatch	ENVO:01001916	mediterranean woodland ecosystem	semapv:ManualMappingCuration
+ioc:habitat/usnvc/california-grassland-and-meadow	California Grassland and Meadow	skos:broadMatch	ENVO:01001810	mediterranean grassland	semapv:ManualMappingCuration
+ioc:habitat/usnvc/california-perennial-grassland	California perennial grassland	skos:broadMatch	ENVO:01001810	mediterranean grassland	semapv:ManualMappingCuration
+ioc:habitat/usnvc/california-scrub	California Scrub	skos:broadMatch	ENVO:01000217	mediterranean shrubland biome	semapv:ManualMappingCuration
+ioc:habitat/usnvc/california-vancouverian-semi-natural-littoral-scrub-and-herb-vegetation	California-Vancouverian semi-natural littoral scrub and herb vegetation	skos:broadMatch	ENVO:00000416	coastal dune	semapv:ManualMappingCuration
+ioc:habitat/usnvc/californian-alpine-subalpine-turf	Californian alpine-subalpine turf	skos:broadMatch	ENVO:01001371	alpine tundra ecosystem	semapv:ManualMappingCuration
+ioc:habitat/usnvc/californian-broadleaf-forest-and-woodland	Californian broadleaf forest and woodland	skos:broadMatch	ENVO:01001916	mediterranean woodland ecosystem	semapv:ManualMappingCuration
+ioc:habitat/usnvc/californian-evergreen-coniferous-forest-and-woodland	Californian evergreen coniferous forest and woodland	skos:broadMatch	ENVO:01000240	conifer woodland	semapv:ManualMappingCuration
+ioc:habitat/usnvc/californian-maritime-chaparral	Californian maritime chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+ioc:habitat/usnvc/californian-mesic-chaparral	Californian mesic chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+ioc:habitat/usnvc/californian-mixed-annual-perennial-freshwater-vernal-pool-swale-bottomland	Californian mixed annual/perennial freshwater vernal pool / swale bottomland	skos:broadMatch	ENVO:00000389	intermittent wetland	semapv:ManualMappingCuration
+ioc:habitat/usnvc/californian-montane-chaparral	Californian montane chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+ioc:habitat/usnvc/californian-montane-conifer-forest	Californian montane conifer forest	skos:broadMatch	ENVO:01000383	temperate evergreen needleleaf forest	semapv:ManualMappingCuration
+ioc:habitat/usnvc/californian-pre-montane-chaparral	Californian pre-montane chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+ioc:habitat/usnvc/californian-serpentine-chaparral	Californian serpentine chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+ioc:habitat/usnvc/californian-vancouverian-montane-and-foothill-forest	Californian-Vancouverian Montane and Foothill Forest	skos:broadMatch	ENVO:01001805	temperate forest	semapv:ManualMappingCuration
+ioc:habitat/usnvc/californian-warm-temperate-marsh-seep	Californian warm temperate marsh/seep	skos:broadMatch	ENVO:01000449	wet meadow ecosystem	semapv:ManualMappingCuration
+ioc:habitat/usnvc/californian-xeric-chaparral	Californian xeric chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+ioc:habitat/usnvc/central-and-south-coastal-california-seral-scrub	Central and south coastal California seral scrub	skos:broadMatch	ENVO:01000237	coastal scrubland	semapv:ManualMappingCuration
+ioc:habitat/usnvc/central-and-south-coastal-californian-coastal-sage-scrub	Central and South Coastal Californian coastal sage scrub	skos:broadMatch	ENVO:01000237	coastal scrubland	semapv:ManualMappingCuration
+ioc:habitat/usnvc/central-california-coast-ranges-cliff-and-canyon	Central California Coast Ranges cliff and canyon	skos:broadMatch	ENVO:01000752	area of barren land	semapv:ManualMappingCuration
+ioc:habitat/usnvc/coastal-baja-california-norte-maritime-succulent-scrub	Coastal Baja California Norte maritime succulent scrub	skos:broadMatch	ENVO:01000242	desert scrubland	semapv:ManualMappingCuration
+ioc:habitat/usnvc/cool-semi-desert-alkali-saline-flats	Cool Semi-Desert Alkali-Saline Flats	skos:broadMatch	ENVO:00000196	alkaline flat	semapv:ManualMappingCuration
+ioc:habitat/usnvc/cool-semi-desert-alkali-saline-wetlands	Cool Semi-Desert Alkali-Saline Wetlands	skos:broadMatch	ENVO:00000240	saline wetland	semapv:ManualMappingCuration
+ioc:habitat/usnvc/cool-semi-desert-wash-and-disturbance-scrub	Cool Semi-desert wash and disturbance scrub	skos:broadMatch	ENVO:01001902	temperate desert ecosystem	semapv:ManualMappingCuration
+ioc:habitat/usnvc/great-basin-cool-semi-desert-alkali-basin-group	Great Basin cool semi-desert alkali basin group	skos:broadMatch	ENVO:00000240	saline wetland	semapv:ManualMappingCuration
+ioc:habitat/usnvc/great-basin-montane-riparian-scrub	Great Basin montane riparian scrub	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+ioc:habitat/usnvc/inter-mountain-dry-shrubland-and-grassland	Inter-Mountain Dry Shrubland and Grassland	skos:broadMatch	ENVO:01001902	temperate desert ecosystem	semapv:ManualMappingCuration
+ioc:habitat/usnvc/inter-mountain-west-mesic-tall-sagebrush-shrubland-and-steppe	Inter-Mountain West mesic tall sagebrush shrubland and steppe	skos:broadMatch	ENVO:00000262	steppe	semapv:ManualMappingCuration
+ioc:habitat/usnvc/intermontane-deep-or-well-drained-soil-scrub	Intermontane deep or well-drained soil scrub	skos:broadMatch	ENVO:01001902	temperate desert ecosystem	semapv:ManualMappingCuration
+ioc:habitat/usnvc/intermontane-seral-shrubland	Intermontane seral shrubland	skos:broadMatch	ENVO:01001902	temperate desert ecosystem	semapv:ManualMappingCuration
+ioc:habitat/usnvc/intermountain-basins-pinyon-juniper-woodland	Intermountain Basins Pinyon-Juniper Woodland	skos:closeMatch	ENVO:01000244	pinyon juniper woodland	semapv:ManualMappingCuration
+ioc:habitat/usnvc/intermountain-low-sage-shrubland-and-steppe	Intermountain low sage shrubland and steppe	skos:broadMatch	ENVO:01000861	area of dwarf scrub	semapv:ManualMappingCuration
+ioc:habitat/usnvc/intermountain-shallow-calcareous-soil-scrub	Intermountain shallow/calcareous soil scrub	skos:broadMatch	ENVO:01001902	temperate desert ecosystem	semapv:ManualMappingCuration
+ioc:habitat/usnvc/introduced-north-american-mediterranean-woodland-and-forest	Introduced North American Mediterranean woodland and forest	skos:broadMatch	ENVO:00000119	planted forest	semapv:ManualMappingCuration
+ioc:habitat/usnvc/lower-bajada-and-fan-mojavean-sonoran-desert-scrub	Lower Bajada and Fan Mojavean-Sonoran desert scrub	skos:broadMatch	ENVO:01000242	desert scrubland	semapv:ManualMappingCuration
+ioc:habitat/usnvc/madrean-forest-and-woodland	Madrean Forest and Woodland	skos:broadMatch	ENVO:01001916	mediterranean woodland ecosystem	semapv:ManualMappingCuration
+ioc:habitat/usnvc/madrean-warm-semi-desert-wash-woodland-scrub	Madrean Warm Semi-Desert Wash Woodland/Scrub	skos:broadMatch	ENVO:00000278	dry stream	semapv:ManualMappingCuration
+ioc:habitat/usnvc/mediterranean-california-alpine-fell-field	Mediterranean California alpine fell-field	skos:broadMatch	ENVO:01001371	alpine tundra ecosystem	semapv:ManualMappingCuration
+ioc:habitat/usnvc/mediterranean-california-cliff-scree-rock-vegetation	Mediterranean California Cliff, Scree & Rock Vegetation	skos:broadMatch	ENVO:01000752	area of barren land	semapv:ManualMappingCuration
+ioc:habitat/usnvc/mediterranean-california-naturalized-annual-and-perennial-grassland	Mediterranean California naturalized annual and perennial grassland	skos:broadMatch	ENVO:01001810	mediterranean grassland	semapv:ManualMappingCuration
+ioc:habitat/usnvc/mogollion-rim-chaparral	Mogollion Rim chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+ioc:habitat/usnvc/mojavean-semi-desert-wash-scrub	Mojavean semi-desert wash scrub	skos:broadMatch	ENVO:00000278	dry stream	semapv:ManualMappingCuration
+ioc:habitat/usnvc/mojavean-sonoran-desert-scrub	Mojavean-Sonoran Desert Scrub	skos:closeMatch	ENVO:01000242	desert scrubland	semapv:ManualMappingCuration
+ioc:habitat/usnvc/mojavean-upper-desert-scrub	Mojavean upper desert scrub	skos:broadMatch	ENVO:01000242	desert scrubland	semapv:ManualMappingCuration
+ioc:habitat/usnvc/naturalized-non-native-deciduous-scrub	Naturalized non-native deciduous scrub	skos:broadMatch	ENVO:00000300	scrubland area	semapv:ManualMappingCuration
+ioc:habitat/usnvc/naturalized-non-native-mediterranean-scrub	Naturalized non-native Mediterranean scrub	skos:broadMatch	ENVO:01000237	coastal scrubland	semapv:ManualMappingCuration
+ioc:habitat/usnvc/naturalized-temperate-pacific-freshwater-vegetation	Naturalized temperate Pacific freshwater vegetation	skos:broadMatch	ENVO:01001789	freshwater ecosystem	semapv:ManualMappingCuration
+ioc:habitat/usnvc/naturalized-warm-temperate-riparian-and-wetland-group	Naturalized warm-temperate riparian and wetland group	skos:broadMatch	ENVO:01000449	wet meadow ecosystem	semapv:ManualMappingCuration
+ioc:habitat/usnvc/north-american-desert-alkaline-saline-marsh-playa	North American Desert Alkaline-Saline Marsh & Playa	skos:broadMatch	ENVO:00000196	alkaline flat	semapv:ManualMappingCuration
+ioc:habitat/usnvc/north-american-freshwater-aquatic-vegetation	North American Freshwater Aquatic Vegetation	skos:broadMatch	ENVO:01001789	freshwater ecosystem	semapv:ManualMappingCuration
+ioc:habitat/usnvc/north-american-intermountain-basins-scrub-woodland	North American Intermountain Basins Scrub Woodland	skos:broadMatch	ENVO:01000240	conifer woodland	semapv:ManualMappingCuration
+ioc:habitat/usnvc/north-american-introduced-evergreen-broadleaf-and-conifer-forest	North American Introduced Evergreen Broadleaf and Conifer Forest	skos:broadMatch	ENVO:00000119	planted forest	semapv:ManualMappingCuration
+ioc:habitat/usnvc/north-american-pacific-coastal-salt-marsh	North American Pacific Coastal Salt Marsh	skos:broadMatch	ENVO:00000054	saline marsh	semapv:ManualMappingCuration
+ioc:habitat/usnvc/north-american-scrub-and-herb-peatland	North American Scrub and Herb Peatland	skos:broadMatch	ENVO:00000044	peatland	semapv:ManualMappingCuration
+ioc:habitat/usnvc/north-american-warm-desert-bedrock-cliff-and-outcrop	North American warm desert bedrock cliff and outcrop	skos:broadMatch	ENVO:00000089	inland cliff	semapv:ManualMappingCuration
+ioc:habitat/usnvc/north-american-warm-desert-dunes-and-sand-flats	North American warm desert dunes and sand flats	skos:broadMatch	ENVO:00000170	dune	semapv:ManualMappingCuration
+ioc:habitat/usnvc/north-american-warm-semi-desert-cliff-scree-and-other-rock-vegetation	North American Warm Semi-Desert Cliff, Scree, and Other Rock Vegetation	skos:broadMatch	ENVO:01000752	area of barren land	semapv:ManualMappingCuration
+ioc:habitat/usnvc/north-american-warm-semi-desert-cliff-scree-and-rock-vegetation	North American Warm Semi-Desert Cliff, Scree, and Rock Vegetation	skos:broadMatch	ENVO:01000752	area of barren land	semapv:ManualMappingCuration
+ioc:habitat/usnvc/northern-great-basin-semi-desert-grassland-group	Northern Great Basin semi-desert grassland group	skos:broadMatch	ENVO:01001902	temperate desert ecosystem	semapv:ManualMappingCuration
+ioc:habitat/usnvc/pacific-coast-scrub-and-herb-littoral-vegetation	Pacific Coast Scrub and Herb Littoral Vegetation	skos:broadMatch	ENVO:00000303	sea coast	semapv:ManualMappingCuration
+ioc:habitat/usnvc/rocky-mountain-alpine-scrub-forb-meadow-and-grassland	Rocky Mountain Alpine Scrub, Forb Meadow, and Grassland	skos:broadMatch	ENVO:01001371	alpine tundra ecosystem	semapv:ManualMappingCuration
+ioc:habitat/usnvc/rocky-mountain-alpine-turf	Rocky Mountain alpine turf	skos:broadMatch	ENVO:01001371	alpine tundra ecosystem	semapv:ManualMappingCuration
+ioc:habitat/usnvc/rocky-mountain-mesic-subalpine-forest-and-woodland	Rocky Mountain mesic subalpine forest and woodland	skos:broadMatch	ENVO:01000383	temperate evergreen needleleaf forest	semapv:ManualMappingCuration
+ioc:habitat/usnvc/rocky-mountain-mesic-subalpine-forest-and-woodland	Rocky Mountain mesic subalpine forest and woodland	skos:broadMatch	ENVO:01001940	subalpine ecosystem	semapv:ManualMappingCuration
+ioc:habitat/usnvc/rocky-mountain-subalpine-and-high-montane-conifer-forest	Rocky Mountain Subalpine and High Montane Conifer Forest	skos:broadMatch	ENVO:01000383	temperate evergreen needleleaf forest	semapv:ManualMappingCuration
+ioc:habitat/usnvc/rocky-mountain-subalpine-and-high-montane-conifer-forest	Rocky Mountain Subalpine and High Montane Conifer Forest	skos:broadMatch	ENVO:01001940	subalpine ecosystem	semapv:ManualMappingCuration
+ioc:habitat/usnvc/shadscale-saltbush-cool-semi-desert-scrub	Shadscale-saltbush cool semi-desert scrub	skos:broadMatch	ENVO:00000196	alkaline flat	semapv:ManualMappingCuration
+ioc:habitat/usnvc/sierran-montane-rock-crevice-and-outcrop-scrub-and-herbaceous	Sierran montane rock crevice and outcrop scrub and herbaceous	skos:broadMatch	ENVO:01000302	outcrop	semapv:ManualMappingCuration
+ioc:habitat/usnvc/sonoran-and-chihuahuan-semi-desert-scrub-and-grassland	Sonoran and Chihuahuan Semi-Desert Scrub and Grassland	skos:broadMatch	ENVO:01001905	subtropical desert ecosystem	semapv:ManualMappingCuration
+ioc:habitat/usnvc/sonoran-coloradan-semi-desert-wash-woodland-scrub	Sonoran-Coloradan semi-desert wash woodland/scrub	skos:broadMatch	ENVO:00000278	dry stream	semapv:ManualMappingCuration
+ioc:habitat/usnvc/southern-great-basin-semi-desert-grassland-group	Southern Great Basin semi-desert grassland group	skos:broadMatch	ENVO:01001902	temperate desert ecosystem	semapv:ManualMappingCuration
+ioc:habitat/usnvc/southern-vancouverian-montane-deciduous-scrub	Southern Vancouverian montane deciduous scrub	skos:broadMatch	ENVO:00000300	scrubland area	semapv:ManualMappingCuration
+ioc:habitat/usnvc/southwestern-north-american-alkali-marsh-seep-vegetation	Southwestern North American alkali marsh/seep vegetation	skos:broadMatch	ENVO:00000054	saline marsh	semapv:ManualMappingCuration
+ioc:habitat/usnvc/southwestern-north-american-introduced-riparian-scrub	Southwestern North American introduced riparian scrub	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+ioc:habitat/usnvc/southwestern-north-american-riparian-evergreen-and-deciduous-woodland	Southwestern North American riparian evergreen and deciduous woodland	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+ioc:habitat/usnvc/southwestern-north-american-riparian-flooded-and-swamp-forest	Southwestern North American Riparian, Flooded and Swamp Forest	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+ioc:habitat/usnvc/southwestern-north-american-riparian-wash-scrub	Southwestern North American riparian/wash scrub	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+ioc:habitat/usnvc/southwestern-north-american-salt-basin-and-high-marsh	Southwestern North American salt basin and high marsh	skos:broadMatch	ENVO:00000240	saline wetland	semapv:ManualMappingCuration
+ioc:habitat/usnvc/temperate-and-boreal-pacific-coastal-salt-marsh	Temperate and Boreal Pacific Coastal Salt Marsh	skos:closeMatch	ENVO:00000054	saline marsh	semapv:ManualMappingCuration
+ioc:habitat/usnvc/temperate-freshwater-floating-mat	Temperate freshwater floating mat	skos:broadMatch	ENVO:01001789	freshwater ecosystem	semapv:ManualMappingCuration
+ioc:habitat/usnvc/temperate-intertidal-shore	Temperate Intertidal Shore	skos:broadMatch	ENVO:00000316	intertidal zone	semapv:ManualMappingCuration
+ioc:habitat/usnvc/temperate-pacific-freshwater-aquatic-bed	Temperate Pacific freshwater aquatic bed	skos:broadMatch	ENVO:01001789	freshwater ecosystem	semapv:ManualMappingCuration
+ioc:habitat/usnvc/temperate-pacific-intertidal-flat	Temperate Pacific intertidal flat	skos:broadMatch	ENVO:00000241	tidal mudflat	semapv:ManualMappingCuration
+ioc:habitat/usnvc/temperate-pacific-intertidal-shore	Temperate Pacific Intertidal Shore	skos:broadMatch	ENVO:00000316	intertidal zone	semapv:ManualMappingCuration
+ioc:habitat/usnvc/temperate-pacific-saltwater-aquatic-vegetation	Temperate Pacific Saltwater Aquatic Vegetation	skos:broadMatch	ENVO:01001788	marine ecosystem	semapv:ManualMappingCuration
+ioc:habitat/usnvc/temperate-pacific-seagrass-bed	Temperate Pacific seagrass bed	skos:broadMatch	ENVO:01000059	sea grass bed	semapv:ManualMappingCuration
+ioc:habitat/usnvc/temperate-pacific-seagrass-intertidal-vegetation	Temperate Pacific Seagrass Intertidal Vegetation	skos:closeMatch	ENVO:01000059	sea grass bed	semapv:ManualMappingCuration
+ioc:habitat/usnvc/temperate-pacific-tidal-salt-and-brackish-meadow	Temperate Pacific tidal salt and brackish meadow	skos:broadMatch	ENVO:00000054	saline marsh	semapv:ManualMappingCuration
+ioc:habitat/usnvc/upland-vancouverian-mixed-woodland-and-forest	Upland Vancouverian mixed woodland and forest	skos:broadMatch	ENVO:01001796	temperate mixed forest	semapv:ManualMappingCuration
+ioc:habitat/usnvc/vancouverian-alpine-scrub-forb-meadow-and-grassland	Vancouverian Alpine Scrub, Forb Meadow, and Grassland	skos:broadMatch	ENVO:01001371	alpine tundra ecosystem	semapv:ManualMappingCuration
+ioc:habitat/usnvc/vancouverian-and-rocky-mountain-grassland-and-shrubland	Vancouverian and Rocky Mountain Grassland and Shrubland	skos:broadMatch	ENVO:01001790	terrestrial ecosystem	semapv:ManualMappingCuration
+ioc:habitat/usnvc/vancouverian-and-rocky-mountain-naturalized-annual-grassland	Vancouverian and Rocky Mountain naturalized annual grassland	skos:broadMatch	ENVO:01001811	temperate grassland	semapv:ManualMappingCuration
+ioc:habitat/usnvc/vancouverian-and-rocky-mountain-naturalized-perennial-grassland	Vancouverian and Rocky Mountain naturalized perennial grassland	skos:broadMatch	ENVO:01001811	temperate grassland	semapv:ManualMappingCuration
+ioc:habitat/usnvc/vancouverian-coastal-deciduous-scrub	Vancouverian coastal deciduous scrub	skos:broadMatch	ENVO:01000237	coastal scrubland	semapv:ManualMappingCuration
+ioc:habitat/usnvc/vancouverian-coastal-dune-and-bluff	Vancouverian Coastal Dune and Bluff	skos:broadMatch	ENVO:00000416	coastal dune	semapv:ManualMappingCuration
+ioc:habitat/usnvc/vancouverian-coastal-grassland	Vancouverian coastal grassland	skos:broadMatch	ENVO:01001811	temperate grassland	semapv:ManualMappingCuration
+ioc:habitat/usnvc/vancouverian-coastal-riparian-scrub	Vancouverian coastal riparian scrub	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+ioc:habitat/usnvc/vancouverian-coastal-tidal-marsh-and-meadow	Vancouverian coastal/tidal marsh and meadow	skos:broadMatch	ENVO:00000053	freshwater marsh	semapv:ManualMappingCuration
+ioc:habitat/usnvc/vancouverian-evergreen-broadleaf-and-mixed-forest	Vancouverian evergreen broadleaf and mixed forest	skos:broadMatch	ENVO:01001796	temperate mixed forest	semapv:ManualMappingCuration
+ioc:habitat/usnvc/vancouverian-hypermaritime-lowland-rainforest	Vancouverian hypermaritime lowland rainforest	skos:broadMatch	ENVO:01001952	temperate rainforest	semapv:ManualMappingCuration
+ioc:habitat/usnvc/vancouverian-lowland-grassland-and-shrubland	Vancouverian Lowland Grassland and Shrubland	skos:broadMatch	ENVO:01001790	terrestrial ecosystem	semapv:ManualMappingCuration
+ioc:habitat/usnvc/vancouverian-mesic-montane-coniferous-forest-and-woodland	Vancouverian mesic montane coniferous forest and woodland	skos:broadMatch	ENVO:01000383	temperate evergreen needleleaf forest	semapv:ManualMappingCuration
+ioc:habitat/usnvc/vancouverian-mesic-montane-coniferous-forest-and-woodland	Vancouverian mesic montane coniferous forest and woodland	skos:broadMatch	ENVO:01001940	subalpine ecosystem	semapv:ManualMappingCuration
+ioc:habitat/usnvc/vancouverian-pacific-dune-mat	Vancouverian/Pacific dune mat	skos:broadMatch	ENVO:00000416	coastal dune	semapv:ManualMappingCuration
+ioc:habitat/usnvc/vancouverian-rainforest	Vancouverian Rainforest	skos:closeMatch	ENVO:01001952	temperate rainforest	semapv:ManualMappingCuration
+ioc:habitat/usnvc/vancouverian-riparian-deciduous-forest	Vancouverian riparian deciduous forest	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+ioc:habitat/usnvc/vancouverian-snowbank-turf	Vancouverian snowbank turf	skos:broadMatch	ENVO:01001371	alpine tundra ecosystem	semapv:ManualMappingCuration
+ioc:habitat/usnvc/vancouverian-subalpine-forest	Vancouverian Subalpine Forest	skos:broadMatch	ENVO:01000383	temperate evergreen needleleaf forest	semapv:ManualMappingCuration
+ioc:habitat/usnvc/vancouverian-subalpine-forest	Vancouverian Subalpine Forest	skos:broadMatch	ENVO:01001940	subalpine ecosystem	semapv:ManualMappingCuration
+ioc:habitat/usnvc/viscaino-baja-california-desert-scrub	Viscaino-Baja California Desert Scrub	skos:broadMatch	ENVO:01000242	desert scrubland	semapv:ManualMappingCuration
+ioc:habitat/usnvc/warm-interior-chaparral	Warm Interior Chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+ioc:habitat/usnvc/warm-semi-desert-mediterranean-alkali-saline-wetland	Warm Semi-Desert/Mediterranean Alkali-Saline Wetland	skos:broadMatch	ENVO:00000240	saline wetland	semapv:ManualMappingCuration
+ioc:habitat/usnvc/western-cool-temperate-scrub-swamp	Western cool temperate scrub swamp	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+ioc:habitat/usnvc/western-cordilleran-montane-boreal-mesic-wet-meadow	Western cordilleran montane-boreal mesic wet meadow	skos:broadMatch	ENVO:01000449	wet meadow ecosystem	semapv:ManualMappingCuration
+ioc:habitat/usnvc/western-cordilleran-montane-boreal-riparian-scrub	Western Cordilleran montane-boreal riparian scrub	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+ioc:habitat/usnvc/western-cordilleran-montane-boreal-summer-saturated-meadow	Western Cordilleran montane-boreal summer-saturated meadow	skos:broadMatch	ENVO:01000449	wet meadow ecosystem	semapv:ManualMappingCuration
+ioc:habitat/usnvc/western-cordilleran-montane-boreal-wet-meadow	Western Cordilleran montane-boreal wet meadow	skos:closeMatch	ENVO:01000449	wet meadow ecosystem	semapv:ManualMappingCuration
+ioc:habitat/usnvc/western-cordilleran-montane-deciduous-scrub	Western Cordilleran montane deciduous scrub	skos:broadMatch	ENVO:00000300	scrubland area	semapv:ManualMappingCuration
+ioc:habitat/usnvc/western-cordilleran-montane-moist-graminoid-meadow	Western Cordilleran montane moist graminoid meadow	skos:broadMatch	ENVO:00000108	meadow ecosystem	semapv:ManualMappingCuration
+ioc:habitat/usnvc/western-cordilleran-montane-sclerophyll-scrub	Western Cordilleran montane sclerophyll scrub	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+ioc:habitat/usnvc/western-cordilleran-montane-shrubland-and-grassland	Western Cordilleran Montane Shrubland and Grassland	skos:broadMatch	ENVO:01001927	montane ecosystem	semapv:ManualMappingCuration
+ioc:habitat/usnvc/western-cordilleran-xeric-subalpine-coniferous-forest-and-woodland	Western Cordilleran xeric subalpine coniferous forest and woodland	skos:broadMatch	ENVO:01000383	temperate evergreen needleleaf forest	semapv:ManualMappingCuration
+ioc:habitat/usnvc/western-cordilleran-xeric-subalpine-coniferous-forest-and-woodland	Western Cordilleran xeric subalpine coniferous forest and woodland	skos:broadMatch	ENVO:01001940	subalpine ecosystem	semapv:ManualMappingCuration
+ioc:habitat/usnvc/western-dogwood-thicket	Western dogwood thicket	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+ioc:habitat/usnvc/western-dry-upland-perennial-grassland	Western dry upland perennial grassland	skos:broadMatch	ENVO:01001811	temperate grassland	semapv:ManualMappingCuration
+ioc:habitat/usnvc/western-great-basin-montane-conifer-woodland	Western Great Basin montane conifer woodland	skos:broadMatch	ENVO:01000244	pinyon juniper woodland	semapv:ManualMappingCuration
+ioc:habitat/usnvc/western-mojave-and-western-sonoran-desert-borderland-chaparral	Western Mojave and Western Sonoran Desert borderland chaparral	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+ioc:habitat/usnvc/western-north-america-alpine-scrub-forb-meadow-and-grassland	Western North America Alpine Scrub, Forb Meadow, and Grassland	skos:closeMatch	ENVO:01001371	alpine tundra ecosystem	semapv:ManualMappingCuration
+ioc:habitat/usnvc/western-north-america-cool-temperate-forest	Western North America Cool Temperate Forest	skos:broadMatch	ENVO:01001805	temperate forest	semapv:ManualMappingCuration
+ioc:habitat/usnvc/western-north-america-dwarf-sage-shrubland-and-steppe	Western North America Dwarf Sage Shrubland and Steppe	skos:broadMatch	ENVO:01000861	area of dwarf scrub	semapv:ManualMappingCuration
+ioc:habitat/usnvc/western-north-america-flooded-and-swamp-forest	Western North America Flooded and Swamp Forest	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+ioc:habitat/usnvc/western-north-america-interior-sclerophyllous-shrubland	Western North America Interior Sclerophyllous Shrubland	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+ioc:habitat/usnvc/western-north-america-tall-sage-shrubland-and-steppe	Western North America Tall Sage Shrubland and Steppe	skos:broadMatch	ENVO:00000262	steppe	semapv:ManualMappingCuration
+ioc:habitat/usnvc/western-north-america-vernal-pool	Western North America Vernal Pool	skos:broadMatch	ENVO:00000389	intermittent wetland	semapv:ManualMappingCuration
+ioc:habitat/usnvc/western-north-america-warm-temperate-flooded-and-swamp-forest	Western North America Warm Temperate Flooded and Swamp Forest	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+ioc:habitat/usnvc/western-north-america-wet-meadow-and-low-shrub-carr	Western North America Wet Meadow and Low Shrub Carr	skos:broadMatch	ENVO:01000449	wet meadow ecosystem	semapv:ManualMappingCuration
+ioc:habitat/usnvc/western-north-american-cool-montane-sclerophyllous-evergreen-scrub	Western North American Cool/Montane Sclerophyllous Evergreen Scrub	skos:broadMatch	ENVO:00000301	chaparral area	semapv:ManualMappingCuration
+ioc:habitat/usnvc/western-north-american-cool-semi-desert-scrub-and-grassland	Western North American Cool Semi-Desert Scrub and Grassland	skos:broadMatch	ENVO:01001902	temperate desert ecosystem	semapv:ManualMappingCuration
+ioc:habitat/usnvc/western-north-american-disturbed-alkaline-marsh-and-meadow	Western North American disturbed alkaline marsh and meadow	skos:broadMatch	ENVO:00000054	saline marsh	semapv:ManualMappingCuration
+ioc:habitat/usnvc/western-north-american-freshwater-aquatic-vegetation	Western North American Freshwater Aquatic Vegetation	skos:broadMatch	ENVO:01001789	freshwater ecosystem	semapv:ManualMappingCuration
+ioc:habitat/usnvc/western-north-american-freshwater-marsh	Western North American Freshwater Marsh	skos:closeMatch	ENVO:00000053	freshwater marsh	semapv:ManualMappingCuration
+ioc:habitat/usnvc/western-north-american-interior-alkali-saline-wetland	Western North American Interior Alkali-Saline Wetland	skos:broadMatch	ENVO:00000240	saline wetland	semapv:ManualMappingCuration
+ioc:habitat/usnvc/western-north-american-montane-boreal-peatland	Western North American Montane/Boreal Peatland	skos:broadMatch	ENVO:00000232	fen	semapv:ManualMappingCuration
+ioc:habitat/usnvc/western-north-american-montane-subalpine-riparian-scrub	Western North American montane-subalpine riparian scrub	skos:broadMatch	ENVO:01000893	area of woody wetland	semapv:ManualMappingCuration
+ioc:habitat/usnvc/western-north-american-temperate-grassland-and-meadow	Western North American Temperate Grassland and Meadow	skos:broadMatch	ENVO:01001811	temperate grassland	semapv:ManualMappingCuration
+iucnget:Biome_F1	Rivers and streams biome	skos:closeMatch	ENVO:03605009	freshwater stream ecosystem	semapv:ManualMappingCuration
+iucnget:Biome_F2	Lakes biome	skos:closeMatch	ENVO:01001907	freshwater lake ecosystem	semapv:ManualMappingCuration
+iucnget:Biome_F3	Artificial wetlands biome	skos:broadMatch	ENVO:01001789	freshwater ecosystem	semapv:ManualMappingCuration
+iucnget:Biome_F3	Artificial wetlands biome	skos:broadMatch	ENVO:01001828	anthropised ecosystem	semapv:ManualMappingCuration
+iucnget:Biome_FM1	Semi-confined transitional waters biome	skos:broadMatch	ENVO:01000020	estuarine biome	semapv:ManualMappingCuration
+iucnget:Biome_M1	Marine shelf biome	skos:closeMatch	ENVO:01000025	marine neritic benthic zone biome	semapv:ManualMappingCuration
+iucnget:Biome_M2	Pelagic ocean waters biome	skos:closeMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration
+iucnget:Biome_M3	Deep sea floors biome	skos:closeMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+iucnget:Biome_M4	Anthropogenic marine biome	skos:broadMatch	ENVO:01001788	marine ecosystem	semapv:ManualMappingCuration
+iucnget:Biome_M4	Anthropogenic marine biome	skos:broadMatch	ENVO:01001828	anthropised ecosystem	semapv:ManualMappingCuration
+iucnget:Biome_MFT1	Brackish tidal biome	skos:broadMatch	ENVO:00000230	coastal wetland ecosystem	semapv:ManualMappingCuration
+iucnget:Biome_MT1	Shorelines biome	skos:closeMatch	ENVO:00000316	intertidal zone	semapv:ManualMappingCuration
+iucnget:Biome_MT2	Supralittoral coastal biome	skos:closeMatch	ENVO:01000124	marine supra-littoral zone	semapv:ManualMappingCuration
+iucnget:Biome_MT3	Anthropogenic shorelines biome	skos:broadMatch	ENVO:00000002	anthropogenic geographic feature	semapv:ManualMappingCuration
+iucnget:Biome_MT3	Anthropogenic shorelines biome	skos:broadMatch	ENVO:00000485	sea shore	semapv:ManualMappingCuration
+iucnget:Biome_S1	Subterranean lithic biome	skos:broadMatch	ENVO:01001046	planetary subsurface environment	semapv:ManualMappingCuration
+iucnget:Biome_S2	Anthropogenic subterranean voids biome	skos:broadMatch	ENVO:01001046	planetary subsurface environment	semapv:ManualMappingCuration
+iucnget:Biome_SF1	Subterranean freshwaters biome	skos:broadMatch	ENVO:00000061	underground water body	semapv:ManualMappingCuration
+iucnget:Biome_SF2	Anthropogenic subterranean freshwaters biome	skos:broadMatch	ENVO:00000061	underground water body	semapv:ManualMappingCuration
+iucnget:Biome_SM1	Subterranean tidal biome	skos:broadMatch	ENVO:01001046	planetary subsurface environment	semapv:ManualMappingCuration
+iucnget:Biome_T1	Tropical-subtropical forests biome	skos:closeMatch	ENVO:01001803	tropical forest	semapv:ManualMappingCuration
+iucnget:Biome_T2	Temperate-boreal forests and woodlands biome	skos:closeMatch	ENVO:01001805	temperate forest	semapv:ManualMappingCuration
+iucnget:Biome_T3	Shrublands and shrubby woodlands biome	skos:closeMatch	ENVO:01000176	shrubland biome	semapv:ManualMappingCuration
+iucnget:Biome_T4	Savannas and grasslands biome	skos:broadMatch	ENVO:01001790	terrestrial ecosystem	semapv:ManualMappingCuration
+iucnget:Biome_T5	Deserts and semi-deserts biome	skos:closeMatch	ENVO:01001780	desert ecosystem	semapv:ManualMappingCuration
+iucnget:Biome_T6	Polar/alpine (cryogenic) biome	skos:broadMatch	ENVO:01001790	terrestrial ecosystem	semapv:ManualMappingCuration
+iucnget:Biome_T7	Intensive land-use biome	skos:closeMatch	ENVO:01001828	anthropised ecosystem	semapv:ManualMappingCuration
+iucnget:Biome_TF1	Palustrine wetlands biome	skos:broadMatch	ENVO:01001209	wetland ecosystem	semapv:ManualMappingCuration
+iucnget:EFG_F1_1	Permanent upland streams	skos:broadMatch	ENVO:03605009	freshwater stream ecosystem	semapv:ManualMappingCuration
+iucnget:EFG_F1_2	Permanent lowland rivers	skos:broadMatch	ENVO:01001910	freshwater river ecosystem	semapv:ManualMappingCuration
+iucnget:EFG_F1_3	Freeze-thaw rivers and streams	skos:broadMatch	ENVO:03605009	freshwater stream ecosystem	semapv:ManualMappingCuration
+iucnget:EFG_F1_4	Seasonal upland streams	skos:broadMatch	ENVO:03605009	freshwater stream ecosystem	semapv:ManualMappingCuration
+iucnget:EFG_F1_5	Seasonal lowland rivers	skos:broadMatch	ENVO:03605009	freshwater stream ecosystem	semapv:ManualMappingCuration
+iucnget:EFG_F1_6	Episodic arid rivers	skos:broadMatch	ENVO:03605009	freshwater stream ecosystem	semapv:ManualMappingCuration
+iucnget:EFG_F1_7	Large lowland rivers	skos:closeMatch	ENVO:01001911	large freshwater river ecosystem	semapv:ManualMappingCuration
+iucnget:EFG_F2_1	Large permanent freshwater lakes	skos:closeMatch	ENVO:01001908	large freshwater lake ecosystem	semapv:ManualMappingCuration
+iucnget:EFG_F2_10	Subglacial lakes	skos:broadMatch	ENVO:01001907	freshwater lake ecosystem	semapv:ManualMappingCuration
+iucnget:EFG_F2_2	Small permanent freshwater lakes	skos:closeMatch	ENVO:01001909	small freshwater lake ecosystem	semapv:ManualMappingCuration
+iucnget:EFG_F2_3	Seasonal freshwater lakes	skos:broadMatch	ENVO:01001907	freshwater lake ecosystem	semapv:ManualMappingCuration
+iucnget:EFG_F2_4	Freeze-thaw freshwater lakes	skos:broadMatch	ENVO:01001907	freshwater lake ecosystem	semapv:ManualMappingCuration
+iucnget:EFG_F2_5	Ephemeral freshwater lakes	skos:broadMatch	ENVO:01001907	freshwater lake ecosystem	semapv:ManualMappingCuration
+iucnget:EFG_F2_6	Permanent salt and soda lakes	skos:broadMatch	ENVO:00000019	saline lake	semapv:ManualMappingCuration
+iucnget:EFG_F2_7	Ephemeral salt lakes	skos:broadMatch	ENVO:00000196	alkaline flat	semapv:ManualMappingCuration
+iucnget:EFG_F2_8	Artesian springs and oases	skos:broadMatch	ENVO:00000027	spring	semapv:ManualMappingCuration
+iucnget:EFG_F2_9	Geothermal pools and wetlands	skos:broadMatch	ENVO:00000051	hot spring	semapv:ManualMappingCuration
+iucnget:EFG_F3_1	Large reservoirs	skos:closeMatch	ENVO:00000025	reservoir	semapv:ManualMappingCuration
+iucnget:EFG_F3_2	Constructed lacustrine wetlands	skos:broadMatch	ENVO:01001789	freshwater ecosystem	semapv:ManualMappingCuration
+iucnget:EFG_F3_2	Constructed lacustrine wetlands	skos:broadMatch	ENVO:01001828	anthropised ecosystem	semapv:ManualMappingCuration
+iucnget:EFG_F3_3	Rice paddies	skos:exactMatch	ENVO:00000296	rice field	semapv:ManualMappingCuration
+iucnget:EFG_F3_4	Freshwater aquafarms	skos:broadMatch	ENVO:00000294	fish farm	semapv:ManualMappingCuration
+iucnget:EFG_F3_5	Canals, ditches and drains	skos:closeMatch	ENVO:00000014	canal	semapv:ManualMappingCuration
+iucnget:EFG_FM1_1	Deepwater coastal inlets	skos:closeMatch	ENVO:00000039	fjord	semapv:ManualMappingCuration
+iucnget:EFG_FM1_2	Permanently open riverine estuaries and bays	skos:closeMatch	ENVO:00000045	estuary	semapv:ManualMappingCuration
+iucnget:EFG_FM1_3	Intermittently closed and open lakes and lagoons	skos:closeMatch	ENVO:00000229	intermittent estuary	semapv:ManualMappingCuration
+iucnget:EFG_M1_1	Seagrass meadows	skos:closeMatch	ENVO:01000059	sea grass bed	semapv:ManualMappingCuration
+iucnget:EFG_M1_10	Rhodolith/Maërl beds	skos:broadMatch	ENVO:01000025	marine neritic benthic zone biome	semapv:ManualMappingCuration
+iucnget:EFG_M1_2	Kelp forests	skos:exactMatch	ENVO:01000058	kelp forest	semapv:ManualMappingCuration
+iucnget:EFG_M1_3	Photic coral reefs	skos:closeMatch	ENVO:01000049	marine coral reef biome	semapv:ManualMappingCuration
+iucnget:EFG_M1_4	Shellfish beds and reefs	skos:broadMatch	ENVO:01000025	marine neritic benthic zone biome	semapv:ManualMappingCuration
+iucnget:EFG_M1_5	Photo-limited marine animal forests	skos:broadMatch	ENVO:01000025	marine neritic benthic zone biome	semapv:ManualMappingCuration
+iucnget:EFG_M1_6	Subtidal rocky reefs	skos:closeMatch	ENVO:01000150	marine subtidal rocky reef	semapv:ManualMappingCuration
+iucnget:EFG_M1_7	Subtidal sand beds	skos:broadMatch	ENVO:01000025	marine neritic benthic zone biome	semapv:ManualMappingCuration
+iucnget:EFG_M1_8	Subtidal mud plains	skos:broadMatch	ENVO:01000025	marine neritic benthic zone biome	semapv:ManualMappingCuration
+iucnget:EFG_M1_9	Upwelling zones	skos:closeMatch	ENVO:01000858	marine upwelling biome	semapv:ManualMappingCuration
+iucnget:EFG_M2_1	Epipelagic ocean waters	skos:closeMatch	ENVO:01000035	oceanic epipelagic zone biome	semapv:ManualMappingCuration
+iucnget:EFG_M2_2	Mesopelagic ocean water	skos:closeMatch	ENVO:01000036	oceanic mesopelagic zone biome	semapv:ManualMappingCuration
+iucnget:EFG_M2_3	Bathypelagic ocean waters	skos:closeMatch	ENVO:01000037	oceanic bathypelagic zone biome	semapv:ManualMappingCuration
+iucnget:EFG_M2_4	Abyssopelagic ocean waters	skos:closeMatch	ENVO:01000038	oceanic abyssopelagic zone biome	semapv:ManualMappingCuration
+iucnget:EFG_M2_5	Sea ice	skos:closeMatch	ENVO:00002200	sea ice	semapv:ManualMappingCuration
+iucnget:EFG_M3_1	Continental and island slopes	skos:closeMatch	ENVO:00000273	continental slope	semapv:ManualMappingCuration
+iucnget:EFG_M3_2	Submarine canyons	skos:closeMatch	ENVO:00000267	submarine canyon	semapv:ManualMappingCuration
+iucnget:EFG_M3_3	Abyssal plains	skos:closeMatch	ENVO:00000244	abyssal plain	semapv:ManualMappingCuration
+iucnget:EFG_M3_4	Seamounts, ridges and plateaus	skos:closeMatch	ENVO:00000264	seamount	semapv:ManualMappingCuration
+iucnget:EFG_M3_5	Deepwater biogenic beds	skos:broadMatch	ENVO:01000123	marine sponge reef biome	semapv:ManualMappingCuration
+iucnget:EFG_M3_6	Hadal trenches and troughs	skos:closeMatch	ENVO:00000275	ocean trench	semapv:ManualMappingCuration
+iucnget:EFG_M3_7	Chemosynthetic-based-ecosystems (CBE)	skos:broadMatch	ENVO:01000024	marine benthic biome	semapv:ManualMappingCuration
+iucnget:EFG_M4_1	Submerged artificial structures	skos:closeMatch	ENVO:00000149	artificial reef	semapv:ManualMappingCuration
+iucnget:EFG_M4_2	Marine aquafarms	skos:broadMatch	ENVO:03600074	aquaculture farm	semapv:ManualMappingCuration
+iucnget:EFG_MFT1_1	Coastal river deltas	skos:closeMatch	ENVO:00000889	large river delta biome	semapv:ManualMappingCuration
+iucnget:EFG_MFT1_2	Intertidal forests and shrublands	skos:closeMatch	ENVO:00000057	mangrove swamp	semapv:ManualMappingCuration
+iucnget:EFG_MFT1_3	Coastal saltmarshes and reedbeds	skos:closeMatch	ENVO:00000054	saline marsh	semapv:ManualMappingCuration
+iucnget:EFG_MT1_1	Rocky Shorelines	skos:closeMatch	ENVO:01000428	area of rocky shore	semapv:ManualMappingCuration
+iucnget:EFG_MT1_2	Muddy Shorelines	skos:closeMatch	ENVO:00000241	tidal mudflat	semapv:ManualMappingCuration
+iucnget:EFG_MT1_3	Sandy Shorelines	skos:closeMatch	ENVO:00000092	sea beach	semapv:ManualMappingCuration
+iucnget:EFG_MT1_4	Boulder and cobble shores	skos:closeMatch	ENVO:00000545	shingle beach	semapv:ManualMappingCuration
+iucnget:EFG_MT2_1	Coastal shrublands and grasslands	skos:broadMatch	ENVO:00000416	coastal dune	semapv:ManualMappingCuration
+iucnget:EFG_MT2_1	Coastal shrublands and grasslands	skos:broadMatch	ENVO:01000237	coastal scrubland	semapv:ManualMappingCuration
+iucnget:EFG_MT2_2	Large seabird and pinniped colonies	skos:broadMatch	ENVO:01000124	marine supra-littoral zone	semapv:ManualMappingCuration
+iucnget:EFG_MT3_1	Artificial shorelines	skos:broadMatch	ENVO:00000002	anthropogenic geographic feature	semapv:ManualMappingCuration
+iucnget:EFG_MT3_1	Artificial shorelines	skos:broadMatch	ENVO:00000485	sea shore	semapv:ManualMappingCuration
+iucnget:EFG_S1_1	Aerobic caves	skos:closeMatch	ENVO:00000067	cave	semapv:ManualMappingCuration
+iucnget:EFG_S1_2	Endolithic systems	skos:broadMatch	ENVO:01001046	planetary subsurface environment	semapv:ManualMappingCuration
+iucnget:EFG_S2_1	Anthropogenic subterranean voids	skos:broadMatch	ENVO:01001046	planetary subsurface environment	semapv:ManualMappingCuration
+iucnget:EFG_SF1_1	Underground streams and pools	skos:broadMatch	ENVO:00000061	underground water body	semapv:ManualMappingCuration
+iucnget:EFG_SF1_2	Groundwater ecosystems	skos:closeMatch	ENVO:00012408	aquifer	semapv:ManualMappingCuration
+iucnget:EFG_SF2_1	Water pipes and subterranean canals	skos:broadMatch	ENVO:00000061	underground water body	semapv:ManualMappingCuration
+iucnget:EFG_SF2_2	Flooded mines and other voids	skos:broadMatch	ENVO:00000061	underground water body	semapv:ManualMappingCuration
+iucnget:EFG_SM1_1	Anchialine caves	skos:exactMatch	ENVO:01000367	anchialine cave	semapv:ManualMappingCuration
+iucnget:EFG_SM1_2	Anchialine pools	skos:exactMatch	ENVO:01000368	anchialine pool	semapv:ManualMappingCuration
+iucnget:EFG_SM1_3	Sea caves	skos:exactMatch	ENVO:00000326	sea cave	semapv:ManualMappingCuration
+iucnget:EFG_T1_1	Tropical/Subtropical lowland rainforests	skos:closeMatch	ENVO:01001951	tropical rainforest	semapv:ManualMappingCuration
+iucnget:EFG_T1_2	Tropical/Subtropical dry forests and thickets	skos:closeMatch	ENVO:01001799	tropical dry broadleaf forest	semapv:ManualMappingCuration
+iucnget:EFG_T1_3	Tropical/Subtropical montane rainforests	skos:broadMatch	ENVO:01000435	high-elevation forest	semapv:ManualMappingCuration
+iucnget:EFG_T1_4	Tropical heath forests	skos:broadMatch	ENVO:01001803	tropical forest	semapv:ManualMappingCuration
+iucnget:EFG_T2_1	Boreal and temperate high montane forests and woodlands	skos:broadMatch	ENVO:01000383	temperate evergreen needleleaf forest	semapv:ManualMappingCuration
+iucnget:EFG_T2_2	Deciduous temperate forests	skos:closeMatch	ENVO:01000385	temperate deciduous broadleaf forest	semapv:ManualMappingCuration
+iucnget:EFG_T2_3	Oceanic cool temperate rainforests	skos:closeMatch	ENVO:01001952	temperate rainforest	semapv:ManualMappingCuration
+iucnget:EFG_T2_4	Warm temperate laurophyll forests	skos:closeMatch	ENVO:01000397	temperate broadleaf evergreen forest	semapv:ManualMappingCuration
+iucnget:EFG_T2_5	Temperate pyric humid forests	skos:broadMatch	ENVO:01001805	temperate forest	semapv:ManualMappingCuration
+iucnget:EFG_T2_6	Temperate pyric sclerophyll forests and woodlands	skos:closeMatch	ENVO:01000395	temperate sclerophyllous dry forest	semapv:ManualMappingCuration
+iucnget:EFG_T3_1	Seasonally dry tropical shrublands	skos:closeMatch	ENVO:01000214	tropical shrubland biome	semapv:ManualMappingCuration
+iucnget:EFG_T3_2	Seasonally dry temperate heath and shrublands	skos:closeMatch	ENVO:01000217	mediterranean shrubland biome	semapv:ManualMappingCuration
+iucnget:EFG_T3_3	Cool temperate heathlands	skos:closeMatch	ENVO:00000107	heath	semapv:ManualMappingCuration
+iucnget:EFG_T3_4	Young rocky pavements, lava flows and screes	skos:broadMatch	ENVO:01000752	area of barren land	semapv:ManualMappingCuration
+iucnget:EFG_T4_1	Trophic savannas	skos:broadMatch	ENVO:00000261	savanna	semapv:ManualMappingCuration
+iucnget:EFG_T4_2	Pyric tussock savannas	skos:broadMatch	ENVO:00000261	savanna	semapv:ManualMappingCuration
+iucnget:EFG_T4_3	Hummock savannas	skos:broadMatch	ENVO:00000261	savanna	semapv:ManualMappingCuration
+iucnget:EFG_T4_4	Temperate woodlands	skos:closeMatch	ENVO:01001917	temperate woodland ecosystem	semapv:ManualMappingCuration
+iucnget:EFG_T4_5	Temperate subhumid grasslands	skos:closeMatch	ENVO:01001811	temperate grassland	semapv:ManualMappingCuration
+iucnget:EFG_T5_1	Semi-desert steppe	skos:closeMatch	ENVO:00000262	steppe	semapv:ManualMappingCuration
+iucnget:EFG_T5_2	Succulent or Thorny deserts and semi-deserts	skos:broadMatch	ENVO:01001905	subtropical desert ecosystem	semapv:ManualMappingCuration
+iucnget:EFG_T5_3	Sclerophyll hot deserts and semi-deserts	skos:broadMatch	ENVO:01001905	subtropical desert ecosystem	semapv:ManualMappingCuration
+iucnget:EFG_T5_4	Cool deserts and semi-deserts	skos:closeMatch	ENVO:01001902	temperate desert ecosystem	semapv:ManualMappingCuration
+iucnget:EFG_T5_5	Hyper-arid deserts	skos:broadMatch	ENVO:01001780	desert ecosystem	semapv:ManualMappingCuration
+iucnget:EFG_T6_1	Ice sheets, glaciers and perennial snowfields	skos:closeMatch	ENVO:01000746	area of perennial ice or snow	semapv:ManualMappingCuration
+iucnget:EFG_T6_2	Polar/alpine cliffs, screes, outcrops and lava flows	skos:broadMatch	ENVO:01000752	area of barren land	semapv:ManualMappingCuration
+iucnget:EFG_T6_3	Polar tundra and deserts	skos:closeMatch	ENVO:01001625	polar tundra ecosystem	semapv:ManualMappingCuration
+iucnget:EFG_T6_4	Temperate alpine grasslands and shrublands	skos:closeMatch	ENVO:01001371	alpine tundra ecosystem	semapv:ManualMappingCuration
+iucnget:EFG_T6_5	Tropical alpine grasslands and herbfields	skos:broadMatch	ENVO:01001371	alpine tundra ecosystem	semapv:ManualMappingCuration
+iucnget:EFG_T7_1	Annual croplands	skos:closeMatch	ENVO:01001244	cropland ecosystem	semapv:ManualMappingCuration
+iucnget:EFG_T7_2	Sown pastures and fields	skos:closeMatch	ENVO:01000891	area of pastureland or hayfields	semapv:ManualMappingCuration
+iucnget:EFG_T7_3	Plantations	skos:closeMatch	ENVO:00000117	plantation	semapv:ManualMappingCuration
+iucnget:EFG_T7_4	Urban and industrial ecosystems	skos:closeMatch	ENVO:01000249	urban biome	semapv:ManualMappingCuration
+iucnget:EFG_T7_5	Derived semi-natural pastures and old fields	skos:closeMatch	ENVO:01001930	rangeland ecosystem	semapv:ManualMappingCuration
+iucnget:EFG_TF1_1	Tropical flooded forests and peat forests	skos:closeMatch	ENVO:01000394	tropical freshwater swamp forest	semapv:ManualMappingCuration
+iucnget:EFG_TF1_2	Subtropical/temperate forested wetlands	skos:closeMatch	ENVO:01000398	temperate freshwater swamp forest	semapv:ManualMappingCuration
+iucnget:EFG_TF1_3	Permanent marshes	skos:closeMatch	ENVO:00000053	freshwater marsh	semapv:ManualMappingCuration
+iucnget:EFG_TF1_4	Seasonal floodplain marshes	skos:closeMatch	ENVO:00000154	flood meadow ecosystem	semapv:ManualMappingCuration
+iucnget:EFG_TF1_5	Episodic arid floodplains	skos:broadMatch	ENVO:00000255	flood plain	semapv:ManualMappingCuration
+iucnget:EFG_TF1_6	Boreal, temperate and montane peat bogs	skos:broadMatch	ENVO:00000044	peatland	semapv:ManualMappingCuration
+iucnget:EFG_TF1_7	Boreal and temperate fens	skos:closeMatch	ENVO:00000232	fen	semapv:ManualMappingCuration
+iucnget:Realm_A	Atmospheric realm	skos:closeMatch	ENVO:01000267	atmosphere	semapv:ManualMappingCuration
+iucnget:Realm_F	Freshwater realm	skos:closeMatch	ENVO:01001789	freshwater ecosystem	semapv:ManualMappingCuration
+iucnget:Realm_FM	Freshwater-Marine realm	skos:closeMatch	ENVO:01000020	estuarine biome	semapv:ManualMappingCuration
+iucnget:Realm_M	Marine realm	skos:closeMatch	ENVO:01001788	marine ecosystem	semapv:ManualMappingCuration
+iucnget:Realm_MFT	Marine-Terrestrial-Freshwater realm	skos:broadMatch	ENVO:00000230	coastal wetland ecosystem	semapv:ManualMappingCuration
+iucnget:Realm_MT	Marine-Terrestrial realm	skos:closeMatch	ENVO:00000485	sea shore	semapv:ManualMappingCuration
+iucnget:Realm_S	Subterranean realm	skos:closeMatch	ENVO:01001046	planetary subsurface environment	semapv:ManualMappingCuration
+iucnget:Realm_SF	Subterranean-Freshwater realm	skos:closeMatch	ENVO:00000061	underground water body	semapv:ManualMappingCuration
+iucnget:Realm_SM	Subterranean-Marine realm	skos:broadMatch	ENVO:01001046	planetary subsurface environment	semapv:ManualMappingCuration
+iucnget:Realm_T	Terrestrial realm	skos:closeMatch	ENVO:01001790	terrestrial ecosystem	semapv:ManualMappingCuration
+iucnget:Realm_TF	Terrestrial-Freshwater realm	skos:closeMatch	ENVO:01001209	wetland ecosystem	semapv:ManualMappingCuration

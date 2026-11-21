@@ -1,0 +1,178 @@
+#curie_map:
+#  ENVO: http://purl.obolibrary.org/obo/ENVO_
+#  GEO: http://purl.obolibrary.org/obo/GEO_
+#  ICON: https://w3id.org/icon/ICON_
+#  NCBITaxon: http://purl.obolibrary.org/obo/NCBITaxon_
+#  OBI: http://purl.obolibrary.org/obo/OBI_
+#  OMRSE: http://purl.obolibrary.org/obo/OMRSE_
+#  RO: http://purl.obolibrary.org/obo/RO_
+#  access: http://publications.europa.eu/resource/authority/access-right/
+#  bibo: http://purl.org/ontology/bibo/
+#  cito: http://purl.org/spar/cito/
+#  dcat: http://www.w3.org/ns/dcat#
+#  dcterms: http://purl.org/dc/terms/
+#  dwc: http://rs.tdwg.org/dwc/terms/
+#  eli: http://data.europa.eu/eli/ontology#
+#  fabio: http://purl.org/spar/fabio/
+#  foaf: http://xmlns.com/foaf/0.1/
+#  frapo: http://purl.org/cerif/frapo/
+#  gsp: http://www.opengis.net/ont/geosparql#
+#  org: http://www.w3.org/ns/org#
+#  pplan: http://purl.org/net/p-plan#
+#  prov: http://www.w3.org/ns/prov#
+#  schema: https://schema.org/
+#  semapv: https://w3id.org/semapv/vocab/
+#  skos: http://www.w3.org/2004/02/skos/core#
+#license: https://creativecommons.org/licenses/by/4.0/
+#mapping_set_id: https://w3id.org/icon/mappings/icon-external.sssom.tsv
+#mapping_set_description: ICON terms and the terms they reuse, matched to terms of other vocabularies (DCAT, Dublin Core, BIBO, schema.org and others) for exchange.
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification
+ICON:0000010	agent	skos:closeMatch	foaf:Agent	Agent	semapv:ManualMappingCuration
+ICON:0000010	agent	skos:closeMatch	prov:Agent	Agent	semapv:ManualMappingCuration
+ICON:0000011	endeavor	skos:closeMatch	frapo:Endeavour	endeavour	semapv:ManualMappingCuration
+ICON:0000012	place	skos:closeMatch	schema:Place	Place	semapv:ManualMappingCuration
+ICON:0000013	information resource	skos:closeMatch	dcat:Resource	Catalogued resource	semapv:ManualMappingCuration
+ICON:0000013	information resource	skos:closeMatch	schema:CreativeWork	CreativeWork	semapv:ManualMappingCuration
+ICON:0000100	is involved with	skos:broadMatch	dcterms:relation	Relation	semapv:ManualMappingCuration
+ICON:0000105	funded by	skos:closeMatch	frapo:isFundedBy	is funded by	semapv:ManualMappingCuration
+ICON:0000105	funded by	skos:closeMatch	schema:funder	funder	semapv:ManualMappingCuration
+ICON:0000106	funds	skos:closeMatch	frapo:funds	funds	semapv:ManualMappingCuration
+ICON:0000108	was created by	skos:closeMatch	dcterms:creator	Creator	semapv:ManualMappingCuration
+ICON:0000108	was created by	skos:closeMatch	schema:creator	creator	semapv:ManualMappingCuration
+ICON:0000110	informs	skos:broadMatch	dcterms:relation	Relation	semapv:ManualMappingCuration
+ICON:0001001	academic organization	skos:closeMatch	schema:CollegeOrUniversity	CollegeOrUniversity	semapv:ManualMappingCuration
+ICON:0001002	commercial organization	skos:closeMatch	schema:Corporation	Corporation	semapv:ManualMappingCuration
+ICON:0001003	federal government organization	skos:closeMatch	schema:GovernmentOrganization	GovernmentOrganization	semapv:ManualMappingCuration
+ICON:0001004	state government organization	skos:closeMatch	schema:GovernmentOrganization	GovernmentOrganization	semapv:ManualMappingCuration
+ICON:0001005	local government organization	skos:closeMatch	schema:GovernmentOrganization	GovernmentOrganization	semapv:ManualMappingCuration
+ICON:0001008	non-profit organization	skos:closeMatch	schema:NGO	NGO	semapv:ManualMappingCuration
+ICON:0001009	foundation	skos:closeMatch	OBI:0001942	grant agency	semapv:ManualMappingCuration
+ICON:0001010	partnership	skos:closeMatch	org:OrganizationalCollaboration	Endeavour	semapv:ManualMappingCuration
+ICON:0001011	team	skos:closeMatch	org:OrganizationalUnit	OrganizationalUnit	semapv:ManualMappingCuration
+ICON:0001037	research activity	skos:closeMatch	OBI:0000066	investigation	semapv:ManualMappingCuration
+ICON:0001103	is member of	skos:closeMatch	org:memberOf	member of	semapv:ManualMappingCuration
+ICON:0001103	is member of	skos:closeMatch	schema:memberOf	memberOf	semapv:ManualMappingCuration
+ICON:0001104	has member	skos:closeMatch	org:hasMember	has member	semapv:ManualMappingCuration
+ICON:0001107	is published by	skos:closeMatch	dcterms:publisher	Publisher	semapv:ManualMappingCuration
+ICON:0001107	is published by	skos:closeMatch	schema:publisher	publisher	semapv:ManualMappingCuration
+ICON:0001109	located in county	skos:closeMatch	org:hasPrimarySite	primary Site	semapv:ManualMappingCuration
+ICON:0001109	located in county	skos:closeMatch	schema:location	location	semapv:ManualMappingCuration
+ICON:0001111	located in ecoregion	skos:closeMatch	org:hasPrimarySite	primary Site	semapv:ManualMappingCuration
+ICON:0001111	located in ecoregion	skos:closeMatch	schema:location	location	semapv:ManualMappingCuration
+ICON:0002001	leadership role	skos:closeMatch	org:Role	Role	semapv:ManualMappingCuration
+ICON:0002100	is affiliated with	skos:closeMatch	schema:affiliation	affiliation	semapv:ManualMappingCuration
+ICON:0002102	has contact	skos:closeMatch	dcat:contactPoint	contact point	semapv:ManualMappingCuration
+ICON:0002104	has expertise in	skos:closeMatch	schema:knowsAbout	knowsAbout	semapv:ManualMappingCuration
+ICON:0002200	role title	skos:closeMatch	org:role	role	semapv:ManualMappingCuration
+ICON:0002300	LinkedIn profile	skos:closeMatch	foaf:account	account	semapv:ManualMappingCuration
+ICON:0002301	ORCID iD	skos:closeMatch	schema:identifier	identifier	semapv:ManualMappingCuration
+ICON:0003000	conservation project	skos:closeMatch	foaf:Project	Project	semapv:ManualMappingCuration
+ICON:0003000	conservation project	skos:closeMatch	schema:Project	Project	semapv:ManualMappingCuration
+ICON:0003009	research project	skos:closeMatch	OBI:0000066	investigation	semapv:ManualMappingCuration
+ICON:0004004	funding program	skos:closeMatch	frapo:FundingProgramme	funding programme	semapv:ManualMappingCuration
+ICON:0004009	research program	skos:closeMatch	OBI:0000066	investigation	semapv:ManualMappingCuration
+ICON:0005000	infrastructure	skos:closeMatch	gsp:Feature	Feature	semapv:ManualMappingCuration
+ICON:0005020	groundwater basin	skos:closeMatch	ENVO:00012408	aquifer	semapv:ManualMappingCuration
+ICON:0005024	water retention structure	skos:closeMatch	ENVO:00000074	dam	semapv:ManualMappingCuration
+ICON:0005028	solar power plant	skos:closeMatch	ENVO:01000867	solar panel array	semapv:ManualMappingCuration
+ICON:0005030	electric transmission line	skos:closeMatch	ENVO:01000865	electric power system	semapv:ManualMappingCuration
+ICON:0005032	animal production site	skos:closeMatch	ENVO:00000078	farm	semapv:ManualMappingCuration
+ICON:0005032	animal production site	skos:closeMatch	ENVO:01000627	feedlot	semapv:ManualMappingCuration
+ICON:0005033	crop production site	skos:closeMatch	ENVO:00000114	agricultural field	semapv:ManualMappingCuration
+ICON:0005035	fee-title conservation area	skos:closeMatch	ENVO:00000358	area of protected biodiversity	semapv:ManualMappingCuration
+ICON:0005036	marine conservation area	skos:closeMatch	ENVO:00000362	marine park area	semapv:ManualMappingCuration
+ICON:0005110	is found in	skos:closeMatch	RO:0002303	has habitat	semapv:ManualMappingCuration
+ICON:0006000	guideline or mandate	skos:closeMatch	eli:LegalResource	Legal Resource	semapv:ManualMappingCuration
+ICON:0006000	guideline or mandate	skos:closeMatch	schema:Legislation	Legislation	semapv:ManualMappingCuration
+ICON:0006001	agreement	skos:closeMatch	OMRSE:00000089	contract	semapv:ManualMappingCuration
+ICON:0006005	legislation	skos:closeMatch	schema:Legislation	Legislation	semapv:ManualMappingCuration
+ICON:0006113	was issued by	skos:closeMatch	eli:passed_by	passed by	semapv:ManualMappingCuration
+ICON:0007001	conservation plan	skos:closeMatch	pplan:Plan	Plan	semapv:ManualMappingCuration
+ICON:0007003	plan action	skos:closeMatch	pplan:Step	Step	semapv:ManualMappingCuration
+ICON:0008000	data resource	skos:closeMatch	dcat:Resource	Catalogued resource	semapv:ManualMappingCuration
+ICON:0008000	data resource	skos:closeMatch	schema:CreativeWork	CreativeWork	semapv:ManualMappingCuration
+ICON:0008001	dataset	skos:closeMatch	dcat:Dataset	Dataset	semapv:ManualMappingCuration
+ICON:0008001	dataset	skos:closeMatch	schema:Dataset	Dataset	semapv:ManualMappingCuration
+ICON:0008002	database	skos:closeMatch	dcat:Dataset	Dataset	semapv:ManualMappingCuration
+ICON:0008002	database	skos:closeMatch	schema:Dataset	Dataset	semapv:ManualMappingCuration
+ICON:0008003	data repository	skos:closeMatch	dcat:Catalog	Catalog	semapv:ManualMappingCuration
+ICON:0008003	data repository	skos:closeMatch	schema:DataCatalog	DataCatalog	semapv:ManualMappingCuration
+ICON:0008021	open data access	skos:closeMatch	access:PUBLIC	public	semapv:ManualMappingCuration
+ICON:0008022	open access with registration	skos:broadMatch	access:PUBLIC	public	semapv:ManualMappingCuration
+ICON:0008023	sensitive locations withheld	skos:broadMatch	access:RESTRICTED	restricted	semapv:ManualMappingCuration
+ICON:0008024	access by request or license	skos:closeMatch	access:RESTRICTED	restricted	semapv:ManualMappingCuration
+ICON:0008025	data not public	skos:closeMatch	access:NON_PUBLIC	non-public	semapv:ManualMappingCuration
+ICON:0008080	data type	skos:closeMatch	dcterms:type	Type	semapv:ManualMappingCuration
+ICON:0008102	has data type	skos:closeMatch	dcterms:format	Format	semapv:ManualMappingCuration
+ICON:0008102	has data type	skos:closeMatch	dcterms:type	Type	semapv:ManualMappingCuration
+ICON:0008104	is held in	skos:closeMatch	schema:includedInDataCatalog	includedInDataCatalog	semapv:ManualMappingCuration
+ICON:0008105	holds	skos:closeMatch	dcat:dataset	dataset	semapv:ManualMappingCuration
+ICON:0008106	is hosted by	skos:closeMatch	schema:provider	provider	semapv:ManualMappingCuration
+ICON:0008108	is derived from	skos:closeMatch	prov:wasDerivedFrom	wasDerivedFrom	semapv:ManualMappingCuration
+ICON:0008108	is derived from	skos:closeMatch	schema:isBasedOn	isBasedOn	semapv:ManualMappingCuration
+ICON:0008110	conforms to	skos:closeMatch	dcterms:conformsTo	Conforms To	semapv:ManualMappingCuration
+ICON:0008112	has extent	skos:closeMatch	dcterms:spatial	Spatial Coverage	semapv:ManualMappingCuration
+ICON:0008201	coverage start	skos:closeMatch	dcat:startDate	start date	semapv:ManualMappingCuration
+ICON:0008202	coverage end	skos:closeMatch	dcat:endDate	end date	semapv:ManualMappingCuration
+ICON:0008203	spatial resolution	skos:closeMatch	dcat:spatialResolutionInMeters	spatial resolution (meters)	semapv:ManualMappingCuration
+ICON:0009000	paper or report	skos:closeMatch	bibo:Document	Document	semapv:ManualMappingCuration
+ICON:0009000	paper or report	skos:closeMatch	fabio:Work	work	semapv:ManualMappingCuration
+ICON:0009000	paper or report	skos:closeMatch	schema:CreativeWork	CreativeWork	semapv:ManualMappingCuration
+ICON:0009001	peer-reviewed paper	skos:closeMatch	bibo:AcademicArticle	Academic Article	semapv:ManualMappingCuration
+ICON:0009001	peer-reviewed paper	skos:closeMatch	fabio:JournalArticle	journal article	semapv:ManualMappingCuration
+ICON:0009001	peer-reviewed paper	skos:closeMatch	schema:ScholarlyArticle	ScholarlyArticle	semapv:ManualMappingCuration
+ICON:0009002	technical report	skos:closeMatch	bibo:Report	Report	semapv:ManualMappingCuration
+ICON:0009002	technical report	skos:closeMatch	fabio:TechnicalReport	technical report	semapv:ManualMappingCuration
+ICON:0009002	technical report	skos:closeMatch	schema:Report	Report	semapv:ManualMappingCuration
+ICON:0009102	authored by	skos:closeMatch	dcterms:creator	Creator	semapv:ManualMappingCuration
+ICON:0009102	authored by	skos:closeMatch	schema:author	author	semapv:ManualMappingCuration
+ICON:0009104	commissioned by	skos:closeMatch	schema:sponsor	sponsor	semapv:ManualMappingCuration
+ICON:0009106	describes	skos:closeMatch	cito:describes	describes	semapv:ManualMappingCuration
+ICON:0009106	describes	skos:closeMatch	schema:about	about	semapv:ManualMappingCuration
+ICON:0009108	uses data from	skos:closeMatch	cito:usesDataFrom	uses data from	semapv:ManualMappingCuration
+ICON:0009108	uses data from	skos:closeMatch	schema:isBasedOn	isBasedOn	semapv:ManualMappingCuration
+ICON:0009109	provides data for	skos:closeMatch	cito:providesDataFor	provides data for	semapv:ManualMappingCuration
+ICON:0009110	cites	skos:closeMatch	schema:citation	citation	semapv:ManualMappingCuration
+ICON:0009110	cites	skos:exactMatch	cito:cites	cites	semapv:ManualMappingCuration
+ICON:0009111	is cited by	skos:exactMatch	cito:isCitedBy	is cited by	semapv:ManualMappingCuration
+ICON:0009112	studied at	skos:closeMatch	schema:spatialCoverage	spatialCoverage	semapv:ManualMappingCuration
+ICON:0009200	authors	skos:closeMatch	bibo:authorList	list of authors	semapv:ManualMappingCuration
+ICON:0009201	published in	skos:closeMatch	schema:isPartOf	isPartOf	semapv:ManualMappingCuration
+ICON:0009202	report number	skos:closeMatch	bibo:number	number	semapv:ManualMappingCuration
+ICON:0010000	county	skos:closeMatch	schema:AdministrativeArea	AdministrativeArea	semapv:ManualMappingCuration
+ICON:0010005	electoral district	skos:closeMatch	schema:AdministrativeArea	AdministrativeArea	semapv:ManualMappingCuration
+ICON:0010100	operates in	skos:closeMatch	dcterms:spatial	Spatial Coverage	semapv:ManualMappingCuration
+ICON:0010100	operates in	skos:closeMatch	schema:areaServed	areaServed	semapv:ManualMappingCuration
+ICON:0010102	applies in	skos:closeMatch	GEO:000000336	has jurisdiction in	semapv:ManualMappingCuration
+ICON:0010108	in ecoregion	skos:closeMatch	dcterms:spatial	Spatial Coverage	semapv:ManualMappingCuration
+ICON:0010110	in subbasin	skos:closeMatch	dcterms:spatial	Spatial Coverage	semapv:ManualMappingCuration
+ICON:0010112	in watershed	skos:closeMatch	dcterms:spatial	Spatial Coverage	semapv:ManualMappingCuration
+ICON:0011000	taxon	skos:closeMatch	dwc:Taxon	Taxon	semapv:ManualMappingCuration
+ICON:0011100	concerns taxon	skos:closeMatch	dcterms:subject	Subject	semapv:ManualMappingCuration
+ICON:0011102	has habitat type	skos:closeMatch	dcterms:subject	Subject	semapv:ManualMappingCuration
+ICON:0011108	has broader habitat type	skos:exactMatch	skos:broader	has broader	semapv:ManualMappingCuration
+ICON:0011109	has narrower habitat type	skos:exactMatch	skos:narrower	has narrower	semapv:ManualMappingCuration
+ICON:0011110	is related to habitat type	skos:exactMatch	skos:related	has related	semapv:ManualMappingCuration
+ICON:0011111	has IUCN ecosystem group	skos:exactMatch	skos:broadMatch	has broader match	semapv:ManualMappingCuration
+ICON:0011112	is IUCN ecosystem group of	skos:exactMatch	skos:narrowMatch	has narrower match	semapv:ManualMappingCuration
+ICON:0011221	CMECS code	skos:exactMatch	skos:notation	notation	semapv:ManualMappingCuration
+ICON:0011222	CMECS ID	skos:closeMatch	dcterms:identifier	Identifier	semapv:ManualMappingCuration
+ICON:0011231	GET code	skos:exactMatch	skos:notation	notation	semapv:ManualMappingCuration
+ICON:0011232	GET IRI	skos:closeMatch	dcterms:identifier	Identifier	semapv:ManualMappingCuration
+ICON:0012100	addresses issue	skos:closeMatch	dcat:theme	theme	semapv:ManualMappingCuration
+ICON:0012102	has broader issue	skos:exactMatch	skos:broader	has broader	semapv:ManualMappingCuration
+ICON:0012103	has narrower issue	skos:exactMatch	skos:narrower	has narrower	semapv:ManualMappingCuration
+ICON:0012104	is related to issue	skos:exactMatch	skos:related	has related	semapv:ManualMappingCuration
+ICON:0013000	tool	skos:closeMatch	schema:SoftwareApplication	SoftwareApplication	semapv:ManualMappingCuration
+ICON:0013002	map viewer	skos:closeMatch	schema:WebApplication	WebApplication	semapv:ManualMappingCuration
+ICON:0013003	dashboard	skos:closeMatch	schema:WebApplication	WebApplication	semapv:ManualMappingCuration
+ICON:0013006	software package	skos:closeMatch	schema:SoftwareApplication	SoftwareApplication	semapv:ManualMappingCuration
+ICON:0013010	tool function	skos:closeMatch	schema:featureList	featureList	semapv:ManualMappingCuration
+ICON:0013100	has tool type	skos:closeMatch	schema:applicationCategory	applicationCategory	semapv:ManualMappingCuration
+ICON:0013103	is produced by	skos:closeMatch	prov:wasGeneratedBy	wasGeneratedBy	semapv:ManualMappingCuration
+ICON:0014104	has outcome	skos:closeMatch	OBI:0000299	has specified output	semapv:ManualMappingCuration
+NCBITaxon:9606	Homo sapiens	skos:closeMatch	foaf:Person	Person	semapv:ManualMappingCuration
+NCBITaxon:9606	Homo sapiens	skos:closeMatch	schema:Person	Person	semapv:ManualMappingCuration
+OBI:0000245	organization	skos:closeMatch	foaf:Organization	Organization	semapv:ManualMappingCuration
+OBI:0000245	organization	skos:closeMatch	org:Organization	Organization	semapv:ManualMappingCuration
+OBI:0000245	organization	skos:closeMatch	schema:Organization	Organization	semapv:ManualMappingCuration

@@ -1,0 +1,14 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0000101 a owl:ObjectProperty ;
+    rdfs:label "led by"@en ;
+    IAO:0000115 "An organization or person that directs the work and answers for it."@en ;
+    rdfs:isDefinedBy iconbase:core.owl ;
+    rdfs:range icon:0000010 ;
+    rdfs:subPropertyOf icon:0000100 ;
+    owl:inverseOf icon:0000102 .
+

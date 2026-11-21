@@ -1,0 +1,15 @@
+@prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
+@prefix icon: <https://w3id.org/icon/ICON_> .
+@prefix iconbase: <https://w3id.org/icon/> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+icon:0014004 a owl:Class ;
+    rdfs:label "measured outcome"@en ;
+    IAO:0000115 "An outcome recorded as delivered, by a report, a monitoring survey or an inventory such as CPAD, or by a project tracker that lists the work as completed."@en ;
+    oboInOwl:hasExactSynonym "achieved outcome"@en ;
+    rdfs:isDefinedBy iconbase:outcomes.owl ;
+    rdfs:subClassOf IAO:0000109,
+        icon:0014002 .
+

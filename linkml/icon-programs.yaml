@@ -1,0 +1,186 @@
+# ICON Programs ontology, as a LinkML schema.
+# Built by `ioc-ontologies` from ontology/src/programs.terms; edit that, not this file.
+id: https://w3id.org/icon/linkml/icon-programs
+name: icon-programs
+prefixes:
+  linkml: https://w3id.org/linkml/
+  ICON: https://w3id.org/icon/ICON_
+  OBI: http://purl.obolibrary.org/obo/OBI_
+  frapo: http://purl.org/cerif/frapo/
+title: ICON Programs ontology
+description: 'Conservation programs: ongoing arrangements, usually run by an agency, that fund, regulate,
+  certify, plan or carry out work through many projects. Covers program types and administration.'
+version: '2026-11-21'
+license: https://creativecommons.org/licenses/by/4.0/
+default_prefix: ICON
+default_range: string
+see_also:
+- https://w3id.org/icon/programs.owl
+imports:
+- linkml:types
+- icon-external
+- icon-core
+- icon-infrastructure
+classes:
+  ConservationProgram:
+    class_uri: ICON:0004000
+    title: conservation program
+    description: An ongoing arrangement, usually run by an agency, that funds, regulates, certifies, plans
+      or carries out conservation work through many projects or participants, with no set end.
+    annotations:
+      runtime: class Program; vocab ProgType
+    is_a: Endeavor
+  AcquisitionProgram:
+    class_uri: ICON:0004001
+    title: acquisition program
+    description: A program that buys land, water or easements, or pays others to.
+    annotations:
+      runtime: term ProgType "Acquisition"
+    is_a: ConservationProgram
+  CertificationProgram:
+    class_uri: ICON:0004002
+    title: certification program
+    description: A program that certifies land, products or practices against a standard.
+    annotations:
+      runtime: term ProgType "Certification"
+    is_a: ConservationProgram
+  EducationProgram:
+    class_uri: ICON:0004003
+    title: education program
+    description: A program that teaches the public, students or practitioners.
+    annotations:
+      runtime: term ProgType "Education"
+    is_a: ConservationProgram
+  FundingProgram:
+    class_uri: ICON:0004004
+    title: funding program
+    description: A program that pays for others' conservation work, as a grant or cost-share program.
+    close_mappings:
+    - frapo:FundingProgramme
+    annotations:
+      runtime: term ProgType "Funding"
+    is_a: ConservationProgram
+  HabitatEnhancementProgram:
+    class_uri: ICON:0004005
+    title: habitat enhancement program
+    description: A program that restores or improves habitat.
+    aliases:
+    - restoration program
+    annotations:
+      runtime: term ProgType "Habitat Enhancement"
+    is_a: ConservationProgram
+  ManagementProgram:
+    class_uri: ICON:0004006
+    title: management program
+    description: A program that manages land, water or wildlife over time.
+    annotations:
+      runtime: term ProgType "Management"
+    is_a: ConservationProgram
+  PlanningProgram:
+    class_uri: ICON:0004007
+    title: planning program
+    description: A program that prepares plans, such as regional conservation planning.
+    annotations:
+      runtime: term ProgType "Planning"
+    is_a: ConservationProgram
+  RegulatoryProgram:
+    class_uri: ICON:0004008
+    title: regulatory program
+    description: A program that issues permits or enforces rules.
+    annotations:
+      runtime: term ProgType "Regulatory"
+    is_a: ConservationProgram
+  ResearchProgram:
+    class_uri: ICON:0004009
+    title: research program
+    description: A program that studies or monitors nature or conservation.
+    close_mappings:
+    - OBI:0000066
+    annotations:
+      runtime: term ProgType "Research"
+    is_a: ConservationProgram
+  TechnicalAssistanceProgram:
+    class_uri: ICON:0004010
+    title: technical assistance program
+    description: 'A program that gives free expert help rather than money, so that communities, Tribes,
+      and organizations can plan projects, build capacity, and apply for and manage funding. Example:
+      the U.S. Environmental Protection Agency''s Water Technical Assistance (WaterTA).'
+    comments:
+    - Added for the technical assistance tab of the LPCCC grant funding sources list (#1383).
+    annotations:
+      runtime: term ProgType "Technical Assistance"
+    is_a: ConservationProgram
+slots:
+  has_program_type:
+    slot_uri: ICON:0004100
+    title: has program type
+    description: Links a program to one of the program type classes it belongs to. The explorer's way
+      of stating the program's class.
+    annotations:
+      runtime: phrase "has program type"
+    domain: ConservationProgram
+    domain_of:
+    - ConservationProgram
+    range: uriorcurie
+    inverse: is_program_type_of
+    multivalued: true
+  is_program_type_of:
+    slot_uri: ICON:0004101
+    title: is program type of
+    description: The reverse of has program type.
+    annotations:
+      runtime: phrase "is program type of"
+    range: ConservationProgram
+    inverse: has_program_type
+    multivalued: true
+  administered_by:
+    slot_uri: ICON:0004102
+    title: administered by
+    description: The organization that runs the program.
+    annotations:
+      runtime: phrase "administered by"
+    is_a: is_involved_with
+    domain: ConservationProgram
+    domain_of:
+    - ConservationProgram
+    range: Organization
+    inverse: administers
+    multivalued: true
+  administers:
+    slot_uri: ICON:0004103
+    title: administers
+    description: The reverse of administered by.
+    annotations:
+      runtime: phrase "administers"
+    is_a: is_involved_with
+    domain: Organization
+    domain_of:
+    - Organization
+    range: ConservationProgram
+    inverse: administered_by
+    multivalued: true
+  operates_at:
+    slot_uri: ICON:0004104
+    title: operates at
+    description: A place where the program does its work, such as a river a restoration program works
+      along, a groundwater basin a banking program recharges, or a camera array a research program runs.
+    annotations:
+      runtime: phrase "operates at"
+    domain: ConservationProgram
+    domain_of:
+    - ConservationProgram
+    range: Infrastructure
+    inverse: hosts_program
+    multivalued: true
+  hosts_program:
+    slot_uri: ICON:0004105
+    title: hosts program
+    description: The reverse of operates at.
+    annotations:
+      runtime: phrase "hosts program"
+    domain: Infrastructure
+    domain_of:
+    - Infrastructure
+    range: ConservationProgram
+    inverse: operates_at
+    multivalued: true

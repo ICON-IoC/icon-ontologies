@@ -1,7 +1,7 @@
 @prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix icon: <https://w3id.org/icon/ICON_> .
-@prefix iconbase: <https://w3id.org/icon/> .
+@prefix icon: <https://w3id.org/icon-ioc/ICON_> .
+@prefix iconbase: <https://w3id.org/icon-ioc/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -14,8 +14,8 @@ icon:0012100 a owl:ObjectProperty ;
     rdfs:isDefinedBy iconbase:issues.owl ;
     rdfs:range icon:0012000 ;
     owl:inverseOf icon:0012101 ;
-    owl:propertyChainAxiom ( icon:0000106 icon:0012100 ),
-        ( icon:0000102 icon:0012100 ),
+    owl:propertyChainAxiom ( icon:0000102 icon:0012100 ),
+        ( icon:0000106 icon:0012100 ),
         ( icon:0005105 icon:0012100 ),
         ( icon:0004103 icon:0012100 ),
         ( icon:0012100 icon:0012102 ) ;

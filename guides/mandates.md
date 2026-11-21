@@ -3,7 +3,7 @@
 Laws, regulations, executive orders, agreements, certifications and guidelines that require, allow, fund or shape conservation work, and the ways organizations stand toward them: bound by, implementing, enforcing, issuing, certified by.
 
 - Files: `icon-mandates.ttl` (Turtle) and `icon-mandates.owl` (RDF/XML), built from `src/mandates.terms`.
-- Ontology IRI: `https://w3id.org/icon/mandates.owl`; this release `https://w3id.org/icon/releases/2026-11-21/mandates.owl`.
+- Ontology IRI: `https://w3id.org/icon-ioc/mandates.owl`; this release `https://w3id.org/icon-ioc/releases/2026-11-21/mandates.owl`.
 - Its own terms are numbered ICON:0006000 to ICON:0006999.
 
 ## Existing ontologies used

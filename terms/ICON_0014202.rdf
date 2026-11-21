@@ -4,11 +4,11 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014202">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0014202">
     <obo:IAO_0000115 xml:lang="en">The amount of the indicator before the target was set. Progress counts up from it: the baseline plus the outcomes achieved since.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0014001"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0014001"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/outcomes.owl"/>
     <rdfs:label xml:lang="en">baseline value</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
   </rdf:Description>

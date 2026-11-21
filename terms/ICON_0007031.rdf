@@ -4,11 +4,11 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0007031">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0007031">
     <obo:IAO_0000115 xml:lang="en">A plan that carries a broader conservation plan into one sector, such as agriculture, energy, transportation, water management or tribal lands, written with that sector's agencies and organizations. It names the sector's priority pressures and strategy categories, potential conservation activities at statewide, regional and local scales, desired outcomes, and potential partners and funding, without binding anyone. It implements the broader plan. Example: the nine companion plans of California's State Wildlife Action Plan.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/plans.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/plans.owl"/>
     <rdfs:label xml:lang="en">sector companion plan</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0007001"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0007001"/>
   </rdf:Description>
 </rdf:RDF>

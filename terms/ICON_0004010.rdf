@@ -4,12 +4,12 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0004010">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0004010">
     <obo:IAO_0000115 xml:lang="en">A program that gives free expert help rather than money, so that communities, Tribes, and organizations can plan projects, build capacity, and apply for and manage funding. Example: the U.S. Environmental Protection Agency's Water Technical Assistance (WaterTA).</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment xml:lang="en">Added for the technical assistance tab of the LPCCC grant funding sources list (#1383).</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/programs.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/programs.owl"/>
     <rdfs:label xml:lang="en">technical assistance program</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0004000"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0004000"/>
   </rdf:Description>
 </rdf:RDF>

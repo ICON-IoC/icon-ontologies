@@ -5,11 +5,11 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0006110">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0006110">
     <obo:IAO_0000115 xml:lang="en">An organization holds the authority to enforce a guideline or mandate.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/mandates.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/mandates.owl"/>
     <rdfs:label xml:lang="en">enforces</rdfs:label>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0006111"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0006111"/>
   </rdf:Description>
 </rdf:RDF>

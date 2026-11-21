@@ -1,184 +1,184 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
    xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:iconbase="https://w3id.org/icon/"
+   xmlns:iconbase="https://w3id.org/icon-ioc/"
    xmlns:obo="http://purl.obolibrary.org/obo/"
    xmlns:owl="http://www.w3.org/2002/07/owl#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:nodeID="cb11118aca3a1fc7d434fb4f4c45161c35e9b17cd171ef1aacff818602f0f4b6d01">
+  <rdf:Description rdf:nodeID="cb10b1e889d70d43d8bdc9f2e8558a574c5c5956495daca4ded90215aa042f58ef6">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <owl:unionOf rdf:nodeID="cb6241914cfc2b9dfab57690938a62182275c91c2b06ffd442b6ef11be59666eaa"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="cb11b335a01cf7d552b396517524f6df370f2013755abc7348fa953648c12ab40fb">
+  <rdf:Description rdf:nodeID="cb10b27405a86ed68d1179626e216bd641556c427044d694c1cc31bee052b5af5fe">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="cbc9874e1087ff37043c595204683443584aafce4be5df3da99b609d4277f146b2"/>
+    <owl:unionOf rdf:nodeID="cb943b2b74bb7d613d9d6d0e3cf92a0a2fee101c92b3a39ead71fdd9ba378c2c1e"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb113cf076399308ea05c4432355887b20e06fb6f85358efd0b8d1da3cc1dab451a">
+    <rdf:first rdf:resource="https://w3id.org/icon-ioc/ICON_0005033"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb1292d09b0ad3bb181723105435d52d3252e1f62b8988fc1ac74e8896c7f086107">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="cbb765eeadc1f2f8bf6ea31f99267f324c3bc7321081d20c7706b4559e15afd83d"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb12ecd19826417921624ab91d94eb541f2a5633f216b3e1185249536bff91a40e5">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="cbd2e7beb8f6939173337a245a8cdeab6a34b4e458de6990448bf2623c767e4db3"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="cb1418f08674703a89274e278346c0264768d77ced990692105c7cdb27e7c087f4d">
     <rdf:first rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000535"/>
     <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="cb15fb4cd47163a2160bdd8b4e5e850bf86f13e8551c8866582704ffa5f55749a19">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="cb943b2b74bb7d613d9d6d0e3cf92a0a2fee101c92b3a39ead71fdd9ba378c2c1e"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="cb17f09acaee1f3d73157933062f1f501cb2972c80f718239f0648a5c1206e266fb">
-    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005057"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="cb1854bdaef4b4b35d3b3512b30783d8bfc4f7018caa0db1fcabddc7d2d5d2241a">
-    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005021"/>
-    <rdf:rest rdf:nodeID="cb7e15e139a7ac4959bdc245ec928717aa4ed47d2a6da5a9d48a46732d0d05c575"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="cb1b46c0d294e7ed081033d353a9e875040d5dccdba0a63254addcff7658e8bf75">
-    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005020"/>
-    <rdf:rest rdf:nodeID="cbd8e0187b07921f7bfd894fe301950141e5309162dafc031303b249ca9bc1b6f2"/>
-  </rdf:Description>
   <rdf:Description rdf:nodeID="cb1bc9e4d983ad8d990f8b9b23e1e3e0d0d2e159ea1fb59ae174360b5d41f6b053">
     <rdf:first rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000256"/>
-    <rdf:rest rdf:nodeID="cb1b46c0d294e7ed081033d353a9e875040d5dccdba0a63254addcff7658e8bf75"/>
+    <rdf:rest rdf:nodeID="cbe723813c657991781592a8510160a4f63c8c9714e5de46fd6d67861665a75086"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="cb1c82138b4e5b71c3dde0769025dca2da145ddc2c5ea1a04a4f6b3f6047e74c85c">
-    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005031"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="cb1cb0a8b5ac4dafddc15ce738b8dab3002eaeaba6de0d17ec23cc372d5a6e12882">
-    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005033"/>
+  <rdf:Description rdf:nodeID="cb1bfed099771ac67bd5c22b2e0f52a9e601552c5a570bb92ebcec0684bb3ef0348">
+    <rdf:first rdf:resource="https://w3id.org/icon-ioc/ICON_0005057"/>
     <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="cb1cce0c96d57ab0ebed85c1960f75cbb0dbebbdc5e1ad1c05f5ea17bc4da38a1a">
     <rdf:first rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002214"/>
-    <rdf:rest rdf:nodeID="cb76402de838cd8d5c92da51480b4ad7a037fa586ccb7dd802dac00e285e7bd7e5"/>
+    <rdf:rest rdf:nodeID="cb54ef9f74f0a8f579fc7940a3faf8c26572600e6f884ad3010b2f3b4759e3e094"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="cb1d5a74c033e3c47f91cefed3cb59eedc36f3db5ab95b40a4e3b233a66677967a4">
     <rdf:first rdf:resource="http://purl.obolibrary.org/obo/ENVO_00001999"/>
     <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="cb307cb779f566b67e286fb2fb49bc345ddb05ed14cc4a5973d52ca93d876853b8">
-    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005046"/>
-    <rdf:rest rdf:nodeID="cb17f09acaee1f3d73157933062f1f501cb2972c80f718239f0648a5c1206e266fb"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="cb38440579ac13e767956bcda03041b2c77034b1ba5ffee00ba47e837f959a98cd">
-    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005035"/>
-    <rdf:rest rdf:nodeID="cb3cae2e13c83864bf4ff1cfa8ad7016c1726ff74a2cc890f8c0e9715116b5763a"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="cb3cae2e13c83864bf4ff1cfa8ad7016c1726ff74a2cc890f8c0e9715116b5763a">
-    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005036"/>
-    <rdf:rest rdf:nodeID="cba962e3fb05199969a8b6672749d69e96d1486c14118addca502ac05f590f5ffe"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="cb404b9f507afe6363bafacf8f4c7d12b9935242247d79c1ab12f1b75e376fe3a4">
-    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005039"/>
+  <rdf:Description rdf:nodeID="cb1fa233da53bdada2123fde5195c869260e3c43cf154bd7582c78a78321a47e8">
+    <rdf:first rdf:resource="https://w3id.org/icon-ioc/ICON_0005039"/>
     <rdf:rest rdf:nodeID="cbdf32aeb20bdf4abe0e1a288740e2e13f3c68ca7d43c380ccf649caa05f1782d4"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="cb4cc251a82ad7e4125e09f67e15258b528eed77f2d2c95163423959167cc43f7a">
-    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005055"/>
-    <rdf:rest rdf:nodeID="cb1418f08674703a89274e278346c0264768d77ced990692105c7cdb27e7c087f4d"/>
+  <rdf:Description rdf:nodeID="cb4ba0f1e9255d748a9d0560b3da7d150972f21c412db7b2307f168a6c8ce64d3a">
+    <rdf:first rdf:resource="https://w3id.org/icon-ioc/ICON_0005036"/>
+    <rdf:rest rdf:nodeID="cbc7107456eb361fbb2754d0d6f47acde1983680ad23f72e07d2766d6697e61948"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="cb4fb24383cf485eeb7ac2ba4b65b28b771f9de46228440291468aa644186a15f">
-    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005051"/>
-    <rdf:rest rdf:nodeID="cbc646a366e0f0938b75012c4832bee548e2431b946e909f5188e395f6464b669f"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="cb5401709e09a041dce4a8094c0ebbfb158072baba4a3c5106f6363515e2d927e1">
-    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005040"/>
-    <rdf:rest rdf:nodeID="cb4fb24383cf485eeb7ac2ba4b65b28b771f9de46228440291468aa644186a15f"/>
+  <rdf:Description rdf:nodeID="cb54ef9f74f0a8f579fc7940a3faf8c26572600e6f884ad3010b2f3b4759e3e094">
+    <rdf:first rdf:resource="https://w3id.org/icon-ioc/ICON_0005030"/>
+    <rdf:rest rdf:nodeID="cbdec4cf6d36e507285b746a23ef0351fccdec44d1c341393ad5433e2a423fd16a"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="cb55931639f8c14c1122926c0722d0da1897f5a5bc6d9405eb0cf95549a9068fa1">
     <rdf:first rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000043"/>
     <rdf:rest rdf:nodeID="cb7eef38bce01a1cfadf824bb11e1ff206fea8dde463b4a1d2842f11e73dcb4f8a"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="cb59c986fd31a17e1f1c732db69b3370c3fff2c79d4b0429168f1d527773a1d48d">
-    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005022"/>
-    <rdf:rest rdf:nodeID="cbbeac51b02babe9736f060b24d94d8f3bd1e351077e5943c7e99fe836f0aed97c"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="cb5c9f4954e2e25d345f4b51a0387351af8f7d2d83bd6ad34da92f6540a2bbf317">
-    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005045"/>
-    <rdf:rest rdf:nodeID="cb307cb779f566b67e286fb2fb49bc345ddb05ed14cc4a5973d52ca93d876853b8"/>
+  <rdf:Description rdf:nodeID="cb5a03e862acbe421daff9c7f3ae80db0d403bb06f0a8fa52023a04684742facef">
+    <rdf:first rdf:resource="https://w3id.org/icon-ioc/ICON_0005046"/>
+    <rdf:rest rdf:nodeID="cb1bfed099771ac67bd5c22b2e0f52a9e601552c5a570bb92ebcec0684bb3ef0348"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="cb6241914cfc2b9dfab57690938a62182275c91c2b06ffd442b6ef11be59666eaa">
     <rdf:first rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000014"/>
     <rdf:rest rdf:nodeID="cb1bc9e4d983ad8d990f8b9b23e1e3e0d0d2e159ea1fb59ae174360b5d41f6b053"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="cb76402de838cd8d5c92da51480b4ad7a037fa586ccb7dd802dac00e285e7bd7e5">
-    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005030"/>
-    <rdf:rest rdf:nodeID="cb1c82138b4e5b71c3dde0769025dca2da145ddc2c5ea1a04a4f6b3f6047e74c85c"/>
+  <rdf:Description rdf:nodeID="cb6d61f39b34c19d22a97ec2b63e14151e5547db3e47a5bdb275e25539edd8e046">
+    <rdf:first rdf:resource="https://w3id.org/icon-ioc/ICON_0005043"/>
+    <rdf:rest rdf:nodeID="cb7f5ef01aeef731f28c464c68f4369a9d906a3169d0e76ef8d3520b1cf0f04c1f"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="cb790d41880c70330826807ac2742bfba8655f7be9bb14d81b0c692d2585bd5736">
-    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005034"/>
-    <rdf:rest rdf:nodeID="cb38440579ac13e767956bcda03041b2c77034b1ba5ffee00ba47e837f959a98cd"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="cb7e15e139a7ac4959bdc245ec928717aa4ed47d2a6da5a9d48a46732d0d05c575">
-    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005024"/>
-    <rdf:rest rdf:nodeID="cb4cc251a82ad7e4125e09f67e15258b528eed77f2d2c95163423959167cc43f7a"/>
+  <rdf:Description rdf:nodeID="cb76029794fbfc1ddbba42be3a1fc1d91fa85bb66a4bd9d38521652b5441d02e6f">
+    <rdf:first rdf:resource="https://w3id.org/icon-ioc/ICON_0005022"/>
+    <rdf:rest rdf:nodeID="cbd588e62732e43f00b82e1f10b7686bf7a30b52acc1ca53dcbb30394f999d532f"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="cb7eef38bce01a1cfadf824bb11e1ff206fea8dde463b4a1d2842f11e73dcb4f8a">
     <rdf:first rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000045"/>
     <rdf:rest rdf:nodeID="cb1d5a74c033e3c47f91cefed3cb59eedc36f3db5ab95b40a4e3b233a66677967a4"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="cb7f5ef01aeef731f28c464c68f4369a9d906a3169d0e76ef8d3520b1cf0f04c1f">
+    <rdf:first rdf:resource="https://w3id.org/icon-ioc/ICON_0005044"/>
+    <rdf:rest rdf:nodeID="cbb37a0ab8bb3aafb52747132b521f306f1d4763aeeb4d486cce01c1b2796e8d1e"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb8e0bd31ee164174c6c16723eb7a65d620ca284b33484b4dfe82c3df37347b871">
+    <rdf:first rdf:resource="https://w3id.org/icon-ioc/ICON_0005040"/>
+    <rdf:rest rdf:nodeID="cb931fdb2fb4013a61e71d848430264f4740edae667d1add2e5a24166f830b1b75"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb931fdb2fb4013a61e71d848430264f4740edae667d1add2e5a24166f830b1b75">
+    <rdf:first rdf:resource="https://w3id.org/icon-ioc/ICON_0005051"/>
+    <rdf:rest rdf:nodeID="cbc0dfd4ae0997d82acc0bb3a4248a33d1204231e882cfa3f8e2b7baada1de5962"/>
+  </rdf:Description>
   <rdf:Description rdf:nodeID="cb943b2b74bb7d613d9d6d0e3cf92a0a2fee101c92b3a39ead71fdd9ba378c2c1e">
     <rdf:first rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000023"/>
     <rdf:rest rdf:nodeID="cbfa3ab5427ac3b0afbaeaa08ce5f989a6a6ff0afac3a3da420b03949e302d985"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="cb9adf96d98f00f5fb4d8992c2af88912e9b15c58df10ef0b7745f9cfd3dfd24e3">
-    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005032"/>
-    <rdf:rest rdf:nodeID="cb1cb0a8b5ac4dafddc15ce738b8dab3002eaeaba6de0d17ec23cc372d5a6e12882"/>
+  <rdf:Description rdf:nodeID="cba2b462d4b5372e208abfa7c23d86136b66eb738f18dd97185d1b91a58c1c8e61">
+    <rdf:first rdf:resource="https://w3id.org/icon-ioc/ICON_0005035"/>
+    <rdf:rest rdf:nodeID="cb4ba0f1e9255d748a9d0560b3da7d150972f21c412db7b2307f168a6c8ce64d3a"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="cba962e3fb05199969a8b6672749d69e96d1486c14118addca502ac05f590f5ffe">
-    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005037"/>
-    <rdf:rest rdf:nodeID="cbdb074367f168bd9d4fe9a4d170ef79911e3cf585891d763ab82e2815e0cbc02e"/>
+  <rdf:Description rdf:nodeID="cbaa2084592de1f3f370f11117f2720a672abddd07ef3840228365ea0163017995">
+    <rdf:first rdf:resource="https://w3id.org/icon-ioc/ICON_0005038"/>
+    <rdf:rest rdf:nodeID="cb1fa233da53bdada2123fde5195c869260e3c43cf154bd7582c78a78321a47e8"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="cbaa94697e87d969ac39959ba7ceb758c2012ef4578bc1794c25153af69115836d">
-    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005044"/>
-    <rdf:rest rdf:nodeID="cb5c9f4954e2e25d345f4b51a0387351af8f7d2d83bd6ad34da92f6540a2bbf317"/>
+  <rdf:Description rdf:nodeID="cbb37a0ab8bb3aafb52747132b521f306f1d4763aeeb4d486cce01c1b2796e8d1e">
+    <rdf:first rdf:resource="https://w3id.org/icon-ioc/ICON_0005045"/>
+    <rdf:rest rdf:nodeID="cb5a03e862acbe421daff9c7f3ae80db0d403bb06f0a8fa52023a04684742facef"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="cbb63a4fd662b3707dddc8d29eabf3431d65b8dd1489d8cd52b8f0dcdb9bc6a176">
+  <rdf:Description rdf:nodeID="cbb48c12d12d18c90b8b050fd420220bd5315b1eb8e78e06af9dc7adf1bfcc7c4d">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="cb790d41880c70330826807ac2742bfba8655f7be9bb14d81b0c692d2585bd5736"/>
+    <owl:unionOf rdf:nodeID="cb1cce0c96d57ab0ebed85c1960f75cbb0dbebbdc5e1ad1c05f5ea17bc4da38a1a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cbb626823d6314c5b44e3bcfb643283fb876bc62a0a61f90dbcfbb3a94044b63b7">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="cb6d61f39b34c19d22a97ec2b63e14151e5547db3e47a5bdb275e25539edd8e046"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cbb765eeadc1f2f8bf6ea31f99267f324c3bc7321081d20c7706b4559e15afd83d">
+    <rdf:first rdf:resource="https://w3id.org/icon-ioc/ICON_0005034"/>
+    <rdf:rest rdf:nodeID="cba2b462d4b5372e208abfa7c23d86136b66eb738f18dd97185d1b91a58c1c8e61"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="cbbeaafd0aed84b6a8fc3dd5dea888a67d4ae76bb1a8ede2d69d265c03efb04268">
     <rdf:first rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000025"/>
-    <rdf:rest rdf:nodeID="cb1854bdaef4b4b35d3b3512b30783d8bfc4f7018caa0db1fcabddc7d2d5d2241a"/>
+    <rdf:rest rdf:nodeID="cbe9ac048910dc0a3d7c03786c7f6dffbd9b1dfd170513fe48a2d85c06dc2ce3ae"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="cbbeac51b02babe9736f060b24d94d8f3bd1e351077e5943c7e99fe836f0aed97c">
-    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005023"/>
-    <rdf:rest rdf:nodeID="cbbeaafd0aed84b6a8fc3dd5dea888a67d4ae76bb1a8ede2d69d265c03efb04268"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="cbc058ee5fc8b28b4fa6a4c6cf016c9f6a0567b1d8488822e7c43ad5dc9fee8b72">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="cb9adf96d98f00f5fb4d8992c2af88912e9b15c58df10ef0b7745f9cfd3dfd24e3"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="cbc646a366e0f0938b75012c4832bee548e2431b946e909f5188e395f6464b669f">
-    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005052"/>
+  <rdf:Description rdf:nodeID="cbc0dfd4ae0997d82acc0bb3a4248a33d1204231e882cfa3f8e2b7baada1de5962">
+    <rdf:first rdf:resource="https://w3id.org/icon-ioc/ICON_0005052"/>
     <rdf:rest rdf:nodeID="cbd7c96744b860be374134b6eeace4a6009e3d5947219e59b3c009836ad1012775"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="cbc9874e1087ff37043c595204683443584aafce4be5df3da99b609d4277f146b2">
-    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005043"/>
-    <rdf:rest rdf:nodeID="cbaa94697e87d969ac39959ba7ceb758c2012ef4578bc1794c25153af69115836d"/>
+  <rdf:Description rdf:nodeID="cbc4080a3ef798d66f1adc9992d6938e50730bdfbc9f93633255a017940f8e578b">
+    <rdf:first rdf:resource="https://w3id.org/icon-ioc/ICON_0005024"/>
+    <rdf:rest rdf:nodeID="cbec92d1958dcdca6dfe8c82afcfbf8b9a9babdcd5806e10258a2161be7f50931c"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cbc7107456eb361fbb2754d0d6f47acde1983680ad23f72e07d2766d6697e61948">
+    <rdf:first rdf:resource="https://w3id.org/icon-ioc/ICON_0005037"/>
+    <rdf:rest rdf:nodeID="cbaa2084592de1f3f370f11117f2720a672abddd07ef3840228365ea0163017995"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cbd2e7beb8f6939173337a245a8cdeab6a34b4e458de6990448bf2623c767e4db3">
+    <rdf:first rdf:resource="https://w3id.org/icon-ioc/ICON_0005032"/>
+    <rdf:rest rdf:nodeID="cb113cf076399308ea05c4432355887b20e06fb6f85358efd0b8d1da3cc1dab451a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cbd588e62732e43f00b82e1f10b7686bf7a30b52acc1ca53dcbb30394f999d532f">
+    <rdf:first rdf:resource="https://w3id.org/icon-ioc/ICON_0005023"/>
+    <rdf:rest rdf:nodeID="cbbeaafd0aed84b6a8fc3dd5dea888a67d4ae76bb1a8ede2d69d265c03efb04268"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="cbd7c96744b860be374134b6eeace4a6009e3d5947219e59b3c009836ad1012775">
-    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005124"/>
+    <rdf:first rdf:resource="https://w3id.org/icon-ioc/ICON_0005124"/>
     <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="cbd8e0187b07921f7bfd894fe301950141e5309162dafc031303b249ca9bc1b6f2">
     <rdf:first rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000178"/>
-    <rdf:rest rdf:nodeID="cb59c986fd31a17e1f1c732db69b3370c3fff2c79d4b0429168f1d527773a1d48d"/>
+    <rdf:rest rdf:nodeID="cb76029794fbfc1ddbba42be3a1fc1d91fa85bb66a4bd9d38521652b5441d02e6f"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="cbdb074367f168bd9d4fe9a4d170ef79911e3cf585891d763ab82e2815e0cbc02e">
-    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005038"/>
-    <rdf:rest rdf:nodeID="cb404b9f507afe6363bafacf8f4c7d12b9935242247d79c1ab12f1b75e376fe3a4"/>
+  <rdf:Description rdf:nodeID="cbdec4cf6d36e507285b746a23ef0351fccdec44d1c341393ad5433e2a423fd16a">
+    <rdf:first rdf:resource="https://w3id.org/icon-ioc/ICON_0005031"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="cbdf32aeb20bdf4abe0e1a288740e2e13f3c68ca7d43c380ccf649caa05f1782d4">
     <rdf:first rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000930"/>
-    <rdf:rest rdf:nodeID="cb5401709e09a041dce4a8094c0ebbfb158072baba4a3c5106f6363515e2d927e1"/>
+    <rdf:rest rdf:nodeID="cb8e0bd31ee164174c6c16723eb7a65d620ca284b33484b4dfe82c3df37347b871"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cbe723813c657991781592a8510160a4f63c8c9714e5de46fd6d67861665a75086">
+    <rdf:first rdf:resource="https://w3id.org/icon-ioc/ICON_0005020"/>
+    <rdf:rest rdf:nodeID="cbd8e0187b07921f7bfd894fe301950141e5309162dafc031303b249ca9bc1b6f2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cbe9ac048910dc0a3d7c03786c7f6dffbd9b1dfd170513fe48a2d85c06dc2ce3ae">
+    <rdf:first rdf:resource="https://w3id.org/icon-ioc/ICON_0005021"/>
+    <rdf:rest rdf:nodeID="cbc4080a3ef798d66f1adc9992d6938e50730bdfbc9f93633255a017940f8e578b"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="cbea46ac019365fb0c1c8e0ed7ef36d8a78a1a619c8fa71bdc7873b4984436ff5e">
     <rdf:first rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000277"/>
     <rdf:rest rdf:nodeID="cb55931639f8c14c1122926c0722d0da1897f5a5bc6d9405eb0cf95549a9068fa1"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="cbf272a637875946b2f9e5b572f6ef3f096e2f25b08f521dc41c6ca358df7001bc">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="cb1cce0c96d57ab0ebed85c1960f75cbb0dbebbdc5e1ad1c05f5ea17bc4da38a1a"/>
+  <rdf:Description rdf:nodeID="cbec92d1958dcdca6dfe8c82afcfbf8b9a9babdcd5806e10258a2161be7f50931c">
+    <rdf:first rdf:resource="https://w3id.org/icon-ioc/ICON_0005055"/>
+    <rdf:rest rdf:nodeID="cb1418f08674703a89274e278346c0264768d77ced990692105c7cdb27e7c087f4d"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="cbfa3ab5427ac3b0afbaeaa08ce5f989a6a6ff0afac3a3da420b03949e302d985">
     <rdf:first rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000617"/>
@@ -604,687 +604,687 @@
   <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#narrowMatch">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000001">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0000001">
     <obo:IAO_0000115 xml:lang="en">The matching field in a metadata standard that is not published as RDF, written as the standard's name, a colon and the field's path, such as "EML 2.2: dataset/title".</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/core.owl"/>
     <rdfs:label xml:lang="en">crosswalk</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000012">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0000012">
     <obo:IAO_0000115 xml:lang="en">A part of the landscape or a structure in it that records can be located at, worked on or bounded by: a river, a reserve, a dam, a crossing structure.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/core.owl"/>
     <rdfs:label xml:lang="en">place</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000100">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0000100">
     <obo:IAO_0000115 xml:lang="en">A link between two records that work together or affect one another. Every more specific involvement link (leads, funds, manages, uses, is partner of and others) implies it.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/core.owl"/>
     <rdfs:label xml:lang="en">is involved with</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005000">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005000">
     <obo:IAO_0000115 xml:lang="en">A place or structure on the landscape that conservation works on or around: a water body, a conservation area, a water or energy work, a farm, a sensor, a road or trail. Called infrastructure in the PPOD model whether built or natural.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">infrastructure</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0000012"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0000012"/>
     <skos:closeMatch rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005001">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005001">
     <obo:IAO_0000115 xml:lang="en">A body of water: a river or stream, a lake or pond, a dry lake or playa, a wetland, an estuary or the ocean.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">blue infrastructure</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005000"/>
-    <owl:equivalentClass rdf:nodeID="cb15fb4cd47163a2160bdd8b4e5e850bf86f13e8551c8866582704ffa5f55749a19"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
+    <owl:equivalentClass rdf:nodeID="cb10b27405a86ed68d1179626e216bd641556c427044d694c1cc31bee052b5af5fe"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005002">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005002">
     <obo:IAO_0000115 xml:lang="en">Land or water held or designed for wildlife and habitat: conservation areas, mitigation banks, greenbelts, corridors and crossing structures.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">green infrastructure</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005000"/>
-    <owl:equivalentClass rdf:nodeID="cbb63a4fd662b3707dddc8d29eabf3431d65b8dd1489d8cd52b8f0dcdb9bc6a176"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
+    <owl:equivalentClass rdf:nodeID="cb1292d09b0ad3bb181723105435d52d3252e1f62b8988fc1ac74e8896c7f086107"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005003">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005003">
     <obo:IAO_0000115 xml:lang="en">A work that stores, moves, controls or recharges water.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">water infrastructure</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005000"/>
-    <owl:equivalentClass rdf:nodeID="cb11118aca3a1fc7d434fb4f4c45161c35e9b17cd171ef1aacff818602f0f4b6d01"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
+    <owl:equivalentClass rdf:nodeID="cb10b1e889d70d43d8bdc9f2e8558a574c5c5956495daca4ded90215aa042f58ef6"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005004">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005004">
     <obo:IAO_0000115 xml:lang="en">A work that generates or carries electric power.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">energy infrastructure</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005000"/>
-    <owl:equivalentClass rdf:nodeID="cbf272a637875946b2f9e5b572f6ef3f096e2f25b08f521dc41c6ca358df7001bc"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
+    <owl:equivalentClass rdf:nodeID="cbb48c12d12d18c90b8b050fd420220bd5315b1eb8e78e06af9dc7adf1bfcc7c4d"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005005">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005005">
     <obo:IAO_0000115 xml:lang="en">Land or facilities used to grow crops or raise animals.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">food production infrastructure</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005000"/>
-    <owl:equivalentClass rdf:nodeID="cbc058ee5fc8b28b4fa6a4c6cf016c9f6a0567b1d8488822e7c43ad5dc9fee8b72"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
+    <owl:equivalentClass rdf:nodeID="cb12ecd19826417921624ab91d94eb541f2a5633f216b3e1185249536bff91a40e5"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005006">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005006">
     <obo:IAO_0000115 xml:lang="en">A device placed in the landscape to record what passes or happens there.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">sensor infrastructure</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005000"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005007">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005007">
     <obo:IAO_0000115 xml:lang="en">A route that carries people, vehicles or goods across the landscape: a trail, a highway, a local road, a railway or a bridge.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">transport infrastructure</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005000"/>
-    <owl:equivalentClass rdf:nodeID="cb11b335a01cf7d552b396517524f6df370f2013755abc7348fa953648c12ab40fb"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
+    <owl:equivalentClass rdf:nodeID="cbb626823d6314c5b44e3bcfb643283fb876bc62a0a61f90dbcfbb3a94044b63b7"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005008">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005008">
     <obo:IAO_0000115 xml:lang="en">How a protected place is managed for biodiversity on the USGS Gap Analysis Project scale, as California's 30x30 Conserved Areas rate it; only GAP 1 and 2 count toward 30x30 (#427).</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">GAP status</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005009">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005009">
     <obo:IAO_0000115 xml:lang="en">A facility that receives, stores or disposes of solid waste, such as a landfill.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">waste infrastructure</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005000"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005020">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005020">
     <obo:IAO_0000115 xml:lang="en">An aquifer or group of aquifers managed as a unit, such as a basin or subbasin of California's Bulletin 118.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">groundwater basin</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005003"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005003"/>
     <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/ENVO_00012408"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005021">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005021">
     <obo:IAO_0000115 xml:lang="en">A pipe or aqueduct that carries water over a distance.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">water pipeline</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000070"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005003"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005003"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005022">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005022">
     <obo:IAO_0000115 xml:lang="en">A facility that lifts or moves water with pumps.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">pumping station</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000070"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005003"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005003"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005023">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005023">
     <obo:IAO_0000115 xml:lang="en">Basins or works that put surface water into the ground to refill an aquifer.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">groundwater recharge facility</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000070"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005003"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005003"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005024">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005024">
     <obo:IAO_0000115 xml:lang="en">A structure that holds water back, such as a dam, a check dam or a detention basin.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">water retention structure</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000070"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005003"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005003"/>
     <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000074"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005025">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005025">
     <obo:IAO_0000115 xml:lang="en">A power plant that burns natural gas.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">natural gas-fired power plant</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002214"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005004"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005004"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005026">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005026">
     <obo:IAO_0000115 xml:lang="en">The building at a dam or penstock that holds the turbines and generators.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">hydroelectric powerhouse</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002214"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005004"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005004"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005027">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005027">
     <obo:IAO_0000115 xml:lang="en">A hydroelectric plant that pumps water uphill when power is cheap and releases it through turbines when power is needed.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">pumped storage facility</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002214"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005004"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005004"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005028">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005028">
     <obo:IAO_0000115 xml:lang="en">A power plant that makes electricity from sunlight.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">solar power plant</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002214"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005004"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005004"/>
     <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000867"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005029">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005029">
     <obo:IAO_0000115 xml:lang="en">A group of wind turbines that makes electricity.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">wind power plant</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002214"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005004"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005004"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005030">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005030">
     <obo:IAO_0000115 xml:lang="en">A high-voltage power line carrying electricity from plants to substations.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">electric transmission line</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000070"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005004"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005004"/>
     <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000865"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005031">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005031">
     <obo:IAO_0000115 xml:lang="en">A facility where transmission lines meet and voltage is changed.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">electrical substation</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000070"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005004"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005004"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005032">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005032">
     <obo:IAO_0000115 xml:lang="en">A ranch, dairy, feedlot or other place where animals are raised.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">animal production site</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005005"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005005"/>
     <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000078"/>
     <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000627"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005033">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005033">
     <obo:IAO_0000115 xml:lang="en">A farm, orchard, vineyard or field where crops are grown.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">crop production site</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005005"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005005"/>
     <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000114"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005034">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005034">
     <obo:IAO_0000115 xml:lang="en">Land protected by a conservation easement while its owner keeps title.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">conservation easement area</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001567"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005002"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005002"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005035">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005035">
     <obo:IAO_0000115 xml:lang="en">Land owned outright by an agency or organization for conservation, such as a reserve, refuge, park or wildlife area.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">fee-title conservation area</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001567"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005002"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005002"/>
     <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000358"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005036">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005036">
     <obo:IAO_0000115 xml:lang="en">Ocean or bay waters protected for conservation, such as a marine protected area or sanctuary.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">marine conservation area</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001567"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005002"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005002"/>
     <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000362"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005037">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005037">
     <obo:IAO_0000115 xml:lang="en">A conservation area made of parts held by fee title, easement or other protections together.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment xml:lang="en">The explorer's label carries the source spelling "Multple".</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">conservation area under several protections</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001567"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005002"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005002"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005038">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005038">
     <obo:IAO_0000115 xml:lang="en">Open land kept undeveloped around or between towns.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">greenbelt</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005002"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005002"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005039">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005039">
     <obo:IAO_0000115 xml:lang="en">Land restored or protected so that credits can be sold to offset habitat loss elsewhere.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">mitigation bank</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001567"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005002"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005002"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005040">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005040">
     <obo:IAO_0000115 xml:lang="en">An overpass, underpass, culvert or bridge built or adapted so that animals can cross a road or railway.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">wildlife crossing structure</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000070"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005002"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005002"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005041">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005041">
     <obo:IAO_0000115 xml:lang="en">A camera set off by motion or heat that photographs animals passing.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">camera trap</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0001300"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005006"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005006"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005042">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005042">
     <obo:IAO_0000115 xml:lang="en">A research station or reserve that a university or agency runs for research and teaching, often with housing and labs, giving access to protected lands it may not own.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment xml:lang="en">Added for UC Nature's field stations in national parks and forests and its reserves on private or leased land (#369).</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">field station</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005002"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005002"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005043">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005043">
     <obo:IAO_0000115 xml:lang="en">A path for walking, cycling or riding, such as a regional trail like the Bay Area Ridge Trail or a preserve's trail network.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment xml:lang="en">Added for the regional trails the Midpen Vision Plan extends (#395).</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">trail</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000070"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005007"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005007"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005044">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005044">
     <obo:IAO_0000115 xml:lang="en">A road in the state or federal highway system: an Interstate, a U.S. route or a California state route.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">highway</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000070"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005007"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005007"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005045">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005045">
     <obo:IAO_0000115 xml:lang="en">A road a county or city owns and maintains, outside the state and federal highway systems.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">local road</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000070"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005007"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005007"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005046">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005046">
     <obo:IAO_0000115 xml:lang="en">A rail line for freight or passenger trains.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">railway</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000070"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005007"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005007"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005047">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005047">
     <obo:IAO_0000115 xml:lang="en">Permanently protected and managed for biodiversity, with natural disturbance such as fire or flooding allowed to run its course.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0005008"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0005008"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">GAP 1</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005048">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005048">
     <obo:IAO_0000115 xml:lang="en">Permanently protected and managed for biodiversity, with natural disturbance suppressed.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0005008"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0005008"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">GAP 2</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005049">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005049">
     <obo:IAO_0000115 xml:lang="en">A facility that spawns and rears fish, mostly salmon and trout, for release into rivers and lakes to supply fisheries or to make up for spawning habitat a dam has blocked.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment xml:lang="en">Added for the CDFW hatcheries CalFish reports on: Feather River, Nimbus and Mokelumne River (#781).</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">fish hatchery</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005032"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005032"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005050">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005050">
     <obo:IAO_0000115 xml:lang="en">A farm or nursery that grows native plants and their seed from local wild sources for habitat restoration, rather than for sale or food.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment xml:lang="en">Added for Irvine Ranch Conservancy's Native Seed Farm in Irvine (#793).</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">native plant nursery</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005002"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005002"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005051">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005051">
     <obo:IAO_0000115 xml:lang="en">An area of ocean, estuary or shoreline that a conservation plan marks as a priority for protecting marine biodiversity, without itself being protected, such as a portfolio conservation area of a marine ecoregional assessment.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment xml:lang="en">Added for the 55 portfolio conservation areas of The Nature Conservancy's 2006 Northern California Marine Ecoregional Assessment (#919).</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">marine conservation priority area</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005002"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005002"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005052">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005052">
     <obo:IAO_0000115 xml:lang="en">A site that BirdLife International's Important Bird Areas program, run in the United States by the National Audubon Society, identifies as essential for birds because it holds species of conservation concern, range-restricted species or large concentrations of birds, without itself being protected.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment xml:lang="en">Added for the grassland Important Bird Areas of California Partners in Flight's Grassland Bird Conservation Plan (#976).</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">important bird area</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005002"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005002"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005053">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005053">
     <obo:IAO_0000115 xml:lang="en">A facility on a natural gas transmission pipeline that raises the gas pressure to keep it moving along the line. Example: San Diego Gas &amp; Electric's Moreno Compressor Station in Moreno Valley, which boosts the gas supply into San Diego County.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">natural gas compressor station</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000070"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005004"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005004"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005054">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005054">
     <obo:IAO_0000115 xml:lang="en">A named natural feature of the land surface, such as a range of hills, a ridge or a valley, that a conservation plan treats as an area to protect or work in, without itself being protected. Example: the Dunnigan Hills of Yolo County, where the Yolo HCP/NCCP protects grassland for California tiger salamander.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment xml:lang="en">Added for the Dunnigan Hills, named by the Yolo HCP/NCCP (#1067).</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">named landform</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_01001886"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005002"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005002"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005055">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005055">
     <obo:IAO_0000115 xml:lang="en">A facility that treats raw water from reservoirs, rivers or wells to drinking water standards before it enters a distribution system. Example: the San Francisco Public Utilities Commission's Sunol Valley Water Treatment Plant, which treats water from San Antonio and Calaveras reservoirs.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment xml:lang="en">Added for the Sunol Valley Water Treatment Plant, named by the Alameda Watershed Management Plan (#1115).</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">water treatment plant</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000070"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005003"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005003"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005056">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005056">
     <obo:IAO_0000115 xml:lang="en">A site where solid waste is buried in the ground, usually in lined cells that are covered and capped when full. Example: the Sanitation Districts of Los Angeles County's Puente Hills Landfill, which closed in 2013.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment xml:lang="en">Added for the Puente Hills Landfill, whose conditional use permit created the Puente Hills Habitat Preservation Authority (#1191).</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">landfill</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000070"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005009"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005009"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005057">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005057">
     <obo:IAO_0000115 xml:lang="en">A structure that carries a road, trail or railway over a creek, river or other obstacle. Example: the Pope-Chaucer Bridge over San Francisquito Creek between Menlo Park and Palo Alto.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment xml:lang="en">Added for the two San Francisquito Creek bridges whose replacement is part of the SFCJPA's Reach 2 project (#1276).</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">bridge</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000070"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005007"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005007"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005058">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005058">
     <obo:IAO_0000115 xml:lang="en">An area that a federal or state recovery plan designates as essential to the recovery of listed species, such as a core area whose habitat the plan says to protect, without itself being protected. Example: the Mather Core Recovery Area of the 2005 Recovery Plan for Vernal Pool Ecosystems of California and Southern Oregon, where the South Sacramento HCP must mitigate vernal pool losses.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment xml:lang="en">Added for the vernal pool core recovery areas named by the South Sacramento HCP (#1390).</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">species recovery area</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005002"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005002"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005059">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005059">
     <obo:IAO_0000115 xml:lang="en">A facility that treats sewage and other wastewater before it is discharged or reused, for example as recycled water for irrigation. Example: the City of Santa Rosa's Laguna Treatment Plant, on the floodplain of the Laguna de Santa Rosa.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment xml:lang="en">Added for the Laguna Treatment Plant, beside two restoration concepts of the Restoration Plan for the Laguna de Santa Rosa (#1643).</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">wastewater treatment plant</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000070"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005003"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005003"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005100">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005100">
     <obo:IAO_0000115 xml:lang="en">Links a place to one of the infrastructure type classes it belongs to. The explorer's way of stating the place's class.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0005000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">has infrastructure type</rdfs:label>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0005101"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005101"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005101">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005101">
     <obo:IAO_0000115 xml:lang="en">The reverse of has infrastructure type.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">is infrastructure type of</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0005000"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0005100"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005100"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005102">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005102">
     <obo:IAO_0000115 xml:lang="en">The organization holding legal title to the place.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0005000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">owned by</rdfs:label>
     <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ICON_0000100"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0005103"/>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon-ioc/ICON_0000100"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005103"/>
     <iconbase:ICON_0000001>ISO 19115-1: CI_RoleCode owner</iconbase:ICON_0000001>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005103">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005103">
     <obo:IAO_0000115 xml:lang="en">The reverse of owned by.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">owns</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0005000"/>
-    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ICON_0000100"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0005102"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon-ioc/ICON_0000100"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005102"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005104">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005104">
     <obo:IAO_0000115 xml:lang="en">The organization that operates or manages the place, whether or not it owns it.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0005000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">managed by</rdfs:label>
     <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ICON_0000100"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0005105"/>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon-ioc/ICON_0000100"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005105"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005105">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005105">
     <obo:IAO_0000115 xml:lang="en">The reverse of managed by.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">manages</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0005000"/>
-    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ICON_0000100"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0005104"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon-ioc/ICON_0000100"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005104"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005106">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005106">
     <obo:IAO_0000115 xml:lang="en">Water flows from this place to the other, directly or through places between: Lake Berryessa is upstream of Monticello Dam.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0005000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">is upstream of</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0005000"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0005107"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005107"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005107">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005107">
     <obo:IAO_0000115 xml:lang="en">The reverse of is upstream of.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0005000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">is downstream of</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0005000"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0005106"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005106"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005108">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005108">
     <obo:IAO_0000115 xml:lang="en">Two places share a boundary. Symmetric, unlike the Relation Ontology's adjacent to, which it narrows.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0005000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">is adjacent to</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0005000"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
     <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002220"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005109">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005109">
     <obo:IAO_0000115 xml:lang="en">The place supports a population of the taxon.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0005000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">is habitat for</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0011000"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0005110"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0011000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005110"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005110">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005110">
     <obo:IAO_0000115 xml:lang="en">The taxon lives in or uses the place: the reverse of is habitat for.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0011000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0011000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">is found in</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0005000"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0005109"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005109"/>
     <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/RO_0002303"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005111">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005111">
     <obo:IAO_0000115 xml:lang="en">The structure was built or adapted so that the taxon can get past a barrier, as a wildlife crossing is built for the animals it lets cross a road. Unlike is habitat for, it says nothing about the taxon living there.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0005000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">built for</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0011000"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0005112"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0011000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005112"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005112">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005112">
     <obo:IAO_0000115 xml:lang="en">The taxon has a structure built or adapted to let it get past a barrier: the reverse of built for.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0011000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0011000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">has crossing</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0005000"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0005111"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005111"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005113">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005113">
     <obo:IAO_0000115 xml:lang="en">The sensor or array was set up to watch the taxon, as a camera trap study of fishers monitors the fisher. It says nothing about whether the taxon was found.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0005000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">monitors</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0011000"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0005114"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0011000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005114"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005114">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005114">
     <obo:IAO_0000115 xml:lang="en">The taxon is watched by a sensor or array set up for it: the reverse of monitors.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0011000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0011000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">monitored by</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0005000"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0005113"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005113"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005115">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005115">
     <obo:IAO_0000115 xml:lang="en">The sensor or array recorded the taxon, as a camera trap photographs a bobcat. Unlike is habitat for, it says only that the taxon passed the sensor.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0005000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">detected</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0011000"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0005116"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0011000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005116"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005116">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005116">
     <obo:IAO_0000115 xml:lang="en">The taxon was recorded by a sensor or array: the reverse of detected.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0011000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0011000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">detected by</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0005000"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0005115"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005115"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005117">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005117">
     <obo:IAO_0000115 xml:lang="en">The structure carries animals under or over the road or railway, as a wildlife crossing structure crosses the highway it passes beneath.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0005000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">crosses</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0005007"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0005118"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0005007"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005118"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005118">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005118">
     <obo:IAO_0000115 xml:lang="en">The road or railway has a structure that carries animals under or over it: the reverse of crosses.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0005007"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0005007"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">crossed by</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0005000"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0005117"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005117"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005119">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005119">
     <obo:IAO_0000115 xml:lang="en">Water flows between the two places in either direction, as through an intertie that pumps both ways: the Cross Valley Canal exchanges water with the California Aqueduct. Unlike is upstream of it does not chain, so what lies upstream of one is not taken to lie upstream of the other.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0005000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">exchanges water with</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0005000"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005120">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005120">
     <obo:IAO_0000115 xml:lang="en">Some of this place's water leaves for the other at one point, as a river spills over a weir into a flood bypass, while the place as a whole may lie downstream of the other too: the Sacramento River spills into the Yolo Bypass, which rejoins it lower down. Unlike is upstream of it does not chain, so the river's tributaries are not taken to lie upstream of the bypass.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0005000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">spills into</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0005000"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0005121"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005121"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005121">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005121">
     <obo:IAO_0000115 xml:lang="en">The reverse of spills into.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0005000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">receives spill from</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0005000"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0005120"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005120"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005122">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005122">
     <obo:IAO_0000115 xml:lang="en">The GAP status of the place's lands, as the 30x30 Conserved Areas rate them; a place with lands at both levels has both.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0005000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">has GAP status</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0005008"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0005123"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0005008"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005123"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005123">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005123">
     <obo:IAO_0000115 xml:lang="en">The reverse of has GAP status.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0005008"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0005008"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">is GAP status of</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0005000"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0005122"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005122"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005124">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005124">
     <obo:IAO_0000115 xml:lang="en">An area that the California Native Plant Society's Important Plant Areas Initiative identifies as among the most important places in the state for rare plants and rare vegetation types, without itself being protected. Example: a Tier 1 area of the Northwestern California ecoregion around the Mendocino pygmy forest, home to 37 California Rare Plant Rank 1B species.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment xml:lang="en">Added for the statewide draft Important Plant Areas that CNPS published for review in 2026 (#1210).</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">important plant area</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005002"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005002"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005125">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005125">
     <obo:IAO_0000115 xml:lang="en">A region that the United States Congress designates for its nationally important natural, cultural, and historic resources, managed through partnerships led by a local coordinating entity under a management plan approved by the Secretary of the Interior, without federal ownership or land use regulation. Example: the Sacramento-San Joaquin Delta National Heritage Area, designated in 2019, whose local coordinating entity is the Delta Protection Commission.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment xml:lang="en">Added for the Sacramento-San Joaquin Delta National Heritage Area (#1677).</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">national heritage area</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005002"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005002"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005200">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005200">
     <obo:IAO_0000115 xml:lang="en">How much the place holds or delivers, written with its unit: a reservoir's storage in acre-feet, a plant's output in megawatts.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0005000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">capacity</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0011000">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0011000">
     <obo:IAO_0000115 xml:lang="en">A species or a group of species that records concern, identified by its NatureServe element where it has one. Groups (salmonids, bats) are taxa at a higher rank or informal groupings of them.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/biodiversity.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/biodiversity.owl"/>
     <rdfs:label xml:lang="en">taxon</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCO_0000059"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/infrastructure.owl">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/infrastructure.owl">
     <dcterms:creator>Internet of Conservation (ICON)</dcterms:creator>
     <dcterms:description xml:lang="en">Places and structures on the landscape that conservation works on or around: waters (blue), conservation lands (green), water works, energy, food production and sensors. Covers their types, ownership and management, and how they lie relative to one another (upstream, adjacent, intersecting).</dcterms:description>
     <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
@@ -1297,9 +1297,9 @@
     <dcterms:title xml:lang="en">ICON Infrastructure ontology</dcterms:title>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
     <rdfs:comment xml:lang="en">Existing ontologies used. Reused: Environment Ontology. Built on: Core Ontology for Biology and Biomedicine, Environment Ontology, Information Artifact Ontology, Ontology for Biomedical Investigations, Relation Ontology. Mapped to: Environment Ontology, GeoSPARQL, Relation Ontology.</rdfs:comment>
-    <rdfs:seeAlso rdf:resource="https://w3id.org/icon/biodiversity.owl"/>
-    <rdfs:seeAlso rdf:resource="https://w3id.org/icon/core.owl"/>
-    <owl:versionIRI rdf:resource="https://w3id.org/icon/releases/2026-11-21/infrastructure.owl"/>
+    <rdfs:seeAlso rdf:resource="https://w3id.org/icon-ioc/biodiversity.owl"/>
+    <rdfs:seeAlso rdf:resource="https://w3id.org/icon-ioc/core.owl"/>
+    <owl:versionIRI rdf:resource="https://w3id.org/icon-ioc/releases/2026-11-21/infrastructure.owl"/>
     <owl:versionInfo>2026-11-21</owl:versionInfo>
   </rdf:Description>
 </rdf:RDF>

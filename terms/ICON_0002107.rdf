@@ -6,7 +6,7 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:nodeID="cb0">
-    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0010005"/>
+    <rdf:first rdf:resource="https://w3id.org/icon-ioc/ICON_0010005"/>
     <rdf:rest rdf:nodeID="cbd7c96744b860be374134b6eeace4a6009e3d5947219e59b3c009836ad1012775"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="cb68067f2b743e19efb21ee5d853c3161b0666d622a2f0455c63f429b69f182231">
@@ -14,16 +14,16 @@
     <owl:unionOf rdf:nodeID="cb0"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="cbd7c96744b860be374134b6eeace4a6009e3d5947219e59b3c009836ad1012775">
-    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0010003"/>
+    <rdf:first rdf:resource="https://w3id.org/icon-ioc/ICON_0010003"/>
     <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0002107">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0002107">
     <obo:IAO_0000115 xml:lang="en">The reverse of represents.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:domain rdf:nodeID="cb68067f2b743e19efb21ee5d853c3161b0666d622a2f0455c63f429b69f182231"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/people.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/people.owl"/>
     <rdfs:label xml:lang="en">is represented by</rdfs:label>
     <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0002106"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0002106"/>
   </rdf:Description>
 </rdf:RDF>

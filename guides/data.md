@@ -3,7 +3,7 @@
 Data resources at three levels (dataset, database, data repository): who creates, publishes, hosts, funds and uses them, what they cover in time, space and subject, and how they derive from and hold one another.
 
 - Files: `icon-data.ttl` (Turtle) and `icon-data.owl` (RDF/XML), built from `src/data.terms`.
-- Ontology IRI: `https://w3id.org/icon/data.owl`; this release `https://w3id.org/icon/releases/2026-11-21/data.owl`.
+- Ontology IRI: `https://w3id.org/icon-ioc/data.owl`; this release `https://w3id.org/icon-ioc/releases/2026-11-21/data.owl`.
 - Its own terms are numbered ICON:0008000 to ICON:0008999.
 
 ## Existing ontologies used

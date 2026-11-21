@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
-   xmlns:iconbase="https://w3id.org/icon/"
+   xmlns:iconbase="https://w3id.org/icon-ioc/"
    xmlns:obo="http://purl.obolibrary.org/obo/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014000">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0014000">
     <obo:IAO_0000115 xml:lang="en">Something measurable that shows progress toward a conservation goal, with the unit it is counted in, such as acres of habitat restored or miles of stream opened to fish passage. Targets and outcomes on the same indicator can be added up and compared.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/outcomes.owl"/>
     <rdfs:label xml:lang="en">indicator</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
     <iconbase:ICON_0000001>Conservation Standards 4.0: indicator</iconbase:ICON_0000001>

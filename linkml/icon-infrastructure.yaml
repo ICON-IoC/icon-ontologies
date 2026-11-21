@@ -1,11 +1,11 @@
 # ICON Infrastructure ontology, as a LinkML schema.
 # Built by `ioc-ontologies` from ontology/src/infrastructure.terms; edit that, not this file.
-id: https://w3id.org/icon/linkml/icon-infrastructure
+id: https://w3id.org/icon-ioc/linkml/icon-infrastructure
 name: icon-infrastructure
 prefixes:
   linkml: https://w3id.org/linkml/
   ENVO: http://purl.obolibrary.org/obo/ENVO_
-  ICON: https://w3id.org/icon/ICON_
+  ICON: https://w3id.org/icon-ioc/ICON_
   RO: http://purl.obolibrary.org/obo/RO_
   gsp: http://www.opengis.net/ont/geosparql#
 title: ICON Infrastructure ontology
@@ -17,7 +17,7 @@ license: https://creativecommons.org/licenses/by/4.0/
 default_prefix: ICON
 default_range: string
 see_also:
-- https://w3id.org/icon/infrastructure.owl
+- https://w3id.org/icon-ioc/infrastructure.owl
 imports:
 - linkml:types
 - icon-external

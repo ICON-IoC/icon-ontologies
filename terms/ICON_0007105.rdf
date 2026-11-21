@@ -5,14 +5,14 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0007105">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0007105">
     <obo:IAO_0000115 xml:lang="en">The action belongs to the plan.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0007003"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/plans.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0007003"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/plans.owl"/>
     <rdfs:label xml:lang="en">is action of</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0007001"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0007001"/>
     <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0007106"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0007106"/>
   </rdf:Description>
 </rdf:RDF>

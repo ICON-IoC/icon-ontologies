@@ -5,12 +5,12 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0003101">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0003101">
     <obo:IAO_0000115 xml:lang="en">The reverse of has project type.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/projects.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/projects.owl"/>
     <rdfs:label xml:lang="en">is project type of</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0003000"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0003100"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0003000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0003100"/>
   </rdf:Description>
 </rdf:RDF>

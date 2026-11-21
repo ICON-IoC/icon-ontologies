@@ -4,13 +4,13 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005056">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005056">
     <obo:IAO_0000115 xml:lang="en">A site where solid waste is buried in the ground, usually in lined cells that are covered and capped when full. Example: the Sanitation Districts of Los Angeles County's Puente Hills Landfill, which closed in 2013.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment xml:lang="en">Added for the Puente Hills Landfill, whose conditional use permit created the Puente Hills Habitat Preservation Authority (#1191).</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">landfill</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000070"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005009"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005009"/>
   </rdf:Description>
 </rdf:RDF>

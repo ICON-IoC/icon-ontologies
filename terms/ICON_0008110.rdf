@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
-   xmlns:iconbase="https://w3id.org/icon/"
+   xmlns:iconbase="https://w3id.org/icon-ioc/"
    xmlns:obo="http://purl.obolibrary.org/obo/"
    xmlns:owl="http://www.w3.org/2002/07/owl#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008110">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008110">
     <obo:IAO_0000115 xml:lang="en">A standard or guideline a data resource, tool, plan or plan action follows, recorded as a guideline: a data standard such as Darwin Core or the FGDC metadata standard, the policy whose required analyses a tool carries out, the agency guide a plan was written to, or the guidelines an action says to follow.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">conforms to</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0006000"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0008111"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0006000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0008111"/>
     <skos:closeMatch rdf:resource="http://purl.org/dc/terms/conformsTo"/>
     <iconbase:ICON_0000001>ISO 19115-1: DQ_DomainConsistency/result/specification</iconbase:ICON_0000001>
   </rdf:Description>

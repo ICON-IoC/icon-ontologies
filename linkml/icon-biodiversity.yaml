@@ -1,10 +1,10 @@
 # ICON Taxa and habitats ontology, as a LinkML schema.
 # Built by `ioc-ontologies` from ontology/src/biodiversity.terms; edit that, not this file.
-id: https://w3id.org/icon/linkml/icon-biodiversity
+id: https://w3id.org/icon-ioc/linkml/icon-biodiversity
 name: icon-biodiversity
 prefixes:
   linkml: https://w3id.org/linkml/
-  ICON: https://w3id.org/icon/ICON_
+  ICON: https://w3id.org/icon-ioc/ICON_
   dcterms: http://purl.org/dc/terms/
   dwc: http://rs.tdwg.org/dwc/terms/
   skos: http://www.w3.org/2004/02/skos/core#
@@ -20,7 +20,7 @@ license: https://creativecommons.org/licenses/by/4.0/
 default_prefix: ICON
 default_range: string
 see_also:
-- https://w3id.org/icon/biodiversity.owl
+- https://w3id.org/icon-ioc/biodiversity.owl
 imports:
 - linkml:types
 - icon-external

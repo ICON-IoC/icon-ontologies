@@ -7,7 +7,7 @@
 #  semapv: https://w3id.org/semapv/vocab/
 #  skos: http://www.w3.org/2004/02/skos/core#
 #license: https://creativecommons.org/licenses/by/4.0/
-#mapping_set_id: https://w3id.org/icon/mappings/icon-habitat-envo.sssom.tsv
+#mapping_set_id: https://w3id.org/icon-ioc/mappings/icon-habitat-envo.sssom.tsv
 #mapping_set_description: The California and global habitat classifications the Internet of Conservation explorer uses (CWHR, MCV and USNVC, CMECS, IUCN GET), matched to the Environment Ontology (ENVO 2026-10-23). A term with no match of its own has the matches of the term above it in its classification, as broad matches.
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification
 CMECS:CMECS_00000007	Algal Particles	skos:broadMatch	ENVO:01000023	marine pelagic biome	semapv:ManualMappingCuration

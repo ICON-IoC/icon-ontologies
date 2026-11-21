@@ -4,12 +4,12 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0007057">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0007057">
     <obo:IAO_0000115 xml:lang="en">A plan a state agency adopts because a statute requires it, to reduce one kind of pollution across the state: it reviews the sources and pathways of the pollutant, lays out a phased roadmap of solutions such as prevention at the source and interventions on pathways like stormwater, sets research priorities, and calls for further work with the sectors involved. It guides the agency's funding and recommendations but binds no one. Example: California's Statewide Microplastics Strategy (2022), which the Ocean Protection Council adopted under SB 1263 (2018).</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment xml:lang="en">Added for California's Statewide Microplastics Strategy (#1351).</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/plans.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/plans.owl"/>
     <rdfs:label xml:lang="en">statewide pollution strategy</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0007001"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0007001"/>
   </rdf:Description>
 </rdf:RDF>

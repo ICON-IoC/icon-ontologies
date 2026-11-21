@@ -1,6 +1,6 @@
 # Terms the ICON ontologies reuse, as a LinkML schema.
 # Built by `ioc-ontologies` from the reused terms in ontology/src; edit that, not this file.
-id: https://w3id.org/icon/linkml/icon-external
+id: https://w3id.org/icon-ioc/linkml/icon-external
 name: icon-external
 prefixes:
   linkml: https://w3id.org/linkml/
@@ -9,7 +9,7 @@ prefixes:
   ENVO: http://purl.obolibrary.org/obo/ENVO_
   GEO: http://purl.obolibrary.org/obo/GEO_
   IAO: http://purl.obolibrary.org/obo/IAO_
-  ICON: https://w3id.org/icon/ICON_
+  ICON: https://w3id.org/icon-ioc/ICON_
   NCBITaxon: http://purl.obolibrary.org/obo/NCBITaxon_
   OBI: http://purl.obolibrary.org/obo/OBI_
   OMRSE: http://purl.obolibrary.org/obo/OMRSE_

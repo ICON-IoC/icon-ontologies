@@ -4,10 +4,10 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008030">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008030">
     <obo:IAO_0000115 xml:lang="en">How far apart in time the data's values are. Each value carries, as a cross-reference, the ISO 8601 duration that dcat:temporalResolution takes on export.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">temporal resolution value</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
   </rdf:Description>

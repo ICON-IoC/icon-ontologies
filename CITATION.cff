@@ -4,7 +4,7 @@ title: "ICON ontologies"
 version: "2026-11-21"
 date-released: "2026-11-21"
 license: CC-BY-4.0
-url: "https://w3id.org/icon/"
+url: "https://w3id.org/icon-ioc/"
 repository-code: "https://github.com/ICON-IoC/icon-ontologies"
 authors:
   - name: "Information for the Conservation of Nature (ICON)"

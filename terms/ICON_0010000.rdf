@@ -5,10 +5,10 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0010000">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0010000">
     <obo:IAO_0000115 xml:lang="en">One of California's 58 counties, as an administrative region rather than as its government.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/places.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/places.owl"/>
     <rdfs:label xml:lang="en">county</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000004"/>
     <skos:closeMatch rdf:resource="https://schema.org/AdministrativeArea"/>

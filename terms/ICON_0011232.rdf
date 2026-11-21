@@ -5,11 +5,11 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0011232">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0011232">
     <obo:IAO_0000115 xml:lang="en">The unit's permanent identifier in the IUCN GET SKOS vocabulary, such as https://w3id.org/iucn-get/EFG_T4_4.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0011006"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/biodiversity.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0011006"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/biodiversity.owl"/>
     <rdfs:label xml:lang="en">GET IRI</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
     <skos:closeMatch rdf:resource="http://purl.org/dc/terms/identifier"/>

@@ -5,13 +5,13 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005117">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005117">
     <obo:IAO_0000115 xml:lang="en">The structure carries animals under or over the road or railway, as a wildlife crossing structure crosses the highway it passes beneath.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0005000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">crosses</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0005007"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0005118"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0005007"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005118"/>
   </rdf:Description>
 </rdf:RDF>

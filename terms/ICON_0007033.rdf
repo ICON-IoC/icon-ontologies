@@ -4,11 +4,11 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0007033">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0007033">
     <obo:IAO_0000115 xml:lang="en">A plan for one park or preserve, adopted by the public body that owns it and often required by a regional habitat conservation plan whose reserve the park belongs to, that sets for decades how its natural, cultural and paleontological resources are protected, restored and monitored (a resource management plan) or where trails, staging areas and facilities may go (a general development plan), and guides the agency's later land use and management decisions for that park. Examples: the Laguna Coast Wilderness Park General Development and Resource Management Plans (1998) and the Aliso and Wood Canyons Wilderness Park Resource Management Plan (2009) in Orange County.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/plans.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/plans.owl"/>
     <rdfs:label xml:lang="en">park management plan</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0007001"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0007001"/>
   </rdf:Description>
 </rdf:RDF>

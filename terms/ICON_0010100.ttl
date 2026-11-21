@@ -1,8 +1,8 @@
 @prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
 @prefix RO: <http://purl.obolibrary.org/obo/RO_> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix icon: <https://w3id.org/icon/ICON_> .
-@prefix iconbase: <https://w3id.org/icon/> .
+@prefix icon: <https://w3id.org/icon-ioc/ICON_> .
+@prefix iconbase: <https://w3id.org/icon-ioc/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -15,11 +15,11 @@ icon:0010100 a owl:ObjectProperty ;
     rdfs:comment "The chains are two of the explorer's rules. Place roll-up: working on a place located in an area means operating in that area. Place containment: operating in an area means operating in every area that contains it."@en ;
     rdfs:isDefinedBy iconbase:places.owl ;
     owl:inverseOf icon:0010101 ;
-    owl:propertyChainAxiom ( icon:0000104 icon:0010104 ),
-        ( icon:0005103 icon:0010104 ),
-        ( icon:0005105 icon:0010104 ),
+    owl:propertyChainAxiom ( icon:0010100 RO:0001025 ),
         ( icon:0007111 icon:0010104 ),
-        ( icon:0010100 RO:0001025 ) ;
+        ( icon:0005105 icon:0010104 ),
+        ( icon:0000104 icon:0010104 ),
+        ( icon:0005103 icon:0010104 ) ;
     skos:closeMatch dcterms:spatial,
         schema:areaServed ;
     icon:0000001 "DataCite 4.5: geoLocation/geoLocationPlace",

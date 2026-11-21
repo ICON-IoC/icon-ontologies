@@ -5,10 +5,10 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000012">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0000012">
     <obo:IAO_0000115 xml:lang="en">A part of the landscape or a structure in it that records can be located at, worked on or bounded by: a river, a reserve, a dam, a crossing structure.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/core.owl"/>
     <rdfs:label xml:lang="en">place</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
     <skos:closeMatch rdf:resource="https://schema.org/Place"/>

@@ -5,12 +5,12 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0003000">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0003000">
     <obo:IAO_0000115 xml:lang="en">A bounded effort with a lead and usually partners and funders that restores, protects, acquires, studies, plans or manages something in a place, and ends when its work is done.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/projects.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/projects.owl"/>
     <rdfs:label xml:lang="en">conservation project</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0000011"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0000011"/>
     <skos:closeMatch rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
     <skos:closeMatch rdf:resource="https://schema.org/Project"/>
   </rdf:Description>

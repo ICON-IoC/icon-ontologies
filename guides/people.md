@@ -3,7 +3,7 @@
 People named in the graph: whom they are affiliated with, whom they are the contact for, and the leadership roles they hold. Names are public; contact details are kept out of the graph's public face and out of this ontology.
 
 - Files: `icon-people.ttl` (Turtle) and `icon-people.owl` (RDF/XML), built from `src/people.terms`.
-- Ontology IRI: `https://w3id.org/icon/people.owl`; this release `https://w3id.org/icon/releases/2026-11-21/people.owl`.
+- Ontology IRI: `https://w3id.org/icon-ioc/people.owl`; this release `https://w3id.org/icon-ioc/releases/2026-11-21/people.owl`.
 - Its own terms are numbered ICON:0002000 to ICON:0002999.
 
 ## Existing ontologies used

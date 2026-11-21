@@ -6,14 +6,14 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0010104">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0010104">
     <obo:IAO_0000115 xml:lang="en">A place, objective or action lies in the area. A kind of operates in, and a kind of the Relation Ontology's located in.</obo:IAO_0000115>
     <oboInOwl:hasExactSynonym xml:lang="en">located in</oboInOwl:hasExactSynonym>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/places.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/places.owl"/>
     <rdfs:label xml:lang="en">located in area</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ICON_0010100"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0010105"/>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon-ioc/ICON_0010100"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0010105"/>
   </rdf:Description>
 </rdf:RDF>

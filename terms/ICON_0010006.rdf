@@ -4,11 +4,11 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0010006">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0010006">
     <obo:IAO_0000115 xml:lang="en">One of the 80 districts that each elect a member of the California State Assembly, as the Citizens Redistricting Commission drew them in 2021.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/places.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/places.owl"/>
     <rdfs:label xml:lang="en">State Assembly district</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0010005"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0010005"/>
   </rdf:Description>
 </rdf:RDF>

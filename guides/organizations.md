@@ -3,7 +3,7 @@
 Organizations in conservation: agencies, non-profits, tribes, companies, universities and partnerships, their types and activities, how they nest and join one another, and the links by which they publish, host, fund or partner in other work.
 
 - Files: `icon-organizations.ttl` (Turtle) and `icon-organizations.owl` (RDF/XML), built from `src/organizations.terms`.
-- Ontology IRI: `https://w3id.org/icon/organizations.owl`; this release `https://w3id.org/icon/releases/2026-11-21/organizations.owl`.
+- Ontology IRI: `https://w3id.org/icon-ioc/organizations.owl`; this release `https://w3id.org/icon-ioc/releases/2026-11-21/organizations.owl`.
 - Its own terms are numbered ICON:0001000 to ICON:0001999.
 
 ## Existing ontologies used

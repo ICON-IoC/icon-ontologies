@@ -6,7 +6,7 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
   <rdf:Description rdf:nodeID="cb0">
-    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005030"/>
+    <rdf:first rdf:resource="https://w3id.org/icon-ioc/ICON_0005030"/>
     <rdf:rest rdf:nodeID="cbd7c96744b860be374134b6eeace4a6009e3d5947219e59b3c009836ad1012775"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="cb1cce0c96d57ab0ebed85c1960f75cbb0dbebbdc5e1ad1c05f5ea17bc4da38a1a">
@@ -18,15 +18,15 @@
     <owl:unionOf rdf:nodeID="cb1cce0c96d57ab0ebed85c1960f75cbb0dbebbdc5e1ad1c05f5ea17bc4da38a1a"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="cbd7c96744b860be374134b6eeace4a6009e3d5947219e59b3c009836ad1012775">
-    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0005031"/>
+    <rdf:first rdf:resource="https://w3id.org/icon-ioc/ICON_0005031"/>
     <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005004">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005004">
     <obo:IAO_0000115 xml:lang="en">A work that generates or carries electric power.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">energy infrastructure</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005000"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
     <owl:equivalentClass rdf:nodeID="cb68067f2b743e19efb21ee5d853c3161b0666d622a2f0455c63f429b69f182231"/>
   </rdf:Description>
 </rdf:RDF>

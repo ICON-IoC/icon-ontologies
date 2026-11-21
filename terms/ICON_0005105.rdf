@@ -5,14 +5,14 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005105">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005105">
     <obo:IAO_0000115 xml:lang="en">The reverse of managed by.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">manages</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0005000"/>
-    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ICON_0000100"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0005104"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon-ioc/ICON_0000100"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005104"/>
   </rdf:Description>
 </rdf:RDF>

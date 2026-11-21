@@ -4,13 +4,13 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005059">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005059">
     <obo:IAO_0000115 xml:lang="en">A facility that treats sewage and other wastewater before it is discharged or reused, for example as recycled water for irrigation. Example: the City of Santa Rosa's Laguna Treatment Plant, on the floodplain of the Laguna de Santa Rosa.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment xml:lang="en">Added for the Laguna Treatment Plant, beside two restoration concepts of the Restoration Plan for the Laguna de Santa Rosa (#1643).</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">wastewater treatment plant</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000070"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005003"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005003"/>
   </rdf:Description>
 </rdf:RDF>

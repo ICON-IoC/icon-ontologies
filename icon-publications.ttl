@@ -8,8 +8,8 @@
 @prefix cito: <http://purl.org/spar/cito/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix fabio: <http://purl.org/spar/fabio/> .
-@prefix icon: <https://w3id.org/icon/ICON_> .
-@prefix iconbase: <https://w3id.org/icon/> .
+@prefix icon: <https://w3id.org/icon-ioc/ICON_> .
+@prefix iconbase: <https://w3id.org/icon-ioc/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -477,7 +477,7 @@ iconbase:publications.owl a owl:Ontology ;
         iconbase:data.owl,
         iconbase:infrastructure.owl,
         iconbase:tools.owl ;
-    owl:versionIRI <https://w3id.org/icon/releases/2026-11-21/publications.owl> ;
+    owl:versionIRI <https://w3id.org/icon-ioc/releases/2026-11-21/publications.owl> ;
     owl:versionInfo "2026-11-21" .
 
 [] a owl:AllDisjointClasses ;

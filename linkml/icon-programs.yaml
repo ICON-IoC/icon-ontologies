@@ -1,10 +1,10 @@
 # ICON Programs ontology, as a LinkML schema.
 # Built by `ioc-ontologies` from ontology/src/programs.terms; edit that, not this file.
-id: https://w3id.org/icon/linkml/icon-programs
+id: https://w3id.org/icon-ioc/linkml/icon-programs
 name: icon-programs
 prefixes:
   linkml: https://w3id.org/linkml/
-  ICON: https://w3id.org/icon/ICON_
+  ICON: https://w3id.org/icon-ioc/ICON_
   OBI: http://purl.obolibrary.org/obo/OBI_
   frapo: http://purl.org/cerif/frapo/
 title: ICON Programs ontology
@@ -15,7 +15,7 @@ license: https://creativecommons.org/licenses/by/4.0/
 default_prefix: ICON
 default_range: string
 see_also:
-- https://w3id.org/icon/programs.owl
+- https://w3id.org/icon-ioc/programs.owl
 imports:
 - linkml:types
 - icon-external

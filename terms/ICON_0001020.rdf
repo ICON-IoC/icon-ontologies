@@ -4,10 +4,10 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001020">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001020">
     <obo:IAO_0000115 xml:lang="en">A kind of work an organization carries out, from the Terms sheet's organization activities. An organization is linked to the kinds it is capable of.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">organizational activity</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
   </rdf:Description>

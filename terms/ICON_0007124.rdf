@@ -4,12 +4,12 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0007124">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0007124">
     <obo:IAO_0000115 xml:lang="en">A plan for one small community, prepared with its residents and its local government, that names improvements to quality of life, economic development, historic preservation, transportation, and public safety, and the steps and partners to carry them out. Example: the Walnut Grove Community Action Plan (2016), prepared with support from the Delta Protection Commission.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment xml:lang="en">Added for the community action plans of four Sacramento River Delta towns (#1677).</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/plans.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/plans.owl"/>
     <rdfs:label xml:lang="en">community action plan</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0007001"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0007001"/>
   </rdf:Description>
 </rdf:RDF>

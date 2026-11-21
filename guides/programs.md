@@ -3,7 +3,7 @@
 Conservation programs: ongoing arrangements, usually run by an agency, that fund, regulate, certify, plan or carry out work through many projects. Covers program types and administration.
 
 - Files: `icon-programs.ttl` (Turtle) and `icon-programs.owl` (RDF/XML), built from `src/programs.terms`.
-- Ontology IRI: `https://w3id.org/icon/programs.owl`; this release `https://w3id.org/icon/releases/2026-11-21/programs.owl`.
+- Ontology IRI: `https://w3id.org/icon-ioc/programs.owl`; this release `https://w3id.org/icon-ioc/releases/2026-11-21/programs.owl`.
 - Its own terms are numbered ICON:0004000 to ICON:0004999.
 
 ## Existing ontologies used

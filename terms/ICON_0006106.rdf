@@ -5,13 +5,13 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0006106">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0006106">
     <obo:IAO_0000115 xml:lang="en">A guideline or mandate binds the organization: it must comply with it. A project, program or other record is bound by a mandate only when a source says so for that record.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:comment xml:lang="en">Mandates do not pass from an organization to its units or to work carried out under it (#429, #466).</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/mandates.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/mandates.owl"/>
     <rdfs:label xml:lang="en">is bound by</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0006000"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0006107"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0006000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0006107"/>
   </rdf:Description>
 </rdf:RDF>

@@ -4,12 +4,12 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0007043">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0007043">
     <obo:IAO_0000115 xml:lang="en">A plan, usually written to FEMA's local hazard mitigation planning rules, that identifies the natural hazards such as wildfire, flood, earthquake and landslide that could damage an agency's or community's facilities and lands, assesses its vulnerability to them, and lists actions to reduce their impacts before a disaster. Example: the Mountains Recreation and Conservation Authority's Draft Hazard Mitigation Plan (2021), limited to the park facilities MRCA owns and maintains.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment xml:lang="en">Added for the Mountains Recreation and Conservation Authority's Hazard Mitigation Plan (#1177).</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/plans.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/plans.owl"/>
     <rdfs:label xml:lang="en">hazard mitigation plan</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0007001"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0007001"/>
   </rdf:Description>
 </rdf:RDF>

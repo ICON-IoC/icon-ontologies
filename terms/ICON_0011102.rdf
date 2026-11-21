@@ -7,36 +7,36 @@
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
   <rdf:Description rdf:nodeID="cb0">
-    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0011102"/>
+    <rdf:first rdf:resource="https://w3id.org/icon-ioc/ICON_0011102"/>
     <rdf:rest rdf:nodeID="cbd7c96744b860be374134b6eeace4a6009e3d5947219e59b3c009836ad1012775"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="cb1180d6d50618338201fba80d5066f5b01f28e93199512e9c1824ba0f826f8f0d1">
-    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0011005"/>
+  <rdf:Description rdf:nodeID="cb12516d185d6fc8eae49d6e7b0f63eb14ff223c1cae7863373cfc3ddc984a57974">
+    <rdf:first rdf:resource="https://w3id.org/icon-ioc/ICON_0011005"/>
     <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb226dc3335fcf82e0681d0f94a5c2f883c5f1fd17d7f7e225ffdaee9d0873480">
+    <rdf:first rdf:resource="https://w3id.org/icon-ioc/ICON_0011001"/>
+    <rdf:rest rdf:nodeID="cbf7b73f61e4d6d56dce487f19decf0fe55c285e1818d1273363fb7208528ef40a"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="cb68067f2b743e19efb21ee5d853c3161b0666d622a2f0455c63f429b69f182231">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="cbc52389ef49e1a29fb4e6feac406be1b00e169728b2657e7ed1a61e428b758494"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="cbb2c846c0e8a7006eaef64cd0ebe7dd9fbd52c4f9493e6762711274d6359a084">
-    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0011004"/>
-    <rdf:rest rdf:nodeID="cb1180d6d50618338201fba80d5066f5b01f28e93199512e9c1824ba0f826f8f0d1"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="cbc52389ef49e1a29fb4e6feac406be1b00e169728b2657e7ed1a61e428b758494">
-    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0011001"/>
-    <rdf:rest rdf:nodeID="cbb2c846c0e8a7006eaef64cd0ebe7dd9fbd52c4f9493e6762711274d6359a084"/>
+    <owl:unionOf rdf:nodeID="cb226dc3335fcf82e0681d0f94a5c2f883c5f1fd17d7f7e225ffdaee9d0873480"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="cbd7c96744b860be374134b6eeace4a6009e3d5947219e59b3c009836ad1012775">
-    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0011108"/>
+    <rdf:first rdf:resource="https://w3id.org/icon-ioc/ICON_0011108"/>
     <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0011102">
+  <rdf:Description rdf:nodeID="cbf7b73f61e4d6d56dce487f19decf0fe55c285e1818d1273363fb7208528ef40a">
+    <rdf:first rdf:resource="https://w3id.org/icon-ioc/ICON_0011004"/>
+    <rdf:rest rdf:nodeID="cb12516d185d6fc8eae49d6e7b0f63eb14ff223c1cae7863373cfc3ddc984a57974"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0011102">
     <obo:IAO_0000115 xml:lang="en">A CWHR habitat type (#169), vegetation type (#1409) or coastal and marine habitat type (#1410) the record covers, works in or affects.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/biodiversity.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/biodiversity.owl"/>
     <rdfs:label xml:lang="en">has habitat type</rdfs:label>
     <rdfs:range rdf:nodeID="cb68067f2b743e19efb21ee5d853c3161b0666d622a2f0455c63f429b69f182231"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0011103"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0011103"/>
     <owl:propertyChainAxiom rdf:nodeID="cb0"/>
     <skos:closeMatch rdf:resource="http://purl.org/dc/terms/subject"/>
   </rdf:Description>

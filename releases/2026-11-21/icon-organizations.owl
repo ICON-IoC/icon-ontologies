@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
    xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:iconbase="https://w3id.org/icon/"
+   xmlns:iconbase="https://w3id.org/icon-ioc/"
    xmlns:obo="http://purl.obolibrary.org/obo/"
    xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
    xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -237,446 +237,446 @@ Note: this definition was taken over from "geopolitical organization".</obo:IAO_
   <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#narrowMatch">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000001">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0000001">
     <obo:IAO_0000115 xml:lang="en">The matching field in a metadata standard that is not published as RDF, written as the standard's name, a colon and the field's path, such as "EML 2.2: dataset/title".</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/core.owl"/>
     <rdfs:label xml:lang="en">crosswalk</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000100">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0000100">
     <obo:IAO_0000115 xml:lang="en">A link between two records that work together or affect one another. Every more specific involvement link (leads, funds, manages, uses, is partner of and others) implies it.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/core.owl"/>
     <rdfs:label xml:lang="en">is involved with</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001001">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001001">
     <obo:IAO_0000115 xml:lang="en">A university, college or research institute, or a department of one.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">academic organization</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
     <skos:closeMatch rdf:resource="https://schema.org/CollegeOrUniversity"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001002">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001002">
     <obo:IAO_0000115 xml:lang="en">A business run for profit, such as a consultancy, a utility company, a farm business or a developer.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">commercial organization</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
     <skos:closeMatch rdf:resource="https://schema.org/Corporation"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001003">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001003">
     <obo:IAO_0000115 xml:lang="en">An agency or office of the United States government, such as the Fish and Wildlife Service or the Bureau of Reclamation.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">federal government organization</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GEO_000000400"/>
     <skos:closeMatch rdf:resource="https://schema.org/GovernmentOrganization"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001004">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001004">
     <obo:IAO_0000115 xml:lang="en">An agency, department, board or commission of the State of California, such as the Department of Fish and Wildlife.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">state government organization</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GEO_000000400"/>
     <skos:closeMatch rdf:resource="https://schema.org/GovernmentOrganization"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001005">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001005">
     <obo:IAO_0000115 xml:lang="en">A county, city, special district (water, resource conservation, flood control) or one of their departments.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">local government organization</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GEO_000000400"/>
     <skos:closeMatch rdf:resource="https://schema.org/GovernmentOrganization"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001006">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001006">
     <obo:IAO_0000115 xml:lang="en">A public agency formed by two or more public agencies under California's Joint Exercise of Powers Act to carry out a shared purpose, such as a regional water or habitat authority.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">joint powers authority</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GEO_000000400"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001007">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001007">
     <obo:IAO_0000115 xml:lang="en">A tribal government or an organization of one or more tribes or tribal members.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">tribal organization</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001008">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001008">
     <obo:IAO_0000115 xml:lang="en">A private organization that does not distribute profit, such as a land trust, a watershed group or a conservation society.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">non-profit organization</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GEO_000000393"/>
     <skos:closeMatch rdf:resource="https://schema.org/NGO"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001009">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001009">
     <obo:IAO_0000115 xml:lang="en">A private organization, usually endowed, that makes grants to others' work.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">foundation</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
     <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/OBI_0001942"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001010">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001010">
     <obo:IAO_0000115 xml:lang="en">A standing collaboration of several organizations with a name of its own, such as a regional conservation partnership or a working group.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">partnership</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
     <skos:closeMatch rdf:resource="http://www.w3.org/ns/org#OrganizationalCollaboration"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001011">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001011">
     <obo:IAO_0000115 xml:lang="en">A unit inside an organization with a name of its own, such as a program office or a field crew.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">team</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
     <skos:closeMatch rdf:resource="http://www.w3.org/ns/org#OrganizationalUnit"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001012">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001012">
     <obo:IAO_0000115 xml:lang="en">An organization whose members are national governments, set up by a treaty or convention, such as a regional fisheries management commission.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">international organization</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001013">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001013">
     <obo:IAO_0000115 xml:lang="en">An incorporated city or town of California, or one of its departments, boards or commissions.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">city government organization</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0001005"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0001005"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001014">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001014">
     <obo:IAO_0000115 xml:lang="en">A county of California, or one of its departments, boards or commissions, such as a county parks department or fish and game commission.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">county government organization</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0001005"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0001005"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001015">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001015">
     <obo:IAO_0000115 xml:lang="en">A local agency formed under state law to provide one or a few services within set boundaries, such as a water, irrigation, resource conservation, park, flood control or sanitation district.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">special district</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0001005"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0001005"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001016">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001016">
     <obo:IAO_0000115 xml:lang="en">A local agency that serves several cities or counties together, such as a council of governments or a regional transportation commission.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">regional agency</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0001005"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0001005"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001020">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001020">
     <obo:IAO_0000115 xml:lang="en">A kind of work an organization carries out, from the Terms sheet's organization activities. An organization is linked to the kinds it is capable of.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">organizational activity</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001021">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001021">
     <obo:IAO_0000115 xml:lang="en">Buying land, water or easements, or rights in them, for conservation.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">acquisition activity</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0001020"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0001020"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001022">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001022">
     <obo:IAO_0000115 xml:lang="en">Giving expert advice to landowners, agencies or other organizations.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">advising activity</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0001020"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0001020"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001023">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001023">
     <obo:IAO_0000115 xml:lang="en">Arguing for a cause or a policy before the public or decision makers.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">advocacy activity</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0001020"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0001020"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001024">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001024">
     <obo:IAO_0000115 xml:lang="en">Growing crops or raising livestock.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">agricultural production activity</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0001020"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0001020"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001025">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001025">
     <obo:IAO_0000115 xml:lang="en">Checking that land, products or practices meet a standard and certifying them.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">certification activity</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0001020"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0001020"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001026">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001026">
     <obo:IAO_0000115 xml:lang="en">Building or rebuilding structures, such as fish passage, levees or crossings.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">construction activity</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0001020"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0001020"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001027">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001027">
     <obo:IAO_0000115 xml:lang="en">Bringing organizations together and keeping their work aligned.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">coordinating activity</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0001020"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0001020"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001028">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001028">
     <obo:IAO_0000115 xml:lang="en">Teaching the public, students or practitioners.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">education activity</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0001020"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0001020"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001029">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001029">
     <obo:IAO_0000115 xml:lang="en">Paying for other organizations' work, as through grants or contracts.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">funding activity</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0001020"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0001020"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001030">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001030">
     <obo:IAO_0000115 xml:lang="en">Exercising public authority over a jurisdiction.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">governing activity</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0001020"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0001020"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001031">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001031">
     <obo:IAO_0000115 xml:lang="en">Restoring or improving habitat, such as replanting, removing invasive plants or reconnecting floodplains.</obo:IAO_0000115>
     <oboInOwl:hasExactSynonym xml:lang="en">habitat restoration</oboInOwl:hasExactSynonym>
     <oboInOwl:hasExactSynonym xml:lang="en">restoration</oboInOwl:hasExactSynonym>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">habitat enhancement activity</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0001020"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0001020"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001032">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001032">
     <obo:IAO_0000115 xml:lang="en">Managing land, water or wildlife over time.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">management activity</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0001020"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0001020"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001033">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001033">
     <obo:IAO_0000115 xml:lang="en">Preparing plans for conservation, land use or resources.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">planning activity</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0001020"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0001020"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001034">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001034">
     <obo:IAO_0000115 xml:lang="en">Making or shaping policy.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">policy activity</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0001020"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0001020"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001035">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001035">
     <obo:IAO_0000115 xml:lang="en">Producing goods or energy other than crops and livestock.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">production activity</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0001020"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0001020"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001036">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001036">
     <obo:IAO_0000115 xml:lang="en">Issuing and enforcing permits and rules.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">regulating activity</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0001020"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0001020"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001037">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001037">
     <obo:IAO_0000115 xml:lang="en">Studying nature or conservation.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">research activity</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0001020"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0001020"/>
     <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/OBI_0000066"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001038">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001038">
     <obo:IAO_0000115 xml:lang="en">Providing services to others, such as technical, legal or financial services.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">services activity</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0001020"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0001020"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001039">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001039">
     <obo:IAO_0000115 xml:lang="en">Repeating surveys or measurements over years to track the status of species, habitats, water or fisheries.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">monitoring activity</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0001020"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0001020"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001100">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001100">
     <obo:IAO_0000115 xml:lang="en">Links an organization to one of the organization type classes it belongs to. The explorer's way of stating the organization's class.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">has org type</rdfs:label>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0001101"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0001101"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001101">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001101">
     <obo:IAO_0000115 xml:lang="en">The reverse of has org type.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">is org type of</rdfs:label>
     <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0001100"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0001100"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001102">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001102">
     <obo:IAO_0000115 xml:lang="en">A kind of activity an organization carries out: the reverse of capable of.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">is activity of</rdfs:label>
     <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002215"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001103">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001103">
     <obo:IAO_0000115 xml:lang="en">An organization belongs to a coalition, association or partnership as a member while keeping its own identity. A kind of part of in the explorer.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">is member of</rdfs:label>
     <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
     <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
     <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000846"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0001104"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0001104"/>
     <skos:closeMatch rdf:resource="http://www.w3.org/ns/org#memberOf"/>
     <skos:closeMatch rdf:resource="https://schema.org/memberOf"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001104">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001104">
     <obo:IAO_0000115 xml:lang="en">The reverse of is member of.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">has member</rdfs:label>
     <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
     <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
     <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001688"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0001103"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0001103"/>
     <skos:closeMatch rdf:resource="http://www.w3.org/ns/org#hasMember"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001105">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001105">
     <obo:IAO_0000115 xml:lang="en">An organization that works on a project or program alongside its lead, without leading or funding it.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">has partner</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ICON_0000100"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0001106"/>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon-ioc/ICON_0000100"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0001106"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001106">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001106">
     <obo:IAO_0000115 xml:lang="en">The reverse of has partner.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">is partner of</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ICON_0000100"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0001105"/>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon-ioc/ICON_0000100"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0001105"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001107">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001107">
     <obo:IAO_0000115 xml:lang="en">The organization responsible for making data or a publication available, when it is not the creator.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">is published by</rdfs:label>
     <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0001108"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0001108"/>
     <skos:closeMatch rdf:resource="http://purl.org/dc/terms/publisher"/>
     <skos:closeMatch rdf:resource="https://schema.org/publisher"/>
     <iconbase:ICON_0000001>DataCite 4.5: publisher</iconbase:ICON_0000001>
     <iconbase:ICON_0000001>EML 2.2: dataset/publisher</iconbase:ICON_0000001>
     <iconbase:ICON_0000001>ISO 19115-1: CI_RoleCode publisher</iconbase:ICON_0000001>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001108">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001108">
     <obo:IAO_0000115 xml:lang="en">The reverse of is published by.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">published</rdfs:label>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0001107"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0001107"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001109">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001109">
     <obo:IAO_0000115 xml:lang="en">The county that holds the organization's headquarters, main office or seat. An organization is located in at most one county, and may operate in many (#949).</obo:IAO_0000115>
     <oboInOwl:hasDbXref>Wikidata:P159</oboInOwl:hasDbXref>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:comment xml:lang="en">Every local government is located in one county. A city's is the county the city lies in, a county government's is its own county, and a special district's or regional agency's is the county of its main office. Located in county is a kind of located in area, so the organization also operates in the county.</rdfs:comment>
     <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">located in county</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0010000"/>
-    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ICON_0010104"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0001110"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0010000"/>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon-ioc/ICON_0010104"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0001110"/>
     <skos:closeMatch rdf:resource="http://www.w3.org/ns/org#hasPrimarySite"/>
     <skos:closeMatch rdf:resource="https://schema.org/location"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001110">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001110">
     <obo:IAO_0000115 xml:lang="en">The reverse of located in county: the county holds the organization's headquarters.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0010000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0010000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">is county location of</rdfs:label>
     <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0001109"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0001109"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001111">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001111">
     <obo:IAO_0000115 xml:lang="en">The ecoregion section that holds the organization's headquarters, main office or seat. An organization is located in at most one ecoregion section, and may work in many (#949).</obo:IAO_0000115>
     <oboInOwl:hasDbXref>Wikidata:P159</oboInOwl:hasDbXref>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:comment xml:lang="en">Every local government is located in one ecoregion section, the one its headquarters point lies in. Located in ecoregion is a kind of in ecoregion, so a question about the local governments in an ecoregion finds it.</rdfs:comment>
     <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">located in ecoregion</rdfs:label>
     <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000276"/>
     <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ICON_0010108"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0001112"/>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon-ioc/ICON_0010108"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0001112"/>
     <skos:closeMatch rdf:resource="http://www.w3.org/ns/org#hasPrimarySite"/>
     <skos:closeMatch rdf:resource="https://schema.org/location"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0001112">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0001112">
     <obo:IAO_0000115 xml:lang="en">The reverse of located in ecoregion: the ecoregion section holds the organization's headquarters.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000276"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/organizations.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
     <rdfs:label xml:lang="en">is ecoregion location of</rdfs:label>
     <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0001111"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0001111"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0010000">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0010000">
     <obo:IAO_0000115 xml:lang="en">One of California's 58 counties, as an administrative region rather than as its government.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/places.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/places.owl"/>
     <rdfs:label xml:lang="en">county</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000004"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0010100">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0010100">
     <obo:IAO_0000115 xml:lang="en">The record works in, covers or is about the area. A county cell of All in a workbook links the record to statewide instead.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/places.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/places.owl"/>
     <rdfs:label xml:lang="en">operates in</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0010104">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0010104">
     <obo:IAO_0000115 xml:lang="en">A place, objective or action lies in the area. A kind of operates in, and a kind of the Relation Ontology's located in.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/places.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/places.owl"/>
     <rdfs:label xml:lang="en">located in area</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ICON_0010100"/>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon-ioc/ICON_0010100"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0010108">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0010108">
     <obo:IAO_0000115 xml:lang="en">The record works in, covers or lies in the ecoregion section.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/places.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/places.owl"/>
     <rdfs:label xml:lang="en">in ecoregion</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/organizations.owl">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/organizations.owl">
     <dcterms:creator>Internet of Conservation (ICON)</dcterms:creator>
     <dcterms:description xml:lang="en">Organizations in conservation: agencies, non-profits, tribes, companies, universities and partnerships, their types and activities, how they nest and join one another, and the links by which they publish, host, fund or partner in other work.</dcterms:description>
     <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
@@ -693,9 +693,9 @@ Note: this definition was taken over from "geopolitical organization".</obo:IAO_
     <dcterms:title xml:lang="en">ICON Organizations ontology</dcterms:title>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
     <rdfs:comment xml:lang="en">Existing ontologies used. Reused: Ontology for Biomedical Investigations, Relation Ontology. Built on: Basic Formal Ontology, Core Ontology for Biology and Biomedicine, Environment Ontology, Geographical Entity Ontology, Ontology for Biomedical Investigations, Relation Ontology. Mapped to: Dublin Core terms, FOAF, Ontology for Biomedical Investigations, W3C Organization Ontology, schema.org.</rdfs:comment>
-    <rdfs:seeAlso rdf:resource="https://w3id.org/icon/core.owl"/>
-    <rdfs:seeAlso rdf:resource="https://w3id.org/icon/places.owl"/>
-    <owl:versionIRI rdf:resource="https://w3id.org/icon/releases/2026-11-21/organizations.owl"/>
+    <rdfs:seeAlso rdf:resource="https://w3id.org/icon-ioc/core.owl"/>
+    <rdfs:seeAlso rdf:resource="https://w3id.org/icon-ioc/places.owl"/>
+    <owl:versionIRI rdf:resource="https://w3id.org/icon-ioc/releases/2026-11-21/organizations.owl"/>
     <owl:versionInfo>2026-11-21</owl:versionInfo>
   </rdf:Description>
 </rdf:RDF>

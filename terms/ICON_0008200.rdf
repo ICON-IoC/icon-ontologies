@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
-   xmlns:iconbase="https://w3id.org/icon/"
+   xmlns:iconbase="https://w3id.org/icon-ioc/"
    xmlns:obo="http://purl.obolibrary.org/obo/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008200">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008200">
     <obo:IAO_0000115 xml:lang="en">Why the data was made.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0008000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0008000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">purpose</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <iconbase:ICON_0000001>EML 2.2: dataset/purpose</iconbase:ICON_0000001>

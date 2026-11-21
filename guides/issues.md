@@ -3,7 +3,7 @@
 The conservation issues records address, from water quality to wildfire: one class for the issue vocabulary and the link that says a record addresses an issue.
 
 - Files: `icon-issues.ttl` (Turtle) and `icon-issues.owl` (RDF/XML), built from `src/issues.terms`.
-- Ontology IRI: `https://w3id.org/icon/issues.owl`; this release `https://w3id.org/icon/releases/2026-11-21/issues.owl`.
+- Ontology IRI: `https://w3id.org/icon-ioc/issues.owl`; this release `https://w3id.org/icon-ioc/releases/2026-11-21/issues.owl`.
 - Its own terms are numbered ICON:0012000 to ICON:0012999.
 
 ## Existing ontologies used

@@ -5,13 +5,13 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005118">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005118">
     <obo:IAO_0000115 xml:lang="en">The road or railway has a structure that carries animals under or over it: the reverse of crosses.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0005007"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0005007"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">crossed by</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0005000"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0005117"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005117"/>
   </rdf:Description>
 </rdf:RDF>

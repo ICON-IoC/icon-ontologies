@@ -4,26 +4,26 @@
    xmlns:owl="http://www.w3.org/2002/07/owl#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/icon.owl">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/icon.owl">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
-    <owl:versionIRI rdf:resource="https://w3id.org/icon/releases/2026-11-21/icon.owl"/>
+    <owl:versionIRI rdf:resource="https://w3id.org/icon-ioc/releases/2026-11-21/icon.owl"/>
     <dcterms:title xml:lang="en">ICON ontologies</dcterms:title>
     <dcterms:description xml:lang="en">The Internet of Conservation ontologies: one module per kind of record in the conservation knowledge graph, each usable on its own.</dcterms:description>
     <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-    <owl:imports rdf:resource="https://w3id.org/icon/core.owl"/>
-    <owl:imports rdf:resource="https://w3id.org/icon/organizations.owl"/>
-    <owl:imports rdf:resource="https://w3id.org/icon/people.owl"/>
-    <owl:imports rdf:resource="https://w3id.org/icon/projects.owl"/>
-    <owl:imports rdf:resource="https://w3id.org/icon/programs.owl"/>
-    <owl:imports rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
-    <owl:imports rdf:resource="https://w3id.org/icon/mandates.owl"/>
-    <owl:imports rdf:resource="https://w3id.org/icon/plans.owl"/>
-    <owl:imports rdf:resource="https://w3id.org/icon/data.owl"/>
-    <owl:imports rdf:resource="https://w3id.org/icon/publications.owl"/>
-    <owl:imports rdf:resource="https://w3id.org/icon/tools.owl"/>
-    <owl:imports rdf:resource="https://w3id.org/icon/places.owl"/>
-    <owl:imports rdf:resource="https://w3id.org/icon/biodiversity.owl"/>
-    <owl:imports rdf:resource="https://w3id.org/icon/issues.owl"/>
-    <owl:imports rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <owl:imports rdf:resource="https://w3id.org/icon-ioc/core.owl"/>
+    <owl:imports rdf:resource="https://w3id.org/icon-ioc/organizations.owl"/>
+    <owl:imports rdf:resource="https://w3id.org/icon-ioc/people.owl"/>
+    <owl:imports rdf:resource="https://w3id.org/icon-ioc/projects.owl"/>
+    <owl:imports rdf:resource="https://w3id.org/icon-ioc/programs.owl"/>
+    <owl:imports rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
+    <owl:imports rdf:resource="https://w3id.org/icon-ioc/mandates.owl"/>
+    <owl:imports rdf:resource="https://w3id.org/icon-ioc/plans.owl"/>
+    <owl:imports rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
+    <owl:imports rdf:resource="https://w3id.org/icon-ioc/publications.owl"/>
+    <owl:imports rdf:resource="https://w3id.org/icon-ioc/tools.owl"/>
+    <owl:imports rdf:resource="https://w3id.org/icon-ioc/places.owl"/>
+    <owl:imports rdf:resource="https://w3id.org/icon-ioc/biodiversity.owl"/>
+    <owl:imports rdf:resource="https://w3id.org/icon-ioc/issues.owl"/>
+    <owl:imports rdf:resource="https://w3id.org/icon-ioc/outcomes.owl"/>
   </rdf:Description>
 </rdf:RDF>

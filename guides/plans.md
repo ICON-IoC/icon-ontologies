@@ -3,7 +3,7 @@
 Conservation plans, such as species recovery plans, with their objectives and actions: who issues a plan, which sites and taxa it covers, which actions serve which objectives, and who leads or takes part in each action.
 
 - Files: `icon-plans.ttl` (Turtle) and `icon-plans.owl` (RDF/XML), built from `src/plans.terms`.
-- Ontology IRI: `https://w3id.org/icon/plans.owl`; this release `https://w3id.org/icon/releases/2026-11-21/plans.owl`.
+- Ontology IRI: `https://w3id.org/icon-ioc/plans.owl`; this release `https://w3id.org/icon-ioc/releases/2026-11-21/plans.owl`.
 - Its own terms are numbered ICON:0007000 to ICON:0007999.
 
 ## Existing ontologies used

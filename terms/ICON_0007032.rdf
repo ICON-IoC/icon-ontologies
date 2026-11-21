@@ -4,11 +4,11 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0007032">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0007032">
     <obo:IAO_0000115 xml:lang="en">A long-range plan for managing flood risk across a river basin or region, issued by the agency responsible for its flood system and updated on a fixed cycle, that sets goals for reducing the chance of flooding and the damage and loss of life when it happens, and recommends a portfolio of investments in levees, bypasses, reservoirs, floodplains and emergency response alongside ecosystem restoration, multi-benefit projects and the policies and funding needed to carry them out. Example: California's Central Valley Flood Protection Plan, updated every five years under the Central Valley Flood Protection Act of 2008.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/plans.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/plans.owl"/>
     <rdfs:label xml:lang="en">flood risk management plan</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0007001"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0007001"/>
   </rdf:Description>
 </rdf:RDF>

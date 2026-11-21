@@ -6,13 +6,13 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0010110">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0010110">
     <obo:IAO_0000115 xml:lang="en">The record works in, covers or lies in the HUC8 subbasin.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/places.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/places.owl"/>
     <rdfs:label xml:lang="en">in subbasin</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0010001"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0010111"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0010001"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0010111"/>
     <skos:closeMatch rdf:resource="http://purl.org/dc/terms/spatial"/>
   </rdf:Description>
 </rdf:RDF>

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
-   xmlns:iconbase="https://w3id.org/icon/"
+   xmlns:iconbase="https://w3id.org/icon-ioc/"
    xmlns:obo="http://purl.obolibrary.org/obo/"
    xmlns:owl="http://www.w3.org/2002/07/owl#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0013106">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0013106">
     <obo:IAO_0000115 xml:lang="en">A kind of data, or a format, the tool takes in, from the Data type list that also describes Data records, so data can be matched to the tools that take it. A specific Data record the tool uses is a uses data from link instead.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0013000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/tools.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0013000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/tools.owl"/>
     <rdfs:label xml:lang="en">takes input</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0008080"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0013107"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0008080"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0013107"/>
     <iconbase:ICON_0000001>EDAM: has_input</iconbase:ICON_0000001>
   </rdf:Description>
 </rdf:RDF>

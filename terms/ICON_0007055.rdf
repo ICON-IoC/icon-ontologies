@@ -4,12 +4,12 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0007055">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0007055">
     <obo:IAO_0000115 xml:lang="en">A state plan for a marine ecosystem built on foundation species, such as California's kelp forests, that the state wildlife agency develops with its partners, the tribes, and a community working group, and the Fish and Game Commission adopts. It combines a harvest framework, which sets how and where the foundation species may be taken, with a restoration framework, which tracks the ecosystem's condition against a baseline and sets the permit pathways for restoration projects, and it is managed adaptively as monitoring reports change. Example: CDFW's statewide Kelp Restoration and Management Plan for giant kelp and bull kelp, in development with the Ocean Protection Council.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment xml:lang="en">Added for CDFW's Kelp Restoration and Management Plan (#1495).</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/plans.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/plans.owl"/>
     <rdfs:label xml:lang="en">ecosystem-based management plan</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0007001"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0007001"/>
   </rdf:Description>
 </rdf:RDF>

@@ -4,12 +4,12 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005125">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005125">
     <obo:IAO_0000115 xml:lang="en">A region that the United States Congress designates for its nationally important natural, cultural, and historic resources, managed through partnerships led by a local coordinating entity under a management plan approved by the Secretary of the Interior, without federal ownership or land use regulation. Example: the Sacramento-San Joaquin Delta National Heritage Area, designated in 2019, whose local coordinating entity is the Delta Protection Commission.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment xml:lang="en">Added for the Sacramento-San Joaquin Delta National Heritage Area (#1677).</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">national heritage area</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005002"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005002"/>
   </rdf:Description>
 </rdf:RDF>

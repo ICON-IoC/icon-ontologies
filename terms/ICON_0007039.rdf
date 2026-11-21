@@ -4,12 +4,12 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0007039">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0007039">
     <obo:IAO_0000115 xml:lang="en">A plan for livestock grazing on land a public agency owns, that sets stocking rates, residual dry matter targets, grazing seasons and the fencing and water developments that keep cattle out of streams and reservoirs, so that grazing reduces wildland fuel and serves water quality and native habitat, and that the agency carries out through its grazing leases. Example: the San Francisco Public Utilities Commission's Alameda Creek Watershed Rangeland Management Plan (2026), which updates the 1997 Grazing Resources Management Plan of its Alameda Watershed Management Plan.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment xml:lang="en">Added for the SFPUC Alameda Creek Watershed Rangeland Management Plan (#1115).</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/plans.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/plans.owl"/>
     <rdfs:label xml:lang="en">rangeland management plan</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0007001"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0007001"/>
   </rdf:Description>
 </rdf:RDF>

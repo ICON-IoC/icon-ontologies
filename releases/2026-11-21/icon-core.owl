@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
    xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:iconbase="https://w3id.org/icon/"
+   xmlns:iconbase="https://w3id.org/icon-ioc/"
    xmlns:obo="http://purl.obolibrary.org/obo/"
    xmlns:owl="http://www.w3.org/2002/07/owl#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -285,171 +285,171 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
     <rdfs:label xml:lang="en">url</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000001">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0000001">
     <obo:IAO_0000115 xml:lang="en">The matching field in a metadata standard that is not published as RDF, written as the standard's name, a colon and the field's path, such as "EML 2.2: dataset/title".</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/core.owl"/>
     <rdfs:label xml:lang="en">crosswalk</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000002">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0000002">
     <obo:IAO_0000115 xml:lang="en">A property the records of this class are expected to carry, such as a title or a year. Records the attributes a class uses without adding domain axioms to terms borrowed from other vocabularies.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/core.owl"/>
     <rdfs:label xml:lang="en">expected attribute</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000010">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0000010">
     <obo:IAO_0000115 xml:lang="en">An organization or a person: something that can lead, fund, own, manage or take part in conservation work.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/core.owl"/>
     <rdfs:label xml:lang="en">agent</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
     <owl:equivalentClass rdf:nodeID="cb0"/>
     <skos:closeMatch rdf:resource="http://www.w3.org/ns/prov#Agent"/>
     <skos:closeMatch rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000011">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0000011">
     <obo:IAO_0000115 xml:lang="en">A planned process carried out to achieve conservation ends over a span of time: a project or a program.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/core.owl"/>
     <rdfs:label xml:lang="en">endeavor</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
     <skos:closeMatch rdf:resource="http://purl.org/cerif/frapo/Endeavour"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000012">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0000012">
     <obo:IAO_0000115 xml:lang="en">A part of the landscape or a structure in it that records can be located at, worked on or bounded by: a river, a reserve, a dam, a crossing structure.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/core.owl"/>
     <rdfs:label xml:lang="en">place</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
     <skos:closeMatch rdf:resource="https://schema.org/Place"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000013">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0000013">
     <obo:IAO_0000115 xml:lang="en">An information content entity that records or publishes information: a data resource, a paper or a report.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/core.owl"/>
     <rdfs:label xml:lang="en">information resource</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
     <skos:closeMatch rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
     <skos:closeMatch rdf:resource="https://schema.org/CreativeWork"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000014">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0000014">
     <obo:IAO_0000115 xml:lang="en">A directive information entity that sets out what conservation work should achieve or do: a plan, one of its objectives, or one of its actions.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/core.owl"/>
     <rdfs:label xml:lang="en">planning element</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000100">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0000100">
     <obo:IAO_0000115 xml:lang="en">A link between two records that work together or affect one another. Every more specific involvement link (leads, funds, manages, uses, is partner of and others) implies it.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/core.owl"/>
     <rdfs:label xml:lang="en">is involved with</rdfs:label>
     <skos:broadMatch rdf:resource="http://purl.org/dc/terms/relation"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000101">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0000101">
     <obo:IAO_0000115 xml:lang="en">An organization or person that directs the work and answers for it.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/core.owl"/>
     <rdfs:label xml:lang="en">led by</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0000010"/>
-    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ICON_0000100"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0000102"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0000010"/>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon-ioc/ICON_0000100"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0000102"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000102">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0000102">
     <obo:IAO_0000115 xml:lang="en">An organization or person directs this work: the reverse of led by.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0000010"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0000010"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/core.owl"/>
     <rdfs:label xml:lang="en">leads</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ICON_0000100"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0000101"/>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon-ioc/ICON_0000100"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0000101"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000103">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0000103">
     <obo:IAO_0000115 xml:lang="en">An organization, project or program relies on this place, data or tool in its work.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/core.owl"/>
     <rdfs:label xml:lang="en">used by</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ICON_0000100"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0000104"/>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon-ioc/ICON_0000100"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0000104"/>
     <iconbase:ICON_0000001>ISO 19115-1: CI_RoleCode user</iconbase:ICON_0000001>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000104">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0000104">
     <obo:IAO_0000115 xml:lang="en">The record relies on this place or data in its work: the reverse of used by.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/core.owl"/>
     <rdfs:label xml:lang="en">uses</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ICON_0000100"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0000103"/>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon-ioc/ICON_0000100"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0000103"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000105">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0000105">
     <obo:IAO_0000115 xml:lang="en">An organization or funding source that paid for the work, the data or the publication.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/core.owl"/>
     <rdfs:label xml:lang="en">funded by</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ICON_0000100"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0000106"/>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon-ioc/ICON_0000100"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0000106"/>
     <skos:closeMatch rdf:resource="http://purl.org/cerif/frapo/isFundedBy"/>
     <skos:closeMatch rdf:resource="https://schema.org/funder"/>
     <iconbase:ICON_0000001>DataCite 4.5: fundingReference/funderName</iconbase:ICON_0000001>
     <iconbase:ICON_0000001>EML 2.2: project/award/funderName</iconbase:ICON_0000001>
     <iconbase:ICON_0000001>ISO 19115-1: CI_RoleCode funder</iconbase:ICON_0000001>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000106">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0000106">
     <obo:IAO_0000115 xml:lang="en">The organization or funding source pays for this work, data or publication: the reverse of funded by and of funded through.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/core.owl"/>
     <rdfs:label xml:lang="en">funds</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ICON_0000100"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0000105"/>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon-ioc/ICON_0000100"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0000105"/>
     <skos:closeMatch rdf:resource="http://purl.org/cerif/frapo/funds"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000107">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0000107">
     <obo:IAO_0000115 xml:lang="en">A program or a guideline or mandate whose money paid for the work, such as a grant program or a bond measure. A kind of funded by, naming the channel the money came through.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/core.owl"/>
     <rdfs:label xml:lang="en">funded through</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ICON_0000105"/>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon-ioc/ICON_0000105"/>
     <iconbase:ICON_0000001>DataCite 4.5: fundingReference/awardTitle</iconbase:ICON_0000001>
     <iconbase:ICON_0000001>EML 2.2: project/award/title</iconbase:ICON_0000001>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000108">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0000108">
     <obo:IAO_0000115 xml:lang="en">The organization or person that produced the record's subject, or the guideline or mandate that brought an organization into being.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/core.owl"/>
     <rdfs:label xml:lang="en">was created by</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ICON_0000100"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0000109"/>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon-ioc/ICON_0000100"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0000109"/>
     <skos:closeMatch rdf:resource="http://purl.org/dc/terms/creator"/>
     <skos:closeMatch rdf:resource="https://schema.org/creator"/>
     <iconbase:ICON_0000001>DataCite 4.5: creator</iconbase:ICON_0000001>
     <iconbase:ICON_0000001>EML 2.2: dataset/creator</iconbase:ICON_0000001>
     <iconbase:ICON_0000001>ISO 19115-1: CI_RoleCode originator</iconbase:ICON_0000001>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000109">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0000109">
     <obo:IAO_0000115 xml:lang="en">The organization, person or mandate produced this: the reverse of was created by.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/core.owl"/>
     <rdfs:label xml:lang="en">created</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ICON_0000100"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0000108"/>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon-ioc/ICON_0000100"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0000108"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000110">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0000110">
     <obo:IAO_0000115 xml:lang="en">The data or publication is drawn on by a plan, an objective, an action or a guideline or mandate, as survey counts inform a recovery objective.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/core.owl"/>
     <rdfs:label xml:lang="en">informs</rdfs:label>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0000111"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0000111"/>
     <skos:broadMatch rdf:resource="http://purl.org/dc/terms/relation"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000111">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0000111">
     <obo:IAO_0000115 xml:lang="en">The plan, objective, action or mandate draws on this data or publication: the reverse of informs.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/core.owl"/>
     <rdfs:label xml:lang="en">is informed by</rdfs:label>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0000110"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0000110"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/core.owl">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/core.owl">
     <dcterms:creator>Internet of Conservation (ICON)</dcterms:creator>
     <dcterms:description xml:lang="en">The shared top of the ICON ontologies: the broad kinds of record (agent, endeavor, place, information resource, planning element), the involvement and funding links every kind of record uses, and the annotation properties the other modules share. Every other module builds on it.</dcterms:description>
     <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
@@ -469,7 +469,7 @@
     <dcterms:title xml:lang="en">ICON Core ontology</dcterms:title>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
     <rdfs:comment xml:lang="en">Existing ontologies used. Reused: Basic Formal Ontology, Dublin Core terms, Ontology for Biomedical Investigations, Relation Ontology, SKOS, schema.org. Built on: Basic Formal Ontology, Core Ontology for Biology and Biomedicine, Information Artifact Ontology, NCBI organismal classification, Ontology for Biomedical Investigations. Mapped to: DCAT 3 (W3C Data Catalog Vocabulary), Dublin Core terms, FOAF, Funding, Research Administration and Projects Ontology (FRAPO), PROV-O (W3C provenance), schema.org.</rdfs:comment>
-    <owl:versionIRI rdf:resource="https://w3id.org/icon/releases/2026-11-21/core.owl"/>
+    <owl:versionIRI rdf:resource="https://w3id.org/icon-ioc/releases/2026-11-21/core.owl"/>
     <owl:versionInfo>2026-11-21</owl:versionInfo>
   </rdf:Description>
 </rdf:RDF>

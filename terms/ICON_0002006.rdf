@@ -4,11 +4,11 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0002006">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0002006">
     <obo:IAO_0000115 xml:lang="en">Leads a program, division or department within the record: program director, manager or coordinator, branch chief, program area chair.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/people.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/people.owl"/>
     <rdfs:label xml:lang="en">program leader role</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0002001"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0002001"/>
   </rdf:Description>
 </rdf:RDF>

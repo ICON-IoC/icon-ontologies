@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
-   xmlns:iconbase="https://w3id.org/icon/"
+   xmlns:iconbase="https://w3id.org/icon-ioc/"
    xmlns:obo="http://purl.obolibrary.org/obo/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014002">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0014002">
     <obo:IAO_0000115 xml:lang="en">An amount of an indicator that a project, program or place delivers: expected, as a grant award or project plan states it, or measured, as a report or an inventory such as CPAD records it.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/outcomes.owl"/>
     <rdfs:label xml:lang="en">outcome</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
     <iconbase:ICON_0000001>Conservation Standards 4.0: result</iconbase:ICON_0000001>
-    <iconbase:ICON_0000002 rdf:resource="https://w3id.org/icon/ICON_0014205"/>
-    <iconbase:ICON_0000002 rdf:resource="https://w3id.org/icon/ICON_0014206"/>
-    <iconbase:ICON_0000002 rdf:resource="https://w3id.org/icon/ICON_0014207"/>
+    <iconbase:ICON_0000002 rdf:resource="https://w3id.org/icon-ioc/ICON_0014205"/>
+    <iconbase:ICON_0000002 rdf:resource="https://w3id.org/icon-ioc/ICON_0014206"/>
+    <iconbase:ICON_0000002 rdf:resource="https://w3id.org/icon-ioc/ICON_0014207"/>
   </rdf:Description>
 </rdf:RDF>

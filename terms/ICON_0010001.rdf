@@ -4,10 +4,10 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0010001">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0010001">
     <obo:IAO_0000115 xml:lang="en">A drainage basin at the subbasin level (eight-digit hydrologic unit code) of the USGS Watershed Boundary Dataset.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/places.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/places.owl"/>
     <rdfs:label xml:lang="en">HUC8 subbasin</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00000291"/>
   </rdf:Description>

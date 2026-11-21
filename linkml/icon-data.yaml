@@ -1,10 +1,10 @@
 # ICON Data ontology, as a LinkML schema.
 # Built by `ioc-ontologies` from ontology/src/data.terms; edit that, not this file.
-id: https://w3id.org/icon/linkml/icon-data
+id: https://w3id.org/icon-ioc/linkml/icon-data
 name: icon-data
 prefixes:
   linkml: https://w3id.org/linkml/
-  ICON: https://w3id.org/icon/ICON_
+  ICON: https://w3id.org/icon-ioc/ICON_
   access: http://publications.europa.eu/resource/authority/access-right/
   dcat: http://www.w3.org/ns/dcat#
   dcterms: http://purl.org/dc/terms/
@@ -19,7 +19,7 @@ license: https://creativecommons.org/licenses/by/4.0/
 default_prefix: ICON
 default_range: string
 see_also:
-- https://w3id.org/icon/data.owl
+- https://w3id.org/icon-ioc/data.owl
 imports:
 - linkml:types
 - icon-external

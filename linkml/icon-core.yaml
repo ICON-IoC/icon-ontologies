@@ -1,10 +1,10 @@
 # ICON Core ontology, as a LinkML schema.
 # Built by `ioc-ontologies` from ontology/src/core.terms; edit that, not this file.
-id: https://w3id.org/icon/linkml/icon-core
+id: https://w3id.org/icon-ioc/linkml/icon-core
 name: icon-core
 prefixes:
   linkml: https://w3id.org/linkml/
-  ICON: https://w3id.org/icon/ICON_
+  ICON: https://w3id.org/icon-ioc/ICON_
   dcat: http://www.w3.org/ns/dcat#
   dcterms: http://purl.org/dc/terms/
   foaf: http://xmlns.com/foaf/0.1/
@@ -20,7 +20,7 @@ license: https://creativecommons.org/licenses/by/4.0/
 default_prefix: ICON
 default_range: string
 see_also:
-- https://w3id.org/icon/core.owl
+- https://w3id.org/icon-ioc/core.owl
 imports:
 - linkml:types
 - icon-external

@@ -5,13 +5,13 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0011104">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0011104">
     <obo:IAO_0000115 xml:lang="en">The taxon is invasive in California, or at risk of becoming so, with this Cal-IPC rating (#410) or CDFW listing (#435).</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0011000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/biodiversity.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0011000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/biodiversity.owl"/>
     <rdfs:label xml:lang="en">has invasive rating</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0011002"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0011105"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0011002"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0011105"/>
   </rdf:Description>
 </rdf:RDF>

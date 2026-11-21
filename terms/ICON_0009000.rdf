@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
-   xmlns:iconbase="https://w3id.org/icon/"
+   xmlns:iconbase="https://w3id.org/icon-ioc/"
    xmlns:obo="http://purl.obolibrary.org/obo/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0009000">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0009000">
     <obo:IAO_0000115 xml:lang="en">A written work that reports research, monitoring or assessment: a peer-reviewed paper or a technical report. Shown in the explorer as Papers &amp; reports.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/publications.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/publications.owl"/>
     <rdfs:label xml:lang="en">paper or report</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0000013"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0000013"/>
     <skos:closeMatch rdf:resource="http://purl.org/ontology/bibo/Document"/>
     <skos:closeMatch rdf:resource="http://purl.org/spar/fabio/Work"/>
     <skos:closeMatch rdf:resource="https://schema.org/CreativeWork"/>
@@ -27,8 +27,8 @@
     <iconbase:ICON_0000002 rdf:resource="http://purl.org/ontology/bibo/pages"/>
     <iconbase:ICON_0000002 rdf:resource="http://purl.org/ontology/bibo/volume"/>
     <iconbase:ICON_0000002 rdf:resource="https://schema.org/keywords"/>
-    <iconbase:ICON_0000002 rdf:resource="https://w3id.org/icon/ICON_0009200"/>
-    <iconbase:ICON_0000002 rdf:resource="https://w3id.org/icon/ICON_0009201"/>
-    <iconbase:ICON_0000002 rdf:resource="https://w3id.org/icon/ICON_0009202"/>
+    <iconbase:ICON_0000002 rdf:resource="https://w3id.org/icon-ioc/ICON_0009200"/>
+    <iconbase:ICON_0000002 rdf:resource="https://w3id.org/icon-ioc/ICON_0009201"/>
+    <iconbase:ICON_0000002 rdf:resource="https://w3id.org/icon-ioc/ICON_0009202"/>
   </rdf:Description>
 </rdf:RDF>

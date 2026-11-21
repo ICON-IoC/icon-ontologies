@@ -1,10 +1,10 @@
 # ICON Plans ontology, as a LinkML schema.
 # Built by `ioc-ontologies` from ontology/src/plans.terms; edit that, not this file.
-id: https://w3id.org/icon/linkml/icon-plans
+id: https://w3id.org/icon-ioc/linkml/icon-plans
 name: icon-plans
 prefixes:
   linkml: https://w3id.org/linkml/
-  ICON: https://w3id.org/icon/ICON_
+  ICON: https://w3id.org/icon-ioc/ICON_
   pplan: http://purl.org/net/p-plan#
 title: ICON Plans ontology
 description: 'Conservation plans, such as species recovery plans, with their objectives and actions: who
@@ -15,7 +15,7 @@ license: https://creativecommons.org/licenses/by/4.0/
 default_prefix: ICON
 default_range: string
 see_also:
-- https://w3id.org/icon/plans.owl
+- https://w3id.org/icon-ioc/plans.owl
 imports:
 - linkml:types
 - icon-external

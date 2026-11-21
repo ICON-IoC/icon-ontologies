@@ -6,14 +6,14 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008104">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008104">
     <obo:IAO_0000115 xml:lang="en">A dataset, database or smaller repository is held and published by a repository. One resource can be held in several.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0008000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0008000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">is held in</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0008003"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0008105"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0008003"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0008105"/>
     <skos:closeMatch rdf:resource="https://schema.org/includedInDataCatalog"/>
   </rdf:Description>
 </rdf:RDF>

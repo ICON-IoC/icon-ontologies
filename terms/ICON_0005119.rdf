@@ -4,13 +4,13 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005119">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005119">
     <obo:IAO_0000115 xml:lang="en">Water flows between the two places in either direction, as through an intertie that pumps both ways: the Cross Valley Canal exchanges water with the California Aqueduct. Unlike is upstream of it does not chain, so what lies upstream of one is not taken to lie upstream of the other.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0005000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">exchanges water with</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0005000"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
   </rdf:Description>
 </rdf:RDF>

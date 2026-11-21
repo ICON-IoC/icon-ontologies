@@ -3,7 +3,7 @@
 What conservation work is measured by: indicators with their units, the targets that objectives, plans, programs and guidelines or mandates set on them, and the outcomes projects and places deliver, linked by the results chain (contributes to) so progress toward a target can be added up.
 
 - Files: `icon-outcomes.ttl` (Turtle) and `icon-outcomes.owl` (RDF/XML), built from `src/outcomes.terms`.
-- Ontology IRI: `https://w3id.org/icon/outcomes.owl`; this release `https://w3id.org/icon/releases/2026-11-21/outcomes.owl`.
+- Ontology IRI: `https://w3id.org/icon-ioc/outcomes.owl`; this release `https://w3id.org/icon-ioc/releases/2026-11-21/outcomes.owl`.
 - Its own terms are numbered ICON:0014000 to ICON:0014999.
 
 ## Existing ontologies used

@@ -4,10 +4,10 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000001">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0000001">
     <obo:IAO_0000115 xml:lang="en">The matching field in a metadata standard that is not published as RDF, written as the standard's name, a colon and the field's path, such as "EML 2.2: dataset/title".</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/core.owl"/>
     <rdfs:label xml:lang="en">crosswalk</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

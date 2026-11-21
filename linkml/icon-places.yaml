@@ -1,11 +1,11 @@
 # ICON Places ontology, as a LinkML schema.
 # Built by `ioc-ontologies` from ontology/src/places.terms; edit that, not this file.
-id: https://w3id.org/icon/linkml/icon-places
+id: https://w3id.org/icon-ioc/linkml/icon-places
 name: icon-places
 prefixes:
   linkml: https://w3id.org/linkml/
   GEO: http://purl.obolibrary.org/obo/GEO_
-  ICON: https://w3id.org/icon/ICON_
+  ICON: https://w3id.org/icon-ioc/ICON_
   dcterms: http://purl.org/dc/terms/
   schema: https://schema.org/
 title: ICON Places ontology
@@ -18,7 +18,7 @@ license: https://creativecommons.org/licenses/by/4.0/
 default_prefix: ICON
 default_range: string
 see_also:
-- https://w3id.org/icon/places.owl
+- https://w3id.org/icon-ioc/places.owl
 imports:
 - linkml:types
 - icon-external

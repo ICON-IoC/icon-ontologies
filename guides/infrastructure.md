@@ -3,7 +3,7 @@
 Places and structures on the landscape that conservation works on or around: waters (blue), conservation lands (green), water works, energy, food production and sensors. Covers their types, ownership and management, and how they lie relative to one another (upstream, adjacent, intersecting).
 
 - Files: `icon-infrastructure.ttl` (Turtle) and `icon-infrastructure.owl` (RDF/XML), built from `src/infrastructure.terms`.
-- Ontology IRI: `https://w3id.org/icon/infrastructure.owl`; this release `https://w3id.org/icon/releases/2026-11-21/infrastructure.owl`.
+- Ontology IRI: `https://w3id.org/icon-ioc/infrastructure.owl`; this release `https://w3id.org/icon-ioc/releases/2026-11-21/infrastructure.owl`.
 - Its own terms are numbered ICON:0005000 to ICON:0005999.
 
 ## Existing ontologies used

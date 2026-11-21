@@ -4,14 +4,14 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0007102">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0007102">
     <obo:IAO_0000115 xml:lang="en">The agency or organization that issued the plan. A kind of was issued by.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0007001"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/plans.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0007001"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/plans.owl"/>
     <rdfs:label xml:lang="en">issued by</rdfs:label>
     <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ICON_0000100"/>
-    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ICON_0006113"/>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon-ioc/ICON_0000100"/>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon-ioc/ICON_0006113"/>
   </rdf:Description>
 </rdf:RDF>

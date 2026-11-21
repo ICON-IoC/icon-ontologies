@@ -4,11 +4,11 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0007030">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0007030">
     <obo:IAO_0000115 xml:lang="en">A state fish and wildlife agency's comprehensive wildlife conservation strategy, required every ten years for the state to receive federal State Wildlife Grant funds, that lists the Species of Greatest Conservation Need, describes their key habitats and the pressures on them, and sets conservation strategies by region and habitat, with monitoring and partner coordination. It is a guide for the agency and its partners, not a regulation. Example: California's State Wildlife Action Plan 2025 (CDFW).</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/plans.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/plans.owl"/>
     <rdfs:label xml:lang="en">state wildlife action plan</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0007001"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0007001"/>
   </rdf:Description>
 </rdf:RDF>

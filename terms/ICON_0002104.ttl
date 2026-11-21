@@ -1,8 +1,8 @@
 @prefix ENVO: <http://purl.obolibrary.org/obo/ENVO_> .
 @prefix IAO: <http://purl.obolibrary.org/obo/IAO_> .
 @prefix NCBITaxon: <http://purl.obolibrary.org/obo/NCBITaxon_> .
-@prefix icon: <https://w3id.org/icon/ICON_> .
-@prefix iconbase: <https://w3id.org/icon/> .
+@prefix icon: <https://w3id.org/icon-ioc/ICON_> .
+@prefix iconbase: <https://w3id.org/icon-ioc/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -18,7 +18,7 @@ icon:0002104 a owl:ObjectProperty ;
     rdfs:range [ a owl:Class ;
             owl:unionOf ( icon:0012000 icon:0010000 ENVO:01000276 icon:0011000 icon:0011001 icon:0011004 icon:0011005 ) ] ;
     owl:inverseOf icon:0002105 ;
-    owl:propertyChainAxiom ( icon:0002104 icon:0012102 ),
-        ( icon:0002104 icon:0011108 ) ;
+    owl:propertyChainAxiom ( icon:0002104 icon:0011108 ),
+        ( icon:0002104 icon:0012102 ) ;
     skos:closeMatch schema:knowsAbout .
 

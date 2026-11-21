@@ -4,11 +4,11 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0007022">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0007022">
     <obo:IAO_0000115 xml:lang="en">A conservation plan that a regional fishery management council prepares under Section 303 of the Magnuson-Stevens Fishery Conservation and Management Act for a fishery in federal waters, that names the managed stocks, sets goals and objectives, defines overfishing and optimum yield, describes and identifies essential fish habitat, and sets the framework for harvest limits, allocation and other management measures. The Secretary of Commerce approves it and its amendments, and NOAA Fisheries implements it through federal regulations that bind those who fish.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/plans.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/plans.owl"/>
     <rdfs:label xml:lang="en">fishery management plan</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0007001"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0007001"/>
   </rdf:Description>
 </rdf:RDF>

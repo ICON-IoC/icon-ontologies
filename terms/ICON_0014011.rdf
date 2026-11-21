@@ -4,11 +4,11 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0014011">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0014011">
     <obo:IAO_0000115 xml:lang="en">Acres where a habitat lost or degraded was re-established, such as tidal marsh restored from diked land.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0014000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/outcomes.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0014000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/outcomes.owl"/>
     <rdfs:label xml:lang="en">habitat restored</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

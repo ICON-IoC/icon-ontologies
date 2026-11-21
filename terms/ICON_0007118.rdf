@@ -5,13 +5,13 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0007118">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0007118">
     <obo:IAO_0000115 xml:lang="en">An organization has a part in the plan because one of the plan's actions, at any depth, is led by it or involves it. Never stated in the sources: the explorer's plan role rule derives it.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:comment xml:lang="en">OWL cannot restrict a property chain to plans and organizations, so the rule is kept in the explorer's reasoner (static/rdf.js, ppod:planRole) and described here.</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/plans.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/plans.owl"/>
     <rdfs:label xml:lang="en">has role in</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0007001"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0007119"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0007001"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0007119"/>
   </rdf:Description>
 </rdf:RDF>

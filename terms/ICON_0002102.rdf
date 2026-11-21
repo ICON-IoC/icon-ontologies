@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
-   xmlns:iconbase="https://w3id.org/icon/"
+   xmlns:iconbase="https://w3id.org/icon-ioc/"
    xmlns:obo="http://purl.obolibrary.org/obo/"
    xmlns:owl="http://www.w3.org/2002/07/owl#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0002102">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0002102">
     <obo:IAO_0000115 xml:lang="en">The person to ask about an organization, project, place or data resource. The person's contact details are private.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/people.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/people.owl"/>
     <rdfs:label xml:lang="en">has contact</rdfs:label>
     <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ICON_0000100"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0002103"/>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon-ioc/ICON_0000100"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0002103"/>
     <skos:closeMatch rdf:resource="http://www.w3.org/ns/dcat#contactPoint"/>
     <iconbase:ICON_0000001>DataCite 4.5: contributorType ContactPerson</iconbase:ICON_0000001>
     <iconbase:ICON_0000001>EML 2.2: dataset/contact</iconbase:ICON_0000001>

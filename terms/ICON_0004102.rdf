@@ -5,14 +5,14 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0004102">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0004102">
     <obo:IAO_0000115 xml:lang="en">The organization that runs the program.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0004000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/programs.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0004000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/programs.owl"/>
     <rdfs:label xml:lang="en">administered by</rdfs:label>
     <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon/ICON_0000100"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0004103"/>
+    <rdfs:subPropertyOf rdf:resource="https://w3id.org/icon-ioc/ICON_0000100"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0004103"/>
   </rdf:Description>
 </rdf:RDF>

@@ -4,12 +4,12 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0007052">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0007052">
     <obo:IAO_0000115 xml:lang="en">A conservation plan for one species that a state law directs the state wildlife agency to prepare across the species' range in the state, setting conservation targets and the actions to meet them, such as avoiding and minimizing impacts, conserving and managing land, tribal co-management, research and public education. Example: CDFW's Western Joshua Tree Conservation Plan, required by the Western Joshua Tree Conservation Act and approved by the Fish and Game Commission in 2025.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment xml:lang="en">Added for the Western Joshua Tree Conservation Plan (#1362).</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/plans.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/plans.owl"/>
     <rdfs:label xml:lang="en">species conservation plan</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0007001"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0007001"/>
   </rdf:Description>
 </rdf:RDF>

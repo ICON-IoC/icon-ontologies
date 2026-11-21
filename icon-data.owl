@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
    xmlns:dcterms="http://purl.org/dc/terms/"
-   xmlns:iconbase="https://w3id.org/icon/"
+   xmlns:iconbase="https://w3id.org/icon-ioc/"
    xmlns:obo="http://purl.obolibrary.org/obo/"
    xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
    xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -10,20 +10,20 @@
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
   <rdf:Description rdf:nodeID="cb0">
-    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0008002"/>
+    <rdf:first rdf:resource="https://w3id.org/icon-ioc/ICON_0008002"/>
     <rdf:rest rdf:nodeID="cbd7c96744b860be374134b6eeace4a6009e3d5947219e59b3c009836ad1012775"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb9a25fcd89d928dcee630f87c8d622a5001bf5caafa57d65c2e8a98d017c546e3">
+    <rdf:first rdf:resource="https://w3id.org/icon-ioc/ICON_0008001"/>
+    <rdf:rest rdf:nodeID="cb0"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="cbb56c7c9b0751963ca43928a539dec044fa3caa55bb3ec2d9c3943b52cc4ce3a3">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-    <owl:members rdf:nodeID="cbdbe89a862fa1f60e0205fbc892a54d1bf40d24c3ab998a9a2e1c344999b0ffc9"/>
+    <owl:members rdf:nodeID="cb9a25fcd89d928dcee630f87c8d622a5001bf5caafa57d65c2e8a98d017c546e3"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="cbd7c96744b860be374134b6eeace4a6009e3d5947219e59b3c009836ad1012775">
-    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0008003"/>
+    <rdf:first rdf:resource="https://w3id.org/icon-ioc/ICON_0008003"/>
     <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="cbdbe89a862fa1f60e0205fbc892a54d1bf40d24c3ab998a9a2e1c344999b0ffc9">
-    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0008001"/>
-    <rdf:rest rdf:nodeID="cb0"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://publications.europa.eu/resource/authority/frequency/ANNUAL">
     <obo:IAO_0000115 xml:lang="en">The event occurs once a year.</obo:IAO_0000115>
@@ -213,52 +213,52 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
     <rdfs:label xml:lang="en">version</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000001">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0000001">
     <obo:IAO_0000115 xml:lang="en">The matching field in a metadata standard that is not published as RDF, written as the standard's name, a colon and the field's path, such as "EML 2.2: dataset/title".</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/core.owl"/>
     <rdfs:label xml:lang="en">crosswalk</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000002">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0000002">
     <obo:IAO_0000115 xml:lang="en">A property the records of this class are expected to carry, such as a title or a year. Records the attributes a class uses without adding domain axioms to terms borrowed from other vocabularies.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/core.owl"/>
     <rdfs:label xml:lang="en">expected attribute</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000012">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0000012">
     <obo:IAO_0000115 xml:lang="en">A part of the landscape or a structure in it that records can be located at, worked on or bounded by: a river, a reserve, a dam, a crossing structure.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/core.owl"/>
     <rdfs:label xml:lang="en">place</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000013">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0000013">
     <obo:IAO_0000115 xml:lang="en">An information content entity that records or publishes information: a data resource, a paper or a report.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/core.owl"/>
     <rdfs:label xml:lang="en">information resource</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005000">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005000">
     <obo:IAO_0000115 xml:lang="en">A place or structure on the landscape that conservation works on or around: a water body, a conservation area, a water or energy work, a farm, a sensor, a road or trail. Called infrastructure in the PPOD model whether built or natural.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">infrastructure</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0000012"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0000012"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0006000">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0006000">
     <obo:IAO_0000115 xml:lang="en">A directive that requires, allows, funds or shapes conservation work: a law, regulation, executive order, agreement, certification standard or guideline. Some bind; others only advise.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/mandates.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/mandates.owl"/>
     <rdfs:label xml:lang="en">guideline or mandate</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008000">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008000">
     <obo:IAO_0000115 xml:lang="en">Data at any of three levels: a dataset, a database or a data repository. Replaced the PPOD Dataset class.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">data resource</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0000013"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0000013"/>
     <skos:closeMatch rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
     <skos:closeMatch rdf:resource="https://schema.org/CreativeWork"/>
     <iconbase:ICON_0000002 rdf:resource="http://purl.org/dc/terms/accessRights"/>
@@ -270,609 +270,609 @@
     <iconbase:ICON_0000002 rdf:resource="http://www.w3.org/ns/dcat#keyword"/>
     <iconbase:ICON_0000002 rdf:resource="http://www.w3.org/ns/dcat#temporalResolution"/>
     <iconbase:ICON_0000002 rdf:resource="http://www.w3.org/ns/dcat#version"/>
-    <iconbase:ICON_0000002 rdf:resource="https://w3id.org/icon/ICON_0008200"/>
-    <iconbase:ICON_0000002 rdf:resource="https://w3id.org/icon/ICON_0008201"/>
-    <iconbase:ICON_0000002 rdf:resource="https://w3id.org/icon/ICON_0008202"/>
-    <iconbase:ICON_0000002 rdf:resource="https://w3id.org/icon/ICON_0008203"/>
-    <iconbase:ICON_0000002 rdf:resource="https://w3id.org/icon/ICON_0008204"/>
+    <iconbase:ICON_0000002 rdf:resource="https://w3id.org/icon-ioc/ICON_0008200"/>
+    <iconbase:ICON_0000002 rdf:resource="https://w3id.org/icon-ioc/ICON_0008201"/>
+    <iconbase:ICON_0000002 rdf:resource="https://w3id.org/icon-ioc/ICON_0008202"/>
+    <iconbase:ICON_0000002 rdf:resource="https://w3id.org/icon-ioc/ICON_0008203"/>
+    <iconbase:ICON_0000002 rdf:resource="https://w3id.org/icon-ioc/ICON_0008204"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008001">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008001">
     <obo:IAO_0000115 xml:lang="en">One collection of data published as a unit by its creator, such as a map layer, a table or a time series. Example: Cropland Data Layer.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">dataset</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0001000"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0008000"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0008000"/>
     <skos:closeMatch rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
     <skos:closeMatch rdf:resource="https://schema.org/Dataset"/>
     <iconbase:ICON_0000001>DataCite 4.5: resourceTypeGeneral Dataset</iconbase:ICON_0000001>
     <iconbase:ICON_0000001>EML 2.2: dataset</iconbase:ICON_0000001>
     <iconbase:ICON_0000001>ISO 19115-1: MD_ScopeCode dataset</iconbase:ICON_0000001>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008002">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008002">
     <obo:IAO_0000115 xml:lang="en">A maintained collection of related datasets kept together under one design, usually by one organization and usually queryable. Its datasets are part of it. Example: California Natural Diversity Database.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">database</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0001000"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0008000"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0008000"/>
     <skos:closeMatch rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
     <skos:closeMatch rdf:resource="https://schema.org/Dataset"/>
     <iconbase:ICON_0000001>DataCite 4.5: resourceTypeGeneral Dataset</iconbase:ICON_0000001>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008003">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008003">
     <obo:IAO_0000115 xml:lang="en">A platform that holds and publishes datasets and databases, often from many creators. Example: CDFW BIOS.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">data repository</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0008000"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0008000"/>
     <skos:closeMatch rdf:resource="http://www.w3.org/ns/dcat#Catalog"/>
     <skos:closeMatch rdf:resource="https://schema.org/DataCatalog"/>
     <iconbase:ICON_0000001>re3data 4.0: repository</iconbase:ICON_0000001>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008010">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008010">
     <obo:IAO_0000115 xml:lang="en">The form data comes in, from the Terms sheet's dataset types; formats are data types, listed with the kinds of data (#304). DCAT records format on each downloadable distribution; the graph keeps it on the data until a resource has more than one form worth recording.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">data format</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0008080"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0008080"/>
     <iconbase:ICON_0000001>DataCite 4.5: format</iconbase:ICON_0000001>
     <iconbase:ICON_0000001>EML 2.2: physical/dataFormat</iconbase:ICON_0000001>
     <iconbase:ICON_0000001>ISO 19115-1: MD_Format</iconbase:ICON_0000001>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008011">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008011">
     <obo:IAO_0000115 xml:lang="en">Photographs or scanned images.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0008010"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0008010"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">image data format</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008012">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008012">
     <obo:IAO_0000115 xml:lang="en">A grid of cells, each with a value, such as a land cover map or a climate surface.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0008010"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0008010"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">raster data format</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008013">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008013">
     <obo:IAO_0000115 xml:lang="en">Points, lines or polygons with attributes, in the Esri shapefile or a similar vector format.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0008010"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0008010"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">shapefile data format</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008014">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008014">
     <obo:IAO_0000115 xml:lang="en">Rows and columns, as a spreadsheet or a database table.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0008010"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0008010"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">tabular data format</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008015">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008015">
     <obo:IAO_0000115 xml:lang="en">A finished map, interactive on the web or printed, made for people to read rather than as data to analyse. Mostly a tool's output.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0008010"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0008010"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">map data format</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008016">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008016">
     <obo:IAO_0000115 xml:lang="en">A written document, such as a PDF report or a site summary. Mostly a tool's output.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0008010"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0008010"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">report data format</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008020">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008020">
     <obo:IAO_0000115 xml:lang="en">Who can get the data. The Dataset Dictionary's Availability. Each value maps to the EU access-right list and to the DCAT-US access levels data.gov uses.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">data access level</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008021">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008021">
     <obo:IAO_0000115 xml:lang="en">Anyone can download the data without signing in.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0008020"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0008020"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">open data access</rdfs:label>
     <skos:closeMatch rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
     <iconbase:ICON_0000001>DCAT-US 1.1: accessLevel public</iconbase:ICON_0000001>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008022">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008022">
     <obo:IAO_0000115 xml:lang="en">The data is free after creating an account or accepting terms.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0008020"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0008020"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">open access with registration</rdfs:label>
     <skos:broadMatch rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
     <iconbase:ICON_0000001>DCAT-US 1.1: accessLevel public</iconbase:ICON_0000001>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008023">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008023">
     <obo:IAO_0000115 xml:lang="en">The data is published with sensitive detail, such as rare species locations, generalized or held back unless a request is approved.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0008020"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0008020"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">sensitive locations withheld</rdfs:label>
     <skos:broadMatch rdf:resource="http://publications.europa.eu/resource/authority/access-right/RESTRICTED"/>
     <iconbase:ICON_0000001>DCAT-US 1.1: accessLevel restricted public</iconbase:ICON_0000001>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008024">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008024">
     <obo:IAO_0000115 xml:lang="en">The data is available only through an agreement, a subscription or a fee.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0008020"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0008020"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">access by request or license</rdfs:label>
     <skos:closeMatch rdf:resource="http://publications.europa.eu/resource/authority/access-right/RESTRICTED"/>
     <iconbase:ICON_0000001>DCAT-US 1.1: accessLevel restricted public</iconbase:ICON_0000001>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008025">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008025">
     <obo:IAO_0000115 xml:lang="en">The data is held for its creator's own use.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0008020"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0008020"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">data not public</rdfs:label>
     <skos:closeMatch rdf:resource="http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC"/>
     <iconbase:ICON_0000001>DCAT-US 1.1: accessLevel non-public</iconbase:ICON_0000001>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008030">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008030">
     <obo:IAO_0000115 xml:lang="en">How far apart in time the data's values are. Each value carries, as a cross-reference, the ISO 8601 duration that dcat:temporalResolution takes on export.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">temporal resolution value</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008031">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008031">
     <obo:IAO_0000115 xml:lang="en">A value every hour.</obo:IAO_0000115>
     <oboInOwl:hasDbXref>ISO8601:PT1H</oboInOwl:hasDbXref>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0008030"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0008030"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">hourly resolution</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008032">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008032">
     <obo:IAO_0000115 xml:lang="en">A value every day.</obo:IAO_0000115>
     <oboInOwl:hasDbXref>ISO8601:P1D</oboInOwl:hasDbXref>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0008030"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0008030"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">daily resolution</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008033">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008033">
     <obo:IAO_0000115 xml:lang="en">A value every week.</obo:IAO_0000115>
     <oboInOwl:hasDbXref>ISO8601:P1W</oboInOwl:hasDbXref>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0008030"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0008030"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">weekly resolution</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008034">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008034">
     <obo:IAO_0000115 xml:lang="en">A value every month.</obo:IAO_0000115>
     <oboInOwl:hasDbXref>ISO8601:P1M</oboInOwl:hasDbXref>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0008030"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0008030"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">monthly resolution</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008035">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008035">
     <obo:IAO_0000115 xml:lang="en">A value every year.</obo:IAO_0000115>
     <oboInOwl:hasDbXref>ISO8601:P1Y</oboInOwl:hasDbXref>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0008030"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0008030"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">annual resolution</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008036">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008036">
     <obo:IAO_0000115 xml:lang="en">Values for periods longer than a year, such as decades.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0008030"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0008030"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">multi-year resolution</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008037">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008037">
     <obo:IAO_0000115 xml:lang="en">One point or period in time.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0008030"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0008030"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">single snapshot</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008040">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008040">
     <obo:IAO_0000115 xml:lang="en">A unit of people or property that social data is recorded for. The analysis unit of DDI Discovery.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">social unit</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008041">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008041">
     <obo:IAO_0000115 xml:lang="en">Data recorded person by person.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0008040"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0008040"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">individual person unit</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008042">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008042">
     <obo:IAO_0000115 xml:lang="en">Data recorded household by household.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0008040"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0008040"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">household unit</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008043">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008043">
     <obo:IAO_0000115 xml:lang="en">Data recorded by land parcel or landowner.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0008040"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0008040"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">parcel or landowner unit</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008044">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008044">
     <obo:IAO_0000115 xml:lang="en">Data recorded organization by organization.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0008040"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0008040"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">organization unit</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008045">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008045">
     <obo:IAO_0000115 xml:lang="en">Data recorded by Census block group.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0008040"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0008040"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">census block group unit</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008046">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008046">
     <obo:IAO_0000115 xml:lang="en">Data recorded by Census tract.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0008040"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0008040"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">census tract unit</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008047">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008047">
     <obo:IAO_0000115 xml:lang="en">Data recorded by city or town.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0008040"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0008040"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">city or town unit</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008048">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008048">
     <obo:IAO_0000115 xml:lang="en">Data recorded by county.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0008040"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0008040"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">county unit</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008080">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008080">
     <obo:IAO_0000115 xml:lang="en">The kind of data, or the form it comes in. One list holds both, so a Data record and a tool's input or output are described in the same terms and a dataset can be matched to the tools that take it: Land cover or vegetation map and Raster describe both the Cropland Data Layer and an input InVEST takes.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">data type</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
     <skos:closeMatch rdf:resource="http://purl.org/dc/terms/type"/>
     <iconbase:ICON_0000001>DataCite 4.5: resourceType</iconbase:ICON_0000001>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008081">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008081">
     <obo:IAO_0000115 xml:lang="en">Individual sightings or detections of a species or feature, each with a place and a date, such as CNDDB occurrences or camera trap detections.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0008080"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0008080"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">observation records</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008082">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008082">
     <obo:IAO_0000115 xml:lang="en">Measurements taken by a protocol across sites or over time: counts, plots, catch, water samples.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0008080"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0008080"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">survey and monitoring data</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008083">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008083">
     <obo:IAO_0000115 xml:lang="en">Where a species lives or is known to occur, mapped as a range or distribution.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0008080"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0008080"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">species range or distribution</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008084">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008084">
     <obo:IAO_0000115 xml:lang="en">Modelled predictions of where habitat is suitable for a species or community.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0008080"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0008080"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">habitat suitability model</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008085">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008085">
     <obo:IAO_0000115 xml:lang="en">A map of what covers the land: vegetation types, crops, forest structure, developed and bare ground.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0008080"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0008080"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">land cover or vegetation map</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008086">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008086">
     <obo:IAO_0000115 xml:lang="en">Images of the ground taken from satellites, aircraft or drones, and products derived directly from them.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0008080"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0008080"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">satellite and aerial imagery</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008087">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008087">
     <obo:IAO_0000115 xml:lang="en">A surface of ground elevation, slope or water depth (bathymetry).</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0008080"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0008080"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">elevation model</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008088">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008088">
     <obo:IAO_0000115 xml:lang="en">Gridded climate variables, observed or projected, such as temperature, precipitation or evapotranspiration.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0008080"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0008080"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">climate grids and projections</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008089">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008089">
     <obo:IAO_0000115 xml:lang="en">Mapped streams, rivers, lakes, wetlands and the barriers, diversions and conveyances on them.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0008080"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0008080"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">stream and water network</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008090">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008090">
     <obo:IAO_0000115 xml:lang="en">Readings over time from gauges, weather stations or other sensors.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0008080"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0008080"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">sensor time series</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008091">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008091">
     <obo:IAO_0000115 xml:lang="en">Administrative, planning, regulatory and survey boundaries, and the areas a user draws or picks.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0008080"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0008080"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">boundaries and areas</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008092">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008092">
     <obo:IAO_0000115 xml:lang="en">Land parcels and records of who owns or holds rights in them, such as easements.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0008080"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0008080"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">parcels and ownership</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008093">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008093">
     <obo:IAO_0000115 xml:lang="en">Mapped locations of built structures and facilities: roads, ports, crossings, stations, platforms.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0008080"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0008080"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">infrastructure locations</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008094">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008094">
     <obo:IAO_0000115 xml:lang="en">Choices a user enters: practices, targets, parameters, costs, management or development scenarios.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0008080"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0008080"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">scenarios and settings</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008095">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008095">
     <obo:IAO_0000115 xml:lang="en">Computed values: estimates of carbon, cost or yield, and scores, ranks or indices that compare places or options.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0008080"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0008080"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">estimates and indices</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008096">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008096">
     <obo:IAO_0000115 xml:lang="en">Records of conservation projects: where they are, what they do, their funding and status.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0008080"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0008080"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">project records</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008097">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008097">
     <obo:IAO_0000115 xml:lang="en">Listings of grants, loans and other funding that people can apply for: the funder, what it pays for, award size and deadline.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0008080"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0008080"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">funding opportunities</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008100">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008100">
     <obo:IAO_0000115 xml:lang="en">Links a data resource to the level class it belongs to: dataset, database or data repository. The explorer's way of stating its class, so it can filter and colour by level.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0008000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0008000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">has data level</rdfs:label>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0008101"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0008101"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008101">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008101">
     <obo:IAO_0000115 xml:lang="en">The reverse of has data level.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">is data level of</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0008000"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0008100"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0008000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0008100"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008102">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008102">
     <obo:IAO_0000115 xml:lang="en">A kind of data the record is, or the form it comes in, from the Data type list.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0008000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0008000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">has data type</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0008080"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0008103"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0008080"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0008103"/>
     <skos:closeMatch rdf:resource="http://purl.org/dc/terms/format"/>
     <skos:closeMatch rdf:resource="http://purl.org/dc/terms/type"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008103">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008103">
     <obo:IAO_0000115 xml:lang="en">The reverse of has data type.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0008080"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0008080"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">is data type of</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0008000"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0008102"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0008000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0008102"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008104">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008104">
     <obo:IAO_0000115 xml:lang="en">A dataset, database or smaller repository is held and published by a repository. One resource can be held in several.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0008000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0008000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">is held in</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0008003"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0008105"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0008003"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0008105"/>
     <skos:closeMatch rdf:resource="https://schema.org/includedInDataCatalog"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008105">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008105">
     <obo:IAO_0000115 xml:lang="en">The reverse of is held in.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0008003"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0008003"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">holds</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0008000"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0008104"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0008000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0008104"/>
     <skos:closeMatch rdf:resource="http://www.w3.org/ns/dcat#dataset"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008106">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008106">
     <obo:IAO_0000115 xml:lang="en">The organization that runs the systems the data is served from. The Dataset Dictionary's Host role.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0008000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0008000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">is hosted by</rdfs:label>
     <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0008107"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0008107"/>
     <skos:closeMatch rdf:resource="https://schema.org/provider"/>
     <iconbase:ICON_0000001>DataCite 4.5: contributorType HostingInstitution</iconbase:ICON_0000001>
     <iconbase:ICON_0000001>ISO 19115-1: CI_RoleCode custodian</iconbase:ICON_0000001>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008107">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008107">
     <obo:IAO_0000115 xml:lang="en">The reverse of is hosted by.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">hosts</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0008000"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0008106"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0008000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0008106"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008108">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008108">
     <obo:IAO_0000115 xml:lang="en">Data built from other data, such as a connectivity map made from land cover and roads.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0008000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0008000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">is derived from</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0008000"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0008109"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0008000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0008109"/>
     <skos:closeMatch rdf:resource="http://www.w3.org/ns/prov#wasDerivedFrom"/>
     <skos:closeMatch rdf:resource="https://schema.org/isBasedOn"/>
     <iconbase:ICON_0000001>DataCite 4.5: relatedIdentifier relationType IsDerivedFrom</iconbase:ICON_0000001>
     <iconbase:ICON_0000001>EML 2.2: methods/methodStep/dataSource</iconbase:ICON_0000001>
     <iconbase:ICON_0000001>ISO 19115-1: LI_Lineage/source</iconbase:ICON_0000001>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008109">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008109">
     <obo:IAO_0000115 xml:lang="en">The reverse of is derived from.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0008000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0008000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">is source of</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0008000"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0008108"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0008000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0008108"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008110">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008110">
     <obo:IAO_0000115 xml:lang="en">A standard or guideline a data resource, tool, plan or plan action follows, recorded as a guideline: a data standard such as Darwin Core or the FGDC metadata standard, the policy whose required analyses a tool carries out, the agency guide a plan was written to, or the guidelines an action says to follow.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">conforms to</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0006000"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0008111"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0006000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0008111"/>
     <skos:closeMatch rdf:resource="http://purl.org/dc/terms/conformsTo"/>
     <iconbase:ICON_0000001>ISO 19115-1: DQ_DomainConsistency/result/specification</iconbase:ICON_0000001>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008111">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008111">
     <obo:IAO_0000115 xml:lang="en">The reverse of conforms to.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0006000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0006000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">is followed by</rdfs:label>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0008110"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0008110"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008112">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008112">
     <obo:IAO_0000115 xml:lang="en">A place whose boundary is the data's extent, such as a watershed or a preserve.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0008000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0008000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">has extent</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0005000"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0008113"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0008113"/>
     <skos:closeMatch rdf:resource="http://purl.org/dc/terms/spatial"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008113">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008113">
     <obo:IAO_0000115 xml:lang="en">The reverse of has extent.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0005000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">is extent of</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0008000"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0008112"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0008000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0008112"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008114">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008114">
     <obo:IAO_0000115 xml:lang="en">A place where the data was gathered, such as a monitoring station.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0008000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0008000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">collected at</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0005000"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0008115"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0008115"/>
     <iconbase:ICON_0000001>EML 2.2: methods/sampling/studyExtent</iconbase:ICON_0000001>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008115">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008115">
     <obo:IAO_0000115 xml:lang="en">The reverse of collected at.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0005000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">is collection site of</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0008000"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0008114"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0008000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0008114"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008200">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008200">
     <obo:IAO_0000115 xml:lang="en">Why the data was made.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0008000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0008000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">purpose</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <iconbase:ICON_0000001>EML 2.2: dataset/purpose</iconbase:ICON_0000001>
     <iconbase:ICON_0000001>ISO 19115-1: MD_DataIdentification/purpose</iconbase:ICON_0000001>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008201">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008201">
     <obo:IAO_0000115 xml:lang="en">The first year the data describes. With coverage end, the Dataset Dictionary's Time Period; exported as dcterms:temporal with a dcat:startDate.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0008000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0008000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">coverage start</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     <skos:closeMatch rdf:resource="http://www.w3.org/ns/dcat#startDate"/>
     <iconbase:ICON_0000001>DataCite 4.5: date dateType Coverage</iconbase:ICON_0000001>
     <iconbase:ICON_0000001>EML 2.2: coverage/temporalCoverage/rangeOfDates/beginDate</iconbase:ICON_0000001>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008202">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008202">
     <obo:IAO_0000115 xml:lang="en">The last year the data describes; blank while it is still being added to.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0008000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0008000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">coverage end</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     <skos:closeMatch rdf:resource="http://www.w3.org/ns/dcat#endDate"/>
     <iconbase:ICON_0000001>EML 2.2: coverage/temporalCoverage/rangeOfDates/endDate</iconbase:ICON_0000001>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008203">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008203">
     <obo:IAO_0000115 xml:lang="en">Grid cell size, mapping unit or positional accuracy, written with its unit: 30 m for C-CAP, 4 km for gridMET. Converted to dcat:spatialResolutionInMeters on export when the unit is a length.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0008000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0008000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">spatial resolution</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <skos:closeMatch rdf:resource="http://www.w3.org/ns/dcat#spatialResolutionInMeters"/>
     <iconbase:ICON_0000001>EML 2.2: spatialRaster/cellSizeXDirection</iconbase:ICON_0000001>
     <iconbase:ICON_0000001>ISO 19115-1: MD_Resolution/distance</iconbase:ICON_0000001>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008204">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008204">
     <obo:IAO_0000115 xml:lang="en">The smallest social unit the data describes or can be broken down to, such as household or census tract.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0008000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0008000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">social resolution</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0008040"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0008040"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/data.owl">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/data.owl">
     <dcterms:creator>Internet of Conservation (ICON)</dcterms:creator>
     <dcterms:description xml:lang="en">Data resources at three levels (dataset, database, data repository): who creates, publishes, hosts, funds and uses them, what they cover in time, space and subject, and how they derive from and hold one another.</dcterms:description>
     <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
@@ -887,10 +887,10 @@
     <dcterms:title xml:lang="en">ICON Data ontology</dcterms:title>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
     <rdfs:comment xml:lang="en">Existing ontologies used. Reused: DCAT 3 (W3C Data Catalog Vocabulary), Dublin Core terms, EU frequency authority list. Built on: Dublin Core terms, Information Artifact Ontology, Ontology for Biomedical Investigations. Mapped to: DCAT 3 (W3C Data Catalog Vocabulary), Dublin Core terms, EU access-right authority list, PROV-O (W3C provenance), schema.org.</rdfs:comment>
-    <rdfs:seeAlso rdf:resource="https://w3id.org/icon/core.owl"/>
-    <rdfs:seeAlso rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
-    <rdfs:seeAlso rdf:resource="https://w3id.org/icon/mandates.owl"/>
-    <owl:versionIRI rdf:resource="https://w3id.org/icon/releases/2026-11-21/data.owl"/>
+    <rdfs:seeAlso rdf:resource="https://w3id.org/icon-ioc/core.owl"/>
+    <rdfs:seeAlso rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
+    <rdfs:seeAlso rdf:resource="https://w3id.org/icon-ioc/mandates.owl"/>
+    <owl:versionIRI rdf:resource="https://w3id.org/icon-ioc/releases/2026-11-21/data.owl"/>
     <owl:versionInfo>2026-11-21</owl:versionInfo>
   </rdf:Description>
 </rdf:RDF>

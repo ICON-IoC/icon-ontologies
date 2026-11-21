@@ -1,10 +1,10 @@
 # ICON Papers and reports ontology, as a LinkML schema.
 # Built by `ioc-ontologies` from ontology/src/publications.terms; edit that, not this file.
-id: https://w3id.org/icon/linkml/icon-publications
+id: https://w3id.org/icon-ioc/linkml/icon-publications
 name: icon-publications
 prefixes:
   linkml: https://w3id.org/linkml/
-  ICON: https://w3id.org/icon/ICON_
+  ICON: https://w3id.org/icon-ioc/ICON_
   bibo: http://purl.org/ontology/bibo/
   cito: http://purl.org/spar/cito/
   dcterms: http://purl.org/dc/terms/
@@ -18,7 +18,7 @@ license: https://creativecommons.org/licenses/by/4.0/
 default_prefix: ICON
 default_range: string
 see_also:
-- https://w3id.org/icon/publications.owl
+- https://w3id.org/icon-ioc/publications.owl
 imports:
 - linkml:types
 - icon-external

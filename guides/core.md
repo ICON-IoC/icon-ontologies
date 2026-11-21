@@ -3,7 +3,7 @@
 The shared top of the ICON ontologies: the broad kinds of record (agent, endeavor, place, information resource, planning element), the involvement and funding links every kind of record uses, and the annotation properties the other modules share. Every other module builds on it.
 
 - Files: `icon-core.ttl` (Turtle) and `icon-core.owl` (RDF/XML), built from `src/core.terms`.
-- Ontology IRI: `https://w3id.org/icon/core.owl`; this release `https://w3id.org/icon/releases/2026-11-21/core.owl`.
+- Ontology IRI: `https://w3id.org/icon-ioc/core.owl`; this release `https://w3id.org/icon-ioc/releases/2026-11-21/core.owl`.
 - Its own terms are numbered ICON:0000000 to ICON:0000999.
 
 ## Existing ontologies used

@@ -18,10 +18,10 @@
     <rdf:first rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
     <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000010">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0000010">
     <obo:IAO_0000115 xml:lang="en">An organization or a person: something that can lead, fund, own, manage or take part in conservation work.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/core.owl"/>
     <rdfs:label xml:lang="en">agent</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
     <owl:equivalentClass rdf:nodeID="cb0"/>

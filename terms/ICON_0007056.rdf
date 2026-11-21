@@ -4,12 +4,12 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0007056">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0007056">
     <obo:IAO_0000115 xml:lang="en">A plan by the California Department of Fish and Wildlife for one of its wildlife areas or ecological reserves, written to the Department's Guide and Annotated Outline for Writing Land Management Plans, that describes the property, its resources and its public uses and sets goals and tasks by element (biological, public use, agricultural, cultural, facilities maintenance, administrative, research and monitoring, and management coordination), with the staff hours and operations budget needed to carry them out. Example: the Napa-Sonoma Marshes Wildlife Area Land Management Plan (2011).</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment xml:lang="en">Added for the Napa-Sonoma Marshes Wildlife Area Land Management Plan (#1543).</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/plans.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/plans.owl"/>
     <rdfs:label xml:lang="en">land management plan</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0007001"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0007001"/>
   </rdf:Description>
 </rdf:RDF>

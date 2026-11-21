@@ -3,7 +3,7 @@
 Software people use to plan, assess and track conservation work: decision-support tools, map viewers, dashboards, calculators and models, and software packages. Covers who builds and uses them, the issues they address, and the data they take in and produce.
 
 - Files: `icon-tools.ttl` (Turtle) and `icon-tools.owl` (RDF/XML), built from `src/tools.terms`.
-- Ontology IRI: `https://w3id.org/icon/tools.owl`; this release `https://w3id.org/icon/releases/2026-11-21/tools.owl`.
+- Ontology IRI: `https://w3id.org/icon-ioc/tools.owl`; this release `https://w3id.org/icon-ioc/releases/2026-11-21/tools.owl`.
 - Its own terms are numbered ICON:0013000 to ICON:0013999.
 
 ## Existing ontologies used

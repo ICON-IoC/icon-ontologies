@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
-   xmlns:iconbase="https://w3id.org/icon/"
+   xmlns:iconbase="https://w3id.org/icon-ioc/"
    xmlns:obo="http://purl.obolibrary.org/obo/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008024">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008024">
     <obo:IAO_0000115 xml:lang="en">The data is available only through an agreement, a subscription or a fee.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0008020"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0008020"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">access by request or license</rdfs:label>
     <skos:closeMatch rdf:resource="http://publications.europa.eu/resource/authority/access-right/RESTRICTED"/>
     <iconbase:ICON_0000001>DCAT-US 1.1: accessLevel restricted public</iconbase:ICON_0000001>

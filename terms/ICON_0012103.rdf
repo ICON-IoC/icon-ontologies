@@ -6,14 +6,14 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0012103">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0012103">
     <obo:IAO_0000115 xml:lang="en">The reverse of has broader issue: an integrated issue's component issues.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0012000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/issues.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0012000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/issues.owl"/>
     <rdfs:label xml:lang="en">has narrower issue</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0012000"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0012102"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0012000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0012102"/>
     <skos:exactMatch rdf:resource="http://www.w3.org/2004/02/skos/core#narrower"/>
   </rdf:Description>
 </rdf:RDF>

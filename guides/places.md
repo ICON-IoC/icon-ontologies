@@ -3,7 +3,7 @@
 The areas records are placed in: California counties, USDA ecoregion sections, the HUC8 subbasins and HUC10 watersheds of the USGS Watershed Boundary Dataset, and the State Assembly, State Senate, congressional, and county supervisorial districts that elected officials represent, with statewide scope, and the links that say a record operates, applies or lies in one of them.
 
 - Files: `icon-places.ttl` (Turtle) and `icon-places.owl` (RDF/XML), built from `src/places.terms`.
-- Ontology IRI: `https://w3id.org/icon/places.owl`; this release `https://w3id.org/icon/releases/2026-11-21/places.owl`.
+- Ontology IRI: `https://w3id.org/icon-ioc/places.owl`; this release `https://w3id.org/icon-ioc/releases/2026-11-21/places.owl`.
 - Its own terms are numbered ICON:0010000 to ICON:0010999.
 
 ## Existing ontologies used

@@ -3,7 +3,7 @@
 Conservation projects: bounded efforts with a lead, partners and funders that restore, protect, acquire, study or manage something in a place. Covers project types and the links of a project to programs and to the places it works on.
 
 - Files: `icon-projects.ttl` (Turtle) and `icon-projects.owl` (RDF/XML), built from `src/projects.terms`.
-- Ontology IRI: `https://w3id.org/icon/projects.owl`; this release `https://w3id.org/icon/releases/2026-11-21/projects.owl`.
+- Ontology IRI: `https://w3id.org/icon-ioc/projects.owl`; this release `https://w3id.org/icon-ioc/releases/2026-11-21/projects.owl`.
 - Its own terms are numbered ICON:0003000 to ICON:0003999.
 
 ## Existing ontologies used

@@ -1,10 +1,10 @@
 # ICON Tools ontology, as a LinkML schema.
 # Built by `ioc-ontologies` from ontology/src/tools.terms; edit that, not this file.
-id: https://w3id.org/icon/linkml/icon-tools
+id: https://w3id.org/icon-ioc/linkml/icon-tools
 name: icon-tools
 prefixes:
   linkml: https://w3id.org/linkml/
-  ICON: https://w3id.org/icon/ICON_
+  ICON: https://w3id.org/icon-ioc/ICON_
   prov: http://www.w3.org/ns/prov#
   schema: https://schema.org/
 title: ICON Tools ontology
@@ -16,7 +16,7 @@ license: https://creativecommons.org/licenses/by/4.0/
 default_prefix: ICON
 default_range: string
 see_also:
-- https://w3id.org/icon/tools.owl
+- https://w3id.org/icon-ioc/tools.owl
 imports:
 - linkml:types
 - icon-external

@@ -8,29 +8,29 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:nodeID="cb125b2544256630749aa4b6e14649f09f5536ead29e9d9da18ca50bc768b7b9ac4">
-    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0007001"/>
+  <rdf:Description rdf:nodeID="cb121668b0bd18c5c55b81d2abb912e3c6a395e55a7a4ffdc3ce0b1031cf4ca3528">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="cb19653215182404065cfe0f628657c1bf921b706766d341b447b90764677499ac1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb129a21aed769a7d0180e13768a92f77bb3020bf279b46a56dc6838e33e964ed03">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="cb15f5bcaf2ee197acc439c01442decc2300631a46629f72543c7eb2ac5ef7cef71"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb15f5bcaf2ee197acc439c01442decc2300631a46629f72543c7eb2ac5ef7cef71">
+    <rdf:first rdf:resource="https://w3id.org/icon-ioc/ICON_0003000"/>
+    <rdf:rest rdf:nodeID="cb1ad25babdc0562e5c7c312872f6d9e4aca6a60f93c25e67807cc4fc39317dac91"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb167b58ecea8e7f97dc291ff66da3ec2ae2ba0280bdf039cebcbeb52c86a14b4c5">
+    <rdf:first rdf:resource="https://w3id.org/icon-ioc/ICON_0007001"/>
     <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="cb146a95a0e08e79703d84a6fd23adcf989ef982463a99a878b8430fe93bb503069">
-    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0007001"/>
+  <rdf:Description rdf:nodeID="cb19653215182404065cfe0f628657c1bf921b706766d341b447b90764677499ac1">
+    <rdf:first rdf:resource="https://w3id.org/icon-ioc/ICON_0003000"/>
+    <rdf:rest rdf:nodeID="cb167b58ecea8e7f97dc291ff66da3ec2ae2ba0280bdf039cebcbeb52c86a14b4c5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb1ad25babdc0562e5c7c312872f6d9e4aca6a60f93c25e67807cc4fc39317dac91">
+    <rdf:first rdf:resource="https://w3id.org/icon-ioc/ICON_0007001"/>
     <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="cb1958220aeaa813289cd4a805ec7f54bf52e008d218073dab91f91c7f09a0046f8">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="cbfcfa7474b304e74bba433809d9c122d90a958e7ca32ec7cf1ebd659389a1cfdd"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="cb1eba28ba5fbb3431e2f16542ac73130a5d52655495cdd3c2f1f62864f817ff54f">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="cbef52eee404907dcd059450c509eb393577324ef47d66d44dc91af141a5c88862"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="cbef52eee404907dcd059450c509eb393577324ef47d66d44dc91af141a5c88862">
-    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0003000"/>
-    <rdf:rest rdf:nodeID="cb146a95a0e08e79703d84a6fd23adcf989ef982463a99a878b8430fe93bb503069"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="cbfcfa7474b304e74bba433809d9c122d90a958e7ca32ec7cf1ebd659389a1cfdd">
-    <rdf:first rdf:resource="https://w3id.org/icon/ICON_0003000"/>
-    <rdf:rest rdf:nodeID="cb125b2544256630749aa4b6e14649f09f5536ead29e9d9da18ca50bc768b7b9ac4"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000001">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -153,210 +153,210 @@
   <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#narrowMatch">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000011">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0000011">
     <obo:IAO_0000115 xml:lang="en">A planned process carried out to achieve conservation ends over a span of time: a project or a program.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/core.owl"/>
     <rdfs:label xml:lang="en">endeavor</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000012">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0000012">
     <obo:IAO_0000115 xml:lang="en">A part of the landscape or a structure in it that records can be located at, worked on or bounded by: a river, a reserve, a dam, a crossing structure.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/core.owl"/>
     <rdfs:label xml:lang="en">place</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000014">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0000014">
     <obo:IAO_0000115 xml:lang="en">A directive information entity that sets out what conservation work should achieve or do: a plan, one of its objectives, or one of its actions.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/core.owl"/>
     <rdfs:label xml:lang="en">planning element</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0003000">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0003000">
     <obo:IAO_0000115 xml:lang="en">A bounded effort with a lead and usually partners and funders that restores, protects, acquires, studies, plans or manages something in a place, and ends when its work is done.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/projects.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/projects.owl"/>
     <rdfs:label xml:lang="en">conservation project</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0000011"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0000011"/>
     <skos:closeMatch rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
     <skos:closeMatch rdf:resource="https://schema.org/Project"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0003001">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0003001">
     <obo:IAO_0000115 xml:lang="en">A project that buys land, water or easements for conservation.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/projects.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/projects.owl"/>
     <rdfs:label xml:lang="en">acquisition project</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0003000"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0003000"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0003002">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0003002">
     <obo:IAO_0000115 xml:lang="en">A project that teaches the public, students or practitioners.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/projects.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/projects.owl"/>
     <rdfs:label xml:lang="en">education project</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0003000"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0003000"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0003003">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0003003">
     <obo:IAO_0000115 xml:lang="en">A project that restores or improves habitat.</obo:IAO_0000115>
     <oboInOwl:hasExactSynonym xml:lang="en">restoration project</oboInOwl:hasExactSynonym>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/projects.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/projects.owl"/>
     <rdfs:label xml:lang="en">habitat enhancement project</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0003000"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0003000"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0003004">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0003004">
     <obo:IAO_0000115 xml:lang="en">A project that builds, removes or rebuilds a structure, such as a fish ladder, a levee setback or a wildlife crossing.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/projects.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/projects.owl"/>
     <rdfs:label xml:lang="en">infrastructure project</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0003000"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0003000"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0003005">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0003005">
     <obo:IAO_0000115 xml:lang="en">A project that secures land against conversion by easement, designation or agreement rather than purchase.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/projects.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/projects.owl"/>
     <rdfs:label xml:lang="en">land protection project</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0003000"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0003000"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0003006">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0003006">
     <obo:IAO_0000115 xml:lang="en">A project that manages land, water or wildlife, such as grazing, burning or invasive species control.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/projects.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/projects.owl"/>
     <rdfs:label xml:lang="en">management project</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0003000"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0003000"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0003007">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0003007">
     <obo:IAO_0000115 xml:lang="en">A project that produces a plan.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/projects.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/projects.owl"/>
     <rdfs:label xml:lang="en">planning project</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0003000"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0003000"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0003008">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0003008">
     <obo:IAO_0000115 xml:lang="en">A project that cleans up contamination or reverses damage, such as mine waste or polluted runoff.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/projects.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/projects.owl"/>
     <rdfs:label xml:lang="en">remediation project</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0003000"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0003000"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0003009">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0003009">
     <obo:IAO_0000115 xml:lang="en">A project that studies or monitors nature or conservation.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/projects.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/projects.owl"/>
     <rdfs:label xml:lang="en">research project</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0003000"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0003000"/>
     <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/OBI_0000066"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0003010">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0003010">
     <obo:IAO_0000115 xml:lang="en">A project that restores, creates or preserves habitat to make up for habitat a permitted development destroys elsewhere.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/projects.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/projects.owl"/>
     <rdfs:label xml:lang="en">compensatory mitigation project</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0003000"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0003000"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0003011">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0003011">
     <obo:IAO_0000115 xml:lang="en">A project that plans, builds, improves or studies a structure that lets wildlife cross a road or railway, or that restores or secures the land leading to one.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/projects.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/projects.owl"/>
     <rdfs:label xml:lang="en">wildlife crossing project</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0003000"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0003000"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0003100">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0003100">
     <obo:IAO_0000115 xml:lang="en">Links a project to one of the project type classes it belongs to. The explorer's way of stating the project's class.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0003000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/projects.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0003000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/projects.owl"/>
     <rdfs:label xml:lang="en">has project type</rdfs:label>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0003101"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0003101"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0003101">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0003101">
     <obo:IAO_0000115 xml:lang="en">The reverse of has project type.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/projects.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/projects.owl"/>
     <rdfs:label xml:lang="en">is project type of</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0003000"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0003100"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0003000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0003100"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0003102">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0003102">
     <obo:IAO_0000115 xml:lang="en">A project carried out within a program, as one grant within a grant program.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0003000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/projects.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0003000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/projects.owl"/>
     <rdfs:label xml:lang="en">is part of program</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0004000"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0004000"/>
     <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0003103"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0003103"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0003103">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0003103">
     <obo:IAO_0000115 xml:lang="en">The reverse of is part of program.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0004000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/projects.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0004000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/projects.owl"/>
     <rdfs:label xml:lang="en">has project</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0003000"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0003000"/>
     <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0003102"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0003102"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0003104">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0003104">
     <obo:IAO_0000115 xml:lang="en">The organization that keeps a project's or plan's record in a project tracker such as EcoAtlas, often the agency that permitted or funded it, without necessarily leading it. Keeping the record is not taking part in the work, so this is not a kind of is involved with.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:nodeID="cb1eba28ba5fbb3431e2f16542ac73130a5d52655495cdd3c2f1f62864f817ff54f"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/projects.owl"/>
+    <rdfs:domain rdf:nodeID="cb121668b0bd18c5c55b81d2abb912e3c6a395e55a7a4ffdc3ce0b1031cf4ca3528"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/projects.owl"/>
     <rdfs:label xml:lang="en">tracked by</rdfs:label>
     <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0003105"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0003105"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0003105">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0003105">
     <obo:IAO_0000115 xml:lang="en">The reverse of tracked by.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/projects.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/projects.owl"/>
     <rdfs:label xml:lang="en">tracks</rdfs:label>
-    <rdfs:range rdf:nodeID="cb1958220aeaa813289cd4a805ec7f54bf52e008d218073dab91f91c7f09a0046f8"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0003104"/>
+    <rdfs:range rdf:nodeID="cb129a21aed769a7d0180e13768a92f77bb3020bf279b46a56dc6838e33e964ed03"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0003104"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0003106">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0003106">
     <obo:IAO_0000115 xml:lang="en">The project acts on the place itself: it restores, manages, builds, repairs, widens or studies it, or mitigates for work on it. A fuel reduction project works on the national forest it thins, a coho habitat project works on its creek, and a Caltrans culvert replacement works on the highway it runs under. A project that only uses the place to say where it is intersects it instead.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0003000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/projects.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0003000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/projects.owl"/>
     <rdfs:label xml:lang="en">works on</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0005000"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0003107"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0003107"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0003107">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0003107">
     <obo:IAO_0000115 xml:lang="en">The reverse of works on.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="https://w3id.org/icon/ICON_0005000"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/projects.owl"/>
+    <rdfs:domain rdf:resource="https://w3id.org/icon-ioc/ICON_0005000"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/projects.owl"/>
     <rdfs:label xml:lang="en">worked on by</rdfs:label>
-    <rdfs:range rdf:resource="https://w3id.org/icon/ICON_0003000"/>
-    <owl:inverseOf rdf:resource="https://w3id.org/icon/ICON_0003106"/>
+    <rdfs:range rdf:resource="https://w3id.org/icon-ioc/ICON_0003000"/>
+    <owl:inverseOf rdf:resource="https://w3id.org/icon-ioc/ICON_0003106"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0004000">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0004000">
     <obo:IAO_0000115 xml:lang="en">An ongoing arrangement, usually run by an agency, that funds, regulates, certifies, plans or carries out conservation work through many projects or participants, with no set end.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/programs.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/programs.owl"/>
     <rdfs:label xml:lang="en">conservation program</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0000011"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0000011"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005000">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005000">
     <obo:IAO_0000115 xml:lang="en">A place or structure on the landscape that conservation works on or around: a water body, a conservation area, a water or energy work, a farm, a sensor, a road or trail. Called infrastructure in the PPOD model whether built or natural.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">infrastructure</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0000012"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0000012"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0007001">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0007001">
     <obo:IAO_0000115 xml:lang="en">A plan specification issued by an agency or organization that sets conservation objectives and the actions to meet them, such as a species recovery plan.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/plans.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/plans.owl"/>
     <rdfs:label xml:lang="en">conservation plan</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0000014"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0000014"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/icon/projects.owl">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/projects.owl">
     <dcterms:creator>Internet of Conservation (ICON)</dcterms:creator>
     <dcterms:description xml:lang="en">Conservation projects: bounded efforts with a lead, partners and funders that restore, protect, acquire, study or manage something in a place. Covers project types and the links of a project to programs and to the places it works on.</dcterms:description>
     <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
@@ -367,11 +367,11 @@
     <dcterms:title xml:lang="en">ICON Projects ontology</dcterms:title>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
     <rdfs:comment xml:lang="en">Existing ontologies used. Built on: Basic Formal Ontology, Ontology for Biomedical Investigations. Mapped to: FOAF, Ontology for Biomedical Investigations, schema.org.</rdfs:comment>
-    <rdfs:seeAlso rdf:resource="https://w3id.org/icon/core.owl"/>
-    <rdfs:seeAlso rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
-    <rdfs:seeAlso rdf:resource="https://w3id.org/icon/plans.owl"/>
-    <rdfs:seeAlso rdf:resource="https://w3id.org/icon/programs.owl"/>
-    <owl:versionIRI rdf:resource="https://w3id.org/icon/releases/2026-11-21/projects.owl"/>
+    <rdfs:seeAlso rdf:resource="https://w3id.org/icon-ioc/core.owl"/>
+    <rdfs:seeAlso rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
+    <rdfs:seeAlso rdf:resource="https://w3id.org/icon-ioc/plans.owl"/>
+    <rdfs:seeAlso rdf:resource="https://w3id.org/icon-ioc/programs.owl"/>
+    <owl:versionIRI rdf:resource="https://w3id.org/icon-ioc/releases/2026-11-21/projects.owl"/>
     <owl:versionInfo>2026-11-21</owl:versionInfo>
   </rdf:Description>
 </rdf:RDF>

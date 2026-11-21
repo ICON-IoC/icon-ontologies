@@ -5,10 +5,10 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0000011">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0000011">
     <obo:IAO_0000115 xml:lang="en">A planned process carried out to achieve conservation ends over a span of time: a project or a program.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/core.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/core.owl"/>
     <rdfs:label xml:lang="en">endeavor</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000082"/>
     <skos:closeMatch rdf:resource="http://purl.org/cerif/frapo/Endeavour"/>

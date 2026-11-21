@@ -1,10 +1,10 @@
 # ICON People ontology, as a LinkML schema.
 # Built by `ioc-ontologies` from ontology/src/people.terms; edit that, not this file.
-id: https://w3id.org/icon/linkml/icon-people
+id: https://w3id.org/icon-ioc/linkml/icon-people
 name: icon-people
 prefixes:
   linkml: https://w3id.org/linkml/
-  ICON: https://w3id.org/icon/ICON_
+  ICON: https://w3id.org/icon-ioc/ICON_
   dcat: http://www.w3.org/ns/dcat#
   foaf: http://xmlns.com/foaf/0.1/
   org: http://www.w3.org/ns/org#
@@ -18,7 +18,7 @@ license: https://creativecommons.org/licenses/by/4.0/
 default_prefix: ICON
 default_range: string
 see_also:
-- https://w3id.org/icon/people.owl
+- https://w3id.org/icon-ioc/people.owl
 imports:
 - linkml:types
 - icon-external

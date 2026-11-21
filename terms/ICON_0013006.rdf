@@ -5,12 +5,12 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0013006">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0013006">
     <obo:IAO_0000115 xml:lang="en">Software its users install and run themselves, such as an R package, a desktop program or a trained model, rather than use on the web. Example: InVEST.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/tools.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/tools.owl"/>
     <rdfs:label xml:lang="en">software package</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0013000"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0013000"/>
     <skos:closeMatch rdf:resource="https://schema.org/SoftwareApplication"/>
   </rdf:Description>
 </rdf:RDF>

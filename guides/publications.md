@@ -3,7 +3,7 @@
 Peer-reviewed papers and technical reports: authors, publishers and sponsors, what a work describes, which data it uses, which works it cites, and where its study was done.
 
 - Files: `icon-publications.ttl` (Turtle) and `icon-publications.owl` (RDF/XML), built from `src/publications.terms`.
-- Ontology IRI: `https://w3id.org/icon/publications.owl`; this release `https://w3id.org/icon/releases/2026-11-21/publications.owl`.
+- Ontology IRI: `https://w3id.org/icon-ioc/publications.owl`; this release `https://w3id.org/icon-ioc/releases/2026-11-21/publications.owl`.
 - Its own terms are numbered ICON:0009000 to ICON:0009999.
 
 ## Existing ontologies used

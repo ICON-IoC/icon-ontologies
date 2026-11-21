@@ -4,11 +4,11 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0007017">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0007017">
     <obo:IAO_0000115 xml:lang="en">A voluntary, non-regulatory conservation assessment for a region, prepared by a public agency under California's Regional Conservation Investment Strategies Program (Fish and Game Code 1850 to 1861) and approved by the California Department of Fish and Wildlife for up to 10 years, that names focal species and other conservation elements, sets goals and measurable objectives for them, and lists conservation actions and habitat enhancement actions with priority locations. Its actions can earn advance mitigation credits through mitigation credit agreements, unlike a plan that binds no one to mitigation.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/plans.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/plans.owl"/>
     <rdfs:label xml:lang="en">regional conservation investment strategy</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0007001"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0007001"/>
   </rdf:Description>
 </rdf:RDF>

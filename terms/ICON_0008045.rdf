@@ -4,11 +4,11 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008045">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008045">
     <obo:IAO_0000115 xml:lang="en">Data recorded by Census block group.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0008040"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0008040"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">census block group unit</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

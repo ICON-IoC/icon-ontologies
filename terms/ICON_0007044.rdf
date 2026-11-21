@@ -4,12 +4,12 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0007044">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0007044">
     <obo:IAO_0000115 xml:lang="en">A long-range plan under the California Coastal Act (Public Resources Code 30605) in which a public agency lays out the parks, trails, access ways, and facilities it intends to build in the coastal zone, so that the Coastal Commission can certify the whole program at once instead of permitting each project. Example: the Malibu Parks Public Access Enhancement Plan, adopted in 2010 by the Mountains Recreation and Conservation Authority and the Santa Monica Mountains Conservancy.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment xml:lang="en">Added for the Mountains Recreation and Conservation Authority's Malibu public works plans (#1177).</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/plans.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/plans.owl"/>
     <rdfs:label xml:lang="en">public works plan</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0007001"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0007001"/>
   </rdf:Description>
 </rdf:RDF>

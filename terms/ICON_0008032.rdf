@@ -5,12 +5,12 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0008032">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0008032">
     <obo:IAO_0000115 xml:lang="en">A value every day.</obo:IAO_0000115>
     <oboInOwl:hasDbXref>ISO8601:P1D</oboInOwl:hasDbXref>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0008030"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/data.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0008030"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/data.owl"/>
     <rdfs:label xml:lang="en">daily resolution</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

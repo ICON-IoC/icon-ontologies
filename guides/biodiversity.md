@@ -3,7 +3,7 @@
 The living things and habitats records concern: taxa (species and groups, identified by NatureServe) habitat types (California Wildlife Habitat Relationships), vegetation types (Manual of California Vegetation alliances under the US National Vegetation Classification) coastal and marine habitat types (CMECS) and the IUCN Global Ecosystem Typology, the links between those classifications, and the links that say a record concerns a taxon or a habitat type, or that a place is habitat for a taxon.
 
 - Files: `icon-biodiversity.ttl` (Turtle) and `icon-biodiversity.owl` (RDF/XML), built from `src/biodiversity.terms`.
-- Ontology IRI: `https://w3id.org/icon/biodiversity.owl`; this release `https://w3id.org/icon/releases/2026-11-21/biodiversity.owl`.
+- Ontology IRI: `https://w3id.org/icon-ioc/biodiversity.owl`; this release `https://w3id.org/icon-ioc/releases/2026-11-21/biodiversity.owl`.
 - Its own terms are numbered ICON:0011000 to ICON:0011999.
 
 ## Existing ontologies used

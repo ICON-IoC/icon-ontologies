@@ -4,12 +4,12 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005027">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005027">
     <obo:IAO_0000115 xml:lang="en">A hydroelectric plant that pumps water uphill when power is cheap and releases it through turbines when power is needed.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">pumped storage facility</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ENVO_00002214"/>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005004"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005004"/>
   </rdf:Description>
 </rdf:RDF>

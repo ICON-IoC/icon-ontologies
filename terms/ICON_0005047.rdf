@@ -4,11 +4,11 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005047">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005047">
     <obo:IAO_0000115 xml:lang="en">Permanently protected and managed for biodiversity, with natural disturbance such as fire or flooding allowed to run its course.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0005008"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0005008"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">GAP 1</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

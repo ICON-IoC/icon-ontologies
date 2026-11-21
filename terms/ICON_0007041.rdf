@@ -4,12 +4,12 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0007041">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0007041">
     <obo:IAO_0000115 xml:lang="en">A plan that maps, ranks and sequences fuel reduction, thinning, prescribed fire and related restoration treatments across a forest landscape, usually national forest land under a NEPA decision, so that the agency and its partners can fund and contract the work in priority order. Example: the Upper Mokelumne River Watershed Authority and Eldorado National Forest's Forest Projects Plan Phase 1 (2023), which sequences fuels treatments on about 26,000 acres of the Amador Ranger District.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment xml:lang="en">Added for the Upper Mokelumne River Watershed Authority's Forest Projects Plan Phase 1 (#1132).</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/plans.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/plans.owl"/>
     <rdfs:label xml:lang="en">forest health plan</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0007001"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0007001"/>
   </rdf:Description>
 </rdf:RDF>

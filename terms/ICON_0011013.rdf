@@ -4,11 +4,11 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0011013">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0011013">
     <obo:IAO_0000115 xml:lang="en">Cal-IPC: not yet invasive in California's wildlands, but assessed as at high risk of becoming invasive here.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="https://w3id.org/icon/ICON_0011002"/>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/biodiversity.owl"/>
+    <rdf:type rdf:resource="https://w3id.org/icon-ioc/ICON_0011002"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/biodiversity.owl"/>
     <rdfs:label xml:lang="en">watch invasive rating</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

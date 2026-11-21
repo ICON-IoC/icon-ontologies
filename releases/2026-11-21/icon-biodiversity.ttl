@@ -8,8 +8,8 @@
 @prefix RO: <http://purl.obolibrary.org/obo/RO_> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
-@prefix icon: <https://w3id.org/icon/ICON_> .
-@prefix iconbase: <https://w3id.org/icon/> .
+@prefix icon: <https://w3id.org/icon-ioc/ICON_> .
+@prefix iconbase: <https://w3id.org/icon-ioc/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -546,6 +546,6 @@ iconbase:biodiversity.owl a owl:Ontology ;
         <http://www.w3.org/2004/02/skos/core> ;
     dcterms:title "ICON Taxa and habitats ontology"@en ;
     rdfs:comment "Existing ontologies used. Reused: Darwin Core, SKOS. Built on: Environment Ontology, Information Artifact Ontology, Population and Community Ontology, SKOS. Mapped to: Darwin Core, Dublin Core terms, SKOS."@en ;
-    owl:versionIRI <https://w3id.org/icon/releases/2026-11-21/biodiversity.owl> ;
+    owl:versionIRI <https://w3id.org/icon-ioc/releases/2026-11-21/biodiversity.owl> ;
     owl:versionInfo "2026-11-21" .
 

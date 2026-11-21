@@ -4,12 +4,12 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/icon/ICON_0005049">
+  <rdf:Description rdf:about="https://w3id.org/icon-ioc/ICON_0005049">
     <obo:IAO_0000115 xml:lang="en">A facility that spawns and rears fish, mostly salmon and trout, for release into rivers and lakes to supply fisheries or to make up for spawning habitat a dam has blocked.</obo:IAO_0000115>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment xml:lang="en">Added for the CDFW hatcheries CalFish reports on: Feather River, Nimbus and Mokelumne River (#781).</rdfs:comment>
-    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon/infrastructure.owl"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/icon-ioc/infrastructure.owl"/>
     <rdfs:label xml:lang="en">fish hatchery</rdfs:label>
-    <rdfs:subClassOf rdf:resource="https://w3id.org/icon/ICON_0005032"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/icon-ioc/ICON_0005032"/>
   </rdf:Description>
 </rdf:RDF>
